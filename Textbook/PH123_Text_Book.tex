@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Friday, April 25, 2025 16:59:02}
+%TCIDATA{LastRevised=Tuesday, April 29, 2025 16:25:46}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -4514,8 +4514,11 @@ By using
 k=\frac{2\pi }{\lambda }
 \end{equation*}%
 we have%
+\begin{equation*}
+\frac{2\pi }{\lambda }x=n\pi
+\end{equation*}%
+We can cancel things, and solve for $x$%
 \begin{eqnarray*}
-\frac{2\pi }{\lambda }x &=&n\pi \\
 \frac{2}{\lambda }x &=&n \\
 x &=&n\frac{\lambda }{2}
 \end{eqnarray*}
@@ -4578,8 +4581,8 @@ to indicate there are many values of $k$ that can work. Solving this for $%
 \frac{2\pi }{\lambda _{n}}L &=&n\pi \\
 \frac{2L}{n} &=&\lambda _{n}
 \end{eqnarray*}%
-Which says there are many wavelengths that will work. Let's see how this
-works, the first mode will have 
+Which just says there are many wavelengths that will work. Let's see how to
+use this, the first mode will have 
 \begin{equation*}
 \lambda _{1}=2L
 \end{equation*}%
@@ -4599,7 +4602,7 @@ and so forth to give%
 \lambda _{n}=\frac{2L}{n}
 \end{equation*}
 
-We use our old friend%
+We use our old friend, the equation for wave speed,%
 \begin{equation*}
 v=f\lambda
 \end{equation*}%
@@ -4657,11 +4660,11 @@ As we exert a force on the piston, the air molecules are compressed into a
 group. In the next figure, each dot represents a group of air molecules. In
 the top picture, the air molecules are not displaced. But when the piston
 moves, the air molecules receive energy by collision. They bunch up. We see
-this in the second picture. \FRAME{dhF}{2.9352in}{1.5082in}{0pt}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.9352in;height 1.5082in;depth
-0pt;original-width 2.8911in;original-height 1.471in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+this in the second picture. \FRAME{dhF}{2.935in}{1.5079in}{0pt}{}{\Qlb{%
+Creation of a Pulse}}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.935in;height 1.5079in;depth 0pt;original-width 2.8911in;original-height
+1.471in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SV51AY0E.wmf';tempfile-properties "XPR";}}The graph below the two pictures
 shows how much displacement each molecule group experiences.
 
@@ -4782,23 +4785,26 @@ Let's go back to making sounds. Suppose we push our piston as we did before
 in figure \ref{Creation of a Pulse}. When we push in the piston, it creates
 a region of higher pressure next to it.
 
+\begin{center}
+\rule{300pt}{1pt}
+
+\textbf{Compression:} A local region of higher pressure in a fluid
+
+\rule{300pt}{1pt}
+
+\textbf{Rarefaction:} A local region of lower pressure in a fluid
+
+\rule{300pt}{1pt}
+\end{center}
+
 When we pull back the piston the fluid expands to fill the void. We create a
 rarefaction next to the piston.
 
 Suppose we drive the piston sinusoidally. Can we describe the motion of the
-particles and of the wave?
-
-\begin{enumerate}
-\item Compression: A local region of higher pressure in a fluid
-
-\item Rarefaction: A local region of lower pressure in a fluid
-\end{enumerate}
-
-We can identify the distance between two compressions as $\lambda .$
-
-We define $s\left( x,t\right) $ (like we defined a wave function, $y\left(
-x,t\right) )$ as the displacement a particle of fluid relative to its
-equilibrium position.%
+particles and of the wave? We can identify the distance between two
+compressions as $\lambda .$ We define $s\left( x,t\right) $ (like we defined
+a wave function, $y\left( x,t\right) )$ as the displacement a particle of
+fluid relative to its equilibrium position.%
 \begin{equation}
 s\left( x,t\right) =s_{\max }\cos \left( kx-\omega t\right)
 \end{equation}%
@@ -5030,10 +5036,25 @@ so the wire stretched about a quarter of a centimeter.
 
 Now that we remember what a modulus is, let's consider the speed of sound in
 our bar of metal. Say, we hit the bar with a hammer. Sound waves would be
-created in the bar. We need a measure of the elasticity of the metal and a
-measrue of the inertial of the metal material. We can use the Young's
-modulus for the elasticity, $Y,$ and the metal density, $\rho ,$ for the
-inertial property. This gives a wave speed of 
+created in the bar. But suppose we make our bar thin and stretch it across a
+guitar. Now as we hit the string we expect a wave. We need a measure of the
+elasticity of the metal and a measrue of the inertial of the metal material.
+The tension in the (now) wire would be our force 
+\begin{eqnarray*}
+v &=&\sqrt{\frac{T}{\mu }}=\sqrt{\frac{Y\frac{\Delta L}{L_{o}}A}{\frac{m}{%
+L_{o}}}} \\
+&=&\sqrt{\frac{Y\Delta LA}{m}} \\
+&=&\sqrt{\frac{Y%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{m}} \\
+&=&\sqrt{\frac{Y}{\rho }}
+\end{eqnarray*}%
+And we have the wave speed in terms of the an elastic quantity (Young's
+modulus) and an iterial property (the metal density). This gives a wave
+speed of 
 \begin{equation*}
 v=\sqrt{\frac{Y}{\rho }}
 \end{equation*}%
@@ -5150,7 +5171,7 @@ T_{o}}+\frac{T_{C}}{T_{o}}}=v_{o}\sqrt{\frac{T_{o}+T_{C}}{T_{o}}}=v_{o}\sqrt{%
 The speed of sound in air at normal room temperature is around $340\unit{m}/%
 \unit{s}.$
 
-\subsection{Finding the speed of sound in air}
+\subsection{Finding the speed of sound in air @@@@ Don't do this here! @@@@@}
 
 Now that we know about adiabatic processes, let's go back to the begining of
 our course and think about the speed of sound in air. The disturbance that
@@ -5470,7 +5491,7 @@ T_{c}}{T_{o}}}
 \end{eqnarray*}%
 which is what we used before.
 
-\section{Intensity of Sound Waves}
+\section{Intensity of Sound Waves @@ Maybe do this}
 
 We have already learned that knowing the power of a sound source isn't
 enough to tell us how loud that sound sorce will appear to us. We know the
@@ -5734,7 +5755,8 @@ be the \emph{threshold of hearing},
 \begin{equation*}
 I_{o}=1\times 10^{-12}\frac{\unit{W}}{\unit{m}^{2}}
 \end{equation*}%
-the intensity that is just barely audible. Measured this way, we say that
+the intensity that is just barely audible for humans (it will be different
+for electronic devices or other animals). Measured this way, we say that
 intensity is in units of decibels (dB).The decibel, is useful because it can
 describe a non-linear response in a linear way that is easy to match to our
 human experience. But it is tricky because, like radians, it is
@@ -6695,7 +6717,7 @@ this in our PH279 class. So I\ will just quote the result here.
 }\qquad \text{Approaching source}
 \end{eqnarray}
 
-\chapter{11 Beats and Doppler Shift 1.17.6, 1.17.7}
+\chapter{11 Shock waves and Non-Sinusoidal Waves 1.17.6, 1.17.7}
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\hspace{-1.3in}{\Large Fundamental Concepts\vspace{0.25in}}}}%
@@ -6776,13 +6798,7 @@ TRUE;display "USEDEF";valid_file "T";width 1.593in;height 1.2842in;depth
 Superposition is the basis of making music and we will see how this works in
 our next lecture.
 
-\chapter{Non Sinusoidal Waves}
-
-%TCIMACRO{%
-%\TeXButton{Fundamental Concepts}{\hspace{-1.3in}{\Large Fundamental Concepts\vspace{0.25in}}}}%
-%BeginExpansion
-\hspace{-1.3in}{\Large Fundamental Concepts\vspace{0.25in}}%
-%EndExpansion
+\section{Non Sinusoidal Waves}
 
 You have probably wondered if all waves are sinusoidal. Can the universe
 really be described by such simple mathematics? The answer is both no, and
@@ -6791,7 +6807,7 @@ But it turns out that we can use a very clever mathematical trick to make
 any shape wave out of a superposition of many sinusoidal waves. So our
 mathematics for sinusoidal waves turns out to be quite general.
 
-\section{Music and Non-sinusoidal waves}
+\subsection{Music and Non-sinusoidal waves}
 
 Let's take the example of music.
 
@@ -6937,7 +6953,7 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 6.2699in;original-height 1.2626in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'SUS73V4B.wmf';tempfile-properties "XPR";}}
 
-\section{Vibrometry}
+\subsection{Vibrometry}
 
 Just like each atom has a specific spectrum, and each instrument, each
 engine, machine, or anything that vibrates has a spectrum. We can use this
@@ -8731,28 +8747,28 @@ Now also realize that
 and
 
 \begin{equation}
-180=\Phi +2\alpha +2\phi 
+180=\Phi +2\alpha +2\phi
 \end{equation}%
 or%
 \begin{equation}
-90=\frac{\Phi }{2}+\alpha +\phi 
+90=\frac{\Phi }{2}+\alpha +\phi
 \end{equation}%
 Then%
 \begin{eqnarray}
-\alpha +\theta _{2}+\phi  &=&\frac{\Phi }{2}+\alpha +\phi  \\
+\alpha +\theta _{2}+\phi &=&\frac{\Phi }{2}+\alpha +\phi \\
 \theta _{2} &=&\frac{\Phi }{2}
 \end{eqnarray}%
 We can put these in our equation for $\theta _{1}$%
 \begin{eqnarray}
-\theta _{1} &=&\theta _{2}+\alpha  \\
+\theta _{1} &=&\theta _{2}+\alpha \\
 &=&\frac{\Phi }{2}+\frac{\delta }{2} \\
 &=&\frac{\Phi +\delta }{2}
 \end{eqnarray}%
 Now we can use Snell's Law%
 \begin{eqnarray}
-\sin \left( \theta _{1}\right)  &=&n\sin \left( \theta _{2}\right)  \\
-\sin \left( \frac{\Phi +\delta }{2}\right)  &=&n\sin \left( \frac{\Phi }{2}%
-\right) 
+\sin \left( \theta _{1}\right) &=&n\sin \left( \theta _{2}\right) \\
+\sin \left( \frac{\Phi +\delta }{2}\right) &=&n\sin \left( \frac{\Phi }{2}%
+\right)
 \end{eqnarray}%
 then%
 \begin{equation}
@@ -8773,7 +8789,7 @@ into a material. It will hit the atoms and bounce off. We know this, but
 there is more. The light bounces off the atoms but this makes a new light
 wave coming from the atoms. And that new wave is sperical (think that most
 waves start spherical). If we have many atoms, the light will hit many atoms
-and make many little spherical \emph{scattered} waves.  An early researcher
+and make many little spherical \emph{scattered} waves. An early researcher
 had an idea of how to find the direction of the light using this underlying
 wave nature of light. We could follow the light path by finding the little
 spherical scattered waves and look for where their crests line up. This
@@ -8838,7 +8854,7 @@ TRUE;display "USEDEF";valid_file "T";width 3.7645in;height 2.1292in;depth
 the reflected wave. By superimposing these scattered waves we the reflected
 wave is formed.
 
-We also know  \emph{Snel's law of refraction}. But we want to use our
+We also know \emph{Snel's law of refraction}. But we want to use our
 scattering model to show this is true. In our discussion on reflection we
 just used the top layer of scatters, but we know that there are more
 scatterers in a solid. \FRAME{dtbpF}{3.5509in}{2.0064in}{0pt}{}{}{Figure}{%
@@ -8857,7 +8873,7 @@ the situation is something like this\FRAME{dtbpF}{4.1286in}{2.335in}{0pt}{}{%
 '../../../../PH375/repository/OpticsText/text/SVAL9A3A.wmf';tempfile-properties "XPR";}%
 }and we see that we are forming another wave front \emph{inside the material}%
 . Our scattering model predicts the transmitted wave as well as the
-reflected wave. 
+reflected wave.
 
 We can see that Snel's law follows from basic geometry just as did the law
 of reflection. Let's go back to our wavefront $\overline{AB}.$ This time
@@ -11904,8 +11920,8 @@ Let's try a problem using these ideas.
 
 Suppose we have the following two waves. 
 \begin{eqnarray*}
-y_{1} &=&\sin \left( \pi x-\omega t+\frac{1}{6}\pi \right)  \\
-y_{2} &=&\sin \left( \pi x-\omega t\right) 
+y_{1} &=&\sin \left( \pi x-\omega t+\frac{1}{6}\pi \right) \\
+y_{2} &=&\sin \left( \pi x-\omega t\right)
 \end{eqnarray*}%
 We want to find the equation of the resultant wave and to determine if we
 have constructive or destructive interference. The two waves are plotted in
@@ -11926,21 +11942,21 @@ x\right) $};linecolor "maroon";linestyle 1;pointstyle "point";linethickness
 'SVA6N60O.xvz';valid_file "T";tempfilename
 'SVA6WL00.wmf';tempfile-properties "XPR";}}We can identify that $y_{\max }=1%
 \unit{m},$ $k_{1}=k_{2}=\pi ,$ $\omega _{1}=\omega _{2}=\omega ,$ $%
-t_{1}=t_{2}=t,$ $\phi _{1}=\pi /6$ and $\phi _{2}=0.$ We have this for all $x
-$ so we can chose $x_{1}=x_{2}=x$ for all $x.$ The superposition yields.%
+t_{1}=t_{2}=t,$ $\phi _{1}=\pi /6$ and $\phi _{2}=0.$ We have this for all $%
+x $ so we can chose $x_{1}=x_{2}=x$ for all $x.$ The superposition yields.%
 \begin{eqnarray*}
 y_{r} &=&y_{\max }\sin \left( k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}\right)
-+A\sin \left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right)  \\
++A\sin \left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) \\
 &=&2y_{\max }\cos \left( \left( \frac{1}{2}\left[ \left( k_{2}x_{2}-\omega
 _{2}t_{2}+\phi _{2}\right) -\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi
-_{1}\right) \right] \right) \right)  \\
+_{1}\right) \right] \right) \right) \\
 &&\times \sin \left( \frac{\left( k_{1}x_{1}-\omega t+\phi _{2}\right)
-+\left( k_{1}x_{2}-\omega t+\phi _{1}\right) }{2}\right)  \\
++\left( k_{1}x_{2}-\omega t+\phi _{1}\right) }{2}\right) \\
 &=&2y_{\max }\cos \left( \frac{1}{2}\left[ \left( \pi x-\omega t+0\right)
--\left( \pi x-\omega t+\frac{\pi }{6}\right) \right] \right)  \\
-&&\times \sin \left( \pi x-\omega t+\frac{0-\frac{\pi }{6}}{2}\right)  \\
+-\left( \pi x-\omega t+\frac{\pi }{6}\right) \right] \right) \\
+&&\times \sin \left( \pi x-\omega t+\frac{0-\frac{\pi }{6}}{2}\right) \\
 &=&2\cos \left( -\frac{\pi }{12}\right) \sin \left( \pi x-\omega t+\frac{\pi 
-}{12}\right) 
+}{12}\right)
 \end{eqnarray*}
 
 Our specific case is graphed in the next figure.\FRAME{dtbpFX}{3.0727in}{%
@@ -12276,16 +12292,16 @@ the color due to constructive interference would be the $m=0$ case
 In each of these problems we used our criteria for constructive or
 destructive interference 
 \begin{eqnarray*}
-\Delta \phi  &=&2\pi m\qquad m=0,\pm 1,\pm 2,\pm 3,\cdots \qquad \text{%
+\Delta \phi &=&2\pi m\qquad m=0,\pm 1,\pm 2,\pm 3,\cdots \qquad \text{%
 Constructive} \\
-\Delta \phi  &=&\left( m+\frac{1}{2}\right) 2\pi \qquad m=0,\pm 1,\pm 2,\pm
+\Delta \phi &=&\left( m+\frac{1}{2}\right) 2\pi \qquad m=0,\pm 1,\pm 2,\pm
 3,\cdots \qquad \text{Destructive}
 \end{eqnarray*}%
 and we used what we know from the problem to determine the total phase
 change using 
 \begin{equation*}
 \Delta \phi =\left( k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}\right) -\left(
-k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) 
+k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right)
 \end{equation*}%
 We can view this as three main methods of causing a phase difference. One is
 having a path difference where either $x_{2}$ and $x_{2}$ are different, or
@@ -12670,7 +12686,7 @@ which is what we found before.
 
 The plot of normalized intensity 
 \begin{equation*}
-\frac{I}{I_{\max }}=\cos ^{2}\left( \frac{\Delta \phi }{2}\right) 
+\frac{I}{I_{\max }}=\cos ^{2}\left( \frac{\Delta \phi }{2}\right)
 \end{equation*}%
 verses $\Delta \phi /2$ is given next, \FRAME{dtbpFX}{2.2917in}{1.5281in}{0pt%
 }{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
@@ -12723,11 +12739,11 @@ Note that one of the double slit maxima is clobbered by a minimum in the
 single slit pattern. We can find out the order of the missing maximum.
 Recall that 
 \begin{equation*}
-d\sin \left( \theta \right) =m\lambda 
+d\sin \left( \theta \right) =m\lambda
 \end{equation*}%
 describes the maxima from the double slit. But%
 \begin{equation*}
-a\sin \left( \theta \right) =\lambda 
+a\sin \left( \theta \right) =\lambda
 \end{equation*}%
 describes the minimum from the single slit. Dividing these yields%
 \begin{eqnarray*}
@@ -18585,7 +18601,7 @@ build idealized engines and refrigerators.
 
 \section{Something Missing @@@@}
 
-\chapter{34 Chapter 2.3.1, 2.3.4 }
+\chapter{34 Chapter 2.3.1, 2.3.4}
 
 \section{Conservation of Energy: First Law of Thermodynamics}
 
@@ -18877,7 +18893,7 @@ Q=-w_{int}
 }%
 %EndExpansion
 
-\bigskip 
+\bigskip
 
 \section{\protect\bigskip Work in Thermodynamic Processes}
 
@@ -19339,7 +19355,7 @@ for a quasi-static process.
 w_{pg}=-w_{gp}
 \end{equation*}
 
-\bigskip 
+\bigskip
 
 \section{Ideal Gas Special Processes}
 
@@ -19792,7 +19808,7 @@ process is not truly reversible. But it is a good mental model for the sort
 of processes we will study in this class; slow, almost in equilibrium all
 the time.
 
-\bigskip 
+\bigskip
 
 \chapter{35 Thermodynamic Processes 2.4.4, 2.3.5}
 
@@ -21760,7 +21776,7 @@ _{2}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{1}\right) 
+_{1}\right)
 \end{eqnarray*}%
 From the first law 
 \begin{eqnarray*}
@@ -21775,7 +21791,7 @@ _{2}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{1}\right) 
+_{1}\right)
 \end{eqnarray*}%
 so 
 \begin{equation*}
@@ -21789,7 +21805,7 @@ _{2}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{1}\right) 
+_{1}\right)
 \end{equation*}%
 but we don't have enough information to obtain a numerical value. We must be
 missing something!
