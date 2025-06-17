@@ -11,11 +11,12 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Wednesday, June 04, 2025 14:15:26}
+%TCIDATA{LastRevised=Tuesday, June 17, 2025 14:10:26}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
 %TCIDATA{CSTFile=40 LaTeX Book.cst}
+%TCIDATA{ComputeGeneralSettings=0,5,5,0,0,0,1}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{acknowledgement}[theorem]{Acknowledgement}
@@ -51,7 +52,7 @@
 $\copyright$%
 %EndExpansion
 copyright, R. Todd Lines, All Rights Reserved)}
-\date{5/16/2024}
+\date{6/13/2025}
 \maketitle
 \tableofcontents
 
@@ -6384,7 +6385,7 @@ y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right)
 
 and the resultant 
 \begin{eqnarray*}
-&&y_{r}2y_{\max }\cos \left( \frac{\left( kx-\omega _{2}t+\phi _{o}\right)
+y_{r} &=&2y_{\max }\cos \left( \frac{\left( kx-\omega _{2}t+\phi _{o}\right)
 -\left( kx-\omega _{1}t+\phi _{o}\right) }{2}\right) \sin \left( \frac{%
 kx-\omega _{2}t+\phi _{o}+kx-\omega _{1}t+\phi _{o}}{2}\right) \\
 &=&2y_{\max }\cos \left( \frac{kx-2\pi f_{2}t-\left( kx-2\pi f_{1}t\right) }{%
@@ -11701,7 +11702,7 @@ experiment, clearly we should sometimes see more of the wave nature of
 light. It is time to return to waves and see the details of how light waves
 interact.
 
-\chapter{20 Double Slits 3.3.2, 3.3.3}
+\chapter{20 Double Slits 3.3.2, 3.3.3 \label{DoubleSlitMath}}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Double Slits}}{\chaptermark{Double Slits}}}%
@@ -12613,7 +12614,7 @@ We have looked at interference from two slits, and for many slits. Here is
 the figure again that shows how the constructive and destructive
 interference pattern changes as we change the number of slits or openings.
 Earlier we gave a name for these patterns of constructive and destructive
-interference. We called them diffraction patterns.  \FRAME{dtbpF}{3.4056in}{%
+interference. We called them diffraction patterns. \FRAME{dtbpF}{3.4056in}{%
 2.6333in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.4056in;height 2.6333in;depth 0pt;original-width 7.5145in;original-height
@@ -12694,7 +12695,7 @@ maxima
 Notice, if we take two of the rays that hit one of our constructive
 interference spots, we get a path difference $\Delta r$ that is 
 \begin{equation*}
-\Delta r=\frac{a}{2}\sin \theta 
+\Delta r=\frac{a}{2}\sin \theta
 \end{equation*}%
 This would give a bright spot.
 
@@ -12715,7 +12716,7 @@ TRUE;display "USEDEF";valid_file "T";width 2.1525in;height 2.6507in;depth
 Before we started with what we are now calling rays $1$ and $3.$ Ray $1$
 travels a distance 
 \begin{equation}
-\Delta r=\frac{a}{2}\sin \left( \theta \right) 
+\Delta r=\frac{a}{2}\sin \left( \theta \right)
 \end{equation}%
 farther than ray $3.$ As we just argued, rays $2$ and $4$ also have the same
 path difference, and so do rays $3$ and $5.$ If this path difference is a
@@ -12739,7 +12740,7 @@ TRUE;display "USEDEF";valid_file "T";width 2.0245in;height 2.4933in;depth
 'SXCHJY00.wmf';tempfile-properties "XPR";}}and imagine light traveling from
 each of those parts to our viewing screen. Then we have a path difference of 
 \begin{equation}
-\Delta r=\frac{a}{4}\sin \left( \theta \right) 
+\Delta r=\frac{a}{4}\sin \left( \theta \right)
 \end{equation}%
 And to have destructive interference we need this path difference to be $%
 \lambda /2$%
@@ -12758,13 +12759,13 @@ TRUE;display "USEDEF";valid_file "T";width 1.9285in;height 2.5114in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V4Z.wmf';tempfile-properties "XPR";}}Then we would find%
 \begin{equation}
-\Delta r=\frac{a}{6}\sin \left( \theta \right) 
+\Delta r=\frac{a}{6}\sin \left( \theta \right)
 \end{equation}%
 and we still want a dark spot so%
 \begin{equation}
 \frac{a}{6}\sin \left( \theta \right) =\pm \frac{\lambda }{2}
 \end{equation}%
-or   
+or 
 \begin{equation}
 \sin \left( \theta \right) =\pm \frac{3\lambda }{a}
 \end{equation}%
@@ -12772,7 +12773,7 @@ and in general at the angle $\theta $ that makes the sine of that angle
 equal to $m\lambda /a$ we get a dark spot.%
 \begin{equation}
 \sin \left( \theta \right) =m\frac{\lambda }{a}\quad m=\pm 1,\pm 2,\pm
-3\ldots   \label{Single Slit minima}
+3\ldots  \label{Single Slit minima}
 \end{equation}
 
 You might object that we did not find the bright spots, only the dark spots.
@@ -12799,11 +12800,11 @@ rest of us we need a quick introduction.
 
 Let's take two waves%
 \begin{equation}
-E_{1}=E_{o1}\sin \left( \omega t+\alpha _{1}\right) 
+E_{1}=E_{o1}\sin \left( \omega t+\alpha _{1}\right)
 \end{equation}%
 and 
 \begin{equation}
-E_{2}=E_{o2}\sin \left( \omega t+\alpha _{2}\right) 
+E_{2}=E_{o2}\sin \left( \omega t+\alpha _{2}\right)
 \end{equation}%
 where I have hidden the position dependence in the $\alpha $'s 
 \begin{eqnarray*}
@@ -12817,16 +12818,16 @@ E=E_{o1}+E_{o2}
 \end{equation}%
 We actually know how to do the algebra to combine these waves (we have done
 it enough times!), but let's find another way to do the math that can extend
-to many many waves being added up. 
+to many many waves being added up.
 
 Think of our equation for a wave. 
 \begin{equation}
-E_{1}=E_{o1}\sin \left( \omega t+\alpha _{1}\right) 
+E_{1}=E_{o1}\sin \left( \omega t+\alpha _{1}\right)
 \end{equation}%
 We have made our wave equation look like the equation for a harmonic
 oscillator. And so long as we don't change $x_{1}$ or $x_{2}$ this is fine.
 The electric field at our position where we are mixing the waves will
-oscillate like a harmonic oscillator. 
+oscillate like a harmonic oscillator.
 
 Way back when we studied oscillation we said the equation for a harmonic
 oscillator position was like the projection of circular motion onto an axis. 
@@ -12837,11 +12838,11 @@ oscillator position was like the projection of circular motion onto an axis.
 "1";cropright "1";cropbottom "0";tempfilename
 'SXCLAP06.wmf';tempfile-properties "XPR";}}That gave us 
 \begin{equation*}
-x\left( t\right) =x_{\max }\cos \left( \omega t+\phi _{o}\right) 
+x\left( t\right) =x_{\max }\cos \left( \omega t+\phi _{o}\right)
 \end{equation*}%
 or 
 \begin{equation*}
-y\left( t\right) =y_{\max }\sin \left( \omega t+\phi _{o}\right) 
+y\left( t\right) =y_{\max }\sin \left( \omega t+\phi _{o}\right)
 \end{equation*}%
 as our oscillator equations. And see how much our modified wave equation
 looks like the second one of these oscillator equations! This gives us an
@@ -12894,21 +12895,26 @@ take $t=0,$ then $\omega t=0$ and the vectors will be rotated as shown.
 Using the redrawn phasors in the diagram directly above, we can see from the
 law of cosines 
 \begin{equation}
+E_{0}^{2}=E_{o1}^{2}+E_{o2}^{2}-2E_{o1}E_{o2}\cos \left( \eta \right)
+\end{equation}%
+but from the figure we can see that $\eta =\pi -\left( \alpha _{2}-\alpha
+_{1}\right) .$ That gives us%
+\begin{equation}
 E_{0}^{2}=E_{o1}^{2}+E_{o2}^{2}-2E_{o1}E_{o2}\cos \left( \pi -\left( \alpha
-_{2}-\alpha _{1}\right) \right) 
+_{2}-\alpha _{1}\right) \right)
 \end{equation}%
 or%
 \begin{equation}
 E_{0}^{2}=E_{o1}^{2}+E_{o2}^{2}+2E_{o1}E_{o2}\cos \left( \alpha _{2}-\alpha
-_{1}\right) 
+_{1}\right)
 \end{equation}%
-using the trig identity that $\cos \left( \pi -\gamma \right) =-\cos \gamma .
-$ This is the magnitude of our resulting vector. For the case of a double
+using the trig identity that $\cos \left( \pi -\gamma \right) =-\cos \gamma
+. $ This is the magnitude of our resulting vector. For the case of a double
 slit we know that $E_{o1}=E_{o2}$ so our resulting vector would be 
 \begin{eqnarray}
 E_{0}^{2} &=&E_{o1}^{2}+E_{o1}^{2}+2E_{o1}E_{o1}\cos \left( \alpha
-_{2}-\alpha _{1}\right)  \\
-&=&2E_{o1}^{2}+2E_{o1}^{2}\cos \left( \alpha _{2}-\alpha _{1}\right) 
+_{2}-\alpha _{1}\right) \\
+&=&2E_{o1}^{2}+2E_{o1}^{2}\cos \left( \alpha _{2}-\alpha _{1}\right)
 \end{eqnarray}%
 We can see that when $\cos \left( \alpha _{2}-\alpha _{1}\right) =-1$ we get
 zero. This is destructive interference!
@@ -12918,7 +12924,7 @@ and it is $\alpha _{1}$ plus a little bit more. It's not thrilling, but
 since we have the sides of the triangle we could just use the law of cosines
 again to find the little bit more angle%
 \begin{equation*}
-E_{o1}^{2}=E_{0}^{2}+E_{o1}^{2}+2E_{0}E_{o2}\cos \left( \theta \right) 
+E_{o1}^{2}=E_{0}^{2}+E_{o1}^{2}+2E_{0}E_{o2}\cos \left( \theta \right)
 \end{equation*}%
 so 
 \begin{equation*}
@@ -12930,7 +12936,7 @@ or when $E_{o1}=E_{o2}$%
 \end{equation*}%
 and 
 \begin{equation*}
-\alpha =\alpha _{1}+\theta 
+\alpha =\alpha _{1}+\theta
 \end{equation*}
 
 Now we ask what the question, \textquotedblleft what is the projection of
@@ -12971,10 +12977,10 @@ difference due to the different paths into the phase constant.
 Our set of little waves might be like
 
 \begin{eqnarray}
-\Delta E_{1} &=&E_{o}\sin \left( \omega t\right)  \\
-\Delta E_{2} &=&E_{o}\sin \left( \omega t+\phi _{2}\right)   \notag \\
-\Delta E_{3} &=&E_{o}\sin \left( \omega t+\phi _{3}\right)   \notag \\
-&&\vdots   \notag
+\Delta E_{1} &=&E_{o}\sin \left( \omega t\right) \\
+\Delta E_{2} &=&E_{o}\sin \left( \omega t+\phi _{2}\right)  \notag \\
+\Delta E_{3} &=&E_{o}\sin \left( \omega t+\phi _{3}\right)  \notag \\
+&&\vdots  \notag
 \end{eqnarray}%
 Note that these are still waves. We have just put the $kr_{i}$ part into the
 phase $\phi _{i}$ like we did in the $\alpha $'s in the last section.
@@ -12990,20 +12996,20 @@ figure. \FRAME{dtbpF}{1.9225in}{2.5019in}{0pt}{}{}{Figure}{\special{language
 '../../../../PH375/repository/OpticsText/text/SVWZBT07.wmf';tempfile-properties "XPR";}%
 }By thinking about this figure we can see that 
 \begin{equation}
-\Delta r=\Delta y\sin \theta 
+\Delta r=\Delta y\sin \theta
 \end{equation}%
 for each pair of adjacent rays. and that gives a phase difference of 
 \begin{equation}
-\Delta \phi =k\Delta r=\frac{2\pi }{\lambda }\Delta y\sin \theta 
+\Delta \phi =k\Delta r=\frac{2\pi }{\lambda }\Delta y\sin \theta
 \end{equation}%
 Let's suppose that as we cross the slit we have $N$ waves each of magnitude $%
 \Delta E$. Then the total phase difference between waves from the top to the
 bottom of the slit is 
 \begin{eqnarray}
-\phi  &=&N\Delta \phi =N\frac{2\pi }{\lambda }\Delta y\sin \theta  \\
-&=&\frac{2\pi }{\lambda }a\sin \theta 
+\phi &=&N\Delta \phi =N\frac{2\pi }{\lambda }\Delta y\sin \theta \\
+&=&\frac{2\pi }{\lambda }a\sin \theta
 \end{eqnarray}%
-where $a$ is our slit width and  
+where $a$ is our slit width and 
 \begin{equation}
 a=N\Delta y
 \end{equation}
@@ -13014,7 +13020,7 @@ about this, when you add vectors you put the vectors tip-to-tail, and when
 you are done you start at the tail of the first and draw a new vector to the
 tip of the last vector you added. This new vector is the sum. And to make
 that new vector have a length $E_{R}=0$ all we have to do is to have the
-vectors we add make a circle.  Then the distance from the tail of the first
+vectors we add make a circle. Then the distance from the tail of the first
 vector to the tip of the last vector is exactly zero! We are doing this with
 phasors, so we place our phasors tip-to-tail and find the first minimum or
 first dark band when $\phi =2\pi $ or when the phasor diagram circles back
@@ -13026,11 +13032,11 @@ TRUE;display "USEDEF";valid_file "T";width 1.7409in;height 1.6561in;depth
 '../../../../PH375/repository/OpticsText/text/SVWZBT00.wmf';tempfile-properties "XPR";}%
 }%
 \begin{equation}
-2\pi =\frac{2\pi }{\lambda }a\sin \theta 
+2\pi =\frac{2\pi }{\lambda }a\sin \theta
 \end{equation}%
 We can cancel and rearrange this to give%
 \begin{equation}
-\frac{\lambda }{a}=\sin \theta 
+\frac{\lambda }{a}=\sin \theta
 \end{equation}%
 which is what we expected for the first minimum! This seems to be working.
 Let's now find the intensity pattern.
@@ -13066,21 +13072,21 @@ and%
 
 Note also that 
 \begin{equation}
-\eta =90-\alpha 
+\eta =90-\alpha
 \end{equation}
 
 For the upper triangle, 
 \begin{eqnarray}
 180 &=&\psi +\eta +90 \\
-90 &=&\psi +\eta 
+90 &=&\psi +\eta
 \end{eqnarray}%
 we know $\eta ,$ so 
 \begin{equation}
-90=\psi +90-\alpha 
+90=\psi +90-\alpha
 \end{equation}%
 or%
 \begin{equation}
-\psi =\alpha 
+\psi =\alpha
 \end{equation}%
 but%
 \begin{equation}
@@ -13098,7 +13104,7 @@ Then%
 \end{equation}%
 where $R$ is the radius of curvature, and from the archlength formula%
 \begin{equation}
-s=R\phi 
+s=R\phi
 \end{equation}%
 and since we are finding the arc length, we know it will be nearly the sum
 of each little phasor vector length $s=NE_{o}$ so%
@@ -13111,8 +13117,8 @@ R=\frac{NE_{o}}{\phi }
 \end{equation*}%
 then our resultant wave phasor has length%
 \begin{eqnarray}
-E_{R} &=&2R\sin \left( \frac{\phi }{2}\right)  \\
-&=&2\frac{NE}{\phi }\sin \left( \frac{\phi }{2}\right)  \\
+E_{R} &=&2R\sin \left( \frac{\phi }{2}\right) \\
+&=&2\frac{NE}{\phi }\sin \left( \frac{\phi }{2}\right) \\
 &=&NE_{o}\frac{\sin \left( \frac{\phi }{2}\right) }{\frac{\phi }{2}}
 \end{eqnarray}%
 It is silly, but we usually define $\beta =\phi /2$ so 
@@ -13127,17 +13133,17 @@ I=I_{\max }\left( \frac{\sin \left( \beta \right) }{\beta }\right) ^{2}
 And here is a tricky part. We get the angle $\phi $ from adding up the
 angles from each of our little $\Delta E$ pieces. Each of them has an angle%
 \begin{equation}
-\Delta \phi =k\Delta r=\frac{2\pi }{\lambda }\Delta y\sin \theta 
+\Delta \phi =k\Delta r=\frac{2\pi }{\lambda }\Delta y\sin \theta
 \end{equation}%
 and $N$ of these will be 
 \begin{equation*}
-\phi =N\frac{2\pi }{\lambda }\Delta y\sin \theta 
+\phi =N\frac{2\pi }{\lambda }\Delta y\sin \theta
 \end{equation*}%
 So we can see that the angle $\phi $ is the same as our total phase. If we
 have an aperture width of $a$ then $a=N\Delta y$ and 
 \begin{equation*}
 \phi =N\frac{2\pi }{\lambda }\Delta y\sin \theta =\frac{2\pi }{\lambda }%
-a\sin \theta 
+a\sin \theta
 \end{equation*}%
 and that makes 
 \begin{equation*}
@@ -13245,40 +13251,54 @@ more slits. But let's return to algebraic methods.
 
 \section{Double Slit Intensity Pattern}
 
-The fringes we have seen are not just points, but are patterns that fade
-from a maximum intensity. We can calculate the intensity pattern. We need to
-know a little bit about electric fields to do this.
+\FRAME{dtbpF}{4.5947in}{2.2303in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.5947in;height 2.2303in;depth
+0in;original-width 4.5429in;original-height 2.1897in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SXEBSK00.wmf';tempfile-properties "XPR";}}
 
-We can represent an electromagnetic wave using just the electric field (the
-magnetic field pattern is very similar and can be derived from the electric
-field pattern) as we did at the beginning of this lecture%
+Back in Chapter (\ref{DoubleSlitMath}) we found the bright and dark fringe
+locations for a double slit diffraction pattern. But the fringes we have
+seen are not just points, but are patterns that fade from a maximum
+intensity. In the last lecture we calculated such an intensity pattern for
+the light going through a single slit. We used phasors to do so. But for
+double slits we already have an algebraic method for finding the
+superposition of two waves. Let's use that method to find our intensity
+pattern.
+
+Let's let a laser beam hit two parallel slits, just like we did before. The
+light coming through the two slits will be like two new sources of light but
+with the same frequency and wavelength. We can represent an electromagnetic
+wave using just the electric field (the magnetic field pattern is very
+similar and can be derived from the electric field pattern)%
 \begin{eqnarray*}
-E_{1} &=&E_{\max }\sin \left( k_{2}r_{2}-\omega _{2}t_{2}+\phi _{2}\right) 
-\\
-E_{2} &=&E_{\max }\sin \left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) 
+E_{2} &=&E_{\max }\sin \left( k_{2}r_{2}-\omega _{2}t_{2}+\phi _{2}\right) \\
+E_{1} &=&E_{\max }\sin \left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right)
 \end{eqnarray*}%
 and the resulting wave will be 
 \begin{eqnarray*}
 E_{r} &=&E_{\max }\sin \left( k_{2}r_{2}-\omega _{2}t_{2}+\phi _{2}\right)
-+A\sin \left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right)  \\
++E_{\max }\sin \left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) \\
 &=&2E_{\max }\cos \left( \frac{\left( k_{2}r_{2}-\omega _{2}t_{2}+\phi
-_{2}\right) -\left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right) 
+_{2}\right) -\left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right)
 \\
 &&\times \sin \left( \frac{\left( k_{2}r_{2}-\omega _{2}t_{2}+\phi
-_{2}\right) +\left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right) 
+_{2}\right) +\left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right)
 \\
 &=&2E_{\max }\cos \left( \frac{1}{2}\left[ \left( k_{2}r_{2}-\omega
 _{2}t_{2}+\phi _{2}\right) -\left( k_{1}r_{1}-\omega _{1}t_{1}+\phi
-_{1}\right) \right] \right)  \\
+_{1}\right) \right] \right) \\
 &&\times \sin \left( \frac{\left( k_{2}r_{2}-\omega _{2}t_{2}+\phi
-_{2}\right) +\left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right) 
+_{2}\right) +\left( k_{1}r_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right)
 \end{eqnarray*}%
 but now we know that we can simplify this because $\omega _{2}=\omega
-_{1}=\omega ,$ $k_{2}=k_{1}=k,$ $t_{2}=t_{1}=t,$ and $\phi _{2}=\phi
-_{1}=\phi _{o}.$%
+_{1}=\omega ,$ $k_{2}=k_{1}=k,$ $t_{2}=t_{1}=t,$ and so long as the light
+hits the slit screen perpendicular to the screen, $\phi _{2}=\phi _{1}=\phi
+_{o}.$ Then%
 \begin{equation*}
 E_{r}=2E_{\max }\cos \left( \frac{1}{2}k\left( r_{2}-r_{1}\right) \right)
-\sin \left( \frac{kr_{2}+kr_{1}}{2}-\omega t+\phi _{o}\right) 
+\sin \left( \frac{kr_{2}+kr_{1}}{2}-\omega t+\phi _{o}\right)
 \end{equation*}
 
 We have a combined wave at point $P$ that is a traveling wave $\left( \sin
@@ -13310,14 +13330,15 @@ electric field squared.%
 I &=&\frac{P}{A}\varpropto E^{2} \\
 &\varpropto &4E_{o}^{2}\cos ^{2}\left( \frac{1}{2}\left( \frac{2\pi }{%
 \lambda }d\sin \theta \right) \right) \sin ^{2}\left( \frac{k\left(
-r_{2}+r_{1}\right) }{2}-\omega t+\phi _{o}\right) 
+r_{2}+r_{1}\right) }{2}-\omega t+\phi _{o}\right)
 \end{eqnarray*}
 
 Light detectors collect power for a set amount of time. So most light
-detection will be a value averaged over a set \emph{integration time}. This
-means that the detector sums up (or integrates) the amount of power received
-over the detector time. Usually the integration time is much longer than a
-period, so we need to time-average our intensity.%
+detection will be a value averaged over a set \emph{integration time}. We
+saw this before when we studied cameras. This means that the detector sums
+up (or integrates) the amount of power received over the detector time.
+Usually the integration time is much longer than a wave period, so we need
+to time-average our intensity.%
 \begin{eqnarray*}
 \int_{\text{many periods}}Idt &\varpropto &=\int_{\text{many periods}%
 }4E_{o}^{2}\cos ^{2}\left( \frac{1}{2}\left( \frac{2\pi }{\lambda }d\sin
@@ -13358,9 +13379,11 @@ I=I_{\max }\cos ^{2}\left( \frac{1}{2}\left( \frac{2\pi }{\lambda }d\sin
 \theta \right) \right)
 \end{equation*}%
 where we have dropped the bar from the $I,$ but it is understood that the
-intensity we report is a time average over many periods.
+intensity we report is a time average over many periods. This averaging over
+many periods is one of the reasons why we could mostly ignore the wave
+nature of light when we studied mirrors and lenses!
 
-We should remind our selves, our intensity pattern 
+We should remind ourselves, our intensity pattern 
 \begin{equation*}
 I=I_{\max }\cos ^{2}\left( \frac{1}{2}\frac{2\pi }{\lambda }d\sin \theta
 \right)
@@ -13370,18 +13393,26 @@ is really
 I=I_{\max }\cos ^{2}\left( \frac{\Delta \phi }{2}\right)
 \end{equation*}%
 Which is just our amplitude squared for the mixing of two waves. All we have
-done to find the intensity pattern is to find and expression for the phase
+done to find the intensity pattern is to find an expression for the phase
 difference $\Delta \phi .$
 
 Our intensity pattern should give the same location for the center of the
 bright spots as we got before. Let's check that it works. We used the small
 angle approximation before. It is still valid, so let's use it again now.
 For for small angles 
-\begin{eqnarray*}
-I &=&I_{\max }\cos ^{2}\left( \frac{\pi d}{\lambda }\theta \right) \\
-&=&I_{\max }\cos ^{2}\left( \frac{\pi d}{\lambda }\frac{y}{L}\right)
-\end{eqnarray*}%
-Then we have constructive interference when 
+\begin{equation*}
+I=I_{\max }\cos ^{2}\left( \frac{\pi d}{\lambda }\theta \right)
+\end{equation*}%
+and for small angles 
+\begin{equation*}
+\tan \theta =\frac{y}{L}\approx \theta
+\end{equation*}%
+so we can write $I$ as 
+\begin{equation*}
+I=I_{\max }\cos ^{2}\left( \frac{\pi d}{\lambda }\frac{y}{L}\right)
+\end{equation*}%
+Then we have constructive interference when $\cos ^{2}\left( \frac{\pi d}{%
+\lambda }\frac{y}{L}\right) =1$ or when 
 \begin{equation*}
 \frac{\pi d}{\lambda }\frac{y}{L}=m\pi
 \end{equation*}%
@@ -13389,7 +13420,7 @@ or%
 \begin{equation*}
 y=m\frac{L\lambda }{d}
 \end{equation*}%
-which is what we found before.
+which is what we found before!
 
 The plot of normalized intensity 
 \begin{equation*}
@@ -13448,11 +13479,11 @@ Recall that
 \begin{equation*}
 d\sin \left( \theta \right) =m\lambda
 \end{equation*}%
-describes the maxima from the double slit. But%
+describes the maxima from the double slit. But for the single slit 
 \begin{equation*}
 a\sin \left( \theta \right) =\lambda
 \end{equation*}%
-describes the minimum from the single slit. Dividing these yields%
+describes the first minimum. Dividing these yields%
 \begin{eqnarray*}
 \frac{d\sin \left( \theta \right) }{a\sin \left( \theta \right) } &=&\frac{%
 m\lambda }{\lambda } \\
@@ -13466,29 +13497,19 @@ double slit maximum will be missing.
 
 \section{Diffraction Gratings}
 
-%TCIMACRO{%
-%\TeXButton{Rainbow Glasses}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Rainbow Glasses}
-%\end{minipage}
-%}} }%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Rainbow Glasses}
-\end{minipage}
-}
-%EndExpansion
+We now have found the single slit diffraction pattern equation and the
+double slit diffraction pattern. Let's look once again at many slits. if we
+have a whole lot of slits we give the collection of slits a new name. We
+call it a \emph{diffraction grating.}
+
 A diffraction grating is an optical element with many many parallel slits
-spaced very close together. Here is a typical diffraction grating created by
-etching lines in a piece of glass. The etchings scatter the light, but the
-un-etched part allows the light to pass through. The un-etched parts are
-essentially a series of slits.\FRAME{dhFU}{1.9984in}{1.625in}{0pt}{\Qcb{%
-Surface of a diffraction grating (600 lines/mm). Image taken with optical
-transmission microscope. (Image in the public domain courtesy Scapha)}}{}{%
-Figure}{\special{language "Scientific Word";type
+spaced very close together. Here photo of part of a typical diffraction
+grating created by etching lines in a piece of glass. The etchings scatter
+the light, but the un-etched part allows the light to pass through. The
+un-etched parts are essentially a series of slits.\FRAME{dhFU}{1.9984in}{%
+1.625in}{0pt}{\Qcb{Surface of a diffraction grating (600 lines/mm). Image
+taken with optical transmission microscope. (Image in the public domain
+courtesy Scapha)}}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 1.9984in;height 1.625in;depth 0pt;original-width 2.4474in;original-height
 1.9847in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -13527,7 +13548,7 @@ light leaves each slit in phase with the light from the rest of the slits,
 but at some distance $L$ away and at some angle $\theta $ we will have a
 path difference%
 \begin{equation}
-\delta =d\sin \left( \theta _{bright}\right) =m\lambda \quad m=0,\pm 1,\pm
+\Delta r=d\sin \left( \theta _{bright}\right) =m\lambda \quad m=0,\pm 1,\pm
 2,\ldots
 \end{equation}%
 because the path lengths are not all the same.
@@ -13549,22 +13570,7 @@ do, but suppose we add into our system a sample of a chemical to identify
 We could then record the intensity of the transmitted light as a function of
 angle, which is equivalent to $\lambda .$ We can again generate a spectrum.
 This is a traditional way to build a spectrometer and many such devices are
-available today.%
-%TCIMACRO{%
-%\TeXButton{Demo a student spectrometer with a gas tube}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Demo a student spectrometer with a gas tube}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Demo a student spectrometer with a gas tube}
-\end{minipage}
-}%
-%EndExpansion
+available today.
 
 \subsection{Resolving power of diffraction gratings}
 
@@ -13596,16 +13602,25 @@ illumination.
 
 That the resolution depends on the number of slits, $N,$ means that we can
 improve our spectrometer by using more lines. Here is a representation of
-what happens as we increase $N$\FRAME{dhF}{3.103in}{2.6654in}{0in}{}{}{Figure%
+what happens as we increase $N$\FRAME{dhF}{3.103in}{2.6654in}{0pt}{}{}{Figure%
 }{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 3.103in;height 2.6654in;depth
-0in;original-width 3.0588in;original-height 2.623in;cropleft "0";croptop
+0pt;original-width 3.0588in;original-height 2.623in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SVANNN5K.wmf';tempfile-properties "XPR";}}we can see that the peaks get
 narrower as $N$ increases. These graphs are for a particular $\lambda .$ If
 the peaks for a particular $\lambda $ get narrower, then there will be less
 overlap with adjacent $\lambda ^{\prime }s$ which means that each wavelength
-can more easily be resolved.
+can more easily be resolved. We won't derive the equation for a diffraction
+grating intensity pattern in this class. If you are interested, you can take
+our junior level optics class. From that class the intensity pattern is 
+\begin{equation*}
+I\left( \theta \right) =I_{o}\left( \frac{\sin \beta }{\beta }\right)
+^{2}\left( \frac{\sin N\alpha }{\sin \alpha }\right) ^{2}
+\end{equation*}%
+where $\alpha =\frac{dk}{2}\sin \theta ,$ $\beta =\frac{ka}{2}\sin \theta $
+and where $a$ is the slit width and $d$ is the slit spacing and $N$ is the
+number of slits.
 
 Spectrometers are used in many places. On that has some public interest
 today is monitoring the atmosphere. Instruments like the one shown below
@@ -13636,6 +13651,8 @@ the northern and southern bands of CO$_{2}.$
 %EndExpansion
 
 \begin{itemize}
+\item Circular Apertures
+
 \item Resolution is a name we give to the fundamental blurriness in
 geometrical optical systems due to the wave nature of light.
 
@@ -13648,51 +13665,6 @@ geometrical optical systems due to the wave nature of light.
 
 \section{Circular apertures}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.27.4}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.27.4}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.27.4}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.27.5}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.27.5}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.27.5}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.27.6}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.27.6}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.27.6}
-\end{minipage}
-}%
-%EndExpansion
 Our analysis of light going through holes has been somewhat limited by
 squarish holes or slits. But most optical systems, including our eyes don't
 have square holes. So what happens when the hole is round? The situation is
@@ -13710,7 +13682,12 @@ for the first minima,or that
 \begin{equation*}
 \theta \approx \frac{\lambda }{a}
 \end{equation*}%
-and from the figure we can see that 
+for small angles. And from the figure \FRAME{dtbpF}{3.2353in}{1.8187in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.2353in;height 1.8187in;depth 0pt;original-width 3.9565in;original-height
+2.2122in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXEIGM01.wmf';tempfile-properties "XPR";}}we can see that 
 \begin{equation*}
 \theta \approx \frac{y}{L}
 \end{equation*}%
@@ -13719,19 +13696,25 @@ minimum to be%
 \begin{equation*}
 y\approx \frac{\lambda }{a}L
 \end{equation*}%
-This is the distance from the center bright spot to the first dark spot. The
-width of the bright spot is twice this distance%
+This is the distance from the center bright spot peak intensity to the first
+dark spot. The width of the bright spot is twice this distance%
 \begin{equation*}
 w\approx 2\frac{\lambda }{a}L
 \end{equation*}%
 We expect something like this for our circular aperture. The derivation is
 not to hard, but it involves Bessel functions, which are beyond the math
-requirement for this course. So I will give you the answer%
+requirement for this course\footnote{%
+We find the whole diffraction pattern for a circular aperture in PH375, 
+\emph{Optics.}}. So I will give you the answer%
 \begin{equation*}
 \theta \approx 1.22\frac{\lambda }{D}
 \end{equation*}%
-That's right, the circular aperture (hole) only adds a factor of 1.22. And
-as with the slit%
+Where we have replaced $a$ with $D$, the diameter of the aperture. But they
+are both the size of the hole.
+
+Let's think about this last equation. Compare it to our equation for $\theta 
+$ for a square opening. That's right, the circular aperture (hole) only adds
+a factor of 1.22. And as with the slit%
 \begin{equation*}
 \theta \approx \frac{y}{L}
 \end{equation*}%
@@ -13743,41 +13726,29 @@ and
 \begin{equation}
 w\approx 2.44\frac{\lambda }{D}L
 \end{equation}%
-%TCIMACRO{%
-%\TeXButton{Airy Pattern Demo}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Airy Pattern Demo}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Airy Pattern Demo}
-\end{minipage}
-}%
-%EndExpansion
-The picture in most books is a little bit deceptive. The pattern looks a
-little like the slit pattern. But the secondary maxima are actually very
-small for the circular aperture case. Much smaller than the secondary maxima
-in the slit case. Here is a larger version. \FRAME{dtbpFUX}{4.9068in}{%
-2.7417in}{0pt}{\Qcb{}}{}{Plot}{\special{language "Scientific Word";type
-"MAPLEPLOT";width 4.9068in;height 2.7417in;depth 0pt;display
-"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
-"-10.00400";xmax "10.00400";xviewmin "-10.0060008020004";xviewmax
-"10.0060008020004";yviewmin "-0.000098808010947";yviewmax
-"1.00009999004583";rangeset"X";plottype 4;axesFont "Times New
+The pattern looks a little like the slit pattern. But the secondary maxima
+are actually smaller for the circular aperture case. Here is a larger
+version in red (solid curve) with the single slit pattern in brown (dashed
+line).\FRAME{dtbpFUX}{4.907in}{2.7415in}{0pt}{\Qcb{{}}}{}{Plot}{\special%
+{language "Scientific Word";type "MAPLEPLOT";width 4.907in;height
+2.7415in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "-10.00400";xmax "10.00400";xviewmin
+"-10.0060008020004";xviewmax "10.0060008020004";yviewmin
+"-0.000098808010947E0";yviewmax "1.00009999004583";rangeset"X";plottype
+4;labeloverrides 3;x-label "Beta";y-label "I";axesFont "Times New
 Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{JQSUB1ESUB};var1name
-\TEXUX{$J_{1}$};function \TEXUX{$\frac{1}{\allowbreak 0.25}\left( \text{
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{r};var1name
+\TEXUX{$r$};function \TEXUX{$\frac{1}{\allowbreak 0.25}\left( \text{
 }\frac{J_{1}\left( r\right) }{r}\right) ^{2}$};linecolor "blue";linestyle
 1;pointstyle "point";linethickness 3;lineAttributes "Solid";var1range
 "-10.00400,10.00400";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SVANQO4P.xvz';valid_file "T";tempfilename
-'../../../../PH375/repository/OpticsText/text/SVANQO5L.wmf';tempfile-properties "XPR";}%
-}
+"[flat::RGB:0x000000ff]";curveStyle "Line";function \TEXUX{$\left(
+\frac{\sin \left( r\right) }{r}\right) ^{2}$};linecolor "cyan";linestyle
+2;pointstyle "point";linethickness 1;lineAttributes "Dash";var1range
+"-10.00400,10.00400";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000080c0]";curveStyle "Line";VCamFile
+'SXEJ2P0K.xvz';valid_file "T";tempfilename
+'SXEJ1N07.wmf';tempfile-properties "XPR";}}
 
 A three dimensional version of the intensity pattern from the circular
 aperture.\FRAME{dtbpFUX}{4.4996in}{3in}{0pt}{\Qcb{Graph of the Airy disk for
@@ -13792,19 +13763,18 @@ TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-0.02";xmax "0.02";ymin
 TRUE;plottype 5;axesFont "Times New
 Roman,12,0000000000,useDefault,normal";num-x-gridlines 25;num-y-gridlines
 25;plotstyle "hidden";axesstyle "normal";axestips FALSE;plotshading
-"NONE";lighting 0;xis \TEXUX{JQSUB1ESUB};yis \TEXUX{y};var1name
-\TEXUX{$J_{1}$};var2name \TEXUX{$y$};function \TEXUX{$\frac{1}{\allowbreak
-0.25}\left( \text{ }\frac{J_{1}\left( \frac{2\pi \left(
-\sqrt{x^{2}+y^{2}}\right) \left( 0.05\right) }{\left( 500\times
-10^{-6}\right) \left( 1\right) }\right) }{\frac{2\pi \left(
-\sqrt{x^{2}+y^{2}}\right) \left( 0.05\right) }{\left( 500\times
-10^{-6}\right) \left( 1\right) }}\right) ^{2}$};linestyle 1;pointstyle
-"point";linethickness 1;lineAttributes "Solid";var1range
+"NONE";lighting 0;xis \TEXUX{x};yis \TEXUX{y};var1name \TEXUX{$x$};var2name
+\TEXUX{$y$};function \TEXUX{$\frac{1}{\allowbreak 0.25}\left( \text{
+}\frac{J_{1}\left( \frac{2\pi \left( \sqrt{x^{2}+y^{2}}\right) \left(
+0.05\right) }{\left( 500\times 10^{-6}\right) \left( 1\right) }\right)
+}{\frac{2\pi \left( \sqrt{x^{2}+y^{2}}\right) \left( 0.05\right) }{\left(
+500\times 10^{-6}\right) \left( 1\right) }}\right) ^{2}$};linestyle
+1;pointstyle "point";linethickness 1;lineAttributes "Solid";var1range
 "-0.02,0.02";var2range "-0.02,0.02";surfaceColor
 "[flat::RGB:0000000000:0000000000]";surfaceStyle "Hidden
 Line";num-x-gridlines 75;num-y-gridlines 75;surfaceMesh
 "Mesh";rangeset"XY";VCamFile 'SVANQO4O.xvz';valid_file "T";tempfilename
-'SVANQO5M.wmf';tempfile-properties "XPR";}}With a bright enough laser, they
+'SVANQO5M.wmf';tempfile-properties "XPR";}}With a bright enough laser, the
 pattern becomes visible.\FRAME{dhFU}{2.7415in}{2.6757in}{0pt}{\Qcb{{}}}{}{%
 Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
@@ -13824,17 +13794,18 @@ true! Our wave nature of light comes back to complicate our simple optical
 designs!
 
 Because light is really a wave, the images of the point objects won't be
-points, themselves. They will be little circular central maxima with dim
-concentric ring patterns. \FRAME{dtbpF}{1.8792in}{1.7374in}{0in}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 1.8792in;height 1.7374in;depth
-0in;original-width 1.8421in;original-height 1.7002in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+points, themselves. And because our eyes and cameras have circular
+apertures, the image if the point objects will be little circular central
+maxima with dim concentric ring patterns. \FRAME{dtbpF}{1.8792in}{1.7374in}{%
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.8792in;height 1.7374in;depth 0pt;original-width 1.8421in;original-height
+1.7002in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE63.wmf';tempfile-properties "XPR";}} If we have more than one point
 of light, we will get two such patterns. \FRAME{dtbpF}{1.5281in}{1.2851in}{%
-0in}{}{}{Figure}{\special{language "Scientific Word";type
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-1.5281in;height 1.2851in;depth 0in;original-width 1.4909in;original-height
+1.5281in;height 1.2851in;depth 0pt;original-width 1.4909in;original-height
 1.2496in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE64.wmf';tempfile-properties "XPR";}}and our image of an extended
 object (like Aunt Sally) is made up of many, many points all reflecting
@@ -13843,10 +13814,15 @@ corresponding points on our image. But instead they are creating small
 circles of light, and form the above figures we can see that those circles
 will overlap. All this makes our images fuzzy.
 
+\section{Resolution}
+
 The quality of our image depends on how poorly a point object is imaged. If
 each point object makes a large circle of light on the screen or detector
 array, we get a very confusing image (it will look blurry to us). Let's
 review why this will happen so we can know how to minimize the effect.
+
+Since we are using eyes or cameras, we expect circular apertures. Let's
+review what we know but include some ray diagrams.
 
 We already know that if we take light and pass it through a single slit, we
 get an intensity pattern that has a central bright region.\FRAME{dhF}{%
@@ -13859,7 +13835,7 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 Remember that normal objects will be made up of many small points of light
 (either due to reflection or glowing) and each of these will form such an
 intensity pattern on a screen. Here is a bright point source that is not on
-the axis, an we see that it too makes a bright spot on the screen (and
+the axis, and we see that it too makes a bright spot on the screen (and
 smaller bright spots or rings, depending on the shape of the aperture) 
 \FRAME{dhF}{2.7674in}{2.0513in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -13928,18 +13904,11 @@ resolvable. In the small angle approximation, $\sin \left( \theta \right)
 
 Now you may be saying to yourself that you don't often take pictures through
 single illuminated slits, so this is nice, but not really very interesting.
-But suppose, instead, that we image a circular aperture. We won't go through
-all the math (there are Bessel functions involved) but the criterion becomes%
+But suppose, instead, that we image a circular aperture. We just pick up a
+factor of $1.22$ and change $a$ to $D$ for diameter.%
 \begin{equation}
 \theta _{\min }=1.22\frac{\lambda }{D}
-\end{equation}%
-where $D$ is the aperture diameter.
-
-Still, you might think, \textquotedblleft I don't like pictures taken
-through small circles any better than through small
-slits!\textquotedblright\ Yet, in fact, you do. Most cameras have circular
-apertures. The light that passes into your phone camera must pass though the
-circular lens. And, of course, your eyes have circular apertures.
+\end{equation}
 
 The Rayleigh criteria tells you, based on your camera aperture size, how a
 point source will be imaged on the film or sensor array. If we consider
@@ -13991,40 +13960,21 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 3.5146in;original-height 1.0456in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'SVAQIE6D.wmf';tempfile-properties "XPR";}}
 
-This concludes our study of waves and optics!
+Of course, astronomers have it easy. They really image points of light. But
+for photos of more normal things we don't want to not be able to tell part
+of Aunt Sally's eye from part of her nose. Our aperture limits how good the
+image will look regardless of the lens that we use in the camera. Because
+this limit is due to diffraction patterns we call this resolution limit a 
+\emph{diffraction limit}. If you are designing a camera system you generally
+want your sensor pixel size to match the size of the central diffraction
+spot, because smaller pixels won't get you a less blurry image once you
+reach the size of the spot created by imaging a point source.
+
+This really concludes our study of waves and optics! But let's look at two
+more applications of what we have learned.
 
 \section{Holography}
 
-%TCIMACRO{%
-%\TeXButton{Hologram demo-picture of woman}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Hologram demo-picture of woman}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Hologram demo-picture of woman}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Hologram demo-chess pieces}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Hologram demo-chess pieces}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Hologram demo-chess pieces}
-\end{minipage}
-}%
-%EndExpansion
 You may have seen holograms in the past. We have enough understanding of
 light to understand how they are generated now.
 
@@ -14043,7 +13993,7 @@ photographic plate. The combination of the direct and scattered beams
 generates a complicated interference pattern.
 
 The pattern can be developed (like you develop photographic film). Once
-developed, it can be re- illuminated with a direct beam. The emulsion on the
+developed, it can be re-illuminated with a direct beam. The emulsion on the
 plate creates complicated patterns of light transmission, which combine to
 create interference. It is like a very complicated slit pattern or grating
 pattern. The result is a three-dimensional image generated by the
@@ -14065,10 +14015,10 @@ dimensional, so the patterns are complex.
 Let's start with a simple crystal with a square regular latus. $NaCl$ has
 such a structure.
 
-\FRAME{dhF}{3.2038in}{1.4387in}{0in}{}{}{Figure}{\special{language
+\FRAME{dhF}{3.2038in}{1.4387in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 3.2038in;height 1.4387in;depth
-0in;original-width 3.2375in;original-height 1.4378in;cropleft "0";croptop
+0pt;original-width 3.2375in;original-height 1.4378in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V5D.wmf';tempfile-properties "XPR";}}If we illuminate the crystal with
 x-rays, the x-rays can reflect off the top layer of atoms, or off the second
@@ -14083,44 +14033,38 @@ then for constructive interference%
 2d\sin \left( \theta \right) =m\lambda \qquad m=1,2,3,\ldots
 \end{equation}%
 This is known as \emph{Bragg's law.} This relationship can be used to
-measure the distance between the crystal planes.
+measure the distance between the crystal planes. As the crystal structure
+gets more complicated, the interference pattern gets more complicated as
+well. Here is an example
 
-A resulting pattern is given in the following figure.\FRAME{dhFU}{1.6489in}{%
-1.6604in}{0pt}{\Qcb{{\protect\small Diffraction image of protein crystal.
-Hen egg lysozyme, X-ray souce Bruker I}$\protect\mu ${\protect\small S, }$%
-\protect\lambda =0.154188\unit{nm}${\protect\small , }$45\unit{kV}$%
-{\protect\small , Exposure }$10\unit{s}.${\protect\small \ (image in the
-public domain)}}}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-1.6489in;height 1.6604in;depth 0pt;original-width 1.6129in;original-height
-1.6233in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V5E.wmf';tempfile-properties "XPR";}}DNA\ makes in interesting
-diffraction pattern.\FRAME{dhFU}{1.5809in}{1.8273in}{0pt}{\Qcb{%
-{\protect\small X-ray diffraction pattern of DNA (image courtesy of the
-National Institute of Health, image in the public domain)}}}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+\FRAME{dhFU}{1.6489in}{1.6604in}{0pt}{\Qcb{{\protect\small Diffraction image
+of protein crystal. Hen egg lysozyme, X-ray souce Bruker I}$\protect\mu $%
+{\protect\small S, }$\protect\lambda =0.154188\unit{nm}${\protect\small , }$%
+45\unit{kV}${\protect\small , Exposure }$10\unit{s}.${\protect\small \
+(image in the public domain)}}}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 1.6489in;height 1.6604in;depth 0pt;original-width
+1.6129in;original-height 1.6233in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SUS73V5E.wmf';tempfile-properties "XPR";}}%
+DNA\ makes in interesting diffraction pattern.\FRAME{dhFU}{1.5809in}{1.8273in%
+}{0pt}{\Qcb{{\protect\small X-ray diffraction pattern of DNA (image courtesy
+of the National Institute of Health, image in the public domain)}}}{}{Figure%
+}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 1.5809in;height 1.8273in;depth
 0pt;original-width 1.5437in;original-height 1.7902in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V5F.wmf';tempfile-properties "XPR";}}
 
-\section{Transition to the ray model}
+\section{Ray Model vs. Wave Model}
 
-%TCIMACRO{%
-%\TeXButton{Question 223.28.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 223.28.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 223.28.1}
-\end{minipage}
-}%
-%EndExpansion
+We have studied all the new information that we will get on waves and
+optics. But notice that we started our study of light using rays, but
+knowing that light is a wave. We did most of our work with mirrors and
+lenses without using wave properties of light. But then we looked at
+apertures and found the wave nature of light was very important. When do we
+need to use the equations for light as a wave, and when can we get away with
+ignoring the wave nature of light?
+
 In the next figure, two waves of different wavelengths go through a single
 opening. The wave representing the central maxima is shown in each case, but
 not the secondary maxima.\FRAME{dhF}{2.7951in}{2.776in}{0pt}{}{}{Figure}{%
@@ -14171,22 +14115,24 @@ or%
 \end{equation*}%
 and the spot size would be very nearly equal to the geometric spot size.
 
-This is the limit we will call the \emph{ray approximation}.
+This is the limit we will called the \emph{ray approximation}.
 
 For most of mankind's time on the Earth, it was very hard to build holes
-that were comparable to the size of a wavelength of visible light. So it is
-no wonder that the waviness of light was missed for so many years.
+that were comparable to the size of a wavelength of visible light (around $%
+500\unit{nm}$). So it is no wonder that the waviness of light was missed for
+so many years.
 
 But this ray limit is very useful for apertures the size of camera lenses.
-So we will begin to use this small $\lambda ,$ large aperture approximation.
+So it was find for lenses and mirrors to use this small $\lambda ,$ large
+aperture approximation.
 
 \section{The Ray Approximation in Geometric Optics}
 
 In the last section we said that when the geometric spot size was larger
-than the spot due to diffraction, we could ignore diffraction and use the
-simpler ray model. This is usually true in our personal experiences. But
-this may not be true in experiments or devices we design. We should see
-where the crossover point is.
+about the same size as the spot due to diffraction, we could ignore
+diffraction and use the simpler ray model. This is usually true in our
+personal experiences. But this may not be true in experiments or devices we
+design. We should see where the crossover point is.
 
 Intuitively, if the aperture and the spot are the same size, that ought to
 be some sort of critical point. That is when the aperture size is equal to
@@ -14218,11 +14164,11 @@ them to be easy to see if the aperture is smaller than a millimeter. But
 what about when the aperture is about a millimeter in size? That is a
 subject for PH375, and so we will avoid this case in this class. But this is
 not too restrictive. Most good optical systems have apertures larger than $1%
-\unit{mm}.$ Cell phone cameras may be an exception (but I don't consider
-cell phone cameras to be good optical systems). Even our eyes have an
-aperture that varies from about $2\unit{mm}$ to about $7\unit{mm},$ so most
-common experiences in visible wavelengths will work fine with what we learn.
-Note that for microwave or radio wave systems this may really not be true!
+\unit{mm}.$ Cell phone cameras may be an exception (but they play tricks to
+beat this by having multiple apertures). Even our eyes have an aperture that
+varies from about $2\unit{mm}$ to about $7\unit{mm},$ so most common
+experiences in visible wavelengths will work fine with what we learn. Note
+that for microwave or radio wave systems this may really not be true!
 
 How about the other extreme? Suppose $\lambda \gg D.$ This is really beyond
 our class (requires partial differential equations), but in the extreme
@@ -14246,21 +14192,6 @@ $\lambda \gg D$ & Little to no penetration of aperture by the wave%
 
 \section{The ray model and phase}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.28.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.28.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.28.2}
-\end{minipage}
-}%
-%EndExpansion
 There is a further complication that helps to explain why the wave nature of
 light was not immediately apparent. Let's consider a light source.\FRAME{dhF%
 }{0.6339in}{1.0957in}{0pt}{}{}{Figure}{\special{language "Scientific
@@ -14282,21 +14213,6 @@ positions, so there will be a path difference $\Delta r$ between each atom's
 waves. There will also be a time difference $\Delta t$ between when the
 waves start. We can model this with a $\Delta \phi _{o}.$
 
-%TCIMACRO{%
-%\TeXButton{Question 123.28.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.28.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.28.3}
-\end{minipage}
-}%
-%EndExpansion
 It is also true that not all of the electrons fall from the same shell. This
 gives us different frequencies, so we expect beating between different waves
 from different atoms. It is also true that we have millions of atoms, so we
@@ -14474,14 +14390,14 @@ coherent light is a laser. That is why I have used lasers in the class
 demonstrations so far. Really though, even a laser is not perfectly
 coherent. One property of the laser is that it produces light with a long 
 \emph{coherence length}, or it produces light that can be treated under most
-circumstances as begin monochromatic and having a single phase across the
+circumstances as being monochromatic and having a single phase across the
 wave for much of the beam length. Radar and microwave transmitters emit
 coherent light (but at frequencies we can't see) and so do radio stations.
 
 In the past, one could carefully create a monochromatic beam with filters.
 Then split the beam into two beams and remix the two beams. This would
 generate two mostly coherent sources if the distances traveled were not too
-large. This is what Young did.
+large. This is what Young did. Now days we just use lasers.
 
 \section{Coherency}
 
@@ -14497,35 +14413,35 @@ to the rest of the wave.
 These are very hard criteria to achieve. Most light, like that from our
 light bulb, is not coherent.
 
-In the next lecture, we will leave behind the wave nature of light and
-consider in-coherent beams of light. Our goal will be to understand how
-light moves around us to allow us to see things.
-
 You may be left feeling that we have really just gotten started, and you
 would be right. If you are a physics major (or curious and have elective
-credit) you will study waves more in PH295 and you may study more optics in
-PH375. Both are fantastic experiences. Even if you don't take a further
-class in these topics, you can study them on your own. There are many
-wonderful books on Optics.
+credit) you will study waves more in PH 279 (Modern Physics) and PH295
+(Mathematical and Computational Physics) and you may study more optics in
+PH375. All of these are fantastic experiences. Even if you don't take a
+further class in these topics, you can study them on your own. There are
+many wonderful books on Optics.
 
 Our goal this semester was to study the motion of many things and wave
 motion was a partial fulfilment of that goal. But not all motions of many
 objects are as uniform as wave motion. What if, say, the air molecules in
 our room instead of moving in simple harmonic motion like in a wave, they
 had random velocities? This is type of motion that we hinted about when we
-talked about thermal energy in PH121. We will take on this kind of motion
-next in this course.
+talked about thermal energy in PH121 and the hot atoms that emit incoherent
+light. We will take on this kind of motion next in this course.
 
 \part{Thermodynamics}
 
 \chapter{25 Fluids and Pressure 1.14.1, 1.14.2}
 
-We are changing topics radically. PH121 taught us how individual objects
-move. So far we have learned that wave motion is an organized motion of many
-objects. But often many objects move in less organized ways. We will take on
-less organized motion for the last part of this course. Let's review some
-basic properties of matter. Matter is made of many atoms. So matter is an
-example of many objects that might just move.
+We have spent about 2/3 of a semester studying waves. Waves are very regular
+motion of more than one object. But surely we can have less regular motion
+of more than one object!
+
+To study such non-regular motion we are changing topics radically. PH121
+taught us how individual objects move. We will use some of what we learned
+to address the question of how many objects move. To get started, let's
+review some basic properties of matter. Matter is made of many atoms. So
+matter is an example of many objects that might just move.
 
 %TCIMACRO{\TeXButton{\chaptermark{Fluids}}{\chaptermark{Fluids}}}%
 %BeginExpansion
@@ -14546,19 +14462,17 @@ example of many objects that might just move.
 \item Pressure is a force spread over an area
 
 \item Pressure increases with depth in a fluid
-\end{itemize}
 
-\begin{enumerate}
 \item Barometers
 
 \item Manometers
 
 \item Buoyancy
-\end{enumerate}
+\end{itemize}
 
 \section{Fluids}
 
-You are probably aware that there are four states of matter
+You are probably aware that there are four general states of matter
 
 \begin{equation*}
 \begin{tabular}{|l|}
@@ -14577,10 +14491,12 @@ gases, but the great glowing stars are plasma. (I am ignoring the mysterious
 form of \textquotedblleft dark matter\textquotedblright\ because so far we
 don't know what it is). Plasma is a heated gas that is ionized. We will
 mostly ignore this state, because unless you are dealing with neon signs,
-fluorescent lights, or the like, you don't encounter plasmas in every day
-experience.
+fluorescent lights, or the like, on Earth you don't encounter plasmas in
+every day experience.
 
-\subsection{Solids}
+\bigskip
+
+\textbf{Solids}
 
 We can view solids as having a set of forces that keep the molecules in
 place much as though they were attached using springs. Solids can have
@@ -14597,9 +14513,9 @@ amorphous.\FRAME{dhF}{1.3258in}{1.5428in}{0pt}{}{}{Figure}{\special{language
 "USEDEF";valid_file "T";width 1.3258in;height 1.5428in;depth
 0pt;original-width 2.0721in;original-height 2.4146in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V8K.wmf';tempfile-properties "XPR";}}
+'SUS73V8K.wmf';tempfile-properties "XPR";}}\bigskip
 
-\subsection{Liquids}
+\textbf{Liquids}
 
 The molecules in a liquid are less tightly bound than those in a solid. That
 is why they can flow. In the next figure, the atoms are bound by one
@@ -14609,9 +14525,9 @@ bonds like a solid. \FRAME{dhF}{2.9352in}{2.2329in}{0pt}{}{}{Figure}{\special%
 TRUE;display "USEDEF";valid_file "T";width 2.9352in;height 2.2329in;depth
 0pt;original-width 2.8911in;original-height 2.1923in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V8L.wmf';tempfile-properties "XPR";}}
+'SUS73V8L.wmf';tempfile-properties "XPR";}}\bigskip
 
-\subsection{Gasses}
+\textbf{Gasses}
 
 The molecules in a gas are not bound to each other--not at all.
 
@@ -14629,11 +14545,10 @@ For the next few lectures we will study fluids, but what is a fluid? A
 \textbf{Fluid} is a collection of molecules that are randomly arranged and
 
 are at most held together by weak cohesive forces and by forces exerted by
-
 the walls of a container.
 
 Thus, liquids and gasses are definitely fluids. Solids are generally
-considered not fluids. But how about Jello%
+considered not fluids. But how about Jell-O%
 %TCIMACRO{\TeXButton{TM}{\textsuperscript{\texttrademark}}}%
 %BeginExpansion
 \textsuperscript{\texttrademark}%
@@ -14641,13 +14556,13 @@ considered not fluids. But how about Jello%
 ? or a combination of corn starch and water (sometimes called
 \textquotedblleft ooblick\textquotedblright )? These are non-Newtonian
 fluids. That is, things that are sort of solid and sort of not. But we will
-stick with things (at least at first) that are definitely fluids, and
+stick with things that are definitely fluids (at least at first), and
 generally fluids with negligible friction. This is a little like in PH121
 when we studied frictionless surfaces. How many surfaces are truly
 frictionless? Very few! you might guess that there are few fluids that have
 no friction, and you would be right. But just like with PH121, the
 assumption of frictionless fluids makes the math easier, and that is good
-when we are starting a now topic.
+when we are starting a new topic.
 
 \section{Pressure}
 
@@ -14674,42 +14589,82 @@ to use the area of their hand to exert the force. The motion of the ball,
 and even it's shape depended on both the force (magnitude and direction) and
 the area involved in each push.
 
-Noticing that each person is exerting a force but that the force is not
-acting on one point, but is spread out over an area, we recognize that each
-person is exerting a pressure on the ball\ 
+Noticing that each person exerts a force but that the force is not acting on
+one point, but is spread out over an area, we recognize that each person is
+exerting a pressure on the ball\ 
 \begin{equation}
-P\equiv \frac{F}{A}
+P\equiv \frac{F}{A}  \label{PressureDefinition}
 \end{equation}%
 \mathstrut
 
+Hopefully you studied pressure in PH121 or equivalent. It is a force spread
+over an area. In this case it is the force of a hand spread over the area of
+the hand.
+
 Now consider a ball sitting in a room surrounded by air. The air is a fluid,
 so it's molecules are quite free to move around. Because there is some
-thermal energy in the room (even in Rexburg) the molecules will have some
-kinetic energy. So the air molecules will hit the ball. This will cause a
-force on the surface of the ball. And that force will be spread over the
-entire surface area of the ball. This is a force spread over an area. This
-is a pressure. We call this \emph{air pressure}. This air force due to the
-colliding molecules is like having the hands on the pushing on the ball.
+thermal energy in the room\footnote{%
+Even in Rexburg.} the molecules will have some kinetic energy. So the air
+molecules will hit the ball. This will cause a force on the surface of the
+ball. And that force will be spread over the entire surface area of the
+ball. This is a force spread over an area. This is a pressure. We call this 
+\emph{air pressure}. This air force due to the colliding molecules is like
+having the hands pushing on the pushing on the ball.
 
 This force due to individual molecules is small and only lasts during the
-collision. But in the room we have many molecules, and many the molecules
-impact the ball. The molecules also impact the walls of the room. Suppose
-that every time a molecule bounces back from one wall it ends up headed back
-to the opposite wall bounces back again toward the first wall. If the
-molecules keep coming, there will be a force on the wall quite a bit of the
-time. At least, on average there is a force, anyway. This is the force that
-causes air pressure. The molecules impact the walls, and the ball, and us,
-and everything in the room all over the surface area of each object. The
-result is air pressure on every object in the room.
+collision. But in the room we have many molecules, and many molecules impact
+the ball. The molecules also impact the walls of the room. Suppose that
+every time a molecule bounces back from one wall it ends up headed back to
+the opposite wall bounces back again toward the first wall. If the molecules
+keep coming, there will be a force on the wall quite a bit of the time. At
+least, on average there is a force, anyway. This is the force that causes
+air pressure. The molecules impact the walls, and the ball, and us, and
+everything in the room all over the surface area of each object. The result
+is air pressure on every object in the room.
 
 Likewise, the water pressure in a swimming pool is caused by moving water
 molecules. You should convince yourself that the reason the water stays in
 the pool is partly because the air molecules bounce against the water
 surface exerting a pressure on the water!
 
+You might notice that there are more molecules bunched together in the water
+than in the air. We can describe how bunched together the molecules are by
+giving the mass of the molecules for a unit of volume%
+\begin{equation}
+\frac{m}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}=\rho  \label{Density}
+\end{equation}%
+We call this measure of bunched-up-ness the \emph{density} of the material
+and we give it (unfortunately) the symbol $\rho $ (the Greek letter
+\textquotedblleft rho\textquotedblright\ pronounced like \textquotedblleft
+row\textquotedblright\ as in \textquotedblleft row a boat\textquotedblright
+). Sometimes it is useful to compare the density of a substance (like air)
+to the density of water%
+\begin{equation*}
+\frac{\rho _{\text{substance}}}{\rho _{water}}=\text{specific gravity}
+\end{equation*}%
+This comparison is (unfortunately) called the \emph{specific gravity}. But
+we need to be careful. We will find that density can depend on temperature.
+So let's define specific gravity as the comparison of the substance's
+density to the density of water at $4\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}$ at $1\unit{atm}$ of pressure. It turns out at this temperature and
+pressure 
+\begin{equation*}
+\rho _{water}=1000\frac{\unit{kg}}{\unit{m}^{3}}
+\end{equation*}%
+which makes it convenient for comparison.
+
 \subsection{Working with the definition of pressure}
 
-We can work with equation \ref{Pressure Definition} to define the force due
+We can work with equation \ref{PressureDefinition} to define the force due
 to pressure%
 \begin{equation*}
 F\equiv PA
@@ -14736,9 +14691,9 @@ Let's do a pressure problem together,
 
 Problem statement:
 
-A $50.0\unit{kg}$ woman balances on one heel of a pair of high heeled shoes.
-If the heel is circular and has a radius of $0.5000\unit{cm},$ what pressure
-does she exert on the floor?
+A $50.0\unit{kg}$ person balances on one heel of a pair of high heeled
+shoes. If the heel cross section is circular and has a radius of $0.5000%
+\unit{cm},$ what pressure does she exert on the floor?
 
 Drawing
 
@@ -14754,9 +14709,9 @@ Variables
 \begin{equation*}
 \begin{tabular}{lll}
 & Known &  \\ 
-$M$ & Mass of woman & $M=50\unit{kg}$ \\ 
-$r$ & Radius of woman's heal & $r=0.500\unit{cm}$ \\ 
-$g$ & acceleration do to gravity & $g=9.8\frac{\unit{m}}{\unit{s}^{2}}$ \\ 
+$M$ & Mass of person & $M=50\unit{kg}$ \\ 
+$r$ & Radius of person's heal & $r=0.500\unit{cm}$ \\ 
+$g$ & Acceleration do to gravity & $g=9.8\frac{\unit{m}}{\unit{s}^{2}}$ \\ 
 & Unknown &  \\ 
 $F$ & Force &  \\ 
 $x$ & Coordinate Axis &  \\ 
@@ -14820,52 +14775,33 @@ Check
 Reasonableness
 
 This seems like a large number, but I have had a high heeled person step on
-my toe, so I believe it!
-
-%TCIMACRO{%
-%\TeXButton{Bed of Nails}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Bed of Nails}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Bed of Nails}
-\end{minipage}
-}%
-%EndExpansion
+my toe, so I believe it! We can compare to average atmospheric pressrue
+which is about $1.13\times 10^{5}\unit{Pa}.$ Compared to this the toe crunch
+seems pretty reasonable.
 
 \section{Variation of Pressure with Depth}
-
-%TCIMACRO{%
-%\TeXButton{Stacked Hymnbook}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Stacked Hymnbook}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Stacked Hymnbook}
-\end{minipage}
-}%
-%EndExpansion
 
 If you have been in a swimming pool, you probably have noticed that the
 pressure due to the water feels different at the surface than it does at the
 bottom of the deep end. Intuitively, we can say that the pressure at the
 bottom is larger than the pressure at the top. Let's see if we can show that
-this is true.
+this is true. We will do this in a few different ways.
 
-Take a glass of water or some other fluid. Let's look at just a part of the
-fluid (the darker section in figure \ref{Pressure Variation initial}). Let's
-treat this \textquotedblleft parcel of fluid\textquotedblright\ as a
-distinct body and look at the forces acting on it.
+\subsection{Pressure variation in liquids}
+
+Take a glass of water or some other liquid. \FRAME{dtbpF}{1.6968in}{2.002in}{%
+0pt}{}{\Qlb{PressureVariationInitial}}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 1.6968in;height 2.002in;depth 0pt;original-width
+1.6604in;original-height 1.9631in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SXPQX003.wmf';tempfile-properties "XPR";}}%
+And let's look at just a part of the liquid (the section inside the
+box-shaped section with the dotted line around it in figure \ref%
+{PressureVariationInitial}). The box shaped part of the liquid looks like,
+well, a box. And an old word for \textquotedblleft box\textquotedblright\ is
+\textquotedblleft\ parcel.\textquotedblright\ Let's treat this
+\textquotedblleft parcel of fluid\textquotedblright\ as a distinct body and
+look at the forces acting on it.
 
 We need some way of labeling our forces. My way is kind of simple, but will
 work for now.\FRAME{dtbpF}{2.405in}{0.8925in}{0pt}{}{}{Figure}{\special%
@@ -14875,17 +14811,36 @@ TRUE;display "USEDEF";valid_file "T";width 2.405in;height 0.8925in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V8O.wmf';tempfile-properties "XPR";}}
 
-Consider Newton's second law. The sum of the forces must be equal to zero
-(Why?--think of the acceleration of the parcel of fluid)\FRAME{dtbpF}{%
-2.8599in}{1.8628in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.8599in;height 1.8628in;depth 0pt;original-width
-2.8167in;original-height 1.8256in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73V8P.wmf';tempfile-properties "XPR";}}%
+Consider Newton's second law. The sum of the forces must be equal to zero.
+Why?--think of the acceleration of the parcel of liquid. It's not
+accelerating. \FRAME{dtbpF}{2.5547in}{1.7538in}{0in}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.5547in;height 1.7538in;depth
+0in;original-width 2.5131in;original-height 1.7158in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SXT8F105.wmf';tempfile-properties "XPR";}}And what we have in our drawing
+looks a lot like a free body diagram for our parcel of liquid. We could draw
+the free body diagram like this \FRAME{dtbpF}{1.8766in}{1.2289in}{0in}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.8766in;height 1.2289in;depth 0in;original-width 1.8386in;original-height
+1.1952in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXT8FQ06.wmf';tempfile-properties "XPR";}}where you should notice that we
+are drawing the forces with their points on the part of the parcel where the
+force acts. That is different than what we did in Principles of Physics I.
+This is because we are going to turn these forces into pressures using 
 \begin{equation*}
-\overrightarrow{F}_{net}=0=\mathbf{F}_{pt}+\mathbf{F}_{pb}+\mathbf{F}_{pmr}+%
-\mathbf{F}_{pml}+\mathbf{W}
+P=\frac{F}{A}
 \end{equation*}%
+so we want to identify the area that the force acts on. Let's write out
+Newton's second law for our parcel of liquid. 
+\begin{equation*}
+\overrightarrow{F}_{net}=m\overrightarrow{a}=0=\overrightarrow{F}_{pt}+%
+\overrightarrow{F}_{pb}+\overrightarrow{F}_{pmr}+\overrightarrow{F}_{pml}+%
+\overrightarrow{W}
+\end{equation*}%
+but just like in Principles of Physics I we will break this equation into
+components.%
 \begin{eqnarray*}
 F_{net_{x}} &=&0=0+0-F_{pmr}+F_{pml}-0 \\
 F_{net_{y}} &=&0=-F_{pt}+F_{pb}-0+0-W
@@ -14901,19 +14856,18 @@ forces must be equal if the parcel doesn't accelerate. The $y$-part gives%
 F_{pb}-F_{pt}=W
 \end{equation*}
 
-The definition of pressure gives%
-\begin{eqnarray*}
-P &=&\frac{F}{A} \\
-F &=&PA
-\end{eqnarray*}%
-\FRAME{dtbpF}{2.751in}{1.8706in}{0pt}{}{}{Figure}{\special{language
+Now let's use our pressure equation. The definition of pressure gives%
+\begin{equation*}
+F=PA
+\end{equation*}%
+\FRAME{dtbpF}{2.7432in}{1.8057in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.751in;height 1.8706in;depth
-0pt;original-width 2.7086in;original-height 1.8334in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 2.7432in;height 1.8057in;depth
+0in;original-width 2.7008in;original-height 1.7685in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V8Q.wmf';tempfile-properties "XPR";}}
+'SXT8H407.wmf';tempfile-properties "XPR";}}
 
-So, for the top of our parcel of fluid, the force on the top must be%
+So, for the top of our parcel of liquid, the force on the top must be%
 \begin{equation*}
 F_{pt}=P_{t}A
 \end{equation*}%
@@ -14935,11 +14889,16 @@ where $\rho $ is the density and $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-$ is the volume, and substituting%
+$ is the volume, and substituting, we get%
 \begin{eqnarray*}
 F_{pb}-F_{pt} &=&W \\
 P_{b}A-P_{t}A &=&-mg \\
-\left( P_{b}-P_{t}\right) A &=&-\rho Vg \\
+\left( P_{b}-P_{t}\right) A &=&-\rho 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+g \\
 \left( P_{b}-P_{t}\right) A &=&-\rho hAg
 \end{eqnarray*}%
 where we have used the fact that the volume must be the area of the top or
@@ -14951,12 +14910,12 @@ bottom, $A,$ multiplied by the length, $h,$ of our parcel.
 %EndExpansion
 =Ah
 \end{equation}%
-\FRAME{dtbpF}{1.5947in}{1.8706in}{0pt}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{1.3136in}{1.5039in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 1.5947in;height 1.8706in;depth
-0pt;original-width 1.5584in;original-height 1.8334in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 1.3136in;height 1.5039in;depth
+0in;original-width 1.2791in;original-height 1.4684in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V8R.wmf';tempfile-properties "XPR";}}
+'SXT8HR08.wmf';tempfile-properties "XPR";}}
 
 We can solve this for the pressure at the bottom 
 \begin{equation*}
@@ -14978,58 +14937,255 @@ so the units check.
 
 This is a profound statement! (and a new basic equation for us). The
 pressure is larger at the bottom of the pool than the top. And it is larger
-by the amount $\rho gh$ where $\rho $ is the water density, $g$ is the
+by the amount $\rho gh$ where $\rho $ is the liquid density, $g$ is the
 acceleration due to gravity, and $h$ is how far down we go to get to the
-bottom.
+bottom of our parcel.
+
+You might have thought of an objection in how we came up with this equation
+for the pressure at the bottom of a parcel of liquid. We said the sideways
+forces on the parcel were equal. But now we know the pressure increases with
+depth. Won't that affect the side forces so that the force on the bottom of
+the side is larger than the force on the top of the side? Of course the
+answer is yes. We could solve this problem by making the sides of the box
+infinitesimally small. Let's call the parcel height $\Delta y$ \FRAME{dtbpF}{%
+1.9666in}{2.322in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.9666in;height 2.322in;depth 0pt;original-width 1.9285in;original-height
+2.2822in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXR9HK04.wmf';tempfile-properties "XPR";}}With our parcel of liquid so very
+thin now the pressure on the side can't have changed much from the top to
+the bottom of the parcel. So now we know the side forces cancel. We could
+say that the change in pressure from the top to the bottom 
+\begin{eqnarray*}
+P_{b} &=&P_{t}+\rho g\Delta y \\
+\Delta P_{small} &=&\rho g\Delta y
+\end{eqnarray*}%
+And we could consider making a larger parcel to be made of many small
+parcels of thickness $\Delta y.$ \FRAME{dtbpF}{1.9692in}{2.322in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.9692in;height 2.322in;depth 0pt;original-width 1.9303in;original-height
+2.2822in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXSXWL00.wmf';tempfile-properties "XPR";}}For each of the little parcels
+the side forces cancel. We just have top and bottom forces. For the topmost
+parcel we would have 
+\begin{equation*}
+P_{b1}=P_{t}+\rho g\Delta y_{1}
+\end{equation*}%
+And note, the bottom pressure from the topmost parcel is the top pressure
+for the second parcel%
+\begin{eqnarray*}
+P_{b2} &=&P_{t2}+\rho g\Delta y_{2} \\
+&=&P_{b1}+\rho g\Delta y_{2}
+\end{eqnarray*}%
+And the bottom pressure from the second parcel is the top pressure for the
+third parcel%
+\begin{eqnarray*}
+P_{b3} &=&P_{t3}+\rho g\Delta y_{3} \\
+&=&P_{b2}+\rho g\Delta y_{3}
+\end{eqnarray*}
+
+To get to the bottom of the big parcel we would have 
+\begin{eqnarray*}
+P_{b(total)} &=&P_{t}+\sum_{i=1}^{N}\rho g\Delta y_{i} \\
+&=&P_{t}+\rho g\sum_{i=1}^{N}\Delta y_{i} \\
+&=&P_{t}+\rho gh
+\end{eqnarray*}%
+just as we thought.
+
+Of course we could take a limit to make $\Delta y\rightarrow dy$ and then we
+would have 
+\begin{eqnarray*}
+P_{b} &=&P_{t}+\int_{d}^{d+h}\rho gdy \\
+&=&P_{t}+\left. \rho gy\mathstrut \right\vert _{d}^{d+h} \\
+&=&P_{t}+\rho g\left( \left( d+h\right) -d\right) \\
+&=&P_{t}+\rho gh
+\end{eqnarray*}%
+just as we said before.
 
 Note that we used a box shaped volume, but the result is general. To see
 this, view any arbitrary volume as consisting of little boxes. As we make
-the box size small, we approximate the actual volume (seem familiar from
-calculus?). Since it works for each box that makes up the volume
+the box size small, we approximate the actual volume better and better until
+it can be exact. Since it works for each box that makes up the volume
 individually, it will work for the whole volume (it takes a minute to think
 about this).
+
+\subsection{Pressure variation in gasses}
+
+You probably noticed that in our last section we didn't let $\rho $ change.
+Another way to say that the density doesn't change is to call our liquid 
+\emph{incompressible}. Liquids are fluids, but they are difficult to
+compress. So to a good approximation their density doesn't change. But
+gasses are also fluids, and it is easy to compress a gas. We can't make the
+approximation of incompressibility for gasses.
+
+\FRAME{dtbpF}{2.4898in}{2.156in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.4898in;height 2.156in;depth
+0in;original-width 2.4491in;original-height 2.1171in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SXRH2H00.wmf';tempfile-properties "XPR";}}
+
+We don't know enough yet to know how $\rho $ changes with $y.$ But if you
+took high school physics or chemistry we can make an approximation using the
+Ideal Gas Law. If you have never heard of the Ideal Gas Law, don't despair.
+We will study it soon. But for now here is the equation 
+\begin{equation*}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=Nk_{B}T
+\end{equation*}%
+where $P$ is the pressure, $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ is the volume of the air, $n$ is a number density (how many air molecules
+per unit volume), $k_{B}=1.3806568\times 10^{-23}\frac{\unit{J}}{\unit{K}}$
+is a constant, and $T$ is the temperature. We can solve this for pressure
+
+\begin{equation*}
+P=\frac{Nk_{B}T}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}
+
+We can change the form of this a bit by realizing that the number of molecus
+is the total mass of our gas divided by the mass of one gas molecule. 
+\begin{equation*}
+N=\frac{m_{total}}{m_{molecule}}
+\end{equation*}%
+so that 
+\begin{equation*}
+P=\frac{\frac{m_{total}}{m_{molecule}}k_{B}T}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}%
+then 
+\begin{equation*}
+P=\frac{\frac{m_{total}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}k_{B}T}{m_{molecule}}=\rho \frac{k_{B}T}{m_{molecule}}
+\end{equation*}%
+and we can solve this for the density so we can see how density of the gas
+changes with pressure.
+
+\begin{equation*}
+\frac{Pm_{molecule}}{k_{B}T}=\rho
+\end{equation*}%
+Now we can use our equation for a small parcel of fluid (gas this time)
+
+\begin{equation*}
+P_{b}=P_{t}+\rho g\Delta y
+\end{equation*}%
+but this time we want to know $P_{t}$ at the top so let's solve for that. 
+\begin{equation*}
+P_{t}=P_{b}-\rho g\Delta y
+\end{equation*}%
+and write it as 
+\begin{equation*}
+\frac{\Delta P}{\Delta y}=-\rho g=-\frac{Pm_{molecule}g}{k_{B}T}
+\end{equation*}
+
+This seems pretty terrible, but we can take the limit as $\Delta
+y\rightarrow dy$%
+\begin{equation*}
+\frac{dP}{dy}=-P\left( \frac{m_{molecule}g}{k_{B}T}\right)
+\end{equation*}%
+and we note that so long as the temperature doesn't change, all the things
+in the parentheses are constant. So we could give this group of constants a
+symbol%
+\begin{equation*}
+\alpha =\frac{m_{molecule}g}{k_{B}T}
+\end{equation*}%
+Then our equation for how pressure varies with height is just 
+\begin{equation*}
+\frac{dP}{dy}=-\alpha P
+\end{equation*}%
+and this is a nice differential equation. But rather than use our
+differential equations class (that we haven't taken) to solve this let's
+rearrange it 
+\begin{equation*}
+\frac{dP}{P}=-\alpha dy
+\end{equation*}%
+and now let's integrate over the height of our parcel of air from $y=0$ to $%
+y=h.$ On the pressure side we need to integrate from $P_{b}$ to $P_{t}$%
+\begin{equation*}
+\int_{P_{b}}^{P_{t}}\frac{1}{P}dP=-\int_{0}^{h}\alpha dy
+\end{equation*}%
+we get 
+\begin{equation*}
+\left. \ln P\mathstrut \right\vert _{P_{b}}^{P_{t}}=-\alpha \left.
+y\mathstrut \right\vert _{o}^{h}
+\end{equation*}%
+\begin{equation*}
+\ln \left( P_{t}\right) -\ln \left( P_{b}\right) =-\alpha h
+\end{equation*}%
+Using one of our favorite log identities $\ln a-\ln b=\ln \frac{a}{b}$ we
+can rewrite this as 
+\begin{equation*}
+\ln \left( \frac{P_{t}}{P_{b}}\right) =-\alpha h
+\end{equation*}%
+and we can un-log this by exponentiating both sides 
+\begin{equation*}
+\frac{P_{t}}{P_{b}}=e^{-\alpha h}
+\end{equation*}%
+which gives finally 
+\begin{equation*}
+P_{t}=P_{b}e^{-ah}
+\end{equation*}%
+We could let our parcel of air be arbitrarily tall by letting the height be $%
+h=y$ above the surface $(y=0)$ and making $P_{t}=P\left( y\right) $ and
+letting the surface pressure $P_{b}=P_{surface}.$ Then 
+\begin{equation*}
+P\left( y\right) =P_{surface}e^{-ay}
+\end{equation*}%
+but this can only work for small distances above the Earth's surface because
+in reality the temperature also changes with $y.$ But in our classrooms this
+approximation is good enough (because the hvac system is keeping the whole
+lab at the same temperature).
 
 \section{Pressure Measurements}
 
 Now that we understand pressure and how it changes in fluids, we can study
-several pressure measurement devices.
+several pressure measurement devices. But there are some quirks in pressure
+measurement. Humans have measured pressure for a long time. But for most of
+our existence what we cared about was how much larger a pressure was than
+the surrounding air pressure. Think of the pressure inside a steam engine.
+The steam pressure has to be larger than atmospheric pressure to make the
+steam engine work. So humans invented pressure gages to put on things like
+steam engines that tell us how much higher than atmospheric pressure our
+particular pressure is. We call this a \emph{gauge pressure.} But now days
+we understand that most of the universe is a vacuum. And that vacuum of
+space has almost no pressure.\footnote{%
+You might have heard an old saying which says that nature abhors a vacuum.
+But since most of nature is free space, this old saying only applies to
+things on or in planets or stars. The universe seems to love vacuum.} We
+need to calculate the \emph{absolute}\textbf{\ }pressure, and if your gauge
+measured gauge pressure you need to add atmospheric pressure to your reading.%
+\begin{equation*}
+P_{abs}=P_{gague}+P_{atmospheric}
+\end{equation*}%
+But with this understanding, let's look at pressure measuring devices.
 
 \subsection{The Barometer}
 
-%TCIMACRO{%
-%\TeXButton{Bring a Barometer}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Bring a Barometer}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Bring a Barometer}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Test Tube Barometer}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Test Tube Barometer}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Test Tube Barometer}
-\end{minipage}
-}%
-%EndExpansion
 The barometer is a common pressure measuring device. It consists of \FRAME{%
-dtbpF}{1.2799in}{2.0578in}{0in}{}{}{Figure}{\special{language "Scientific
+dtbpF}{1.2799in}{2.0578in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 1.2799in;height 2.0578in;depth 0in;original-width
+"T";width 1.2799in;height 2.0578in;depth 0pt;original-width
 1.2755in;original-height 2.0684in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'SUS73V8U.wmf';tempfile-properties "XPR";}}
 
@@ -15047,15 +15203,24 @@ because the weight of the fluid pulls the mass of fluid downward. If the
 fluid is mercury, it is massive enough to leave a vacuum behind.
 
 The pressure at point $A$ and point $B$ must be the same (or fluid would
-flow until $P_{A}=P_{B}$).
+flow until $P_{A}=P_{B}$). This might be a little hard to see. But remember
+the air has a pressure, and just because it is a gas it does not mean that
+pressure is lower than the liquid pressure (think of the gas pressure in a
+hurricane that blows over trees and buildings).
 
 It would be useful to find out how high up the mercury (or other fluid) will
-stay 
+stay. And we have a way to do this! We know 
 \begin{equation*}
 P_{b}=P_{t}+\rho gh
 \end{equation*}%
 At the top we have zero pressure, so $P_{t}=0.$ Note, this is not
-atmospheric pressure, \textbf{it is vacuum}. Then for this special case 
+atmospheric pressure, \textbf{it is vacuum}. How did we get vacuum at the
+top? We got it by filling the tube with mercury and then turning the tub
+upside down. The mercury is heavy. So heavy that it falls down the tube a
+bit, leaving nothing behind. So there is no air at the top of the tube, just
+open tube because the heavy mercury moved downward. But the mercury can only
+fall down so far. The air pressure on the mercury in the dish pushes,
+keeping the mercury from all falling out. Then for this special case 
 \begin{equation}
 P_{b}=0+\rho gh
 \end{equation}
@@ -15065,12 +15230,12 @@ And we can solve for the height of the fluid%
 h=\frac{P_{b}}{\rho g}
 \end{equation}%
 Let's consider what $P_{b}$ must be. The air outside the barometer pushes
-down on the fluid. When we first construct a barometer, we fill the tall
-tube with fluid and then turn it upside down in the dish. The fluid will
-fall until the force due to air pressure matches the weight of the column of
-fluid. Then the pressure at $B$ must be atmospheric pressure. Since the
-pressure at point $A$ equals the pressure at point $B,$ we can use this as a
-convenient $P_{b}.$ So 
+down on the liquid mercury. Remember, when we first construct a barometer,
+we fill the tall tube with fluid and then turn it upside down in the dish.
+The fluid will fall until the force due to air pressure matches the weight
+of the column of fluid. Then the pressure at $B$ must be atmospheric
+pressure. Since the pressure at point $A$ equals the pressure at point $B$
+(think $P_{b}=P_{t}+\rho gh$), we can use this as a convenient $P_{b}.$ So 
 \begin{equation*}
 P_{b}=P_{atm}
 \end{equation*}%
@@ -15080,40 +15245,10 @@ h=\frac{P_{atm}}{\rho g}
 \end{equation}%
 Thus as the atmospheric air pressure changes, the height of the mercury
 changes. We often hear of atmospheric pressure given in $\unit{mm}$ of $Hg$.
-This is why.%
-%TCIMACRO{%
-%\TeXButton{Question 123.5.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.5.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.5.1}
-\end{minipage}
-}%
-%EndExpansion
+This is why.
 
 \subsection{Manometer}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.5.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.5.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.5.2}
-\end{minipage}
-}%
-%EndExpansion
 The manometer finds an unknown pressure \FRAME{dtbpF}{1.5629in}{1.962in}{0pt%
 }{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
@@ -15125,12 +15260,27 @@ where the tube is open at the top. The pressure to be tested is applied to
 the other side, in our case, the left side. The pressure at point $A$ must
 equal the pressure at point $B$. Why? (think of their heights and $\rho gh$%
 ). The pressure at point $A$ is the pressure to be measured. Again 
-\begin{equation}
-P_{A}=P_{t}+\rho gh
-\end{equation}%
-where we take $P_{A}$ to be the test pressure, and solve for the height $h.$
+\begin{equation*}
+P_{b}=P_{t}+\rho gh
+\end{equation*}%
+where we take $P_{A}$ to be the test pressure and for this design the tube
+above $B$ is open to the atmosphere so the top pressure will be atmospheric
+pressure. 
+\begin{equation*}
+P_{A}=P_{B}=P_{atm}+\rho gh
+\end{equation*}%
+We can measure the height $h,$ and knowing $P_{atm}$ we can calculate $%
+P_{A}. $
+
+These are just two of many types of pressure measuring devices. In the next
+lecture we will use what we know of pressure to design some useful devices
+like hydraulic jacks and things that float (like boats).
 
 \chapter{26 Pascal and Archimedes 1.14.3, 1.14.4}
+
+So now we know how pressure changes with depth, and we know that liquids are
+generally hard to compress, so we can approximate them as incompressible,
+let's build some things with our new knowledge.
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Pascal, Archimedes}}{\chaptermark{Pascal, Archimedes}}}%
@@ -15147,7 +15297,7 @@ where we take $P_{A}$ to be the test pressure, and solve for the height $h.$
 \begin{enumerate}
 \item Pascal's Principle
 
-\item Hyddrolic Presses
+\item Hydraulic Presses
 
 \item Archimedes Principle
 
@@ -15156,6 +15306,25 @@ where we take $P_{A}$ to be the test pressure, and solve for the height $h.$
 
 \section{Hydraulic Press}
 
+We use fluids and their incompressibility to convert pressure into forces to
+smash or lift things. A hydraulic press can smash carbon. into diamonds 
+\FRAME{dtbpF}{3.2932in}{2.6429in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.2932in;height 2.6429in;depth
+0pt;original-width 3.2482in;original-height 2.6013in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SXRLBU01.wmf';tempfile-properties "XPR";}}A hydraulic jack can lift cars. 
+\FRAME{dtbpF}{3.3927in}{1.9934in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.3927in;height 1.9934in;depth
+0pt;original-width 3.3468in;original-height 1.9545in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SXRLYD02.wmf';tempfile-properties "XPR";}}
+
+Let's take on the hydraulic jack. In the last figure, the jack is made from
+two cylinders filled with fluid, usually an oil. The jack in the picture is
+a little harder to think about. Let's draw a simplified jack:
+
 \FRAME{dtbpF}{2.3981in}{2.0306in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 2.3981in;height 2.0306in;depth
@@ -15163,131 +15332,37 @@ where we take $P_{A}$ to be the test pressure, and solve for the height $h.$
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE6E.wmf';tempfile-properties "XPR";}}
 
-Let's start were we left off last lecture, with a hydraulic jack. We usually
-have a constant force acting on the jack area.
+We usually have a constant force acting on the jack area. And that force
+will be related to the pressure in the liquid.
 
 \begin{equation}
 F=PA
 \end{equation}%
-To begin with we usually have atmospheric pressure pushing on the jack
-piston, 
-\begin{equation}
-F_{atm}=P_{atm}A_{in}
-\end{equation}%
-but we wish to add a force $F_{in}$ to this. So on the input side, we have,
-using Newton's second law 
-\begin{equation}
-\Sigma F=F_{atm}+F_{in}=P_{atm}A_{in}+\Delta P_{in}A_{in}
-\end{equation}%
-where 
-\begin{equation}
-F_{in}=\Delta P_{in}A_{in}
-\end{equation}%
-is due to our push on the jack input. We will ignore the atmospheric
-pressure for now, since we only care about a change in pressure for this
-problem. By changing the pressure on the input side we have changed the
-pressure by $\Delta P_{in}.$ On the output side (the lifting side) we still
-have%
-\begin{equation}
-F=PA
-\end{equation}%
-but we expect our $\Delta P_{in}$ to be transmitted throughout the entire
-fluid. Then we can just call it $\Delta P$ (no $in$ ). So the output will
-have an amount of force added to it. On this side%
-\begin{equation}
-F_{out}=\Delta P_{out}A_{out}=\Delta PA_{out}
-\end{equation}%
-since $\Delta P$ in both equations is the same when the two sides are at the
-same elevation, then%
-\begin{equation}
-\frac{F_{out}}{A_{out}}=\frac{F_{in}}{A_{in}}
-\end{equation}
-
-So how does your car's hydraulic jack work?%
-\begin{equation}
-F_{out}=F_{in}\frac{A_{out}}{A_{in}}
-\end{equation}%
-If $A_{out}>A_{in}$ a much smaller $F_{in}$ can produce a large $F_{out}$
-(you already knew that, didn't you!).
-
-It is important to note that we have assumed our jack fluid is not
-compressible. So the volume of fluid leaving the cylinder at the input side
-must be the same as the volume of fluid entering the output side. Since $%
-A_{out}>A_{in,}$ it is clear that the output piston will travel a much
-smaller distance than the input piston. This is why you have to pump quite a
-lot on the input side of your jack to move a car a relatively small distance.
-
-\section{Pascal's Law}
-
-Let's step back and look at our new equation%
-\begin{equation*}
-P_{b}=P_{t}+\rho gh
-\end{equation*}%
-This gives the pressure at some depth, knowing the pressure at the top. On
-what does $P_{b}$ depend? We can see that it only depends on $P_{t},$ $\rho
-, $ $g,$ and $h.$ Suppose I\ take a complex system like a hydraulic jack
-
-\FRAME{dtbpF}{2.258in}{1.3085in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.258in;height 1.3085in;depth
-0pt;original-width 2.2182in;original-height 1.2739in;cropleft "0";croptop
+Let's look at just the left cylinder, the input of our jack. And further
+suppose that instead of a sensible liquid like oil, we fill the jack with a
+gas that is compressible \FRAME{dtbpF}{3.659in}{2.5763in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.659in;height 2.5763in;depth
+0pt;original-width 3.2794in;original-height 2.3013in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE6F.wmf';tempfile-properties "XPR";}}Suppose the pressure on the left
-hand side at the top is $P_{t\left( left\right) }.$ Then the pressure at the
-left hand side bottom would be 
+'SXT5DA02.wmf';tempfile-properties "XPR";}}As we press down on the piston,
+the force is spread over the piston area. That causes an increase in
+pressure, $\Delta P.$ A early researcher named Pascal reasoned that at first
+the gas molecules that are near the piston would go flying because of the
+force of the piston hitting them. But they would hit other molecules (and
+the walls) and after a time all the gas molecules would be effected. When
+the system comes to equilibrium, we find that not only has the top pressure
+changed by $\Delta P$ so that (using the figure) 
 \begin{equation*}
-P_{b(left)}=P_{t(left)}+\rho gh_{left}
+P_{t2}=P_{t1}+\Delta P
 \end{equation*}%
-What is the pressure along the bottom of the jack system? Well we don't know
-a value, but we know it is the same pressure all along the bottom. It can
-only depend on $h$ (since $P_{t},$ $\rho ,$ $g$ are the same and $h$ is the
-same simply because we are looking at a location along the bottom). So%
+but also the bottom pressure has changed. 
 \begin{equation*}
-P_{b(left)}=P_{b(right)}
+P_{b2}=P_{b1}+\Delta P
 \end{equation*}%
-then the pressure on the top right must be 
-\begin{equation*}
-P_{t\left( right\right) }=P_{b\left( right\right) }-\rho gh_{right}
-\end{equation*}
-
-We could write this as 
-\begin{eqnarray*}
-P_{t\left( right\right) } &=&P_{b(left)}-\rho gh_{right} \\
-&=&P_{t(left)}+\rho gh_{left}-\rho gh_{right}
-\end{eqnarray*}
-
-Now suppose I\ increase the pressure at the top at the left by pushing down
-(increasing the force) on the piston on the left side. Then%
-\begin{equation}
-P_{t\left( left\right) }\rightarrow P_{t\left( left\right) }+\Delta P
-\end{equation}%
-The pressure at the bottom of the left side will change too%
-\begin{eqnarray*}
-P_{b\left( left\right) } &=&\left( P_{t\left( left\right) }+\Delta P\right)
-+\rho gh \\
-&=&\Delta P+P_{t\left( left\right) }+\rho gh
-\end{eqnarray*}%
-And since the pressure at the bottom left changes, and the pressure at the
-bottom right must be the same as the pressure at the bottom left, the
-pressure must change all along the whole bottom. 
-\begin{eqnarray*}
-P_{b\left( right\right) } &=&P_{b\left( left\right) } \\
-&=&P_{t\left( left\right) }+\Delta P+\rho gh_{left}
-\end{eqnarray*}%
-and from what we did before we can see that the pressure at the top right
-must be 
-\begin{eqnarray*}
-P_{t\left( right\right) } &=&P_{b\left( right\right) }-\rho gh_{right} \\
-&=&(P_{t\left( left\right) }+\Delta P+\rho gh_{left})-\rho gh_{right} \\
-&=&(P_{t\left( left\right) }+\Delta P+\rho gh_{left})-\rho gh_{right} \\
-&=&(P_{t\left( left\right) }+\rho gh_{left}-\rho gh_{right})+\Delta P
-\end{eqnarray*}%
-which is the pressure we had on the right side before the change plus the
-exact same change in pressure that we applied on the left side! We can see
-that we have changed the pressure at the top right as well, and by the same
-amount. This is an amazingly simple result! If I\ change the pressure at one
-point in the fluid, I\ automatically change the pressure in the rest of the
-fluid. This result is so useful it has a name.
+This is called Pascal's principle. We can restate it as the change in
+pressure in a fluid is transferred to the entire fluid and the magnitude of
+the change is the same everywhere.
 
 \begin{center}
 \rule{300pt}{1pt}
@@ -15299,82 +15374,182 @@ container.
 \rule{300pt}{1pt}
 \end{center}
 
-There is an assumption that we have made in stating Pascal's law. We have
-assumed that the fluid is incompressible. Pascal's law won't work for air,
-because we can compress air. But it will work for oil or water because these
-fluids are (mostly) incompressible.
-
-So now there is a pressure change at piston $2.$ Since we changed the
-pressure $P_{1}$ from $P_{t}$ to $P_{t}+\Delta P,$ and we know that this
-pressure change will be transmitted to all parts of the fluid, so we can
-tell that at piston $2$ we will change the pressure from it's original
-pressure, $P_{2i}$ to $P_{2i}+\Delta P.$
-
-The jack works because the areas of the two pistons are different. $A_{1}$
-is small, and $A_{2}$ is large. Then an applied force 
+Now let's consider the jack again. In the jack we have a liquid, and liquids
+are not easily compressible. When our jack is just sitting in our garage, we
+have just atmospheric pressure pushing on the jack input piston, 
+\begin{equation}
+F_{atm}=P_{atm}A_{in}
+\end{equation}%
+so Newton's second law for the input piston is \FRAME{dtbpF}{0.8112in}{%
+1.3655in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+0.8112in;height 1.3655in;depth 0in;original-width 0.7783in;original-height
+1.3309in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXYHEL00.wmf';tempfile-properties "XPR";}} 
+\begin{equation}
+\Sigma F_{in}=F_{fluid}-F_{atm}-W_{in}=F_{fluid}-P_{atm}A_{in}-W_{in}=0
+\end{equation}%
+which tells us that 
 \begin{equation*}
-F_{1}=\Delta PA_{1}
+F_{fluid}=P_{atm}A_{in}+W_{in}
 \end{equation*}%
-will cause a force 
+But we wish to add a force $F_{in}$ to this. So on the input side, \FRAME{%
+dtbpF}{1.0525in}{1.8161in}{0in}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 1.0525in;height 1.8161in;depth 0in;original-width
+1.0179in;original-height 1.7789in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SXYHGF01.wmf';tempfile-properties "XPR";}}%
+we have, using Newton's second law 
+\begin{equation}
+\Sigma
+F_{in}=F_{fluid}-F_{atm}-W_{in}-F_{in}=F_{fluid}-P_{atm}A_{in}-W_{in}-F_{in}
+\end{equation}%
+And once again our $F_{in}$ will cause a change in pressure in the fluid 
+\begin{equation}
+F_{in}=\Delta PA_{in}
+\end{equation}%
+But the first three forces in our Newton's second law haven't changed, and
+they sum to zero, so we have%
 \begin{equation*}
-F_{2}=\Delta PA_{2}
+\Sigma F_{in}=0-\Delta PA_{in}
 \end{equation*}%
-on the second piston Because $A_{2}>A_{1}$ then 
+But this time we can't compress the fluid in the cylendar because it is a
+liquid. But we expect our $\Delta P$ to be transmitted throughout the entire
+fluid. By changing the pressure on the input side we have changed the
+pressure by $\Delta P$ on the output side (the lifting side). The only way
+this can happen is for the output piston to move! So the output will have an
+amount of force added to it. On this output side, remember before we pushed
+we had atmospheric pressure pushing down on the output piston. 
+\begin{equation}
+\Sigma F_{out}=F_{fluid}-F_{atm}-W_{out}+F_{out}
+\end{equation}%
+Now think again about the state of our jack before we pushed on the input
+piston. The output piston wasn't accelerating. So before 
+\begin{equation}
+\Sigma F_{out}=F_{fluid}-F_{atm}-W_{out}=0
+\end{equation}%
+and these forces haven't changed, \FRAME{dtbpF}{3.0588in}{1.8127in}{0in}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.0588in;height 1.8127in;depth 0in;original-width 3.0147in;original-height
+1.7755in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXYHLD02.wmf';tempfile-properties "XPR";}}but we do have a new force $%
+F_{out}=\Delta PA_{out}$ that we have added to our net force on the output
+piston.%
+\begin{equation}
+\Sigma F_{out}=0+\Delta PA_{out}
+\end{equation}%
+Let's solve for $\Delta P$ in our two net force equations%
 \begin{equation*}
-F_{2}>F_{1}
+\frac{\Sigma F_{in}}{A_{in}}=\Delta P=\frac{F_{in}}{A_{in}}
+\end{equation*}%
+and 
+\begin{equation}
+\frac{\Sigma F_{out}}{A_{out}}=\Delta P=\frac{F_{out}}{A_{out}}
+\end{equation}%
+Since $\Delta P$ in both equations is the same when the two sides are at the
+same elevation, then%
+\begin{equation}
+\frac{F_{out}}{A_{out}}=\frac{F_{in}}{A_{in}}
+\end{equation}
+
+So how does your hydraulic jack work?%
+\begin{equation}
+F_{out}=F_{in}\frac{A_{out}}{A_{in}}
+\end{equation}%
+If $A_{out}>A_{in}$ a much smaller $F_{in}$ can produce a large $F_{out}$
+(you already knew that, didn't you!).
+
+It is important to note that we have assumed our jack fluid is not
+compressible. So the volume of fluid leaving the cylinder at the input side
+must be the same as the volume of fluid entering the output side. We could
+say 
+\begin{equation*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{out}=%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{in}
+\end{equation*}%
+but 
+\begin{eqnarray*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{out} &=&A_{out}\Delta y_{out} \\
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{in} &=&A_{in}\Delta y_{in}
+\end{eqnarray*}%
+then 
+\begin{equation*}
+A_{out}\Delta y_{out}=A_{in}\Delta y_{in}
 \end{equation*}
+Since $A_{out}>A_{in,}$ it is clear that the output piston will travel a
+much smaller distance than the input piston. This is why you have to pump
+quite a lot on the input side of your jack to move a car a relatively small
+distance.
+
+Note that our equation 
+\begin{equation*}
+P_{b}=P_{t}+\rho gh
+\end{equation*}%
+still applies! The pressure is not the same at the top and bottom of the
+cylinders. Pascal's principle tells us that the change in pressure $\Delta P$
+was the same in the entire liquid, not that the pressure, itself, is the
+same. This is an important distinction! We will need to be careful with
+Pascal's principle.
 
 In many cases we can sum up pressure over an area because the pressure will
 be the same at every point within the area. Our hydraulic jack is one of
-these cases. In our next lecture we will use Pascal's principle and our new
-pressure as a function of depth equation in some important problems.
+these cases.
+
+But let's turn our attention now to pressure variation with depth again and
+look at things that float.
 
 \section{Buoyant Forces, Archimedes' Principle}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.5.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.5.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.5.3}
-\end{minipage}
-}%
-%EndExpansion
-Let's investigate the net force on our block of water that we have used
-before. We found the net force must be zero, or it would be accelerating. 
+Remember our parcel of liquid from last lecture. \FRAME{dtbpF}{2.6135in}{%
+1.5653in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.6135in;height 1.5653in;depth 0pt;original-width 2.5719in;original-height
+1.529in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXT7XY04.wmf';tempfile-properties "XPR";}}Let's investigate the net force
+on our parcel and let's say our liquid is water this time. The net force
+must be zero, or it would be accelerating. 
 \begin{eqnarray*}
-\Sigma F_{x} &=&ma_{x}=0=P_{m}A_{side}-P_{m}A_{side} \\
-\Sigma F_{y} &=&ma_{y}=0=-P_{atm}A_{top}+P_{bottom}A_{bottom}-W
+\Sigma F_{x} &=&ma_{x}=0=P_{m}A_{m}-P_{m}A_{m} \\
+\Sigma F_{y} &=&ma_{y}=0=-P_{atm}A+P_{bottom}A-W
 \end{eqnarray*}%
 But suppose I\ ignore the weight of the parcel of water, $W=mg$. Then there
-would be a net force due to all other forces in the $\mathbf{\hat{\jmath}}$
-direction. That force must be matching the downward force due to gravity.%
+would be a net force due to all other forces in the $\widehat{\mathbf{y}}$
+direction. But our parcel isn't accelerating. That force must be matching
+the downward force due to gravity.%
 \begin{equation*}
-W=P_{bottom}A_{bottom}-P_{atm}A_{top}
+W=P_{b}A-P_{t}A
 \end{equation*}%
 We could give this net force due to all the water pressure forces a symbol,
 say \textquotedblleft $B$.\textquotedblright 
 \begin{equation*}
-W=P_{bottom}A_{bottom}-P_{atm}A_{top}=B
+B=P_{b}A-P_{t}A
 \end{equation*}%
-\FRAME{dtbpF}{2.1698in}{1.4157in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.1698in;height 1.4157in;depth
-0pt;original-width 4.4201in;original-height 2.8746in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73V8W.wmf';tempfile-properties "XPR";}}Then $B$ would be equal to the
-weight of the parcel of water!
+Then $B$ would be equal to the weight of the parcel of water!%
+\begin{equation*}
+B=W
+\end{equation*}
 
-Now take a beach ball sized parcel (piece) of water\FRAME{dtbpF}{2.6844in}{%
-2.0306in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+Now take a beach ball sized parcel of water\FRAME{dtbpF}{2.6844in}{2.0306in}{%
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.6844in;height 2.0306in;depth 0in;original-width 2.6411in;original-height
+2.6844in;height 2.0306in;depth 0pt;original-width 2.6411in;original-height
 1.9917in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V8X.wmf';tempfile-properties "XPR";}}The parcel is in equilibrium just
 as before. We know there is a force on the parcel of water due to gravity.
@@ -15385,9 +15560,9 @@ upward to balance the downward force due to gravity. Again this is what we
 called \textquotedblleft $B$.\textquotedblright\ And again $B$ is equal to
 the weight of the parcel of water.
 
-The idea of a net force due to pressure due to a fluid is so useful we give
-it its own name We will call the net force due to pressure from the fluid
-the \emph{Buoyant force}.
+The idea of a net force just due to pressure due to a fluid is so useful we
+give it its own name We will call the net force due to just pressure from
+the fluid the \emph{Buoyant force}.
 
 Note that this is \textbf{not} the net force, it is just the sum of the
 forces due to the water pressure. It does not include gravity or any tension
@@ -15409,8 +15584,8 @@ case
 B=W_{\text{fluid parcel}}\qquad \text{Floating}
 \end{equation}%
 for this situation that we call floating (these are magnitudes, are the
-directions the same?). The term on the right is the weight of the water or
-fluid.
+directions the same?). The term on the right is the weight of the parcel of
+water or fluid.
 
 Suppose we replace this amount of water with the beach ball. The weight of
 the beach ball is different than the weight of the water parcel. But will
@@ -15606,26 +15781,10 @@ moves.
 
 \subsection{Partially submerged object}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.5.5}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.5.5}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.5.5}
-\end{minipage}
-}%
-%EndExpansion
-
 Now let's consider a partially submerged object\FRAME{dtbpF}{1.9545in}{%
-1.8204in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+1.8204in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-1.9545in;height 1.8204in;depth 0in;original-width 1.9164in;original-height
+1.9545in;height 1.8204in;depth 0pt;original-width 1.9164in;original-height
 1.7832in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V8Z.wmf';tempfile-properties "XPR";}}
 
@@ -15712,21 +15871,6 @@ The fraction of the volume of a floating object that is below the fluid
 surface is equal to the ratio of the density of the object to that of the
 fluid.
 
-%TCIMACRO{%
-%\TeXButton{Question 123.5.5}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.5.5}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.5.5}
-\end{minipage}
-}%
-%EndExpansion
 In the case of an iceberg, not all of the ice is visible above the surface.
 The density of ice is about $920\frac{\unit{kg}}{\unit{m}^{3}}$ and that of
 sea water is about $1000\frac{\unit{kg}}{\unit{m}^{3}}.$ So for ice%
@@ -15768,6 +15912,13 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 3.5692in;original-height 2.4099in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'SUS73V90.wmf';tempfile-properties "XPR";}}
 
+We have gained some good insight using pressure. But think, pressure is a
+force spread over an area. And we know forces from Principles of Physics I
+(PH121). But we didn't just use forces in Principles of Physics I. We also
+found we could use energy to solve motion problems. In our next lecture,
+let's try to bring the powerful technique of conservation of energy into our
+study of fluid flow.
+
 \chapter{27 Conservation of Energy for Fluid Flow 1.14.5, 1.14.6}
 
 %TCIMACRO{%
@@ -15778,8 +15929,9 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 
 So far, we have only dealt with fluids in equilibrium. The topic of fluid
 dynamics is a complicated mathematical field that requires differential
-equations to do with any exactness. But with some simplifying assumptions,
-we can get a feel for how fluids flow.
+equations to do with any exactness. There are whole upper division classes
+that study this called \emph{Fluid Dynamics}\textbf{. }But with some
+simplifying assumptions, we can get a feel for how fluids flow.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -15804,52 +15956,6 @@ TRUE;display "USEDEF";valid_file "T";width 2.7086in;height 3.5803in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V91.wmf';tempfile-properties "XPR";}}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.6.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.1}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.6.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.2}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.6.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.3}
-\end{minipage}
-}%
-%EndExpansion
-
 \begin{enumerate}
 \item Laminar: Steady flow, if each particle of the fluid follows a smooth
 path, such that the paths of the different particles never cross each other.
@@ -15865,42 +15971,43 @@ more viscus than water)
 steady flow
 \end{enumerate}
 
-Sadly, we will limit our study to laminar, nonviscus, irrotational,
+In the figure above we can see streamlines going around airfoils. The reason
+we can see them is that small particles are being deposited by evenly spaced
+sources in an air tunnel. This makes is so we can see the streamlines! Here
+is the same type of thing for a soccor (futbol) being tested by NASA. \FRAME{%
+dtbpFU}{3.1419in}{3.1462in}{0pt}{\Qcb{{\protect\small NASA Ames measuring
+turbulence from a soccor ball. There is a cool video at this URL!
+https://www.nasa.gov/centers-and-facilities/ames/nasa-turns-world-cup-into-lesson-in-aerodynamics/%
+}}}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.1419in;height 3.1462in;depth 0pt;original-width 3.7048in;original-height
+3.7101in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SXT9N809.wmf';tempfile-properties "XPR";}}
+
+Sadly, we will limit our study to laminar, non-viscus, irrotational,
 incompressible fluids. This is a little bit like saying we will only study
 frictionless surfaces in PH121! But to go beyond non-viscus laminar flow we
 need the math of partial differential equations, which is not a prereq for
 this class. So we will have to content ourselves with this restriction. For
-those of you who are interested (or are ME\ majors) you can take our junior
-level fluid dynamic course taught by the Mechanical Engineering Department.
+those of you who are interested in learning more (or are ME\ majors) you can
+take our junior level fluid dynamic course taught by the Mechanical
+Engineering Department.
 
 \section{Equation of continuity}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.6.4}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.4}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.4}
-\end{minipage}
-}%
-%EndExpansion
+Let's start our discussion of fluid flow with a pipe that changes diameter
+along it's length.
 
-\FRAME{dtbpF}{2.1638in}{2.6083in}{0in}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.1638in;height 2.6083in;depth
-0in;original-width 2.1248in;original-height 2.5668in;cropleft "0";croptop
+\FRAME{dtbpF}{2.1638in}{2.6083in}{0pt}{}{\Qlb{Continuity}}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.1638in;height 2.6083in;depth
+0pt;original-width 2.1248in;original-height 2.5668in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V92.wmf';tempfile-properties "XPR";}}
 
-Let's consider a pipe that changes in size and position. We allow an ideal
-(non-compressable) fluid to flow through the pipe in laminar flow. The
-segment of fluid is the shaded part in the top part of figure \ref%
+And just for good measure we can have the pipe go up in position. We allow
+an ideal (non-compressable) fluid to flow through the pipe in laminar flow.
+The segment of fluid is the shaded part in the top part of figure \ref%
 {Continuity}. In a time $\Delta t$ the fluid at the left hand side moves a
 distance 
 \begin{equation*}
@@ -15911,12 +16018,22 @@ If $A_{1}$ is the area of the pipe at the left hand side (LHS) then the mass
 contained in the shaded region (bottom left part of figure \ref{Continuity})
 is%
 \begin{equation*}
-m_{1}=\rho A_{1}\Delta x_{1}=\rho A_{1}v_{1}\Delta t
+m_{1}=\rho 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{1}=\rho A_{1}\Delta x_{1}=\rho A_{1}v_{1}\Delta t
 \end{equation*}%
 where $\rho $ is the density of the fluid. Likewise, for the RHS region in
 the bottom of figure \ref{Continuity} 
 \begin{equation*}
-m_{2}=\rho A_{2}\Delta x_{2}=\rho A_{2}v_{2}\Delta t
+m_{2}=\rho 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{2}=\rho A_{2}\Delta x_{2}=\rho A_{2}v_{2}\Delta t
 \end{equation*}%
 Unless we create, destroy, or pool mass, the mass that crosses $A_{2}$ must
 equal the mass that crosses $A_{1}$%
@@ -15933,13 +16050,19 @@ assumed ideal fluids).
 
 Since we assumed that no mass was created, destroyed, or pooled as the fluid
 flowed, this is what we might call \textquotedblleft conservation of
-mass.\textquotedblright\ And as usual, when something is conserved in a
-problem, we can use it to solve problems. With this equation, knowing the
-diameter of a pipe and how it changes tells us about the speed of the fluid
-in the pipe and how it changes. Of course, there could be situations where
-mass is not conserved (say, a leaky pipe). So conservation of mass is an
-assumption that we have to check. But for now let's assume that the equation
-of continuity holds for our problems.
+mass.\textquotedblright\ And as usual, when something is conserved, we can
+use it to solve problems. With this equation, knowing the diameter of a pipe
+and how it changes tells us about the speed of the fluid in the pipe and how
+it changes. Of course, there could be situations where mass is not conserved
+(say, a leaky pipe). So conservation of mass is an assumption that we have
+to check. But for now let's assume that the equation of continuity holds for
+our problems.
+
+The quantity $Av$ has a name. We call it the flow rate and for some reason I
+don't know we give it the symbol $\mathbb{Q}$%
+\begin{equation*}
+\mathbb{Q}=Av
+\end{equation*}
 
 \section{Bernoulli's Equation}
 
@@ -15970,20 +16093,20 @@ TRUE;display "USEDEF";valid_file "T";width 2.1923in;height 1.1857in;depth
 
 \subsection{Work done in $\Delta t$}
 
-Let's review a little of what we learned in PH121. Suppose we have two guys,
-Normal Guy and Super Guy.
+Let's review a little of what we learned in PH121. Suppose we have two
+characters, Normal Person and Super Person.
 
-\FRAME{dtbpF}{1.6986in}{1.3216in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{1.7339in}{1.2721in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 1.6986in;height 1.3216in;depth
-0in;original-width 1.7021in;original-height 1.3181in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 1.7339in;height 1.2721in;depth
+0pt;original-width 2.1949in;original-height 1.6034in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V94.wmf';tempfile-properties "XPR";}}And suppose they want to get to
-the top of a tall building. Normal guy has to take the stairs, but Super guy
-can jump right up to the top. \FRAME{dtbpF}{2.3549in}{2.5944in}{0in}{}{}{%
-Figure}{\special{language "Scientific Word";type
+'SXTBDC0A.wmf';tempfile-properties "XPR";}}And suppose they want to get to
+the top of a tall building. Normal Person has to take the stairs, but Super
+Person can jump right up to the top. \FRAME{dtbpF}{2.3549in}{2.5944in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.3549in;height 2.5944in;depth 0in;original-width 2.3709in;original-height
+2.3549in;height 2.5944in;depth 0pt;original-width 2.3709in;original-height
 2.6157in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V95.wmf';tempfile-properties "XPR";}}Who has done more work?
 
@@ -15993,19 +16116,19 @@ that
 W=-\Delta U
 \end{equation*}%
 so the amount of work is the same for both cases! Now let's return to our
-fluid flow. \FRAME{dtbpF}{3.6729in}{1.6284in}{0pt}{}{}{Figure}{\special%
+fluid flow. \FRAME{dtbpF}{4.1105in}{1.5679in}{0pt}{}{}{Figure}{\special%
 {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 3.6729in;height 1.6284in;depth
-0pt;original-width 3.6253in;original-height 1.5921in;cropleft "0";croptop
+TRUE;display "USEDEF";valid_file "T";width 4.1105in;height 1.5679in;depth
+0pt;original-width 3.6322in;original-height 1.369in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V96.wmf';tempfile-properties "XPR";}}
+'SXTBQF0B.wmf';tempfile-properties "XPR";}}
 
 On the left hand side (LHS) of our pipe we have a force due to pressure from
 the fluid in the rest of the LHS\ of the pipe. That fluid has molecules that
 will bang in to our small marked parcel of fluid. The force from the LHS
 fluid in the rest of the pipe will be 
 \begin{equation}
-F_{1}=P_{1}A_{1}\widehat{\mathbf{i}}
+F_{1}=P_{1}A_{1}\widehat{\mathbf{x}}
 \end{equation}
 
 On the right hand side (RHS) there is also more fluid in the rest of the RHS
@@ -16013,25 +16136,25 @@ of the pipe. Our fluid will bang into that fluid, and since the fluid is
 non-compressible, the rest of the fluid in the RHS\ will push back. The
 force will be%
 \begin{equation}
-F_{2}=-P_{2}A_{2}\widehat{\mathbf{i}}
+F_{2}=-P_{2}A_{2}\widehat{\mathbf{x}}
 \end{equation}
 
 From PH121 we remember that works is 
 \begin{equation*}
-w=\int \mathbf{F}\cdot \mathbf{dx}
+w=\int \overrightarrow{\mathbf{F}}\cdot \overrightarrow{\mathbf{dx}}
 \end{equation*}%
 and since our force is not changing this would be simply%
 \begin{equation}
-w=\mathbf{F}\cdot \mathbf{\Delta x}
+w=\overrightarrow{\mathbf{F}}\cdot \overrightarrow{\mathbf{\Delta x}}
 \end{equation}
 
 We need to find the work done in moving our particular parcel of fluid from
-the left hand side to the right hand side. As the parcel moves in the $\hat{%
-\imath}$ direction the amount of work will slowly change (like Normal Guy
-going up the stairs) but really the amount of work only depends on the
-beginning and ending conditions. So we could ignore all the details of
-moving the parcel and envision the parcel jumping from the left up to the
-right side of the pipe (like in the Super Guy case).
+the left hand side to the right hand side. As the parcel moves in the $%
+\widehat{\mathbf{x}}$ direction the amount of work will slowly change (like
+Normal Person going up the stairs) but really the amount of work only
+depends on the beginning and ending conditions. So we could ignore all the
+details of moving the parcel and envision the parcel jumping from the left
+up to the right side of the pipe (like in the Super Person case).
 
 Then for the LHS 
 \begin{equation*}
@@ -16059,36 +16182,6 @@ Note that this volume is NOT the volume of the entire segment. It is just
 the part that is $\Delta x_{1}$ long. Then from the same arguments that lead
 to the equation of continuity, we see that the volume of the marked part of
 the fluid must not change as it flows%
-%TCIMACRO{%
-%\TeXButton{Question 123.6.5}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.5}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.5}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.6.6}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.6}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.6}
-\end{minipage}
-}%
-%EndExpansion
 \begin{equation*}
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -16144,9 +16237,9 @@ for the right hand side $\Delta K+\Delta U$
 
 \subsection{Kinetic Energy}
 
-\FRAME{dtbpF}{2.4664in}{1.8049in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.4664in;height 1.8049in;depth
+\FRAME{dtbpF}{2.4664in}{1.8049in}{0pt}{}{\Qlb{fluids shaded region}}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.4664in;height 1.8049in;depth
 0pt;original-width 2.4249in;original-height 1.7677in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V97.wmf';tempfile-properties "XPR";}}If we think about the energy of
@@ -16154,8 +16247,8 @@ the segment, we will realize that after time $\Delta t,$ it is as though
 most of the fluid did not move. We can't tell one part of the fluid from
 another. The shaded region in figure \ref{fluids shaded region} is occupied
 before and after $\Delta t.$ We can treat this problem as if we moved fluid
-from region 1 to region 2 (Super Guy vs. Normal Guy again!) and left the
-rest of the segment alone!
+from region 1 to region 2 (Super Person vs. Normal Person again!) and left
+the rest of the segment alone!
 
 So, ignoring the rest of the fluid, we can see that if the velocity of our
 parcel of water changed, then the kinetic energy of the parcel must change
@@ -16164,7 +16257,7 @@ as well
 \begin{equation}
 \Delta K=\frac{1}{2}mv_{2}^{2}-\frac{1}{2}mv_{1}^{2}
 \end{equation}%
-(the mass is the same as we found before).
+(the mass is the same, as we found before).
 
 \subsection{Potential Energy}
 
@@ -16176,9 +16269,9 @@ as well
 'SUS73V98.wmf';tempfile-properties "XPR";}}
 
 Let's look at the change in potential energy for the parcel of fluid. Once
-again we can consider just the beginning and ending case (think of Super Guy
-and Normal Guy once again). We work as though we moved a mass $m=m_{1}=m_{2}$
-from $y_{1}$ to $y_{2}.$
+again we can consider just the beginning and ending case (think of Super
+Person and Normal Person once again). We work as though we moved a mass $%
+m=m_{1}=m_{2}$ from $y_{1}$ to $y_{2}.$
 
 \begin{equation}
 \Delta U=mgy_{2}-mgy_{1}
@@ -16212,7 +16305,12 @@ mgy_{2}-mgy_{1}\right)
 This equation describes our fluid flow much like the equation of continuity,
 but now it has pressure involved! We have achieved our goal. But we can make
 this equation a little easier to understand if we play a trick by dividing
-by $V$ 
+by $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ 
 \begin{equation}
 \left( \left( P_{1}-P_{2}\right) \right) =\left( \frac{1}{2}\frac{m}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -16252,7 +16350,8 @@ then%
 v_{1}^{2}\right) +\left( \rho gy_{2}-\rho gy_{1}\right)
 \end{equation*}
 
-Rearranging gives%
+Notice that we have subscripts $1$ and $2.$ Let's put all the $1$'s on one
+side of our equation and all the $2$'s on the other side. 
 \begin{equation}
 P_{1}+\frac{1}{2}\rho v_{1}^{2}+\rho gy_{1}=P_{2}+\frac{1}{2}\rho
 v_{2}^{2}+\rho gy_{2}
@@ -16260,122 +16359,22 @@ v_{2}^{2}+\rho gy_{2}
 which completes our goal. We have an equation that contains the velocity 
 \emph{and} the pressure of the fluid.
 
-Sometimes you see this written as 
+But notice! The left hand side looks just the same as the right hand side
+except for the subscripts! We have a before and after picture like we did in
+energy and momentum problems back in Principles of Physics I. Something is
+being conserved. Sometimes you see this written as 
 \begin{equation}
 P+\frac{1}{2}\rho v^{2}+\rho gy=\text{constant}
 \end{equation}%
-which really should excite us. This is another conservation equation. The
-thing that is being conserved is $P+\frac{1}{2}\rho v^{2}+\rho gy.$ We have
-not named this quantity, but whatever it is, it is not changing as the fluid
-flows. Our experience with conservation equations tells us that this new
-conservation law will help us solve problems. This equation is so useful we
-give it a name. It is called \emph{Bernoulli's equation} (after the
-scientist that came up with it).
-
-%TCIMACRO{%
-%\TeXButton{Question 123.6.7}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.7}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.7}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.6.8}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.8}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.8}
-\end{minipage}
-}%
-%EndExpansion
-
-\section{Applications of Fluid Dynamics}
-
-%TCIMACRO{%
-%\TeXButton{Ping Pong Ball Demo}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Ping Pong Ball Demo}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Ping Pong Ball Demo}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.6.9}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.9}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.9}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.6.10}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.6.10}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.6.10}
-\end{minipage}
-}%
-%EndExpansion
-An object moving through a fluid experiences a force due to any effect that
-causes the fluid to change its direction as it flows past the object.
-
-Some influencing factors:
-
-\begin{enumerate}
-\item Shape
-
-\item orientation
-
-\item spinning motion
-
-\item Texture
-
-\item Airfoil\FRAME{dtbpFU}{3.3874in}{1.8503in}{0pt}{\Qcb{{\protect\small %
-Pressure on an airfoil. (Michael Belisle, public domain)}}}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 3.3874in;height 1.8503in;depth
-0pt;original-width 3.4238in;original-height 1.8564in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73V99.wmf';tempfile-properties "XPR";}}The air that travels over the top
-part of the wing is deflected (changes direction) as it flows past the wing.
-There is an upward force (lift) due to this effect.
-
-\item @@@@@@@@@@@@@@@ Not done yet.
-\end{enumerate}
+This is another conservation equation! The thing that is being conserved is $%
+P+\frac{1}{2}\rho v^{2}+\rho gy.$ We have not named this quantity, but
+whatever it is, it is not changing as the fluid flows. Our experience with
+conservation equations tells us that this new conservation law will help us
+solve problems. This equation is so useful we give it a name. It is called 
+\emph{Bernoulli's equation} (after the scientist that came up with it). What
+is really being conserved is energy. We found Bernoulli's equation from
+conservation of energy. But this form of conservation of energy is useful
+for solving pressure and fluid flow problems. 
 
 \chapter{28 Turbulence and Temperature 1.14.7, 2.1.1}
 
@@ -16390,11 +16389,13 @@ There is an upward force (lift) due to this effect.
 \vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
 %EndExpansion
 
+\begin{itemize}
+\item Number Density
+\end{itemize}
+
 \begin{enumerate}
 \item 
 \begin{itemize}
-\item Number Density
-
 \item Atomic Mass
 
 \item Atomic Mass Number
@@ -16529,7 +16530,13 @@ pipe, the more flow we get. The more viscus the fluid, the less the flow
 rate. Notice also that longer pipes have lower flow. Friction will have more
 of an affect if the fluid interacts with the pipe longer, so this makes
 sense. And of course if we increase the pressure on one end, the flow
-changes.
+changes. \FRAME{dtbpFU}{2.0678in}{2.5469in}{0pt}{\Qcb{Pipe with no viscosity
+(top) and with more realistic viscosity (bottom)}}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.0678in;height 2.5469in;depth
+0pt;original-width 2.0289in;original-height 2.5054in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SXTEGX0C.wmf';tempfile-properties "XPR";}}
 
 The math that lead to this equation assumed laminar flow. But what if we
 don't have laminar flow?
@@ -16576,36 +16583,6 @@ complexity\textquotedblright\ which that is a current emphasis in research.
 
 \section{Temperature and the Zeroth Law of Thermodynamics}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.7.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.7.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.7.3}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.7.4}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.7.4}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.7.4}
-\end{minipage}
-}%
-%EndExpansion
 We need a basis for talking about thermal systems. We sort of have an
 intuition for temperature, so let's use our intuition for now.
 
@@ -16773,6 +16750,9 @@ definition of molar mass we can see that
 \begin{equation*}
 n_{moles}=\frac{M\left( \text{in grams}\right) }{M_{mol}}
 \end{equation*}
+
+Now that we have these new terms to use, let's take up measuring temperature
+in our next lecture.
 
 \chapter{29 Thermometers: Measuring Temperature 2.1.2, 2.1.3}
 
@@ -17042,7 +17022,7 @@ have. That is what the $\alpha $ tells us. Different substances expand at
 different rates even if they have the same initial length. So if you have a
 metal cavity of length $L_{i}$ and fill it with a laser crystal of length $%
 L_{i}$ and heat them both up, you may find the crystal expands at a
-different rate than the metal faseners when the temperature rises--and may
+different rate than the metal fasteners when the temperature rises--and may
 need to buy a replacement for the shattered crystal.\footnote{%
 It was a very sad day when this happened to me personally.}. The coefficient 
 $\alpha $ is different for every substance, because every substance expands
@@ -17362,7 +17342,7 @@ from the top down. The colder water near $273.\,\allowbreak 15\unit{K}$ ($0%
 %EndExpansion
 }$) is less dense, and so before it freezes it floats to the surface. This
 is great, because if it became more dense, the water would freeze and sink
-to the bottom, leaving the water exposed ot the cold atmosphere to freeze
+to the bottom, leaving the water exposed to the cold atmosphere to freeze
 more water. The lake would fill up from the bottom with solid ice, killing
 fish and water life.
 
