@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Tuesday, June 17, 2025 14:10:26}
+%TCIDATA{LastRevised=Tuesday, June 24, 2025 14:17:21}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -16374,9 +16374,13 @@ solve problems. This equation is so useful we give it a name. It is called
 \emph{Bernoulli's equation} (after the scientist that came up with it). What
 is really being conserved is energy. We found Bernoulli's equation from
 conservation of energy. But this form of conservation of energy is useful
-for solving pressure and fluid flow problems. 
+for solving pressure and fluid flow problems.
 
 \chapter{28 Turbulence and Temperature 1.14.7, 2.1.1}
+
+In our last lecture we said we would ignore turbulence and viscosity. But if
+we are cautious we can at least get some intuition about what will happen if
+we have friction or non-laminar flow.
 
 %TCIMACRO{\TeXButton{\chaptermark{Turbulence}}{\chaptermark{Turbulence}}}%
 %BeginExpansion
@@ -16391,11 +16395,7 @@ for solving pressure and fluid flow problems.
 
 \begin{itemize}
 \item Number Density
-\end{itemize}
 
-\begin{enumerate}
-\item 
-\begin{itemize}
 \item Atomic Mass
 
 \item Atomic Mass Number
@@ -16404,17 +16404,18 @@ for solving pressure and fluid flow problems.
 
 \item Temperature
 \end{itemize}
-\end{enumerate}
 
 \section{Viscosity}
 
-Way back in Principles of Physics I (PH121) we learned about friction. But
-so far we haven't had any friction with our fluids. But we know this can't
-be true! We know there is drag force. So there must be some friction. As a
-river flows by in a river, there must be something like a drag force between
-the water and the solid earth.
+Way back in Principles of Physics I (PH121) we learned about friction. So
+far we haven't had any friction with our fluids. But we know this can't be
+true! We know there is drag force. So there must be some friction. And we
+can think of there being two different chases where friction can matter.
+There is the friction between parts of the water, itself, and there must be
+something like a drag force between the water and the solid earth. Let's
+take on the water/earth friction first.
 
-We used two different equations for drag for fluids, one for air%
+In the past, we used two different equations for drag for fluids, one for air%
 \begin{equation*}
 D=\frac{1}{2}\rho CAv^{2}
 \end{equation*}%
@@ -16435,33 +16436,48 @@ D=bv
 coefficient and $v$ is the speed. These two equations, one for a gas fluid
 like air and one for a thicker liquid like oil, show that friction for
 fluids can be quite different. And of course it is much easier to get
-through air than oil, so that is not a surprise. We call friction in liquids 
-\emph{viscosity} and we would say the oil is more viscus than the air.
+through air than oil, so that is not a surprise. Recall that we call
+friction in liquids \emph{viscosity} and we would say the oil is more viscus
+than the air.
 
-Fluids don't just have friction with solid surfaces. Because the fluid can
-move around internally there is internal friction or viscosity. When a river
-flows down its bed the viscosity at the bottom causes the water to slow
-down. But this slower water is also viscus just like the water below it and
-so it slows the water just above it a little. So the water at the bottom of
-the river will be slow and the water just above it will be less slow. The
-water above this second layer will be faster still, and this keeps going
-until we reach the top of the water where there is some friction with the
-air, but it is much less. So the fastest water is on top. This works for air
-too.
+There will be a drag force between the river bed and the lowest water. And
+that drag force will likely be more of the $D=bv$ type for a liquid. This
+slows the water that is right next to the river bed down to a $v$ that is
+quite slow.
 
-\FRAME{dtbpF}{2.7008in}{1.7149in}{0in}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.7008in;height 1.7149in;depth
-0in;original-width 2.6584in;original-height 1.6777in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SW62KY07.wmf';tempfile-properties "XPR";}}You might have tried flying a
-kite. When you first start, you have to run with the kite. But once the kite
-is higher, the winds tend to be higher and the kit can stay up without you
-running.
+But we know fluids don't just have friction with solid surfaces. Because the
+fluid can move around internally there is internal friction or viscosity.
+When a river flows down its bed we know the drag force at the bottom causes
+the water to slow down. But this slower water is also viscus and so it slows
+the water just above it a little. So the water at the bottom of the river
+will be slow and the water just above it will be less slow. The water above
+this second layer will be faster still, and this keeps going until we reach
+the top of the water where there is some friction with the air, but it is
+much less. So the fastest water is on top. This works for air too.
+
+You might have tried flying a kite. \FRAME{dtbpFU}{3.1652in}{3.0787in}{0pt}{%
+\Qcb{{\protect\small Kite flown on the June 19th 2025 BUYU-I High Altitude
+Research Team flight as part of the high altitude balloon payload retrieval
+effort. The kite can carry radios that connect to the payload trackers.}}}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.1652in;height 3.0787in;depth 0pt;original-width 5.3419in;original-height
+5.1949in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SY5VCP00.wmf';tempfile-properties "XPR";}}When you first start, you have to
+run with the kite. But once the kite is higher, the winds tend to be higher
+and the kit can stay up without you running.\FRAME{dtbpF}{2.7008in}{1.7149in%
+}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.7008in;height 1.7149in;depth 0pt;original-width 2.6584in;original-height
+1.6777in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SY5WD601.wmf';tempfile-properties "XPR";}}
 
 Both cases work well as long as nothing disrupts the fluid flow. This nice
-well behaved flow is described as being \emph{laminar}. In laminar fluid
+well behaved flow we described as being \emph{laminar}. In laminar fluid
 flow layers may have different speeds, but they flow without mixing.
+
+All this works pretty well if we don't have turbulence and the viscosity
+isn't too high.
 
 We can measure the viscosity of a fluid by placing it between two sheets
 
@@ -16497,24 +16513,24 @@ P=\frac{F}{A}
 'SW7TSU04.wmf';tempfile-properties "XPR";}}
 
 For our fluid in a pipe the area will be the pipe cross sectional area. We
-would like to know how the pressure affects the flow rate, $Q.$ It turns out
-that this is fairly hard to solve (there are multivariate differential
-equations) so for those who are curious or need to be able to do this
-professionally I recommend taking a fluid dynamics class\footnote{%
+would like to know how the pressure affects the flow rate, $\mathbb{Q}.$ It
+turns out that this is fairly hard to solve (there are multivariate
+differential equations) so for those who are curious or need to be able to
+do this professionally I recommend taking a fluid dynamics class\footnote{%
 At BYU-I this class is ME360 and is called Fluid Mechanics.} but for our
 class let's just borrow a result.
 
 \begin{equation*}
-Q=\frac{P_{in}-P_{out}}{R}
+\mathbb{Q}=\frac{P_{in}-P_{out}}{R}
 \end{equation*}%
 This is called Poiseuille's Law. We can see the pressure in, $P_{in}$ and
 the pressure out, $P_{out}.$ The denominator, $R$ is the viscosity
-resistance. This equation won't work for fluids with not viscosity, because $%
-R$ would be zero and the flow rate infinite. But fluids with not viscosity
+resistance. This equation won't work for fluids with no viscosity, because $%
+R $ would be zero and the flow rate infinite. But fluids with no viscosity
 are rare, so it works for most normal situations. We would not expect the
 flow to be uniform across the pipe. Fluid closer to the pipe walls should
 move slower. Fluid near the center should move faster. We can model the
-resistance in the pipe by borrowing for a fluid dynamics class 
+resistance in the pipe by borrowing from a fluid dynamics class 
 \begin{equation*}
 R=\frac{8\eta L}{\pi r^{4}}
 \end{equation*}%
@@ -16574,24 +16590,32 @@ Turbulent & $R_{e}>4000$%
 \end{equation*}%
 although not all books agree on the value for the transition to turbulence.
 But generally if $R_{e}<2300$ our equations for this class work and for $%
-R_{e}>2300$ we don't have laminar flow. The transient range is a transition
-to turbulence and for $R_{2}$ above $3000$ to $4000$ most agree that the
-flow is turbulent. For many engineering designs we really don't want
-turbulence. So this is enough to do some good work. For cool physics
-problems turbulence is a form of \textquotedblleft
-complexity\textquotedblright\ which that is a current emphasis in research.
+R_{e}>2300$ we don't have laminar flow and our equations really don't work.
+The transient range is a transition to turbulence and for $R_{2}$ above $%
+3000 $ to $4000$ most agree that the flow is turbulent. For many engineering
+designs we really don't want turbulence. So this is enough to do some good
+work. For cool physics problems turbulence is a form of \textquotedblleft
+complexity\textquotedblright\ which is a current emphasis in physics
+research.
+
+Fluid dynamics is the movement of a bulk of fluid. This is all we can do for
+fluid dynamics in this class. But we can still look at the motion of the
+molecules and atoms inside of the fluids (and solids). So lets move on to
+thinking about what we will call internal motion in the fluid. It turns out
+that this internal motion is related to how hot or cold our fluid is. We
+will call this the thermodynamics of the fluid!
 
 \section{Temperature and the Zeroth Law of Thermodynamics}
 
 We need a basis for talking about thermal systems. We sort of have an
 intuition for temperature, so let's use our intuition for now.
 
-\FRAME{dtbpF}{2.3471in}{1.6838in}{0pt}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{2.2053in}{1.5895in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.3471in;height 1.6838in;depth
-0pt;original-width 4.7625in;original-height 3.41in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 2.2053in;height 1.5895in;depth
+0in;original-width 2.1646in;original-height 1.5541in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V9L.wmf';tempfile-properties "XPR";}}In the figure we have two
+'SY2OIE0D.wmf';tempfile-properties "XPR";}}In the figure we have two
 objects. I measure both objects temperature. I find that they are the same.
 Suppose I\ put the two objects in \textquotedblleft
 contact.\textquotedblright
@@ -16634,6 +16658,9 @@ deserves it's place as one of the laws of thermodynamics. By the time this
 was acknowledged, the names \textquotedblleft first law\textquotedblright\
 and \textquotedblleft second\ law\textquotedblright\ were taken, so this
 became the \emph{Zeroth law of Thermodynamics.}
+
+Before we move on, let's review some things we know from high school
+chemistry.
 
 \section{Numbers of Atoms and Number Densities}
 
@@ -16739,22 +16766,28 @@ trucks is $12$ times the mass of one truck.
 
 We can also define a molar mass, which would be the mass of $6.02\times
 10^{23}$ of something. Usually, we choose the units for this molar mass to
-be the mass \emph{in grams} of a mole of something.
-
-The molar mass is equal to the numerical value of the atomic or molecular
-mass. for example, the molar mass of He, with $m=4\unit{u}$ is $M=4\unit{g}/%
-\unit{mol}.$ The molar mass of diatomic nitrogen would be $28\unit{g}/\unit{%
-mol}$ because each nitrogen atom has an atomic mass of $m=14\unit{u}$ and we
-add the two atomic masses together for the molecular mass. With this
-definition of molar mass we can see that 
+be the mass \emph{in grams} of a mole of something. And when we do this, the
+molar mass is equal to the numerical value of the atomic or molecular mass.
+for example, the molar mass of He, with $m=4\unit{u}$ is $M=4\unit{g}/\unit{%
+mol}.$ The molar mass of diatomic nitrogen would be $28\unit{g}/\unit{mol}$
+because each nitrogen atom has an atomic mass of $m=14\unit{u}$ and we add
+the two atomic masses together for the molecular mass. With this definition
+of molar mass we can see that 
 \begin{equation*}
-n_{moles}=\frac{M\left( \text{in grams}\right) }{M_{mol}}
+n_{moles}=\frac{M\left( \text{in grams}\right) }{M_{molecule}}
 \end{equation*}
 
 Now that we have these new terms to use, let's take up measuring temperature
 in our next lecture.
 
-\chapter{29 Thermometers: Measuring Temperature 2.1.2, 2.1.3}
+\chapter{29 Measuring Temperature 2.1.2, 2.1.3}
+
+Last lecture we reviewed some basics of how materials are made and how
+chemists and physicists and material scientists determine how many moving
+parts a sample of a material might have. We also talked about measuring
+temperature. But didn't actually talk about what temperature is or even how
+temperature measuring devices work. We will start with measurement
+techniques in this lecture and build up to a model of what temperature is.
 
 %TCIMACRO{\TeXButton{\chaptermark{Temperature}}{\chaptermark{Temperature}}}%
 %BeginExpansion
@@ -16767,24 +16800,7 @@ in our next lecture.
 \vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
 %EndExpansion
 
-%TCIMACRO{%
-%\TeXButton{Question 123.8.10.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.8.10.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.8.10.1}
-\end{minipage}
-}%
-%EndExpansion
-We will find that several material properties change with temperature
-
-\begin{enumerate}
+\begin{itemize}
 \item Kelvin Temperature Scale
 
 \item volume of a liquid
@@ -16802,11 +16818,29 @@ We will find that several material properties change with temperature
 \item Phase Changes and Phase Diagrams
 
 \item Thermal Expansion
-\end{enumerate}
+\end{itemize}
 
-We can use any of these to make a temperature measuring device.
+\section{How to build a thermometer}
 
-Think of old fashioned thermometers, how do they work?
+We will find that several material properties change with temperature
+
+\begin{equation*}
+\begin{tabular}{|c|}
+\hline
+\textbf{Things that Vary with Temperature} \\ \hline
+Volume of a liquid \\ \hline
+The dimensions of a solid \\ \hline
+The pressure of a gas at constant volume \\ \hline
+The volume of a gas at constant pressure \\ \hline
+The electric resistance of a conductor \\ \hline
+The color of an object \\ \hline
+The size of an object \\ \hline
+\end{tabular}%
+\end{equation*}
+
+Since these things change with temperature, we can use any of these to make
+a temperature measuring device. Think of old fashioned thermometers, how do
+they work?
 
 \FRAME{dtbpF}{2.4474in}{0.2421in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -16817,15 +16851,20 @@ Think of old fashioned thermometers, how do they work?
 thermometers (and their glycerine replacements) use the first property,
 volume of a liquid increases with temperature. The liquid is placed in an
 evacuated tube, and the amount of the tube that is filled depends on the
-temperature. By placing a ruled background behind the tube or even by making
-rule marks on the outside of the tube, we can find out how much the liquid
-volume changed, and calculate the temperature change.
+temperature. The liquid fills more of the tube when the temperature goes up
+because the liquid volume gets bigger with temperature. By placing a ruled
+background behind the tube or even by making rule marks on the outside of
+the tube, we can find out how much the liquid volume changed, and calculate
+the temperature change.
 
 \subsection{Celsius temperature scale}
 
-The most important thing to say about the Celsius scale is not to use it.
-(The same goes double for the Fahrenheit scale). But since it is common to
-see Celsius temperatures, we will talk about them.
+To make our old fashioned mercury thermometer work we need to have units of
+temperature to mark on the tube. Once of the sets of units for temperature
+is called the \emph{Celsius temperature scale.} The most important thing to
+say about the Celsius scale is not to use it for doing thermodynamic
+problems (The same goes double for the Fahrenheit scale). But since it is
+common to see Celsius temperatures, we will talk about them.
 
 \FRAME{dtbpF}{3.0193in}{2.6583in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -16834,15 +16873,52 @@ see Celsius temperatures, we will talk about them.
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73W9O.wmf';tempfile-properties "XPR";}}
 
-This scale sets the zero point at the ice point of water and sets $100\unit{%
+The idea,once again, is to make marks on our thermometer tube that show how
+the change in liquid volume is related to temperature. To do this for the
+Celsius scale we put our thermometer in ice water and mark where the top of
+the liquid is. And we assign the value of $0\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}$ at the steam point of water. The scale uses $100$ evenly spaced divisions
-between these points. This calibration does not work well if high accuracy
-is required. There are often large discrepancies when temperatures are
-measured far from the calibration points.
+}$ to this mark. Then we take our thermometer and put it in boiling water.
+The liquid moves up the tube. Where it stops we make a mark and label this
+mark $100\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}.$ This scale sets the zero point at the ice point of water and sets $100%
+\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}$ at the steam point of water. Then we make $100$ evenly spaced divisions
+between these points. We can also mark the tube with the same division
+spacing below the $0\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}$ mark and above the $100\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}$ mark. But this calibration does not work well if high accuracy is
+required. There are often large discrepancies when temperatures are measured
+outside of the $0\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}$ to $100\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}$ range.
 
 Worse yet, water only boils at $100\unit{%
 %TCIMACRO{\U{2103}}%
@@ -16876,7 +16952,7 @@ We often do in Rexburg from about December to March.} This makes $0\unit{%
 }$ more like an origin of a coordinate system. We could say that the
 intersection of Main St. and Center St. is our origin, but there is noting
 really zeroish about that intersection. But it turns out there \emph{is} a
-natural zero point for temperature ! A better temperature scale would start
+natural zero point for temperature! A better temperature scale would start
 at the natural zero point. Let's see if we can make such a scale.
 
 \subsection{The Constant-Volume Gas Thermometer and the Absolute Temperature
@@ -16884,37 +16960,43 @@ Scale}
 
 We wish to define a temperature scale that is based on a physical zero
 point. To do this we need a better thermometer. So here is one in the figure
-below.\FRAME{dtbpF}{4.7285in}{1.9469in}{0pt}{}{}{Figure}{\special{language
+below.\FRAME{dtbpF}{3.6832in}{1.5229in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 4.7285in;height 1.9469in;depth
-0pt;original-width 4.7897in;original-height 1.9558in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 3.6832in;height 1.5229in;depth
+0in;original-width 3.6357in;original-height 1.4866in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73W9P.wmf';tempfile-properties "XPR";}}This device uses the rise in
+'SY672300.wmf';tempfile-properties "XPR";}}This device uses the rise in
 pressure at a constant volume (the number 3 property from our list at the
 beginning of the lecture). It works by placing the gas bulb in thermal
-contact with the object who's temperature is to be measured. A scale (like a
-ruler) is placed in the apparatus such that the mercury in reservoir $A$ is
-at the zero point. We could take water at its ice point, for example. Then
-the bulb is placed in thermal contact with another object, say water at its
-steam point. The mercury will move because the pressure increases in the
-bulb, and the gas tries to expand. We add mercury into reservoir B (just
-when you thought you were done with U-tubes!) until the level of reservoir $%
-A $ is again at the zero point. The height of the additional mercury we
-added is proportional to the change in pressure, as we now know. The
-Pressure for both measurements is calculated and plotted against the
-temperature and a linear curve is drawn between the two pressure-temperature
-points. This curve serves as a calibration for other temperatures.
+contact with the object who's temperature is to be measured (reservoir $B$
+in the figure\footnote{%
+A reservoir is just a container of something.}). A scale (like a ruler) is
+placed in the apparatus such that the mercury in reservoir $A$ on the left
+is at the zero point. We could take water at its ice point, for example, to
+find this first part of the scale. Then the bulb is placed in thermal
+contact with another object by swapping out what is in reservoir $B$, say we
+use water at its steam point this time. The mercury will move because the
+pressure increases in the bulb, and the gas tries to expand. We add mercury
+into reservoir $A$ (just when you thought you were done with U-tubes!) until
+the level of reservoir is again at the zero point. The height of the
+additional mercury we added is proportional to the change in pressure, as we
+now know. The Pressure for both measurements is calculated and plotted
+against the temperature and a linear curve is drawn between the two
+pressure-temperature points. This curve serves as a calibration for other
+temperatures. We could fill the bulb with different gasses. If we do this,
+we get different sloped lines. You can see this in the next figure.
 
-Now we could fill the bulb with different gasses. If we do this, we get
-different sloped lines. It seems like we should have zero temperature if we
-have zero gas in the bulb. We have different lines for each gas, but if we
-then extend these lines back to where $P=0$ (so that we have no gas), we
-find they intersect with $P=0$ at $T=273.15\unit{%
+But think, it seems like with this new thermometer design we should have
+zero temperature if we have zero gas in the bulb. We have different lines
+for each gas, but if we then extend these lines back to where $P=0$ (so that
+we have no gas), we find they intersect with $P=0$ at $T=273.15\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}.$ This is the basis we need for an absolute temperature scale!
+}.$ This is the basis we need for an absolute temperature scale! We have
+found a place where the temperature really should be zero (because we have
+no gas to have a temperature!).
 
 \FRAME{dtbpF}{3.3492in}{1.9886in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -16929,20 +17011,20 @@ We will take this common zero pressure point, $T=273.15\unit{%
 {}^{\circ}{\rm C}%
 %EndExpansion
 }$ as our zero point for our improved temperature scale, but we need another
-point. We will choose the triple point of water ( the one point where water,
+point. We will choose the triple point of water, the one point where water,
 ice and steam exist in equilibrium; this happens at $0.01\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
 }$ and $4.58\unit{mmHg}=$ $610.\,\allowbreak 61\unit{Pa}.$ We will call this
-point $273.15$ on our new scale. Each unit of temperature will then be $%
-1/273.15^{th}$ of the distance between our zero point and the water triple
-point. This way the degrees in this scale are the same size as the degrees
-in the Celsius scale (which is kind of nice). But this new scale that starts
-at the physical zero point we will call the Kelvin Temperature scale and the
-units are Kelvins ($\unit{K}$). This is the temperature system we really
-should use.
+point $273.15$ on our new scale which seems kind of random. But think, with
+this choice each unit of temperature will then be $1/273.15^{th}$ of the
+distance between our zero point and the water triple point. This way the
+degrees in this scale are the same size as the degrees in the Celsius scale
+(which is kind of nice). But this new scale that starts at the physical zero
+point we will call the Kelvin Temperature scale and the units are Kelvins ($%
+\unit{K}$). This is the temperature system we really should use.
 
 \subsection{Temperature scale conversions}
 
@@ -16988,16 +17070,27 @@ interesting temperatures placed on the Kelvin scale.
 }%
 %EndExpansion
 
-We have not defined heat yet, but we kind of know what temperature is, so
-suppose we increase the temperature of a substance. We could take the
-mercury in a thermometer, for example. When the temperature is higher, the
-mercury takes up more space. It expands. This expansion is linear in
+We still only kind of know what temperature is. But we can now measure
+temperature, so suppose we increase the temperature of a substance. We could
+take the mercury in a thermometer, for example. When the temperature is
+higher, the mercury takes up more space. It expands. This isn't just true
+for liquids. Here is the change in length for a laser crystal as a function
+of temperature. \FRAME{dtbpF}{3.5976in}{2.7043in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.5976in;height 2.7043in;depth
+0pt;original-width 3.55in;original-height 2.661in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SY689202.wmf';tempfile-properties "XPR";}}Notice that the change in length
+makes a curve that bends. We would prefer to make our thermometers out of a
+material that has a linear expansion. That is why we used mercury in
+thermometers for many years. Mercury has expansion that is linear in
 temperature for many situations. When the expansion length is much less than
 the original dimensions of the object $\left( L_{i}\right) $, we can
 consider the expansion to be linear in the change in temperature $\Delta T$.
 Of course we could increase the temperature above this nice linear region,
-and we could get interesting effects like melting or exploding. But we will
-limit our discussion to a linear change in length with temperature for now.
+and we could get interesting effects like melting or exploding. But for this
+lecture we will limit our discussion to a linear change in length with
+temperature for now. Let's see how this linear region of expansion works.
 
 \subsection{Expansion Coefficient}
 
@@ -17007,9 +17100,10 @@ L_{f}=L_{i}+\alpha L_{i}\Delta T  \label{Linear Expansion}
 \end{equation}%
 It means that the final length of the object is equal to the initial length
 of the object plus a little bit more that depends on $\Delta T$ and not $%
-\Delta T^{2}$ or $\Delta T^{3}$ or some other function of $\Delta T.$ You
-can see that this is the case for the equation above for thermal expansion.
-We can write it next to an equation for a straight line to show the linear
+\Delta T^{2}$ or $\Delta T^{3}$ or some other function of $\Delta T.$ We
+will get straight line plots instead of curved plots as $T$ changes. You can
+see that this is the case for the equation above for thermal expansion. We
+can write it next to an equation for a straight line to show the linear
 nature of the equation%
 \begin{eqnarray*}
 y &=&b+mx \\
@@ -17117,7 +17211,7 @@ T\right) \left( L_{i}+\alpha L_{i}\Delta T\right) \\
 _{i}\left( \allowbreak \Delta T^{3}\alpha ^{3}+3\Delta T^{2}\alpha
 ^{2}+3\Delta T\alpha +1\right)
 \end{eqnarray*}%
-Now let's divide by $%
+Now let's divide both sides by $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -17155,7 +17249,8 @@ and let's make an approximation. For normal conditions, $\alpha \Delta T\ll
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}$)). Then%
+}$)). Then $\alpha ^{2}\Delta T^{2}$ and $\alpha ^{3}\Delta T^{3}$ are
+really really small. Let's ignore them.%
 \begin{equation}
 \frac{\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -17191,22 +17286,6 @@ _{i}\Delta T  \notag
 \end{eqnarray}%
 where $\beta $ is called the \emph{average coefficient of volume expansion.}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.9.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.1}
-\end{minipage}
-}%
-%EndExpansion
-
 We could do the same for a two dimensional metal plate (in the approximation
 that a plate is 2D!)
 
@@ -17235,8 +17314,9 @@ $T_{shade}=-100\unit{%
 }=173.\,\allowbreak 15\unit{K}$%
 \end{tabular}%
 \end{equation}%
-This $\Delta T$ range is too large for most materials. Special low $\alpha $
-materials are used to allow satellite structures to survive
+This $\Delta T$ range is too large for most materials to still be linear.
+Special low $\alpha $ materials are used to allow satellite structures to
+survive
 
 But how about on Earth? Even on Earth we can have extremes
 
@@ -17259,12 +17339,16 @@ $T_{\min }=-89\unit{%
 
 This $\Delta T$ range would be a challenge to cover with most materials.%
 \footnote{%
-Expeciall metal structures and laser crystals.} So if you are going to build
-a device or instrument that will travel around the globe, you need to use
-special low $\alpha $ materials. Often making these materials is very
-expensive and the process is a tightly held industrial secret.
-
-\subsection{Different materials}
+Expecially metal structures and laser crystals. \TEXTsymbol{>}sigh%
+\TEXTsymbol{<}} So if you are going to build a device or instrument that
+will travel around the globe, you need to use special low $\alpha $
+materials. Often making these materials is very expensive and the process is
+a tightly held industrial secret. Alternately you can air condition or heat
+your system. But you do have to do something to stay in the linear range.%
+\footnote{%
+I am told by the BYU-I facilities people that the BYUIC has one huge beam
+across the entire auditorium that has to stay heated or it shrinks enough to
+let the balcony fall off the walls!}
 
 Looking at table of average linear expansion coefficients we find see
 different $\alpha $ values for different materials. Sometimes $\alpha $
@@ -17277,6 +17361,8 @@ Figure}{\special{language "Scientific Word";type
 'SVAQIE6G.wmf';tempfile-properties "XPR";}}The figure shows a bimetallic
 strip. What would happen if we heated this bimetallic strip? The two metals
 will expand at different rates, forcing the bonded pair of metals to bend.
+And we could make a temperature measuring device that measures how much this
+bimetallic strip bends.
 
 \subsection{Water is weird (and the Lord knows what He is doing!)}
 
@@ -17295,13 +17381,14 @@ will expand at different rates, forcing the bonded pair of metals to bend.
 \end{minipage}
 }%
 %EndExpansion
-\FRAME{dtbpFU}{2.8746in}{2.3082in}{0pt}{\Qcb{Density of water near $0\unit{%
+\FRAME{dtbpFU}{2.8746in}{2.3082in}{0pt}{\Qcb{{\protect\small Density of
+water near }$0\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}.$ (Public Domain image PD-1923, PD-Australia)}}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+}.${\protect\small \ (Public Domain image PD-1923, PD-Australia)}}}{}{Figure%
+}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 2.8746in;height 2.3082in;depth
 0pt;original-width 2.8314in;original-height 2.2684in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
@@ -17311,19 +17398,24 @@ For most substances the volume increases with increasing temperature.
 Usually liquids increase in volume more than solids. But water is different.
 Look at the graph of density vs. Temperature.
 
-Just as water melts, it starts to increase in density, but then it becomes
-less dense with increased temperature after about $277.\,\allowbreak 15\unit{%
-K}$ ($4\unit{%
+Just as ice melts, it starts to \emph{increase} in density, but then it
+becomes less dense with increased temperature after about $277.\,\allowbreak
+15\unit{K}$ ($4\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}$). We expect the behavior $277.\,\allowbreak 15\unit{K}$ ($4\unit{%
+}$). We expect the behavior we see after $277.\,\allowbreak 15\unit{K}$ ($4%
+\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}$), but from $273.\,\allowbreak 15\unit{K}$ ($0\unit{%
+}$). The density is decreasing because we have the same number of water
+molecules, but the temperature change has increased the volume. So the
+density goes down.
+
+But from $273.\,\allowbreak 15\unit{K}$ ($0\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
@@ -17333,18 +17425,18 @@ K}$ ($4\unit{%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}$) we see the volume decreases with $\Delta T.$ This is why a lake freezes
-from the top down. The colder water near $273.\,\allowbreak 15\unit{K}$ ($0%
-\unit{%
+}$) we see the volume decreases with $\Delta T.$ This is very odd. But very
+cool! This is why a lake freezes from the top down. The colder water near $%
+273.\,\allowbreak 15\unit{K}$ ($0\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
 }$) is less dense, and so before it freezes it floats to the surface. This
-is great, because if it became more dense, the water would freeze and sink
-to the bottom, leaving the water exposed to the cold atmosphere to freeze
-more water. The lake would fill up from the bottom with solid ice, killing
-fish and water life.
+is great, because if it became more dense just before it froze, the water
+would sink to the bottom and freeze, leaving the liquid water exposed to the
+cold atmosphere to freeze more water. The lake would fill up from the bottom
+with solid ice, killing fish and water life.
 
 \FRAME{dtbpFU}{3.3555in}{2.5918in}{0pt}{\Qcb{Lake Erie from Space. Notice
 the ice covering part of the lake. (Public Domain Image courtesy NASA\
@@ -17353,7 +17445,15 @@ Visible Earth, http://visibleearth.nasa.gov/view\_rec.php?id=1286}}{}{Figure%
 TRUE;display "USEDEF";valid_file "T";width 3.3555in;height 2.5918in;depth
 0pt;original-width 5.2166in;original-height 4.0231in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE6I.wmf';tempfile-properties "XPR";}}
+'SVAQIE6I.wmf';tempfile-properties "XPR";}}Because the water becomes less
+dense before freezing we don't freeze large lakes and oceans solid. And that
+keeps life going on Earth!
+
+We have made progress. But we still don't know what temperature is. We know
+some things about what temperature does. And this can give us a clue.
+Temperature is making things move by expansion. And we know that there must
+be forces behind making things move. Forces do work. Work is energy. Could
+it be that temperature has to do with exchanging energy?
 
 %TCIMACRO{%
 %\TeXButton{Question123.9.2}{\marginpar {
@@ -17393,10 +17493,69 @@ TRUE;display "USEDEF";valid_file "T";width 3.3555in;height 2.5918in;depth
 \chaptermark{Chapter 30}%
 %EndExpansion
 
-Last lecture we found we can't quite finish the job of finding $\Delta
-E_{int},$ $Q,$ and $w$ for our special thermodynamic processes. The problem
-is that although we have a strategy for finding $w,$ we don't have such a
-strategy for Q. We will start to fill that void in this lecture.
+In this lecture we want to make our study of temperature more mathematical.
+And we want to consider how energy relates to temperature. The problem is
+that although we have a strategy for finding $w,$ the work done as we change
+temperature. We will start to fill that void in this lecture.
+
+We learned in PH 121 what energy was. We studied work and potential energy,
+and we studied kinetic energy. But these were always the energy \emph{of} an
+object. We described these energies in terms of the motion of the center of
+mass of an object using the particle model. Now we know that there is energy 
+\emph{in} an object. This is different. Particles don't have internal parts,
+but real things do. Our particle model was an approximation. So we need to
+go beyond the particle model here. We will call the energy associated with
+the inside parts of an object \emph{internal energy.} And this internal
+energy is associated with thermal energy.
+
+To study this, Let's refine our definition of internal energy by saying that
+it is all the energy of a system that is associated with its microscopic
+components -- atoms and molecules -- when viewed form a reference frame at
+rest with respect to the center of mass of the system. Any motion of the
+center of mass is our Principles of Physics I (PH121) mechanical energy. Now
+we want the motion of the parts of the object with respect to the center of
+mass. Let's review center of mass briefly.
+
+Prom Principles of Physics I we know the center of mass is given by 
+\begin{equation}
+r_{cm}=\frac{1}{M}\int \mathbf{r}dm
+\end{equation}%
+and we can think of the center of mass as the point an object freely spins
+around.\FRAME{dtbpF}{2.0968in}{2.3407in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.0968in;height 2.3407in;depth
+0pt;original-width 2.1075in;original-height 2.3567in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SVAQIE6J.wmf';tempfile-properties "XPR";}}For groups of molecules, we
+remember 
+\begin{equation}
+\overrightarrow{r}_{cm}=\frac{\dsum\limits_{i}m_{i}\overrightarrow{\mathbf{r}%
+}_{i}}{M}
+\end{equation}%
+where 
+\begin{equation}
+M=\dsum\limits_{i}m_{i}
+\end{equation}%
+is the total mass of all the molecules.
+
+You might remember this in one dimension for two masses%
+\begin{equation}
+x_{cm}=\frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}}
+\end{equation}
+
+Now suppose we let all of the masses involved be tied together with
+spring-like forces. These spring-like forces would allow the masses to
+oscillate a little. That would change the $\mathbf{r}_{i}$ involved in our
+center of mass calculation. But if the oscillations were random, the actual
+center of mass would not change. This is the kind of motion involved in
+internal energy.
+
+By making all the little molecules move, we have changed the energy state of
+the object, but we have not moved it, so the mechanical energy has not
+changed. The energy we have described is the thermal internal energy (there
+is still the nuclear internal energy, but that is a subject for the class
+called Modern Physics (PH279). Let's consider forms of internal energy in
+more detail in this lecture.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -17417,94 +17576,38 @@ for a sample of a material
 sample of material
 \end{enumerate}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.11.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.11.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.11.1}
-\end{minipage}
-}%
-%EndExpansion
-We learned in PH 121 what energy was. We studied work and potential energy,
-and we studied kinetic energy. But these were always the energy \emph{of} an
-object. We described these energies in terms of the motion of the center of
-mass of an object using the particle model. Now we know that there is energy 
-\emph{in} an object. This is different. Particles don't have internal parts,
-but real things do. So we need to go beyond the particle model here. We will
-call the energy associated with the inside parts of an object \emph{internal
-energy.} And this internal energy is associated with thermal energy.
-
-To study this, Let's refine our definition of internal energy by saying that
-it is all the energy of a system that is associated with its microscopic
-components -- atoms and molecules -- when viewed form a reference frame at
-rest with respect to the center of mass of the system. Any motion of the
-center of mass is our PH121 mechanical energy. So we want the motion of the
-parts of the object with respect to the center of mass. Let's review center
-of mass briefly.
-
-We learned about center of mass in PH 121. 
-\begin{equation}
-r_{cm}=\frac{1}{M}\int \mathbf{r}dm
-\end{equation}%
-\FRAME{dtbpF}{2.0968in}{2.3407in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.0968in;height 2.3407in;depth
-0pt;original-width 2.1075in;original-height 2.3567in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE6J.wmf';tempfile-properties "XPR";}}For groups of molecules, we
-remember 
-\begin{equation}
-\overrightarrow{r}_{cm}=\frac{\dsum\limits_{i}m_{i}\overrightarrow{\mathbf{r}%
-}_{i}}{M}
-\end{equation}%
-where 
-\begin{equation}
-M=\dsum\limits_{i}m_{i}
-\end{equation}
-
-You might remember this in one dimension for two masses%
-\begin{equation}
-x_{cm}=\frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}}
-\end{equation}
-
-Now suppose we let all of the masses involved be tied together with
-spring-like forces. These spring-like forces would allow the masses to
-oscillate a little. That would change the $\mathbf{r}_{i}$ involved in our
-center of mass calculation. But if the oscillations were random, the actual
-center of mass would not change. This is the kind of motion involved in
-internal energy.
-
-By making all the little molecules move, we have changed the energy state of
-the object, but we have not moved it, so the mechanical energy has not
-changed. The energy we have described is the thermal internal energy (there
-is still the nuclear internal energy, but that is a subject for PH279).
-Let's consider forms of internal energy in more detail in this lecture.
-
 \section{Heat}
 
-We have mentioned heat, and given it a symbol $Q,$ but in this lecture we
-want to refine our definition of heat. Heat is defined as the transfer of
-energy across the boundary of a system due to a temperature difference
-between the system and its surroundings. When we \textquotedblleft
-heat\textquotedblright\ a substance, we add energy from it's surroundings.
-An object could gain or lose energy \emph{by heat}. We will use the word
-\textquotedblleft heat\textquotedblright\ for the transfer of energy no
-matter which direction the energy is flowing. This is a little like using
-the word \textquotedblleft acceleration\textquotedblright\ no matter whether
-we are speeding up or slowing down.
+Temperature, in our intuitive model, seems connected to heat. But what is
+heat? If we can figure this out we might be able to give a better definition
+of temperature. Let's give heat a symbol, $Q,$ but in this lecture we want
+to give a specific definition of heat. 
+
+\begin{center}
+\rule{300pt}{1pt}
+
+Heat is defined as the transfer of energy across the boundary of a system
+due to a temperature difference between the system and its surroundings. 
+
+\rule{300pt}{1pt}
+\end{center}
+
+When we \textquotedblleft heat\textquotedblright\ a substance, we add energy
+from it's surroundings. When the temperature changes, it is energy that is
+making the temperature change. An object could gain or lose energy \emph{by
+heat}. We will use the word \textquotedblleft heat\textquotedblright\ for
+the transfer of energy no matter which direction the energy is flowing. This
+is a little like using the word \textquotedblleft
+acceleration\textquotedblright\ no matter whether we are speeding up or
+slowing down.
 
 In the dim past, scientists thought heat was a fluid (called caloric). This
 model of heat is not correct (science changes!). We now define heat as a
 transfer of energy. But because of this history, we have some left-over
 names that are not very descriptive of the modern ideas they represent.
-Examples are \emph{latent heat} and \emph{heat capacity}.
+Examples are \textquotedblleft latent heat\textquotedblright\ and
+\textquotedblleft heat capacity\textquotedblright\ (we will define these
+soon).
 
 The thing to remember is that a system \emph{has} a temperature but it can 
 \emph{give or receive} energy by heat.
@@ -17545,36 +17648,32 @@ unit. But let's see where it came from.
 
 \subsection{Mechanical equivalent of heat}
 
-\FRAME{dhFU}{1.8503in}{2.2095in}{0pt}{\Qcb{James Prescott Joule. (Image in
-the Public Domain)}}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-1.8503in;height 2.2095in;depth 0pt;original-width 4.6985in;original-height
-5.6204in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+\FRAME{dhFU}{1.8507in}{2.2096in}{0pt}{\Qcb{{\protect\small James Prescott
+Joule. (Image in the Public Domain)}}}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.8507in;height 2.2096in;depth
+0pt;original-width 4.6985in;original-height 5.6204in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE6K.wmf';tempfile-properties "XPR";}}
 
-the name \textquotedblleft Joule\textquotedblright\ is a person's name,
+The name \textquotedblleft Joule\textquotedblright\ is a person's name,
 Joule was an early researcher and is credited with showing that heat
 transfer is a transfer of energy. Joule was able to build a device to prove
 that mechanical energy could be converted to heat energy. His device is
-shown in the picture.\FRAME{dhFU}{1.1815in}{1.7651in}{0pt}{\Qcb{Joule
-Apparatus (Image in the Public Domain courtesy Gaius Cornelius)}}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 1.1815in;height 1.7651in;depth
-0pt;original-width 2.2667in;original-height 3.4004in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE6L.wmf';tempfile-properties "XPR";}}
+shown in the picture. \FRAME{dtbpFU}{3.4982in}{1.9969in}{0pt}{\Qcb{%
+{\protect\small Joule Apparatus (Image in the Public Domain courtesy Gaius
+Cornelius)}}}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.4982in;height 1.9969in;depth 0pt;original-width 3.4523in;original-height
+1.9579in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SY6A6R03.wmf';tempfile-properties "XPR";}}
 
 The paddle device was placed in the drum that is sitting behind it. The
 crank was operated by strings attached to it that were pulled by masses tied
-to the other end of the string (see the next figure). When the masses were
-released, the paddle wheel stirred a liquid. The friction from the paddle
-wheel stirring the liquid raised the temperature of the liquid.\FRAME{dhF}{%
-3.2707in}{2.7908in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 3.2707in;height 2.7908in;depth 0pt;original-width
-3.2258in;original-height 2.7484in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SVAQIE6M.wmf';tempfile-properties "XPR";}}%
-The masses would loose energy equal to 
+to the other end of the string (see the right hand side of the figure). When
+the masses were released, the paddle wheel stirred a liquid. The friction
+from the paddle wheel stirring the liquid raised the temperature of the
+liquid. The masses would lose energy equal to 
 \begin{equation}
 \Delta U=2mgh
 \end{equation}%
@@ -17636,162 +17735,44 @@ substance. Work can raise a temperature in a system just like
 Because of this experiment by Joule, this idea that work can be turned into
 thermal energy is known as the \emph{mechanical equivalent of heat}.
 
-\section{Phase Changes and Phase Diagrams}
-
-Let's consider heating ice. You take a chunk of ice from outside on a cold
-February day in Rexburg, Idaho. The ice has a temperature of about $-25\unit{%
-%TCIMACRO{\U{2103}}%
-%BeginExpansion
-{}^{\circ}{\rm C}%
-%EndExpansion
-}.$\footnote{%
-OK, that is an exaggeration, it very rarely gets that cold in Rexburg.} You
-place it in a pan on your stove and heat it up. Then, being a physics
-student, you plot the temperature as a function of time. Here is what you
-get. \FRAME{dhF}{3.2292in}{2.0237in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.2292in;height 2.0237in;depth
-0pt;original-width 3.1842in;original-height 1.9847in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73W9S.wmf';tempfile-properties "XPR";}}Notice the places where you are
-still heating, but the temperature does not change. These are phase changes.
-The first is melting, the second is boiling.
-
-One of the things you will notice is that the melted ice does not boil at $%
-100\unit{%
-%TCIMACRO{\U{2103}}%
-%BeginExpansion
-{}^{\circ}{\rm C}%
-%EndExpansion
-}$ here in Rexburg. This is because we are up so high that the air pressure
-is less than $1\unit{atm}.$ In the next graph, I have plotted the melting,
-and boiling point of a substance as a function of pressure. The melting
-point and boiling point are not single points, but lines. This is because
-melting and boiling points depend on pressure. There is also a line for the
-sublimation point. Along this line, a solid will change directly into a gas.
-Dry ice does this at normal room temperature and pressure. \FRAME{dhF}{%
-2.3359in}{1.8931in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.3359in;height 1.8931in;depth 0pt;original-width
-3.6703in;original-height 2.9706in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73W9T.wmf';tempfile-properties "XPR";}}%
-If we observe the boiling boiling line. We see that as pressure goes down,
-the boiling temperature goes down. Look at $T_{1}$ and $T_{2}$ in the next
-figure, where $T_{2}<T_{1}.$ Note that $P_{2}<P_{1}.$\FRAME{dhF}{1.9683in}{%
-1.8222in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-1.9683in;height 1.8222in;depth 0pt;original-width 10.8577in;original-height
-10.0474in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73W9U.wmf';tempfile-properties "XPR";}}This agrees with our Rexburg
-boiling point experience. We can see from the graph that melting or boiling
-depends on pressure, and so does sublimation point.
-
-The triple point is a special point where all three states are possible at
-the same pressure and temperature. Ice, steam, and water will all exist in
-equilibrium, for example, at the triple point of water.
-
-The critical point is where the clear distinction between liquid and gas
-stops. beyond this boiling the material is in a fluid state, but not clearly
-liquid or gas.
-
-Our diagram is rather schematic, and this is on purpose. An actual phase
-diagram for water is given in the next figure.
-
-\FRAME{dtbpFU}{4.203in}{1.9545in}{0pt}{\Qcb{More Complete Phase Diagram for
-Water (Public Domain Image courtesy Karlhahn)}}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 4.203in;height 1.9545in;depth
-0pt;original-width 3.3589in;original-height 1.5471in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73W9V.wmf';tempfile-properties "XPR";}}Along each of the lines, we can
-say that the material is in phase equilibrium, meaning that both phases from
-either side of the line are possible and equally probable. Only at the
-triple point are all three phases equally probable.
-
 \section{State Variables}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.7.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.7.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.7.2}
-\end{minipage}
-}%
-%EndExpansion
+As you know, we are at the beginning of a new topic, and we will find that
+physics did not develop as a cohesive whole. The new topic is called \emph{%
+Thermodynamics} and it developed independently of the theories of
+oscillation and waves and optics. Thus the language we use will be
+different, and sometimes old words will need new meanings.
+
 We learned before about solids, liquids, and gases. We learned that the
-degree of bondedness made the difference between these states.
-
-We are starting a new topic, and we will find that physics did not develop
-as a cohesive whole. The new topic is called \emph{Thermodynamics} and it
-developed independently of the theories of oscillation and waves and optics.
-Thus the language we use will be different, and sometimes old words will
-need new meanings.
-
-The states of matter are often called \emph{phases} in thermodynamics. This
-use of the word \textquotedblleft phase\textquotedblright\ has nothing to do
-with the phase of an oscillator or wave. It is just the condition of being
-solid, liquid or gas.
+degree of bondedness made the difference between these states. The states of
+matter are often called \emph{phases} in thermodynamics. This use of the
+word \textquotedblleft phase\textquotedblright\ has nothing to do with the
+phase of an oscillator or wave. It is just the condition of being solid,
+liquid or gas.
 
 To change from solid to liquid, or from liquid to gas, is called a \emph{%
 phase change}.
 
 To describe that state of a sample of matter, we use a set of variables like
 mass, volume, pressure, density, and energy. We have used these throughout
-PH 121. Thermodynamics has it's own set of descriptive variables to add to
-these: moles, number density, and Temperature. These variables, along with
-our original set, are called \emph{state variables} and together, they
-describe the conditions of a particular pice of matter.
+Principles of Physics I. Thermodynamics has it's own set of descriptive
+variables to add to these: moles, number density, and Temperature. These
+variables, along with our original set, are called \emph{state variables}
+and together, they describe the conditions of a particular pice of matter.
+We have hinted that one of these state variables will be the amount of
+internal energy in our sample of material, let's call that $\Delta E_{int}.$
+And we know from our study of thermal expansion that the work, $w,$ might be
+such a variable. And we also know now that energy can be transferred by
+heat, $Q.$
 
-%TCIMACRO{%
-%\TeXButton{Question 123.12.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.12.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.12.1}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.12.1.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.12.1.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.12.1.1}
-\end{minipage}
-}%
-%EndExpansion
-Our goal in this lecture is to find the missing piece that allows us to find 
-$\Delta E_{int},$ $W,$ and $Q$ for our systems--at least for our special
-processes. We have been looking at ideal gases, but let's go back to solids
-and liquids for a moment and see if we can gain a clue experimentally from
-these simpler cases.
-
-Suppose you are heating something on your stove, say, a sample of steak. 
-\FRAME{dtbpF}{1.6134in}{1.9451in}{0in}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 1.6134in;height 1.9451in;depth
-0in;original-width 1.6152in;original-height 1.954in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SW9P0O0S.wmf';tempfile-properties "XPR";}}You would expect that as energy
+And we need to find the missing piece that allows us to find $\Delta
+E_{int}, $ $W,$ and $Q$ for our samples. Suppose you are heating something
+on your stove, say, a sample of steak. \FRAME{dtbpF}{1.6134in}{1.9451in}{0pt%
+}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.6134in;height 1.9451in;depth 0pt;original-width 1.6152in;original-height
+1.954in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SY6CU905.wmf';tempfile-properties "XPR";}}You would expect that as energy
 is transferred from the hot stove to the cold beef, the temperature of the
 steak would increase. It makes sense that the more energy you transfer, the
 more the temperature will rise. Gasses are more complicated, because their
@@ -17802,7 +17783,7 @@ complications as we would with a gas.\FRAME{dhF}{2.1802in}{1.6466in}{0pt}{}{%
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.1802in;height 1.6466in;depth 0pt;original-width 2.1404in;original-height
 1.6103in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SW9P0O0T.wmf';tempfile-properties "XPR";}}
+'SY6CU906.wmf';tempfile-properties "XPR";}}
 
 We could guess that the temperature increase might be linear in the amount
 of energy transfer we give to the solid.%
@@ -17816,7 +17797,7 @@ negligible. Since $P$ and $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-$ are not changing much, 
+$ are not changing much. So to a good approximation 
 \begin{equation*}
 \Delta T\propto Q
 \end{equation*}
@@ -17827,7 +17808,7 @@ regions this is true. Of course, we could over heat our sample\FRAME{dtbpF}{%
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "T";width 2.7612in;height 2.0019in;depth 0pt;original-width
 2.7851in;original-height 2.0117in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SW9P0O0U.wmf';tempfile-properties "XPR";}}%
+"1";cropbottom "0";tempfilename 'SY6CU904.wmf';tempfile-properties "XPR";}}%
 changing it's form (from stake to charcoal, and smoke), but then the sample
 is no longer the same substance. In this case $\Delta T$ is no longer
 proportional to $Q.$ But as long as we don't change the composition of the
@@ -17843,10 +17824,10 @@ But, they found that the internal structure of the solid mattered. There was
 a different constant, $K,$ for every material.
 
 They called the constant, $K,$ the \emph{heat capacity} of the material. The
-name is another throwback to the past, but for us it means the constant of
-proportionality between $Q$ and $\Delta T$ that holds all the specific
-material properties of that substance that change the slope of the $\Delta T$
-vs. $Q$ graph.
+name is one of our throwbacks from the past, but for us it means the
+constant of proportionality between $Q$ and $\Delta T$ that holds all the
+specific material properties of that substance that change the slope of the $%
+\Delta T$ vs. $Q$ graph.
 
 Of course, the more material we have in our sample, the longer it takes to
 heat it up. If we have a roast, it takes longer to cook than a small steak.
@@ -17891,12 +17872,18 @@ heats. Things that heat up slowly or cool slowly have large specific heats.
 Water in any of it's phases has large values of specific heat. This is why
 living next to a lake or the ocean keeps your temperatures moderate. It
 takes quite a lot of energy transfer to heat up or cool off the water, so
-the temperature of the water does not change much. This is why Buffalo
-temperatures lower when the lake freezes. This is also the source of lake or
-ocean breezes. In the morning, the land changes temperature more quickly
-than the water. The warmer air over the land becomes less dense and rises,
-leaving a lower pressure area. This causes a cool breeze to form from the
-sea to the land.
+the temperature of the water does not change much. 
+
+This is why Buffalo NY temperatures lower when the lake freezes. This is
+also the source of lake or ocean breezes. In the morning, the land changes
+temperature more quickly than the water. The warmer air over the land
+becomes less dense and rises, leaving a lower pressure area. This causes a
+cool breeze to form from the sea to the land. \FRAME{dtbpF}{2.2001in}{%
+1.6034in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.2001in;height 1.6034in;depth 0in;original-width 2.1594in;original-height
+1.567in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SYDLMU05.wmf';tempfile-properties "XPR";}}
 
 Conversely, in a large city, the concrete and blacktop heat up much quicker,
 so we experience increases in daytime temperature as a city grows.
@@ -17919,52 +17906,101 @@ wait to investigate this clue until a further lecture.
 WARNING: Specific heat values are really not constant. They do vary with
 temperature a little. We know from our study of thermal expansion that the
 volume of a sample of a material will change a small amount as it is heated
-or cooled. There is a small amount of work done in changing the volume of
-the material. Not all of the energy will go into changing the temperature.
-So our heat capacity will change a little as the volume changes. But if the
-change in temperature is not too big, we can treat heat capacities for
-solids and liquids as constants. Oh, but for gasses...we know the volume
-might change quite a lot as the temperature changes for a gas, so we will
-find that this analysis needs a few changes for gasses. We will study this
-is a later lecture.
+or cooled. After all, this is one we found to measure temperature! There is
+a small amount of work done in changing the volume of the material. Not all
+of the energy will go into changing the temperature. So our heat capacity
+will change a little as the volume changes. But if the change in temperature
+is not too big, we can treat heat capacities for solids and liquids as
+constants. Oh, but for gasses...we know the volume might change quite a lot
+as the temperature changes for a gas, so we will find that this analysis
+needs a few changes for gasses. We will study this is a later lecture.
 
-Note that water has a very high heat capacity. This explains our lake effect
-that we discussed (areas near lakes do not get as cold in the winter). When
-the water changes temperature, $\Delta T,$ the air around the lake receives
-a large $Q.$
+\section{Phase Changes and Phase Diagrams}
+
+Let's consider heating ice. You take a chunk of ice from outside on a cold
+February day in Rexburg, Idaho. The ice has a temperature of about $-25\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}.$\footnote{%
+OK, that might be an exaggeration, it only occasionally gets that cold in
+Rexburg.} You place it in a pan on your stove and heat it up. Then, being a
+physics student, you plot the temperature as a function of time. Here is
+what you get. \FRAME{dhF}{3.2292in}{2.0237in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.2292in;height 2.0237in;depth
+0pt;original-width 3.1842in;original-height 1.9847in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SUS73W9S.wmf';tempfile-properties "XPR";}}Notice the places where you are
+still transferring energy by heat, but the temperature does not change.
+These are phase changes. A phase change is like melting and boiling. In our
+chart, the first is melting, the second is boiling.
+
+One of the things you will notice is that the melted ice does not boil at $%
+100\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}$ here in Rexburg. This is because we are up so high that the air pressure
+is less than $1\unit{atm}=1.013\times 10^{5}\unit{Pa}.$ In the next graph, I
+have plotted the melting, and boiling point of a substance as a function of
+pressure. The melting point and boiling point are not single points, but
+lines on this graph. This is because melting and boiling points depend on
+pressure. There is also a line for the sublimation point. Along this line, a
+solid will change directly into a gas. Dry ice does this at normal room
+temperature and pressure. \FRAME{dhF}{2.3359in}{1.8931in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.3359in;height 1.8931in;depth
+0pt;original-width 3.6703in;original-height 2.9706in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SUS73W9T.wmf';tempfile-properties "XPR";}}If we observe the boiling line,
+we see that as pressure goes down, the boiling temperature goes down. Look
+at $T_{1}$ and $T_{2}$ in the next figure, where $T_{2}<T_{1}.$ Note that $%
+P_{2}<P_{1}.$\FRAME{dhF}{1.9683in}{1.8222in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 1.9683in;height 1.8222in;depth
+0pt;original-width 10.8577in;original-height 10.0474in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SUS73W9U.wmf';tempfile-properties "XPR";}}This agrees with our Rexburg
+boiling point experience.\footnote{%
+So if we have a water boil alert here, you have to boil your water longer in
+Rexburg than you would in NY City in order to make it safe to drink.} We can
+see from the graph that melting or boiling depends on pressure, and so does
+sublimation point.
+
+The triple point is a special point where all three states are possible at
+the same pressure and temperature. Ice, steam, and water will all exist in
+equilibrium, for example, at the triple point of water.
+
+The critical point is where the clear distinction between liquid and gas
+stops. beyond this boiling the material is in a fluid state, but not clearly
+liquid or gas. Along each of the lines in our figure, we can say that the
+material is in phase equilibrium, meaning that both phases from either side
+of the line are possible and equally probable. Only at the triple point are
+all three phases equally probable.
+
+Our diagram is rather schematic, and this is on purpose. An actual phase
+diagram for water is given in the next figure.
+
+\FRAME{dtbpFU}{4.203in}{1.9545in}{0pt}{\Qcb{More Complete Phase Diagram for
+Water (Public Domain Image courtesy Karlhahn)}}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.203in;height 1.9545in;depth
+0pt;original-width 3.3589in;original-height 1.5471in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SUS73W9V.wmf';tempfile-properties "XPR";}}You can see there are more phases
+for water than our simple model of solid, liquid, and gas give. 
+
+But why do we care about phase changes? Because it takes energy to make a
+phase change happen. Phase changes direct energy into breaking molecular
+bonds instead of increasing temperature. So in our graph of temperature vs.
+heating time the flat parts are where bonds are being broken and a phase
+change is happening.
 
 \section{Phase changes and heat of transformation}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.12.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.12.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.12.2}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.12.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.12.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.12.3}
-\end{minipage}
-}%
-%EndExpansion
 Recall the graph of temperature vs. time for heating a chunk of Rexburg ice. 
 \FRAME{dhF}{3.2595in}{2.0202in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -18015,8 +18051,8 @@ $L_{v}$ & heat of vaporization%
 \end{tabular}%
 \end{equation*}%
 generically we call each of these a \emph{heat of transformation} but
-generally they are still referred to by their old title of \textquotedblleft
-Latent heat.\textquotedblright
+generally they are still referred to by their old title of \textquotedblleft 
+\emph{Latent heat}.\textquotedblright 
 
 \begin{equation*}
 \begin{tabular}{|l|l|l|l|l|}
@@ -18044,11 +18080,13 @@ Lead & $328$ & $0.25\times 10^{5}$ & $1750$ & $8.58\times 10^{5}$ \\ \hline
 \end{equation*}
 
 Notice that our equations each have a \textquotedblleft $\pm $%
-\textquotedblright\ sign in them. We must supply the sign by context.
-Remember that energy that leaves is negative and energy that is gained by
-the system is positive. Also notice that so long as we warm the ice
-quasi-statically, that the ice completely melts before the temperature of
-the water starts to rise.
+\textquotedblright\ sign in them. We must supply the sign by context. We
+need a sign convention like back when we were studying optics! 
+
+Let's choose that energy that leaves is negative and energy that is gained
+by the system is positive. Also notice that so long as we warm the ice
+somewhat slowly, that the ice completely melts before the temperature of the
+water starts to rise.
 
 Let's do a problem. Suppose we want to increase the temperature of $1\unit{g}%
 =\allowbreak 0.001\,\unit{kg}$ of ice at $-30.0\unit{%
@@ -18061,15 +18099,17 @@ Let's do a problem. Suppose we want to increase the temperature of $1\unit{g}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}.$ A graph of temperature vs. heat energy is shown. Let's take it one piece
-at a time.\FRAME{dhF}{3.1176in}{2.1093in}{0pt}{}{}{Figure}{\special{language
+}.$ How much energy transfer by heat is required to do this?
+
+A graph of temperature vs. heat energy is shown. Let's take it one piece at
+a time.\FRAME{dhF}{3.1176in}{2.1093in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 3.1176in;height 2.1093in;depth
 0pt;original-width 5.4916in;original-height 3.7057in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SW9P0O0X.wmf';tempfile-properties "XPR";}}
 
-Part A: Warming up the ice to $0\unit{%
+\textbf{Part A:} Warming up the ice to $0\unit{%
 %TCIMACRO{\U{2103}}%
 %BeginExpansion
 {}^{\circ}{\rm C}%
@@ -18105,7 +18145,7 @@ We can get away with using $\unit{%
 }$ because we only need $\Delta T$ and the divisions of the Celsius and
 Kelvin scales are the same size.
 
-Part B: Melting ice
+\textbf{Part B:} Melting ice
 
 Now the ice changes to water. We have a heat of transformation. To find out
 what happens we use the equation%
@@ -18117,9 +18157,10 @@ Q &=&m_{i}L_{f} \\
 \end{eqnarray*}
 
 The total energy so far is $62.\,\allowbreak 7\unit{J}+330.0\unit{J}%
-=\allowbreak 392.\,\allowbreak 7\unit{J}$
+=\allowbreak 392.\,\allowbreak 7\unit{J}.$ Note that during Part B the
+temperature didn't go up!
 
-Part C: Warming the melted ice (water)
+\textbf{Part C:} Warming the melted ice (water)
 
 Again we have the normal case where we can use the specific heat of water
 (now that the ice has melted)
@@ -18148,7 +18189,7 @@ Q &=&m_{w}c_{w}\Delta T \\
 The total energy so far is $62.\,\allowbreak 7\unit{J}+333.0\unit{J}%
 +419.\,\allowbreak 0\unit{J}=\allowbreak 814.\,\allowbreak 7\unit{J}$
 
-Part D: Boiling the melted ice (water)
+\textbf{Part D:} Boiling the melted ice (water)
 
 Now we convert the water to steam. 
 \begin{eqnarray*}
@@ -18162,7 +18203,7 @@ The total energy so far is $62.\,\allowbreak 7\unit{J}+333.0\unit{J}%
 +419.\,\allowbreak 0\unit{J}+2260.0\unit{J}=\allowbreak 3074.\,\allowbreak 7%
 \unit{J}$
 
-Part E: Warming the steam
+\textbf{Part E:} Warming the steam
 
 Now we have steam, and can use the specific heat of steam (we don't usually
 do this! we usually use the ideal gas law when it becomes a gas!)%
@@ -18183,53 +18224,24 @@ Q &=&m_{s}c_{s}\Delta T \\
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}\right) \\
+}\right)  \\
 &=&\allowbreak 40.\,\allowbreak 2\unit{J}
 \end{eqnarray*}%
-The total energy is $62.\,\allowbreak 7\unit{J}+333.0\unit{J}+419\unit{J}%
-+2260.0\unit{J}+40.\,\allowbreak 2\unit{J}=\allowbreak 3114.\,\allowbreak 9%
-\unit{J}$
+The total energy transfer required is $62.\,\allowbreak 7\unit{J}+333.0\unit{%
+J}+419\unit{J}+2260.0\unit{J}+40.\,\allowbreak 2\unit{J}=\allowbreak
+3114.\,\allowbreak 9\unit{J}$
 
 \section{Calorimetry}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.12.4}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.12.4}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.12.4}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.12.5}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.12.5}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.12.5}
-\end{minipage}
-}%
-%EndExpansion
-We can now calculate results for many common experiences. We have all
-experienced eating something with a large temperature. The solution is to
-drink something cold. This lowers the temperature. We would like to be able
-to quantify this. But our mouth is not a great device to use to do
-quantitative analysis on temperature changes. Let's consider a more suitable
-apparatus.
+We can now calculate results for many common thermal experiences. We have
+all experienced eating something with a large temperature. The solution is
+to quickly drink something cold. This lowers the temperature. We would like
+to be able to quantify this. But our mouth is not a great device to use to
+do quantitative analysis on temperature changes. Let's consider a more
+suitable apparatus.
 
-Suppose we have an insulated container with a thermometer
+Suppose we have an insulated container with a thermometer. We can call this
+apparatus a \emph{calorimeter.}
 
 \FRAME{dtbpF}{3.6659in}{1.5567in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -18243,23 +18255,24 @@ material has a temperature $T_{x}.$
 
 Let's assume that the container walls are perfectly insulating, then knowing
 the sample temperature $T_{x}$ and the water temperature $T_{w}$ with $%
-T_{w}<T_{x}$ we can find $c$ or $K.$(or even $C$). We recognize for this
-ideal system no energy can leave, because of the insulation. So 
+T_{w}<T_{x}$ we can find $c$ or $K.$(or even $C$) for our material. We
+recognize for this ideal system no energy can leave, because of the
+insulation. So 
 \begin{equation}
 Q_{\text{cold}}=-Q_{\text{hot}}
 \end{equation}%
 or energy would not be conserved. Then for the water%
 \begin{equation*}
-Q_{w}=m_{w}c_{w}\left( T_{f}-T_{w}\right)
+Q_{w}=m_{w}c_{w}\left( T_{f}-T_{w}\right) 
 \end{equation*}%
 and for the sample 
 \begin{equation*}
-Q_{x}=m_{x}c_{x}\left( T_{f}-T_{x}\right)
+Q_{x}=m_{x}c_{x}\left( T_{f}-T_{x}\right) 
 \end{equation*}%
 so, using energy conservation%
 \begin{eqnarray*}
 -Q_{x} &=&Q_{w} \\
--m_{x}c_{x}\left( T_{f}-T_{x}\right) &=&m_{w}c_{w}\left( T_{f}-T_{w}\right)
+-m_{x}c_{x}\left( T_{f}-T_{x}\right)  &=&m_{w}c_{w}\left( T_{f}-T_{w}\right) 
 \end{eqnarray*}%
 and we can solve for $c_{x}$%
 \begin{equation}
@@ -18269,7 +18282,8 @@ T_{f}-T_{x}\right) }
 
 Note the sign convention! If energy leaves the object, the value of $Q$ is
 negative. Our denominator is, indeed, negative because for the sample $T_{f}$
-is less than $T_{x}.$
+is less than $T_{x}.$ We could use our value of $c_{x}$ to identify our
+material by looking it up in a table of specific heat values.
 
 Let's try a second problem. Suppose we have $0.5\unit{kg}$ of ice at $0\unit{%
 %TCIMACRO{\U{2103}}%
@@ -18281,22 +18295,35 @@ Let's try a second problem. Suppose we have $0.5\unit{kg}$ of ice at $0\unit{%
 %BeginExpansion
 {}^{\circ}{\rm C}%
 %EndExpansion
-}.$ What is the final temperature?
+}.$ What is the final temperature? This time we could have a phase change,
+we will need to be careful. We can look up the heat of transformation and
+the specific heat if ice and water:%
+\begin{eqnarray*}
+L_{f} &=&3.33\times 10^{5}\frac{\unit{J}}{\unit{kg}} \\
+c_{w} &=&4190\frac{\unit{J}}{\unit{kg}\unit{K}}
+\end{eqnarray*}
 
-We will need to know $L_{f}=3.33\times 10^{5}\frac{\unit{J}}{\unit{kg}}$ and 
-$c_{w}=4190\frac{\unit{J}}{\unit{kg}\unit{K}}$. Again
+We still don't expect to loose any energy, so 
 
 \begin{equation*}
 Q_{\text{cold}}=-Q_{\text{hot}}
 \end{equation*}%
-we identify the hot thing as the water and the cold thing as the ice. The
-water only changes temperature, but the ice experiences a phase change 
+We identify the hot thing as the water this time and the cold thing as the
+ice. The water only changes temperature, but the ice experiences a phase
+change. We need to account for all of the energy transferred so for this ice 
+\begin{equation*}
+Q_{ice}=Q_{\text{cold}}=Q_{\text{melt}}+Q_{\text{heat up}}
+\end{equation*}%
+Then we can put this into our conservation of energy equation 
 \begin{eqnarray*}
 Q_{\text{ice}} &=&-Q_{\text{water}} \\
-L_{f}M+m_{i}c_{w}\left( T_{f}-T_{0}\right) &=&-m_{w}c_{w}\left(
-T_{f}-T_{w}\right)
+Q_{\text{melt}}+Q_{\text{heat up}} &=&-Q_{\text{water}} \\
+L_{f}M+m_{i}c_{w}\left( T_{f}-T_{0}\right)  &=&-m_{w}c_{w}\left(
+T_{f}-T_{w}\right) 
 \end{eqnarray*}%
-The final temperature will be the same for both%
+The final temperature will be the same for both. To find that final
+temperature we have a little algebra to do. Let's distribute on both sides
+of our equation.%
 \begin{equation*}
 L_{f}M+m_{i}c_{w}T_{f}-m_{i}c_{w}T_{0}=-m_{w}c_{w}T_{f}+m_{w}c_{w}T_{w}
 \end{equation*}%
@@ -18320,9 +18347,15 @@ T_{f} &=&\frac{\left( \left( 1\unit{kg}\right) \left( 4190\frac{\unit{J}}{%
 kg}}\right) \left( 1\unit{kg}\right) }{\left( \left( 1\unit{kg}\right)
 \left( 4190\frac{\unit{J}}{\unit{kg}\unit{K}}\right) +\left( 1\unit{kg}%
 \right) \left( 4190\frac{\unit{J}}{\unit{kg}\unit{K}}\right) \right) } \\
-&=&258.\,\allowbreak 26\unit{K}
+&=&258.\,\allowbreak 26\unit{K} \\
+&=&-14.\,\allowbreak 89\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+}
 \end{eqnarray*}%
-Now let's ask, is this reasonable?
+Now let's ask, is this reasonable? 
 
 The answer is no! Let's see why. We should have checked in advance to see if
 all the ice melts. It would take 
@@ -18376,7 +18409,13 @@ said gasses will be more difficult. We will take up the relationship between
 energy transfer by heat and the change in temperature for gasses in our next
 lecture.
 
-\chapter{31 Chapter 2.1.6, 2.2.1}
+\chapter{31 Heat Transfer and Gas Laws 2.1.6, 2.2.1 }
+
+Now that we understand heat as a transfer of energy, we should look at how
+we can move energy around by heat. We will do this in this lecture. We will
+also develop a relationship between pressure, volume, and temperature for a
+gas. You probably know this relationship from your high school science
+classes. But we will look at how we got it and when it is valid. 
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 31}}{\chaptermark{Chapter 31}}}%
 %BeginExpansion
@@ -18388,6 +18427,18 @@ lecture.
 %BeginExpansion
 \vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
 %EndExpansion
+
+\begin{itemize}
+\item Conduction
+
+\item Convection
+
+\item Radiation and Stephan's law
+
+\item The Ideal Gas Law
+
+\item The Van der Waals Gas Law
+\end{itemize}
 
 \section{Heat Transfer Mechanisms}
 
@@ -18423,7 +18474,12 @@ different $Q$ transfer types. In what follows, we will talk about a few.
 
 This is what we have been calling heat up to this point. We define it a
 little more carefully as the exchange of kinetic energy between microscopic
-particles (molecules and atoms) through direct contact.
+particles (molecules and atoms) through direct contact. \FRAME{dtbpF}{%
+1.8498in}{2.4543in}{0in}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 1.8498in;height 2.4543in;depth 0in;original-width
+1.8118in;original-height 2.4128in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SY6E3T07.wmf';tempfile-properties "XPR";}}
 
 When we add energy by heat to part of a solid, the atoms are locally
 displaced from their equilibrium locations. These atoms knock into their
@@ -18505,12 +18561,19 @@ usually in English units
 \subsection{Convection}
 
 This is a fundamentally new type of energy transport in our study of
-thermodynamics, although we are all familiar with it. Convection is the
-transfer of energy by the movement of the atoms or molecules, themselves.
-Because the group of moving atoms or molecules has internal energy, moving
-these molecules also moves the energy. So convection is an energy transfer.
-This is like circulation of air in your home. Your student apartment might
-have base-board heading. But your parent's home would likely use forced
+thermodynamics, although we are all familiar with it. IN the last section we
+used the example of an electric burner that touched our pot of vegetables.
+But there are other kinds of stoves. \FRAME{dtbpF}{3.6677in}{1.836in}{0pt}{}{%
+}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.6677in;height 1.836in;depth 0pt;original-width 5.2088in;original-height
+2.5927in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SY6E9E08.wmf';tempfile-properties "XPR";}}Convection is the transfer of
+energy by the movement of the atoms or molecules, themselves. Because the
+group of moving atoms or molecules has internal energy, moving these
+molecules also moves the energy. So convection is an energy transfer. This
+is like circulation of air in your home. Your student apartment might have
+base-board heading. But your parent's home would likely use forced
 convection where a fan blows the air. \FRAME{dtbpF}{2.4365in}{2.5173in}{0pt}{%
 }{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
@@ -18518,10 +18581,10 @@ convection where a fan blows the air. \FRAME{dtbpF}{2.4365in}{2.5173in}{0pt}{%
 2.5368in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE6O.wmf';tempfile-properties "XPR";}}For several decades houses have
 been made with the idea that you can heat or cool a house with passive
-convection. Here is an example.\FRAME{dtbpF}{5.5832in}{1.7374in}{0in}{}{}{%
+convection. Here is an example.\FRAME{dtbpF}{5.5832in}{1.7374in}{0pt}{}{}{%
 Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-5.5832in;height 1.7374in;depth 0in;original-width 5.5253in;original-height
+5.5832in;height 1.7374in;depth 0pt;original-width 5.5253in;original-height
 1.7002in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE6P.wmf';tempfile-properties "XPR";}}This house tries to control the
 thermal conduction mechanisms to keep the interior of the house at nearly
@@ -18529,12 +18592,22 @@ the same temperature year round.
 
 \subsection{Radiation}
 
+Let's go back to thinking about cooking. Suppose you are cooking over an old
+wood stove. You open the stove door and see this\FRAME{dtbpF}{2.7095in}{%
+2.7095in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.7095in;height 2.7095in;depth 0pt;original-width 2.6671in;original-height
+2.6671in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SY6EJR09.wmf';tempfile-properties "XPR";}}And feel a blast of energy
+transfer by heat. But you don't feel a blast of wind. This isn't convection.
+And you are not touching the stove.
+
 Light is a form of energy transfer. You will learn more about this in PH220,
-but for now, what we need to know is that light is a form of wave, and as we
-know waves carry energy with them. So, light is an energy transfer. We call
-this energy removal or delivery by light \textquotedblleft
-radiation.\textquotedblright\ This is different than the use of the word
-\textquotedblleft radiation\textquotedblright\ in nuclear physics.
+but we already know that light is a form of wave, and as we know waves carry
+energy with them. So, light is an energy transfer. We call this energy
+removal or delivery by light \textquotedblleft radiation.\textquotedblright\
+This is different than the use of the word \textquotedblleft
+radiation\textquotedblright\ in nuclear physics.
 
 All objects radiate energy according to Stefan's law%
 \begin{equation}
@@ -18615,7 +18688,7 @@ cap has a long piece of insulation attached to it to prevent conduction
 through the flask opening. New designs use multi-layer films which make
 their surfaces super Reflective.
 
-\section{Ideal Gases}
+\section{Gas Laws}
 
 %TCIMACRO{%
 %\TeXButton{Question123.9.4-6}{\marginpar {
@@ -18638,18 +18711,19 @@ Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.6472in;height 1.5947in;depth 0pt;original-width 6.7014in;original-height
 4.0248in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73WA2.wmf';tempfile-properties "XPR";}}What can we say about the curve
-fit?
+'SUS73WA2.wmf';tempfile-properties "XPR";}}The black straight line is a
+curve fit to the data. What can we say about the curve fit?
 
 It might look useless. But look at the region from about $-6<x<5.$ In this
-region, the curve fit is not too bad. Of course, the curve fit is not the
-right equation, and we know this from the regions $x<-6$ and $x>4.$ So our
-researcher that collected this data does not have an exact theory that
-explains the behavior of his/her system well. But could the curve fit be
-useful? If all you needed was an estimate of the value of the actual
-function at $x=-1,$ then the curve fit might be enough to get your work
-done! This may not be terribly satisfying, but sometimes it is a useful way
-to work.
+region, the curve fit is not too bad. Of course, the equation we got for the
+curve fit is not the right equation, and we know this from the regions $x<-6$
+and $x>4.$ If the equation we used for the fit comes from our model for how
+this physical system works, we know that something is wrong with the model.
+We do not have an exact theory that explains the behavior of this system
+well. But could the curve fit be useful? If all you needed was an estimate
+of the value of the actual function at $x=-1,$ then the curve fit might be
+enough to get your work done! This may not be terribly satisfying, but
+sometimes it is a useful way to work.
 
 Another way to think about this is that if most of the time, under usual
 conditions, the phenomena we experience fall within the range $-6<x<5$ and
@@ -18662,16 +18736,16 @@ Relativistic forms.
 
 We will use the Ideal Gas Law to study the expansion of gasses as
 temperature changes. The Ideal Gas Law is an approximation very like our
-curve fit we have been considering. It works pretty well under normal
-conditions, and it is much easier to use than the exact law. It allows us to
-gain great insight, without the mathematical difficulty of the exact
-relationship.
+curve fit we have been considering. It is an equation that works pretty well
+under normal conditions, and it is much easier to use than the exact law. It
+allows us to gain great insight, without the mathematical difficulty of the
+exact relationship. Given all this, we should realize that there is no such
+thing as and ideal gas.
 
-Given all this, we should realize that there is no such thing as and ideal
-gas. But in this approximation, the atoms are so weakly bound that there is
-no equilibrium position between atoms. Thus there is no definite volume
-defined for an ideal gas. This is generally true at standard pressure and
-temperature for real gasses. So we will let $%
+In this approximation, the atoms are so weakly bound that there is no
+equilibrium position between atoms. Thus there is no definite volume defined
+for an ideal gas. This is generally true at standard pressure and
+temperature for real gasses. We will let $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -18683,16 +18757,12 @@ some clues on how to relate $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-,$ $P,$ and $T.$\FRAME{dtbpF}{0.9074in}{1.931in}{0pt}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 0.9074in;height 1.931in;depth
-0pt;original-width 1.3367in;original-height 2.8783in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73WA3.wmf';tempfile-properties "XPR";}}
+,$ $P,$ and $T.$
 
 \subsection{What lead to the Ideal Gas Law}
 
-Boyle found that if a system is kept at a constant temperature then 
+A researcher named Boyle found that if a system is kept at a constant
+temperature then 
 \begin{equation}
 P\propto \frac{1}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -18713,7 +18783,7 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
 \TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
 \TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}t$};linecolor
-"blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
 "Solid";var1range "0,100";animationParamRange "290,350";num-x-gridlines
 50;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";animationStartTime
 "0"; animationEndTime "10"; animationFramesPerSecond
@@ -18722,11 +18792,19 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "blue";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
 "Dash";var1range "0,40";animationParamRange "290,350";num-x-gridlines
 100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SVAPB26E.xvz';valid_file "T";tempfilename
-'SVAPBB5T.wmf';tempfile-properties "XPR";}}That is, if you don't let the
+'SYDI5301.xvz';valid_file "T";tempfilename
+'SYDI5300.wmf';tempfile-properties "XPR";}}That is, if you don't let the
 temperature of the gas change, then a change in pressures is inversely
 related to a change in the volume of the gas. The more pressure, the smaller
-the volume.
+the volume. We could envision putting our gas in a cylinder, and putting a
+piston in the cylinder that can be used to compress our gas. \FRAME{dtbpF}{%
+0.9074in}{1.931in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+0.9074in;height 1.931in;depth 0pt;original-width 1.3367in;original-height
+2.8783in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SYBUKW02.wmf';tempfile-properties "XPR";}}Boyle tells us that as we exert a
+pressure on the gas using the piston the volume of the gas changes. That
+seems reasonable.
 
 Two researchers, Charles and Gay-Lussac, found that if a system is kept at
 constant pressure then%
@@ -18749,13 +18827,16 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
 \TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
 \TEXUX{$200$};linecolor "blue";linestyle 1;pointstyle "point";linethickness
-1;lineAttributes "Solid";var1range "0,100";animationParamRange
+3;lineAttributes "Solid";var1range "0,100";animationParamRange
 "290,350";num-x-gridlines 50;curveColor "[flat::RGB:0x000000ff]";curveStyle
 "Line";animationStartTime "0"; animationEndTime "10";
 animationFramesPerSecond "10";animationVisibleBeforeStart
-FALSE;rangeset"XA";VCamFile 'SVAOR35G.xvz';valid_file "T";tempfilename
-'SVAORG5N.wmf';tempfile-properties "XPR";}}The warmer the gas, the more it
-will expand.
+FALSE;rangeset"XA";VCamFile 'SYDI6803.xvz';valid_file "T";tempfilename
+'SYDI6801.wmf';tempfile-properties "XPR";}}The warmer the gas, the more it
+will expand. Note that in the graph temperature is not one of the axes! That
+is a little weird. But you can see the volume of the gas getting larger with
+the pressure staying the same. Something must be making this happen, and
+that something is the increase in temperature.
 
 Combining these two findings gives an equation that describes ideal gasses.
 
@@ -18809,7 +18890,7 @@ if we define a new constant
 \begin{equation}
 k_{B}=\frac{R}{N_{A}}
 \end{equation}%
-then%
+Then%
 \begin{equation}
 P%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -18818,7 +18899,7 @@ P%
 %EndExpansion
 =Nk_{B}RT
 \end{equation}%
-the constant $k_{B}$ is called \emph{Boltzmann's constant}
+The constant $k_{B}$ is called \emph{Boltzmann's constant}
 
 \begin{equation}
 k_{B}=1.38\times 10^{-23}\frac{\unit{J}}{\unit{K}}
@@ -18840,11 +18921,172 @@ k_{B}=1.38\times 10^{-23}\frac{\unit{J}}{\unit{K}}
 }%
 %EndExpansion
 
-\section{Van der Walls Gasses}
+We now have two forms of the ideal gas law!
 
-@@@@ Not done yet
+\section{PV diagrams}
 
-\section{PV diagrams @@@@ not done yet}
+You may have noticed that in the diagrams in the previous sections we put
+pressure and volume on the axes. \FRAME{dtbpFX}{3.1669in}{2.111in}{0pt}{}{}{%
+Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+3.1669in;height 2.111in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";animated TRUE;animationStartTime
+"0"; animationEndTime "10"; animationFramesPerSecond "10";xmin "0";xmax
+"100";animationParamMin "290";animationParamMax "350";xviewmin "0";xviewmax
+"40";yviewmin "0";yviewmax "400";viewset"XY";rangeset"X";plottype
+4;labeloverrides 3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
+\TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
+\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}t$};linecolor
+"blue";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
+"Dash";var1range "0,100";animationParamRange "290,350";num-x-gridlines
+50;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";animationStartTime
+"0"; animationEndTime "10"; animationFramesPerSecond
+"10";animationVisibleBeforeStart FALSE;rangeset"XA";function
+\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}290$};linecolor
+"blue";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
+"Dash";var1range "0,40";animationParamRange "290,350";num-x-gridlines
+100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'SYDIZ909.xvz';valid_file "T";tempfilename
+'SYDIZ903.wmf';tempfile-properties "XPR";}}This was awkward because our gas
+laws have three state variables, $P,$ $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+,$ and $T$ 
+\begin{equation*}
+P=\frac{nRT}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}%
+and there wasn't another axis for $T.$ We commonly do this, so we need to
+know what happens if we change $T.$ In the next figure, you can see the red
+dashed line is the same \FRAME{dtbpFX}{3.1669in}{2.111in}{0pt}{}{}{Plot}{%
+\special{language "Scientific Word";type "MAPLEPLOT";width 3.1669in;height
+2.111in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";animated TRUE;animationStartTime "0";
+animationEndTime "10"; animationFramesPerSecond "10";xmin "0";xmax
+"100";animationParamMin "290";animationParamMax "350";xviewmin "0";xviewmax
+"40";yviewmin "0";yviewmax "400";viewset"XY";rangeset"X";plottype
+4;labeloverrides 3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
+\TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
+\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}t$};linecolor
+"blue";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
+"Dash";var1range "0,100";animationParamRange "290,350";num-x-gridlines
+50;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";animationStartTime
+"0"; animationEndTime "10"; animationFramesPerSecond
+"10";animationVisibleBeforeStart FALSE;rangeset"XA";function
+\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}290$};linecolor
+"blue";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
+"Dash";var1range "0,40";animationParamRange "290,350";num-x-gridlines
+100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";function
+\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{2}{V}t$};linecolor
+"green";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "0,40";animationParamRange "290,350";num-x-gridlines
+100;curveColor "[flat::RGB:0x00008000]";curveStyle "Line";VCamFile
+'SYDIZ908.xvz';valid_file "T";tempfilename
+'SYDIZ904.wmf';tempfile-properties "XPR";}}but now there is a green solid
+line. This is a line for a higher temperature. We expect a $1/%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ line for both, but with a higher temperature the line moves up and a
+little to the right on the graph. Since the temperature is the same along
+the whole red dotted line, we call such a line an \emph{isotherm.} The green
+solid line is a different isotherm with a different temperature.
+
+\section{Van der Waals Gasses}
+
+But of course our ideal gas is missing pieces of the physics of actual
+gases. For our physics students we have an upper division class in
+thermodynamics that fills in many of these missing pieces. We also have some
+quantum mechanics classes that help. Chemists have a thermodynamics class
+and their physical chemistry class. Mechanical engineers have a thermal
+class as well. So some of the details will just have to wait. But if you are
+in one of the disciplines that won't take these fun classes, we should leave
+you with a slight improvement. We can add in two pieces of physics.
+
+\begin{enumerate}
+\item As a real gas get's compressed the molecules are more and more
+attracted to each other. This reduces the pressure in the gas
+
+\item At higher pressures the gas molecules, themselves, constrain where
+other gas molecules can go. At some point they hit each other!
+\end{enumerate}
+
+A researcher named Van der Waals came up with this new approximation, so the
+result of adding in these two additional bits of physics is called the Van
+der Waals equitation. Let's see what it looks like.
+
+For the first bit of new physics we can add a term to the pressure that is
+proportional to the molar density squared.%
+\begin{equation*}
+P+a\left( \frac{n}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}\right) ^{2}
+\end{equation*}%
+where the constant $a$ depends on the specific gas. It's not obvious why
+this is the right form for our new gas law equation, but it kind of works.
+For the second bit of new physics we can subtract a term proportional to the
+volume of the molecules, themselves $b$ from the volume of the whole gas. 
+\begin{equation*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+-nb
+\end{equation*}%
+where $b$ is like a molar volume. All together our gas law becomes 
+\begin{equation*}
+\left( P+a\left( \frac{n}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}\right) ^{2}\right) \left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+-nb\right) =nRT
+\end{equation*}%
+This gas law equation was formed by a researcher named Van der Waals, and so
+it is called the Van der Waals gas law.
+
+Although it is an improvement, it still doesn't have all the physics that
+might be needed to describe a real gas. For example, look at the graph
+below. You see a plot of isotherms for a Van der Waals gas (CO$_{2}$).
+
+\FRAME{dtbpF}{3.0519in}{2.3549in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.0519in;height 2.3549in;depth
+0pt;original-width 3.0087in;original-height 2.3151in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SYDIL002.wmf';tempfile-properties "XPR";}}For high temperatures we see
+something that looks a lot like our ideal gas graph. but at a certain
+temperature for each gas the graph flattens out (middle orange line). That
+is really not behavior that we expect from an ideal gas. This temperature is
+called a \emph{critical temperature, }$T_{c},$ and for our CO$_{2}$ it is
+about $304\unit{K}.$ But look at the lower green line) this line dips down
+and make a valley. This isn't possible. Our \textquotedblleft
+improved\textquotedblright\ gas law is giving us unphysical predictions.
+What is missing is that we can have a change from gas to liquid at this
+pressure and temperature and we didn't include such changes in our Van der
+Waals gas law equation. Above $T_{c}$ our Van der Waals equation isn't too
+bad. But below $T_{c}$ it is not as useful. Of course we could improve on
+our Van der Waals equation, but that is a subject for an upper division
+class in thermodynamics. For this class, let's concentrate on the ideal gas
+equation even though we know it has some limitations. 
 
 \chapter{32 Chapter 2.2.2, 2.2.3}
 
