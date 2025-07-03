@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Tuesday, July 01, 2025 15:17:48}
+%TCIDATA{LastRevised=Thursday, July 03, 2025 17:20:30}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -20787,14 +20787,14 @@ equilibrium.
 %EndExpansion
 
 We have studied the zeroth law of thermodynamics. Zero is an odd place to
-start numbering (unless you are programing a computer in plython or C++).
-That no energy is transfered between to objects in thermodynaic equilibrim
-is so objkvious that for a while it went unstated. But now we recognize from
-our kinetic theory of gasses why this must be the case and we can label this
-fact a law of thermodynamics. But there is more than one law of
-thermodynamics (other wise, why would we number them at all?). Let's learn
-another law of thermodynamics, which has to do with concervation of energy
-in thermodynamic systems. 
+start numbering (unless you are programing a computer in python or C++).
+That no energy is transferred between to objects in thermodynamic
+equilibrium is so obvious that for a while it went unstated. But now we
+recognize from our kinetic theory of gasses why this must be the case and we
+can label this fact a law of thermodynamics. But there is more than one law
+of thermodynamics (other wise, why would we number them at all?). Let's
+learn another law of thermodynamics, which has to do with conservation of
+energy in thermodynamic systems.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -20803,32 +20803,34 @@ in thermodynamic systems.
 %EndExpansion
 
 \begin{itemize}
-\item The first law of Thermodynamics is just concervation of energy
+\item The first law of Thermodynamics is just conservation of energy
 
-\item 
+\item $\Delta E_{int}$ is an invariant quantity in thermodynamics
 
-\item $\Delta E_{int}=Q+w_{int}$
+\item Work in thermodynamic processes can be described as the integral $%
+w_{int}=\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$
+
+\item $\Delta E_{int}=Q+w_{int}$ is the first law of thermodynamics
 \end{itemize}
 
 \section{Conservation of Energy: First Law of Thermodynamics}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.10.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.1}
-\end{minipage}
-}%
-%EndExpansion
-Remember when we last studied energy in PH 121. We used the work energy
-theorem%
+Remember when we studied energy in PH 121. We used the work energy theorem%
 \begin{equation*}
 \Delta K=w
 \end{equation*}%
@@ -20886,39 +20888,9 @@ with an internal energy of the object. And we would be right.
 
 \subsection{Work and Internal energy}
 
-Our potential energy terms are all derived from work.%
-%TCIMACRO{%
-%\TeXButton{Question 123.10.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.2}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.10.2.5}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.2.5}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.2.5}
-\end{minipage}
-}%
-%EndExpansion
-Long ago we found that the work done on an object may depend on the path the
-object takes. We found work using 
+Our potential energy terms are all derived from work. Long ago we found that
+the work done on an object may depend on the path the object takes. We found
+work using 
 \begin{equation}
 w=\int_{x_{i}}^{x_{f}}\overrightarrow{F}\cdot \overrightarrow{dr}
 \end{equation}%
@@ -20932,87 +20904,39 @@ expect it to depend on the details of how the internal work is done.
 For mechanical work we defined the potential energy, $U,$ as 
 \begin{equation}
 w=-\Delta U
-\end{equation}
-
-%TCIMACRO{%
-%\TeXButton{Question 123.10.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.3}
-\end{minipage}
-}%
-%EndExpansion
+\end{equation}%
 Using this concept, we showed that mechanical energy 
 \begin{equation}
 E_{mech}=K+U
 \end{equation}%
 was often conserved, when $E_{thermal}=0$ where $E_{mech}$ was the total
-mechanic energy. Remember we solved a lot of problems back in PH121 by
-knowing that for a closed system, $E_{mech}$ did not change. In other words, 
-$E_{mech}$ was independent of path we take on our $F$ vs. $x$ diagram. This
-makes $E_{mech}$ much easier to work with. A path independent quantity makes
-problems easier.
+mechanic energy. Remember we solved a lot of problems back in Principles of
+Physics I by knowing that for a closed system, $E_{mech}$ did not change. In
+other words, $E_{mech}$ was independent of path we take on our $F$ vs. $x$
+diagram. This makes $E_{mech}$ much easier to work with. A path independent
+quantity makes problems easier.
 
 We want another variable to work with that removes the difficulty of
-worrying about the details of how the motion happens (the path). But we
-can't use the kinetic energy for this. The kinetic energy is part of the
-mechanical work of the object as a whole, and does not affect the internal
-workings of the object.
+worrying about the details of how the internal motion happens (the path).
+But we can't use the kinetic energy for this. The kinetic energy is part of
+the mechanical work of the object as a whole, and does not affect the
+internal workings of the object.
 
 Frictional forces do affect the object. Think of rubbing your hands
 together. There is mechanical work done by your muscles. There is kinetic
 energy while your hands move. But your hands heat up. This higher
 temperature is still there for a while after your hands stop moving.
-Eventually the temperature of your hands returns to normal. We expect that
-this is a transfer of energy, since dissipative forces take energy out of
-the system. We will call the movement of energy out of a system
-\textquotedblleft \emph{heat.}\textquotedblright\ We give it the symbol $Q$
-in this class.
+Eventually the temperature of your hands returns to normal. We now know to
+call this transfer of energy heat, $Q.$ 
 
-Note that this is a very strange and specific use of the word
-\textquotedblleft heat.\textquotedblright\ For us heat is a transfer of
-energy. It is not the amount of energy in a body. We will call the amount of
-energy that is in the body the \emph{internal energy} and give it the symbol 
-$E_{int}.$ But \textquotedblleft heat\textquotedblright\ is a \emph{transfer
-of internal energy}. It does not make sense to ask how much heat an object
-has. An object can have internal energy, but heat is a transfer of that
-energy to something else.
-
-The internal energy would depend on how much energy is transferred into the
-object. Say, we have a large metal block and we set it on a fire. The fire
-would transfer energy to the block. We could also do work on the block to
-increase the internal energy of the block, say, by compressing the block.
-
-%TCIMACRO{%
-%\TeXButton{Question 123.10.4}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.4}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.4}
-\end{minipage}
-}%
-%EndExpansion
-Now we are ready for our path independent quantity for internal energy. We
-define the change in internal energy as%
+Now that we remember all of this, we are ready to find our path independent
+quantity for internal energy. We define the change in internal energy as%
 \begin{equation*}
 \Delta E_{int}=Q+w_{int}
 \end{equation*}
 
 As with the mechanical energy, the change in internal energy does not depend
-on the details of how the change happens (what we are calling
+on the details of how the change happens (what we are calling the
 \textquotedblleft path\textquotedblright ). The change in energy is used
 because $Q$ and $w$ are transfer variables, so they \emph{do} depend on the
 details of the transfer. For small changes we can write%
@@ -21030,15 +20954,15 @@ carefully. The relationship
 \begin{equation}
 \Delta E_{int}=Q+w_{int}
 \end{equation}%
-is known as the \emph{first law of thermodynamics.} This will be the subject
-of our next lecture.
+is known as the \emph{first law of thermodynamics.} 
 
 Let's look at some systems and think about their internal energies.
 
 \subsection{An Isolated System}
 
-An isolated system is a system separated from the rest of the universe.
-Nothing can act on it. When a system is isolated, we have%
+Last lecture we defined isolated systems. An isolated system is a system
+separated from the rest of the universe. Nothing can act on it. When a
+system is isolated, we have%
 \begin{equation}
 w_{int}=0
 \end{equation}%
@@ -21054,25 +20978,9 @@ because no heat can flow to or from an isolated system so%
 \subsection{A Cyclic Process}
 
 Suppose we have a process, something that is done to a sample of matter, say
-a gas. Further suppose that our process repeats over and over again. We call
-such a process a \emph{cyclic} process. This is like the pistons in your car
-going through the same motion over and over again to compress the gas in
-your engine cylinders. 
-%TCIMACRO{%
-%\TeXButton{Question 123.10.5}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.5}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.5}
-\end{minipage}
-}%
-%EndExpansion
+a gas, over and over again the say way. We call such a process a \emph{cyclic%
+} process. This is like the pistons in your car going through the same
+motion over and over again to compress the gas in your engine cylinders.
 Let's practice with the idea of internal energy, work, heat and PV\ diagrams
 for such a process. If a process repeats, it starts and ends in the same
 state so then 
@@ -21084,80 +20992,52 @@ and%
 Q=-w_{int}
 \end{equation}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.10.6}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.6}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.6}
-\end{minipage}
-}%
-%EndExpansion
+But these examples were too easy. Let's take on a harder problem where we
+actually find the amount of work done.
 
-\chapter{35 Thermodynamic Processes 2.3.4, 2.3.5}
-
-Armed with the Idea Gas Law and our (somewhat) better understanding it is
-finally time to study the next law of thermodynamics. We will use the ideas
-of energy to do this. In PH121 we loved energy because the ideas of energy
-made problems easier to solve. The same is true here. We will start this
-lecture by thinking about the energy of large numbers of objects (atoms and
-molecules).
-
-%TCIMACRO{%
-%\TeXButton{Fundamental Concepts}{\hspace{-1.3in}{\Large Fundamental Concepts\vspace{0.25in}}}}%
-%BeginExpansion
-\hspace{-1.3in}{\Large Fundamental Concepts\vspace{0.25in}}%
-%EndExpansion
+\section{Work }
 
 \begin{itemize}
-\item $\Delta E_{int}$ is an invariant quantity in thermodynamics
-
-\item Work in thermodynamic processes can be described as the integral $%
-w_{int}=\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$
-
-\item $Q$ is a transfer of transfer of internal energy, and it is called
-\textquotedblleft heat\textquotedblright
-
-\item $\Delta E_{int}=Q+w_{int}$ is the first law of thermodynamics
+\item Consider the work done by a piston as it compresses a gas. It might be
+good if the amount of work was equal to the amount of energy transfer by
+heat. We often want this to be true! Otherwise you could melt your engine as
+your car operates. We want an engine in a car (or train, or airplane) to be
+a cyclic process. This explains why your car engine surface gets hot. Work
+is being done in the cylinders in your engine, but to make the process
+cyclic some energy must be lost by heat or the energy would rise. Unlike
+your car pistons, let's do this slowly and quazi-statically so that the
+pressure equalizes every time we move the piston a little bit. \FRAME{dtbpFX%
+}{2.0454in}{1.3651in}{0pt}{}{}{Plot}{\special{language "Scientific
+Word";type "MAPLEPLOT";width 2.0454in;height 1.3651in;depth 0pt;display
+"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
+"2";xmax "10";xviewmin "2";xviewmax "10";yviewmin "100";yviewmax
+"900";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label
+"V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
+\TEXUX{$V$};function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle
+1;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "cyan";linestyle 1;pointplot
+TRUE;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008080]";curveStyle "Point";VCamFile
+'SYUDSZ1M.xvz';valid_file "T";tempfilename
+'SYUDSZ0J.wmf';tempfile-properties "XPR";}}Then the pressure won't change.
+Let's call such a process where the pressure doesn't change in the cylinder
+an \emph{isobaric process. }\footnote{%
+There are details of car engines that we won't tackle until later. So not
+everything in this lecture applies directly to car engines.}
 \end{itemize}
 
-\section{Work and Thermodynamic Processes}
-
-Consider the work done by the piston as it compresses the gas. The amount of
-work must be equal to the amount of energy transfer by heat. We want this to
-be true! Otherwise you could melt your engine. We want an engine in a car
-(or train, or airplane) to be a cyclic process. This explains why your car
-engine gets hot. Work is being done in the cylinders in your engine, but to
-make the process cyclic some energy must be lost by heat (though there are
-details of car engines that we won't tackle until later).
-
-\FRAME{dtbpF}{2.1483in}{2.0294in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{2.124in}{2.0107in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.1483in;height 2.0294in;depth
-0in;original-width 2.1607in;original-height 2.0392in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 2.124in;height 2.0107in;depth
+0in;original-width 2.0851in;original-height 1.9718in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE79.wmf';tempfile-properties "XPR";}}
+'SYU5A002.wmf';tempfile-properties "XPR";}}
 
 Lets take a close look at the gas within the piston. At equilibrium we know 
 \begin{equation*}
@@ -21170,12 +21050,12 @@ F_{P}=PA
 This force is the force of the gas pushing on the piston. We could label it 
 \begin{equation*}
 F_{gp}=F_{P}
-\end{equation*}
+\end{equation*}%
 Notice that the gas pushes to the right. If we apply an external force to
 the piston slowly so as to allow the system to remain in thermal equilibrium
 as we go, then 
 \begin{equation*}
-\overrightarrow{F}_{ex}=-F_{ex}\hat{\imath}
+\overrightarrow{F}_{ex}=-F_{ex}\hat{x}
 \end{equation*}%
 because we are pushing in the $-x$-direction. Again, we will move the piston
 slowly so we don't violate our quasi-static rule. As we move the piston the
@@ -21186,8 +21066,8 @@ F_{ex}=F_{gp}
 \end{equation*}%
 but the pressure force $F_{gp}$ pushes the opposite direction 
 \begin{eqnarray*}
-\overrightarrow{F}_{gp} &=&+F_{ex}\hat{\imath} \\
-&=&PA\hat{\imath}
+\overrightarrow{F}_{gp} &=&+F_{ex}\hat{x} \\
+&=&PA\hat{x}
 \end{eqnarray*}%
 We should also note that since neither the piston nor the gas are
 accelerating, Newton's third law tells us that the force of the gas on the
@@ -21197,11 +21077,11 @@ opposite in direction%
 F_{gp}=F_{pg}
 \end{equation*}%
 \begin{equation*}
-\overrightarrow{F}_{gp}=-F_{pg}\hat{\imath}
-\end{equation*}
+\overrightarrow{F}_{gp}=-F_{pg}\hat{x}
+\end{equation*}%
 When we move the piston to the left, we have a displacement%
 \begin{equation*}
-\overrightarrow{dr}=-dx\hat{\imath}
+\overrightarrow{dr}=-dx\hat{x}
 \end{equation*}%
 so the work done \emph{on the gas by the piston would be }%
 \begin{equation*}
@@ -21211,45 +21091,61 @@ Remembering how to use a dot product we can write this as
 \begin{equation*}
 w_{gp}=\int_{x_{i}}^{x_{f}}F_{ex}dx\cos \theta _{Fx}
 \end{equation*}%
-It is worth remembering that in this formula $F_{p}$ and $dx$ are
+It is worth remembering that in this formula $F_{ex}$ and $dx$ are
 magnitudes. Let's write this as%
 \begin{equation*}
 w_{gp}=\int_{x_{i}}^{x_{f}}\left\vert F_{ex}\right\vert \left\vert
 dx\right\vert \cos \theta _{Fx}
 \end{equation*}%
-to remind us. Substituting in $\left\vert F_{ex}\right\vert $ for $%
-\left\vert F_{gp}\right\vert $ we have 
+to remind us. Substituting in $\left\vert F_{gp}\right\vert $ for $%
+\left\vert F_{ex}\right\vert $ (since they have the same magnitude) we have 
 \begin{eqnarray*}
 w_{gp} &=&\int_{x_{i}}^{x_{f}}\left\vert F_{gp}\right\vert \left\vert
 dx\right\vert \cos \theta _{Fx} \\
 &=&\int_{x_{i}}^{x_{f}}\left\vert PA\right\vert \left\vert dx\right\vert
 \cos \theta _{Fx}
 \end{eqnarray*}%
-and the angle between $F_{gp}$ and $dx$ is $0$ (they are both to the left) so
+and the angle between $F_{ex}$ and $dx$ is $180\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}.$ If this seems mysterious, look at the last figure, and remember we are
+really working with $F_{ex}.$ We put in $F_{pg}$ because it's magnitude is
+the same as that of $F_{ex}.$ So $180\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}$ is the right angle for our dot product.
 
 \begin{equation*}
-w_{gp}=\int_{x_{i}}^{x_{f}}\left\vert PA\right\vert \left\vert dx\right\vert
+w_{gp}=-\int_{x_{i}}^{x_{f}}\left\vert PA\right\vert \left\vert
+dx\right\vert 
 \end{equation*}%
-where, to get the total work done on the piston we are integrating over the
-entire path of the piston travels. It is worth noting that $P$ can only be
+To get the total work done on the piston we are integrating over the entire
+path of the piston travels. It is worth noting that $P$ can only be
 positive, and the same is true for $A$. Both $P$ and $A$ are constant, since
 we are using our quazi-static process and allowing the pressure to equalize
 as we go. So we could write the work done on the piston by the gas as 
 \begin{equation*}
-w_{gp}=PA\int_{x_{i}}^{x_{f}}\left\vert dx\right\vert
+w_{gp}=PA\int_{x_{i}}^{x_{f}}\left\vert dx\right\vert 
 \end{equation*}%
 but now we need to consider $\left\vert dx\right\vert .$ We know that $dx$
 is a small displacement, and displacements can be negative. And in our case,
 as the piston goes to the left, $dx$ certainly is negative. But no matter,
-we don't just have $dx,$ we have $\left\vert dx\right\vert $. So the work is
-positive just as it should be.
+we don't just have $dx,$ we have $\left\vert dx\right\vert $. But there is a
+problem. We got a minus sign from our dot product, but we would like the
+work done by the piston on the gas to be a positive number. And it looks
+like our integral will be negative. 
 
-But here we can be a little bit clever. If we add in a minus sign so that 
+But here we can be a little bit clever. If $dx$ really is negative, then the
+negative hiding inside of $dx$ cancels the negative sign from our dot
+product. And then  
 \begin{equation*}
 w_{gp}=-PA\int_{x_{i}}^{x_{f}}dx
-\end{equation*}%
-our added minus sign will cancel with the minus sign hiding in the $dx,$
-still giving us positive work (think of what we did with springs in PH121 to
+\end{equation*}
+still gives us positive work (think of what we did with springs in PH121 to
 deal with $S=-k\left( x-x_{o}\right) $ in work integrals). Now we don't have
 to worry about integrating with absolute value signs.
 
@@ -21390,7 +21286,7 @@ would expect the work done by the gas on the piston to be negative.
 Since we assumed a quasi-static process, the two forces must always be
 nearly the same, 
 \begin{equation*}
-F_{ex}=F_{pg}
+\left\vert F_{ex}\right\vert =\left\vert F_{pg}\right\vert 
 \end{equation*}%
 so the amount of work must be nearly the same, but the sign must be negative
 for the work on the gas due to the piston's push. We wrote the work done by
@@ -21429,7 +21325,7 @@ _{f}}Pd%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-\right) \\
+\right)  \\
 &=&\int_{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -21450,11 +21346,11 @@ that is, the work done on the gas by the piston is the negative of the work
 done on the piston by the gas.
 
 We are principally interested in what happens to the gas, (we studied
-objects like the piston in PH121) so the first equation is what we are
-looking for. This is the internal work done on the gas!
+objects like the piston in Principles of Physics I) so the first equation is
+what we are looking for. This is the internal work done on the gas!
 
 \begin{equation}
-w_{gp}=w_{int}=-\int_{%
+w_{gp}=w_{\text{on the gas}}=w_{int}=-\int_{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -21469,25 +21365,29 @@ _{f}}Pd%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-\end{equation}
-
-%TCIMACRO{%
-%\TeXButton{Question 123.10.6}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.6}
-%\end{minipage}
-%}}}%
+\end{equation}%
+And we could also define 
+\begin{equation*}
+w_{pg}=w_{\text{by the gas}}=\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.6}
-\end{minipage}
-}%
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+The only difference is the minus sign. We are going to have to be careful!
 
-This looks easy enough, but to integrate we must know how $P$ depends on $%
+Still, this looks easy enough, but to integrate we must know how $P$ depends
+on $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -21533,67 +21433,44 @@ final points.
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE7D.wmf';tempfile-properties "XPR";}}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.10.7}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.10.7}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.10.7}
-\end{minipage}
-}%
-%EndExpansion
+Notice that we have calculated the amount of work done on the gas. For
+physicists this is normally what we want. 
 
-Notice that we have calculated the amount of work done on the gas. You might
-be wondering if that is what we want to build car or jet engines. Don't we
-want the gas to expand to push the piston and make the car go? And of
-course, you are right in your thinking. Eventually we want to know the work
-done by the gas on the piston, $w_{pg}.$ But for now, we will look at $%
+You might be wondering if that is what we want to build car or jet engines.
+Don't we want the gas to expand to push the piston and make the car go? And
+of course, you are right in your thinking. Eventually we want to know the
+work done by the gas on the piston, $w_{pg}.$ But for now, we will look at $%
 w_{gp}.$ But from what we have done we know these two works are very related
 for a quasi-static process. 
 \begin{equation*}
-w_{pg}=-w_{gp}
+w_{\text{on the gas}}=-w_{\text{by the gas}}
 \end{equation*}
 
-\bigskip
-
-\section{Ideal Gas Special Processes}
-
-In what we did above, I introduced a new kind of graph. I graphed $P$ vs. $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-.$ In the ideal gas law, there are four state variables, $n,$ $P,$ $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-,$ and $T.$ But if we have a sealed container so $n$ can't change, we can
-describe the other three variables on one graph, so each point on the graph
-will show the possible states of the gas. This seems almost too good to be
-true, By plotting only $P$ and $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-,$ how can we get $T$ on the graph?
-
-Well, think about the ideal gas law if $n$ is constant%
+But let's go back to our first law of thermodynamics. 
+\begin{equation}
+\Delta E_{int}=Q+w_{int}
+\end{equation}%
+We know how $w_{int}$ changes on a PV\ diagram. How do $\Delta E_{in}$ and $Q
+$ change on a PV\ diagram? For energy transfer by heat, we don't need a
+pressure or volume change, so a PV diagram isn't a great way to show $Q.$
+But we can consider $\Delta E_{int}$ on a PV\ diagram. We already know that
+for ideal gasses 
+\begin{equation}
+E_{int}=\frac{3}{2}k_{B}T
+\end{equation}%
+So $E_{int}$ changes with $T.$ But there is no $T$ on a PV diagram! For
+ideal gasses we can solve this problem. Suppose we have $n$ moles gas in a
+cylinder. We can solve for $P$ as a function of $V$%
 \begin{equation*}
-\frac{P%
+P=\frac{nRT}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}{T}=nR
+}
 \end{equation*}%
-the right hand side is constant. Now suppose we also let $T$ be constant. 
+Now we want to let $T$ be constant. Along a line of constant $T$ our $E_{int}
+$ will be constant. 
 \begin{equation*}
 P=\left( nRT\right) \frac{1}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -21637,8 +21514,10 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "Solid";var1range "0,40";animationParamRange "290,350";num-x-gridlines
 100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
 'SVAOR55H.xvz';valid_file "T";tempfilename
-'SVAORN5O.wmf';tempfile-properties "XPR";}}now let's plot it again for a
-different value of $T$%
+'SVAORN5O.wmf';tempfile-properties "XPR";}}All along this line $T$ is
+constant so $E_{int}$ is constant. We have already seen such a line on a PV
+diagram and know it is called an \emph{isotherm}. Now let's plot it again
+for a different value of $T$%
 \begin{equation*}
 \begin{tabular}{ll}
 $n=1\unit{mol}$ & number of moles \\ 
@@ -21694,1806 +21573,154 @@ to the upper right hand part off the graph. So our $P$ vs. $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-$ graph can tell us something about temperature.
-
-Knowing how to interpret a $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\ $diagram, we can now look at some simple processes that have special
-properties.
-
-\subsection{Constant volume process}
-
-%TCIMACRO{%
-%\TeXButton{Question 123.9.12}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.12}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.12}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.9.13}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.13}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.13}
-\end{minipage}
-}%
-%EndExpansion
-Suppose we have a process that takes us between two states on a $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\ $diagram as shown in the next figure. \FRAME{dtbpFX}{1.9545in}{1.3041in}{%
-0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
-1.9545in;height 1.3041in;depth 0pt;display "USEDEF";plot_snapshots
-TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "2";xmax "10";xviewmin
-"2";xviewmax "10";yviewmin "100";yviewmax
-"900";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label
-"V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
-\TEXUX{$V$};function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
-\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
-28}$};linecolor "blue";linestyle 1;pointstyle "point";linethickness
-1;lineAttributes "Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle
-"Line";function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
-\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
-28}$};linecolor "blue";linestyle 1;pointplot TRUE;pointstyle
-"diamond";linethickness 1;lineAttributes "Solid";curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Point";VCamFile
-'SW9M9D16.xvz';valid_file "T";tempfilename
-'SUS73WA9.wmf';tempfile-properties "XPR";}}We start at one pressure, say $%
-P=275\unit{Pa},$ and end at another pressure, say, $P=775\unit{Pa}.$ In this
-process, notice that the volume does not change. Such a process is called 
-\emph{isochoric}. Would we predict that the temperature went up or down in
-taking this path? Well, we went from the lower to the upper part of the
-graph, so we expect that the temperature went up. Starting again with the
-ideal gas law%
-\begin{equation*}
-P=\left( \frac{nR}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}\right) T
-\end{equation*}%
-we can see that when $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ is constant, $P$ goes like $T,$ so if $P$ went up, so did the temperature.
-
-But how would create such a situation? Consider what would happen\footnote{%
-Only consider this, because it would be irresponsible and dangerous (and
-illegal in some states) to do this!} if you placed an aerosol can in a fire.
-The aerosol can is rigid, so the volume can't change. But the fire will make
-the temperature change, and the pressure will change--that is--until the can
-explodes.
-
-\subsection{Constant Pressure process @@@@}
-
-But there is more than one way to add energy to a gas. Suppose we envision
-another process where instead of keeping the volume constant we keep the
-pressure constant.
-
-Finding $C_{P}$ is easy because we know that 
-\begin{equation*}
-C_{P}=C_{V}+R
-\end{equation*}%
-so 
-\begin{equation*}
-C_{P}=\frac{5}{2}R
-\end{equation*}
-
-For adiabatic processes we need the ratio of $C_{P}$ to $C_{V}$ or $\gamma .$
-We now know that 
-\begin{equation*}
-C_{V}=\frac{3}{2}R
-\end{equation*}%
-\begin{equation*}
-C_{P}=\frac{5}{2}R
-\end{equation*}%
-and we may take the ratio of these values%
-\begin{eqnarray*}
-\gamma &=&\frac{C_{P}}{C_{V}} \\
-&=&\frac{\frac{5}{2}R}{\frac{3}{2}R} \\
-&=&\frac{5}{3}
-\end{eqnarray*}
-
-This works well for monotonic gasses, but fails badly for more complex
-gasses. So we see our ideal gas formulation starts to break down with more
-complex gasses at this point. To go farther, we would need to include the
-rotational and vibrational energy of the molecules. Still, we have come a
-long ways with our simple ideal gas assumptions!
-
-Note that for solids and liquids $\Delta 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ is very small so very little work is done. This means that $C_{P}\approx
-C_{V}$ which is why we we could get away with only one value for the molar
-heat capacity in the tables for solids and liquids. @@@@
-
-%TCIMACRO{%
-%\TeXButton{Question 123.9.14}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.14}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.14}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.9.13}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.13}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.13}
-\end{minipage}
-}%
-%EndExpansion
-Consider the next $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\ $diagram.
-
-\FRAME{dtbpFX}{2.2883in}{1.5264in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.2883in;height 1.5264in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "2";xmax "10";xviewmin "2";xviewmax "10";yviewmin
-"100";yviewmax "900";viewset"XY";rangeset"X";plottype 4;labeloverrides
-3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
-\TEXUX{$V$};function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
-\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle
-1;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
-\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle 1;pointplot
-TRUE;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
-"[flat::RGB:0x00008000]";curveStyle "Point";VCamFile
-'SVAOTK5Y.xvz';valid_file "T";tempfilename
-'SVAOTP5R.wmf';tempfile-properties "XPR";}}We can see that in this process
-the pressure is not changing. If we go from left to right along this path,
-will the temperature rise? We know that going to the right means higher
-temperature on a $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ diagram, so yes it will.
-
-The process represented by this type of path on a $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ diagram is called an \emph{isobaric} process. How would we produce such a
-situation? Consider a piston in a cylinder. The cylinder has a gas inside,
-and air on the outside\FRAME{dhF}{1.8308in}{1.5212in}{0pt}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 1.8308in;height 1.5212in;depth
-0pt;original-width 1.7936in;original-height 1.4849in;cropleft "0";croptop
+$ graph can tell us something about temperature. And because $E_{int}=\frac{3%
+}{2}k_{B}T$ these lines and their positions also tell us about the internal
+energy. A change in internal energy would be going from one such isothermal
+line to another.\FRAME{dtbpF}{3.461in}{2.3116in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.461in;height 2.3116in;depth
+0pt;original-width 3.4151in;original-height 2.2719in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73WAB.wmf';tempfile-properties "XPR";}}The piston is free to move up or
-down. The forces acting on the piston are shown. The weight of the piston
-pulls it downward, the force due to pressure of the gas, $F_{p,gas}$ pushes
-up, and the air pressure $F_{p,air}$ pushes down. The net force will be 
-\begin{equation*}
-\Sigma F_{y}=ma_{y}=F_{p,gas}-F_{p,air}-mg
-\end{equation*}%
-where the mass of the piston is $m.$ We can write this as 
-\begin{equation*}
-ma_{y}=P_{gas}A-P_{air}A-mg
-\end{equation*}%
-If the piston is not accelerating , then 
-\begin{equation*}
-P_{gas}=P_{air}+\frac{mg}{A}
-\end{equation*}%
-and we find that the pressure of the gas inside is slightly larger than the
-outside air pressure. What would happen if we heated the gas? 
-\begin{equation*}
-P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=NRT
-\end{equation*}%
-would suggest that $P$ might change, but since the piston is free to move,
-what happens is that the force $F_{p,gas}$ increases when $P_{gas}$
-increases, and the piston accelerates upward. It stops when the forces are
-again balanced. But that means that $P_{gas}$ will only change for a moment,
-and then we will achieve equilibrium at the same old value of $P_{gas}.$ But
-something has changed, the volume has increased.
-
-\subsection{Constant Temperature Process}
-
-We have already met the constant temperature process.\FRAME{dtbpFX}{1.9095in%
-}{1.2739in}{0pt}{}{}{Plot}{\special{language "Scientific Word";type
-"MAPLEPLOT";width 1.9095in;height 1.2739in;depth 0pt;display
-"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";animated
-TRUE;animationStartTime "0"; animationEndTime "10"; animationFramesPerSecond
-"10";xmin "0";xmax "40";animationParamMin "290";animationParamMax
-"350";xviewmin "0";xviewmax "40";yviewmin "0";yviewmax
-"400";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label
-"V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
-\TEXUX{x};var1name \TEXUX{$V$};animationParamList \TEXUX{$x$};function
-\TEXUX{$8.\,\allowbreak 314\frac{1}{V}590$};linecolor "blue";linestyle
-1;pointstyle "point";linethickness 3;lineAttributes "Solid";var1range
-"0,40";animationParamRange "290,350";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SVAOTR60.xvz';valid_file "T";tempfilename
-'SVAOTY5S.wmf';tempfile-properties "XPR";}}How do we make such a path
-happen? Consider our piston again.\FRAME{dhF}{2.5434in}{1.6328in}{0pt}{}{}{%
-Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.5434in;height 1.6328in;depth 0pt;original-width 2.5028in;original-height
-1.5965in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73WAD.wmf';tempfile-properties "XPR";}}This time, let's put it in a vat
-of ice water. We can compress the gas by pushing on the piston. But if the
-temperature is changed by compressing the gas, it is quickly changed back by
-the ice water.
-
-\section{Special processes and work}
-
-Let's use our definition of internal work and apply it to ideal gasses. We
-have three special processes we have studied. Let's find the work done in
-each process.
-
-\subsection{Isobaric process}
-
-\FRAME{dtbpFX}{2.0454in}{1.3651in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.0454in;height 1.3651in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "2";xmax "10";xviewmin "2";xviewmax "10";yviewmin
-"100";yviewmax "900";viewset"XY";rangeset"X";plottype 4;labeloverrides
-3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
-\TEXUX{$V$};function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
-\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle
-1;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
-\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "cyan";linestyle 1;pointplot
-TRUE;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
-"[flat::RGB:0x00008080]";curveStyle "Point";VCamFile
-'SVAQEX77.xvz';valid_file "T";tempfilename
-'SVAQ5O5Z.wmf';tempfile-properties "XPR";}}
-
-For an isobaric process, we can see that our integral becomes very simple 
-\begin{eqnarray*}
-w_{int} &=&-\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&-P\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&-P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}\right)
-\end{eqnarray*}%
-where $P$ is constant.
-
-\subsection{Isochoric (isovolumetric) process}
-
-\FRAME{dtbpFX}{1.9545in}{1.3041in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 1.9545in;height 1.3041in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "2";xmax "10";xviewmin "2";xviewmax "10";yviewmin
-"100";yviewmax "900";viewset"XY";rangeset"X";plottype 4;labeloverrides
-3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
-\TEXUX{$V$};function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
-\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
-28}$};linecolor "blue";linestyle 1;pointstyle "point";linethickness
-1;lineAttributes "Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle
-"Line";function
-\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
-\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
-28}$};linecolor "blue";linestyle 1;pointplot TRUE;pointstyle
-"diamond";linethickness 1;lineAttributes "Solid";curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Point";VCamFile
-'SW9M9G1A.xvz';valid_file "T";tempfilename
-'SVAPGE5U.wmf';tempfile-properties "XPR";}}In this case the integral is even
-easier. The volume does not change. The area under the curve is zero.%
-\begin{eqnarray*}
-w_{int} &=&-\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&0
-\end{eqnarray*}%
-This means no work is done in an isovolumetric process. This makes some
-sense. We have neither compressed the gas, nor have we expanded the gas.
-Think of $\overrightarrow{F}\cdot d\overrightarrow{r}.$ Since $d\mathbf{r}$
-is zero, the work must be zero.
-
-\subsection{Isothermal process}
-
-\FRAME{dtbpFX}{2.2087in}{1.4719in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.2087in;height 1.4719in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";animated TRUE;animationStartTime "0"; animationEndTime "10";
-animationFramesPerSecond "10";xmin "0";xmax "100";animationParamMin
-"290";animationParamMax "350";xviewmin "0";xviewmax "40";yviewmin
-"0";yviewmax "400";viewset"XY";rangeset"X";plottype 4;labeloverrides
-3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
-\TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
-\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}t$};linecolor
-"blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
-"Solid";var1range "0,100";animationParamRange "290,350";num-x-gridlines
-50;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";animationStartTime
-"0"; animationEndTime "10"; animationFramesPerSecond
-"10";animationVisibleBeforeStart FALSE;rangeset"XA";function
-\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}290$};linecolor
-"blue";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
-"Dash";var1range "0,40";animationParamRange "290,350";num-x-gridlines
-100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SUS73W4L.xvz';valid_file "T";tempfilename
-'SVAPGK5V.wmf';tempfile-properties "XPR";}}
-
-For an isothermal process, the temperature does not change, but both the
-volume and the pressure change. We can rewrite the ideal gas law as
-
-\begin{equation}
-P=\frac{nRT}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}
-\end{equation}
-
-Performing our work integral for a gas going from some initial volume $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}$ to a final volume, $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}.$%
-\begin{eqnarray}
-w_{int} &=&-\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&-\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}\frac{nRT}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&-nRT\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}\frac{1}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&-nRT\left[ \ln \frac{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}\right]
-\end{eqnarray}%
-then for an isothermal process%
-\begin{equation}
-w_{int}=nRT\left[ \ln \frac{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}\right]
-\end{equation}
-
-So if $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}>%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}$ the work is negative and if $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}<%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}$ the work is positive.
-
-\subsection{Path Dependence}
-
-We should do a problem that shows the path dependence of thermodynamics
-work. Notice that how we compress the gas (quickly vs. slowly, etc.) makes a
-difference on our PV diagram. For example, quick actions would not let
-energy leave by heat, so temperature would rise. Slow actions would allow
-enough time for energy to leave, allowing the temperature to stay the same.
-So when we say there is a \textquotedblleft path
-dependence\textquotedblright\ for thermodynamic work, it is equivalent to
-saying we have different amounts of work for \textquotedblleft different
-paths\textquotedblright\ on a PV-diagram. The PV-diagram shows the different
-physical paths as different lines on the graph. Here is an example.
-
-Suppose we change $1\unit{mol}$ of an ideal gas from one state to another by
-two different paths. The two paths are shown in the next figure.\FRAME{dtbpF%
-}{3.0894in}{2.0676in}{0pt}{}{}{Figure}{\special{language "Scientific
+'SYU9LY05.wmf';tempfile-properties "XPR";}}And because $\Delta E_{int}$ is
+path independent, it doesn't matter how we go from $E_{int}.$ So if we
+followed this PV path \FRAME{dtbpF}{2.8383in}{1.8983in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.8383in;height 1.8983in;depth
+0pt;original-width 2.7951in;original-height 1.8602in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SYU9MU06.wmf';tempfile-properties "XPR";}}or this PV\ path \FRAME{dtbpF}{%
+2.8677in}{1.9182in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 3.0894in;height 2.0676in;depth 0pt;original-width
-3.1195in;original-height 2.0782in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73WAM.wmf';tempfile-properties "XPR";}}
+"T";width 2.8677in;height 1.9182in;depth 0pt;original-width
+2.8253in;original-height 1.8801in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SYU9NH07.wmf';tempfile-properties "XPR";}}%
+we would get the same $\Delta E_{int}.$ A way to think about this is that $%
+\Delta E_{int}$ only depends on it's starting and end points (think about
+displacement). So 
+\begin{equation*}
+\Delta E_{int}=E_{2_{int}}-E_{1_{int}}
+\end{equation*}%
+regardless of the path. So any path from $E_{1_{int}}$ to $E_{2_{int}}$
+gives the same change in internal energy. \FRAME{dtbpF}{2.7181in}{1.8178in}{%
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.7181in;height 1.8178in;depth 0pt;original-width 2.6757in;original-height
+1.7798in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SYU9QT08.wmf';tempfile-properties "XPR";}}
 
-We recognize the blue path as a combination of an isobaric and an isothermal
-process. So for the blue path, the work done will be a combination of%
-\begin{eqnarray*}
-w_{isobaric} &=&-P\left( 
+Looking at an isothermal process can help us understand our other processes.
+Suppose we have two different isothermal processes, one at $100\unit{K}$ and
+one at $300\unit{K}.$ The isotherms look like this on a $P%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{f}-%
+$ diagram: \FRAME{dtbpF}{2.7612in}{1.8316in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.7612in;height 1.8316in;depth
+0pt;original-width 2.7851in;original-height 1.8378in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SYUH880T.wmf';tempfile-properties "XPR";}}Every point on the $300\unit{K}$
+line has the same temperature. Every point on the $100\unit{K}$ line has the
+same temperature. We can see that points on the $P%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}\right) \\
-w_{isothermal} &=&nRT\left[ \ln \frac{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}\right]
-\end{eqnarray*}
+\ $diagram that are closer to the origin must have lower temperatures. We
+can see the points farther from the origin have higher temperatures. \FRAME{%
+dtbpF}{2.8091in}{1.8636in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 2.8091in;height 1.8636in;depth 0pt;original-width
+2.8339in;original-height 1.8707in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SYUH880S.wmf';tempfile-properties "XPR";}}
 
-Then%
-\begin{eqnarray*}
-w_{blue} &=&-P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}\right) +nRT\left[ \ln \frac{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}\right] \\
-&=&-378.29\unit{Pa}\left( 7.\,\allowbreak 538\,4\unit{m}^{3}-6\unit{m}%
-^{3}\right) \\
-&&+\left( 1\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right)
-\left( 343\unit{K}\right) \left[ \ln \frac{7.\,\allowbreak 538\,4\unit{m}^{3}%
-}{6\unit{m}^{3}}\right] \\
-&=&\allowbreak 650.\,\allowbreak 9\unit{J}
-\end{eqnarray*}
+Let's go back to energy transfer by heat. We know 
+\begin{equation*}
+Q=nC_{v}\Delta T
+\end{equation*}%
+if the volume doesn't change, we now can see a way to determine $Q$ from a
+PV\ diagram. \FRAME{dtbpF}{3.1427in}{2.0989in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.1427in;height 2.0989in;depth
+0pt;original-width 3.589in;original-height 2.3869in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SYU9XO0A.wmf';tempfile-properties "XPR";}}But this is just for a process
+where volume doesn't change. Still, our PV\ diagram does seem to be useful
+for thinking about thermodynamic process and for filling in our first law
+equation 
+\begin{equation*}
+\Delta E_{int}=Q+w
+\end{equation*}%
+We will work with this some more in our next lecture.
 
-But the red path is an isovolumetric path. We know that for isovolumetric
-paths the work is zero!%
-\begin{eqnarray*}
-w_{red} &=&-\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{1}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{2}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&0
-\end{eqnarray*}%
-and we can see that zero is very different than $651\unit{J}$! Indeed the
-work for each PV-diagram path is different. But why?
+\chapter{35 Thermodynamic Processes 2.3.4, 2.3.5}
 
-The red path is what we would get if we put a sealed strong container in a
-fire. The fire would provide energy to the gas in the container by heat. But
-the strong walls of the container would keep the gas from expanding. The
-pressure would rise and the temperature as well. But for the blue path we
-envision a movable piston in a cylinder of gas. when the fire adds energy by
-heat, the piston rises, keeping the pressure the same. The temperature does
-go up. Then we remove the fire, and slowly compress the gas back to its
-original volume. By doing this slowly the work we do adds a little bit of
-energy to the gas, but the energy can leave by heat, so the temperature of
-the gas stays the same.
-
-Note that these are really different processes! So it is no wonder that the
-internal work done is different. And we see all of this with our PV-diagram!
-
-\section{Molar Specific Heat of an Ideal Gas}
+We found in our last lecture that the first law of thermodynamics gives us
+the change in internal energy 
+\begin{equation*}
+\Delta E_{int}=Q+w
+\end{equation*}%
+and that we could illustrate the work, $w,$ process on a PV diagram and we
+even found a way to show $\Delta E_{int}$ on a PV\ diagram. We did find a
+way to show $Q$ for the special case of a process that doesn't change
+volume. But that seems so specific. Aren't there infinite different paths
+from a specific initial internal energy, $E_{i_{int}}$ to a final internal
+energy, $E_{f_{int}}$? Of course, the answer is yes. But many of these paths
+from $E_{i_{int}}$ to $E_{f_{int}}$ would require a numerical solution (this
+means use a computer to do the calculation). So instead, we are going to
+learn a few special processes that are easy to calculate by hand. We will
+limit our study mostly to these special processes. In industry you might
+need to go beyond these simple processes, but they give us great insight
+into how internal energy changes and we can even use them (mostly) to
+understand complicated systems like gasoline engines. So let's get started
+and define our special processes.
 
 %TCIMACRO{%
-%\TeXButton{Question 123.13.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.13.1}
-%\end{minipage}
-%}}}%
+%\TeXButton{Fundamental Concepts}{\hspace{-1.3in}{\Large Fundamental Concepts\vspace{0.25in}}}}%
 %BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.13.1}
-\end{minipage}
-}%
-%EndExpansion
-Remember we said that we would not find gases in specific heat tables? We
-did find steam. But other gases were missing. The reason is that there is
-not one unique value for the energy transfer by heat associated with a
-single temperature change of an ideal gas. We know that $Q$ is path
-dependent for gasses! But we can still use our formula if we make some
-limiting assumptions. We will limit ourselves to either isobaric or
-isovolumetric processes. For these specific cases we can write
-
-\begin{equation}
-Q=nC_{V}\Delta T\qquad \text{isovolumetric}
-\end{equation}
-
-\begin{equation}
-Q=nC_{P}\Delta T\qquad \text{isobaric}
-\end{equation}
-
-Note that these are molar specific heats. The quantity $n$ is the number of
-moles, not the mass. We won't define a regular specific heat for gasses.
-
-This may seem very limiting, but think of our goal. We want to be able to
-consider $P,$ $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-,$ $n,$ $T,$ $\Delta E_{int}$ and $Q$ and $W$ for each of our specific
-processes. These equations fill in the gap for two of those processes!
-
-\subsection{ Molar Specific Heat for Constant pressure}
-
-Let's take an example. Think again of adding energy by heat to a system at
-constant pressure. Suppose we know $P,$ $n,$ and $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}$ and $T_{i}$ for the initial state, and $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}$ and $T_{f}$ for the final state. We want to know $\Delta E_{int}$, $Q,$
-and $w$ to finish our description of the process. \FRAME{dtbpF}{1.907in}{%
-2.7691in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-1.907in;height 2.7691in;depth 0pt;original-width 1.915in;original-height
-2.7931in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE7G.wmf';tempfile-properties "XPR";}}We now know that 
-\begin{equation*}
-Q=nC_{P}\Delta T
-\end{equation*}%
-and we also know the work because we have calculated work before for an
-isobaric process 
-\begin{equation*}
-w=-P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}\right)
-\end{equation*}%
-so from the first law%
-\begin{equation*}
-\Delta E_{int}=nC_{P}\Delta T-P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}\right)
-\end{equation*}%
-and we have achieved our goal! We know $Q$, $w,$ and $\Delta E_{int}.$
-
-\subsection{C$_{V}$ for a monotonic gas}
-
-Let's try another example, this time for an isochoric process. So this time
-we know $n,$ and $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ and $P_{i},$ and $T_{i}$ for the initial state and $P_{f}$ and $T_{f}$ for
-the final state. We wish to calculate $Q$, $w,$ and $\Delta E_{int}$ for
-this process. We have calculated the work for an isochoric state before!
-
-\begin{equation*}
-W=0
-\end{equation*}%
-so from the first law%
-\begin{equation*}
-\Delta E_{int}=Q
-\end{equation*}%
-now we can add%
-\begin{equation*}
-\Delta E_{int}=nC_{V}\Delta T
-\end{equation*}
-
-Again we have achieved our goal. We have found $Q$, $w,$ and $\Delta E_{int}$%
-.
-
-\section{Relationship between $C_{V}$ and $C_{P}$}
-
-%TCIMACRO{%
-%\TeXButton{Question 123.13.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.13.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.13.2}
-\end{minipage}
-}%
-%EndExpansion
-We noticed before that 
-\begin{equation*}
-\Delta E_{int}\propto \Delta T
-\end{equation*}%
-This is really a key relationship in thermodynamics. We have not found the
-constant of proportionality yet (we will soon!). But this has a profound
-meaning that we can begin to use here. In the next figure, we have two
-isotherms (blue lines if you are seeing this in color)\FRAME{dtbpF}{3.618in}{%
-2.4268in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.618in;height 2.4268in;depth 0pt;original-width 3.6579in;original-height
-2.4445in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE7H.wmf';tempfile-properties "XPR";}}There is also an isovolumetric
-path marked (red) and an isobaric path (green) Notice that these two paths
-take the systems between the same temperature change. $\Delta T.$ Then we
-expect they will have the same internal energy change, $\Delta E_{int}.$ For
-the isobaric path, we find that 
-\begin{eqnarray*}
-Q_{P} &=&\Delta E_{int}+P\Delta 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&\Delta E_{int}+P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}\right)
-\end{eqnarray*}%
-For the isochoric path we have just 
-\begin{eqnarray*}
-Q_{V} &=&\Delta E_{int} \\
-&=&\Delta E_{int}
-\end{eqnarray*}%
-So the energy transfer by heat must supply both the internal energy change
-and the loss due to work for the isobaric path but only needs to supply the
-change in internal energy for the isochoric path.. Therefore, for the same $%
-n $ and $\Delta T$ 
-\begin{equation*}
-Q_{\text{constant }P}>Q_{\text{constant }V}
-\end{equation*}%
-Since 
-\begin{equation*}
-\Delta E_{int}=nC_{V}\Delta T
-\end{equation*}%
-for the isochoric path, and $\Delta E_{int}$ is the same for both paths,
-then we can set our two equations for $\Delta E_{int}$ equal to each other
-and write 
-\begin{equation*}
-nC_{P}\Delta T=nC_{V}\Delta T+P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}\right)
-\end{equation*}
-
-which gives 
-\begin{equation*}
-C_{P}=C_{V}+\frac{P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}\right) }{n\Delta T}
-\end{equation*}
-
-and therefore%
-\begin{equation*}
-C_{P}>C_{V}
-\end{equation*}
-
-We can go further, since, for an idea gas, 
-\begin{equation*}
-P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=nRT
-\end{equation*}%
-$\allowbreak $
-
-then
-
-\begin{equation*}
-P\Delta 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=nR\Delta T
-\end{equation*}%
-so%
-\begin{eqnarray*}
-C_{P} &=&C_{V}+\frac{P\Delta 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{n\Delta T} \\
-&=&C_{V}+\frac{nR\Delta T}{n\Delta T} \\
-&=&C_{V}+R
-\end{eqnarray*}%
-This is a big deal! 
-\begin{equation}
-C_{P}=C_{V}+R
-\end{equation}%
-for an ideal gas. So if we know either $C_{P}$ or $C_{V}$ for a gas, we can
-always find the other. This works pretty well in practice for monotonic
-gasses (and even for diatomic gasses) at standard temperature and pressure.
-Not only can we find $Q_{V}$ and $Q_{P}$ with molar specific heats, but if
-we know one molar specific heat, we can easily calculate the other!
-
-\section{Isothermal process and $Q_{V}$}
-
-We now have a powerful new equation to add to our isovolumetric and isobaric
-processes. But what about an isothermal process?\FRAME{dtbpF}{3.8193in}{%
-2.5359in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.8193in;height 2.5359in;depth 0pt;original-width 3.8637in;original-height
-2.5554in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SVAQIE7I.wmf';tempfile-properties "XPR";}}
-
-Suppose we know $T$ and $n,$ and that we know $P_{i}$ and $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}$ and $P_{f}$ and $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}.$ Can we find $\Delta E_{int,}$ $Q$, and $w$?
-
-We already know how to find $w$%
-\begin{equation*}
-w=-nRT\left[ \ln \frac{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}\right]
-\end{equation*}%
-and we know $\Delta E_{int}=0,$ so 
-\begin{eqnarray*}
-Q &=&-w \\
-&=&nRT\left[ \ln \frac{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}\right]
-\end{eqnarray*}%
-and we did not need our molar specific heat equations! We have $\Delta
-E_{int,}$ $Q$, and $w$ for three of our special processes. This completes
-three of our four special processes!
-
-\chapter{36 Adiabatic Processes and 2nd Law 2.3.6, 2.4.1}
-
-%TCIMACRO{\TeXButton{\chaptermark{Chapter 36}}{\chaptermark{Chapter 36}}}%
-%BeginExpansion
-\chaptermark{Chapter 36}%
+\hspace{-1.3in}{\Large Fundamental Concepts\vspace{0.25in}}%
 %EndExpansion
 
-Last lecture we found a way to find $Q$ for solids and liquids, $Q=Mc\Delta
-T $ or $Q=nC\Delta T.$ We need to do this for gasses so we can complete our
-calculations of the terms in the first law of thermodynamics. We will take
-on this task in this lecture.
+\begin{itemize}
+\item There is a sign convention for energy transfer. If energy leaves it is
+negative, if it comes into the system it is positive.
 
-%TCIMACRO{%
-%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
-%BeginExpansion
-\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
-%EndExpansion
-
-\begin{enumerate}
 \item There are two molar specific heats for gasses, $C_{V}$ and $C_{P}.$
 
 \item The two molar specific heats are related $C_{P}=C_{V}+R$
 
-\item The ratio of the molar specific heats is $\gamma =C_{P}/C_{V}$
+\item There are four special processes for which it is easy to find $\Delta
+E_{int},$ $Q,$ and $w,$ and three of them are isochoric, isobaric, and
+isothermal
 
-\item The change in internal energy can be expressed as $\Delta
+\item For an isochoric process $w_{int}=0,$ $Q=nC_{V}\Delta T,$ $\Delta
 E_{int}=nC_{V}\Delta T$
 
-\item For adiabatic processes we have two new equations $P_{i}%
+\item For an isobaric process $w_{int}=-P\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}^{\gamma }=P_{f}%
+,$ $Q=nC_{P}\Delta T,$ $\Delta E_{int}=nC_{P}\Delta T-P\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{f}^{\gamma }$ and $T_{f}%
+$
+
+\item For an isothermal process $w=-nRT\left[ \ln \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{f}^{\gamma -1}=T_{i}%
+_{f}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}^{\gamma -1}$
-
-\item For insolation the power transferred through the insolation material
-is given by $\mathcal{P=}\frac{Q}{\Delta t}=\frac{A\left( T_{h}-T_{c}\right) 
-}{\dsum\limits_{i}R_{i}}$
-
-\item The power transferred by radiation is given by $\mathcal{P=}\frac{Q}{%
-\Delta t}=\sigma AeT^{4}$
-\end{enumerate}
-
-\begin{itemize}
-\item Doing work on a system can change the system's temperature. This is
-called the mechanical equivalent of heat.
-
-\item There is a sign convention for energy transfer. If energy leaves it is
-negative, if it comes into the system it is positive.
-
-\item In thermodynamics, we try to find $\Delta E_{int},$ $Q,$ and $w$ for a
-process. We use the ideal gas law and the first law of thermodynamics to do
-this.
-
-\item We have special processes for which it is easy to find $\Delta
-E_{int}, $ $Q,$ and $w$
-
-\item We are still missing something.
+_{i}}\right] ,$ $Q=-w,$ $\Delta E_{int}=0$
 \end{itemize}
-
-\section{Adiabatic Processes for and Ideal Gas}
-
-With a complete set of equations for three of our four special processes, we
-should now review our new special process, the adiabatic process. It would
-be nice to be able to calculate $\Delta E_{int},$ $Q,$ and $w.$ for this
-process. For and adiabatic process we have
-
-\begin{enumerate}
-\item No heat transfer $Q=0$
-
-\item $\Delta E_{int}=w$
-\end{enumerate}
-
-It might see like we are home free, $Q=0$! We don't need our molar specific
-heat equations for an adiabatic process either.
-
-But we don't yet know how to find $w$ or $\Delta E_{int}$ for an adiabatic
-process. We need to fix this problem. We could do this by finding an
-expression for the pressure as a function of volume along the adiabatic
-path, then using 
-\begin{equation*}
-w=-\int_{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}^{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{equation*}
-
-Since%
-\begin{eqnarray*}
-\Delta E_{int} &=&w \\
-&=&-\int Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{eqnarray*}%
-this would give us both $w$ and $\Delta E_{int}$ . But it is not obvious how
-to find $P$ as a function of $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ for this path. We need another strategy.
-
-Let's recall that an adiabatic process goes from one temperature to another
-temperature, and 
-\begin{equation*}
-\Delta E_{int}\varpropto \Delta T
-\end{equation*}%
-\FRAME{dtbpFX}{2.2087in}{1.4719in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.2087in;height 1.4719in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";animated TRUE;animationStartTime "0"; animationEndTime "10";
-animationFramesPerSecond "10";xmin "0";xmax "100";animationParamMin
-"290";animationParamMax "350";xviewmin "0";xviewmax "40";yviewmin
-"0";yviewmax "400";viewset"XY";rangeset"X";plottype 4;labeloverrides
-3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
-\TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
-\TEXUX{$\allowbreak 7500\frac{1}{V^{1.67}}$};linecolor "blue";linestyle
-1;pointstyle "point";linethickness 3;lineAttributes "Solid";var1range
-"0,100";animationParamRange "290,350";num-x-gridlines 50;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";animationStartTime "0";
-animationEndTime "10"; animationFramesPerSecond
-"10";animationVisibleBeforeStart FALSE;rangeset"XA";function
-\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}290$};linecolor
-"red";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
-"Dash";var1range "0,40";animationParamRange "290,350";num-x-gridlines
-100;curveColor "[flat::RGB:0x00ff0000]";curveStyle "Line";function
-\TEXUX{$8.\,\allowbreak 314\frac{1}{V}100$};linecolor "red";linestyle
-2;pointstyle "point";linethickness 1;lineAttributes "Dash";var1range
-"0,40";animationParamRange "290,350";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00ff0000]";curveStyle "Line";VCamFile
-'SUS73W4J.xvz';valid_file "T";tempfilename
-'SVAQIE7J.wmf';tempfile-properties "XPR";}}And further remember that $\Delta
-E_{int}$ does not depend on path. So we could find $\Delta E_{int}$ for an
-adiabatic path, and we could find $\Delta E_{int}$ for a isochoric path, and
-as long as the $\Delta T$ was the same for both paths, the $\Delta E_{int}$
-would be the same as well! Also remember that for an isochoric path there is
-no work done. So 
-\begin{equation*}
-Q_{isochoric}=\Delta E_{int}
-\end{equation*}%
-And now we know an equation for $Q_{isochoric}$!%
-\begin{equation*}
-Q_{isochoric}=nC_{V}\Delta T
-\end{equation*}%
-So if we know $T_{i}$ and $T_{f},$ then we could find $\Delta E_{int}$ by
-finding the equivalent $Q_{isochoric}$ for the same two temperatures.%
-\begin{equation*}
-\Delta E_{int}=nC_{V}\Delta T
-\end{equation*}%
-This is tremendous! We have an equation for $\Delta E_{int}$, and $w=\Delta
-E_{int},$ so with $Q=0$ we have a complete set.
-
-But it turns out that we can add two more equations to our adiabatic set
-that will really help. The first is a relationship between pressures and
-volumes along an adiabatic path. Let's obtain this equation.
-
-We now know for adiabatic processes we can say 
-\begin{equation*}
-\Delta E_{int}=nC_{V}\Delta T
-\end{equation*}%
-A very small change in the internal energy would be 
-\begin{equation*}
-dE=nC_{V}dT
-\end{equation*}%
-Now for our adiabatic we previously noted that there is not energy transfer
-by heat done, so 
-\begin{eqnarray*}
-\Delta E_{int} &=&0+w \\
-&=&\int Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{eqnarray*}%
-Then a very small amount of internal energy change, $dE_{int}$ would be 
-\begin{equation*}
-dE_{int}=-Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{equation*}%
-Let's set these two expressions for $dE_{int}$ equal to each other. 
-\begin{equation*}
--Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=nC_{V}dT
-\end{equation*}%
-or%
-\begin{equation*}
--\frac{Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{nC_{V}}=dT
-\end{equation*}
-
-Now we know the idea gas law%
-\begin{equation*}
-P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=nRT
-\end{equation*}%
-if we take a total differential for a sample of $n$ moles of a gas%
-\begin{equation*}
-Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-+%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-dP=nRdT
-\end{equation*}%
-we can substitute in our expression we have for an adiabatic process for $dT$%
-\begin{equation*}
-Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-+%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-dP=-nR\frac{Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{nC_{V}}
-\end{equation*}%
-or%
-\begin{equation*}
-Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-+%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-dP=-R\frac{Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{C_{V}}
-\end{equation*}
-
-We can use our relationship between $C_{V}$ and $C_{P}$ that we found in the
-last section%
-\begin{equation*}
-C_{V}=C_{P}-R
-\end{equation*}%
-so%
-\begin{equation*}
-R=C_{P}-C_{V}
-\end{equation*}%
-and let's substitute this in for our $R$ in our total differential equation%
-\begin{equation*}
-Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-+%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-dP=-\frac{C_{P}-C_{V}}{C_{V}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{equation*}%
-or%
-\begin{equation*}
-Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-+%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-dP=\frac{C_{V}-C_{P}}{C_{V}}Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{equation*}%
-Now let's divide through by $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-.$ It's not apparent that this will help, but it does so 
-\begin{equation*}
-\frac{Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}+\frac{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-dP}{P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}=\frac{C_{V}-C_{P}}{C_{V}}\frac{Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}
-\end{equation*}%
-and canceling the extra $V$'s and $P$'s gives%
-\begin{equation*}
-\frac{d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}+\frac{dP}{P}=\frac{C_{V}-C_{P}}{C_{V}}\frac{d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}
-\end{equation*}%
-rearranging terms gives%
-\begin{eqnarray*}
-\frac{dP}{P} &=&\left( \frac{C_{V}-C_{P}}{C_{V}}-1\right) \frac{d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-} \\
-\frac{dP}{P} &=&\left( \frac{C_{V}-C_{P}}{C_{V}}-\frac{C_{V}}{C_{V}}\right) 
-\frac{d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-} \\
-\frac{dP}{P} &=&\left( -\frac{C_{P}}{C_{V}}\right) \frac{d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}
-\end{eqnarray*}%
-Lets define a new quantity 
-\begin{equation}
-\gamma =\frac{C_{P}}{C_{V}}
-\end{equation}%
-so we have%
-\begin{equation*}
-\frac{dP}{P}=-\gamma \frac{d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}
-\end{equation*}
-
-Which is exciting. We are just down to $P$'s and $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$'s and a gamma. We may be able to get an expression of $P$ as a function of 
-$%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ yet! We can integrate this last equation%
-\begin{eqnarray*}
-\int \frac{dP}{P} &=&-\gamma \int \frac{d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-} \\
-\ln \left( P\right) +\zeta _{P} &=&-\gamma \ln \left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\right) +\zeta _{V}
-\end{eqnarray*}%
-where $\zeta _{P}$ and $\zeta _{V}$ are the constants of integration. We can
-write this as%
-\begin{eqnarray*}
-\ln \left( P\right) +\gamma \ln \left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\right) &=&-\zeta _{P}+\zeta _{V} \\
-&=&\zeta
-\end{eqnarray*}%
-where $\zeta =\zeta _{V}-\zeta _{P}$ is a constant. Knowing a little bit
-about logs, we can write this as 
-\begin{equation*}
-\ln \left( P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }\right) =\zeta
-\end{equation*}%
-or we can exponentiate both sides 
-\begin{equation}
-P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }=e^{\zeta }
-\end{equation}%
-%TCIMACRO{%
-%\TeXButton{Question 123.13.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.13.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.13.3}
-\end{minipage}
-}%
-%EndExpansion
-where $e^{\zeta }$ is still just a constant.
-
-Note that we have done what we set out to do (sort of). We have an
-expression of how $P$ varies with $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-.$ 
-\begin{equation*}
-P=\frac{e^{\zeta }}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }}
-\end{equation*}%
-We could put this into our work equation and integrate to find the work done
-in an adiabatic process!%
-\begin{eqnarray*}
-\Delta E_{int} &=&w \\
-&=&-\int \frac{e^{\zeta }}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }}d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{eqnarray*}
-
-But also note that we have a great conservation equation for an adiabatic
-process.
-
-\begin{equation*}
-P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }=\text{constant}
-\end{equation*}%
-or 
-\begin{equation}
-P_{i}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}^{\gamma }=P_{f}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}^{\gamma }
-\end{equation}%
-and we know that conservation equations come in very handy in solving
-problems! Let's add this last equation to our set of equations for adiabatic
-processes.
-
-We can get a second equation for adiabatic processes relating the volume and
-temperature. If we know an initial state 
-\begin{equation*}
-P_{i}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}=nRT_{i}
-\end{equation*}%
-we can use our adiabatic conservation equation from above to write%
-\begin{equation*}
-P_{f}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}^{\gamma }=P_{i}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}^{\gamma }
-\end{equation*}%
-we can solve the ideal gas law for $P_{i}$ and 
-\begin{equation*}
-P_{i}=\frac{nRT_{i}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}
-\end{equation*}%
-and use this in our equation 
-\begin{equation*}
-\frac{nRT_{f}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}^{\gamma }=\frac{nRT_{i}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}^{\gamma }
-\end{equation*}%
-to yield%
-\begin{equation*}
-\frac{T_{f}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}^{\gamma }=\frac{T_{i}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}^{\gamma }
-\end{equation*}%
-or%
-\begin{equation}
-T_{f}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}^{\gamma -1}=T_{i}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}^{\gamma -1}
-\end{equation}%
-This is another conservation equation for adiabatic processes! We will add
-this to our equation set for adiabatic processes
-
-These equations are great shortcuts for problem solving \emph{but remember
-they are only valid for adiabatic processes!}
-
-Notice that we never did complete the integral for work%
-\begin{equation*}
-\Delta E_{int}=w=-\int \frac{e^{\zeta }}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }}d%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{equation*}%
-We totally could at this point, but we already know the answer to be 
-\begin{equation*}
-\Delta E_{int}=nC_{V}\Delta T
-\end{equation*}%
-where the $\Delta T$ is the same as it would be for our actual adiabatic
-process. Since we know this and it is easy to calculate, we won't often do
-the integral
-
-\subsection{Update for Adiabatic processes}
-
-\FRAME{dtbpFX}{2.2086in}{1.4715in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.2086in;height 1.4715in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";animated TRUE;animationStartTime "0"; animationEndTime "10";
-animationFramesPerSecond "10";xmin "0";xmax "100";animationParamMin
-"290";animationParamMax "350";xviewmin "0";xviewmax "40";yviewmin
-"0";yviewmax "400";viewset"XY";rangeset"X";plottype 4;labeloverrides
-3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};animationParam
-\TEXUX{t};var1name \TEXUX{$x$};animationParamList \TEXUX{$t$};function
-\TEXUX{$\allowbreak 7500\frac{1}{x^{1.67}}$};linecolor "blue";linestyle
-1;pointstyle "point";linethickness 3;lineAttributes "Solid";var1range
-"0,100";animationParamRange "290,350";num-x-gridlines 50;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";animationStartTime "0";
-animationEndTime "10"; animationFramesPerSecond
-"10";animationVisibleBeforeStart FALSE;rangeset"XA";function
-\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}290$};linecolor
-"red";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
-"Dash";var1range "0,40";animationParamRange "290,350";num-x-gridlines
-100;curveColor "[flat::RGB:0x00ff0000]";curveStyle "Line";function
-\TEXUX{$8.\,\allowbreak 314\frac{1}{V}100$};linecolor "red";linestyle
-2;pointstyle "point";linethickness 1;lineAttributes "Dash";var1range
-"0,40";animationParamRange "290,350";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00ff0000]";curveStyle "Line";VCamFile
-'SVAQIE79.xvz';valid_file "T";tempfilename
-'SVAQIE61.wmf';tempfile-properties "XPR";}}Recall that for adiabatic
-processes we know that 
-\begin{equation*}
-Q=0
-\end{equation*}%
-so that 
-\begin{equation*}
-\Delta E_{int}=w
-\end{equation*}%
-and we found that%
-\begin{equation*}
-\Delta E_{int}=nC_{V}\Delta T
-\end{equation*}%
-we can add to these equations%
-\begin{equation*}
-P_{f}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}^{\gamma }=P_{i}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}^{\gamma }
-\end{equation*}%
-and 
-\begin{equation*}
-T_{f}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}^{\gamma -1}=T_{i}%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{i}^{\gamma -1}
-\end{equation*}%
-where 
-\begin{equation*}
-\gamma =\frac{C_{P}}{C_{V}}
-\end{equation*}%
-This will get us closer to our goal of finding $Q,$ $w,$ and $\Delta E_{int}$
-for this process.
 
 \section{Heat and systems}
 
@@ -23512,7 +21739,7 @@ heat, and energy lost to the environment as negative heat.\FRAME{dtbpF}{%
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.095in;height 2.1154in;depth 0in;original-width 2.1066in;original-height
 2.127in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73WAR.wmf';tempfile-properties "XPR";}} This is a sign convention. We
+'SYUG5M0Q.wmf';tempfile-properties "XPR";}} This is a sign convention. We
 could totally define this the other way. But it is useful for everyone to
 agree to one system of signs, and the system used in physics today is that
 energy is negative when it leaves a system, and positive when it enters a
@@ -23733,61 +21960,578 @@ used to accomplish $\Delta E_{int}.$ So our first law does not tell us $P,$ $%
 ,$ or $n$ either. We will have to use the first law in cooperation with the
 ideal gas law.
 
-\section{Special processes}
+\subsection{Constant Volume Process}
 
-Armed with both the ideal gas law, and the first law of thermodynamics,
-let's review our special processes--and maybe gain another! Our goal is to
-see how these processes relate to the first law.
-
-\subsection{Constant Temperature Process}
-
-For an isothermal process\FRAME{dhF}{2.4569in}{1.6293in}{0pt}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.4569in;height 1.6293in;depth
-0pt;original-width 4.0318in;original-height 2.6654in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73WAS.wmf';tempfile-properties "XPR";}}we expect that 
+We ended our last lecture with a constant volume process. But we didn't give
+it a name. A constant volume process is called an \emph{isochoric process.}
+Suppose we have a process that takes us between two states on a $P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\ $diagram as shown in the next figure. \FRAME{dtbpFX}{2.2952in}{1.5307in}{%
+0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+2.2952in;height 1.5307in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "2";xmax "10";xviewmin
+"2";xviewmax "10";yviewmin "100";yviewmax
+"900";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label
+"V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{T};var1name
+\TEXUX{$T$};function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
+\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
+28}$};linecolor "blue";linestyle 1;pointstyle "point";linethickness
+1;lineAttributes "Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
+\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
+28}$};linecolor "blue";linestyle 1;pointplot TRUE;pointstyle
+"diamond";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Point";VCamFile
+'SYUHDK4V.xvz';valid_file "T";tempfilename
+'SYUHDK0U.wmf';tempfile-properties "XPR";}}We start at one pressure, say $%
+P=275\unit{Pa},$ and end at another pressure, say, $P=775\unit{Pa}.$ In this
+process, notice that the volume does not change. Would we predict that the
+temperature went up or down in taking this path? Well, we went from the
+lower to the upper part of the graph, so we expect that the temperature went
+up. We could check this by plotting the two isotherms that cross trough our
+points. \FRAME{dtbpFX}{2.5728in}{1.7158in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.5728in;height 1.7158in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "2";xmax "10";xviewmin "2";xviewmax "10";yviewmin
+"100";yviewmax "900";viewset"XY";rangeset"X";plottype 4;labeloverrides
+3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
+\TEXUX{$V$};function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
+\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
+28}$};linecolor "blue";linestyle 1;pointstyle "point";linethickness
+1;lineAttributes "Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6}\CELL{%
+\allowbreak 278.\,\allowbreak 29}\CELL{6}\CELL{\allowbreak 775.\,\allowbreak
+28}$};linecolor "blue";linestyle 1;pointplot TRUE;pointstyle
+"diamond";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Point";function \TEXUX{$\frac{\left(
+1\right) \left( 8.314\right) \left( 198.\,\allowbreak 46\right) }{\left(
+V\right) }$};linecolor "blue";linestyle 2;discont FALSE;pointstyle
+"point";linethickness 1;lineAttributes "Dash";var1range
+"2,10";num-x-gridlines 100;curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Line";discont FALSE;function \TEXUX{$\frac{\left( 1\right) \left(
+8.314\right) \left( 559.\,\allowbreak 30\right) }{\left( V\right)
+}$};linecolor "blue";linestyle 2;pointstyle "point";linethickness
+1;lineAttributes "Dash";var1range "2,10";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'SYUHER4W.xvz';valid_file "T";tempfilename
+'SYUHER0V.wmf';tempfile-properties "XPR";}}Sure enough, our temperature went
+up. Starting again with the ideal gas law%
 \begin{equation*}
-\Delta E_{int}\propto \Delta T=0
+P=\left( \frac{nR}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}\right) T
 \end{equation*}%
-The work we found to be%
+we can see that when $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ is constant, $P$ goes like $T,$ so if $P$ went up, so did the temperature.
+
+For this isochoric type process no work is done. 
+\begin{equation*}
+w_{\text{on the gas}}=w_{int}=-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+but $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ doesn't change so $d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=0.$ and therefore 
+\begin{equation*}
+w_{int}=0
+\end{equation*}%
+But we do have energy transfer by heat%
+\begin{equation*}
+Q=nC_{v}\Delta T
+\end{equation*}%
+so for our first law 
 \begin{eqnarray*}
-W &=&-\int Pd%
+\Delta E_{int} &=&Q+w \\
+&=&nC_{v}\Delta T+0 \\
+&=&nC_{v}\Delta T
+\end{eqnarray*}%
+That seems useful! But how would create such a situation? Consider what
+would happen\footnote{%
+Only consider this, because it would be irresponsible and dangerous (and
+illegal in some states) to do this!} if you placed an aerosol can in a fire.
+The aerosol can is rigid, so the volume can't change. But the fire will make
+the temperature change, and the pressure will change--that is--until the can
+explodes. 
+
+We will also need our differential form for the first law for isochoric
+processes. 
+\begin{equation*}
+dE_{V_{int}}=nC_{v}dT
+\end{equation*}
+
+\subsection{Constant Pressure Process }
+
+But there is more than one way to add energy to a gas. Suppose we envision
+another process where instead of keeping the volume constant we keep the
+pressure constant. \FRAME{dtbpFX}{2.7397in}{1.8273in}{0pt}{}{}{Plot}{\special%
+{language "Scientific Word";type "MAPLEPLOT";width 2.7397in;height
+1.8273in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "2";xmax "10";xviewmin "2";xviewmax
+"10";yviewmin "100";yviewmax "900";viewset"XY";rangeset"X";plottype
+4;labeloverrides 3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
+\TEXUX{$V$};function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle
+1;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle 1;pointplot
+TRUE;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Point";VCamFile
+'SYUHGW4Z.xvz';valid_file "T";tempfilename
+'SYUHGW0X.wmf';tempfile-properties "XPR";}}We have already considered this
+process. We called in an \emph{isobaric process}. We found that the work
+done in an isobaric process is 
+\begin{equation*}
+w_{\text{on the gas}}=-P\left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}-%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}\right) 
+\end{equation*}%
+Let's review that here 
+\begin{eqnarray*}
+w_{int} &=&-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}Pd%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
 %EndExpansion
 \\
-&=&nRT\left[ \ln \frac{%
+&=&-P\int_{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}}{%
+_{i}}^{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{f}}\right]
+_{f}}d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&-P\left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}-%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}\right)  \\
+&=&-P\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
 \end{eqnarray*}%
-and from the first law%
+We can see that in this process the pressure is not changing. If we go from
+left to right along this path, will the temperature rise? We know that going
+to the right means higher temperature on a $P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ diagram, so yes it will.
+
+\FRAME{dtbpFX}{2.7328in}{1.8222in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.7328in;height 1.8222in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "2";xmax "10";xviewmin "2";xviewmax "10";yviewmin
+"100";yviewmax "900";viewset"XY";rangeset"X";plottype 4;labeloverrides
+3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
+\TEXUX{$V$};function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle
+1;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle 1;pointplot
+TRUE;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Point";function \TEXUX{$\frac{1\left(
+8.314\right) \left( 240.\,\allowbreak 56\right) }{V}$};linecolor
+"blue";linestyle 2;discont FALSE;pointstyle "circle";linethickness
+1;lineAttributes "Dash";var1range "2,10";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";discont FALSE;function
+\TEXUX{$\frac{1\left( 8.314\right) \left( 481.\,\allowbreak 12\right)
+}{V}$};linecolor "blue";linestyle 2;pointstyle "circle";linethickness
+1;lineAttributes "Dash";var1range "2,10";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'SYUHHL51.xvz';valid_file "T";tempfilename
+'SYUHHL0Y.wmf';tempfile-properties "XPR";}}
+
+For isochoric processes we defined a molar heat capacity at constant volume $%
+C_{V}$ that let us find $Q$%
+\begin{equation*}
+Q=nC_{V}\Delta T
+\end{equation*}%
+In our differential first law equation 
+\begin{equation*}
+dE_{int}=dQ+dw
+\end{equation*}%
+and we found that for isochoric processes no work was done so 
+\begin{equation*}
+dE_{int}=dQ=nC_{v}dT
+\end{equation*}%
+but for an isobaric process we have 
+\begin{equation*}
+dE_{int}=dQ-Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+But what do we do for $dQ$ if the process is isobaric? It turns out we can
+play the same trick. Let's define a \emph{molar heat capacity at constant
+pressure}, $C_{P}.$ Then 
+\begin{equation*}
+Q=nC_{P}\Delta T
+\end{equation*}%
+and 
+\begin{equation*}
+dQ=nC_{P}dT
+\end{equation*}%
+We found that for idea gasses 
+\begin{equation*}
+C_{V}=\frac{3}{2}R
+\end{equation*}%
+we need to find a value for $C_{P}.$ Let's use our ideal gas law%
+\begin{equation*}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=nRT
+\end{equation*}%
+and let the volume and Temperature change, but not $P$ nor $n.$%
+\begin{equation*}
+P\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=nR\Delta T
+\end{equation*}%
+and for an isobaric process, this is our work! Our differential first law
+would be 
+\begin{eqnarray*}
+\Delta E_{int} &=&Q-w \\
+&=&nC_{P}\Delta T-nR\Delta T \\
+&=&n(C_{P}-R)\Delta T
+\end{eqnarray*}%
+But $dE_{int}$ is the same for any two processes that go between the same
+two temperatures. Suppose we look at a situation where we have the same $%
+\Delta E_{int}$ but we make the change two ways, one with an isochoric
+process and one with an isobaric process.
+
+\FRAME{dtbpFX}{2.2883in}{1.5264in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.2883in;height 1.5264in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "2";xmax "10";xviewmin "2";xviewmax "10";yviewmin
+"100";yviewmax "1100";viewset"XY";rangeset"X";plottype 4;labeloverrides
+3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
+\TEXUX{$V$};function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle
+1;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{8}\CELL{500}$};linecolor "green";linestyle 1;pointplot
+TRUE;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Point";function \TEXUX{$\frac{1\left(
+8.314\right) \left( 240.\,\allowbreak 56\right) }{V}$};linecolor
+"blue";linestyle 2;discont FALSE;pointstyle "circle";linethickness
+1;lineAttributes "Dash";var1range "2,10";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";discont FALSE;function
+\TEXUX{$\frac{1\left( 8.314\right) \left( 481.\,\allowbreak 12\right)
+}{V}$};linecolor "blue";linestyle 2;pointstyle "circle";linethickness
+1;lineAttributes "Dash";var1range "2,10";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{4}\CELL{1000.0}$};linecolor "green";linestyle
+1;pointstyle "circle";linethickness 1;lineAttributes "Solid";curveColor
+"[flat::RGB:0x00008000]";curveStyle "Line";function
+\TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{4}\CELL{%
+\allowbreak 500}\CELL{4}\CELL{1000.0}$};linecolor "green";linestyle
+1;pointplot TRUE;pointstyle "circle";linethickness 1;lineAttributes
+"Solid";curveColor "[flat::RGB:0x00008000]";curveStyle "Point";VCamFile
+'SYUCLQ10.xvz';valid_file "T";tempfilename
+'SYUCC90E.wmf';tempfile-properties "XPR";}}We already know that for the
+isochoric process 
+\begin{equation*}
+\Delta E_{V_{int}}=nC_{v}\Delta T
+\end{equation*}%
+Then since 
+\begin{equation*}
+\Delta E_{V_{int}}=\Delta E_{P_{int}}
+\end{equation*}%
+\begin{equation*}
+nC_{v}\Delta T=n(C_{P}-R)\Delta T
+\end{equation*}%
+and we can cancel the $n$'s and the $dT$'s.%
+\begin{equation*}
+C_{v}=(C_{P}-R)
+\end{equation*}%
+which gives
+
+\begin{equation*}
+C_{P}=C_{V}+R
+\end{equation*}%
+for an ideal gas. So if we know either $C_{P}$ or $C_{V}$ for a gas, we can
+always find the other. This works pretty well in practice for monotonic
+gasses (and even for diatomic gasses) at standard temperature and pressure.
+Not only can we find $Q_{V}$ and $Q_{P}$ with molar specific heats, but if
+we know one molar specific heat, we can easily calculate the other! Since%
+\begin{equation*}
+C_{V}=\frac{3}{2}R
+\end{equation*}%
+then we know 
+\begin{equation*}
+C_{P}=\frac{5}{2}R
+\end{equation*}
+
+So for an isobaric process we have 
 \begin{eqnarray*}
 \Delta E_{int} &=&Q+w \\
-0 &=&Q+nRT\left[ \ln \frac{%
+&=&nC_{P}\Delta T-P\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{f}}\right]
-\end{eqnarray*}%
-so%
+\end{eqnarray*}
+
+How would we produce such a situation? We saw this in our last lecture, but
+let's think about it again. Consider a piston in a cylinder. The cylinder
+has a gas inside, and air on the outside\FRAME{dhF}{1.8308in}{1.5212in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.8308in;height 1.5212in;depth 0pt;original-width 1.7936in;original-height
+1.4849in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SYUEEH0O.wmf';tempfile-properties "XPR";}}The piston is free to move up or
+down. The forces acting on the piston are shown. The weight of the piston
+pulls it downward, the force due to pressure of the gas, $F_{p,gas}$ pushes
+up, and the air pressure $F_{p,air}$ pushes down. The net force will be 
 \begin{equation*}
-Q=nRT\left[ \ln \frac{%
+\Sigma F_{y}=ma_{y}=F_{p,gas}-F_{p,air}-mg
+\end{equation*}%
+where the mass of the piston is $m.$ We can write this as 
+\begin{equation*}
+ma_{y}=P_{gas}A-P_{air}A-mg
+\end{equation*}%
+If the piston is not accelerating , then 
+\begin{equation*}
+P_{gas}=P_{air}+\frac{mg}{A}
+\end{equation*}%
+and we find that the pressure of the gas inside is slightly larger than the
+outside air pressure. What would happen if we heated the gas? 
+\begin{equation*}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=NRT
+\end{equation*}%
+would suggest that $P$ might change, but since the piston is free to move,
+what happens is that the force $F_{p,gas}$ increases when $P_{gas}$
+increases, and the piston accelerates upward. It stops when the forces are
+again balanced. But that means that $P_{gas}$ will only change for a moment,
+and then we will achieve equilibrium at the same old value of $P_{gas}.$ But
+something has changed, the volume has increased.
+
+\section{Constant Temperature Process }
+
+We have already done quite a bit of work on this process in our last lecture 
+\FRAME{dtbpFX}{2.4025in}{1.6016in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.4025in;height 1.6016in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";animated TRUE;animationStartTime "0"; animationEndTime "10";
+animationFramesPerSecond "10";xmin "0";xmax "40";animationParamMin
+"290";animationParamMax "350";xviewmin "0";xviewmax "40";yviewmin
+"0";yviewmax "400";viewset"XY";rangeset"X";plottype 4;labeloverrides
+3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
+\TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
+\TEXUX{$\allowbreak 8.\,\allowbreak 314\frac{1}{V}290$};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
+"Solid";var1range "0,40";animationParamRange "290,350";num-x-gridlines
+100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'SYUCQZ13.xvz';valid_file "T";tempfilename
+'SYUCQZ0F.wmf';tempfile-properties "XPR";}}We found that $\Delta E_{int}=0$
+for an isothermal process. Then 
+\begin{equation*}
+\Delta E_{int}=Q-w
+\end{equation*}%
+gives 
+\begin{equation*}
+Q=w
+\end{equation*}%
+but we meed to find $w$. Let's use our ideal gas law for this again. 
+
+In this case we know $T$ and $n,$ and that we know $P_{i}$ and $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}$ and $P_{f}$ and $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}.$ Can we find $\Delta E_{int,}$ $Q$, and $w$?
+
+We already know how to find $w$%
+\begin{equation*}
+P=\frac{nRT}{V}
+\end{equation*}%
+so from our work equation%
+\begin{eqnarray}
+w_{int} &=&-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}\frac{nRT}{V}d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&-nRT\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}\frac{1}{V}d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&-nRT\left. \ln 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\right\vert _{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}} \\
+&=&-nRT\left[ \ln \left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}\right) -\ln \left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{-}\right) \right] 
+\end{eqnarray}
+\begin{equation*}
+w=-nRT\left[ \ln \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -23797,186 +22541,181 @@ _{f}}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}}\right]
-\end{equation*}
+_{i}}\right] 
+\end{equation*}%
+So then  
+\begin{eqnarray*}
+Q &=&-w \\
+&=&nRT\left[ \ln \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}\right] 
+\end{eqnarray*}%
+and we did not need our molar specific heat equations for this process. 
 
-Looking at an isothermal process can help us understand our other processes.
-Suppose we have two different isothermal processes, one at $100\unit{K}$ and
-one at $300\unit{K}.$ The isotherms look like this on a $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$ diagram: \FRAME{dtbpF}{2.7612in}{1.8316in}{0pt}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.7612in;height 1.8316in;depth
-0pt;original-width 2.7851in;original-height 1.8378in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73WAT.wmf';tempfile-properties "XPR";}}Every point on the $300\unit{K}$
-line has the same temperature. Every point on the $100\unit{K}$ line has the
-same temperature. We can see that points on the $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\ $diagram that are closer to the origin must have lower temperatures. We
-can see the points farther from the origin have higher temperatures. \FRAME{%
-dtbpF}{2.8091in}{1.8636in}{0pt}{}{}{Figure}{\special{language "Scientific
+How do we make such a path happen? Consider our piston again.\FRAME{dhF}{%
+2.5434in}{1.6328in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.8091in;height 1.8636in;depth 0pt;original-width
-2.8339in;original-height 1.8707in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73WAU.wmf';tempfile-properties "XPR";}}
+"T";width 2.5434in;height 1.6328in;depth 0pt;original-width
+2.5028in;original-height 1.5965in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SYUEEH0P.wmf';tempfile-properties "XPR";}}%
+This time, let's put it in a vat of ice water. We can compress the gas by
+pushing on the piston. But if the temperature is changed by compressing the
+gas, it is quickly changed back by the ice water.
 
-\subsection{Constant volume process}
+We have $\Delta E_{int,}$ $Q$, and $w$ for three of our special processes.
+This completes three of our four special processes!
+
+\chapter{36 Adiabatic Processes and 2nd Law 2.3.6, 2.4.1}
+
+%TCIMACRO{\TeXButton{\chaptermark{Chapter 36}}{\chaptermark{Chapter 36}}}%
+%BeginExpansion
+\chaptermark{Chapter 36}%
+%EndExpansion
+
+Last lecture we found a way to find $Q$ for solids and liquids, $Q=Mc\Delta
+T $ or $Q=nC\Delta T.$ We need to do this for gasses so we can complete our
+calculations of the terms in the first law of thermodynamics. We will take
+on this task in this lecture.
 
 %TCIMACRO{%
-%\TeXButton{Question 123.11.6}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.11.6}
-%\end{minipage}
-%}}}%
+%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
 %BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.11.6}
-\end{minipage}
-}%
+\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
 %EndExpansion
-We know an isochoric process takes us between two states on a $P%
+
+\begin{enumerate}
+\item There are four special processes and three of them are isochoric,
+isobaric, and isothermal and the last one is adiabatic
+
+\item The ratio of the molar specific heats is $\gamma =C_{P}/C_{V}$
+
+\item The change in internal energy can be expressed as $\Delta
+E_{int}=nC_{V}\Delta T$
+
+\item For adiabatic processes we have two new equations $P_{i}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-\ $diagram as shown in the next figure. \FRAME{dhF}{2.6861in}{1.8948in}{0pt}{%
-}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.6861in;height 1.8948in;depth 0pt;original-width 5.1439in;original-height
-3.6227in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73WAV.wmf';tempfile-properties "XPR";}}We can see that the temperature
-will change, and since 
-\begin{equation*}
-E_{int}\propto T
-\end{equation*}%
-we expect that 
-\begin{equation*}
-\Delta E_{int}\propto \Delta T
-\end{equation*}%
-so we expect 
-\begin{equation*}
-\Delta E_{int}\neq 0
-\end{equation*}%
-The work done is 
-\begin{equation*}
-W=-\int Pd%
+_{i}^{\gamma }=P_{f}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-\end{equation*}%
-but the volume does not change, so 
+_{f}^{\gamma }$ and $T_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma -1}=T_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma -1}$
+
+\item For insolation the power transferred through the insolation material
+is given by $\mathcal{P=}\frac{Q}{\Delta t}=\frac{A\left( T_{h}-T_{c}\right) 
+}{\dsum\limits_{i}R_{i}}$
+
+\item The power transferred by radiation is given by $\mathcal{P=}\frac{Q}{%
+\Delta t}=\sigma AeT^{4}$
+\end{enumerate}
+
+\begin{itemize}
+\item Doing work on a system can change the system's temperature. This is
+called the mechanical equivalent of heat.
+
+\item There is a sign convention for energy transfer. If energy leaves it is
+negative, if it comes into the system it is positive.
+
+\item In thermodynamics, we try to find $\Delta E_{int},$ $Q,$ and $w$ for a
+process. We use the ideal gas law and the first law of thermodynamics to do
+this.
+
+\item We have special processes for which it is easy to find $\Delta E_{int},
+$ $Q,$ and $w$
+
+\item We are still missing something.
+\end{itemize}
+
+\section{Constant $Q$ Processes}
+
+We found that for isochoric processes there was no work done. And in our
+first law equation 
 \begin{equation*}
-W=0
+\Delta E_{int}=Q+w
 \end{equation*}%
-from the first law, we can see that 
-\begin{eqnarray*}
-\Delta E_{int} &=&Q+w \\
-&=&Q+0
-\end{eqnarray*}%
-so 
+the work is half the equation. That made $\Delta E_{int}=Q.$ But could we
+find a process where $Q$ is zero? Then 
 \begin{equation*}
-Q=\Delta E_{int}
+\Delta E_{int}=w
+\end{equation*}%
+We call a process where $Q=0$ \emph{adiabatic}. 
+
+It might see like we are home free, $Q=0$! We don't need our molar specific
+heat equations for an adiabatic process either.
+
+But we don't yet know how to find $w$ for an adiabatic process, and therefor
+we don't know $\Delta E_{int}$. We need to fix this problem. We could do
+this by finding an expression for the pressure as a function of volume along
+the adiabatic path, then use our work equation. 
+\begin{equation*}
+w=-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
 \end{equation*}
 
-\subsection{Constant Pressure process}
-
-Consider the next $P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\ $diagram.
-
-\FRAME{dhF}{3.0009in}{2.047in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.0009in;height 2.047in;depth
-0pt;original-width 5.5893in;original-height 3.8026in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73WAW.wmf';tempfile-properties "XPR";}}Again we see that the temperature
-has changed, so 
-\begin{equation*}
-\Delta E_{int}\propto \Delta T
-\end{equation*}%
-and we expect that 
-\begin{equation*}
-\Delta E_{int}\neq 0
-\end{equation*}%
-The work done is 
+Since%
 \begin{eqnarray*}
-W &=&-\int Pd%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
-%EndExpansion
-\\
-&=&P\left( 
+\Delta E_{int} &=&w \\
+&=&-\int Pd%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{2}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{1}\right)
 \end{eqnarray*}%
-From the first law 
-\begin{eqnarray*}
-\Delta E_{int} &=&Q+w \\
-&=&Q-P\left( 
+this would give us both $w$ and $\Delta E_{int}$ . But it is not obvious how
+to find $P$ as a function of $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{2}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{1}\right)
-\end{eqnarray*}%
-so 
+$ for this path. We need another strategy.
+
+Let's plot an adiabatic process on a PV\ diagram to see what it looks like.
+An adiabatic process goes from one temperature to another temperature, and 
 \begin{equation*}
-Q=\Delta E_{int}+P\left( 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{2}-%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-_{1}\right)
+\Delta E_{int}\varpropto \Delta T
 \end{equation*}%
-but we don't have enough information to obtain a numerical value. We must be
-missing something!
-
-\subsection{Adiabatic process}
-
-We have a process where $w=0.$ It seems reasonable that we would also have a
-process where $Q=0.$ But none of our special process do that so far. Let's
-invent a new process such that $Q=0$ and call it by the name \emph{adiabatic}%
-. The PV diagram looks like this.\FRAME{dtbpFX}{2.2087in}{1.4719in}{0pt}{}{}{%
-Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
-2.2087in;height 1.4719in;depth 0pt;display "USEDEF";plot_snapshots
-TRUE;mustRecompute FALSE;lastEngine "MuPAD";animated TRUE;animationStartTime
-"0"; animationEndTime "10"; animationFramesPerSecond "10";xmin "0";xmax
-"100";animationParamMin "290";animationParamMax "350";xviewmin "0";xviewmax
-"40";yviewmin "0";yviewmax "400";viewset"XY";rangeset"X";plottype
-4;labeloverrides 3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
+\FRAME{dtbpFX}{2.2087in}{1.4719in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.2087in;height 1.4719in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";animated TRUE;animationStartTime "0"; animationEndTime "10";
+animationFramesPerSecond "10";xmin "0";xmax "100";animationParamMin
+"290";animationParamMax "350";xviewmin "0";xviewmax "40";yviewmin
+"0";yviewmax "400";viewset"XY";rangeset"X";plottype 4;labeloverrides
+3;x-label "V(m^3)";y-label "P(Pa)";axesFont "Times New
 Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};animationParam
 \TEXUX{t};var1name \TEXUX{$V$};animationParamList \TEXUX{$t$};function
@@ -23994,27 +22733,805 @@ animationEndTime "10"; animationFramesPerSecond
 2;pointstyle "point";linethickness 1;lineAttributes "Dash";var1range
 "0,40";animationParamRange "290,350";num-x-gridlines 100;curveColor
 "[flat::RGB:0x00ff0000]";curveStyle "Line";VCamFile
-'SW9OZ723.xvz';valid_file "T";tempfilename
-'SVAPHD5W.wmf';tempfile-properties "XPR";}}
+'SYUDAG1J.xvz';valid_file "T";tempfilename
+'SYUDSZ0L.wmf';tempfile-properties "XPR";}}And further remember that $\Delta
+E_{int}$ does not depend on path. So we could find $\Delta E_{int}$ for an
+adiabatic path, and we could find $\Delta E_{int}$ for a isochoric path, and
+as long as the $\Delta T$ was the same for both paths, the $\Delta E_{int}$
+would be the same as well! Also remember that for an isochoric path there is
+no work done. So 
+\begin{equation*}
+Q_{isochoric}=\Delta E_{int}
+\end{equation*}%
+And we know an equation for $Q_{isochoric}$!%
+\begin{equation*}
+Q_{isochoric}=nC_{V}\Delta T
+\end{equation*}%
+So if we know $T_{i}$ and $T_{f},$ then we could find $\Delta E_{int}$ by
+finding the equivalent $Q_{isochoric}$ for the same two temperatures.%
+\begin{equation*}
+\Delta E_{int}=nC_{V}\Delta T
+\end{equation*}%
+This is tremendous! We have an equation for $\Delta E_{int}$, and $w=\Delta
+E_{int},$ so with $Q=0$ we have a complete set.
 
-The blue dashed lines are isotherms. Notice that the temperature is changing
-along the adiabatic path. That implies that 
+But it turns out that we can add two more equations to our adiabatic set
+that will really help. 
+
+The first is that relationship between pressures and volumes along an
+adiabatic path. We now know for adiabatic processes we can say 
 \begin{equation*}
-\Delta E_{int}\propto \Delta T\neq 0
-\end{equation*}%
-but we defined this path such that 
+\Delta E_{int}=nC_{V}\Delta T
+\end{equation*}
+so long as we start with the same $T_{i}$ and end with the same $T_{f}.$ A
+very small change in the internal energy would be 
 \begin{equation*}
-Q=0
+dE=nC_{V}dT
 \end{equation*}%
-so by the first law%
+Now for our adiabatic process we previously noted that there is no energy
+transfer by heat done, so 
 \begin{eqnarray*}
-\Delta E_{int} &=&Q+w \\
-&=&0+w \\
-\Delta E_{int} &=&w
+\Delta E_{int} &=&0+w \\
+&=&\int Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
 \end{eqnarray*}%
-We again don't have enough information to tell what work was done. We
-suspect there is something missing. We will start to fill in the missing
-piece in the next lecture.
+Then a very small amount of internal energy change, $dE_{int}$ would be 
+\begin{equation*}
+dE_{int}=-Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+Let's set these two expressions for $dE_{int}$ equal to each other. 
+\begin{equation*}
+-Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=nC_{V}dT
+\end{equation*}%
+or%
+\begin{equation*}
+-\frac{Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{nC_{V}}=dT
+\end{equation*}
+
+Now we know the idea gas law%
+\begin{equation*}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=nRT
+\end{equation*}%
+if we take a total differential for a sample of $n$ moles of a gas%
+\begin{equation*}
+Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
++%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+dP=nRdT
+\end{equation*}%
+we can substitute in our expression we have for an adiabatic process for $dT$%
+\begin{equation*}
+Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
++%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+dP=-nR\frac{Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{nC_{V}}
+\end{equation*}%
+or%
+\begin{equation*}
+Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
++%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+dP=-R\frac{Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{C_{V}}
+\end{equation*}
+
+We can use our relationship between $C_{V}$ and $C_{P}$ that we found earlier%
+\begin{equation*}
+C_{V}=C_{P}-R
+\end{equation*}%
+so%
+\begin{equation*}
+R=C_{P}-C_{V}
+\end{equation*}%
+and let's substitute this in for our $R$ in our total differential equation%
+\begin{equation*}
+Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
++%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+dP=-\frac{C_{P}-C_{V}}{C_{V}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+or%
+\begin{equation*}
+Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
++%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+dP=\frac{C_{V}-C_{P}}{C_{V}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+Now let's divide through by $P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+.$ It's not apparent that this will help, but it does so 
+\begin{equation*}
+\frac{Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}+\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+dP}{P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}=\frac{C_{V}-C_{P}}{C_{V}}\frac{Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}%
+and canceling the extra $V$'s and $P$'s gives%
+\begin{equation*}
+\frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}+\frac{dP}{P}=\frac{C_{V}-C_{P}}{C_{V}}\frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}%
+rearranging terms gives%
+\begin{equation*}
+\frac{dP}{P}=\left( \frac{C_{V}-C_{P}}{C_{V}}-1\right) \frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}%
+Lets get a common denominator 
+\begin{eqnarray*}
+\frac{dP}{P} &=&\left( \frac{C_{V}-C_{P}}{C_{V}}-\frac{C_{V}}{C_{V}}\right) 
+\frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+} \\
+\frac{dP}{P} &=&\left( -\frac{C_{P}}{C_{V}}\right) \frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{eqnarray*}%
+Lets define a new quantity 
+\begin{equation}
+\gamma =\frac{C_{P}}{C_{V}}
+\end{equation}%
+so we have%
+\begin{equation*}
+\frac{dP}{P}=-\gamma \frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}
+
+Which is exciting. We are just down to $P$'s and $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$'s and a gamma. We may be able to get an expression of $P$ as a function of 
+$%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ yet! We can integrate this last equation%
+\begin{eqnarray*}
+\int \frac{dP}{P} &=&-\gamma \int \frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+} \\
+\ln \left( P\right) +\zeta _{P} &=&-\gamma \ln \left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\right) +\zeta _{V}
+\end{eqnarray*}%
+where $\zeta _{P}$ and $\zeta _{V}$ are the constants of integration. We can
+write this as%
+\begin{eqnarray*}
+\ln \left( P\right) +\gamma \ln \left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\right)  &=&-\zeta _{P}+\zeta _{V} \\
+&=&\zeta 
+\end{eqnarray*}%
+where $\zeta =\zeta _{V}-\zeta _{P}$ is a constant. And now we need to
+remember a few things about logs. 
+\begin{equation*}
+a\ln b=\ln b^{a}
+\end{equation*}
+so we can write our equation as 
+\begin{equation*}
+\ln \left( P\right) +\ln \left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }\right) =\zeta 
+\end{equation*}%
+and 
+\begin{equation*}
+\ln a+\ln b=\ln \left( ab\right) 
+\end{equation*}
+so our equation becomes just 
+\begin{equation*}
+\ln \left( P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }\right) =\zeta 
+\end{equation*}%
+or we can exponentiate both sides 
+\begin{equation}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }=e^{\zeta }
+\end{equation}%
+where $e^{\zeta }$ is still just a constant.
+
+Note that we have done what we set out to do (sort of). We have an
+expression of how $P$ varies with $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+.$ 
+\begin{equation*}
+P=\frac{e^{\zeta }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }}
+\end{equation*}%
+We could put this into our work equation and integrate to find the work done
+in an adiabatic process!%
+\begin{eqnarray*}
+\Delta E_{int} &=&w \\
+&=&-\int \frac{e^{\zeta }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }}d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{eqnarray*}
+
+But also note that we have a great conservation equation for an adiabatic
+process.
+
+\begin{equation*}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }=\text{constant}
+\end{equation*}%
+or 
+\begin{equation}
+P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma }=P_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma }
+\end{equation}%
+and we know that conservation equations come in very handy in solving
+problems! Let's add this last equation to our set of equations for adiabatic
+processes.
+
+We can get a second equation for adiabatic processes relating the volume and
+temperature. If we know an initial state 
+\begin{equation*}
+P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}=nRT_{i}
+\end{equation*}%
+we can use our adiabatic conservation equation from above to write%
+\begin{equation*}
+P_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma }=P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma }
+\end{equation*}%
+we can solve the ideal gas law for $P_{i}$ and 
+\begin{equation*}
+P_{i}=\frac{nRT_{i}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}
+\end{equation*}%
+and use this in our equation 
+\begin{equation*}
+\frac{nRT_{f}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma }=\frac{nRT_{i}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma }
+\end{equation*}%
+to yield%
+\begin{equation*}
+\frac{T_{f}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma }=\frac{T_{i}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma }
+\end{equation*}%
+or%
+\begin{equation}
+T_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma -1}=T_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma -1}
+\end{equation}%
+This is another conservation equation for adiabatic processes! We will add
+this to our equation set for adiabatic processes
+
+These equations are great shortcuts for problem solving \emph{but remember
+they are only valid for adiabatic processes!}
+
+Notice that we never did complete the integral for work%
+\begin{equation*}
+\Delta E_{int}=w=-\int \frac{e^{\zeta }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }}d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+We totally could at this point, but we already know the answer to be 
+\begin{equation*}
+\Delta E_{int}=nC_{V}\Delta T
+\end{equation*}%
+where the $\Delta T$ is the same as it would be for our actual adiabatic
+process. Since we know this and it is easy to calculate, we won't often do
+the integral
+
+We still need to find $\gamma $ for our adiabatic processes. We need the
+ratio of $C_{P}$ to $C_{V}$ or $\gamma .$ We now know that 
+\begin{equation*}
+C_{V}=\frac{3}{2}R
+\end{equation*}%
+\begin{equation*}
+C_{P}=\frac{5}{2}R
+\end{equation*}%
+and we may take the ratio of these values%
+\begin{eqnarray*}
+\gamma  &=&\frac{C_{P}}{C_{V}} \\
+&=&\frac{\frac{5}{2}R}{\frac{3}{2}R} \\
+&=&\frac{5}{3}
+\end{eqnarray*}
+
+This works well for monotonic gasses, but fails badly for more complex
+gasses. So we see our ideal gas formulation starts to break down with more
+complex gasses at this point. To go farther, we would need to include the
+rotational and vibrational energy of the molecules. Still, we have come a
+long ways with our simple ideal gas assumptions!
+
+Note that for solids and liquids $\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ is very small so very little work is done. This means that $C_{P}\approx
+C_{V}$ which is why we we could get away with only one value for the molar
+heat capacity in the tables for solids and liquids. 
+
+\subsection{Path Dependence}
+
+We should do a problem that shows the path dependence of thermodynamics
+work. Notice that how we compress the gas (quickly vs. slowly, etc.) makes a
+difference on our PV diagram. For example, quick actions would not let
+energy leave by heat, so temperature would rise. Slow actions would allow
+enough time for energy to leave, allowing the temperature to stay the same.
+So when we say there is a \textquotedblleft path
+dependence\textquotedblright\ for thermodynamic work, it is equivalent to
+saying we have different amounts of work for \textquotedblleft different
+paths\textquotedblright\ on a PV-diagram. The PV-diagram shows the different
+physical paths as different lines on the graph. Here is an example.
+
+Suppose we change $1\unit{mol}$ of an ideal gas from one state to another by
+two different paths. The two paths are shown in the next figure.\FRAME{dtbpF%
+}{3.0894in}{2.0676in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.0894in;height 2.0676in;depth 0pt;original-width
+3.1195in;original-height 2.0782in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SUS73WAM.wmf';tempfile-properties "XPR";}}
+
+We recognize the blue path as a combination of an isobaric and an isothermal
+process. So for the blue path, the work done will be a combination of%
+\begin{eqnarray*}
+w_{isobaric} &=&-P\left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}-%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}\right) \\
+w_{isothermal} &=&nRT\left[ \ln \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}\right]
+\end{eqnarray*}
+
+Then%
+\begin{eqnarray*}
+w_{blue} &=&-P\left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}-%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}\right) +nRT\left[ \ln \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}\right] \\
+&=&-378.29\unit{Pa}\left( 7.\,\allowbreak 538\,4\unit{m}^{3}-6\unit{m}%
+^{3}\right) \\
+&&+\left( 1\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right)
+\left( 343\unit{K}\right) \left[ \ln \frac{7.\,\allowbreak 538\,4\unit{m}^{3}%
+}{6\unit{m}^{3}}\right] \\
+&=&\allowbreak 650.\,\allowbreak 9\unit{J}
+\end{eqnarray*}
+
+But the red path is an isovolumetric path. We know that for isovolumetric
+paths the work is zero!%
+\begin{eqnarray*}
+w_{red} &=&-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{1}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{2}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&0
+\end{eqnarray*}%
+and we can see that zero is very different than $651\unit{J}$! Indeed the
+work for each PV-diagram path is different. But why?
+
+The red path is what we would get if we put a sealed strong container in a
+fire. The fire would provide energy to the gas in the container by heat. But
+the strong walls of the container would keep the gas from expanding. The
+pressure would rise and the temperature as well. But for the blue path we
+envision a movable piston in a cylinder of gas. when the fire adds energy by
+heat, the piston rises, keeping the pressure the same. The temperature does
+go up. Then we remove the fire, and slowly compress the gas back to its
+original volume. By doing this slowly the work we do adds a little bit of
+energy to the gas, but the energy can leave by heat, so the temperature of
+the gas stays the same.
+
+Note that these are really different processes! So it is no wonder that the
+internal work done is different. And we see all of this with our PV-diagram!
+
+\section{Irreversibility}
+
+We should ask, are our special processes reversible? We found that for a
+free expansion the process was not reversible.
+
+\FRAME{dtbpF}{3.7896in}{2.2035in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.7896in;height 2.2035in;depth
+0pt;original-width 3.7421in;original-height 2.1629in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SYUH1H0R.wmf';tempfile-properties "XPR";}}But how about for our special
+processes: It would make our math easier if they were reversible.
+
+For an isochoric process we know $w_{int}=0,$ $Q=nC_{V}\Delta T,$ $\Delta
+E_{int}=nC_{V}\Delta T.$ It seems like we can change the pressure of a gas,
+say by transferring energy by heat, and let the temperature rise, but then
+cool the cylinder of gas back to the same pressure all without changing the
+volume. It seems like this would be doable.
+
+For an isobaric process we know $w_{int}=-P\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+,$ $Q=nC_{P}\Delta T,$ $\Delta E_{int}=nC_{P}\Delta T-P\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+.$ It seems like we could make a cylinder with a free floating position that
+could go up or down. We could transfer energy by heat and let the volume
+increase. But then transfer energy back out of the cylinder to restore it to
+the same pressure. This seems reversible. 
+
+For an isothermal process $w=-nRT\left[ \ln \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}}\right] ,$ $Q=-w,$ $\Delta E_{int}=0.$ Could we do work on a cylinder
+of gas that is in an ice water bath and transfer energy out by heat such
+that the temperature stays the same, then pull the piston back out allowing
+energy to transfer back in by heat, still keeping the temperature the same?
+This also seems possible.
+
+Finally, for an adiabatic process we now know that $w=\Delta E_{int},$ $Q=0$
+and $\Delta E_{int}=nC_{v}\Delta t$ for an equivalent process. So we
+insolate our cylinder and do some work. That increases the internal energy
+(and the temperature) but we pull the piston back out and the internal
+energy reverts back. These all seem like reversible processes. But notice
+that in each case, though the cylinder contents came back to the same state,
+the surroundings would not be the same. It each case energy was transferred
+either work or by heat. And the surroundings had to supply that work or
+energy transfer by heat. And we expect that in energy transfer by heat that
+not only was our cylinder affected by a stove or hotplate and the air in the
+room would also have a larger temperature. In the case of work our diligent
+coresearcher that kept pushing and pulling pistons is now tired. The
+surroundings are different. Causing a change in the surroundings is
+something we need to think about, and it gives us our first version of the 
+\emph{Second Law of Thermodynamics.}
+
+\section{The Second Law of Thermodynamics}
+
+We did a lot with our first law of thermodynamics (using our ideal gas law).
+But there is a second law of thermodynamics. It is a little harder to state
+in a nice equation. So we are going to build up to it a little at a time.
+Our first version is due to a researcher called Clausius, so it is called
+the Claussius statement of the Second Law of Thermodynamics.
+
+\begin{center}
+\rule{300pt}{1pt}
+
+It is impossible to make a cyclical machine that transfers energy
+spontaneously from a colder object to a hotter object
+
+\rule{300pt}{1pt}
+\end{center}
+
+This seems obvious. Refrigerators have to be plugged in, so do air
+conditioners. They require an input of energy to run. But this is just what
+we have been discussing. for a refrigerator or an air conditioner to work
+the surroundings have to change. Energy in the form of electricity has to be
+supplied. And that not only changes the surroundings it also changes our
+budget. In our next lectures, we will form more mathematical statements of
+the second law.
 
 \chapter{37 Producing Useful Work 2.4.2, 2.4.3}
 
