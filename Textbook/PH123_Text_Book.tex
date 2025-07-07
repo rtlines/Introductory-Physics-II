@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Thursday, July 03, 2025 17:20:30}
+%TCIDATA{LastRevised=Monday, July 07, 2025 11:59:27}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -20912,9 +20912,9 @@ E_{mech}=K+U
 was often conserved, when $E_{thermal}=0$ where $E_{mech}$ was the total
 mechanic energy. Remember we solved a lot of problems back in Principles of
 Physics I by knowing that for a closed system, $E_{mech}$ did not change. In
-other words, $E_{mech}$ was independent of path we take on our $F$ vs. $x$
-diagram. This makes $E_{mech}$ much easier to work with. A path independent
-quantity makes problems easier.
+other words, $E_{mech}$ was independent of the path we take on our $F$ vs. $x
+$ diagram. This makes $E_{mech}$ much easier to work with. A path
+independent quantity makes problems easier.
 
 We want another variable to work with that removes the difficulty of
 worrying about the details of how the internal motion happens (the path).
@@ -20927,7 +20927,7 @@ together. There is mechanical work done by your muscles. There is kinetic
 energy while your hands move. But your hands heat up. This higher
 temperature is still there for a while after your hands stop moving.
 Eventually the temperature of your hands returns to normal. We now know to
-call this transfer of energy heat, $Q.$ 
+call this transfer of energy heat, $Q.$
 
 Now that we remember all of this, we are ready to find our path independent
 quantity for internal energy. We define the change in internal energy as%
@@ -20949,12 +20949,12 @@ or for very small changes, we could replace the $\Delta $'s with small $d$'s
 dE_{int}=dQ+dw_{int}
 \end{equation*}%
 but be careful! these are not true differentials because $dw$ depends on the
-path! Integration of $dw$ is trick and you would have to think about it
+path! Integration of $dw$ is tricky and you would have to think about it
 carefully. The relationship 
 \begin{equation}
 \Delta E_{int}=Q+w_{int}
 \end{equation}%
-is known as the \emph{first law of thermodynamics.} 
+is known as the \emph{first law of thermodynamics.}
 
 Let's look at some systems and think about their internal energies.
 
@@ -20995,19 +20995,21 @@ Q=-w_{int}
 But these examples were too easy. Let's take on a harder problem where we
 actually find the amount of work done.
 
-\section{Work }
+\section{Work}
 
-\begin{itemize}
-\item Consider the work done by a piston as it compresses a gas. It might be
-good if the amount of work was equal to the amount of energy transfer by
-heat. We often want this to be true! Otherwise you could melt your engine as
-your car operates. We want an engine in a car (or train, or airplane) to be
-a cyclic process. This explains why your car engine surface gets hot. Work
-is being done in the cylinders in your engine, but to make the process
-cyclic some energy must be lost by heat or the energy would rise. Unlike
-your car pistons, let's do this slowly and quazi-statically so that the
-pressure equalizes every time we move the piston a little bit. \FRAME{dtbpFX%
-}{2.0454in}{1.3651in}{0pt}{}{}{Plot}{\special{language "Scientific
+Consider the work done by a piston as it compresses a gas. It might be good
+if the amount of work was equal to the amount of energy transfer by heat. We
+often want this to be true! Otherwise you could melt your engine as your car
+operates. We want an engine in a car (or train, or airplane) to be a cyclic
+process. This explains why your car engine surface gets hot. Work is being
+done in the cylinders in your engine, but to make the process cyclic some
+energy must be lost by heat or the internal energy would rise. 
+
+But car engines are a little bit complicated. Let's do a simpler problem. So
+unlike your car pistons, let's do work slowly and quazi-statically so that
+the pressure equalizes every time we move the piston a little bit. The
+piston moves, and energy is gained by work, but then lost by heat. \FRAME{%
+dtbpFX}{2.0454in}{1.3651in}{0pt}{}{}{Plot}{\special{language "Scientific
 Word";type "MAPLEPLOT";width 2.0454in;height 1.3651in;depth 0pt;display
 "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
 "2";xmax "10";xviewmin "2";xviewmax "10";yviewmin "100";yviewmax
@@ -21030,14 +21032,13 @@ Let's call such a process where the pressure doesn't change in the cylinder
 an \emph{isobaric process. }\footnote{%
 There are details of car engines that we won't tackle until later. So not
 everything in this lecture applies directly to car engines.}
-\end{itemize}
 
-\FRAME{dtbpF}{2.124in}{2.0107in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{2.226in}{2.1049in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.124in;height 2.0107in;depth
-0in;original-width 2.0851in;original-height 1.9718in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 2.226in;height 2.1049in;depth
+0pt;original-width 2.9187in;original-height 2.7588in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SYU5A002.wmf';tempfile-properties "XPR";}}
+'SZ1CK400.wmf';tempfile-properties "XPR";}}
 
 Lets take a close look at the gas within the piston. At equilibrium we know 
 \begin{equation*}
@@ -21049,24 +21050,24 @@ F_{P}=PA
 \end{equation*}%
 This force is the force of the gas pushing on the piston. We could label it 
 \begin{equation*}
-F_{gp}=F_{P}
+F_{pg}=F_{P}
 \end{equation*}%
-Notice that the gas pushes to the right. If we apply an external force to
-the piston slowly so as to allow the system to remain in thermal equilibrium
-as we go, then 
+Notice that the gas pushes to the right. If we apply an external force, $%
+F_{ex},$ to the piston slowly so as to allow the system to remain in thermal
+equilibrium as we go, then 
 \begin{equation*}
 \overrightarrow{F}_{ex}=-F_{ex}\hat{x}
 \end{equation*}%
 because we are pushing in the $-x$-direction. Again, we will move the piston
 slowly so we don't violate our quasi-static rule. As we move the piston the
 gas inside the piston adjusts in pressure until we are again in equilibrium.
-So 
+So the magnitudes are the same 
 \begin{equation*}
-F_{ex}=F_{gp}
+F_{ex}\approx F_{pg}
 \end{equation*}%
-but the pressure force $F_{gp}$ pushes the opposite direction 
+but the pressure force $F_{pg}$ pushes the opposite direction 
 \begin{eqnarray*}
-\overrightarrow{F}_{gp} &=&+F_{ex}\hat{x} \\
+\overrightarrow{F}_{pg} &=&+F_{ex}\hat{x} \\
 &=&PA\hat{x}
 \end{eqnarray*}%
 We should also note that since neither the piston nor the gas are
@@ -21083,7 +21084,11 @@ When we move the piston to the left, we have a displacement%
 \begin{equation*}
 \overrightarrow{dr}=-dx\hat{x}
 \end{equation*}%
-so the work done \emph{on the gas by the piston would be }%
+and when we move the piston to the right so 
+\begin{equation*}
+\overrightarrow{dr}=+dx\hat{x}
+\end{equation*}%
+The work done \emph{on the gas by the piston would be }%
 \begin{equation*}
 w_{gp}=\int_{x_{i}}^{x_{f}}\overrightarrow{F}_{ex}\cdot d\overrightarrow{r}
 \end{equation*}%
@@ -21105,13 +21110,14 @@ dx\right\vert \cos \theta _{Fx} \\
 &=&\int_{x_{i}}^{x_{f}}\left\vert PA\right\vert \left\vert dx\right\vert
 \cos \theta _{Fx}
 \end{eqnarray*}%
-and the angle between $F_{ex}$ and $dx$ is $180\unit{%
+Suppose we move the piston to the right as shown in our figure. The angle
+between $F_{ex}$ and $dx$ would be $180\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
 {{}^\circ}%
 %EndExpansion
 }.$ If this seems mysterious, look at the last figure, and remember we are
-really working with $F_{ex}.$ We put in $F_{pg}$ because it's magnitude is
+really working with $F_{ex}.$ We put in $F_{gp}$ because it's magnitude is
 the same as that of $F_{ex}.$ So $180\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
@@ -21124,31 +21130,21 @@ w_{gp}=-\int_{x_{i}}^{x_{f}}\left\vert PA\right\vert \left\vert
 dx\right\vert 
 \end{equation*}%
 To get the total work done on the piston we are integrating over the entire
-path of the piston travels. It is worth noting that $P$ can only be
-positive, and the same is true for $A$. Both $P$ and $A$ are constant, since
-we are using our quazi-static process and allowing the pressure to equalize
-as we go. So we could write the work done on the piston by the gas as 
+path the piston travels. It is worth noting that $P$ can only be positive,
+and the same is true for $A$. Both $P$ and $A$ are constant, since we are
+using our quazi-static process and allowing the pressure to equalize as we
+go. So we could write the work done on the gas by the piston as 
 \begin{equation*}
-w_{gp}=PA\int_{x_{i}}^{x_{f}}\left\vert dx\right\vert 
+w_{gp}=-PA\int_{x_{i}}^{x_{f}}\left\vert dx\right\vert 
 \end{equation*}%
 but now we need to consider $\left\vert dx\right\vert .$ We know that $dx$
-is a small displacement, and displacements can be negative. And in our case,
-as the piston goes to the left, $dx$ certainly is negative. But no matter,
-we don't just have $dx,$ we have $\left\vert dx\right\vert $. But there is a
-problem. We got a minus sign from our dot product, but we would like the
-work done by the piston on the gas to be a positive number. And it looks
-like our integral will be negative. 
-
-But here we can be a little bit clever. If $dx$ really is negative, then the
-negative hiding inside of $dx$ cancels the negative sign from our dot
-product. And then  
+is a small displacement, and displacements can be negative or positive. And
+in our case, as the piston goes to the right, $dx$ certainly is positive.
+Then we can just drop the absolute value signs. 
 \begin{equation*}
 w_{gp}=-PA\int_{x_{i}}^{x_{f}}dx
-\end{equation*}
-still gives us positive work (think of what we did with springs in PH121 to
-deal with $S=-k\left( x-x_{o}\right) $ in work integrals). Now we don't have
-to worry about integrating with absolute value signs.
-
+\end{equation*}%
+Now we don't have to worry about integrating with absolute value signs.
 Remember that we are using an isobaric process in compressing the gas That
 is, we keep the pressure the same but allow the temperature to change, so
 that the volume and temperature change proportionally $%
@@ -21156,22 +21152,54 @@ that the volume and temperature change proportionally $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-=(nRT/P)$) So our integral is just 
+=(nRT/P)$). So our integral is just 
+\begin{equation*}
+w_{gp}=-PA\Delta x
+\end{equation*}%
+And this tells us something! To expand our gas, we got negative work. That
+tells us that our external force is not winning, it is not causing the
+motion. We must be getting energy from somewhere else that is making the
+piston go out, overcoming the external force. \FRAME{dtbpF}{2.1646in}{%
+1.9925in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.1646in;height 1.9925in;depth 0pt;original-width 3.2033in;original-height
+2.9456in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SZ1CUK01.wmf';tempfile-properties "XPR";}}
+
+But now let's say that the external force is winning so we compress our gas.
+And let's go back to 
+\begin{equation*}
+w_{gp}=-PA\int_{x_{i}}^{x_{f}}\left\vert dx\right\vert 
+\end{equation*}%
+This time our $dx$ will be negative. But here we can be a little bit clever.
+If $dx$ really is negative, then the negative hiding inside of $dx$ cancels
+the negative sign from our dot product. And then 
+\begin{equation*}
+w_{gp}=-PA\int_{x_{i}}^{x_{f}}dx
+\end{equation*}%
+gives us positive work (think of what we did with springs in PH121 to deal
+with $S=-k\left( x-x_{o}\right) $ in work integrals). Once again we don't
+have to worry about integrating with absolute value signs. So once again our
+integral is just 
 \begin{eqnarray*}
 w_{gp} &=&-PA\int_{x_{i}}^{x_{f}}dx \\
-&=&-PA\left( x_{f}-x_{i}\right)
+&=&-PA\left( x_{f}-x_{i}\right) 
 \end{eqnarray*}%
+But because $x_{f}<x_{i}$ this integral is not positive! If we compress our
+gas, we get a positive amount of work!
+
 We can rewrite this result using what we know about the volume of the gas 
 \begin{equation*}
+\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 =A\Delta x
 \end{equation*}%
-so the work done by the gas pushing on the piston is 
+so the work done on the gas by the piston is 
 \begin{eqnarray*}
-w_{gp} &=&-P\left( Ax_{f}-Ax_{i}\right) \\
+w_{gp} &=&-P\left( Ax_{f}-Ax_{i}\right)  \\
 &=&-P\left( 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -21182,7 +21210,7 @@ _{f}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}\right)
+_{i}\right) 
 \end{eqnarray*}%
 This gives us an idea. We could write the quantity $Adx$ as $d%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -21218,8 +21246,7 @@ _{f}}Pd%
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 \end{eqnarray*}%
-This gives the same answer for the work done on the piston for our isobaric
-case%
+This gives the same answer for the work done on the gas for our isobaric case%
 \begin{equation*}
 w_{gp}=-P\left( 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -21231,13 +21258,12 @@ _{f}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}\right)
+_{i}\right) 
 \end{equation*}
 
 But this is the amount of work that the piston does on the gas. Is the gas
-pushing back on the piston? Of course it is! And that push is also a force, $%
-F_{pg}$, so it also does work. But let's review what we know about work from
-PH121.
+pushing back on the piston? We know it is!  But let's review what we know
+about work from Principles of Physics I.
 
 Suppose we have two people exerting a force on a box. One is a professional
 American football player, The other is a six-year-old. \FRAME{dtbpF}{2.8158in%
@@ -21279,17 +21305,22 @@ to make the box move. This means that the linebacker must do enough work
 push of the child.
 
 But that is just our case with the gas and piston The gas pressure force 
-\emph{is} pushing on the piston. But the gas pressure force on the piston is
-losing ground (the external force is pushing the piston to the left). So we
-would expect the work done by the gas on the piston to be negative.
+\emph{is} pushing on the piston. But in our last example the gas pressure
+force on the piston is losing ground (the external force is pushing the
+piston to the left). So we would expect the work done by the gas on the
+piston to be negative. The force on the piston from the gas is losing. The
+force of the piston on the gas is wining.
 
-Since we assumed a quasi-static process, the two forces must always be
-nearly the same, 
+But $F_{pg}=F_{gp}$ because they are a third law pair. The force on the
+piston by the gas also does work. It will have the same magnitude, but will
+be in the opposite direction. Since we assumed a quasi-static process, the
+two forces must always be nearly the same, 
 \begin{equation*}
-\left\vert F_{ex}\right\vert =\left\vert F_{pg}\right\vert 
+\left\vert F_{ex}\right\vert =\left\vert F_{pg}\right\vert =\left[ F_{gp}%
+\right] 
 \end{equation*}%
 so the amount of work must be nearly the same, but the sign must be negative
-for the work on the gas due to the piston's push. We wrote the work done by
+for the work on the piston due to the gas's push. We wrote the work done by
 the piston on the gas as 
 \begin{equation*}
 w_{gp}=-\int_{%
@@ -21434,7 +21465,7 @@ final points.
 'SVAQIE7D.wmf';tempfile-properties "XPR";}}
 
 Notice that we have calculated the amount of work done on the gas. For
-physicists this is normally what we want. 
+physicists this is normally what we want.
 
 You might be wondering if that is what we want to build car or jet engines.
 Don't we want the gas to expand to push the piston and make the car go? And
@@ -21446,7 +21477,7 @@ for a quasi-static process.
 w_{\text{on the gas}}=-w_{\text{by the gas}}
 \end{equation*}
 
-But let's go back to our first law of thermodynamics. 
+Let's go back to our first law of thermodynamics. 
 \begin{equation}
 \Delta E_{int}=Q+w_{int}
 \end{equation}%
@@ -21479,7 +21510,7 @@ P=\left( nRT\right) \frac{1}{%
 %EndExpansion
 }
 \end{equation*}%
-everything in the parenthesis is constant so 
+Everything in the parenthesis is constant so 
 \begin{equation*}
 P\propto \frac{1}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -21582,12 +21613,12 @@ TRUE;display "USEDEF";valid_file "T";width 3.461in;height 2.3116in;depth
 0pt;original-width 3.4151in;original-height 2.2719in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SYU9LY05.wmf';tempfile-properties "XPR";}}And because $\Delta E_{int}$ is
-path independent, it doesn't matter how we go from $E_{int}.$ So if we
-followed this PV path \FRAME{dtbpF}{2.8383in}{1.8983in}{0pt}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.8383in;height 1.8983in;depth
-0pt;original-width 2.7951in;original-height 1.8602in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+path independent, it doesn't matter how we go from $E_{1_{int}}$ to $%
+E_{2_{int}}.$ So if we followed this PV path \FRAME{dtbpF}{2.8383in}{1.8983in%
+}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.8383in;height 1.8983in;depth 0pt;original-width 2.7951in;original-height
+1.8602in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SYU9MU06.wmf';tempfile-properties "XPR";}}or this PV\ path \FRAME{dtbpF}{%
 2.8677in}{1.9182in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
@@ -21646,9 +21677,9 @@ TRUE;display "USEDEF";valid_file "T";width 3.1427in;height 2.0989in;depth
 0pt;original-width 3.589in;original-height 2.3869in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SYU9XO0A.wmf';tempfile-properties "XPR";}}But this is just for a process
-where volume doesn't change. Still, our PV\ diagram does seem to be useful
-for thinking about thermodynamic process and for filling in our first law
-equation 
+where volume doesn't change. $Q$ must be different for other paths. Still,
+our PV\ diagram does seem to be useful for thinking about thermodynamic
+process and for filling in our first law equation 
 \begin{equation*}
 \Delta E_{int}=Q+w
 \end{equation*}%
@@ -22090,7 +22121,7 @@ Only consider this, because it would be irresponsible and dangerous (and
 illegal in some states) to do this!} if you placed an aerosol can in a fire.
 The aerosol can is rigid, so the volume can't change. But the fire will make
 the temperature change, and the pressure will change--that is--until the can
-explodes. 
+explodes.
 
 We will also need our differential form for the first law for isochoric
 processes. 
@@ -22098,7 +22129,7 @@ processes.
 dE_{V_{int}}=nC_{v}dT
 \end{equation*}
 
-\subsection{Constant Pressure Process }
+\subsection{Constant Pressure Process}
 
 But there is more than one way to add energy to a gas. Suppose we envision
 another process where instead of keeping the volume constant we keep the
@@ -22134,7 +22165,7 @@ _{f}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}\right) 
+_{i}\right)
 \end{equation*}%
 Let's review that here 
 \begin{eqnarray*}
@@ -22180,7 +22211,7 @@ _{f}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}\right)  \\
+_{i}\right) \\
 &=&-P\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -22406,7 +22437,7 @@ again balanced. But that means that $P_{gas}$ will only change for a moment,
 and then we will achieve equilibrium at the same old value of $P_{gas}.$ But
 something has changed, the volume has increased.
 
-\section{Constant Temperature Process }
+\section{Constant Temperature Process}
 
 We have already done quite a bit of work on this process in our last lecture 
 \FRAME{dtbpFX}{2.4025in}{1.6016in}{0pt}{}{}{Plot}{\special{language
@@ -22434,7 +22465,7 @@ gives
 \begin{equation*}
 Q=w
 \end{equation*}%
-but we meed to find $w$. Let's use our ideal gas law for this again. 
+but we meed to find $w$. Let's use our ideal gas law for this again.
 
 In this case we know $T$ and $n,$ and that we know $P_{i}$ and $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -22528,7 +22559,7 @@ _{f}\right) -\ln \left(
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{-}\right) \right] 
+_{-}\right) \right]
 \end{eqnarray}
 \begin{equation*}
 w=-nRT\left[ \ln \frac{%
@@ -22541,9 +22572,9 @@ _{f}}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}}\right] 
+_{i}}\right]
 \end{equation*}%
-So then  
+So then 
 \begin{eqnarray*}
 Q &=&-w \\
 &=&nRT\left[ \ln \frac{%
@@ -22556,9 +22587,9 @@ _{f}}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}}\right] 
+_{i}}\right]
 \end{eqnarray*}%
-and we did not need our molar specific heat equations for this process. 
+and we did not need our molar specific heat equations for this process.
 
 How do we make such a path happen? Consider our piston again.\FRAME{dhF}{%
 2.5434in}{1.6328in}{0pt}{}{}{Figure}{\special{language "Scientific
@@ -22641,8 +22672,8 @@ negative, if it comes into the system it is positive.
 process. We use the ideal gas law and the first law of thermodynamics to do
 this.
 
-\item We have special processes for which it is easy to find $\Delta E_{int},
-$ $Q,$ and $w$
+\item We have special processes for which it is easy to find $\Delta
+E_{int}, $ $Q,$ and $w$
 
 \item We are still missing something.
 \end{itemize}
@@ -22659,7 +22690,7 @@ find a process where $Q$ is zero? Then
 \begin{equation*}
 \Delta E_{int}=w
 \end{equation*}%
-We call a process where $Q=0$ \emph{adiabatic}. 
+We call a process where $Q=0$ \emph{adiabatic}.
 
 It might see like we are home free, $Q=0$! We don't need our molar specific
 heat equations for an adiabatic process either.
@@ -22756,7 +22787,7 @@ This is tremendous! We have an equation for $\Delta E_{int}$, and $w=\Delta
 E_{int},$ so with $Q=0$ we have a complete set.
 
 But it turns out that we can add two more equations to our adiabatic set
-that will really help. 
+that will really help.
 
 The first is that relationship between pressures and volumes along an
 adiabatic path. We now know for adiabatic processes we can say 
@@ -23072,8 +23103,8 @@ write this as%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-\right)  &=&-\zeta _{P}+\zeta _{V} \\
-&=&\zeta 
+\right) &=&-\zeta _{P}+\zeta _{V} \\
+&=&\zeta
 \end{eqnarray*}%
 where $\zeta =\zeta _{V}-\zeta _{P}$ is a constant. And now we need to
 remember a few things about logs. 
@@ -23087,11 +23118,11 @@ so we can write our equation as
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-^{\gamma }\right) =\zeta 
+^{\gamma }\right) =\zeta
 \end{equation*}%
 and 
 \begin{equation*}
-\ln a+\ln b=\ln \left( ab\right) 
+\ln a+\ln b=\ln \left( ab\right)
 \end{equation*}
 so our equation becomes just 
 \begin{equation*}
@@ -23100,7 +23131,7 @@ so our equation becomes just
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-^{\gamma }\right) =\zeta 
+^{\gamma }\right) =\zeta
 \end{equation*}%
 or we can exponentiate both sides 
 \begin{equation}
@@ -23305,7 +23336,7 @@ C_{P}=\frac{5}{2}R
 \end{equation*}%
 and we may take the ratio of these values%
 \begin{eqnarray*}
-\gamma  &=&\frac{C_{P}}{C_{V}} \\
+\gamma &=&\frac{C_{P}}{C_{V}} \\
 &=&\frac{\frac{5}{2}R}{\frac{3}{2}R} \\
 &=&\frac{5}{3}
 \end{eqnarray*}
@@ -23323,7 +23354,7 @@ Note that for solids and liquids $\Delta
 %EndExpansion
 $ is very small so very little work is done. This means that $C_{P}\approx
 C_{V}$ which is why we we could get away with only one value for the molar
-heat capacity in the tables for solids and liquids. 
+heat capacity in the tables for solids and liquids.
 
 \subsection{Path Dependence}
 
@@ -23474,7 +23505,7 @@ For an isobaric process we know $w_{int}=-P\Delta
 .$ It seems like we could make a cylinder with a free floating position that
 could go up or down. We could transfer energy by heat and let the volume
 increase. But then transfer energy back out of the cylinder to restore it to
-the same pressure. This seems reversible. 
+the same pressure. This seems reversible.
 
 For an isothermal process $w=-nRT\left[ \ln \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
