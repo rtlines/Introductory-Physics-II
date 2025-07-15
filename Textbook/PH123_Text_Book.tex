@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Wednesday, July 09, 2025 10:02:09}
+%TCIDATA{LastRevised=Tuesday, July 15, 2025 15:06:52}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -22656,7 +22656,7 @@ Since%
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 \end{eqnarray*}%
-this would give us both $w$ and $\Delta E_{int}$ . But it is not obvious how
+This would give us both $w$ and $\Delta E_{int}$ . But it is not obvious how
 to find $P$ as a function of $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -22723,7 +22723,7 @@ The first is that relationship between pressures and volumes along an
 adiabatic path. We now know for adiabatic processes we can say 
 \begin{equation*}
 \Delta E_{int}=nC_{V}\Delta T
-\end{equation*}
+\end{equation*}%
 so long as we start with the same $T_{i}$ and end with the same $T_{f}.$ A
 very small change in the internal energy would be 
 \begin{equation*}
@@ -22733,7 +22733,7 @@ Now for our adiabatic process we previously noted that there is no energy
 transfer by heat done, so 
 \begin{eqnarray*}
 \Delta E_{int} &=&0+w \\
-&=&\int Pd%
+&=&-\int Pd%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -22766,7 +22766,7 @@ or%
 }{nC_{V}}=dT
 \end{equation*}
 
-Now we know the idea gas law%
+Now we know the ideal gas law%
 \begin{equation*}
 P%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -22911,7 +22911,12 @@ dP}{P%
 %EndExpansion
 }
 \end{equation*}%
-and canceling the extra $V$'s and $P$'s gives%
+and canceling the extra $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$'s and $P$'s gives%
 \begin{equation*}
 \frac{d%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -22975,7 +22980,9 @@ Lets get a common denominator
 %EndExpansion
 }
 \end{eqnarray*}%
-Lets define a new quantity 
+We know that $\frac{C_{P}}{C_{V}}$ is just a constant. Let's give it a
+symbol so we don't have to write out $\frac{C_{P}}{C_{V}}.$ Let's make that
+symbol a Greek gamma, $\gamma $ 
 \begin{equation}
 \gamma =\frac{C_{P}}{C_{V}}
 \end{equation}%
@@ -23036,11 +23043,11 @@ write this as%
 \right) &=&-\zeta _{P}+\zeta _{V} \\
 &=&\zeta
 \end{eqnarray*}%
-where $\zeta =\zeta _{V}-\zeta _{P}$ is a constant. And now we need to
-remember a few things about logs. 
+where $\zeta =\zeta _{V}-\zeta _{P}$ is still just a constant. And now we
+need to remember a few things about logs. 
 \begin{equation*}
 a\ln b=\ln b^{a}
-\end{equation*}
+\end{equation*}%
 so we can write our equation as 
 \begin{equation*}
 \ln \left( P\right) +\ln \left( 
@@ -23050,10 +23057,10 @@ so we can write our equation as
 %EndExpansion
 ^{\gamma }\right) =\zeta
 \end{equation*}%
-and 
+and also remember that for logs 
 \begin{equation*}
 \ln a+\ln b=\ln \left( ab\right)
-\end{equation*}
+\end{equation*}%
 so our equation becomes just 
 \begin{equation*}
 \ln \left( P%
@@ -23167,7 +23174,21 @@ P_{i}=\frac{nRT_{i}}{%
 %EndExpansion
 _{i}}
 \end{equation*}%
-and use this in our equation 
+and use this in our first adiabatic conservation equation so%
+\begin{equation}
+P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma }=P_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma }
+\end{equation}%
+becomes 
 \begin{equation*}
 \frac{nRT_{f}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -23191,7 +23212,7 @@ _{i}}%
 %EndExpansion
 _{i}^{\gamma }
 \end{equation*}%
-to yield%
+The $n$'s and $R$'s cancel,%
 \begin{equation*}
 \frac{T_{f}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -23215,7 +23236,12 @@ _{i}}%
 %EndExpansion
 _{i}^{\gamma }
 \end{equation*}%
-or%
+And we can combine the $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ terms to get 
 \begin{equation}
 T_{f}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -23230,10 +23256,9 @@ _{f}^{\gamma -1}=T_{i}%
 _{i}^{\gamma -1}
 \end{equation}%
 This is another conservation equation for adiabatic processes! We will add
-this to our equation set for adiabatic processes
-
-These equations are great shortcuts for problem solving \emph{but remember
-they are only valid for adiabatic processes!}
+this to our equation set for adiabatic processes. These equations are great
+shortcuts for problem solving \emph{but remember they are only valid for
+adiabatic processes!}
 
 Notice that we never did complete the integral for work%
 \begin{equation*}
@@ -23257,7 +23282,7 @@ process. Since we know this and it is easy to calculate, we won't often do
 the integral
 
 We still need to find $\gamma $ for our adiabatic processes. We need the
-ratio of $C_{P}$ to $C_{V}$ or $\gamma .$ We now know that 
+ratio of $C_{P}$ to $C_{V}$ or $\gamma .$ We now know that for ideal gasses 
 \begin{equation*}
 C_{V}=\frac{3}{2}R
 \end{equation*}%
@@ -23334,7 +23359,25 @@ _{i}}{%
 _{f}}\right]
 \end{eqnarray*}
 
-Then%
+Suppose that along the isobaric part of the blue path 
+\begin{eqnarray*}
+P &=&378.29\unit{Pa} \\
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i} &=&6\unit{m}^{3} \\
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f} &=&7.\,\allowbreak 538\,4\unit{m}^{3}
+\end{eqnarray*}%
+and along the isothermal blue path%
+\begin{equation*}
+T=343\unit{K}
+\end{equation*}%
+Then the work done on the blue path would be%
 \begin{eqnarray*}
 w_{blue} &=&-P\left( 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -23392,11 +23435,12 @@ work for each PV-diagram path is different. But why?
 The red path is what we would get if we put a sealed strong container in a
 fire. The fire would provide energy to the gas in the container by heat. But
 the strong walls of the container would keep the gas from expanding. The
-pressure would rise and the temperature as well. But for the blue path we
-envision a movable piston in a cylinder of gas. when the fire adds energy by
-heat, the piston rises, keeping the pressure the same. The temperature does
-go up. Then we remove the fire, and slowly compress the gas back to its
-original volume. By doing this slowly the work we do adds a little bit of
+pressure would rise and the temperature would rise as well. But for the blue
+path we envision a movable piston in a cylinder of gas. when the fire adds
+energy by heat, the piston rises, keeping the pressure the same. The
+temperature does go up. Then we remove the fire, and dunk the cylinder in a
+constant temperature bath. And we slowly compress the gas back to its
+original volume. By doing this slowly, the work we do adds a little bit of
 energy to the gas, but the energy can leave by heat, so the temperature of
 the gas stays the same.
 
@@ -23420,7 +23464,7 @@ For an isochoric process we know $w_{int}=0,$ $Q=nC_{V}\Delta T,$ $\Delta
 E_{int}=nC_{V}\Delta T.$ It seems like we can change the pressure of a gas,
 say by transferring energy by heat, and let the temperature rise, but then
 cool the cylinder of gas back to the same pressure all without changing the
-volume. It seems like this would be doable.
+volume. It seems like this would be reversible.
 
 For an isobaric process we know $w_{int}=-P\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -23457,17 +23501,18 @@ Finally, for an adiabatic process we now know that $w=\Delta E_{int},$ $Q=0$
 and $\Delta E_{int}=nC_{v}\Delta t$ for an equivalent process. So we
 insolate our cylinder and do some work. That increases the internal energy
 (and the temperature) but we pull the piston back out and the internal
-energy reverts back. These all seem like reversible processes. But notice
-that in each case, though the cylinder contents came back to the same state,
-the surroundings would not be the same. It each case energy was transferred
-either work or by heat. And the surroundings had to supply that work or
-energy transfer by heat. And we expect that in energy transfer by heat that
-not only was our cylinder affected by a stove or hotplate and the air in the
-room would also have a larger temperature. In the case of work our diligent
-coresearcher that kept pushing and pulling pistons is now tired. The
-surroundings are different. Causing a change in the surroundings is
-something we need to think about, and it gives us our first version of the 
-\emph{Second Law of Thermodynamics.}
+energy reverts back. These all seem like reversible processes.
+
+But notice that in each case, though the cylinder contents came back to the
+same state, the surroundings would not be the same. It each case energy was
+transferred either work or by heat. And the surroundings had to supply that
+work or energy transfer by heat. And we expect that in energy transfer by
+heat that not only was our cylinder affected by a stove or hotplate and the
+air in the room would also have a larger temperature. In the case of work,
+our diligent coresearcher that kept pushing and pulling pistons is now
+tired. The surroundings are different. Causing a change in the surroundings
+is something we need to think about, and it gives us our first version of
+the \emph{Second Law of Thermodynamics.}
 
 \section{The Second Law of Thermodynamics}
 
@@ -23488,7 +23533,7 @@ spontaneously from a colder object to a hotter object
 
 This seems obvious. Refrigerators have to be plugged in, so do air
 conditioners. They require an input of energy to run. But this is just what
-we have been discussing. for a refrigerator or an air conditioner to work
+we have been discussing. For a refrigerator or an air conditioner to work
 the surroundings have to change. Energy in the form of electricity has to be
 supplied. And that not only changes the surroundings it also changes our
 budget. In our next lectures, we will form more mathematical statements of
@@ -23590,14 +23635,22 @@ _{f}$ is lager than $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}.$ But think of a steam engine. We want the force by the gas on the
-piston to win, because this pushing of the piston is what we can use to push
-the wheel of a steam engine, or a turbine, etc. That is negative work on the
+_{i}.$ We defined work done on the gas as positive if the gas was being
+compressed, and the gas is not being compressed. So the work done on the gas
+is negative. But we could also define the work done by the gas. That is the
+negative of the work done on the gas. 
+\begin{equation*}
+w_{\text{on the gas}}=-w_{\text{by the gas}}
+\end{equation*}
+
+But think of a steam engine. We want the force by the gas on the piston,
+because this pushing of the gas on the piston is what we can use to push the
+wheel of a steam engine, or a turbine, etc. That is negative work on the
 gas. And it is inconvenient to have the useful work be negative. Let's
 define the useful work done by a thermodynamic device as the negative of
 work done on the gas.%
 \begin{equation*}
-w_{\text{useful }}=-w
+w_{\text{useful }}=w_{\text{by the gas}}=-w_{\text{on the gas}}
 \end{equation*}
 
 But, $w_{\text{useful }}$is kind of a awkward name. Usually a machine that
@@ -23618,13 +23671,21 @@ Think of what happens when you water your lawn with water from the
 reservoir. Some water does leave from the reservoir, but compared to the
 whole reservoir of water, one lawn watering makes very little difference.
 Often there is more water coming into the reservoir, so really there is
-negligible water loss from your individual lawn.
+negligible water loss from your individual lawn.\footnote{%
+There is some danger in thinking of reservoirs this way. People at one time
+though of the great lakes and oceans as reservoirs that were just too big
+for us to have any effect on them. But there are a lot of us, and if we all
+dump our trash in these reservoirs we can have a terrible effect on them. It
+has taken years to clean up the great lakes so they are safe to swim and
+safe to fish. The effect from one person is not enough to change the state
+of such a reservoir, but the effects from billions is enough to change it's
+state. We should follow God's counsel and be good stewards of the Earth.}
 
 A heat reservoir is like this. A hot reservoir is a source of thermal energy
-that can be tapped without causing any measurable change in temperature. We
-can also have a cold reservoir that has a large lack of thermal energy. A
-small amount of thermal energy transferred to this cold reservoir won't
-measurably change its temperature.
+that can be tapped without causing any measurable change in temperature to
+the reservoir, itself. We can also have a cold reservoir that has a large
+lack of thermal energy. A small amount of thermal energy transferred to this
+cold reservoir won't measurably change its temperature.
 
 The next figure is called an \emph{Energy Transfer Diagram}.
 
@@ -23652,21 +23713,24 @@ Look at this energy transfer diagram.\FRAME{dhF}{2.1525in}{2.1482in}{0in}{}{%
 'SUS73WC3.wmf';tempfile-properties "XPR";}}
 
 This diagram says that energy flows from the cold reservoir to the hot
-reservoir. From our experience, this doesn't happen. We experience energy
-coming from hot things and going to cold things. So this energy transfer
-shows us a process that does not happen.
+reservoir. From our experience, this doesn't happen. And our bran new Second
+Law of Thermodynamics says this won't happen! We only spontaneously
+experience energy coming from hot things and going to cold things. It would
+take work to make this energy transfer happen, but we don't have any work on
+the diagram. So this energy transfer diagram shows us a process that does
+not happen.
 
 Here is another energy transfer diagram\FRAME{dhF}{1.5316in}{1.9493in}{0pt}{%
 }{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 1.5316in;height 1.9493in;depth 0pt;original-width 2.6974in;original-height
 3.442in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73WC4.wmf';tempfile-properties "XPR";}}This diagram says that we do work
-that is directly converted into heat. This is a common experience. Rub your
-hands together. Your hands warm up. The work has created more internal
-energy, But that energy quickly dissipates into the room The room
-temperature is not affected by this increase in internal energy of the air.
-The air in the room is a cold reservoir.
+'SUS73WC4.wmf';tempfile-properties "XPR";}}This diagram says that we do have
+work, but that the work is directly converted into heat. This is a common
+experience. Rub your hands together. Your hands warm up. The work has
+created more internal energy, But that energy quickly dissipates into the
+room The room temperature is not measurably affected by this increase in
+internal energy of the air. The air in the room is a cold reservoir.
 
 Here is another diagram.\FRAME{dhF}{1.9666in}{1.9631in}{0pt}{}{}{Figure}{%
 \special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
@@ -23674,16 +23738,20 @@ TRUE;display "USEDEF";valid_file "T";width 1.9666in;height 1.9631in;depth
 0pt;original-width 2.4613in;original-height 2.4569in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73WC5.wmf';tempfile-properties "XPR";}}This diagram says that energy
-from the hot reservoir is converted directly into useful work. This is not
-something we expect to happen. Think about it, in a combustion engine we do
-get energy by heat by burning fuel, but we don't just get useful work (the
-car moves). We also heat up the outside of the engine. If you touch your
-engine after it has run for a while you can burn your hand. Not all of the
-energy from the burning fuel became useful work. We know the reason for this
-already. We need to remove energy by heat to make our engine have a cyclic
-process so it doesn't melt down. Some of the energy from the burning fuel
-must leave to the cold reservoir as waste heat. But our diagram has no waste
-heat. This isn't possible.
+from the hot reservoir is converted directly into useful work. We expect
+that we could make a transfer of energy produce work. Think of our piston in
+the gas cylinder. But this diagram show a $100\%$ conversion of our energy
+transfer by heat becoming useful work. This is not something we expect to
+happen. Think about it, in a combustion engine we do get energy by heat by
+burning fuel, but we don't just get useful work (the car moves).
+
+We also heat up the outside of the engine. If you touch your engine after it
+has run for a while you can burn your hand. Not all of the energy from the
+burning fuel became useful work. We know the reason for this already. We
+need to remove energy by heat to make our engine have a cyclic process so it
+doesn't melt down. Some of the energy from the burning fuel must leave to
+the cold reservoir as waste heat. But our diagram has no waste heat. This
+isn't possible.
 
 We could define a generic device that takes energy by heat and converts it
 into useful work. We call such a device a \emph{heat engine}. The heat
@@ -23696,8 +23764,10 @@ did not tell us what thermodynamic processes are possible. We need another
 law of thermodynamics that tells us what process we can expect to work. We
 have found two that don't work. So which processes can work?
 
-Our first statement of the second law of thermodynamics tells us what to
-expect in terms of heat engines:
+Our Clausius' statement of the second law of thermodynamics told us one of
+these engine designs didn't work. And this is the job of the second law of
+thermodynamics, to tell us what to expect will actually happen. In terms of
+heat engines, we could add a new statement of our second law:
 
 \begin{center}
 \rule{300pt}{1pt}
@@ -23718,8 +23788,8 @@ Here is the diagram. We have added the engine explicitly on the diagram.
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73WC6.wmf';tempfile-properties "XPR";}}The engine takes energy from the
 heat reservoir and turns it into useful work. But there is some energy that
-is waisted and this energy ends up in the cold reservoir. The amount of
-energy that becomes work must be 
+is waisted and this energy ends up in the cold reservoir. Using our first
+law of thermodynamics, the amount of energy that becomes work must be 
 \begin{equation*}
 W_{\text{engine }}=Q_{h}-Q_{c}
 \end{equation*}%
@@ -23857,15 +23927,16 @@ process, so by adding in work we are adding energy to make it happen.
 
 A window air conditioner unit is a good example of a heat pump. It removes
 energy by heat from the inside of your apartment and transfers that energy
-to the outside of your apparent. To make this happen, you need mechanical
-device that does work
+to the hot outside of your apparent. To make this happen, you need
+mechanical device that does work
 
 A refrigerator is another example of a heat pump. It transfers energy by
 heat from the cold interior to the warmer environment of your apartment
 kitchen. It would be great if we could transfer heat from our cold reservoir
 (room of a house or freezer compartment of a fridge) to a hot reservoir
 without doing work, but this is not possible. This fact was discovered by
-Clausius and lead to the Clausius statement of the second law--
+Clausius and lead to the Clausius' statement of the second law that we
+already know, but we can update it so it is in terms of engines:
 
 \begin{center}
 \rule{300pt}{1pt}
@@ -23899,6 +23970,16 @@ why energy will transfer by heat. Values of $COP$ are generally greater than
 $1,$ though it is possible for them to be less than $1.$ Of course we would
 like the $COP$ to be as high as possible
 
+\FRAME{dtbpFU}{2.4685in}{2.5581in}{0pt}{\Qcb{{\protect\small Refrigerator
+Design. Red = Gas at high pressure and very high temperature. Pink = Liquid
+at high pressure and high temperature. Blue = Liquid at low pressure and
+very low temperature. Light Blue = Gas at low pressure and low temperature.
+(Drawing courtesy Jahobr)}}}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 2.4685in;height 2.5581in;depth 0pt;original-width
+2.4871in;original-height 2.5776in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SZEJYT03.wmf';tempfile-properties "XPR";}}
+
 For refrigeration, the important thing is how much energy we transfer out of
 the cool area, $Q_{c}$, so for cooling the $COP$ is 
 \begin{equation}
@@ -23907,6 +23988,11 @@ COP_{c}=\frac{\left\vert Q_{c}\right\vert }{W}
 A good refrigerator should have a high COP, Typical values are 5 or 6.
 
 \section{An example: The Otto Cycle}
+
+But so far we have been very vague about what happens in the yellow engine
+circle in our energy transfer diagrams. Let's look at a (mostly) real
+example of a heat engine. This model of a heat engine is cue to a researcher
+named Otto, so it is called the \emph{Otto Cycle}.
 
 \FRAME{dtbpF}{4.8888in}{4.0075in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -23922,7 +24008,23 @@ The $P%
 %EndExpansion
 \ $diagram above shows the Otto cycle. This cycle is approximately what
 happens in a gasoline engine, like those in cars or, more like what we find
-in lawn mowers.
+in lawn mowers. It consists of four main processes. Those processes
+correspond to a piston moving in a cylinder (our favorite thermodynamic
+system!). Here is a picture of what is happening in the engine. \FRAME{dtbpF%
+}{5.5729in}{1.3589in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 5.5729in;height 1.3589in;depth 0pt;original-width
+7.2928in;original-height 1.7553in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SZEIK901.wmf';tempfile-properties "XPR";}}
+
+To understand the Otto cycle let's do our job of finding $\Delta E_{int},$ $%
+Q,$ and $w$ for each part of the cycle and then describe the state of the
+gas at the beginning and end of each cycle by finding $P,$ $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+,$ $n,$ $T,$ and $E_{int}$.
 
 For our engine, suppose the compression ratio is 
 \begin{equation*}
@@ -23948,7 +24050,7 @@ _{A} &=&500\unit{cm}^{3}=\allowbreak 0.000\,5\unit{m}^{3} \\
 P_{A} &=&100\unit{kPa} \\
 T_{A} &=&293\unit{K}
 \end{eqnarray*}%
-then we can find $%
+Then we can find $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -23967,11 +24069,11 @@ _{B}=\frac{%
 _{A}}{8}=\allowbreak 62.\,\allowbreak 5\unit{cm}^{3}=\allowbreak
 6.\,\allowbreak 25\times 10^{-5}\unit{m}^{3}
 \end{equation*}%
-and we will need to measure the temperature at $C$%
+and we will need to measure the temperature at $C.$ Suppose we measure 
 \begin{equation*}
 T_{C}=1023\unit{K}
 \end{equation*}%
-and the intake temperature 
+and the intake temperature to be 
 \begin{equation*}
 T_{I}=273\unit{K}
 \end{equation*}%
@@ -24001,10 +24103,10 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "1";cropbottom "0";tempfilename 'OttoProcessAB_2.wmf';tempfile-properties
 "XNPR";}}
 
-Process $A\rightarrow B$ is an adiabatic compression. The piston moves
-upward, compressing the fuel-air mixture. This happens rapidly, so there is
-no time for energy to leave by heat, $Q=0.$ In this process $\Delta
-E_{int}=W.$
+\textbf{Process }$A\rightarrow B$\textbf{\ is an adiabatic compression.} The
+piston moves upward, compressing the fuel-air mixture. This happens rapidly,
+so there is no time for energy to leave by heat, $Q=0.$ In this process $%
+\Delta E_{int}=W.$
 
 We can use 
 \begin{equation*}
@@ -24033,11 +24135,25 @@ _{A}^{\gamma }}{%
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 _{B}^{\gamma }}
+\end{equation*}%
+But of course this works for any point on the line from $A$ to $B$ so 
+\begin{equation*}
+P=P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }}
 \end{equation*}
 
-We can find the work from 
+We can use this form for $P$ to find the work for process $A\rightarrow B$  
 \begin{eqnarray*}
-W_{AB} &=&-\int_{%
+w_{AB} &=&-\int_{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -24141,11 +24257,11 @@ _{B}^{1-\gamma }-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}^{1-\gamma }\right)
+_{A}^{1-\gamma }\right) 
 \end{eqnarray*}%
 We can rearrange this into a more convenient formula%
 \begin{eqnarray*}
-W_{AB} &=&\frac{P_{A}%
+w_{AB} &=&\frac{P_{A}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -24160,7 +24276,7 @@ _{B}^{\gamma -1}}-\frac{1}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}^{\gamma -1}}\right) \\
+_{A}^{\gamma -1}}\right)  \\
 &=&\frac{1}{\gamma -1}\left( \frac{P_{A}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -24181,7 +24297,7 @@ _{A}^{\gamma }}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}^{\gamma -1}}\right) \\
+_{A}^{\gamma -1}}\right)  \\
 &=&\frac{1}{\gamma -1}\left( \frac{P_{A}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -24207,7 +24323,93 @@ _{A}^{\gamma }}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}^{\gamma -1}}\right) \\
+_{A}^{\gamma -1}}\right) 
+\end{eqnarray*}%
+And once again using 
+\begin{equation*}
+P_{B}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }=P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }
+\end{equation*}%
+or 
+\begin{equation*}
+P_{A}=P_{B}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}
+\end{equation*}%
+We get 
+\begin{equation*}
+w_{AB}=\frac{1}{\gamma -1}\left( \frac{P_{B}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{-1}}-\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma -1}}\right) 
+\end{equation*}%
+A lot of things cancel. We get%
+\begin{eqnarray*}
+w_{AB} &=&\frac{1}{\gamma -1}\left( \frac{P_{B}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{-1}}-\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma -1}}\right)  \\
 &=&\frac{1}{\gamma -1}\left( P_{B}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -24218,11 +24420,11 @@ _{B}-P_{A}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}\right)
+_{A}\right) 
 \end{eqnarray*}%
-which we can generalize into another basic equation for adiabatic processes.%
+which we can generalize into another basic equation for adiabatic processes!%
 \begin{equation*}
-W_{AB}=\left( \frac{1}{\gamma -1}\right) \left( P_{f}%
+w_{if}=\left( \frac{1}{\gamma -1}\right) \left( P_{f}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -24232,11 +24434,11 @@ _{f}-P_{i}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{i}\right)
+_{i}\right) 
 \end{equation*}%
-then for process $A\rightarrow B$ we have%
-\begin{eqnarray*}
-W_{AB} &=&\left( \frac{1}{\gamma -1}\right) \left( P_{B}%
+Then for process $A\rightarrow B$ we have%
+\begin{equation*}
+w_{AB}=\left( \frac{1}{\gamma -1}\right) \left( P_{B}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -24246,8 +24448,22 @@ _{B}-P_{A}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}\right) \\
-&=&\left( \frac{1}{\gamma -1}\right) \left( P_{A}\frac{%
+_{A}\right) 
+\end{equation*}%
+and we can use our equation for $P_{B}$ that we got before, $P_{B}=P_{A}%
+\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}$ so that our $w_{AB}$ equation becomes  
+\begin{equation*}
+w_{AB}=\left( \frac{1}{\gamma -1}\right) \left( P_{A}\frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -24267,8 +24483,24 @@ _{B}-P_{A}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}\right) \\
-&=&\left( \frac{1}{\gamma -1}\right) \left( P_{A}\frac{%
+_{A}\right) 
+\end{equation*}%
+And from our compression ration equation 
+\begin{equation*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}=\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{8.00}
+\end{equation*}%
+so $w_{AB}$ becomes 
+\begin{eqnarray*}
+w_{AB} &=&\left( \frac{1}{\gamma -1}\right) \left( P_{A}\frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -24278,17 +24510,17 @@ _{A}^{\gamma }}{\left( \frac{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}}{8}\right) ^{\gamma }}%
+_{A}}{8}\right) ^{\gamma }}\frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{B}-P_{A}%
+_{A}}{8.00}-P_{A}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}\right) \\
+_{A}\right)  \\
 &=&\left( \frac{1}{\gamma -1}\right) \left( 8^{\gamma }P_{A}\left( \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -24299,36 +24531,39 @@ _{A}}{8}\right) -P_{A}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}\right) \\
+_{A}\right)  \\
 &=&\left( \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}P_{A}-P_{A}\right) \\
+_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}P_{A}-P_{A}\right)  \\
 &=&\left( \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}P_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}-1\right)
+_{A}P_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}-1\right) 
 \end{eqnarray*}%
-so the work is 
-\begin{eqnarray*}
-W_{AB} &=&\left( \frac{%
+So the work is 
+\begin{equation*}
+w_{AB}=\left( \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}P_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}-1\right) \\
-&=&\left( \frac{\left( \allowbreak 0.000\,5\unit{m}^{3}\right) \left( 100%
-\unit{kPa}\right) }{1.4-1}\right) \left( 8^{1.4-1}-1\right) \\
+_{A}P_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}-1\right) 
+\end{equation*}%
+and we know all of these numbers so 
+\begin{eqnarray*}
+w_{AB} &=&\left( \frac{\left( \allowbreak 0.000\,5\unit{m}^{3}\right) \left(
+100\unit{kPa}\right) }{1.4-1}\right) \left( 8^{1.4-1}-1\right)  \\
 &=&\allowbreak 162.\,\allowbreak 17\unit{J}
 \end{eqnarray*}
 
 But this is the work done on the gas, the useful work is the negative of this%
 \begin{equation*}
-W_{eng_{AB}}=-\allowbreak 162.\,\allowbreak 17\unit{J}
+w_{eng_{AB}}=-\allowbreak 162.\,\allowbreak 17\unit{J}
 \end{equation*}%
 which tells us that it took energy to make the process $A\rightarrow B$
 happen. You might need a pull cord to start this engine or an electric
@@ -24340,7 +24575,8 @@ and we can find
 \begin{equation*}
 E_{int}=\frac{5}{2}nRT
 \end{equation*}%
-but we need $n.$ We can get it from what we know at $A$%
+but we need $n.$ We can get it from what we know at $A$ using the ideal gas
+law%
 \begin{eqnarray*}
 n &=&\frac{P_{A}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -24353,12 +24589,12 @@ _{A}}{RT_{A}} \\
 293\unit{K}\right) } \\
 &=&\allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{mol}
 \end{eqnarray*}%
-then%
+Then%
 \begin{eqnarray*}
 E_{A} &=&\frac{5}{2}nRT_{A} \\
 &=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
 mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 293%
-\unit{K}\right) \\
+\unit{K}\right)  \\
 &=&\allowbreak 125.\,\allowbreak 00\unit{J}
 \end{eqnarray*}
 
@@ -24376,7 +24612,13 @@ _{A}^{\gamma }}{%
 %EndExpansion
 _{B}^{\gamma }}
 \end{equation*}%
-but we should find a numeric answer for $P_{B}$%
+but we should find a numeric answer for $P_{B}.$ Let's use our compression
+ratio equation for $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$ again 
 \begin{eqnarray*}
 P_{B} &=&P_{A}\frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -24401,10 +24643,10 @@ _{A}^{\gamma }}{\frac{%
 %EndExpansion
 _{A}^{\gamma }}{8^{\gamma }}} \\
 &=&8^{\gamma }P_{A} \\
-&=&8^{1.4}\left( 100\unit{kPa}\right) \\
+&=&8^{1.4}\left( 100\unit{kPa}\right)  \\
 &=&\allowbreak 1837.\,\allowbreak 9\unit{kPa}
 \end{eqnarray*}%
-and finally, from the ideal gas law 
+And finally, from the ideal gas law 
 \begin{eqnarray*}
 T_{B} &=&\frac{P_{B}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -24422,7 +24664,7 @@ At last we can find $E_{B}$%
 E_{B} &=&\frac{5}{2}nRT_{B} \\
 &=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
 mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left(
-673.\,\allowbreak 15\unit{K}\right) \\
+673.\,\allowbreak 15\unit{K}\right)  \\
 &=&\allowbreak 287.\,\allowbreak 17\unit{J}
 \end{eqnarray*}%
 what we have learned is summarized in this table
@@ -24462,16 +24704,26 @@ That was just one process!
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73WCD.wmf';tempfile-properties "XPR";}}
 
-Let's take on the next process $B\rightarrow C.$ This is where the spark
-plug ignites the air-fuel mixture created by the fuel injectors. A great
-deal of energy is released in a hurry. The temperature jumps up and the
-pressure does too, but the volume is the same because this process happens
-in a flash--literally!
+\textbf{Process }$B\rightarrow C$\textbf{\ is an isochoric process.} This is
+where the spark plug ignites the air-fuel mixture created by the fuel
+injectors. A great deal of energy is released in a hurry. The temperature
+jumps up and the pressure does too, but the volume is the same because this
+process happens in a flash--literally!
 
 So this must be an isochoric process. We expect $W_{BC}=0,$ so $\Delta
 E_{BC}=Q_{BC}.$ The pressure increases, so we expect $Q_{BC}$ to be
 positive. This must be part of $Q_{h}$! We know the temperature at $C$ and
-we know the volume so we can find the final pressure%
+we know the volume $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{C}=%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$ so we can find the final pressure%
 \begin{eqnarray*}
 P_{C} &=&\frac{nRT_{C}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -24490,19 +24742,19 @@ We can find the internal energy at $C$ now%
 E_{C} &=&\frac{5}{2}nRT_{C} \\
 &=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
 mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left(
-1023\unit{K}\right) \\
+1023\unit{K}\right)  \\
 &=&\allowbreak 436.\,\allowbreak 42\unit{J}
 \end{eqnarray*}%
 We can use 
 \begin{eqnarray*}
 Q &=&nC_{V}\Delta T \\
-&=&n\frac{5}{2}R\left( T_{C}-T_{B}\right)
+&=&n\frac{5}{2}R\left( T_{C}-T_{B}\right) 
 \end{eqnarray*}%
 For the process $BC$ to find the energy transfer by heat%
 \begin{eqnarray*}
 Q_{BC} &=&\left( 2.\,052\,5\times 10^{-2}\unit{mol}\right) \frac{5}{2}\left(
 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 1023\unit{K}%
--673.\,\allowbreak 15\unit{K}\right) \\
+-673.\,\allowbreak 15\unit{K}\right)  \\
 &=&149.\,\allowbreak 25\unit{J}
 \end{eqnarray*}%
 We already mentioned that $Q_{BC}=\Delta E_{int_{BC}}$ and $W_{BC}=0,$ so we
@@ -24540,11 +24792,11 @@ $\mathbf{BC}$ & $149.\,\allowbreak 25$ & $0$ & $149.\,\allowbreak 25$ & $%
 "1";cropright "1";cropbottom "0";tempfilename
 'SWZSZN0D.wmf';tempfile-properties "XPR";}}
 
-The next process is $C\rightarrow D.$ This is another adiabatic process,
+\textbf{Process is }$C\rightarrow D$\textbf{\ is another adiabatic process},
 this time an expansion. This is sometimes called the \textquotedblleft power
 stroke\textquotedblright\ because the hot, high pressure gas pushes the
-piston down. This push is what makes the car go. We know that $Q_{CD}=0$ so $%
-\Delta E_{CD}=W_{CD}$
+piston down. This push is what makes the car or lawn mower go. We know that $%
+Q_{CD}=0$ so $\Delta E_{CD}=W_{CD}$
 
 To find the ideal gas state variables at $D$ let's start with 
 \begin{equation*}
@@ -24629,9 +24881,8 @@ T_{D} &=&\frac{\left( 151.\,\allowbreak 97\unit{kPa}\right) \left( 0.000\,5%
 \unit{m}^{3}\right) }{\left( 2.\,052\,5\times 10^{-2}\unit{mol}\right)
 \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) } \\
 &=&445.\,\allowbreak 28\unit{K}
-\end{eqnarray*}
-
-and while we are at it we can complete our state $D$ by calculating $E_{D}$%
+\end{eqnarray*}%
+And while we are at it we can complete our state $D$ by calculating $E_{D}$%
 \begin{eqnarray*}
 E_{D} &=&\frac{5}{2}nRT_{D} \\
 &=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
@@ -24707,9 +24958,10 @@ $\mathbf{CD}$ & $0$ & $-246.\,\allowbreak 46$ & $-246.\,\allowbreak 46$ & $%
 \end{tabular}%
 \end{equation*}
 
-We are nearing the end of the cycle, In process $D\rightarrow A$ a valve
-opens letting the pressure drop quickly. \FRAME{dtbpF}{3.0891in}{2.5927in}{%
-0pt}{}{}{Figure}{\special{language "Scientific Word";type
+\textbf{Process }$D\rightarrow A$\textbf{\ is an isochoric process.} We are
+nearing the end of the cycle, In process $D\rightarrow A$ a valve opens
+letting the pressure drop quickly. \FRAME{dtbpF}{3.0891in}{2.5927in}{0pt}{}{%
+}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.0891in;height 2.5927in;depth 0pt;original-width 3.6123in;original-height
 3.0268in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -24725,13 +24977,13 @@ change in internal energy. Since the volume does not change, $W_{DA}=0$ and $%
 \Delta E_{DA}=Q_{DA}$ which we can find using 
 \begin{eqnarray*}
 Q_{DA} &=&nC_{V}\Delta T \\
-&=&n\frac{5}{2}R\left( T_{A}-T_{D}\right)
+&=&n\frac{5}{2}R\left( T_{A}-T_{D}\right) 
 \end{eqnarray*}%
 which gives%
 \begin{eqnarray*}
 Q_{DA} &=&\left( 2.\,052\,5\times 10^{-2}\unit{mol}\right) \frac{5}{2}\left(
 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 293\unit{K}%
--445.\,\allowbreak 28\unit{K}\right) \\
+-445.\,\allowbreak 28\unit{K}\right)  \\
 &=&-64.\,\allowbreak 964\unit{J}
 \end{eqnarray*}%
 which tells us that we have lost energy by heat. So $Q_{DA}$ must contribute
@@ -24768,11 +25020,11 @@ $\mathbf{DA}$ & $-64.\,\allowbreak 964$ & $0$ & $-64.\,\allowbreak 964$ & $0$
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73WCG.wmf';tempfile-properties "XPR";}}
 
-But we are not done. The opening of the valve let the spent fuel leave as
-exhaust. But we can help remove the exhaust by pushing the piston up. This
-is done at constant pressure, because the valve is open to the exhaust
-system air pressure. We will lose gas by venting it. We can find the new
-number of moles using the ideal gas law%
+But we are not done. The opening of the valve let the spent fuel begin to
+leave as exhaust. But we can help remove the exhaust by pushing the piston
+up. This is done at constant pressure, because the valve is open to the
+exhaust system air pressure. We will lose gas by venting it. We can find the
+new number of moles using the ideal gas law%
 \begin{equation*}
 P_{I}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -24837,13 +25089,12 @@ and then $E_{I}$ will be
 E_{D} &=&\frac{5}{2}n_{I}RT_{I} \\
 &=&\frac{5}{2}\left( 2.\,\allowbreak 753\,6\times 10^{-3}\unit{mol}\right)
 \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 273\unit{K}%
-\right) \\
+\right)  \\
 &=&\allowbreak 15.\,\allowbreak 625\unit{J}
-\end{eqnarray*}
-
-and the work done for an isobaric process is 
+\end{eqnarray*}%
+And the work done for an isobaric process is 
 \begin{equation*}
-W_{AI}=P_{A}\left( 
+w_{AI}=P_{A}\left( 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -24853,16 +25104,16 @@ _{I}-%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{A}\right)
+_{A}\right) 
 \end{equation*}%
 but this assumed that $n$ did not change. Really we are just moving the gas,
 so our work is 
 \begin{eqnarray*}
-W &=&F\Delta x \\
+w &=&F\Delta x \\
 &\approx &0
 \end{eqnarray*}%
 because it takes very little force to push out the gas, so we can ignore $%
-W_{AI}.$
+w_{AI}.$
 
 Finding $Q_{AI}$ we would like to use 
 \begin{equation*}
@@ -24882,7 +25133,7 @@ From this and the first law%
 \begin{equation*}
 \Delta E_{int}=Q+W
 \end{equation*}%
-we can find $Q$%
+We can find $Q$%
 \begin{eqnarray*}
 Q &\approx &\Delta E_{int} \\
 &\approx &-109.\,\allowbreak 38\unit{J}
@@ -24956,16 +25207,17 @@ the power stroke and exhaust. Note that Processes $AI$ and $IA$ have a net
 zero effect thermodynamically, but are very important to making your car or
 lawn mower go!
 
-We can plot what we have found. Note that since $n$ changed for the $AI-IA$
-processes, it is not really possible to include it on the PV\ diagram. That
-is why it has a dashed line. We know the volume and pressure along the path,
-but the predicted temperature from the graph may not be right because $n$
-changed too.\FRAME{dtbpFX}{4.5143in}{3.1211in}{0pt}{}{}{Plot}{\special%
-{language "Scientific Word";type "MAPLEPLOT";width 4.5143in;height
-3.1211in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
-FALSE;lastEngine "MuPAD";xmin "0";xmax "0.0005";xviewmin "0";xviewmax
-"0.0005";yviewmin "10000";yviewmax "3.0E6";viewset"XY";rangeset"X";plottype
-4;labeloverrides 3;x-label "V (m^3)";y-label "P (Pa)";axesFont "Times New
+Putting it all together gives our PV\ diagram for the whole cycle. Note that
+since $n$ changed for the $AI-IA$ processes, it is not really possible to
+include it on the PV\ diagram. That is why it has a dashed line. We know the
+volume and pressure along the path, but the predicted temperature from the
+graph may not be right because $n$ changed too.\FRAME{dtbpFX}{4.5143in}{%
+3.1211in}{0pt}{}{}{Plot}{\special{language "Scientific Word";type
+"MAPLEPLOT";width 4.5143in;height 3.1211in;depth 0pt;display
+"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
+"0";xmax "0.0005";xviewmin "0";xviewmax "0.0005";yviewmin "10000";yviewmax
+"3.0E6";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label "V
+(m^3)";y-label "P (Pa)";axesFont "Times New
 Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{V};var1name
 \TEXUX{$V$};function \TEXUX{$\allowbreak \frac{49.\,\allowbreak
@@ -24988,8 +25240,8 @@ $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 10^{-5}}\CELL{2793100}\CELL{0.000\,5}\CELL{151\,\allowbreak
 970}\CELL{6.\,25\times 10^{-5}}\CELL{100000}$};linecolor "black";linestyle
 2;pointplot TRUE;pointstyle "circle";linethickness 1;lineAttributes
-"Dash";var1range "0,0.0005";num-x-gridlines 100;curveColor
-"[flat::RGB:0000000000]";curveStyle "Point";function \TEXUX{$\left\{
+"Dash";curveColor "[flat::RGB:0000000000]";curveStyle "Point";function
+\TEXUX{$\left\{
 \MATRIX{3,3}{c}\VR{,,l,,,}{,,l,,,}{,,l,,,}{,,,,,}\HR{,,,}\CELL{\frac{3.\,%
 \allowbreak 633\,4}{V^{1.4}}}\CELL{\text{if}}\CELL{6.\,25\times
 10^{-5}<V<0.000\,5}\CELL{0}\CELL{\text{if}}\CELL{V\geq
@@ -25000,19 +25252,16 @@ $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 \TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6.\,25\times
 10^{-5}}\CELL{1837\,900}\CELL{6.\,25\times
 10^{-5}}\CELL{2793100}$};linecolor "blue";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"0,0.0005";num-x-gridlines 100;curveColor
+"point";linethickness 3;lineAttributes "Solid";curveColor
 "[flat::RGB:0x000000ff]";curveStyle "Line";function
 \TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{0.000\,5}%
 \CELL{100000}\CELL{0.000\,5}\CELL{151\,\allowbreak 970}$};linecolor
 "blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
-"Solid";var1range "0,0.0005";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";function
+"Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";function
 \TEXUX{$\MATRIX{2,2}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,}\CELL{6.\,25\times
 10^{-5}}\CELL{100000}\CELL{0.000\,5}\CELL{100000}$};linecolor
 "blue";linestyle 2;pointstyle "point";linethickness 3;lineAttributes
-"Dash";var1range "0,0.0005";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+"Dash";curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
 'PQXXR21Q.xvz';valid_file "T";tempfilename
 'PQXXR20O.wmf';tempfile-properties "XPR";}}
 
@@ -25083,11 +25332,11 @@ Figure}{\special{language "Scientific Word";type
 4.6172in;height 3.6927in;depth 0pt;original-width 4.5653in;original-height
 3.6452in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73WCI.wmf';tempfile-properties "XPR";}}We can see that it takes some
-work to make process $AB$ happen. That is why we need a starter motor or a
-pull cord to get our engine started. But once the engine get's going the
-momentum from the piston and crank shaft keep the engine running. But still
-process $AB$ requires energy input by work, so it is like a resistance for
-the cycle.
+work to make process $AB$ happen. And recall that that is why we need a
+starter motor or a pull cord to get our engine started. But once the engine
+gets going the momentum from the piston and crank shaft keep the engine
+running. But still process $AB$ requires energy input by work, so it is like
+a resistance for the cycle.
 
 What is the efficiency of this cycle? We don't have a really good way with
 our simple view of thermodynamics to accurately account for the change in
@@ -25120,21 +25369,21 @@ Let's test this.
 \begin{eqnarray*}
 \eta _{otto} &=&1-\frac{1}{\left( \frac{0.000\,5}{6.\,25\times 10^{-5}}%
 \right) ^{1.4-1}} \\
-&=&0.564\,72\allowbreak
-\end{eqnarray*}
-
-But you might guess that this is very optimistic. Efficiencies for actual
-engines come in at values around $20\%.$
+&=&0.564\,72\allowbreak 
+\end{eqnarray*}%
+which is nearly the same. But you might guess that this is very optimistic.
+Efficiencies for actual engines come in at values around $20\%.$
 
 \chapter{38 Carnot, the Limit of Efficiency for Heat Engines 2.4.4, 2.4.5}
 
 Last lecture we studied a somewhat realistic heat engine. We found we got
-something like a $56.5\%$ efficiency. But is this realistic? We need a way
-to tell what the maximum efficiency for a heat engine would be. Then, if our
-design exceeds this maximum efficiency, we know we have a mistake in our
-design. Our goal in a heat engine problem is always to find for each process
-the values of $\Delta E_{int},$ $Q,$ $W,$ and $W_{eng},$ $Q_{h}$, $Q_{c}$.
-We also want to find the ideal gas state variables $P,$ $%
+something like a $56.5\%$ efficiency. But is this really realistic? Could
+you build such an engine? We need a way to tell what the maximum efficiency
+for a heat engine would be. Then, if our design exceeds this maximum
+efficiency, we know we have a mistake in our design. Our goal in a heat
+engine problem is always to find for each process the values of $\Delta
+E_{int},$ $Q,$ $W,$ and for the whole engine $W_{eng},$ $Q_{h}$, $Q_{c}$. We
+also want to find the ideal gas state variables $P,$ $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -25176,7 +25425,7 @@ a fundamental flaw in it's calculations.
 }%
 %EndExpansion
 
-\section{The Carnot Cycle}
+\section{Carnot's Theorem}
 
 We now know that we can design actual engines that power cars and useful
 machines by combining several of our special thermodynamic process into
@@ -25224,7 +25473,7 @@ reduced by friction, energy losses through conduction, etc.
 \rule{300pt}{1pt}
 \end{center}
 
-\subsection{The Carnot Cycle}
+\section{The Carnot Cycle}
 
 Carnot found a set of special processes that when combined made a
 theoretical heat engine. And he proved mathematically that this particular
@@ -25316,6 +25565,20 @@ _{f}}=\frac{nRT_{i}}{nRT_{i}}
 \end{equation*}%
 because the temperature does not change, so%
 \begin{equation*}
+P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}=P_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}
+\end{equation*}%
+Along Path $AB$ this would be%
+\begin{equation*}
 P_{A}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -25397,26 +25660,29 @@ P_{B},$ or $%
 _{B}$
 
 We do know that at $C$ 
-\begin{eqnarray*}
-P_{C} &=&\frac{nRT_{c}}{%
+\begin{equation*}
+P_{C}=\frac{nRT_{c}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{C}} \\
-P_{C} &=&\frac{K_{BC}}{%
+_{C}}
+\end{equation*}%
+and that%
+\begin{equation*}
+P_{C}=\frac{K_{BC}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 _{c}^{\gamma }}
-\end{eqnarray*}%
+\end{equation*}%
 and at point $C$ and we do know $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{C,}$ so we can find $K_{BC}$%
+_{C,}$ so we can find $K_{BC}.$ Set the two expressions for $P_{C}$ equal%
 \begin{equation*}
 \frac{nRT_{c}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -25461,7 +25727,7 @@ mol}\unit{K}}\right) \left( 273\unit{K}\right) \left( 0.015\unit{m}%
 ^{3}\right) ^{\frac{2}{3}} \\
 &=&\allowbreak 138.\,\allowbreak 05\unit{J}\unit{m}^{2}
 \end{eqnarray*}%
-then moving back to point $B$ we can set the two equations for pressure
+Then, moving back to point $B$ we can set the two equations for $P_{B}$
 equal 
 \begin{eqnarray*}
 P_{B} &=&\frac{nRT_{h}}{%
@@ -25505,6 +25771,7 @@ _{B}^{\gamma }}{%
 %EndExpansion
 _{B}}=\frac{K_{BC}}{nRT_{h}}
 \end{equation*}%
+\smallskip \strut \smallskip 
 \begin{equation*}
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -25723,7 +25990,7 @@ so%
 \end{equation}%
 and we can identify this as $\left\vert Q_{c}\right\vert $
 
-We again need to find $%
+We again need to find a volume, $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -25808,7 +26075,7 @@ K_{DA} &=&\left( 1\unit{mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}%
 ^{\frac{2}{3}} \\
 &=&85.\,\allowbreak 052\unit{J}\unit{m}^{2}
 \end{eqnarray*}%
-then moving back to point $D$ we have 
+Then moving back to point $D$ we have 
 \begin{equation*}
 \frac{nRT_{c}}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -25883,15 +26150,15 @@ $\mathbf{CD}$ & $-1649.0$ & $1649.0$ & $0$ & $0$ & $0$ & $1649.0$ \\ \hline
 
 \section{Process $D\rightarrow A$ adiabatic compression}
 
-The gas is again placed against a thermally nonconducting wall so no heat is
-exchanged with the surroundings. The temperature of the gas increases from $%
-T_{c}$ to $T_{h}.$The work done on the gas is $W_{DA}$\FRAME{dtbpF}{5.2731in%
-}{4.034in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-5.2731in;height 4.034in;depth 0pt;original-width 5.3458in;original-height
-4.0819in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73WCO.wmf';tempfile-properties "XPR";}}We know $Q=0$ and that $\Delta
-E_{int}=W.$ Again we can use%
+The gas cylinder is again placed against a thermally nonconducting wall so
+no heat is exchanged with the surroundings. The temperature of the gas
+increases from $T_{c}$ to $T_{h}.$The work done on the gas is $W_{DA}$\FRAME{%
+dtbpF}{5.2731in}{4.034in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 5.2731in;height 4.034in;depth 0pt;original-width
+5.3458in;original-height 4.0819in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SUS73WCO.wmf';tempfile-properties "XPR";}}%
+We know $Q=0$ and that $\Delta E_{int}=W.$ Again we can use%
 \begin{equation*}
 \Delta E_{int}=nC_{V}\Delta T
 \end{equation*}%
@@ -25947,9 +26214,8 @@ $\mathbf{C}$ & $273$ & $1.\,\allowbreak 513\,1\times 10^{5}$ & $0.015$ & $1$
 $\mathbf{D}$ & $273$ & $3.\,\allowbreak 129\,1\times 10^{5}$ & $%
 7.\,\allowbreak 253\,7\times 10^{-3}$ & $1$ \\ \hline
 \end{tabular}%
-\end{equation*}
-
-and our internal energy, heat, and work are%
+\end{equation*}%
+And our internal energy, heat, and work are%
 \begin{equation*}
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
@@ -26031,7 +26297,8 @@ _{A}}{%
 %EndExpansion
 _{B}}\right) \right\vert }
 \end{eqnarray*}%
-and using the adiabatic temperature-volume relationships%
+Using the adiabatic temperature-volume relationships we can find expressions
+for the hot and cold temperatures%
 \begin{equation*}
 T_{h}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -26059,6 +26326,7 @@ _{B}^{\gamma -1}=T_{c}%
 %EndExpansion
 _{C}^{\gamma -1}
 \end{equation*}%
+We could divide these two equations to get 
 \begin{equation*}
 \frac{T_{h}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -26130,7 +26398,7 @@ _{C}^{\gamma -1}}{%
 %EndExpansion
 _{D}^{\gamma -1}}}
 \end{equation*}%
-then%
+But if we take both sides to the $\gamma -1$ power we have just%
 \begin{equation*}
 \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -26154,7 +26422,7 @@ _{D}}{%
 %EndExpansion
 _{C}}
 \end{equation*}%
-using this we find%
+Using this we find that our efficiency equation is 
 \begin{eqnarray*}
 \eta &=&1-\frac{\left\vert T_{c}\ln \left( \frac{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -26203,8 +26471,8 @@ or, removing the minus sign because of the absolute values%
 \begin{equation*}
 \eta =1-\frac{T_{c}}{T_{h}}
 \end{equation*}%
-where the temperatures, of course, is in Kelvin. This means that for this
-process%
+where the temperatures, of course, are in Kelvin. This means that for this
+engine%
 \begin{equation*}
 \frac{\left\vert Q_{c}\right\vert }{\left\vert Q_{h}\right\vert }=\frac{T_{c}%
 }{T_{h}}
@@ -26213,7 +26481,8 @@ and
 \begin{equation}
 \eta _{C}=1-\frac{T_{c}}{T_{h}}
 \end{equation}%
-This is the general form for a Carnot cycle. Then for our example%
+This is the general form for the efficiency of a Carnot cycle. Then for our
+example%
 \begin{eqnarray*}
 \eta _{C} &=&1-\frac{273\unit{K}}{1023\unit{K}} \\
 &=&0.733\,14
@@ -26233,7 +26502,7 @@ our Otto cycle is still an idealization. We recognize that we neglected all
 friction, and assumed perfect adiabatic processes. But we can see that there
 is some hope of making our Otto cycle-based engines more efficient. But no
 Otto cycle that operates between the same $T_{c}=273\unit{K}$ and $T_{h}=1023%
-\unit{K}$ can never be better than $73\%$ effective because that is the
+\unit{K}$ can ever be better than $73\%$ effective because that is the
 maximum efficiency for a heat engine operating between these two
 temperatures.
 
