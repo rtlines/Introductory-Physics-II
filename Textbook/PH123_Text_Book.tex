@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Tuesday, July 22, 2025 12:59:09}
+%TCIDATA{LastRevised=Thursday, January 08, 2026 17:03:28}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -237,8 +237,10 @@ angle\textquotedblright\ is changing is given by
 \begin{equation*}
 \frac{d\theta }{dt}=\omega
 \end{equation*}%
-This is a sort of speed for how fast our angle is changing. So our equation
-must be 
+This is a sort of speed for how fast our angle is changing.
+
+Using our rate of angle change, we can write our equation for simple
+harmonic motion as 
 \begin{equation*}
 x\left( t\right) =x_{\max }\cos \left( \omega t\right)
 \end{equation*}%
@@ -436,11 +438,13 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 green (dashed) is the velocity, and blue (dot-dashed) is the acceleration.
 Note that each as a different maximum amplitude. Also note that they don't
 rise and fall at the same time. We will describe this as being \emph{not in
-phase}.\FRAME{dtbpF}{2.9888in}{2.8409in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.9888in;height 2.8409in;depth
-0pt;original-width 6.5639in;original-height 6.2396in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+phase}. We can see this again in the next graph. The red graph (top graph)
+is still the displacement. The bottom graph is the velocity. And note that
+the peaks are not at the same time.\FRAME{dtbpF}{2.9888in}{2.8409in}{0pt}{}{%
+}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.9888in;height 2.8409in;depth 0pt;original-width 6.5639in;original-height
+6.2396in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U08.wmf';tempfile-properties "XPR";}}The acceleration is $90\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
@@ -471,13 +475,13 @@ TRUE;display "USEDEF";valid_file "T";width 1.5592in;height 1.0957in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U0B.wmf';tempfile-properties "XPR";}}Back in PH121 we said that
 Hooke's Law is not something that is always true, but by \textquotedblleft
-law\textquotedblright\ we mean a mathematical representation (and equation)
+law\textquotedblright\ we mean a mathematical representation (an equation)
 that comes from our mental model of how the universe works. In this case,
 Hooke's law is an equation that comes from Hooke's model of how springs
 work. It is a good model for most springs as long as we don't stretch them
-too far. You remember Hooke's law from PH 121. It tells us that the spring
-force is proportional to how far we stretch or compress the spring $\left(
-\Delta x_{e}\right) $ and how stiff the spring is $\left( k\right) .$
+too far. You remember Hooke's law tells us that the spring force is
+proportional to how far we stretch or compress the spring from equilibrium $%
+\left( \Delta x_{e}\right) $ and how stiff the spring is $\left( k\right) .$
 
 \begin{eqnarray}
 F_{s} &=&S=-k\Delta x_{e} \\
@@ -493,8 +497,8 @@ And if we write out Newton's second law we get
 F_{net_{x}} &=&-ma_{x}=-S_{ms} \\
 F_{net_{y}} &=&ma_{y}=N_{mT}-W_{mE}
 \end{eqnarray*}%
-We can see that $a_{y}$ should be zero because the mass won't lift off the
-table in the $y$-direction. but in the $x$-direction 
+We can expect that $a_{y}$ should be zero because the mass won't lift off
+the table in the $y$-direction. But in the $x$-direction 
 \begin{equation*}
 -a_{x}=-\frac{S_{ms}}{m}
 \end{equation*}%
@@ -510,10 +514,11 @@ or
 \begin{equation*}
 a_{x}=-\frac{kx}{m}
 \end{equation*}%
-Since at our starting point $x$ is big our acceleration is big. But there is
-a minus sign. The minus sign tells us that $a_{x}$ must be to the left.
+Since at our starting point $x$ is big our acceleration is big. Notice that
+there is a minus sign. The minus sign tells us that $a_{x}$ must be to the
+left.
 
-But suppose the mass was to the left of $x=0$ \FRAME{dtbpF}{2.0643in}{%
+But suppose the mass was to the left of $x_{e}=0$ \FRAME{dtbpF}{2.0643in}{%
 0.9582in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.0643in;height 0.9582in;depth 0pt;original-width 2.0254in;original-height
@@ -523,7 +528,7 @@ makes
 \begin{equation*}
 a_{x}=-\frac{kx}{m}
 \end{equation*}%
-positive. The acceleration always seems to point toward $x=0,$ the
+positive. The acceleration always seems to point toward $x_{e}=0,$ the
 equilibrium position for the mass. This is an important part of the
 definition of simple harmonic motion, having an acceleration that always
 points toward the equilibrium position. We call a force that makes the
@@ -583,7 +588,7 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 difference between this graph and the one we had before is that the lab
 partner was slow, so the graph is shifted on the time axes. We expect we can
 use the same mathematical model for SHM, but we must need to change
-something.
+something because the graph looks different.
 
 We know from our algebra classes what a shift looks like. Take the
 expression 
@@ -665,7 +670,7 @@ Electrodynamics.
 
 From what we did before, we know that $x\left( t\right) ,$ $v\left( t\right)
 ,$ and $a\left( t\right) $ are out of phase, so there must be a phase
-constant involved somehow. Let's look for it in what follows.
+constant involved somehow. Let's look for it in the lectures that follow.
 
 \chapter{2 Energy and Dynamics of SHM 1.15.2 1.15,3}
 
@@ -719,7 +724,7 @@ x\left( 0\right) &=&x_{\max } \\
 v\left( 0\right) &=&0
 \end{eqnarray*}
 
-Using our formula for $x\left( t\right) $ and $v\left( t\right) $ we have%
+Using our equation for $x\left( t\right) $ and $v\left( t\right) $ we have%
 \begin{eqnarray*}
 x\left( 0\right) &=&x_{\max }=x_{\max }\cos \left( 0+\phi _{o}\right) \\
 v\left( 0\right) &=&0=-v_{\max }\sin \left( 0+\phi _{o}\right)
@@ -820,17 +825,18 @@ But positive and negative $\pi /2$ are the same \textquotedblleft
 smallness.\textquotedblright\ We don't know the sign. Using our initial
 velocity condition will let us determine the sign. Let's try it 
 \begin{eqnarray*}
-v_{i} &=&-v_{\max }\sin \left( \frac{\pi }{2}\right) \\
-v_{i} &=&\pm v_{\max } \\
-v_{i} &=&\pm \omega x_{\max }
+v_{i} &=&-v_{\max }\sin \left( \pm \frac{\pi }{2}\right) \\
+v_{i} &=&\mp v_{\max } \\
+v_{i} &=&\mp \omega x_{\max }
 \end{eqnarray*}
 
 From this we can see 
 \begin{equation*}
 x_{\max }=\pm \frac{v_{i}}{\omega }
-\end{equation*}%
-We defined the initial velocity as positive, and we insist on having
-positive amplitudes, so then we choose 
+\end{equation*}
+
+From our initial conditions we know the initial velocity is positive, and we
+insist on having positive amplitudes, so then we choose 
 \begin{equation*}
 \phi _{o}=-\frac{\pi }{2}
 \end{equation*}%
@@ -841,11 +847,10 @@ so\
 and then this minus sign will cancel the one in our initial velocity
 equation that to make our initial velocity positive.%
 \begin{eqnarray*}
-v_{i} &=&-v_{\max }\sin \left( \frac{\pi }{2}\right) \\
+v_{i} &=&-v_{\max }\sin \left( -\frac{\pi }{2}\right) \\
 &=&-v_{\max }\left( -1\right) \\
 &=&v_{\max }
-\end{eqnarray*}
-
+\end{eqnarray*}%
 Our solutions are%
 \begin{eqnarray*}
 x\left( t\right) &=&\frac{v_{i}}{\omega }\cos \left( \omega t-\frac{\pi }{2}%
@@ -929,7 +934,7 @@ Variables
 
 \begin{equation*}
 \begin{tabular}{lll}
-$t$ & time, initial time =0 & $t_{i}=0$ \\ 
+$t$ & time, initial time $=0$ & $t_{i}=0$ \\ 
 $x$ & Position, Initial position =0 & $x\left( 0\right) =0$ \\ 
 $v$ &  &  \\ 
 $a$ &  &  \\ 
@@ -953,9 +958,9 @@ frequency.
 &=&2\pi \left( 1.50\unit{Hz}\right) \\
 &=&9.\,\allowbreak 424\,8\unit{rad}\unit{Hz}
 \end{eqnarray*}%
-We also know the amplitude $A=x_{\max }$ which is given. 
+We also know the amplitude $x_{\max }$ which is given. 
 \begin{equation*}
-A=2.00\unit{cm}
+x_{\max }=2.00\unit{cm}
 \end{equation*}%
 Knowing that at $t=0$%
 \begin{equation*}
@@ -979,7 +984,7 @@ We also note from our trig identity that we used above%
 \begin{equation*}
 \cos \left( \theta -\frac{\pi }{2}\right) =\sin \left( \theta \right)
 \end{equation*}%
-that we have%
+then we have%
 \begin{eqnarray*}
 x\left( t\right) &=&x_{\max }\cos \left( 2\pi ft-\frac{\pi }{2}\right) \\
 &=&x_{\max }\sin \left( 2\pi ft\right)
@@ -998,8 +1003,13 @@ We have a formula from our previous work for $v_{\max }$
 v_{\max } &=&\omega x_{\max } \\
 &=&2\pi fx_{\max }
 \end{eqnarray*}%
-so let's use it. To find when $v_{\max }$ happens, take a derivative of $%
-x\left( t\right) $%
+so let's use it. 
+\begin{eqnarray*}
+v_{\max } &=&2\pi \left( 1.50\unit{Hz}\right) \left( 2.00\unit{cm}\right) \\
+&=&\allowbreak 6.0\pi \unit{Hz}\unit{cm} \\
+&=&\allowbreak 0.188\,50\frac{\unit{m}}{\unit{s}}
+\end{eqnarray*}%
+To find when $v_{\max }$ happens, take a derivative of $x\left( t\right) $%
 \begin{equation*}
 v\left( t\right) =v_{\max }=-\omega x_{\max }\sin \left( 2\pi ft-\frac{\pi }{%
 2}\right)
@@ -1007,7 +1017,7 @@ v\left( t\right) =v_{\max }=-\omega x_{\max }\sin \left( 2\pi ft-\frac{\pi }{%
 and recognize that $\sin \left( \theta \right) =1$ is at a maximum and this
 happens when $\theta =\pi /2$. So we take the stuff that is in the
 parenthesis for the sine function and set it equal to our angle that makes
-the sine function equal to 1.%
+the sine function equal to $1$.%
 \begin{equation*}
 \frac{\pi }{2}=2\pi ft-\frac{\pi }{2}
 \end{equation*}%
@@ -1022,14 +1032,16 @@ We can simplify this and solve for $t$%
 t=\frac{1}{2\left( 1.50\unit{Hz}\right) }=0.333\,33\unit{s}
 \end{equation*}
 
-Part (c) Like with the velocity we must the formula. But we know it is just
-taking the derivative of $v\left( t\right) $
+Part (c) Like with the velocity we must use our equations. We want
+acceleration but we know it is just taking the derivative of $v\left(
+t\right) $
 
 \begin{equation*}
 a\left( t\right) =-\omega ^{2}x_{\max }\cos \left( \omega t+\phi _{o}\right)
 \end{equation*}%
-but recognize that the maximum is achieved when $\cos \left( \omega t+\phi
-_{o}\right) =1$ or when $\omega t+\phi _{o}=0.$ We can solve this for $t.$
+And we recognize that the maximum is achieved when $\cos \left( \omega
+t+\phi _{o}\right) =1$ or when $\omega t+\phi _{o}=0.$ We can solve this for 
+$t.$
 
 \begin{eqnarray*}
 t &=&\frac{\phi _{o}}{\omega } \\
@@ -1070,15 +1082,15 @@ d_{tot}=d\ast N=d\ast \frac{t}{T}=4fx_{m}t
 Putting in numbers gives%
 \begin{eqnarray*}
 d_{tot} &=&4fx_{m}t \\
-&=&8.00\unit{cm}\ast 1.50\unit{Hz}\ast 1.00\unit{s} \\
+&=&4\ast 1.50\unit{Hz}\ast 2.00\unit{cm}\ast 1.00\unit{s} \\
+&=&12\unit{cm} \\
 &=&\allowbreak 0.12\unit{m}
 \end{eqnarray*}
 
-We have come far in only one lecture! We have a set of new equations and a
+We have come far in only two lectures! We have a set of new equations and a
 new problem type. In what we did in this lecture we used Newton's Second
 Law. But in PH121 we learned that often using the idea of energy made
 problems easier. Can we use energy with simple harmonic motion problems?
-That is what we will talk about in our next lecture.
 
 \section{Oscillators and Energy}
 
@@ -1214,7 +1226,7 @@ K &=& \\
 \end{eqnarray*}%
 As the spring is stretched or compressed we store energy as spring potential
 energy. The potential energy due to a spring acting on our SHO (mover mass)
-is given by (from your PH121 class) 
+is given by 
 \begin{equation}
 U_{s}=\frac{1}{2}kx^{2}
 \end{equation}%
@@ -1226,15 +1238,15 @@ So, the potential energy as a function of time must be%
 \begin{equation*}
 U_{s}=\frac{1}{2}kx_{\max }^{2}\cos ^{2}\left( \omega t+\phi \right)
 \end{equation*}%
-\FRAME{dtbpF}{2.1473in}{0.9911in}{0pt}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{2.0906in}{0.981in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.1473in;height 0.9911in;depth
-0pt;original-width 2.1084in;original-height 0.9582in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 2.0906in;height 0.981in;depth
+0in;original-width 2.1013in;original-height 0.9704in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73U0U.wmf';tempfile-properties "XPR";}}Let's say, again, that our
-oscillator is moving horizontally, and that we define the center of mass of
-our object so that it's $y$-position is right at $y=0$ so our object has
-zero gravitational potential energy%
+'T8IB2E01.wmf';tempfile-properties "XPR";}}Let's say, again, that our
+oscillator is moving horizontally on a frictionless surface, and that we
+define the center of mass of our object so that it's $y$-position is right
+at $y=0$ so our object has zero gravitational potential energy%
 \begin{equation*}
 U_{g}=mgy=0
 \end{equation*}%
@@ -1278,8 +1290,8 @@ Figure}{\special{language "Scientific Word";type
 7.5247in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U0V.wmf';tempfile-properties "XPR";}}Note that the kinetic and
 potential energy are out of phase with each other. If we plot them on the
-same scale ( for the case $\phi =0$) we have\FRAME{dtbpF}{3.2655in}{2.2364in%
-}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+same scale ( for the case $\phi _{o}=0$) we have\FRAME{dtbpF}{3.2655in}{%
+2.2364in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.2655in;height 2.2364in;depth 0pt;original-width 3.2206in;original-height
 2.1958in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -1297,19 +1309,19 @@ x\left( t\right) =x_{\max }\cos \left( \omega t\right)
 \end{equation*}%
 must be right.
 
-Recall from PH 121 
+Once again recall from PH 121 
 \begin{equation}
 a=\frac{dv}{dt}=\frac{d^{2}x}{dt^{2}}
 \end{equation}
 
 and let's assume we have SHO moving only in the $x$-direction. \FRAME{dtbpF}{%
-2.2649in}{1.0585in}{0pt}{}{}{Figure}{\special{language "Scientific
+2.0649in}{0.9845in}{0in}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.2649in;height 1.0585in;depth 0pt;original-width
-2.2252in;original-height 1.0248in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73U0X.wmf';tempfile-properties "XPR";}}%
+"T";width 2.0649in;height 0.9845in;depth 0in;original-width
+2.0755in;original-height 0.9739in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T8ICUT03.wmf';tempfile-properties "XPR";}}%
 Further assume the surface the object rests on is frictionless. Also let's
-say that the equilibrium position $x_{em}=0.$ Then we can write Newton's
+say that the equilibrium position $x_{e}=0.$ Then we can write Newton's
 second law as%
 \begin{eqnarray}
 F_{net_{x}} &=&ma_{x}=-kx \\
@@ -1323,44 +1335,41 @@ system as a function of time. It says that the way the object moves is an
 equation where the second derivative is almost the same as the original
 function. The only difference is some constants that are multiplied.
 
-It is this function that we want, so let's see how we can find it.
-
+It is this function that we want, Let's rewrite it in terms of $\omega .$
 Start by getting all the constants on the same side of the equation. 
 \begin{equation*}
 \frac{d^{2}x}{dt^{2}}=-\frac{k}{m}x
 \end{equation*}%
-It would be tidier if we defined a quantity $\omega $ as%
-\begin{equation}
+We found that $\omega =\sqrt{k/m}.$then 
+\begin{equation*}
 \omega ^{2}=\frac{k}{m}
-\end{equation}%
-why define $\omega ^{2}?$ Think of our previous example. We found that $%
-\omega =\sqrt{k/m}.$ This is just the square of what we found in our
-example. Then we can write our differential equation as%
+\end{equation*}
+Then we can write our differential equation as%
 \begin{equation}
 \frac{d^{2}x}{dt^{2}}=-\omega ^{2}x
 \end{equation}%
 We need a function who's second derivative is the negative of itself with
 just a constant out front. From Math 112 we know a few of these%
 \begin{eqnarray*}
-x\left( t\right) &=&A\cos \left( \omega t+\phi _{o}\right) \\
-x\left( t\right) &=&A\sin \left( \omega t+\phi _{o}\right)
+x\left( t\right) &=&x_{\max }\cos \left( \omega t+\phi _{o}\right) \\
+x\left( t\right) &=&x_{\max }\sin \left( \omega t+\phi _{o}\right)
 \end{eqnarray*}%
-where $A,$ $\omega ,$ and $\phi _{o}$ are constants that we must find. Let's
-choose the cosine function and explicitly take it's derivatives to see if
-this function does solve our differential equation%
+where $x_{\max },$ $\omega ,$ and $\phi _{o}$ are constants that we must
+find. Let's choose the cosine function and explicitly take it's derivatives
+to see if this function does solve our differential equation%
 \begin{eqnarray}
-x\left( t\right) &=&A\cos \left( \omega t+\phi _{o}\right) \\
-\frac{dx\left( t\right) }{dt} &=&-\omega A\sin \left( \omega t+\phi
+x\left( t\right) &=&x_{\max }\cos \left( \omega t+\phi _{o}\right) \\
+\frac{dx\left( t\right) }{dt} &=&-\omega x_{\max }\sin \left( \omega t+\phi
 _{o}\right)  \notag \\
-\frac{d^{2}x\left( t\right) }{dt^{2}} &=&-\omega ^{2}A\cos \left( \omega
-t+\phi _{o}\right)  \notag
+\frac{d^{2}x\left( t\right) }{dt^{2}} &=&-\omega ^{2}x_{\max }\cos \left(
+\omega t+\phi _{o}\right)  \notag
 \end{eqnarray}%
 Let's substitute these expressions into our differential equation for the
 motion%
 \begin{eqnarray*}
 \frac{d^{2}x}{dt^{2}} &=&-\omega ^{2}x \\
--\omega ^{2}A\cos \left( \omega t+\phi _{o}\right) &=&-\omega ^{2}A\cos
-\left( \omega t+\phi _{o}\right)
+-\omega ^{2}x_{\max }\cos \left( \omega t+\phi _{o}\right) &=&-\omega
+^{2}x_{\max }\cos \left( \omega t+\phi _{o}\right)
 \end{eqnarray*}%
 As long as the constant $\omega ^{2}$ is our $\omega ^{2}=k/m$ we have a
 solution. We could have found that 
@@ -1380,17 +1389,16 @@ Thus%
 This says that if the spring is stiffer, we get a higher frequency, or if
 the mass is larger, we get a lower frequency.
 
-We still don't have a complete solution, because we don't know $A$ and $\phi
-_{o}.$ We recognize $\phi _{o}$ as the initial phase angle. We will have to
-find this by knowing the initial conditions of the motion. $A$ is the
-amplitude. That must be the maximum displacement $x_{\max }.$ Let's look at
-a specific case%
+We still don't have a complete solution, because we don't know $x_{\max }$
+and $\phi _{o}.$ We recognize $\phi _{o}$ as the initial phase angle. We
+will have to find this by knowing the initial conditions of the motion. $%
+x_{\max }$ is the amplitude. Let's look at a specific case%
 \begin{equation}
 \begin{tabular}{|l|}
 \hline
-$x_{\max }=5$ \\ \hline
+$x_{\max }=5\unit{m}$ \\ \hline
 $\phi _{o}=0$ \\ \hline
-$\omega =2$ \\ \hline
+$\omega =2\unit{Hz}$ \\ \hline
 \end{tabular}%
 \end{equation}
 
@@ -1407,10 +1415,9 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "Solid";var1range "-5,5";num-x-gridlines 100;curveColor
 "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
 'SUXKB70N.xvz';valid_file "T";tempfilename
-'SUS73U0Y.wmf';tempfile-properties "XPR";}}We can easily see that the
-amplitude $A$ corresponds to the maximum displacement $x_{\max }.$ (how
-would you prove this?). We know from trigonometry that a cosine function has
-a period $T.$
+'SUS73U0Y.wmf';tempfile-properties "XPR";}}The amplitude corresponds to the
+maximum displacement $x_{\max }.$ We know from trigonometry that a cosine
+function has a period $T.$
 
 \FRAME{fhF}{2.9101in}{1.9484in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -1454,7 +1461,13 @@ y\left( t\right) =y_{\max }\cos (\omega t-\phi _{o})
 let's see if that is true. Start with a free body diagram for the mass (the
 hanging mass is our mover, the spring is part of the environment). There are
 two forces acting on the mass. The force due to gravity, and the force due
-to the spring.%
+to the spring.\FRAME{dtbpF}{0.683in}{2.1589in}{0in}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 0.683in;height 2.1589in;depth
+0in;original-width 0.667in;original-height 2.1713in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8IAHP00.wmf';tempfile-properties "XPR";}}From our free body diagram we can
+write out a Newton's second law equation%
 \begin{equation*}
 \Sigma F_{y}=ma_{y}=S_{ms}-W_{mE}
 \end{equation*}%
@@ -1499,6 +1512,11 @@ spring, and we can use the equation
 y\left( t\right) =y_{\max }\cos (\omega t-\phi _{o})
 \end{equation*}%
 as our equation of motion.
+
+From what we have done so far, it seems like we totally redefined $\omega $
+for this second physics class. But really there is a relationship between
+angular velocity $\omega $ and angular frequency $\omega .$ We will explore
+this in our next lecture. We will also ask what to do when there is friction.
 
 \chapter{3 More Oscillators, Forces and Friction 1.15.4 1.15.5 1.15.6}
 
@@ -1760,10 +1778,9 @@ f &=&\frac{1}{2\pi }\sqrt{\frac{k}{m}}
 We have used energy to describe simple harmonic motion, and we have found
 our equation of motion using a differential equation for mass-spring
 systems. And we have simple harmonic motion in the $y$-direction including
-the weight force due to gravity for mass-spring systems. In our next
-lecture, we will study simple harmonic motion for different systems,
-pendula, and other things. It turns out that SHM is a good model for many
-different systems.
+the weight force due to gravity for mass-spring systems. But there are other
+systems that exhibit simple harmonic motion and many others that nearly
+exhibit simple harmonic motion. Let's study a few of these systems.
 
 \section{The Simple Pendulum}
 
@@ -1776,12 +1793,15 @@ different systems.
 string. The mass is called a \textquotedblleft bob.\textquotedblright\
 Usually we study the motion of the pendulum bob, so let's consider the
 pendulum the mover object. A simple pendulum bob exhibits periodic motion,
-but not exactly simple harmonic motion. The forces on the bob are $%
-\overrightarrow{\mathbf{W}}$, and $\overrightarrow{\mathbf{T}}$ the tension
-on the string. The tangential component of $W$ is always directed toward $%
-\theta =0.$ This is a restoring force!
+but not exactly simple harmonic motion. Let's set up our pendulum and
+measure an angle $\theta $ starting with $\theta =0$ when the pendulum is
+just hanging. Then as the pendulum moves up $\theta $ will increase.
 
-Let's call the path the bob takes \textquotedblleft $s.$\textquotedblright\
+The forces on the bob are gravity $\overrightarrow{\mathbf{W}}$, and $%
+\overrightarrow{\mathbf{T}}$ the tension on the string. The tangential
+component of $W$ is always directed toward $\theta =0$, the just hanging
+equilibrium position. This is a restoring force! Let's call the path the bob
+takes \textquotedblleft $s$\textquotedblright\ because it is an arclength.\
 Then from Jr. High geometry we recall\footnote{%
 Really I did not recall this, I\ have to look it up every time, but $s$ is
 called the \emph{arclength}.}%
@@ -1793,21 +1813,41 @@ directed along the string. The tangential direction is along the circular
 path the bob takes and is always tangent to the path. In this coordinate
 system, we can solve for the part of the force directed along the path. This
 is the restoring part of the net force. Remember from Newton's second law
-the tangential and radial components of the force are 
+the radial and tangential components of the force are 
 \begin{eqnarray*}
-F_{t} &=&ma_{t} \\
-F_{r} &=&ma_{r}
+F_{r} &=&ma_{r} \\
+F_{t} &=&ma_{t}
 \end{eqnarray*}%
 and 
 \begin{equation*}
 a_{t}=\frac{d^{2}s}{dt^{2}}
 \end{equation*}%
-Let's write out Newton's second with the sum of the forces part.%
+Let's write out Newton's second law equations with the sum of the forces
+part.%
 \begin{eqnarray*}
-ma_{t} &=&-W\cos \left( 90-\theta \right) \\
--ma_{r} &=&-T+W\sin \left( 90-\theta \right)
+-ma_{r} &=&-T+W\sin \left( 90\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}-\theta \right) \\
+ma_{t} &=&-W\cos \left( 90\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}-\theta \right)
 \end{eqnarray*}%
-then, using a trig identity (but only a small one) 
+The second, tangential equation is the important one. It tells us how the
+bob will move. Let's use another trig identity 
+\begin{equation*}
+\cos \left( \frac{\pi }{2}-\theta \right) =\sin \left( \theta \right)
+\end{equation*}%
+Then our tangential Newton's second law equation becomes%
+\begin{equation*}
+ma_{t}=-W\sin \left( \theta \right)
+\end{equation*}%
+and we can solve for the tangential acceleration, $a_{t}$ 
 \begin{eqnarray*}
 a_{t} &=&-\frac{W}{m}\sin \left( \theta \right) \\
 &=&-g\sin \theta
@@ -1815,39 +1855,54 @@ a_{t} &=&-\frac{W}{m}\sin \left( \theta \right) \\
 
 We have two expressions for $a_{t.}$ We can set them equal 
 \begin{equation}
-\frac{d^{2}s}{dt^{2}}=-g\sin \theta  \label{pendulum1}
+\frac{d^{2}s}{dt^{2}}=-g\sin \theta   \label{pendulum1}
 \end{equation}%
 Remember that $s=L\theta $ so we could write the left hand side as%
 \begin{equation*}
 \frac{d^{2}s}{dt^{2}}=\frac{d^{2}}{dt^{2}}\left( L\theta \right) =L\frac{%
-d^{2}}{dt^{2}}\left( \theta \right)
+d^{2}}{dt^{2}}\left( \theta \right) 
 \end{equation*}%
 then equation (\ref{pendulum1}) becomes%
 \begin{equation*}
-L\frac{d^{2}}{dt^{2}}\left( \theta \right) =-g\sin \theta
+L\frac{d^{2}}{dt^{2}}\left( \theta \right) =-g\sin \theta 
 \end{equation*}%
 or 
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta
+\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta 
 \end{equation*}%
 This is a differential equation much like our differential equation for a
 harmonic oscillator, 
 \begin{equation*}
 \frac{d^{2}x}{dt^{2}}=-\omega ^{2}x
 \end{equation*}%
-except it has a sine function in it. But, if we take $\theta $ as a very
-small angle, then 
-\begin{equation}
-\sin \left( \theta \right) \approx \theta  \label{small angle approximation}
-\end{equation}%
-This approximation has a name, it is called the \textquotedblleft small
-angle approximation.\textquotedblright
+except it has a sine function in it. 
 
-In this approximation%
+Let's look at our sine function for a minute. Suppose we measure the angle
+in radians (because we do!) and we plot the sine function $y=\sin \left(
+\theta \right) $ (red line) \FRAME{dtbpF}{4.0083in}{1.9904in}{0in}{}{}{Figure%
+}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 4.0083in;height 1.9904in;depth
+0in;original-width 4.0562in;original-height 1.9993in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KJUR1B.wmf';tempfile-properties "XPR";}}and we add to the graph $y=\theta 
+$ (dark blue line). Notice that below $\theta =1$ the two curves look a lot
+a like! If we go even smaller, say $\theta <0.7\unit{rad}$ the curves are
+essentially the same. Suppose we only let our pendulum swing with small
+angles, then  
+\begin{equation}
+\sin \left( \theta \right) \approx \theta   \label{small angle approximation}
+\end{equation}
+
+and 
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\theta
+\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta 
 \end{equation*}%
-and we have a differential equation we recognize! If we compare to 
+becomes 
+\begin{equation*}
+\frac{d^{2}\theta }{dt^{2}}\approx -\frac{g}{L}\sin \theta 
+\end{equation*}%
+This is a differential equation much like our differential equation for a
+harmonic oscillator, 
 \begin{equation*}
 \frac{d^{2}x}{dt^{2}}=-\omega ^{2}x
 \end{equation*}%
@@ -1855,9 +1910,22 @@ we see that it is a match if
 \begin{equation}
 \omega ^{2}=\frac{g}{L}
 \end{equation}%
-we have all the same solutions for $\theta $ that we found last time for $x.$
-Since $\omega $ changed, the frequency and period will now be in terms of $g$
-and $L.$%
+or 
+\begin{equation*}
+\omega =\sqrt{\frac{g}{L}}
+\end{equation*}%
+And since the differential equations look the same they have to have the
+same solutions. We have a solution that is an equation only instead of 
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t+\phi _{o}\right) 
+\end{equation*}%
+we have an equation for $\theta \left( t\right) $  
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right) 
+\end{equation*}%
+Since $\omega $ is different for the pendulum, the frequency and period will
+also be different. Instead of being functions of $k$ and $m$ then are now in
+terms of $g$ and $L.$%
 \begin{equation}
 T=\frac{2\pi }{\omega }=2\pi \sqrt{\frac{L}{g}}
 \end{equation}
@@ -1886,23 +1954,23 @@ we describe it's motion?
 "USEDEF";valid_file "T";width 0.9509in;height 0.9509in;depth
 0in;original-width 0.9402in;original-height 0.9402in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUXLY109.wmf';tempfile-properties "XPR";}}Let's pull it to the right\FRAME{%
-dhF}{1.6769in}{2.0652in}{0pt}{}{}{Figure}{\special{language "Scientific
+'T8KJ7Q14.wmf';tempfile-properties "XPR";}}Let's pull it to the right\FRAME{%
+dtbpF}{2.1341in}{2.6281in}{0in}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 1.6769in;height 2.0652in;depth 0pt;original-width
-1.6405in;original-height 2.0263in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73U13.wmf';tempfile-properties "XPR";}}%
+"T";width 2.1341in;height 2.6281in;depth 0in;original-width
+2.1456in;original-height 2.6494in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T8KJ9116.wmf';tempfile-properties "XPR";}}%
 then we consider that because of $F_{g}$ we will have a torque about an axis
 through $O.$ Last pendulum we used Newton's Second Law. This time let's use
 Newton's second law for rotation.%
 \begin{equation*}
-\tau =\mathbf{r\times F}
-\end{equation*}
+\overrightarrow{\tau }=\overrightarrow{r}\times \overrightarrow{F}
+\end{equation*}%
 In our case this is%
 \begin{eqnarray*}
-\tau &=&\mathbf{d}\times \mathbf{F}_{g} \\
-&=&-F_{g}d\sin \theta \\
-&=&-mgd\sin \theta
+\overrightarrow{\tau } &=&\overrightarrow{d}\times \overrightarrow{W} \\
+\tau  &=&-F_{g}d\sin \theta  \\
+&=&-mgd\sin \theta 
 \end{eqnarray*}%
 Remember that an extended body has a moment of inertia, $\mathbb{I}.$
 Remember also that angular acceleration is given by
@@ -1912,9 +1980,10 @@ Remember also that angular acceleration is given by
 \end{equation*}
 
 From the rotational form of Newton's Second Law for rotation.%
-\begin{equation*}
-\Sigma \tau =\mathbb{I}\alpha
-\end{equation*}
+\begin{eqnarray*}
+\Sigma \overrightarrow{\tau } &=&\mathbb{I}\overrightarrow{\alpha } \\
+\tau  &=&\mathbb{I}\alpha 
+\end{eqnarray*}
 
 we can write%
 \begin{equation*}
@@ -1922,12 +1991,13 @@ we can write%
 \end{equation*}%
 Getting all the constants together gives%
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}=-\frac{mgd}{\mathbb{I}}\sin \left( \theta \right)
+\frac{d^{2}\theta }{dt^{2}}=-\frac{mgd}{\mathbb{I}}\sin \left( \theta
+\right) 
 \end{equation*}%
 and again if we let $\theta $ be small so that $\sin \left( \theta \right)
 \approx \theta $%
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}=-\frac{mgd}{\mathbb{I}}\theta
+\frac{d^{2}\theta }{dt^{2}}\approx -\frac{mgd}{\mathbb{I}}\theta 
 \end{equation*}%
 which we can compare to 
 \begin{equation*}
@@ -1939,6 +2009,9 @@ and we can see that we have the same differential equation if
 \end{equation}
 
 In this case%
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right) 
+\end{equation*}%
 \begin{equation}
 T=2\pi \sqrt{\frac{\mathbb{I}}{mgd}}
 \end{equation}
@@ -1966,24 +2039,28 @@ TRUE;display "USEDEF";valid_file "T";width 4.5844in;height 1.8273in;depth
 restoring torque on the body that is proportional to the angular position
 (sound familiar).%
 \begin{equation*}
-\mathbf{\tau }=-\kappa \theta
+\tau =-\kappa \theta 
 \end{equation*}%
 This looks like a greek version of $F=-kx$! Again, let's use Newton's Second
 Law for rotation.%
 \begin{eqnarray*}
-\Sigma \tau &=&\mathbb{I}\alpha \\
+\Sigma \tau  &=&\mathbb{I}\alpha  \\
 &=&\mathbb{I}\frac{d^{2}\theta }{dt^{2}}
 \end{eqnarray*}%
 so%
 \begin{eqnarray*}
-\mathbb{I}\frac{d^{2}\theta }{dt^{2}} &=&-\kappa \theta \\
-\frac{d^{2}\theta }{dt^{2}} &=&-\frac{\kappa }{\mathbb{I}}\theta
+\mathbb{I}\frac{d^{2}\theta }{dt^{2}} &=&-\kappa \theta  \\
+\frac{d^{2}\theta }{dt^{2}} &=&-\frac{\kappa }{\mathbb{I}}\theta 
 \end{eqnarray*}%
 Once again we have our favorite differential equation so long as 
 \begin{equation}
 \omega ^{2}=\frac{\kappa }{\mathbb{I}}
 \end{equation}%
-which makes the period of the oscillation%
+which gives us a solution equation 
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right) 
+\end{equation*}%
+and makes the period of the oscillation%
 \begin{equation}
 T=2\pi \sqrt{\frac{\mathbb{I}}{\kappa }}
 \end{equation}
@@ -1994,30 +2071,72 @@ of some sort? Let's deal with this next.
 
 \section{Damped Oscillations}
 
-You remember friction from PH121. So far we have only allowed frictionless
-oscillators to make the math easy. But what if we do have friction? To
-investigate this,suppose we add in another force%
+Back in Principles of Physics I we studied drag forces which are a
+dissipative force like friction. Let's add drag to our mass-spring
+oscillator by putting the mass in a beaker of water. But in Principles of
+Physics I we only had air drag. this time we will need water drag and the
+equation is a little bit different.%
 \begin{equation}
-\mathbf{D}=-b\mathbf{v}  \label{Damping force}
+\overrightarrow{D}=-b\overrightarrow{v}  \label{Damping force}
 \end{equation}%
 This force is proportional to the velocity. This a dissipative
-(friction-like) force typical of what we find when we moves objects through
-viscus fluids. This is a drag force, but a more extreme drag force than we
-used in PH121 where we only had air to make the drag force. \FRAME{dtbpF}{%
-2.127in}{1.6383in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+(friction-like) force typical of what we find when we move objects through
+viscus fluids like water or oil or even honey. This is a drag force, but a
+more extreme drag force than air drag. \FRAME{dtbpF}{2.127in}{1.6383in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.127in;height 1.6383in;depth 0pt;original-width 2.1385in;original-height
 1.6409in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U16.wmf';tempfile-properties "XPR";}}We call $b$ the damping
-coefficient and it depends on how much friction the fluid can supply. Now,
-from Newton's second law,%
+coefficient and it depends on how much viscosity (friction) the fluid can
+supply. Now, from Newton's second law,\FRAME{dtbpF}{1.1078in}{1.9239in}{0in}{%
+}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.1078in;height 1.9239in;depth 0in;original-width 1.0999in;original-height
+1.9318in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KKEE1C.wmf';tempfile-properties "XPR";}}%
 \begin{equation*}
-\Sigma F=-kx-bv_{x}=ma
+ma_{y}=S_{ms}-D_{mf}-W_{mE}
+\end{equation*}%
+but we can simplify this equation like we did before for hanging masses on
+springs. We can find the equilibrium for the mass as it just hangs from the
+spring, $y_{e}$ but redoing Newton's second law with out the fluid and with
+no oscillation 
+\begin{eqnarray*}
+ma_{y} &=&S_{ms}-W_{mE} \\
+&=&-k\left( y-y_{e}\right) -mg
+\end{eqnarray*}%
+and while the mass just sits there the acceleration would be zero so $a_{y}=0
+$ and let's define our coordinate system so where the mass hangs is $y=0$%
+\begin{equation*}
+m\left( 0\right) =-k\left( 0-y_{e}\right) -mg
+\end{equation*}%
+then 
+\begin{equation*}
+ky_{e}=mg
+\end{equation*}%
+and we can put this back in our Newton's second law for just hanging and no
+fluid%
+\begin{eqnarray*}
+ma_{y} &=&-k\left( y-y_{e}\right) -mg \\
+&=&-ky-ky_{e}-mg \\
+&=&-ky-mg-mg \\
+&=&-ky
+\end{eqnarray*}%
+So for just hanging, we can say 
+\begin{equation*}
+ma_{y}=-ky
+\end{equation*}%
+which includes the effect of gravity. Now let's add back in our fluid so we
+have a damping force. We can write the Newton's second law with damping
+equation as%
+\begin{equation*}
+ma_{y}=-ky-bv
 \end{equation*}%
 We can write the acceleration and velocity as derivatives of the position
 just like we have done before 
 \begin{equation*}
--kx-b\frac{dx}{dt}=m\frac{d^{2}x}{dt^{2}}
+m\frac{d^{2}y}{dt^{2}}=-ky-b\frac{dy}{dt}
 \end{equation*}%
 This is another differential equation! But it is harder to guess its
 solution, and finding that solution is a subject for a differential
@@ -2027,8 +2146,8 @@ math department\footnote{%
 That is, until you finish M316, then you will know how to do this kind of
 problem yourself!}. Here is the solution:%
 \begin{equation}
-x\left( t\right) =x_{\max }e^{-\frac{b}{2m}t}\cos \left( \omega t+\phi
-_{o}\right)  \label{dampped solution}
+y\left( t\right) =y_{\max }e^{-\frac{b}{2m}t}\cos \left( \omega t+\phi
+_{o}\right)   \label{dampped solution}
 \end{equation}%
 which looks simple enough, but now we $\ $have the added complication that $%
 \omega $ is more complex 
@@ -2038,21 +2157,21 @@ which looks simple enough, but now we $\ $have the added complication that $%
 so we get quite a mess if we write equation (\ref{dampped solution}) with
 this new $\omega .$%
 \begin{equation}
-x\left( t\right) =x_{\max }e^{-\frac{b}{2m}t}\cos \left( \left( \sqrt{\frac{k%
-}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi _{o}\right)
+y\left( t\right) =y_{\max }e^{-\frac{b}{2m}t}\cos \left( \left( \sqrt{\frac{k%
+}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi _{o}\right) 
 \end{equation}
 
 To see what this solution means, we should study three cases:
 
 \begin{enumerate}
-\item the damping force is small: ($bv_{\max }<kx_{\max })$ The system
+\item the damping force is small: ($bv_{\max }<ky_{\max })$ The system
 oscillates, but the amplitude is smaller as as time goes on. We call this
-\textquotedblleft underdamped.\textquotedblright
+\textquotedblleft underdamped.\textquotedblright 
 
-\item the damping force is large: ($bv_{\max }>kx_{\max })$The system does
+\item the damping force is large: ($bv_{\max }>ky_{\max })$The system does
 not oscillate. we call this \textquotedblleft overdamped.\textquotedblright\
-We can also say that $\frac{b}{2m}>\omega _{o}$ (after we define $\omega
-_{o} $ below)
+We can also say that $\frac{b}{2m}>\omega _{o}$ (after we define $\omega _{o}
+$ below)
 
 \item The system is \textquotedblleft critically damped\textquotedblright\
 (see below).
@@ -2066,7 +2185,7 @@ characteristics:
 \begin{equation*}
 \begin{tabular}{|l|}
 \hline
-$x_{\max }=5\unit{cm}$ \\ \hline
+$y_{\max }=5\unit{cm}$ \\ \hline
 $b=0.005\frac{\unit{kg}}{\unit{s}}$ \\ \hline
 $k=0.2\frac{\unit{N}}{\unit{m}}$ \\ \hline
 $m=.5\unit{kg}$ \\ \hline
@@ -2074,7 +2193,7 @@ $\phi _{o}=0$ \\ \hline
 \end{tabular}%
 \end{equation*}
 
-Graphing the equation of motion $x\left( t\right) ,$ we we get a graph that
+Graphing the equation of motion $y\left( t\right) ,$ we we get a graph that
 looks like this\FRAME{dtbpFX}{4.4996in}{3in}{0pt}{}{}{Plot}{\special%
 {language "Scientific Word";type "MAPLEPLOT";width 4.4996in;height 3in;depth
 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
@@ -2100,18 +2219,18 @@ t\right) $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 'SUXMFM0S.xvz';valid_file "T";tempfilename
 'SUS73U17.wmf';tempfile-properties "XPR";}}The gray lines are given by%
 \begin{equation*}
-\pm x_{\max }e^{-\frac{b}{2m}t}
+\pm y_{\max }e^{-\frac{b}{2m}t}
 \end{equation*}%
 Notice that this quantity is as a collection of terms multiplies the cosine
 part. It is marked in curly braces blow 
 \begin{equation*}
-x\left( t\right) =\left\{ x_{\max }e^{-\frac{b}{2m}t}\right\} \cos \left(
+y\left( t\right) =\left\{ y_{\max }e^{-\frac{b}{2m}t}\right\} \cos \left(
 \left( \sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi
-_{o}\right)
+_{o}\right) 
 \end{equation*}%
 We know that the part of the equation that multiplies the cosine part is the
 amplitude. But now the amplitude is more than just $x_{\max }.$ And notice
-that the amplitude $\left\{ x_{\max }e^{-\frac{b}{2m}t}\right\} $ changes
+that the amplitude $\left\{ y_{\max }e^{-\frac{b}{2m}t}\right\} $ changes
 with time. The gray lines in the figure show how the amplitude changes. We
 call this the \emph{envelope} of the curve. The oscillation fits within the
 gray lines (like an old fashioned letter fits inside a paper envelope).
@@ -2121,7 +2240,7 @@ Now let's change $b$ to a larger value%
 \begin{equation*}
 \begin{tabular}{|l|}
 \hline
-$x_{\max }=5\unit{cm}$ \\ \hline
+$y_{\max }=5\unit{cm}$ \\ \hline
 $b=0.05\frac{\unit{kg}}{\unit{s}}$ \\ \hline
 $k=0.2\frac{\unit{N}}{\unit{m}}$ \\ \hline
 $m=.5\unit{kg}$ \\ \hline
@@ -2160,7 +2279,7 @@ many. Now let's increase $b$ even more.%
 \begin{equation}
 \begin{tabular}{|l|}
 \hline
-$x_{\max }=5\unit{cm}$ \\ \hline
+$y_{\max }=5\unit{cm}$ \\ \hline
 $b=0.5\frac{\unit{kg}}{\unit{s}}$ \\ \hline
 $k=0.2\frac{\unit{N}}{\unit{m}}$ \\ \hline
 $m=.5\unit{kg}$ \\ \hline
@@ -25823,13 +25942,13 @@ _{A}}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-_{B}}\right) 
+_{B}}\right)
 \end{equation*}%
 \begin{eqnarray*}
 W_{AB} &=&\left( 1\unit{mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}%
 \unit{K}}\right) \left( \allowbreak 1023\unit{K}\right) \ln \left( \frac{%
 0.001\unit{m}^{3}}{\allowbreak 2.\,\allowbreak 067\,9\times 10^{-3}\unit{m}%
-^{3}}\right)  \\
+^{3}}\right) \\
 &=&\allowbreak -6179.\,\allowbreak 3\unit{J}
 \end{eqnarray*}
 

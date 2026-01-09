@@ -1,0 +1,1888 @@
+
+\documentclass{book}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
+%TCIDATA{LastRevised=Thursday, January 08, 2026 16:06:09}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=40 LaTeX Book.cst}
+%TCIDATA{ComputeGeneralSettings=0,5,5,0,0,0,1}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+\frontmatter
+\title{{\Large Fundamentals of Physics II}\\
+{\Large Wave Motion, Thermal Physics, and Optics (under construction)}}
+\author{R. Todd Lines \and (%
+%TCIMACRO{\TeXButton{$\copyright$}{$\copyright$}}%
+%BeginExpansion
+$\copyright$%
+%EndExpansion
+copyright, R. Todd Lines, All Rights Reserved)}
+\date{07/08/2025}
+\maketitle
+\tableofcontents
+
+\chapter{Preface}
+
+This set of notes is intended to be an aid to the student. It is what I
+intend to present in class. There are likely errors and mistakes, so use
+these notes, but don't expect perfection. If there are things that are
+confusing, please talk to me or ask questions in class.
+
+I consulted many authors and colleagues in creating these notes. Principle
+among the authors was Serway and Jewett and Haliday and Resnic. Colleagues
+of special note are Kevin Kelly, Brian Pyper, Steve Tercotte, and Ryan
+Nielson. I especially appreciate the PH123 students of the Fall of 2006.
+They were the first to test run this sets of notes, and I appreciate their
+feedback (and patience).
+
+This work is 
+%TCIMACRO{\TeXButton{$\copyright$}{$\copyright$} }%
+%BeginExpansion
+$\copyright$
+%EndExpansion
+Copyright R. Todd Lines. Permission is given to BYU-Idaho for educational
+purposes. All other rights are reserved.
+
+\mainmatter
+
+%TCIMACRO{\TeXButton{\pagenumbering{arabic}}{\pagenumbering{arabic}}}%
+%BeginExpansion
+\pagenumbering{arabic}%
+%EndExpansion
+
+\part{Oscillation and Waves}
+
+\chapter{Introduction to the Course, Simple Harmonic Motion 1.15.1}
+
+%TCIMACRO{%
+%\TeXButton{\chaptermark{Simple Harmonic Motion}}{\chaptermark{Simple Harmonic Motion}}}%
+%BeginExpansion
+\chaptermark{Simple Harmonic Motion}%
+%EndExpansion
+
+%TCIMACRO{%
+%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
+%BeginExpansion
+\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
+%EndExpansion
+
+\begin{itemize}
+\item Simple Harmonic Motion
+
+\item Frequency and Period
+
+\item Mathematical description of Simple Harmonic Motion
+\end{itemize}
+
+\section{1 Oscillation and Simple Harmonic Motion}
+
+Last semester, in PH121 (or Dynamics) you studied how things move. We
+identified a moving object (I often refer to this object as the \emph{mover
+object})\emph{\ }and other objects that exerted forces on the mover (I often
+refer to these other objects as the \emph{environmental objects})\emph{.}
+You learned about forces and torques which get mover objects moving. You
+should remember Newton's Second Law and Newton's Second Law for rotation.
+
+You also learned and practiced a lot of math. We will continue to use the
+math you learned in PH121 this semester.
+
+But we will go beyond what we learned in PH121 to study new types of motion,
+and new objects that move.
+
+This semester, we will start with a very special type of motion. It is the
+motion that results from oscillation. We call this very special type of
+motion, \emph{simple harmonic motion}.
+
+Simple harmonic motion (SHM) means a motion that repeats in the most
+special, simple way. Some characteristics of this type of motion are as
+follows:
+
+1.\qquad The motion repeats in a regular way, like a grandfather clock
+pendulum swings back and forth in a set amount of time. This set amount of
+time is called a period.
+
+2.\qquad The mover object moves about a center position and is symmetric
+about that position. This center position is the bottom of the swing for our
+grandfather clock. The idea of symmetry just means that the pendulum reaches
+the same height on both sides as it swings
+
+3.\qquad The mover object's motion can be traced out in a position vs. time
+graph. For SHM, the shape of the position vs. time graph is a sinusoid.
+
+4.\qquad The velocity of the mover object constantly changes. It is zero at
+the extreme points (the points farthest from the center, or the largest
+positive and the largest negative displacements). That is where it turns
+around and goes back the other way. It stops there, but just for a split
+second. The velocity is largest at the equilibrium position (the center
+position). If we plotted a velocity vs. time graph, the velocity would also
+be a sinusoid or snake-like shape.
+
+5.\qquad The acceleration also constantly changes. And it is also a sinusoid.
+
+That is a lot of criteria for a motion that is supposed to be simple! Let's
+take an example system to see how simple harmonic motion works. I have drawn
+a mass (marked $m$) attached to a spring. And lets assume that the mass is
+on a frictionless surface and there is no air drag force. If we pull the
+mass so the string stretches, we would get simple harmonic motion.
+
+\FRAME{dtbpF}{2.5261in}{1.9484in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.5261in;height 1.9484in;depth
+0pt;original-width 1.2834in;original-height 0.9833in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU900.wmf';tempfile-properties "XPR";}}The center position for our mass
+is called the Equilibrium position, and for convenience we often define it
+as the origin of our coordinate system.
+
+\begin{center}
+\rule{300pt}{1pt}
+
+{\small Equilibrium Position: The position of the mover mass (not the
+spring, which is an environmental object acting on the mover mass) when the
+spring is neither stretched nor compressed.}
+
+\rule{300pt}{1pt}
+\end{center}
+
+Let's draw a picture of simple harmonic motion. First we need a device to do
+this. Suppose you go to the supermarket\footnote{%
+Like Albertsons, where they still have checkers.}. But instead of putting
+your ramen and granola bars on the belt at the checkout counter, you strap
+on a device like this\footnote{%
+Please don't really try this at the local supermarkets. They don't seem to
+have any sense scientife inquarey or even a sense of humor about such things
+at all.}\FRAME{dhF}{4.3474in}{1.5904in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.3474in;height 1.5904in;depth
+0pt;original-width 4.2964in;original-height 1.5549in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU901.wmf';tempfile-properties "XPR";}}You can see the mover object on
+the spring. But we have placed a pen on the object and that pen is tracing
+out a pattern as the belt moves. You will recognize this pattern as a trig
+function. The result might look something like this if you removed the belt.%
+\FRAME{dhF}{3.9418in}{1.4226in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.9418in;height 1.4226in;depth
+0pt;original-width 3.8934in;original-height 1.388in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU902.wmf';tempfile-properties "XPR";}}Of course, what we have made is a
+position vs. time graph. We remember these from PH121! This gives us a
+record of the past motion of the object. \FRAME{dtbpFX}{3.9583in}{1.8542in}{%
+0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+3.9583in;height 1.8542in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "0";xmax "4.7";xviewmin
+"0";xviewmax "4.7";yviewmin "-10";yviewmax
+"10";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label "t
+(s)";y-label "x (cm)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{t};var1name
+\TEXUX{$t$};function \TEXUX{$5\cos \left( 2t+0\right) $};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "0,4.7";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'T8KIU900.xvz';valid_file "T";tempfilename
+'T8KIU903.wmf';tempfile-properties "XPR";}}where in this graph, $x_{\max }=5%
+\unit{cm}.$ Having the power of mathematics, we know we can write an
+equation that would describe this curve. From your Trigonometry experience,
+we can guess that an equation for our mover object motion might look
+something like%
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \theta \right)
+\end{equation*}%
+Notice that the instantaneous position, $x\left( t\right) $ has to be a
+function of time. Back in trigonometry we would have said a cosine function
+was a function of an angle, $\theta .$ But we know this is a position vs.
+time graph, so our angle must be different for different times. Let's write 
+\begin{equation*}
+\theta \left( t\right) =\omega t
+\end{equation*}%
+as strange sort of an angle. This \textquotedblleft angle\textquotedblright\
+is a function of time, and let's say how fast our \textquotedblleft
+angle\textquotedblright\ is changing is given by 
+\begin{equation*}
+\frac{d\theta }{dt}=\omega
+\end{equation*}%
+This is a sort of speed for how fast our angle is changing.
+
+Using our rate of angle change, we can write our equation for simple
+harmonic motion as 
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t\right)
+\end{equation*}%
+In the next figure $x\left( t\right) =x_{\max }\cos \left( \omega t\right) $
+is plotted with two different values for $\omega .$ \FRAME{dtbpFX}{3.9583in}{%
+1.3578in}{0pt}{}{}{Plot}{\special{language "Scientific Word";type
+"MAPLEPLOT";width 3.9583in;height 1.3578in;depth 0pt;display
+"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
+"0";xmax "4.7";xviewmin "0";xviewmax "4.7";yviewmin "-10";yviewmax
+"10";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label "t
+(s)";y-label "x (cm)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{t};var1name
+\TEXUX{$t$};function \TEXUX{$5\cos \left( 2t+0\right) $};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "0,4.7";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";function \TEXUX{$5\cos \left(
+4t+0\right) $};linecolor "maroon";linestyle 2;pointstyle
+"point";linethickness 1;lineAttributes "Dash";var1range
+"0,4.7";num-x-gridlines 100;curveColor "[flat::RGB:0x00800000]";curveStyle
+"Line";VCamFile 'T8KIU909.xvz';valid_file "T";tempfilename
+'T8KIU904.wmf';tempfile-properties "XPR";}}We can see what $\omega $ does
+for us. It stretches out or compresses our curve. In the blue (dashed) curve
+our angle changes quickly. In the red (solid) curve the angle changes
+slowly. Note that we are not plotting position vs. angle. Both plots would
+be the same if we did! We are plotting position vs. time. And for the blue
+curve our mass is oscillating much more quickly than it is for the red
+curve. The quantity $\omega $ tells us something about how fast our mover
+object is oscillating.
+
+The quantity $x_{\max }$ is the maximum displace of our mover object from
+the equilibrium position. This maximum displacement from equilibrium has a
+name. It is called the \emph{amplitude}. In our equation I\ have used $%
+x_{\max }$ where most books use the letter $A$ for amplitude\emph{\ }to
+emphasize that the amplitude is the maximum displacement of the mover mass
+from the mover mass equilibrium position. In our coordinate system, the mass
+is going back and forth in the $x$ direction. Since the amplitude means the
+maximum displacement, $x_{\max }$ is a good way to write amplitude. Here is
+the same graph but with $x_{\max }=9\unit{cm}$\FRAME{dtbpFX}{3.9583in}{%
+1.3578in}{0pt}{}{}{Plot}{\special{language "Scientific Word";type
+"MAPLEPLOT";width 3.9583in;height 1.3578in;depth 0pt;display
+"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
+"0";xmax "4.7";xviewmin "0";xviewmax "4.7";yviewmin "-10";yviewmax
+"10";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label "t
+(s)";y-label "x (cm)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{t};var1name
+\TEXUX{$t$};function \TEXUX{$9\cos \left( 2t+0\right) $};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "0,4.7";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";function \TEXUX{$9\cos \left(
+4t+0\right) $};linecolor "maroon";linestyle 2;pointstyle
+"point";linethickness 1;lineAttributes "Dash";var1range
+"0,4.7";num-x-gridlines 100;curveColor "[flat::RGB:0x00800000]";curveStyle
+"Line";VCamFile 'T8KIU908.xvz';valid_file "T";tempfilename
+'T8KIU905.wmf';tempfile-properties "XPR";}}The two graphs for the two
+different $\omega $ values are not more stretched out in time, but now they
+are taller along the position axis. This means that the mass is moving
+farther from the center as it oscillates.
+
+You will remember from your trigonometry class that the \emph{period,} $T,$
+tells us the time it takes for the oscillation to go through a complete
+cycle. A complete cycle is when the object, say, goes from $x_{\max }$ to $%
+-x_{\max }$ and then back to $x_{\max }.$ You can probably guess that how
+long it takes to oscillate and how often it oscillates would be related. How
+often the oscillator completes a cycle is called the frequency. The longer
+the period, the lower the frequency. 
+\begin{equation*}
+f=\frac{1}{T}
+\end{equation*}%
+Think of cars passing you on your way to class. Period is like how long you
+wait in between cars. Frequency is like how often cars pass. If you wait
+less time between cars, the cars pass more frequently. And that is just what
+our equation says! We can see from our graphs that our stretching quantity $%
+\omega ,$ must be related to the frequency of our oscillation. If the
+frequency is high, then $\omega $ must be large so that we reach different
+\textquotedblleft angles\textquotedblright\ faster. But for the cosine
+function to work we need angle units. \emph{We will choose radians} for our
+units and we will write our stretching quantity as 
+\begin{equation*}
+\omega =2\pi f
+\end{equation*}%
+This works! If $\omega $ is bigger then our oscillation happens more
+frequently. The $2\pi $ has units of radians. So $\omega $ has units of $%
+\unit{rad}\unit{Hz}$ or more commonly $\unit{rad}/\unit{s}.$ That matches
+our derivative above. Let's give a name to the quantity $\omega .$ Since it
+has radians in it we might guess that it has something to do with circular
+motion (more on this later) and it has frequency in it. So we will call $%
+\omega $ the \emph{angular frequency}.
+
+\section{Velocity and Acceleration}
+
+So far we have guessed the descriptive equation for SHM. 
+\begin{equation}
+x\left( t\right) =x_{\max }\cos \left( \omega t\right)
+\end{equation}%
+This gives us the position of the particle at any given time. Since knowing
+the position as a function of time is a good description of the motion of
+our mover mass, we can call this equation the \emph{equation of motion} for
+our mass. We will see soon that this equation is correct. But let's pretend
+that we are earlier researchers and we just know the equation makes the
+right shape. Still, we can learn much from knowing this equation. Since we
+know how to take derivatives, and we know the derivative of position with
+respect to time is the velocity, we can see that the velocity of the mass at
+any given time is given by
+
+\begin{equation}
+v\left( t\right) =\frac{dx\left( t\right) }{dt}=-\omega x_{\max }\sin \left(
+\omega t\right)
+\end{equation}%
+From our fond memories of our trigonometry class we know the maximum of a
+sine function is always $1.\strut $\FRAME{dtbpFX}{4.4996in}{1.0421in}{0pt}{}{%
+}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+4.4996in;height 1.0421in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-10.001000";xmax
+"10.001000";xviewmin "-10.001000";xviewmax "10.001000";yviewmin
+"-1.000187";yviewmax "1.000187";viewset"XY";rangeset"X";plottype
+4;labeloverrides 3;x-label "x";y-label "sin(x)";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$\sin x$};linecolor "blue";linestyle
+1;pointstyle "point";linethickness 1;lineAttributes "Solid";var1range
+"-10.001000,10.001000";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";function \TEXUX{$1$};linecolor
+"black";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
+"Dash";var1range "-10.001000,10.001000";num-x-gridlines 100;curveColor
+"[flat::RGB:0000000000]";curveStyle "Line";function \TEXUX{$-1$};linecolor
+"black";linestyle 2;pointstyle "point";linethickness 1;lineAttributes
+"Dash";var1range "-10.001000,10.001000";num-x-gridlines 100;curveColor
+"[flat::RGB:0000000000]";curveStyle "Line";VCamFile
+'T8KIU907.xvz';valid_file "T";tempfilename
+'T8KIU906.wmf';tempfile-properties "XPR";}}Notice that the $\omega $ and the 
+$x_{\max }$ aren't changing for our oscillation mover mass. They are
+constant. Then if we want the maximum speed we can simply set the $\sin
+\left( \omega t\right) =1.$ Then the maximum speed will be 
+\begin{equation}
+v_{\max }=\omega x_{\max }\left( 1\right)
+\end{equation}%
+Notice that this does not tell us when the speed is maximum. Just what the
+maximum speed is. We then have an equation for the speed of our object as a
+function of time 
+\begin{equation*}
+v\left( t\right) =-v_{\max }\sin \left( \omega t\right)
+\end{equation*}%
+We will often use this trick of knowing the maximum of sine is one.
+
+We can also find the acceleration. We just take another derivative.%
+\begin{eqnarray*}
+a\left( t\right) &=&\frac{dv}{dt} \\
+&=&\frac{d^{2}x\left( t\right) }{dt^{2}} \\
+&=&-\omega ^{2}x_{\max }\cos \left( \omega t\right)
+\end{eqnarray*}%
+This is the acceleration of the object attached to the spring. It's also
+true that the maximum for a cosine function is $1,$ so the maximum
+acceleration would be
+
+\begin{equation}
+a_{\max }=\omega ^{2}x_{\max }\left( 1\right)
+\end{equation}%
+so we could write our instantaneous acceleration as 
+\begin{equation*}
+a\left( t\right) =-a_{\max }\cos \left( \omega t\right)
+\end{equation*}
+
+These are significant results, so let's summarize. For a simple harmonic
+oscillator, the instantaneous position, speed, and acceleration are given by%
+\begin{eqnarray}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t\right) \\
+v\left( t\right) &=&-\omega x_{\max }\sin \left( \omega t\right)  \notag \\
+a\left( t\right) &=&-\omega ^{2}x_{\max }\cos \left( \omega t\right)  \notag
+\end{eqnarray}
+
+Let's plot $x\left( t\right) ,$ $v\left( t\right) ,$ and $a\left( t\right) $
+for a specific case\FRAME{dtbpFX}{3.6357in}{2.4163in}{0pt}{}{}{Plot}{\special%
+{language "Scientific Word";type "MAPLEPLOT";width 3.6357in;height
+2.4163in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "-5";xmax "5";xviewmin "-5";xviewmax
+"5";yviewmin "-20";yviewmax "20";viewset"XY";rangeset"X";plottype
+4;labeloverrides 3;x-label "t";y-label "x";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{t};var1name
+\TEXUX{$t$};function \TEXUX{$5\cos \left( 2t+0\right) $};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
+"Solid";var1range "-5,5";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";function \TEXUX{$-2\ast 5\sin
+\left( 5t+0\right) $};linecolor "green";linestyle 2;pointstyle
+"point";linethickness 3;lineAttributes "Dash";var1range
+"-5,5";num-x-gridlines 100;curveColor "[flat::RGB:0x00008000]";curveStyle
+"Line";function \TEXUX{$-\left( 2\right) ^{2}\left( 5\right) \cos \left(
+2t+0\right) $};linecolor "red";linestyle 4;pointstyle "point";linethickness
+3;lineAttributes "DotDash";var1range "-5,5";num-x-gridlines 100;curveColor
+"[flat::RGB:0x00ff0000]";curveStyle "Line";VCamFile
+'T8KIU906.xvz';valid_file "T";tempfilename
+'T8KIU907.wmf';tempfile-properties "XPR";}}Red (solid) is the displacement,
+green (dashed) is the velocity, and blue (dot-dashed) is the acceleration.
+Note that each as a different maximum amplitude. Also note that they don't
+rise and fall at the same time. We will describe this as being \emph{not in
+phase}. We can see this again in the next graph. The red graph (top graph)
+is still the displacement. The bottom graph is the velocity. And note that
+the peaks are not at the same time.\FRAME{dtbpF}{2.9888in}{2.8409in}{0pt}{}{%
+}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.9888in;height 2.8409in;depth 0pt;original-width 6.5639in;original-height
+6.2396in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU908.wmf';tempfile-properties "XPR";}}The acceleration is $90\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}$ \emph{out of phase} from the velocity. Let's think about why this would
+be. Suppose we attach a mass to a spring and allow the mass to slide on a
+frictionless surface.\FRAME{dtbpF}{2.4111in}{1.7461in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.4111in;height 1.7461in;depth
+0pt;original-width 7.043in;original-height 5.0903in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU909.wmf';tempfile-properties "XPR";}}Let's start by stretching the
+spring by pulling the mass to the right and releasing. This is the situation
+in the left hand part of the last figure.
+
+\FRAME{dtbpF}{1.4114in}{1.1692in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.4114in;height 1.1692in;depth
+0pt;original-width 2.1084in;original-height 1.7417in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90A.wmf';tempfile-properties "XPR";}}The spring is pulling strongly on
+the mass. We could draw a free body diagram for this situation. We will need
+the spring force \FRAME{dtbpF}{1.5592in}{1.0957in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 1.5592in;height 1.0957in;depth
+0pt;original-width 2.1577in;original-height 1.5091in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90B.wmf';tempfile-properties "XPR";}}Back in PH121 we said that
+Hooke's Law is not something that is always true, but by \textquotedblleft
+law\textquotedblright\ we mean a mathematical representation (an equation)
+that comes from our mental model of how the universe works. In this case,
+Hooke's law is an equation that comes from Hooke's model of how springs
+work. It is a good model for most springs as long as we don't stretch them
+too far. You remember Hooke's law tells us that the spring force is
+proportional to how far we stretch or compress the spring from equilibrium $%
+\left( \Delta x_{e}\right) $ and how stiff the spring is $\left( k\right) .$
+
+\begin{eqnarray}
+F_{s} &=&S=-k\Delta x_{e} \\
+&=&-k\left( x-x_{e}\right)  \notag
+\end{eqnarray}%
+where $x_{e}$ is the \emph{equilibrium position of the mass. }If we assume
+the equilibrium position is at $x=0$ then we can write our spring force as%
+\begin{equation}
+S=-kx
+\end{equation}%
+And if we write out Newton's second law we get 
+\begin{eqnarray*}
+F_{net_{x}} &=&-ma_{x}=-S_{ms} \\
+F_{net_{y}} &=&ma_{y}=N_{mT}-W_{mE}
+\end{eqnarray*}%
+We can expect that $a_{y}$ should be zero because the mass won't lift off
+the table in the $y$-direction. But in the $x$-direction 
+\begin{equation*}
+-a_{x}=-\frac{S_{ms}}{m}
+\end{equation*}%
+and knowing that 
+\begin{equation*}
+S_{ms}=-kx
+\end{equation*}%
+from Hooke's law, we can see that 
+\begin{equation*}
+-a_{x}=+\frac{kx}{m}
+\end{equation*}%
+or 
+\begin{equation*}
+a_{x}=-\frac{kx}{m}
+\end{equation*}%
+Since at our starting point $x$ is big our acceleration is big. Notice that
+there is a minus sign. The minus sign tells us that $a_{x}$ must be to the
+left.
+
+But suppose the mass was to the left of $x_{e}=0$ \FRAME{dtbpF}{2.0643in}{%
+0.9582in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.0643in;height 0.9582in;depth 0pt;original-width 2.0254in;original-height
+0.9254in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90C.wmf';tempfile-properties "XPR";}}Now $x<0$ so it is negative. That
+makes 
+\begin{equation*}
+a_{x}=-\frac{kx}{m}
+\end{equation*}%
+positive. The acceleration always seems to point toward $x_{e}=0,$ the
+equilibrium position for the mass. This is an important part of the
+definition of simple harmonic motion, having an acceleration that always
+points toward the equilibrium position. We call a force that makes the
+acceleration point toward the equilibrium position \emph{restoring force}.
+
+\begin{center}
+{\small \rule{300pt}{1pt}}
+
+{\small Restoring force:\ A force that is always directed toward the
+equilibrium position}
+
+{\small \rule{300pt}{1pt}}
+\end{center}
+
+Now lets look at our object a short time later \FRAME{dtbpF}{1.4096in}{%
+1.1087in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.4096in;height 1.1087in;depth 0pt;original-width 1.375in;original-height
+1.075in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90D.wmf';tempfile-properties "XPR";}}We can see that in this position, 
+$x=0$ so 
+\begin{equation*}
+a_{x}=\frac{k\left( 0\right) }{m}=0
+\end{equation*}%
+so at this position the acceleration is zero. That is because right at $x=0$
+the spring is neither pushing nor pulling. There is no net force so no
+acceleration when $x=0.$
+
+\section{The Idea of Phase}
+
+We said before that $x\left( t\right) ,$ $v\left( t\right) ,$ and $a\left(
+t\right) $ are \textquotedblleft out of phase.\textquotedblright\ Let's look
+at the idea of \textquotedblleft phase\textquotedblright\ more carefully.
+Suppose you return to the grocery store and start your SHM\ device.\FRAME{dhF%
+}{3.2292in}{1.1813in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.2292in;height 1.1813in;depth 0pt;original-width
+4.2964in;original-height 1.5549in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T8KIU90E.wmf';tempfile-properties "XPR";}}%
+But this time you work with a lab partner, and the lab partner tries to
+start a stopwatch when you let go of the mass. But, due to having a slow
+reaction time, your partner starts the clock too late. The resulting graph
+looks like this\FRAME{dtbpFX}{3.9583in}{1.8542in}{0pt}{}{}{Plot}{\special%
+{language "Scientific Word";type "MAPLEPLOT";width 3.9583in;height
+1.8542in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "0";xmax "4.7";xviewmin "0";xviewmax
+"4.7";yviewmin "-10";yviewmax "10";viewset"XY";rangeset"X";plottype
+4;labeloverrides 3;x-label "t";y-label "x";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{t};var1name
+\TEXUX{$t$};function \TEXUX{$5\cos \left( 2t+\pi /3\right) $};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "0,4.7";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'T8KIU905.xvz';valid_file "T";tempfilename
+'T8KIU90F.wmf';tempfile-properties "XPR";}}But we know that the only
+difference between this graph and the one we had before is that the lab
+partner was slow, so the graph is shifted on the time axes. We expect we can
+use the same mathematical model for SHM, but we must need to change
+something because the graph looks different.
+
+We know from our algebra classes what a shift looks like. Take the
+expression 
+\begin{equation*}
+y=x^{2}
+\end{equation*}%
+We can plot this to get a parabola\FRAME{dtbpFX}{2.9093in}{1.9407in}{0pt}{}{%
+}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+2.9093in;height 1.9407in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-5.001000";xmax
+"10.001000";xviewmin "-5.001000";xviewmax "10.001000";yviewmin "0";yviewmax
+"25.00250";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$x^{2}$};linecolor "blue";linestyle 1;pointstyle
+"point";linethickness 3;lineAttributes "Solid";var1range
+"-5.001000,10.001000";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'T8KIU904.xvz';valid_file "T";tempfilename
+'T8KIU90G.wmf';tempfile-properties "XPR";}}A shifted parabola would be
+expressed as 
+\begin{equation*}
+y=\left( x-\phi _{o}\right) ^{2}
+\end{equation*}%
+where $\phi _{o}$ is the amount of the shift. Suppose $\phi _{o}=2,$ then 
+\begin{equation*}
+y=\left( x-2\right) ^{2}
+\end{equation*}%
+and our shifted parabola looks like this\FRAME{dtbpFX}{2.8534in}{1.9035in}{%
+0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+2.8534in;height 1.9035in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-5.001000";xmax
+"10.00100";xviewmin "-5.001000";xviewmax "10.00100";yviewmin
+"-0.003982";yviewmax "25.00490";viewset"XY";rangeset"X";plottype 4;axesFont
+"Times New Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$\left( x-2\right) ^{2}$};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
+"Solid";var1range "-5.001000,10.00100";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'T8KIU903.xvz';valid_file "T";tempfilename
+'T8KIU90H.wmf';tempfile-properties "XPR";}}Recall that a shift like 
+\begin{equation*}
+y=\left( x-\phi _{o}\right) ^{2}
+\end{equation*}%
+will move the parabola to the right while 
+\begin{equation*}
+y=\left( x+\phi _{o}\right) ^{2}
+\end{equation*}%
+will move the parabola to the left.
+
+We can use this idea to write our SHM expression for our situation with the
+slow lab partner. 
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega \left( t\pm \tau _{o}\right)
+\right)
+\end{equation*}%
+In our case, the lab partner was late by $\tau _{o}=\allowbreak
+4.\,\allowbreak 712\,4\unit{s}.$ This is not usually how we express the
+shift, however. We usually distribute the $\omega $ so our equation looks
+like%
+\begin{eqnarray*}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t\pm \omega \tau _{o}\right)
+\\
+&=&x_{\max }\cos \left( \omega t\pm \omega \tau _{o}\right)
+\end{eqnarray*}%
+We usually use the symbol $\phi _{o}=\omega \tau _{o}$ so we will write our
+SHM expression for position as a function of time as%
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t\pm \phi _{o}\right)
+\end{equation*}
+
+We could call $\phi _{o}$ the \emph{slow lab partner constant, }but that is
+long and not very kind. So let's call $\phi _{o}$ by the name \emph{phase
+constant}. It is also customary to call the entire expression in
+parenthesis, $\left( \omega t\pm \phi _{o}\right) ,$ the phase of the cosine
+function. This is especially used in the fields of Optics and
+Electrodynamics.
+
+From what we did before, we know that $x\left( t\right) ,$ $v\left( t\right)
+,$ and $a\left( t\right) $ are out of phase, so there must be a phase
+constant involved somehow. Let's look for it in the lectures that follow.
+
+\chapter{2 Energy and Dynamics of SHM 1.15.2 1.15,3}
+
+%TCIMACRO{\TeXButton{\chaptermark{SHM Energy}}{\chaptermark{SHM Energy}}}%
+%BeginExpansion
+\chaptermark{SHM Energy}%
+%EndExpansion
+
+Back in PH121 we started with position, velocity, and acceleration to
+describe motion. We have done that again for a simple harmonic oscillator.
+In PH121, after basic motion, we found that we could use the idea of a force
+and Newton's second law to find the acceleration for our description of
+motion. Then we changed view points and used the idea of energy to find
+motion. The energy picture was easier in some ways. Let's try to develop and
+energy picture for simple harmonic oscillators. Of course the goal in
+physics is to describe the motion of the object, so we will say that we are
+looking for the \emph{dynamics} of simple harmonic oscillators when we look
+for the position, velocity, and acceleration as a function of time.
+
+%TCIMACRO{%
+%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
+%BeginExpansion
+\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
+%EndExpansion
+
+\begin{itemize}
+\item Initial Conditions
+
+\item Energy and SHM
+
+\item Equation of motion
+
+\item Vertical oscillations
+\end{itemize}
+
+\section{Initial Conditions}
+
+Usually, we need to know how we start our oscillator to solve a problem.
+Let's see how this works.\FRAME{dtbpF}{1.5833in}{1.2187in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 1.5833in;height 1.2187in;depth
+0pt;original-width 1.585in;original-height 1.2134in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90I.wmf';tempfile-properties "XPR";}}
+
+Suppose we start the motion of a mass attached to a spring (a harmonic
+oscillator) by pulling the mass to $x=x_{\max }$ and releasing it at $t=0.$
+Let's see if we can find the phase. Our initial conditions require 
+\begin{eqnarray*}
+x\left( 0\right) &=&x_{\max } \\
+v\left( 0\right) &=&0
+\end{eqnarray*}
+
+Using our equation for $x\left( t\right) $ and $v\left( t\right) $ we have%
+\begin{eqnarray*}
+x\left( 0\right) &=&x_{\max }=x_{\max }\cos \left( 0+\phi _{o}\right) \\
+v\left( 0\right) &=&0=-v_{\max }\sin \left( 0+\phi _{o}\right)
+\end{eqnarray*}%
+If we choose $\phi _{o}=0,$ these conditions are met.
+
+Notice that we needed to know the starting time and the position and the
+velocity at that time. These are what we call \emph{initial conditions}. It
+is still true that $x\left( t\right) $ and $v\left( t\right) $ are out of
+phase. But we found $\phi _{o}=0.$ There is another phase term hiding in our
+expression for $v\left( t\right) $ and to find it we need a small trig
+identity.%
+\begin{eqnarray*}
+\sin \left( \alpha +\phi _{o}\right) &=&\cos \left( \alpha -\left( \frac{\pi 
+}{2}-\phi _{o}\right) \right) \\
+&=&\cos \left( \alpha -\frac{\pi }{2}+\phi _{o}\right)
+\end{eqnarray*}%
+so we could write 
+\begin{eqnarray*}
+v\left( t\right) &=&-\omega x_{\max }\sin \left( \omega t+\phi _{o}\right) \\
+&=&-\omega x_{\max }\cos \left( \alpha -\frac{\pi }{2}+\phi _{o}\right)
+\end{eqnarray*}%
+and we can see that there was a phase shift of $-\pi /2$ hiding in our sine
+function. So $v\left( t\right) $ really must be out of phase with $x\left(
+t\right) .$
+
+\subsection{A second example}
+
+\FRAME{dtbpF}{1.7039in}{1.4422in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.7039in;height 1.4422in;depth
+0pt;original-width 1.7074in;original-height 1.4413in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90J.wmf';tempfile-properties "XPR";}}
+
+Using the same equipment, let's start with 
+\begin{eqnarray*}
+x\left( 0\right) &=&0 \\
+v\left( 0\right) &=&v_{i}
+\end{eqnarray*}%
+that is, the mover object is already moving when we start our experiment,
+and we start watching just as it passes the equilibrium point.%
+\begin{eqnarray*}
+x\left( 0\right) &=&0=x_{\max }\cos \left( 0+\phi _{o}\right) \\
+v\left( 0\right) &=&v_{i}=-v_{\max }\sin \left( 0+\phi _{o}\right)
+\end{eqnarray*}
+
+from the first equation we have 
+\begin{equation*}
+0=x_{\max }\cos \left( \phi _{o}\right)
+\end{equation*}%
+and that gives us 
+\begin{equation*}
+\phi _{o}=\cos ^{-1}\left( 0\right)
+\end{equation*}%
+so 
+\begin{equation*}
+\phi _{o}=\pm \frac{\pi }{2}
+\end{equation*}%
+really this is 
+\begin{equation*}
+\phi _{o}=\pm \frac{\pi }{2}\pm n\pi \qquad n=0,1,2,\cdots
+\end{equation*}%
+This gives the red dots in the next plot. \FRAME{dtbpFX}{4.4996in}{1.1736in}{%
+0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+4.4996in;height 1.1736in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-15.001000";xmax
+"15.001000";xviewmin "-15.001000";xviewmax "15.001000";yviewmin
+"-1";yviewmax "1";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$\cos \left( x\right) $};linecolor
+"black";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "-15.001000,15.001000";num-x-gridlines 100;curveColor
+"[flat::RGB:0000000000]";curveStyle "Line";function \TEXUX{$\left[
+\MATRIX{2,6}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,,,,,}\CELL{\frac{\pi
+}{2}+0}\CELL{0}\CELL{\frac{\pi }{2}+1\pi }\CELL{0}\CELL{\frac{\pi }{2}+2\pi
+}\CELL{0}\CELL{\frac{\pi }{2}+3\pi }\CELL{0}\CELL{\frac{\pi }{2}+4\pi
+}\CELL{0}\CELL{\frac{\pi }{2}+5\pi }\CELL{0}\right] $};linecolor
+"blue";linestyle 1;pointplot TRUE;pointstyle "point";linethickness
+1;lineAttributes "Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Point";function \TEXUX{$\left[
+\MATRIX{2,6}{c}\VR{,,c,,,}{,,c,,,}{,,,,,}\HR{,,,,,,}\CELL{-\frac{\pi
+}{2}+0}\CELL{0}\CELL{-\frac{\pi }{2}-1\pi }\CELL{0}\CELL{\frac{\pi }{2}+2\pi
+}\CELL{0}\CELL{-\frac{\pi }{2}-3\pi }\CELL{0}\CELL{-\frac{\pi }{2}-4\pi
+}\CELL{0}\CELL{-\frac{\pi }{2}-5\pi }\CELL{0}\right] $};linecolor
+"blue";linestyle 1;pointplot TRUE;pointstyle "point";linethickness
+1;lineAttributes "Solid";curveColor "[flat::RGB:0x000000ff]";curveStyle
+"Point";VCamFile 'T8KIU902.xvz';valid_file "T";tempfilename
+'T8KIU90K.wmf';tempfile-properties "XPR";}}Notice that at each of these
+locations $\cos \left( \phi \right) $ is zero. but let's make an agreement
+that we will choose the smallest value for $\phi _{o}$ that makes $\cos
+\left( \phi _{o}\right) =0.$ That is our%
+\begin{equation*}
+\phi _{o}=\pm \frac{\pi }{2}
+\end{equation*}%
+But positive and negative $\pi /2$ are the same \textquotedblleft
+smallness.\textquotedblright\ We don't know the sign. Using our initial
+velocity condition will let us determine the sign. Let's try it 
+\begin{eqnarray*}
+v_{i} &=&-v_{\max }\sin \left( \pm \frac{\pi }{2}\right) \\
+v_{i} &=&\mp v_{\max } \\
+v_{i} &=&\mp \omega x_{\max }
+\end{eqnarray*}
+
+From this we can see 
+\begin{equation*}
+x_{\max }=\pm \frac{v_{i}}{\omega }
+\end{equation*}
+
+From our initial conditions we know the initial velocity is positive, and we
+insist on having positive amplitudes, so then we choose 
+\begin{equation*}
+\phi _{o}=-\frac{\pi }{2}
+\end{equation*}%
+so\ 
+\begin{equation*}
+\sin \left( -\frac{\pi }{2}\right) =\allowbreak -1
+\end{equation*}%
+and then this minus sign will cancel the one in our initial velocity
+equation that to make our initial velocity positive.%
+\begin{eqnarray*}
+v_{i} &=&-v_{\max }\sin \left( -\frac{\pi }{2}\right) \\
+&=&-v_{\max }\left( -1\right) \\
+&=&v_{\max }
+\end{eqnarray*}%
+Our solutions are%
+\begin{eqnarray*}
+x\left( t\right) &=&\frac{v_{i}}{\omega }\cos \left( \omega t-\frac{\pi }{2}%
+\right) \\
+v\left( t\right) &=&v_{i}\sin \left( \omega t-\frac{\pi }{2}\right)
+\end{eqnarray*}
+
+Note that our solution is a set of equations! It isn't a set of numbers. We
+saw this sometimes in PH121. But we will see it more in our study of
+oscillations and waves. Sometimes the solutions are equations. But we did
+fill in our equations with the number for the phase constant. it would be
+even better if we had numbers for $\omega $ and \ $v_{i}.$
+
+\begin{center}
+{\small \rule{300pt}{1pt}}
+
+{\small Generally to have a complete solution, you must find all the
+constants based on the initial conditions. This would mean we need }$x_{\max
+},${\small \ }$\omega ,${\small \ and }$\phi _{o}${\small \ to have a
+complete solution.}
+
+{\small \rule{300pt}{1pt}}
+\end{center}
+
+Let's try a complete example problem.
+
+\subsection{Example}
+
+A particle moving along the $x$ axis in simple harmonic motion starts from
+its equilibrium position, the origin, at $t=0$ and moves to the right. The
+amplitude of its motion is $2.00\unit{cm},$ and the frequency is $1.50\unit{%
+Hz}.$
+
+a) show that the position of the particle is given by%
+\begin{equation*}
+x=\left( 2.00\unit{cm}\right) \sin \left( 3.00\pi t\right)
+\end{equation*}%
+determine
+
+b) the maximum speed and the earliest time $(t>0)$ at which the particle has
+this speed,
+
+c) the maximum acceleration and the earliest time $(t>0)$ at which the
+particle has this acceleration, and
+
+d) the total distance traveled between $t=0$ and $t=1.00\unit{s}$
+
+\FRAME{dtbpF}{1.8775in}{0.8484in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.8775in;height 0.8484in;depth
+0pt;original-width 1.8403in;original-height 0.8164in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90L.wmf';tempfile-properties "XPR";}}
+
+Basic Equations
+
+\begin{eqnarray*}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t+\phi _{o}\right) \\
+v\left( t\right) &=&-\omega x_{\max }\sin \left( \omega t+\phi _{o}\right) \\
+a\left( t\right) &=&-\omega ^{2}x_{\max }\cos \left( \omega t+\phi
+_{o}\right)
+\end{eqnarray*}
+
+\begin{equation*}
+\omega =2\pi f
+\end{equation*}
+
+\begin{equation*}
+v_{m}=\omega x_{m}
+\end{equation*}
+
+\begin{equation*}
+a_{m}=\omega ^{2}x_{m}
+\end{equation*}
+
+\begin{equation*}
+T=\frac{1}{f}
+\end{equation*}
+
+Variables
+
+\begin{equation*}
+\begin{tabular}{lll}
+$t$ & time, initial time $=0$ & $t_{i}=0$ \\ 
+$x$ & Position, Initial position =0 & $x\left( 0\right) =0$ \\ 
+$v$ &  &  \\ 
+$a$ &  &  \\ 
+$x_{\max }$ & x amplitude & $x_{\max }=2.00\unit{cm}$ \\ 
+$v_{m}$ & v amplitude &  \\ 
+$a_{m}$ & a amplitude &  \\ 
+$\omega $ & angular frequency &  \\ 
+$\phi _{o}$ & phase constant &  \\ 
+$f$ & frequency & $f=1.50\unit{Hz}$%
+\end{tabular}%
+\end{equation*}
+
+Symbolic Solution
+
+Part (a)
+
+We can start by recognizing that we know $\omega $ because we know the
+frequency. 
+\begin{eqnarray*}
+\omega &=&2\pi f \\
+&=&2\pi \left( 1.50\unit{Hz}\right) \\
+&=&9.\,\allowbreak 424\,8\unit{rad}\unit{Hz}
+\end{eqnarray*}%
+We also know the amplitude $x_{\max }$ which is given. 
+\begin{equation*}
+x_{\max }=2.00\unit{cm}
+\end{equation*}%
+Knowing that at $t=0$%
+\begin{equation*}
+x\left( 0\right) =0=x_{\max }\cos \left( 0+\phi _{o}\right)
+\end{equation*}%
+which we have seen before! We can guess that 
+\begin{equation*}
+\phi _{o}=\pm \frac{\pi }{2}
+\end{equation*}
+
+Using%
+\begin{equation*}
+v\left( 0\right) =-\omega x_{\max }\sin \left( 0\pm \frac{\pi }{2}\right)
+\end{equation*}%
+and demanding that amplitudes be positive values, and noting that at $t=0$
+the velocity is positive from the initial conditions:%
+\begin{equation*}
+\phi =-\frac{\pi }{2}
+\end{equation*}%
+We also note from our trig identity that we used above%
+\begin{equation*}
+\cos \left( \theta -\frac{\pi }{2}\right) =\sin \left( \theta \right)
+\end{equation*}%
+then we have%
+\begin{eqnarray*}
+x\left( t\right) &=&x_{\max }\cos \left( 2\pi ft-\frac{\pi }{2}\right) \\
+&=&x_{\max }\sin \left( 2\pi ft\right)
+\end{eqnarray*}%
+which is in the form we want. All we have to do is put in numbers. 
+\begin{eqnarray*}
+x\left( t\right) &=&x_{\max }\sin \left( 2\pi ft\right) \\
+&=&\left( 2.00\unit{cm}\right) \sin \left( 3.00\pi t\right)
+\end{eqnarray*}%
+And once again our solution for a) is an equation.
+
+Part (b)
+
+We have a formula from our previous work for $v_{\max }$ 
+\begin{eqnarray*}
+v_{\max } &=&\omega x_{\max } \\
+&=&2\pi fx_{\max }
+\end{eqnarray*}%
+so let's use it. 
+\begin{eqnarray*}
+v_{\max } &=&2\pi \left( 1.50\unit{Hz}\right) \left( 2.00\unit{cm}\right) \\
+&=&\allowbreak 6.0\pi \unit{Hz}\unit{cm} \\
+&=&\allowbreak 0.188\,50\frac{\unit{m}}{\unit{s}}
+\end{eqnarray*}%
+To find when $v_{\max }$ happens, take a derivative of $x\left( t\right) $%
+\begin{equation*}
+v\left( t\right) =v_{\max }=-\omega x_{\max }\sin \left( 2\pi ft-\frac{\pi }{%
+2}\right)
+\end{equation*}%
+and recognize that $\sin \left( \theta \right) =1$ is at a maximum and this
+happens when $\theta =\pi /2$. So we take the stuff that is in the
+parenthesis for the sine function and set it equal to our angle that makes
+the sine function equal to $1$.%
+\begin{equation*}
+\frac{\pi }{2}=2\pi ft-\frac{\pi }{2}
+\end{equation*}%
+We can simplify this and solve for $t$%
+\begin{equation*}
+\pi =2\pi ft
+\end{equation*}%
+\begin{equation*}
+\frac{1}{2f}=t
+\end{equation*}%
+\begin{equation*}
+t=\frac{1}{2\left( 1.50\unit{Hz}\right) }=0.333\,33\unit{s}
+\end{equation*}
+
+Part (c) Like with the velocity we must use our equations. We want
+acceleration but we know it is just taking the derivative of $v\left(
+t\right) $
+
+\begin{equation*}
+a\left( t\right) =-\omega ^{2}x_{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+And we recognize that the maximum is achieved when $\cos \left( \omega
+t+\phi _{o}\right) =1$ or when $\omega t+\phi _{o}=0.$ We can solve this for 
+$t.$
+
+\begin{eqnarray*}
+t &=&\frac{\phi _{o}}{\omega } \\
+&=&\frac{-\frac{\pi }{2}}{2\pi f} \\
+&=&\frac{-1}{4f} \\
+&=&-0.166\,67\unit{s}
+\end{eqnarray*}%
+The formula for $a_{\max }$ is also already in our set of equations 
+\begin{eqnarray*}
+a_{\max } &=&-\omega ^{2}x_{\max } \\
+&=&-(2\pi f)^{2}x_{m}
+\end{eqnarray*}%
+Putting in numbers gives%
+\begin{eqnarray*}
+a_{\max } &=&\left( 2\pi 1.5\unit{Hz}\right) ^{2}(2.00\unit{cm}) \\
+&=&\allowbreak 1.\,\allowbreak 776\,5\frac{\unit{m}}{\unit{s}^{2}}
+\end{eqnarray*}
+
+Part (d)
+
+We know the period is 
+\begin{equation*}
+T=\frac{1}{f}
+\end{equation*}%
+We should find the number of periods in $t=1.00\unit{s}$ and find the
+distance traveled in one period, 
+\begin{equation*}
+N=\frac{t}{T}
+\end{equation*}%
+and multiply them together. In one period the distance traveled is 
+\begin{equation*}
+d=4x_{m}
+\end{equation*}
+
+\begin{equation*}
+d_{tot}=d\ast N=d\ast \frac{t}{T}=4fx_{m}t
+\end{equation*}%
+Putting in numbers gives%
+\begin{eqnarray*}
+d_{tot} &=&4fx_{m}t \\
+&=&4\ast 1.50\unit{Hz}\ast 2.00\unit{cm}\ast 1.00\unit{s} \\
+&=&12\unit{cm} \\
+&=&\allowbreak 0.12\unit{m}
+\end{eqnarray*}
+
+We have come far in only two lectures! We have a set of new equations and a
+new problem type. In what we did in this lecture we used Newton's Second
+Law. But in PH121 we learned that often using the idea of energy made
+problems easier. Can we use energy with simple harmonic motion problems?
+
+\section{Oscillators and Energy}
+
+You might have noticed that we are calling mover objects that experience
+simple harmonic motion (SHM) by the name \emph{simple harmonic oscillators
+(SHO). }Let's consider such a SHO. Because our SHO is moving, we know there
+must be energy associated with it. To understand the energy involved, let's
+start with kinetic energy. Recall from PH121 that 
+\begin{equation}
+K=\frac{1}{2}mv^{2}
+\end{equation}%
+and we recall that for a spring, we have the spring potential energy given by%
+\begin{equation}
+U_{s}=\frac{1}{2}kx^{2}
+\end{equation}%
+Let's try a problem.
+
+Using energy techniques, find the maximum velocity of the mass in terms of
+the Amplitude and the angular frequency.
+
+We want to use our problem solving steps:
+
+\textbf{Type of problem:} This is an energy and a SHO problem:
+
+\textbf{Drawing:} \FRAME{dtbpF}{1.8775in}{0.8484in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 1.8775in;height 0.8484in;depth
+0pt;original-width 1.8403in;original-height 0.8164in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90M.wmf';tempfile-properties "XPR";}}
+
+Variables: 
+\begin{equation*}
+\begin{tabular}{ll}
+$E$ & energy \\ 
+$K$ & Kinetic energy \\ 
+$x$ & Position \\ 
+$v$ & velocity or speed \\ 
+$m$ & mass of the object \\ 
+$k$ & spring stiffness constant%
+\end{tabular}%
+\end{equation*}
+
+\textbf{Basic Equations:}
+
+\begin{eqnarray*}
+K &=&\frac{1}{2}mv^{2} \\
+U_{s} &=&\frac{1}{2}kx^{2}
+\end{eqnarray*}
+
+Symbolic Answer
+
+You might say, this is an easy problem, we know from last time that 
+\begin{equation*}
+v_{\max }=x_{\max }\omega
+\end{equation*}%
+but let's find this again using the ideas of energy. In PH121 we often found
+that using energy made problems easier, so this might be worth a little more
+work now. The total mechanical energy is 
+\begin{equation*}
+E=K+U_{s}+U_{g}
+\end{equation*}%
+Let's say that our oscillator is moving horizontally just like last time,
+and that we define the center of mass of our object so that it's $y$%
+-position is right at $y=0$ so our object has zero gravitational potential
+energy. 
+\begin{equation*}
+E=K+U_{s}+0
+\end{equation*}%
+And let's say we have no friction, so that we can say that energy is
+conserved. We set the initial and final energies equal to each other. 
+\begin{eqnarray*}
+E_{i} &=&E_{f} \\
+K_{i}+U_{si} &=&K_{f}+U_{sf} \\
+\frac{1}{2}mv_{i}^{2}+\frac{1}{2}kx_{i}^{2} &=&\frac{1}{2}mv_{f}^{2}+\frac{1%
+}{2}kx_{f}^{2}
+\end{eqnarray*}%
+And let's start with our initial condition being where the spring is
+stretched to $x_{\max }.$ Then at that moment, $v_{i}=0.$ And let's take our
+final position when the mass is moving as fast as possible (because that is
+what we are looking for, $v_{\max }$). \FRAME{dtbpF}{3.8956in}{2.6131in}{0in%
+}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.8956in;height 2.6131in;depth 0in;original-width 3.9417in;original-height
+2.6343in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90N.wmf';tempfile-properties "XPR";}}We know from our PH121 experience
+that this will be right when $U_{sf}=0$ (so all the energy is kinetic). Then 
+\begin{equation*}
+0+\frac{1}{2}kx_{\max }^{2}=\frac{1}{2}mv_{\max }^{2}+0
+\end{equation*}%
+or%
+\begin{equation*}
+\frac{1}{2}mv_{\max }^{2}=\frac{1}{2}kx_{\max }^{2}
+\end{equation*}%
+We can solve for $v_{\max }$ 
+\begin{equation*}
+v_{\max }^{2}=\frac{kx_{\max }^{2}}{m}
+\end{equation*}%
+\begin{equation*}
+v_{\max }=x_{\max }\sqrt{\frac{k}{m}}
+\end{equation*}%
+But is this what we wanted? We expected that 
+\begin{equation*}
+v_{\max }=x_{\max }\omega
+\end{equation*}%
+And this is what we got so long as 
+\begin{equation*}
+\omega =\sqrt{\frac{k}{m}}
+\end{equation*}%
+And this is always true for a mass on a spring. We don't need a numeric
+answer, This is reasonable (just what we expect) and the units check.
+
+Let's look at kinetic and potential energy as a function of time. For our
+Simple Harmonic Oscillator (SHO) we know the velocity as a function of time,%
+\begin{equation*}
+v\left( t\right) =-\omega x_{\max }\sin \left( \omega t+\phi \right)
+\end{equation*}%
+so the kinetic energy as a function of time must be%
+\begin{eqnarray*}
+K &=&\frac{1}{2}m\left( -\omega x_{\max }\sin \left( \omega t+\phi \right)
+\right) ^{2} \\
+&=&\frac{1}{2}m\omega ^{2}x_{\max }^{2}\sin ^{2}\left( \omega t+\phi \right)
+\end{eqnarray*}%
+and now we know that $\omega =\sqrt{k/m},$ so we can write the kinetic
+energy as 
+\begin{eqnarray*}
+K &=& \\
+&=&\frac{1}{2}m\left( \sqrt{\frac{k}{m}}\right) ^{2}x_{\max }^{2}\sin
+^{2}\left( \omega t+\phi \right) \\
+&=&\frac{1}{2}m\frac{k}{m}x_{\max }^{2}\sin ^{2}\left( \omega t+\phi \right)
+\\
+&=&\frac{1}{2}kx_{\max }^{2}\sin ^{2}\left( \omega t+\phi \right)
+\end{eqnarray*}%
+As the spring is stretched or compressed we store energy as spring potential
+energy. The potential energy due to a spring acting on our SHO (mover mass)
+is given by 
+\begin{equation}
+U_{s}=\frac{1}{2}kx^{2}
+\end{equation}%
+For our SHO we also know the position as a function of time 
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+So, the potential energy as a function of time must be%
+\begin{equation*}
+U_{s}=\frac{1}{2}kx_{\max }^{2}\cos ^{2}\left( \omega t+\phi \right)
+\end{equation*}%
+\FRAME{dtbpF}{2.0906in}{0.981in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.0906in;height 0.981in;depth
+0in;original-width 2.1013in;original-height 0.9704in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90O.wmf';tempfile-properties "XPR";}}Let's say, again, that our
+oscillator is moving horizontally on a frictionless surface, and that we
+define the center of mass of our object so that it's $y$-position is right
+at $y=0$ so our object has zero gravitational potential energy%
+\begin{equation*}
+U_{g}=mgy=0
+\end{equation*}%
+so the total mechanical energy is given by%
+\begin{equation*}
+E=K+U_{s}
+\end{equation*}%
+which we can write out as%
+\begin{eqnarray*}
+E &=&K+U_{s} \\
+&=&\frac{1}{2}kx_{\max }^{2}\sin ^{2}\left( \omega t+\phi \right) +\frac{1}{2%
+}kx_{\max }^{2}\cos ^{2}\left( \omega t+\phi \right) \\
+&=&\frac{1}{2}kx_{\max }^{2}\left( \sin ^{2}\left( \omega t+\phi \right)
++\cos ^{2}\left( \omega t+\phi \right) \right) \\
+&=&\frac{1}{2}kx_{\max }^{2}
+\end{eqnarray*}%
+Where we have used the trig identity that $\sin ^{2}\left( \theta \right)
++\cos ^{2}\left( \theta \right) =1.$
+
+It tells us that if there are no loss mechanisms (e.g. no friction) then the
+energy in a harmonic oscillator never changes. And we remember that we would
+say that energy is conserved for such a situation, which is not surprising
+because we have already used conservation of energy for springs in PH121 and
+in the previous example. But let's give a new name to a quantity that does
+not change. Let's call it a \emph{constant of motion}. So we can make a
+statement about the total energy for our SHO.
+
+\begin{center}
+{\small \rule{300pt}{1pt}}
+
+{\small The total mechanical energy of an ideal SHO is a constant of motion}
+
+{\small \rule{300pt}{1pt}}
+\end{center}
+
+If we plot the amount of kinetic and potential energy for an oscillator we
+might find something like this:\FRAME{dtbpF}{4.7539in}{3.5699in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+4.7539in;height 3.5699in;depth 0pt;original-width 10.0258in;original-height
+7.5247in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90P.wmf';tempfile-properties "XPR";}}Note that the kinetic and
+potential energy are out of phase with each other. If we plot them on the
+same scale ( for the case $\phi _{o}=0$) we have\FRAME{dtbpF}{3.2655in}{%
+2.2364in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.2655in;height 2.2364in;depth 0pt;original-width 3.2206in;original-height
+2.1958in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90Q.wmf';tempfile-properties "XPR";}}
+
+Let's try another problem using energy of a SHO.
+
+\section{Mathematical Representation of Simple Harmonic Motion}
+
+We have a mathematical representation of simple harmonic motion from looking
+at our graph of position vs. time. But as a problem, let's use math and what
+we know from PH121 to show that our equation 
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t\right)
+\end{equation*}%
+must be right.
+
+Once again recall from PH 121 
+\begin{equation}
+a=\frac{dv}{dt}=\frac{d^{2}x}{dt^{2}}
+\end{equation}
+
+and let's assume we have SHO moving only in the $x$-direction. \FRAME{dtbpF}{%
+2.0649in}{0.9845in}{0in}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 2.0649in;height 0.9845in;depth 0in;original-width
+2.0755in;original-height 0.9739in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T8KIU90R.wmf';tempfile-properties "XPR";}}%
+Further assume the surface the object rests on is frictionless. Also let's
+say that the equilibrium position $x_{e}=0.$ Then we can write Newton's
+second law as%
+\begin{eqnarray}
+F_{net_{x}} &=&ma_{x}=-kx \\
+m\frac{d^{2}x}{dt^{2}} &=&-kx  \notag
+\end{eqnarray}%
+We have a new kind of equation. If you are taking this freshman class as
+a... well... freshman, you may not have seen this kind of equation before.
+It is called a differential equation. The solution of this equation is a
+function or functions that will describe the motion of our mass-spring
+system as a function of time. It says that the way the object moves is an
+equation where the second derivative is almost the same as the original
+function. The only difference is some constants that are multiplied.
+
+It is this function that we want, Let's rewrite it in terms of $\omega .$
+Start by getting all the constants on the same side of the equation. 
+\begin{equation*}
+\frac{d^{2}x}{dt^{2}}=-\frac{k}{m}x
+\end{equation*}%
+We found that $\omega =\sqrt{k/m}.$then 
+\begin{equation*}
+\omega ^{2}=\frac{k}{m}
+\end{equation*}
+Then we can write our differential equation as%
+\begin{equation}
+\frac{d^{2}x}{dt^{2}}=-\omega ^{2}x
+\end{equation}%
+We need a function who's second derivative is the negative of itself with
+just a constant out front. From Math 112 we know a few of these%
+\begin{eqnarray*}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t+\phi _{o}\right) \\
+x\left( t\right) &=&x_{\max }\sin \left( \omega t+\phi _{o}\right)
+\end{eqnarray*}%
+where $x_{\max },$ $\omega ,$ and $\phi _{o}$ are constants that we must
+find. Let's choose the cosine function and explicitly take it's derivatives
+to see if this function does solve our differential equation%
+\begin{eqnarray}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t+\phi _{o}\right) \\
+\frac{dx\left( t\right) }{dt} &=&-\omega x_{\max }\sin \left( \omega t+\phi
+_{o}\right)  \notag \\
+\frac{d^{2}x\left( t\right) }{dt^{2}} &=&-\omega ^{2}x_{\max }\cos \left(
+\omega t+\phi _{o}\right)  \notag
+\end{eqnarray}%
+Let's substitute these expressions into our differential equation for the
+motion%
+\begin{eqnarray*}
+\frac{d^{2}x}{dt^{2}} &=&-\omega ^{2}x \\
+-\omega ^{2}x_{\max }\cos \left( \omega t+\phi _{o}\right) &=&-\omega
+^{2}x_{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{eqnarray*}%
+As long as the constant $\omega ^{2}$ is our $\omega ^{2}=k/m$ we have a
+solution. We could have found that 
+\begin{equation*}
+\omega ^{2}=\frac{k}{m}
+\end{equation*}%
+by solving this differential equation, but it might not have been as
+meaningful that way. We can identify $\omega $ as the angular frequency.%
+\begin{equation*}
+\omega =2\pi f
+\end{equation*}
+
+Thus%
+\begin{equation}
+\omega =\sqrt{\frac{k}{m}}=2\pi f
+\end{equation}%
+This says that if the spring is stiffer, we get a higher frequency, or if
+the mass is larger, we get a lower frequency.
+
+We still don't have a complete solution, because we don't know $x_{\max }$
+and $\phi _{o}.$ We recognize $\phi _{o}$ as the initial phase angle. We
+will have to find this by knowing the initial conditions of the motion. $%
+x_{\max }$ is the amplitude. Let's look at a specific case%
+\begin{equation}
+\begin{tabular}{|l|}
+\hline
+$x_{\max }=5\unit{m}$ \\ \hline
+$\phi _{o}=0$ \\ \hline
+$\omega =2\unit{Hz}$ \\ \hline
+\end{tabular}%
+\end{equation}
+
+\FRAME{dtbpFX}{2.7812in}{1.8542in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.7812in;height 1.8542in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "-5";xmax "5";xviewmin "-5";xviewmax "5";yviewmin
+"-10";yviewmax "10";viewset"XY";rangeset"X";plottype 4;labeloverrides
+3;x-label "t";y-label "x";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{t};var1name
+\TEXUX{$t$};function \TEXUX{$5\cos \left( 2t+0\right) $};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "-5,5";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'T8KIU901.xvz';valid_file "T";tempfilename
+'T8KIU90S.wmf';tempfile-properties "XPR";}}The amplitude corresponds to the
+maximum displacement $x_{\max }.$ We know from trigonometry that a cosine
+function has a period $T.$
+
+\FRAME{fhF}{2.9101in}{1.9484in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.9101in;height 1.9484in;depth
+0pt;original-width 4.4616in;original-height 2.9793in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90T.wmf';tempfile-properties "XPR";}}The period is related to the
+frequency%
+\begin{equation}
+T=\frac{1}{f}=\frac{2\pi }{\omega }
+\end{equation}%
+We can write the period and frequency in terms of our mass and spring
+constant%
+\begin{eqnarray}
+T &=&2\pi \sqrt{\frac{m}{k}} \\
+f &=&\frac{1}{2\pi }\sqrt{\frac{k}{m}}
+\end{eqnarray}
+
+From our graph we were able to complete our problem. But more importantly we
+have two new equations for $T$ and $f$ that will help us solve more problems.
+
+\subsection{Hanging Springs}
+
+Let's do a problem. We now know we have forces involved with our SHOs. So
+let's do a force problem. In class so far, I have always hung our masses and
+springs, but we have used horizontal systems for calculations. Let's find
+the equation of motion for a mass hanging from a spring.
+
+\FRAME{dtbpF}{3.429in}{1.9977in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.429in;height 1.9977in;depth
+0in;original-width 3.3831in;original-height 1.9579in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90U.wmf';tempfile-properties "XPR";}}
+
+From observation, we would guess that we can just choose the new equilibrium
+point to be $y=0$ and use the same equation%
+\begin{equation*}
+y\left( t\right) =y_{\max }\cos (\omega t-\phi _{o})
+\end{equation*}%
+let's see if that is true. Start with a free body diagram for the mass (the
+hanging mass is our mover, the spring is part of the environment). There are
+two forces acting on the mass. The force due to gravity, and the force due
+to the spring.\FRAME{dtbpF}{0.683in}{2.1589in}{0in}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 0.683in;height 2.1589in;depth
+0in;original-width 0.667in;original-height 2.1713in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90V.wmf';tempfile-properties "XPR";}}From our free body diagram we can
+write out a Newton's second law equation%
+\begin{equation*}
+\Sigma F_{y}=ma_{y}=S_{ms}-W_{mE}
+\end{equation*}%
+We know the form of these forces%
+\begin{eqnarray*}
+S_{ms} &=&-k\Delta y \\
+W_{mE} &=&-mg
+\end{eqnarray*}%
+but we need to carefully choose our origin. Let's try the top of the spring
+where it attaches to the stand. If the mass just hangs there we would expect
+the spring to stretch to an equilibrium length $y_{e}$ and any other motion
+would either shorten or lengthen the spring. We can write our force equation
+as 
+\begin{eqnarray*}
+ma_{y} &=&S_{ms}-W_{mE} \\
+&=&-k\left( y-y_{e}\right) -mg
+\end{eqnarray*}%
+where $y$ can be positive or negative. If $y=0$ and the mass is just sitting
+there, not oscillating, there is no acceleration. Then the stretched length
+is just $y_{e}.$ In this case%
+\begin{eqnarray*}
+m\left( 0\right) &=&k\left( 0-y_{e}\right) -mg \\
+ky_{em} &=&mg
+\end{eqnarray*}%
+But now let's let our mass move again. We can substitute our stationary mass
+answer this into the previous equation for a moving mass%
+\begin{eqnarray*}
+ma &=&-k\left( y-y_{e}\right) -mg \\
+&=&ky_{e}-ky-mg \\
+&=&mg-ky-mg \\
+&=&-ky
+\end{eqnarray*}%
+This gives a net force for the system of 
+\begin{equation*}
+F_{net}=-ky
+\end{equation*}%
+It is as though the system were horizontal with no gravitational force and
+only a spring force. We can see that we are justified in claiming that we
+could simply choose the origin at the distance $y_{em}$ from the top of the
+spring, and we can use the equation 
+\begin{equation*}
+y\left( t\right) =y_{\max }\cos (\omega t-\phi _{o})
+\end{equation*}%
+as our equation of motion.
+
+From what we have done so far, it seems like we totally redefined $\omega $
+for this second physics class. But really there is a relationship between
+angular velocity $\omega $ and angular frequency $\omega .$ We will explore
+this in our next lecture. We will also ask what to do when there is friction.
+
+\chapter{3 More Oscillators, Forces and Friction 1.15.4 1.15.5 1.15.6}
+
+%TCIMACRO{\TeXButton{\chaptermark{Oscillators}}{\chaptermark{Oscillators}}}%
+%BeginExpansion
+\chaptermark{Oscillators}%
+%EndExpansion
+
+You have probably wondered if anyone actually uses mass-spring systems. And
+we do. They were more common in the past where springs were used to store
+energy ($U_{s\text{ }}$) to run clocks and toys and machines. But simple
+harmonic motion can describe other systems as well. You have probably seen
+an old fashioned clock with a pendulum. A pendulum almost experiences simple
+harmonic motion. Let's see how this works.
+
+%TCIMACRO{%
+%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
+%BeginExpansion
+\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
+%EndExpansion
+
+\begin{itemize}
+\item Relationship between Simple Harmonic Motion and circular motion.
+
+\item Pendula
+
+\item Damping
+
+\item Driving
+
+\item Resonance
+\end{itemize}
+
+\section{Comparing Simple Harmonic Motion with Uniform Circular Motion}
+
+You might have objected to our use of $\omega $ as angular frequency. Didn't 
+$\omega $ mean angular speed in PH121?
+
+That circular motion and SHM are related should not be a surprise once we
+found the solutions to the equations of motion were trig functions. Recall
+that the trig functions are defined on a unit circle
+
+\FRAME{dtbpF}{2.2866in}{2.3186in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.2866in;height 2.3186in;depth
+0in;original-width 2.2468in;original-height 2.2788in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90W.wmf';tempfile-properties "XPR";}}%
+\begin{eqnarray}
+\tan \theta &=&\frac{x}{y} \\
+\cos \theta &=&\frac{x}{h} \\
+\sin \theta &=&\frac{y}{h}
+\end{eqnarray}
+
+Let's relate this to our SHM equations of motion.\FRAME{dtbpF}{1.7876in}{%
+1.7487in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.7876in;height 1.7487in;depth 0pt;original-width 1.7504in;original-height
+1.7115in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90X.wmf';tempfile-properties "XPR";}}Look at the projection $x$ of the
+point $P$ on the $x$ axis. This is just the $x$-component of the position!
+Lets follow this projection as $P$ travels around the circle. We find the
+projection ranges from $-x_{\max }$ to $x_{\max }.$ If we watch closely we
+find the projection's velocity is zero at the extreme points and is a
+maximum in the middle. This projection is given as the cosine of the vector
+from the origin to $P.$ It is just taking the $x$-component! This
+projection, indeed fits our SHO solution.
+
+Now lets define a projection of $P$ onto the $y$ axis. Again we have SHM,
+but this time the projection is a sine function. Because 
+\begin{equation}
+\cos \left( \theta -\frac{\pi }{2}\right) =\sin \left( \theta \right)
+\end{equation}%
+we can see that this is just a SHO that is $90\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}=\frac{\pi }{2}\unit{rad}$ out of phase. It is probably worth recalling
+that a projection of one vector on another can be expressed by a dot
+product. We could express our length $x$ as 
+\begin{equation*}
+x=\overrightarrow{\mathbf{r}}\cdot \mathbf{\hat{\imath}}=r\cos \theta
+\end{equation*}%
+where $r$ is the radius of the circle. \FRAME{dtbpF}{2.3687in}{2.3186in}{0in%
+}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.3687in;height 2.3186in;depth 0in;original-width 2.3281in;original-height
+2.2788in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90Y.wmf';tempfile-properties "XPR";}}We can see that when $\theta =0$
+we have $x=r$ and this will be the largest $x$ value, so $r=x_{\max }.$
+
+So by projecting circular motion onto the $x$-axis 
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \theta \right)
+\end{equation*}%
+But $\theta $ changes in time. We can recall from our PH121 or Dynamics
+experience that the angular speed 
+\begin{equation*}
+\omega =\frac{\Delta \theta }{\Delta t}
+\end{equation*}%
+or, if we agree to start from $\theta _{i}=0$ and $t_{i}=0,$ 
+\begin{equation*}
+\omega =\frac{\theta }{t}
+\end{equation*}%
+so 
+\begin{equation*}
+\theta =\omega t
+\end{equation*}%
+then we have 
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t\right)
+\end{equation*}%
+Which is just our equation for SHM. Now we can see why we used
+\textquotedblleft $\omega $\textquotedblright\ for both angular speed and
+angular frequency. Really they are very related. Both tell us something
+about how fast a cyclic event happens. For motion around a circle, one is
+how fast the point $P$ goes around the circle, and the other is how often
+the projection goes back and forth. It makes sense that these have to be the
+same rate.\FRAME{dtbpFU}{2.5694in}{2.5201in}{0pt}{\Qcb{The projection of
+circular motion onto the $x$-axis gives simple harmonic motion.}}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.5694in;height 2.5201in;depth
+0pt;original-width 2.5287in;original-height 2.4785in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU90Z.wmf';tempfile-properties "XPR";}}
+
+Let's go back to our projection on the $y$-axis.\FRAME{dtbpF}{2.2753in}{%
+2.2269in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.2753in;height 2.2269in;depth 0pt;original-width 2.2355in;original-height
+2.1862in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T8KIU910.wmf';tempfile-properties "XPR";}}We found that we can describe
+this projection as 
+\begin{equation*}
+y\left( t\right) =y_{\max }\sin \left( \omega t\right)
+\end{equation*}
+
+We will choose the cosine function, but from our trig experience it should
+be clear that these projections are equivalent, just $90\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}$ out of phase
+
+\begin{equation*}
+\cos \left( \theta \pm \frac{\pi }{2}\right) =\mp \sin \theta
+\end{equation*}
+
+So%
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+could be a sine function if $\phi _{o}=\pm \pi /2.$ In this way we have
+incorporated both possibilities into one function.
+
+Note that this is just the function we guessed from our observation!
+
+\begin{center}
+{\small \rule{300pt}{1pt}}
+
+{\small We see that uniform circular motion can be thought of as the
+combination of two SHOs, with a phase difference of }$\pi /2\unit{rad}.$
+
+{\small The angular velocity is given by}%
+\begin{equation}
+\omega =\frac{v}{r}
+\end{equation}
+
+{\small \rule{300pt}{1pt}}
+\end{center}
+
+\FRAME{dtbpF}{2.5997in}{2.6184in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.5997in;height 2.6184in;depth
+0pt;original-width 2.6201in;original-height 2.6388in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU911.wmf';tempfile-properties "XPR";}}A particle traveling on the $x$%
+-axis in SHM will travel from $x_{\max }\ $to $-x_{\max }$ and from $%
+-x_{\max }\ $to $x_{\max }$ (one complete period, $T$) while the particle
+traveling with $P$ makes one complete revolution. Thus, the angular
+frequency $\omega $ of the SHO and the angular velocity of the particle at $%
+P $ are the same. The magnitude of the tangential velocity is then%
+\begin{equation}
+v_{t}=\omega r=\omega x_{\max }
+\end{equation}%
+and the projection of this velocity onto the $x$-axis is 
+\begin{equation}
+v_{tx}=-\omega x_{\max }\sin \left( \omega t+\phi _{o}\right)
+\end{equation}%
+Which is just what we expected from our earlier observation!\FRAME{dtbpF}{%
+2.4794in}{2.5079in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 2.4794in;height 2.5079in;depth 0pt;original-width
+2.4388in;original-height 2.4664in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T8KIU912.wmf';tempfile-properties "XPR";}}
+
+The centripetal acceleration of a particle at $P$ is given by 
+\begin{equation}
+a_{c}=\frac{v_{t}^{2}}{r}=\frac{v_{t}^{2}}{x_{\max }}=\frac{\omega
+^{2}x_{\max }^{2}}{x_{\max }}=\omega ^{2}x_{\max }
+\end{equation}%
+The direction of the acceleration is inward toward the origin. Of course, we
+just want the $x$-component of this, so again we make a projection. If we
+project this onto the $x$-axis we have%
+\begin{equation}
+a_{x}=-\omega ^{2}x_{\max }\cos \left( \omega t+\phi \right)
+\end{equation}%
+Again this is just want we expected from our observation.
+
+So now we have shown that our set of equations 
+\begin{eqnarray}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t\right) \\
+v\left( t\right) &=&-\omega x_{\max }\sin \left( \omega t\right)  \notag \\
+a\left( t\right) &=&-\omega ^{2}x_{\max }\cos \left( \omega t\right)  \notag
+\end{eqnarray}%
+is correct for our harmonic oscillator.
+
+\section{Our first problem type: Simple Harmonic Motion}
+
+You have probably thought by now that we have a new problem type. We can
+call it the \emph{simple harmonic motion }problem type or SHM. The equations
+we have so far for this problem type are 
+\begin{eqnarray}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t+\phi _{o}\right) \\
+v\left( t\right) &=&-\omega x_{\max }\sin \left( \omega t+\phi _{o}\right) 
+\notag \\
+a\left( t\right) &=&-\omega ^{2}x_{\max }\cos \left( \omega t+\phi
+_{o}\right)  \notag
+\end{eqnarray}%
+\begin{equation*}
+\omega =2\pi f
+\end{equation*}
+
+\begin{equation*}
+v_{m}=\omega x_{m}
+\end{equation*}
+
+\begin{equation*}
+a_{m}=\omega ^{2}x_{m}
+\end{equation*}%
+\begin{equation*}
+T=\frac{1}{f}
+\end{equation*}
+
+\begin{equation*}
+U_{s}=\frac{1}{2}kx_{\max }^{2}\cos ^{2}\left( \omega t+\phi \right)
+\end{equation*}%
+\begin{equation*}
+K=\frac{1}{2}m\omega ^{2}x_{\max }^{2}\sin ^{2}\left( \omega t+\phi \right)
+\end{equation*}
+
+\begin{eqnarray}
+T &=&2\pi \sqrt{\frac{m}{k}} \\
+f &=&\frac{1}{2\pi }\sqrt{\frac{k}{m}}
+\end{eqnarray}
+
+We have used energy to describe simple harmonic motion, and we have found
+our equation of motion using a differential equation for mass-spring
+systems. And we have simple harmonic motion in the $y$-direction including
+the weight force due to gravity for mass-spring systems. But there are other
+systems that exhibit simple harmonic motion and many others that nearly
+exhibit simple harmonic motion. Let's study a few of these systems.
+
+\section{The Simple Pendulum}
+
+\FRAME{dtbpF}{1.7305in}{1.6737in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.7305in;height 1.6737in;depth
+0pt;original-width 1.7349in;original-height 1.6773in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8KIU913.wmf';tempfile-properties "XPR";}}A simple pendulum is a mass on a
+string. The mass is called a \textquotedblleft bob.\textquotedblright\
+Usually we study the motion of the pendulum bob, so let's consider the
+pendulum the mover object. A simple pendulum bob exhibits periodic motion,
+but not exactly simple harmonic motion. Let's set up our pendulum and
+measure an angle $\theta $ starting with $\theta =0$ when the pendulum is
+just hanging. Then as the pendulum moves up $\theta $ will increase.
+
+The forces on the bob are gravity $\overrightarrow{\mathbf{W}}$, and $%
+\overrightarrow{\mathbf{T}}$ the tension on the string. The tangential
+component of $W$ is always directed toward $\theta =0$, the just hanging
+equilibrium position. This is a restoring force! Let's call the path the bob
+takes \textquotedblleft $s$\textquotedblright\ because it is an arclength.\
+Then from Jr. High geometry we recall\footnote{%
+Really I did not recall this, I\ have to look it up every time, but $s$ is
+called the \emph{arclength}.}%
+\begin{equation}
+s=L\theta
+\end{equation}%
+We will use a the cylindrical or $rtz$ coordinate system. The radial axis is
+directed along the string. The tangential direction is along the circular
+path the bob takes and is always tangent to the path. In this coordinate
+system, we can solve for the part of the force directed along the path. This
+is the restoring part of the net force. Remember from Newton's second law
+the radial and tangential components of the force are 
+\begin{eqnarray*}
+F_{r} &=&ma_{r} \\
+F_{t} &=&ma_{t}
+\end{eqnarray*}%
+and 
+\begin{equation*}
+a_{t}=\frac{d^{2}s}{dt^{2}}
+\end{equation*}%
+Let's write out Newton's second law equations with the sum of the forces
+part.%
+\begin{eqnarray*}
+-ma_{r} &=&-T+W\sin \left( 90\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}-\theta \right) \\
+ma_{t} &=&-W\cos \left( 90\unit{%
+%TCIMACRO{\U{b0}}%
+%BeginExpansion
+{{}^\circ}%
+%EndExpansion
+}-\theta \right)
+\end{eqnarray*}%
+The second, tangential equation is the important one. It tells us how the
+bob will move. Let's use another trig identity 
+\begin{equation*}
+\cos \left( \frac{\pi }{2}-\theta \right) =\sin \left( \theta \right)
+\end{equation*}%
+Then our tangential Newton's second law equation becomes%
+\begin{equation*}
+ma_{t}=-W\sin \left( \theta \right)
+\end{equation*}%
+and we can solve for the tangential acceleration, $a_{t}$ 
+\begin{eqnarray*}
+a_{t} &=&-\frac{W}{m}\sin \left( \theta \right) \\
+&=&-g\sin \theta
+\end{eqnarray*}
+
+We have two expressions for $a_{t.}$ We can set them equal 
+\begin{equation}
+\frac{d^{2}s}{dt^{2}}=-g\sin \theta  \label{pendulum1}
+\end{equation}%
+Remember that $s=L\theta $ so we could write the left hand side as%
+\begin{equation*}
+\frac{d^{2}s}{dt^{2}}=\frac{d^{2}}{dt^{2}}\left( L\theta \right) =L\frac{%
+d^{2}}{dt^{2}}\left( \theta \right)
+\end{equation*}%
+then equation (\ref{pendulum1}) becomes%
+\begin{equation*}
+L\frac{d^{2}}{dt^{2}}\left( \theta \right) =-g\sin \theta
+\end{equation*}%
+or 
+\begin{equation*}
+\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta
+\end{equation*}%
+This is a differential equation much like our differential equation for a
+harmonic oscillator, 
+\begin{equation*}
+\frac{d^{2}x}{dt^{2}}=-\omega ^{2}x
+\end{equation*}%
+except it has a sine function in it. But, if we take $\theta $ as a very
+small angle, then 
+\begin{equation}
+\sin \left( \theta \right) \approx \theta  \label{small angle approximation}
+\end{equation}%
+We can plot this to see that it works. The red curve is $y=\sin \left(
+\theta \right) $ and the blue curve is $y=\theta $ and both are plotted as a
+function of $\theta .$ Notice that for less than $\theta <1\unit{rad}$ the
+blue and red curves look a lot a like.
+
+\end{document}
