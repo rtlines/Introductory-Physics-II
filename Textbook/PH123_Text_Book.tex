@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Thursday, January 08, 2026 17:03:28}
+%TCIDATA{LastRevised=Tuesday, January 20, 2026 13:28:39}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -109,7 +109,7 @@ purposes. All other rights are reserved.
 \item Mathematical description of Simple Harmonic Motion
 \end{itemize}
 
-\section{1 Oscillation and Simple Harmonic Motion}
+\section{1 Oscillation and Simple Harmonic Motion (SHM)}
 
 Last semester, in PH121 (or Dynamics) you studied how things move. We
 identified a moving object (I often refer to this object as the \emph{mover
@@ -1855,27 +1855,27 @@ a_{t} &=&-\frac{W}{m}\sin \left( \theta \right) \\
 
 We have two expressions for $a_{t.}$ We can set them equal 
 \begin{equation}
-\frac{d^{2}s}{dt^{2}}=-g\sin \theta   \label{pendulum1}
+\frac{d^{2}s}{dt^{2}}=-g\sin \theta  \label{pendulum1}
 \end{equation}%
 Remember that $s=L\theta $ so we could write the left hand side as%
 \begin{equation*}
 \frac{d^{2}s}{dt^{2}}=\frac{d^{2}}{dt^{2}}\left( L\theta \right) =L\frac{%
-d^{2}}{dt^{2}}\left( \theta \right) 
+d^{2}}{dt^{2}}\left( \theta \right)
 \end{equation*}%
 then equation (\ref{pendulum1}) becomes%
 \begin{equation*}
-L\frac{d^{2}}{dt^{2}}\left( \theta \right) =-g\sin \theta 
+L\frac{d^{2}}{dt^{2}}\left( \theta \right) =-g\sin \theta
 \end{equation*}%
 or 
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta 
+\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta
 \end{equation*}%
 This is a differential equation much like our differential equation for a
 harmonic oscillator, 
 \begin{equation*}
 \frac{d^{2}x}{dt^{2}}=-\omega ^{2}x
 \end{equation*}%
-except it has a sine function in it. 
+except it has a sine function in it.
 
 Let's look at our sine function for a minute. Suppose we measure the angle
 in radians (because we do!) and we plot the sine function $y=\sin \left(
@@ -1888,18 +1888,18 @@ TRUE;display "USEDEF";valid_file "T";width 4.0083in;height 1.9904in;depth
 $ (dark blue line). Notice that below $\theta =1$ the two curves look a lot
 a like! If we go even smaller, say $\theta <0.7\unit{rad}$ the curves are
 essentially the same. Suppose we only let our pendulum swing with small
-angles, then  
+angles, then 
 \begin{equation}
-\sin \left( \theta \right) \approx \theta   \label{small angle approximation}
+\sin \left( \theta \right) \approx \theta  \label{small angle approximation}
 \end{equation}
 
 and 
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta 
+\frac{d^{2}\theta }{dt^{2}}=-\frac{g}{L}\sin \theta
 \end{equation*}%
 becomes 
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}\approx -\frac{g}{L}\sin \theta 
+\frac{d^{2}\theta }{dt^{2}}\approx -\frac{g}{L}\sin \theta
 \end{equation*}%
 This is a differential equation much like our differential equation for a
 harmonic oscillator, 
@@ -1917,11 +1917,11 @@ or
 And since the differential equations look the same they have to have the
 same solutions. We have a solution that is an equation only instead of 
 \begin{equation*}
-x\left( t\right) =x_{\max }\cos \left( \omega t+\phi _{o}\right) 
+x\left( t\right) =x_{\max }\cos \left( \omega t+\phi _{o}\right)
 \end{equation*}%
-we have an equation for $\theta \left( t\right) $  
+we have an equation for $\theta \left( t\right) $ 
 \begin{equation*}
-\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right) 
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
 \end{equation*}%
 Since $\omega $ is different for the pendulum, the frequency and period will
 also be different. Instead of being functions of $k$ and $m$ then are now in
@@ -1969,8 +1969,8 @@ Newton's second law for rotation.%
 In our case this is%
 \begin{eqnarray*}
 \overrightarrow{\tau } &=&\overrightarrow{d}\times \overrightarrow{W} \\
-\tau  &=&-F_{g}d\sin \theta  \\
-&=&-mgd\sin \theta 
+\tau &=&-F_{g}d\sin \theta \\
+&=&-mgd\sin \theta
 \end{eqnarray*}%
 Remember that an extended body has a moment of inertia, $\mathbb{I}.$
 Remember also that angular acceleration is given by
@@ -1982,7 +1982,7 @@ Remember also that angular acceleration is given by
 From the rotational form of Newton's Second Law for rotation.%
 \begin{eqnarray*}
 \Sigma \overrightarrow{\tau } &=&\mathbb{I}\overrightarrow{\alpha } \\
-\tau  &=&\mathbb{I}\alpha 
+\tau &=&\mathbb{I}\alpha
 \end{eqnarray*}
 
 we can write%
@@ -1991,13 +1991,12 @@ we can write%
 \end{equation*}%
 Getting all the constants together gives%
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}=-\frac{mgd}{\mathbb{I}}\sin \left( \theta
-\right) 
+\frac{d^{2}\theta }{dt^{2}}=-\frac{mgd}{\mathbb{I}}\sin \left( \theta \right)
 \end{equation*}%
 and again if we let $\theta $ be small so that $\sin \left( \theta \right)
 \approx \theta $%
 \begin{equation*}
-\frac{d^{2}\theta }{dt^{2}}\approx -\frac{mgd}{\mathbb{I}}\theta 
+\frac{d^{2}\theta }{dt^{2}}\approx -\frac{mgd}{\mathbb{I}}\theta
 \end{equation*}%
 which we can compare to 
 \begin{equation*}
@@ -2010,7 +2009,7 @@ and we can see that we have the same differential equation if
 
 In this case%
 \begin{equation*}
-\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right) 
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
 \end{equation*}%
 \begin{equation}
 T=2\pi \sqrt{\frac{\mathbb{I}}{mgd}}
@@ -2039,18 +2038,18 @@ TRUE;display "USEDEF";valid_file "T";width 4.5844in;height 1.8273in;depth
 restoring torque on the body that is proportional to the angular position
 (sound familiar).%
 \begin{equation*}
-\tau =-\kappa \theta 
+\tau =-\kappa \theta
 \end{equation*}%
 This looks like a greek version of $F=-kx$! Again, let's use Newton's Second
 Law for rotation.%
 \begin{eqnarray*}
-\Sigma \tau  &=&\mathbb{I}\alpha  \\
+\Sigma \tau &=&\mathbb{I}\alpha \\
 &=&\mathbb{I}\frac{d^{2}\theta }{dt^{2}}
 \end{eqnarray*}%
 so%
 \begin{eqnarray*}
-\mathbb{I}\frac{d^{2}\theta }{dt^{2}} &=&-\kappa \theta  \\
-\frac{d^{2}\theta }{dt^{2}} &=&-\frac{\kappa }{\mathbb{I}}\theta 
+\mathbb{I}\frac{d^{2}\theta }{dt^{2}} &=&-\kappa \theta \\
+\frac{d^{2}\theta }{dt^{2}} &=&-\frac{\kappa }{\mathbb{I}}\theta
 \end{eqnarray*}%
 Once again we have our favorite differential equation so long as 
 \begin{equation}
@@ -2058,7 +2057,7 @@ Once again we have our favorite differential equation so long as
 \end{equation}%
 which gives us a solution equation 
 \begin{equation*}
-\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right) 
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
 \end{equation*}%
 and makes the period of the oscillation%
 \begin{equation}
@@ -2106,8 +2105,9 @@ no oscillation
 ma_{y} &=&S_{ms}-W_{mE} \\
 &=&-k\left( y-y_{e}\right) -mg
 \end{eqnarray*}%
-and while the mass just sits there the acceleration would be zero so $a_{y}=0
-$ and let's define our coordinate system so where the mass hangs is $y=0$%
+and while the mass just sits there the acceleration would be zero so $%
+a_{y}=0 $ and let's define our coordinate system so where the mass hangs is $%
+y=0$%
 \begin{equation*}
 m\left( 0\right) =-k\left( 0-y_{e}\right) -mg
 \end{equation*}%
@@ -2147,7 +2147,7 @@ That is, until you finish M316, then you will know how to do this kind of
 problem yourself!}. Here is the solution:%
 \begin{equation}
 y\left( t\right) =y_{\max }e^{-\frac{b}{2m}t}\cos \left( \omega t+\phi
-_{o}\right)   \label{dampped solution}
+_{o}\right)  \label{dampped solution}
 \end{equation}%
 which looks simple enough, but now we $\ $have the added complication that $%
 \omega $ is more complex 
@@ -2158,7 +2158,7 @@ so we get quite a mess if we write equation (\ref{dampped solution}) with
 this new $\omega .$%
 \begin{equation}
 y\left( t\right) =y_{\max }e^{-\frac{b}{2m}t}\cos \left( \left( \sqrt{\frac{k%
-}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi _{o}\right) 
+}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi _{o}\right)
 \end{equation}
 
 To see what this solution means, we should study three cases:
@@ -2166,12 +2166,12 @@ To see what this solution means, we should study three cases:
 \begin{enumerate}
 \item the damping force is small: ($bv_{\max }<ky_{\max })$ The system
 oscillates, but the amplitude is smaller as as time goes on. We call this
-\textquotedblleft underdamped.\textquotedblright 
+\textquotedblleft underdamped.\textquotedblright
 
 \item the damping force is large: ($bv_{\max }>ky_{\max })$The system does
 not oscillate. we call this \textquotedblleft overdamped.\textquotedblright\
-We can also say that $\frac{b}{2m}>\omega _{o}$ (after we define $\omega _{o}
-$ below)
+We can also say that $\frac{b}{2m}>\omega _{o}$ (after we define $\omega
+_{o} $ below)
 
 \item The system is \textquotedblleft critically damped\textquotedblright\
 (see below).
@@ -2226,7 +2226,7 @@ part. It is marked in curly braces blow
 \begin{equation*}
 y\left( t\right) =\left\{ y_{\max }e^{-\frac{b}{2m}t}\right\} \cos \left(
 \left( \sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi
-_{o}\right) 
+_{o}\right)
 \end{equation*}%
 We know that the part of the equation that multiplies the cosine part is the
 amplitude. But now the amplitude is more than just $x_{\max }.$ And notice
@@ -2348,8 +2348,9 @@ if all the molecules moved together in the same direction (more or less) and
 at the same speed (more or less)? This is what we call wind! Of course we
 can have bulk motion of millions of objects, like wind. We are going to
 study an even more specific motion of millions of object that is not random
-like thermal motion. This specific motion of the objects we will call a 
-\emph{wave.}
+like thermal motion. This specific motion of the objects moving together in
+an organized way we will call a \emph{wave.} Waves come from oscillation, so
+let's finish up our study of oscillation first.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -2391,10 +2392,13 @@ where $F_{o}$ is a constant.%
 \end{equation*}
 
 When this system starts out, the solution is very messy. It is so messy that
-we will not give it in this class! (So maybe this isn't really a good way to
-drive a child on a swing). But after a while, a steady-state is reached. In
+we will not give it in this class!\footnote{%
+So maybe this isn't really a good way to drive a child on a swing, be
+careful to not knock the child out of the swing as the system starts up!}
+But after a while, the system calms down and a steady-state is reached. In
 this state, the energy added by our driving force $F_{o}\sin \left( \omega
-_{f}t\right) $ is equal to the energy lost by the drag force, and we have 
+_{f}t\right) $ is equal to the energy lost by the drag force, and we have
+and equation of motion for our forced oscillator that is just 
 \begin{equation*}
 x\left( t\right) =A\cos \left( \omega _{f}t+\phi \right)
 \end{equation*}%
@@ -2410,8 +2414,9 @@ where%
 is the natural frequency. This is the frequency we had before when we
 weren't pushing the oscillator. And recall that $\omega _{f}$ is the
 frequency of our force. So now our solution looks more like our original SHM
-solution except for the wild formula for $A$. In fact, it operates very like
-our SHM solution. But what does the new version of $A$ mean?
+solution except for the wild formula for the amplitude. In fact, it operates
+very like our SHM solution. But what does the new version of the amplitude
+mean?
 
 Lets look at $A$ for some values of $\omega _{f}.$ I will pick some nice
 numbers for the other values.%
@@ -2425,21 +2430,12 @@ $m=0.5\unit{kg}$ \\ \hline
 $\phi _{o}=0$ \\ \hline
 \end{tabular}%
 \end{equation*}%
-The graph looks like this:\FRAME{dtbpFX}{4.4996in}{3in}{0pt}{}{}{Plot}{%
-\special{language "Scientific Word";type "MAPLEPLOT";width 4.4996in;height
-3in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
-FALSE;lastEngine "MuPAD";xmin "0";xmax "3";xviewmin "0";xviewmax
-"3";yviewmin "0";yviewmax "250.7930";viewset"XY";rangeset"X";plottype
-4;labeloverrides 3;x-label "omega_f (rad/sec)";y-label "y(m)";axesFont
-"Times New Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{v58147};var1name
-\TEXUX{$\omega $};function \TEXUX{$\allowbreak
-\frac{20.0}{\sqrt{0.0001\omega ^{2}+\left( \omega ^{2}-1.0\right)
-^{2}}}$};linecolor "green";linestyle 1;pointstyle "point";linethickness
-1;lineAttributes "Solid";var1range "0,3";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";VCamFile
-'SV4M4M0O.xvz';valid_file "T";tempfilename
-'SUS73U1A.wmf';tempfile-properties "XPR";}}Now let's calculate $\omega _{o}$ 
+The graph looks like this:\FRAME{dtbpF}{3.6428in}{2.5252in}{0in}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.6428in;height 2.5252in;depth
+0in;original-width 3.6845in;original-height 2.5439in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8LYFW02.wmf';tempfile-properties "XPR";}}Now let's calculate $\omega _{o}$ 
 \begin{eqnarray*}
 \omega _{o} &=&\sqrt{\frac{0.5\frac{\unit{N}}{\unit{m}}}{0.5\unit{kg}}} \\
 &=&\allowbreak \frac{1.0}{\unit{s}}
@@ -2471,38 +2467,20 @@ if our force is constant. The rate at which work is done (power) is
 _{o}\right)
 \end{eqnarray}%
 if $F$ and $v$ are in phase $(\phi _{o}=0)$, the power will be at a maximum!
-Think of pushing the child on the swing. You push in phase with the
-oscillation of the child. When you do this the amplitude of the swing get's
-bigger.
+Think of pushing a child on a swing. You push in phase with the oscillation
+of the child. When you do this the amplitude of the swing get's bigger.
 
 We can plot $A$ for several values of $b,$ our damping (friction)
-coefficient.\FRAME{dtbpFUX}{4.4996in}{3in}{0pt}{\Qcb{Green: b=0.005kg/s;
-Blue: b=0.05kg/s; Red b=0.01 kg/s}}{}{Plot}{\special{language "Scientific
-Word";type "MAPLEPLOT";width 4.4996in;height 3in;depth 0pt;display
-"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
-"0";xmax "3";xviewmin "0";xviewmax "3";yviewmin "0";yviewmax
-"250.7930";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label
-"omega(rad/sec)";y-label "y(m)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{v58147};var1name
-\TEXUX{$\omega $};function \TEXUX{$\allowbreak
-\frac{20.0}{\sqrt{0.0001\omega ^{2}+\left( \omega ^{2}-1.0\right)
-^{2}}}$};linecolor "green";linestyle 1;pointstyle "point";linethickness
-1;lineAttributes "Solid";var1range "0,3";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function
-\TEXUX{$\frac{20.0}{\sqrt{1\omega ^{2}+\left( \omega ^{2}-1.0\right)
-^{2}}}$};linecolor "blue";linestyle 1;pointstyle "point";linethickness
-1;lineAttributes "Solid";var1range "0,3";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";function
-\TEXUX{$\frac{20.0}{\sqrt{0.01\omega ^{2}+\left( \omega ^{2}-1.0\right)
-^{2}}}$};linecolor "red";linestyle 1;pointstyle "point";linethickness
-1;lineAttributes "Solid";var1range "0,3";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00ff0000]";curveStyle "Line";VCamFile
-'SV4M4K0N.xvz';valid_file "T";tempfilename
-'SUS73U1B.wmf';tempfile-properties "XPR";}}As $b\rightarrow 0$ we see that
+coefficient.\FRAME{dtbpFU}{3.9763in}{2.7328in}{0pt}{\Qcb{{\protect\small %
+Green: b=0.005kg/s; Blue: b=0.05kg/s; Red b=0.01 kg/s}}}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.9763in;height 2.7328in;depth
+0pt;original-width 4.0242in;original-height 2.7559in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8LYK304.wmf';tempfile-properties "XPR";}}As $b\rightarrow 0$ we see that
 our resonance peak gets larger. In real systems $b$ can never be zero, but
-sometimes it can get small. As $b\rightarrow $large, the resonance dies down
-and our $A$ gets small.
+sometimes it can get small. As $b$ gets large, the resonance dies down and
+our $A$ gets small.
 
 Resonance can be great, it can make a musical instrument sound louder (more
 on this later). But it can also be bad. Here is a picture of the Tacoma
@@ -2512,17 +2490,18 @@ Narrows Bridge (Image in the Public Domain)}}{}{Figure}{\special{language
 "USEDEF";valid_file "T";width 2.9528in;height 2.2316in;depth
 0pt;original-width 4.1252in;original-height 3.1107in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73U1C.bmp';tempfile-properties "XPR";}}The wind gusts formed a periodic
+'SUS73U1C.bmp';tempfile-properties "XPR";}}The wind formed a periodic
 driving force that allowed a driving harmonic oscillation to form. Since the
-bridge was resonant with the gust frequency, the amplitude grew until the
+bridge was resonant with the wind frequency, the amplitude grew until the
 bridge materials broke. Resonance can be a bad thing for structures.
+
+We have learned a lot about oscillation. Now let's turn our attention to
+something that results from oscillation, waves.
 
 \section{What is a Wave?}
 
 Waves are organized motions in a group of objects. We will give a name to
 the group of objects, we will call a \emph{medium}.
-
-\subsection{Criteria for being a wave}
 
 Waves involve energy transfer, but in the case of waves the energy is
 transferred through space without transfer of matter. Winds transfers both
@@ -2553,8 +2532,6 @@ In the limit that the string mass is negligible we represent a
 one-dimensional wave mathematically as a function of two variables, position
 and time, $y\left( x,t\right) .$
 
-\subsection{Longitudinal vs. transverse}
-
 We divide the various kinds of waves that occur into two basic types:
 
 \begin{center}
@@ -2578,11 +2555,9 @@ elements of the medium to move parallel to the direction of propagation
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U1D.wmf';tempfile-properties "XPR";}}
 
-\subsection{Examples of waves:}
-
 Let's look at some specific cases of wave motion.
 
-\subsubsection{A pulse on a rope:}
+\textbf{A pulse on a rope:}
 
 \FRAME{dhF}{1.3837in}{1.8273in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -2592,12 +2567,13 @@ Let's look at some specific cases of wave motion.
 'SUS73U1E.wmf';tempfile-properties "XPR";}}
 
 In the picture above, you see wave that has just one peak traveling to the
-right. We call such a wave a \emph{pulse}. Notice how the piece of the rope
-marked $P$ moves up and down, but the wave is moving to the right. This
-pulse is a transverse wave because the parts of the medium (observe point $P$%
-) move perpendicular to the direction the wave is moving.
+right. We call such a wave a \emph{pulse}. The rope material is the medium
+for this wave and notice how the piece of the rope marked $P$ moves up and
+down, but the wave is moving to the right. This pulse is a transverse wave
+because the parts of the medium (observe point $P$) move perpendicular to
+the direction the wave is moving.
 
-\subsubsection{An ocean wave:}
+\textbf{An ocean wave:}
 
 Of course, some waves are a combination of these two basic types. You may
 have noticed that in Physics we tend to define basic types of things, and
@@ -2612,7 +2588,7 @@ throughout the water.
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U1F.wmf';tempfile-properties "XPR";}}
 
-\subsubsection{Earthquake waves:}
+\textbf{Earthquake waves:}
 
 Earthquakes produce both transverse and longitudinal waves. The two types of
 waves even travel at different speeds! $P$ waves are longitudinal and travel
@@ -2660,13 +2636,13 @@ massive. The same is true with string. The larger $\mu ,$ the more massive
 equal string segments will be.
 
 We should note that in forming this relationship, we have used our standard
-introductory physics assumption that the mass of the rope can be neglected.
-Let's consider what would happen if this were not true. Say we make a wave
-in a heavy cable that is suspended. The mass at the lower end of the cable
-pulls down on the upper part of the cable. The tension will actually change
-along the length of the cable, and so will the wave speed. Such a situation
-can't be represented by a single wave speed. But for our class, we will
-assume that any such changes are small enough to be ignored.
+introductory physics assumption that the mass of the rope can mostly be
+neglected. Let's consider what would happen if this were not true. Say we
+make a wave in a heavy cable that is suspended. The mass at the lower end of
+the cable pulls down on the upper part of the cable. The tension will
+actually change along the length of the cable, and so will the wave speed.
+Such a situation can't be represented by a single wave speed. But for our
+class, we will assume that any such changes are small enough to be ignored.
 
 \section{One dimensional waves}
 
@@ -2689,37 +2665,23 @@ y=\frac{2}{\left( x-3.0t\right) ^{2}+1}
 
 Let's plot this for $t=0$
 
-\FRAME{dtbpFX}{2.5146in}{1.6755in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.5146in;height 1.6755in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "-50";xmax "50";xviewmin "-50";xviewmax "50";yviewmin
-"0";yviewmax "2";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\frac{2}{\left( x\right) ^{2}+1}$};linecolor
-"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
-"Solid";var1range "-50,50";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SV4YD72Z.xvz';valid_file "T";tempfilename
-'SV4YD300.wmf';tempfile-properties "XPR";}}what will this look like for $%
-t=10 $?
+\FRAME{dtbpF}{2.5749in}{1.7261in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.5749in;height 1.7261in;depth
+0pt;original-width 2.8241in;original-height 1.8839in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8LZ4I05.wmf';tempfile-properties "XPR";}}what will this look like for $%
+t=10 $?\FRAME{dtbpF}{2.6503in}{1.7731in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.6503in;height 1.7731in;depth
+0pt;original-width 3.194in;original-height 2.1288in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T8LZ6A09.wmf';tempfile-properties "XPR";}}
 
-\FRAME{dtbpFX}{2.6663in}{1.7775in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.6663in;height 1.7775in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "-50";xmax "50";xviewmin "-50";xviewmax "50";yviewmin
-"0";yviewmax "2";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\frac{2}{\left( x-30\right) ^{2}+1}$};linecolor
-"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
-"Solid";var1range "-50,50";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SV4YDJ31.xvz';valid_file "T";tempfilename
-'SV4YDE01.wmf';tempfile-properties "XPR";}}The pulse travels along the $x$%
--axis as a function of time. Note that there is a value for $y$ for every $x$
-position and that these $y$ values change for different times. That is what
-we mean by saying we have a function of both $x$ and $t.$
+The pulse travels along the $x$-axis as a function of time. Note that there
+is a value for $y$ for every $x$ position and that these $y$ values change
+for different times. That is what we mean by saying we have a function of
+both $x$ and $t.$
 
 We denote the speed of the pulse as $v,$ then we can define a function 
 \begin{equation}
@@ -2798,9 +2760,10 @@ frequency and it is represented by the factor $k$ in our equations
 
 \section{Sinusoidal Waves}
 
-\FRAME{dhF}{2.5875in}{2.1127in}{0pt}{}{\Qlb{sine wave}}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.5875in;height 2.1127in;depth
+\FRAME{fhFU}{2.5873in}{2.1128in}{0pt}{\Qcb{{\protect\small Two snapshot
+views of a sinusoidal wave.}}}{\Qlb{Sine_wave}}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.5873in;height 2.1128in;depth
 0pt;original-width 2.2667in;original-height 1.8455in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U1R.wmf';tempfile-properties "XPR";}}A sinusoidal graph should be
@@ -2813,64 +2776,63 @@ y\left( t\right) =y_{\max }\cos \left( \omega t+\phi \right) \qquad \text{SHM%
 but this only gave us a vertical displacement. Now our sinusoidal function
 must also be a function of position along the wave.%
 \begin{equation}
-y\left( x,t\right) =y_{\max }\sin \left( ax-\omega t+\phi \right) \qquad 
+y\left( x,t\right) =y_{\max }\sin \left( kx-\omega t+\phi \right) \qquad 
 \text{waves}
 \end{equation}%
 but before we study the nature of this function, lets see what we can learn
-from the graph of a sinusoidal wave. We will need both our two views, the
-camera snapshot and the video of a point. Look at figure \ref{sine wave}.
-This is two camera snap shots superimposed. The red curve shows the wave ($y$
-position for each value of $x)$ at $t=0.$ At some some later time $t,$ the
-wave pattern has moved to the right as shown by the blue curve. The shift is
-by an amount $\Delta x=v\Delta t.$
+from the graph of a sinusoidal wave. We will need both of our two views, the
+camera snapshot and history graph (the video of a point). Look at figure (%
+\ref{Sine_wave}). This is two camera snap shots superimposed. The red curve
+shows the wave ($y$ position for each value of $x)$ at $t=0.$ At some some
+later time $t,$ the wave pattern has moved to the right as shown by the blue
+curve. The shift is by an amount $\Delta x=v\Delta t.$
 
 \section{Parts of a wave}
 
 The peak of a wave is called the crest. For a sine wave we have a series of
-crests. We define the wavelength as the distance between any to identical
-points (e.g. crests) on adjacent waves in a snapshot view.
+crests. We define a special length called \emph{the wavelength} as the
+distance between any to identical points (e.g. crests) on adjacent waves in
+a snapshot view.
 
 Notice that this is very similar to the definition of the period, $T,$ when
 we graphed SHM on a $y,t$ set of axis. In fact, this similarity is even more
 apparent if we plot a sinusoidal wave using our two wave pictures. In the
-next figure, the snap-shot comes first. We can see that there will be
-crests. The distance between the crests is given the name \emph{wavelength}.
-This is not the entire length of the whole wave. But is is a characteristic
-length of part of the wave that is easy to identify. The next figure shows
-all this using our snapshot and history graph for a sine wave. \FRAME{dtbpF}{%
-2.2831in}{4.0136in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.2831in;height 4.0136in;depth 0pt;original-width
-4.34in;original-height 7.6662in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73U1S.wmf';tempfile-properties "XPR";}}%
-Note that there are crests in the history graph view as well. That is
-because one marked part of the medium is being displaced as a function of
-time. Think of a marked piece of the rope going up and down, or think of
-floating in the ocean at one point, you travel up and down (and a little bit
-back and forth) as the waves go by. But now the horizontal axis is time.
-There will be a characteristic time between crests. That time is called the 
-\emph{period}. This is just like oscillatory motion--because it is
-oscillatory motion! Like the wavelength is not the length of the whole wave,
-the period is not the time the whole wave exists. It is just the time it
-takes the part of the medium we are watching to go through one complete
-cycle. Notice that this video picture is exactly the same as a plot of the
-motion of a simple harmonic oscillator! For a sinusoidal wave, each part of
-the medium experiences simple harmonic motion.
+next figure, the snap-shot graph comes first. We can see that there will be
+crests. The distance between the crests is given the name \textquotedblleft
+wavelength.\textquotedblright\ This is not the entire length of the whole
+wave. But is is a characteristic length of part of the wave that is easy to
+identify. \FRAME{dtbpF}{2.2831in}{4.0136in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.2831in;height 4.0136in;depth
+0pt;original-width 4.34in;original-height 7.6662in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SUS73U1S.wmf';tempfile-properties "XPR";}}Note that there are crests in the
+history graph view as well. That is because one marked part of the medium is
+being displaced as a function of time. Think of a marked piece of the rope
+going up and down, or think of floating in the ocean at one point. You
+travel up and down (and a little bit back and forth) as the waves go by. But
+now the horizontal axis is time. There will be a characteristic time between
+crests. That time is called the \emph{period}. This is just like oscillatory
+motion--because it is oscillatory motion! Like the wavelength is not the
+length of the whole wave, the period is not the time the whole wave exists.
+It is just the time it takes the part of the medium we are watching to go
+through one complete cycle. Notice that this video picture is exactly the
+same as a plot of the motion of a simple harmonic oscillator! For a
+sinusoidal wave, each part of the medium experiences simple harmonic motion.
 
 We remember frequency from simple harmonic motion. But now we have a wave,
 and the wave is moving. We can extend our view of frequency by defining it
 as follows:
 
 \emph{The frequency of a periodic wave is the number of crests (or any other
-point of the wave) that pass a given point in a unit time interval.}
-
-\FRAME{dtbpFX}{2.6109in}{1.7417in}{0pt}{}{\Qlb{frequency}}{Plot}{\special%
-{language "Scientific Word";type "MAPLEPLOT";width 2.6109in;height
-1.7417in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
-FALSE;lastEngine "MuPAD";xmin "0";xmax "10";xviewmin "0";xviewmax
-"10";yviewmin "-1.000187";yviewmax
-"1.000187";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+point of the wave) that pass a given point in a unit time interval. }In the
+next figure, the blue curve has twice the frequency as the red curve. \FRAME{%
+dtbpFX}{2.6109in}{1.7417in}{0pt}{}{\Qlb{frequency}}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.6109in;height 1.7417in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "0";xmax "10";xviewmin "0";xviewmax "10";yviewmin
+"-1.000187";yviewmax "1.000187";viewset"XY";rangeset"X";plottype 4;axesFont
+"Times New Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{v58130};var1name
 \TEXUX{$\theta $};function \TEXUX{$\sin \left( \theta \right) $};linecolor
 "blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
@@ -2879,11 +2841,10 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 2\theta \right) $};linecolor "red";linestyle 1;pointstyle
 "point";linethickness 1;lineAttributes "Solid";var1range
 "0,10";num-x-gridlines 100;curveColor "[flat::RGB:0x00ff0000]";curveStyle
-"Line";VCamFile 'SV4MPP0T.xvz';valid_file "T";tempfilename
-'SUS73U1T.wmf';tempfile-properties "XPR";}}In the previous figure, the blue
-curve has twice the frequency as the red curve. Notice how it has two crests
-for every red crest. The maximum displacement of the wave is called the 
-\emph{amplitude }just as it was for simple harmonic oscillators.
+"Line";VCamFile 'T8TE4N07.xvz';valid_file "T";tempfilename
+'T8TE4N00.wmf';tempfile-properties "XPR";}}Notice how it has two crests for
+every red crest. The maximum displacement of the wave is called the \emph{%
+amplitude }just as it was for simple harmonic oscillators.
 
 \section{Wavenumber and wave speed}
 
@@ -2910,8 +2871,9 @@ and plotted the resulting function%
 y\left( x,0\right) =y_{\max }\sin \left( kx+0\right)
 \end{equation}%
 $y_{\max }$ is the amplitude. I want to investigate the meaning of the
-constant $k.$ Lets find $k$ like we did for SHM when we found $\omega $.
-Consider the point $x=0$. At this point 
+constant $k.$ It looks like the spring constant, but it's not! Lets find $k$
+like we did for SHM when we found $\omega $. Consider the point $x=0$. We
+still have $t=0$ for this graph. And at this position and time 
 \begin{equation}
 y\left( 0,0\right) =y_{\max }\sin \left( k\left( 0\right) \right) =0
 \end{equation}%
@@ -2982,9 +2944,9 @@ plowed his or her field to have two furrows per meter.\FRAME{dtbpF}{2.9853in%
 1.5835in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U1W.wmf';tempfile-properties "XPR";}}
 
-The frequency in the video graph is how often we encounter a crest, $\frac{1%
-}{\lambda }$ is how often we encounter a crest in the snap shot graph. Thus $%
-\frac{1}{\lambda }$ is playing the same role for a snap shot graph as
+The frequency in the history graph is how often we encounter a crest, $\frac{%
+1}{\lambda }$ is how often we encounter a crest in the snap shot graph. Thus 
+$\frac{1}{\lambda }$ is playing the same role for a snap shot graph as
 frequency plays for a history graph. We could call $\frac{1}{\lambda }$a 
 \emph{spatial frequency. }It is how often we encounter a crest as we march
 along in position, or how many crests we have in a unit amount of distance.
@@ -3067,7 +3029,7 @@ and
 v=\lambda f
 \end{equation}%
 This last formula is, perhaps, the most common form encountered in our study
-of light.
+of light waves.
 
 \subsubsection{Phase}
 
@@ -3128,7 +3090,7 @@ New Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 the latter as having a different phase constant that is the sum of what we
 have called the phase constant, $\phi _{o}$ plus $\omega \Delta t,$ which
 tells us how different the times are between the two graphs. This time
-difference is what is shifting the graph 
+difference is what is shifting the graph. 
 \begin{equation*}
 \phi _{total}=\omega \Delta t+\phi _{o}=-\frac{\pi }{5}\left( 2\unit{s}%
 \right) +\frac{\pi }{2}
@@ -3224,7 +3186,7 @@ right, $T_{r}$
 \item Tension on the LHS of the element from the rest of the string on the
 left, $T_{l}$
 
-\item $F_{g}$
+\item $W$ the gravitational force
 \end{enumerate}
 
 Lets assume that the element of string, $\Delta s,$ at the crest is
@@ -3235,20 +3197,21 @@ to the arc, there is a force pulling right at the right end of the element
 which is also tangent to the arc. These forces produce centripetal
 accelerations%
 \begin{equation}
-a=\frac{v^{2}}{R}
+a=\frac{v_{t}^{2}}{R}
 \end{equation}%
 The horizontal components of the forces cancel $\left( T\cos \theta \right)
 . $ The vertical component, $\left( T\sin \left( \theta \right) \right) $ is
 directed toward the center of the arc. If the rope is not moving in the $x$
-direction, then $T_{l}=T_{r}.$
+direction, then $T_{left}=T_{right}.$
 
-Then, the radial force $F_{r}$ will have matching components from each side
-of the element that together are $2T\sin \left( \theta \right) .$ Notice
-that to make sure the components are the same we must assume that the string
-is uniform and that it is not too massive (almost massless string
-approximation!). Since the element is small,%
+Then, the radial force $F_{net_{r}}$ will have matching components from each
+side of the element that together are $2T\sin \left( \theta \right) .$
+Notice that to make sure the components are the same we must assume that the
+string is uniform and that it is not too massive (almost massless string
+approximation!). Since the element is small, the angle $\theta $ will also
+be small%
 \begin{equation}
-F_{r}=2T\sin \left( \theta \right) \approx 2T\theta
+F_{net_{r}}=2T\sin \left( \theta \right) \approx 2T\theta
 \end{equation}
 
 The element has a mass $m.$ 
@@ -3256,7 +3219,8 @@ The element has a mass $m.$
 m=\mu \Delta s
 \end{equation}
 
-where $\mu $ is the mas per unit length. Using the arc length formula%
+where $\mu $ is the mas per unit length. Using the arc length formula $%
+\left( s=R\theta \right) $ the length of the element is 
 \begin{equation}
 \Delta s=R\left( 2\theta \right)
 \end{equation}%
@@ -3266,9 +3230,9 @@ m=\mu \Delta s=2\mu R\theta
 \end{equation}%
 and finally we use the formula for the radial acceleration%
 \begin{equation}
-F_{r}=ma=\left( 2\mu R\theta \right) \frac{v^{2}}{R}
+F_{net_{r}}=ma_{r}=\left( 2\mu R\theta \right) \frac{v^{2}}{R}
 \end{equation}%
-Combining these two expressions for $F_{r}$%
+Combining these two expressions for $F_{net_{r}}$%
 \begin{equation}
 2T\theta =\left( 2\mu R\theta \right) \frac{v^{2}}{R}
 \end{equation}%
@@ -3283,17 +3247,18 @@ and we find that
 v=\sqrt{\frac{T}{\mu }}
 \end{equation}%
 which is just what we stated before, only now we see just how much
-approximation there was in building this formula. We might guess that it
+approximation there was in building this formula! We might guess that it
 would not work so well for large cables supporting bridges or with cables
-that change size along their length.
+that change size along their length. But it works fine for our semi-massless
+strings.
 
 \subsection{Speed of the medium}
 
-Let's review for a moment. Suppose we take a jump rope, and shake one end up
-and down while a lab partner keeps his or her end stationary. You can make a
-sine wave in the rope. But being good physics students, let's make our
-\textquotedblleft shake\textquotedblright\ very symmetric. Let's start our
-wave using simple harmonic motion.
+Let's review for a moment. Suppose we take a very long jump rope, and shake
+one end up and down while a lab partner keeps his or her end stationary. You
+can make a sine wave in the rope. But being good physics students, let's
+make our \textquotedblleft shake\textquotedblright\ very symmetric. Let's
+start our wave using simple harmonic motion.
 
 Let's call an element of the rope $\Delta x.$ Here the \textquotedblleft $%
 \Delta $\textquotedblright\ is being used to mean \textquotedblleft a small
@@ -3303,21 +3268,25 @@ rope that I\ want to think about now.
 
 Each element of the rope $\left( \Delta x_{i}\right) $ will also oscillate
 with SHM (think of a driven SHO). Note that the elements of the rope
-oscillate in the $y$ direction, but the wave travels in $x.$ This is a
-transverse wave.
+oscillate in the $y$ direction, but the wave travels in the $x$-direction.
+This is a transverse wave.
 
-Let's describe the motion of an element of the string at point $P.$
+Let's describe the motion of an element of the string at some point $P.$
 
 At $t=0,$%
 \begin{equation}
-y=A\sin \left( kx-\omega t+\phi _{o}\right)
-\end{equation}%
-(where I\ have chosen $\phi _{o}=0$ for this example). The element does not
-move in the $x$ direction. So we define the \emph{transverse} \emph{speed}, $%
-v_{y},$ and the \emph{transverse acceleration, }$a_{y},$ as the velocity and
-acceleration of the element of rope in the $y$ direction. These are not the
+y=y_{\max }\sin \left( kx-\omega t+\phi _{o}\right)
+\end{equation}
+The element does not move in the $x$ direction. So, it has not $y$-component 
+$\left( v_{x}=0\right) $. But it does move in the $y$-direction so there
+will be a $v_{y}.$ Let's give this $y$-componet a name. We can call it the 
+\emph{transverse} \emph{speed}, $v_{y},$ and we can call a change in this
+transverse speed in an amount of time the \emph{transverse acceleration, }$%
+a_{y}.$ These are just the velocity and acceleration of the element of rope
+in the $y$ direction. But in our study of waves it is good to know that
+these are in what we will call the transverse direction. These are not the
 velocity and acceleration of the wave, just the velocity and acceleration of
-the element $\Delta x$ at a point $P.$
+the element $\Delta x$ of the medium at a point $P.$
 
 Because we are doing this at one specific $x$ location we need partial
 derivatives to find the velocity
@@ -3329,13 +3298,13 @@ v_{y}=\left. \frac{dy}{dt}\right] _{x=\text{constant}}=\frac{\partial y}{%
 That is, we take the derivative of $y$ with respect to $t,$ but we pretend
 that $x$ is not a variable because we just want one $x$ position. Then%
 \begin{equation}
-v_{y}=\frac{\partial y}{\partial t}=-\omega A\cos \left( kx-\omega t+\phi
-_{o}\right)
+v_{y}=\frac{\partial y}{\partial t}=-\omega y_{\max }\cos \left( kx-\omega
+t+\phi _{o}\right)
 \end{equation}%
 and%
 \begin{equation}
-a_{y}=\frac{\partial v_{y}}{\partial t}=-\omega ^{2}A\sin \left( kx-\omega
-t+\phi _{o}\right)
+a_{y}=\frac{\partial v_{y}}{\partial t}=-\omega ^{2}y_{\max }\sin \left(
+kx-\omega t+\phi _{o}\right)
 \end{equation}
 
 These solutions should look very familiar! We expect them to be the same as
@@ -3351,31 +3320,35 @@ We identified simple harmonic motion using a differential equation%
 \frac{d^{2}x}{dt^{2}}=-\omega ^{2}x
 \end{equation*}%
 Perhaps we could find an equation like this for waves and then identify
-waves using that equation. We can start the same way we did for oscillation.
+waves using that equation. Can we find such an equation that would let us
+identify waves?
+
+To try to achieve this we can start the same way we did for oscillation.
 Let's write the acceleration for a part of the medium.%
 \begin{equation}
-a_{y}=\frac{d^{2}y}{dt^{2}}=-\omega ^{2}A\sin \left( kx-\omega t+\phi
-_{o}\right)
+a_{y}=\frac{d^{2}y}{dt^{2}}=-\omega ^{2}y_{\max }\sin \left( kx-\omega
+t+\phi _{o}\right)
 \end{equation}
 
 But for waves we have two variables. Let's guess that we might need to take
 derivatives with respect to $x$ as well as for $t.$ 
 \begin{equation*}
-\frac{dy}{dx}=kA\cos (kx-\omega t+\phi _{o})
+\frac{dy}{dx}=ky_{\max }\cos (kx-\omega t+\phi _{o})
 \end{equation*}%
 This isn't all that useful on it's own, but it does tell us how the slope of
 the curve changes in a snapshot graph. Let's take another derivative%
 \begin{equation*}
-\frac{d^{2}y}{dx^{2}}=-k^{2}A\sin (kx-\omega t+\phi _{o})
+\frac{d^{2}y}{dx^{2}}=-k^{2}y_{\max }\sin (kx-\omega t+\phi _{o})
 \end{equation*}%
 We are back to a sine function. That is not a surprise. But it looks a lot
 like our time second derivative. We could take the ratio of the two
 equations to see just how different they are%
 \begin{equation*}
-\frac{\frac{d^{2}y}{dt^{2}}}{\frac{d^{2}y}{dx^{2}}}=\frac{-\omega ^{2}A\sin
-\left( kx-\omega t+\phi _{o}\right) }{-k^{2}A\sin (kx-\omega t+\phi _{o})}
+\frac{\frac{d^{2}y}{dt^{2}}}{\frac{d^{2}y}{dx^{2}}}=\frac{-\omega
+^{2}y_{\max }\sin \left( kx-\omega t+\phi _{o}\right) }{-k^{2}y_{\max }\sin
+(kx-\omega t+\phi _{o})}
 \end{equation*}%
-Of course the sine parts cancel, and so do the $A$'s 
+Of course the sine parts cancel, and so does $y_{\max }$. 
 \begin{equation*}
 \frac{\frac{d^{2}y}{dt^{2}}}{\frac{d^{2}y}{dx^{2}}}=\frac{-\omega ^{2}}{%
 -k^{2}}
@@ -3441,6 +3414,10 @@ Solids have additional forces involved due to the tight bonding of the
 atoms, and therefore are more complicated. Technically in a solid sound can
 be a transverse wave as well a longitudinal wave, but we usually call
 transverse waves of this nature \emph{shear waves.}
+
+We have said that energy travels in a wave. And from Principles of Physics I
+we know the change of energy in an amount of time is called a power. So
+waves must provide power. We will take up this topic in our next lecture.
 
 \chapter{6 Power and Superposition 6 1.16.4 1.16.5}
 
@@ -3520,7 +3497,9 @@ Then for this part of the rope medium there will be a kinetic energy
 K &=&\frac{1}{2}mv^{2} \\
 &=&\frac{1}{2}\Delta mv_{y}^{2}
 \end{eqnarray*}%
-using our linear mass density we can write 
+where we realize that the piece of the medium will just go up and down for a
+transverse wave, so we only have $v_{y}.$ Using our linear mass density we
+can write 
 \begin{equation*}
 \Delta m=\mu \Delta x
 \end{equation*}%
@@ -3574,7 +3553,8 @@ table. My table gave the form
 \int \left( \cos ^{2}\left( ax\right) \right) dx=\frac{1}{2}x+\frac{1}{4a}%
 \sin \left( 2ax\right)
 \end{equation*}%
-We have to match this to our equation. We see $a=k$ so 
+We have to match this to our equation. We see $a$ in the integral table
+version is our $k$ so 
 \begin{eqnarray*}
 K_{\lambda } &=&\frac{1}{2}\mu \omega ^{2}A^{2}\left[ \frac{1}{2}x+\frac{1}{%
 4k}\sin \left( 2kx\right) \right\vert _{0}^{\lambda } \\
@@ -3590,7 +3570,7 @@ K_{\lambda } &=&\frac{1}{2}\mu \omega ^{2}A^{2}\left[ \frac{1}{2}x+\frac{1}{%
 &=&\frac{1}{4}\mu \omega ^{2}A^{2}\lambda
 \end{eqnarray*}
 
-This wavelength sized piece of tope will also have some potential energy
+This wavelength sized piece of rope will also have some potential energy
 because the fibers that make the rope are stretched to make the wave. They
 aren't really quite like little springs, but it's not to far wrong to model
 them as though they were. So let's take the spring potential energy 
@@ -3633,7 +3613,7 @@ We need to put in our equation for the position for our wave.%
 \begin{equation*}
 y\left( x,t\right) =A\sin \left( kx-\omega t+\phi _{o}\right)
 \end{equation*}%
-but once again let's choose $\phi _{o}=0$ and $t=0$ so that%
+But once again let's choose $\phi _{o}=0$ and $t=0$ so that%
 \begin{equation*}
 y\left( x,0\right) =A\sin \left( kx\right)
 \end{equation*}%
@@ -3669,13 +3649,15 @@ E_{\lambda } &=&K_{\lambda }+U_{\lambda } \\
 ^{2}A^{2}\lambda \\
 &=&\frac{1}{2}\mu \omega ^{2}A^{2}\lambda
 \end{eqnarray*}%
-We know that energy is being transferred by the wave, whether it is a light
-or sound wave or any other mechanical wave. We should wonder, how fast is
-energy transferring. This can mean the difference between a warm ray of sin
-on a cool spring day and being burned by a laser beam. We will start by
-considering the rate of energy transfer, \emph{power}. The concept of power
-should be familiar to us from PH121. We can find the power as the rate at
-which energy is transferred.%
+We know that energy is being transferred by the wave. It turns out that
+energy transfers in all waves (thought the equation might be a little
+different), whether it is a light or sound wave or any other mechanical
+wave. We should wonder, how fast is energy transferring. This can mean the
+difference between a warm ray of sun on a cool spring day and being burned
+by a laser beam. We will start by considering the rate of energy transfer, 
+\emph{power}. The concept of power should be familiar to us from Principles
+of Physics I. We can find the power as the rate at which energy is
+transferred.%
 \begin{equation*}
 \mathcal{P}=\frac{\Delta E}{\Delta t}
 \end{equation*}%
@@ -3694,8 +3676,8 @@ P=\frac{1}{2}\mu \omega ^{2}A^{2}v
 \end{equation*}%
 Power is important. Most detectors (like our ears and eyes) really detect
 the power delivered by a wave. And we can see that the power is proportional
-to the amplitude squared and the frequency squared for the wave. More on
-this as we study light and sound.
+to the amplitude squared and the frequency squared for the wave. We will
+learn more on this as we study light and sound.
 
 \section{Power and Intensity}
 
@@ -3750,7 +3732,7 @@ balloons.). Then form our point source%
 \mathcal{I}=\frac{\mathcal{P}}{4\pi r^{2}}
 \end{equation}%
 As the wave travels, its the power per unit area decreases with the square
-of the distance (think gravity) because the area is getting larger.\FRAME{dhF%
+of the distance (like gravity) because the area is getting larger.\FRAME{dhF%
 }{2.655in}{1.8273in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "T";width 2.655in;height 1.8273in;depth 0pt;original-width
@@ -3826,9 +3808,9 @@ the support (person in class, or nail in the figure). By Newton's third law
 there must be a normal force downward on the rope end. Compressing the
 molecules in the support stores potential energy in those compressed atoms.
 They will release that potential energy and create kinetic energy in the
-rope end. That kinetic energy will have a rope end velocity 
+rope end. That kinetic energy will have a rope-end velocity 
 \begin{equation*}
-K=\frac{1}{2}mv^{2}
+K=\frac{1}{2}mv_{y}^{2}
 \end{equation*}%
 and that velocity will be downward. This will pull the rope down, inverting
 the wave.
@@ -3837,7 +3819,7 @@ But what happens if the rope end is not fixed?
 
 The rope end rises, and therefore there is no force exerted. The pulse (or
 at least part of the pulse energy) is still reflected, but there is no
-inversion because there was not downward force or no stored potential energy
+inversion because there was no downward force or no stored potential energy
 in the support!\FRAME{dtbpF}{2.2771in}{1.3958in}{0pt}{}{}{Figure}{\special%
 {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 2.2771in;height 1.3958in;depth
@@ -3852,13 +3834,13 @@ rope we have been using, what will happen?
 
 The light end of the rope exerts a force on the heavy beginning of the new
 rope. The atoms in the heavy rope will be pulled and compressed. The heavy
-rope will move, but the heaviness of the rope will prevent them from going
+rope will move, but the heaviness of the rope will prevent it from going
 very far. The fibers on the end of the heavy rope will build up potential
-energy because their bonds will be compressed. They will push downward on
-the light end of the rope. Once again the potential energy from the
-compressed heavy rope atoms will transfer to kinetic energy in the light
-rope end. Once again that light rope end will move downward. \FRAME{dtbpF}{%
-2.6532in}{1.4857in}{0pt}{}{}{Figure}{\special{language "Scientific
+energy because their bonds will be stretched. They will push downward on the
+light end of the rope opposing the stretch. Once again the potential energy
+from the stretched heavy rope atoms will transfer to kinetic energy in the
+light rope end. Once again that light rope end will move downward. \FRAME{%
+dtbpF}{2.6532in}{1.4857in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "T";width 2.6532in;height 1.4857in;depth 0pt;original-width
 3.8in;original-height 2.1162in;cropleft "0";croptop "1";cropright
@@ -3868,7 +3850,7 @@ We expect part of the energy to reflect back along the light rope, and this
 pulse will be inverted. Notice that the heavy rope did move upward a little,
 so there will also be a pulse on the heavy rope. Since this pulse formed
 from the light rope pulling up the heavy rope, and the light rope atoms were
-not compressed, this pulse will not be inverted. \FRAME{dtbpF}{2.8764in}{%
+not stretched much, this pulse will not be inverted. \FRAME{dtbpF}{2.8764in}{%
 2.2572in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.8764in;height 2.2572in;depth 0pt;original-width 2.8331in;original-height
@@ -3878,8 +3860,13 @@ not compressed, this pulse will not be inverted. \FRAME{dtbpF}{2.8764in}{%
 This is all great for pulses. But suppose a sinusoidal wave approaches the
 boundary. We can envision the crests like pulses, and we expect the first
 crest to slow down when it reaches the boundary, letting the other crests
-catch up. Once the wave passes the boundary, the crests will be closer
-together. The wavelength changes as we move to the slower medium.
+catch up. This is because 
+\begin{equation*}
+v=\sqrt{\frac{T}{\mu }}
+\end{equation*}%
+and $\mu $ got bigger so $v$ got smaller. Once the wave passes the boundary,
+the crests will be closer together. The wavelength changes as we move to the
+slower medium.
 
 But does the frequency change? We know that 
 \begin{equation*}
@@ -4020,10 +4007,14 @@ Our wave on the string makes the string segments move in the $y$ direction.
 Both waves do this. So putting the two waves together just makes the string
 segments move more! There is a special name for what we observe
 
-\begin{enumerate}
-\item \emph{interference}: The combination of separate waves in the same
-region of space to produce a resultant wave.
-\end{enumerate}
+\begin{center}
+\rule{300pt}{1pt}
+
+\emph{interference}: The combination of separate waves in the same region of
+space to produce a resultant wave.
+
+\rule{300pt}{1pt}
+\end{center}
 
 What happens if one of the pulses is inverted?\FRAME{dhFU}{1.7828in}{2.2033in%
 }{0pt}{\Qcb{{\protect\small Destructive Interference (Public Domain image by
@@ -4038,11 +4029,11 @@ Figure}{\special{language "Scientific Word";type
 When the two pulses meet, they \textquotedblleft cancel each other
 out.\textquotedblright\ But do they go away? No! the energy is still there,
 the string segment motions have just summed vectorially to zero, the energy
-carried by each wave is still there. We have a few more definitions. The
-type of interference we have just seen is the first
+carried by each wave is still there hiding in stretched bonds. We have a few
+more definitions. The type of interference we have just seen is the first
 
 \begin{enumerate}
-\item \emph{Destructive Interference}:\ Interference between waves when the
+\item \emph{Destructive Interference}:\ interference between waves when the
 displacements caused by the two waves are opposite in direction
 
 \item \emph{Constructive Interference}: interference between waves when the
@@ -4098,10 +4089,20 @@ frequencies might be different, the times observed might be different, and
 the phase constants might be different. We have not made the amplitudes
 different (but it is likely to happen in an upcoming homework problem).
 
-Then the resulting wave would be 
+Then the resulting wave would be%
+\begin{equation*}
+y_{r}=y_{\max }\sin \left( k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}\right)
++A\sin \left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right)
+\end{equation*}%
+but this doesn't tell us much. We can understand much more about what our
+combined waves would look like if we use a trig identity%
+\begin{equation*}
+\sin a+\sin b=2\cos \left( \frac{a-b}{2}\right) \sin \left( \frac{a+b}{2}%
+\right)
+\end{equation*}%
+Let's try this. We could make $a=$ $k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}$
+and $b=k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}$ then 
 \begin{eqnarray*}
-y_{r} &=&y_{\max }\sin \left( k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}\right)
-+A\sin \left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) \\
 &=&2y_{\max }\cos \left( \frac{\left( k_{2}x_{2}-\omega _{2}t_{2}+\phi
 _{2}\right) -\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right)
 \\
@@ -4124,8 +4125,7 @@ A=2y_{\max }\cos \left( \frac{1}{2}\left[ \left( k_{2}x_{2}-\omega
 _{2}t_{2}+\phi _{2}\right) -\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi
 _{1}\right) \right] \right)
 \end{equation*}%
-The part in square brackets is what we have been calling the phase
-difference 
+The part in square brackets is what we call the phase difference 
 \begin{equation*}
 \Delta \phi =\left( k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}\right) -\left(
 k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right)
@@ -4157,8 +4157,8 @@ Then we could say that our phase difference
 \begin{equation*}
 \Delta \phi =\pi m\qquad m=\pm 1,\pm 3,\pm 5,\cdots
 \end{equation*}%
-another way to say this is to allow $m$ to be any integer but to write the
-condition as 
+Another way to say this is to allow $m$ to be any integer but to write the
+destructive interference condition as 
 \begin{equation*}
 \Delta \phi =\left( m+\frac{1}{2}\right) 2\pi \qquad m=0,\pm 1,\pm 2,\pm
 3,\cdots \qquad \text{Destructive}
@@ -4254,7 +4254,8 @@ will give us constructive interference.\FRAME{dhF}{1.4218in}{1.9527in}{0pt}{%
 4.1909in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVA69G06.wmf';tempfile-properties "XPR";}}But there are more places where
 we expect constructive interference, because we know the sound wave is
-really spherical. Any time the path difference, $\Delta x=n\lambda ,$ then 
+really spherical. Any time the path difference, $\Delta x=n\lambda $ where $%
+n $ is an integer, then 
 \begin{equation*}
 \Delta \phi =\frac{2\pi }{\lambda }\left( n\lambda \right) =n2\pi
 \end{equation*}%
@@ -4295,8 +4296,8 @@ are out of phase by half a wavelength.\FRAME{dhF}{1.7141in}{1.9969in}{0pt}{}{%
 2.9836in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVA69G0A.wmf';tempfile-properties "XPR";}}
 
-When you moved from one dimension to two dimensions in PH121, we changed
-from the variables $x$ and $y$ to the variable $r$ where 
+When you moved from one dimension to two dimensions in Principles of Physics
+I, we changed from the variables $x$ and $y$ to the variable $r$ where 
 \begin{equation*}
 r=\sqrt{x^{2}+y^{2}}
 \end{equation*}%
