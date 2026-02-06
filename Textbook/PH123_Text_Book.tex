@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Tuesday, January 20, 2026 13:28:39}
+%TCIDATA{LastRevised=Friday, February 06, 2026 12:44:53}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -109,7 +109,7 @@ purposes. All other rights are reserved.
 \item Mathematical description of Simple Harmonic Motion
 \end{itemize}
 
-\section{1 Oscillation and Simple Harmonic Motion (SHM)}
+\section{1 Oscillation and Simple Harmonic Motion}
 
 Last semester, in PH121 (or Dynamics) you studied how things move. We
 identified a moving object (I often refer to this object as the \emph{mover
@@ -671,6 +671,22 @@ Electrodynamics.
 From what we did before, we know that $x\left( t\right) ,$ $v\left( t\right)
 ,$ and $a\left( t\right) $ are out of phase, so there must be a phase
 constant involved somehow. Let's look for it in the lectures that follow.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+\begin{equation*}
+f=\frac{1}{T}
+\end{equation*}%
+\begin{equation*}
+\omega =2\pi f
+\end{equation*}
+
+\begin{equation*}
+x\left( t\right) =x_{\max }\cos \left( \omega t\pm \phi _{o}\right)
+\end{equation*}
 
 \chapter{2 Energy and Dynamics of SHM 1.15.2 1.15,3}
 
@@ -1238,10 +1254,10 @@ So, the potential energy as a function of time must be%
 \begin{equation*}
 U_{s}=\frac{1}{2}kx_{\max }^{2}\cos ^{2}\left( \omega t+\phi \right)
 \end{equation*}%
-\FRAME{dtbpF}{2.0906in}{0.981in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{2.0906in}{0.981in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 2.0906in;height 0.981in;depth
-0in;original-width 2.1013in;original-height 0.9704in;cropleft "0";croptop
+0pt;original-width 2.1013in;original-height 0.9704in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'T8IB2E01.wmf';tempfile-properties "XPR";}}Let's say, again, that our
 oscillator is moving horizontally on a frictionless surface, and that we
@@ -1517,6 +1533,29 @@ From what we have done so far, it seems like we totally redefined $\omega $
 for this second physics class. But really there is a relationship between
 angular velocity $\omega $ and angular frequency $\omega .$ We will explore
 this in our next lecture. We will also ask what to do when there is friction.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+\begin{eqnarray}
+x\left( t\right) &=&x_{\max }\cos \left( \omega t+\phi _{o}\right) \\
+\frac{dx\left( t\right) }{dt} &=&-\omega x_{\max }\sin \left( \omega t+\phi
+_{o}\right)  \notag \\
+\frac{d^{2}x\left( t\right) }{dt^{2}} &=&-\omega ^{2}x_{\max }\cos \left(
+\omega t+\phi _{o}\right)  \notag
+\end{eqnarray}%
+\begin{equation*}
+K=\frac{1}{2}kx_{\max }^{2}\sin ^{2}\left( \omega t+\phi \right)
+\end{equation*}%
+\begin{equation*}
+U_{s}=\frac{1}{2}kx_{\max }^{2}\cos ^{2}\left( \omega t+\phi \right)
+\end{equation*}
+
+\begin{equation*}
+y\left( t\right) =y_{\max }\cos (\omega t-\phi _{o})
+\end{equation*}
 
 \chapter{3 More Oscillators, Forces and Friction 1.15.4 1.15.5 1.15.6}
 
@@ -2329,6 +2368,64 @@ When $\frac{b}{2\pi }\geq \omega _{o}$ the solution in equation (\ref%
 engineer you will find out more about this situation in your advanced
 mechanics classes.
 
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+
+Pendulum%
+\begin{equation*}
+\omega =\sqrt{\frac{g}{L}}
+\end{equation*}%
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+\begin{equation}
+T=\frac{2\pi }{\omega }=2\pi \sqrt{\frac{L}{g}}
+\end{equation}
+
+Physical Pendulum
+
+\begin{equation}
+\omega =\sqrt{\frac{mgd}{\mathbb{I}}}
+\end{equation}
+
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+\begin{equation}
+T=2\pi \sqrt{\frac{\mathbb{I}}{mgd}}
+\end{equation}
+
+Torsional Pendulum%
+\begin{equation}
+\omega =\sqrt{\frac{\kappa }{\mathbb{I}}}
+\end{equation}%
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+\begin{equation}
+T=2\pi \sqrt{\frac{\mathbb{I}}{\kappa }}
+\end{equation}
+
+Damped Oscillation%
+\begin{equation*}
+y\left( t\right) =\left\{ y_{\max }e^{-\frac{b}{2m}t}\right\} \cos \left(
+\left( \sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi
+_{o}\right)
+\end{equation*}
+
+\begin{equation*}
+\omega =\sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}=0
+\end{equation*}%
+\begin{equation*}
+\omega _{o}=\sqrt{\frac{k}{m}}
+\end{equation*}%
+\begin{equation*}
+b_{c}=2m\omega _{o}
+\end{equation*}
+
 \chapter{4 Forces Oscillations and Waves 1.15.6}
 
 %TCIMACRO{%
@@ -2720,10 +2817,10 @@ the video recorder to make a movie of the motion of that single part of the
 rope. We could then go frame by frame through the video, and plot the
 displacement of our marked part of the rope as a function of time. Such a
 graph is sometimes called a history graph of the wave. Here is such a graph
-for the position $x_{1}.$ \FRAME{dtbpF}{2.5918in}{1.7279in}{0in}{}{}{Figure}{%
+for the position $x_{1}.$ \FRAME{dtbpF}{2.5918in}{1.7279in}{0pt}{}{}{Figure}{%
 \special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 2.5918in;height 1.7279in;depth
-0in;original-width 2.5503in;original-height 1.6916in;cropleft "0";croptop
+0pt;original-width 2.5503in;original-height 1.6916in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73U1Q.wmf';tempfile-properties "XPR";}}To go from the time graphs to the
 history graph you observe what happens at the location $x_{1}$ for each of
@@ -2731,6 +2828,37 @@ the times. Then plot those $y$ positions on the $y$ vs. $t$ graph. Then you
 must connect the points. This takes some thinking to make sure you connect
 them right (or a whole lot of points). But with practice, this is not hard
 and both view points are valuable ways to look at a wave.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+
+Forced Oscillation%
+\begin{equation*}
+x\left( t\right) =A\cos \left( \omega _{f}t+\phi \right)
+\end{equation*}
+\begin{equation*}
+A=\frac{\frac{F_{o}}{m}}{\sqrt{\left( \omega _{f}^{2}-\omega _{o}^{2}\right)
+^{2}+\left( \frac{b\omega _{f}}{m}\right) ^{2}}}
+\end{equation*}%
+\begin{equation}
+\omega _{o}=\sqrt{\frac{k}{m}}
+\end{equation}%
+\begin{equation}
+\mathcal{P}=-F_{o}\omega A\sin \left( \omega t\right) \sin \left( \omega
+t+\phi _{o}\right)
+\end{equation}
+
+Speed of waves on strings
+
+\begin{equation*}
+v=\sqrt{\frac{T_{s}}{\mu }}
+\end{equation*}%
+\begin{equation*}
+\mu =\frac{m}{L}
+\end{equation*}
 
 \chapter{5 Sinusoidal Waves in one and Two Dimensions 1.16.2 1.16.3}
 
@@ -3419,6 +3547,40 @@ We have said that energy travels in a wave. And from Principles of Physics I
 we know the change of energy in an amount of time is called a power. So
 waves must provide power. We will take up this topic in our next lecture.
 
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+\begin{equation}
+v=\sqrt{\frac{T}{\mu }}
+\end{equation}
+
+\begin{equation}
+y=y_{\max }\sin \left( kx-\omega t+\phi _{o}\right)
+\end{equation}%
+\begin{equation}
+v_{y}=\frac{\partial y}{\partial t}=-\omega y_{\max }\cos \left( kx-\omega
+t+\phi _{o}\right)
+\end{equation}%
+\begin{equation}
+a_{y}=\frac{\partial v_{y}}{\partial t}=-\omega ^{2}y_{\max }\sin \left(
+kx-\omega t+\phi _{o}\right)
+\end{equation}%
+\begin{equation*}
+k=\frac{2\pi }{\lambda }
+\end{equation*}%
+\begin{equation*}
+\omega =2\pi f
+\end{equation*}%
+\begin{equation}
+v=\lambda f
+\end{equation}
+
+\begin{equation*}
+\frac{d^{2}y}{dt^{2}}=v^{2}\frac{d^{2}y}{dx^{2}}
+\end{equation*}
+
 \chapter{6 Power and Superposition 6 1.16.4 1.16.5}
 
 %TCIMACRO{%
@@ -3519,7 +3681,8 @@ K=\frac{1}{2}\mu \Delta x\omega ^{2}A^{2}\cos ^{2}\left( kx-\omega t+\phi
 _{o}\right)
 \end{equation*}%
 Now let's simplify our situation by letting $\phi _{o}=0$ and let's take a
-snap shot view with $t=0.$ 
+snap shot view with $t=0.$
+
 \begin{equation*}
 K=\frac{1}{2}\mu \Delta x\omega ^{2}A^{2}\cos ^{2}\left( kx\right)
 \end{equation*}%
@@ -4360,7 +4523,48 @@ have seen a deficit in what we have learned so far. Up to this point, we
 have only mixed waves that have the same frequency. Can we mix waves that
 have different frequencies?
 
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+\begin{equation*}
+U=\frac{1}{2}\mu \omega ^{2}\left( A\sin \left( kx\right) \right) ^{2}
+\end{equation*}
+
+\begin{equation*}
+\mu =\frac{M}{L}
+\end{equation*}%
+\begin{equation*}
+K=\frac{1}{2}\mu \Delta x\omega ^{2}A^{2}\cos ^{2}\left( kx\right)
+\end{equation*}%
+\begin{equation*}
+P=\frac{1}{2}\mu \omega ^{2}A^{2}v
+\end{equation*}%
+\begin{equation*}
+\mathcal{I}=\frac{\mathcal{P}_{source}}{A_{wave}}
+\end{equation*}
+\begin{eqnarray*}
+\mathcal{P}_{received} &=&\mathcal{I}A_{hand} \\
+&=&\frac{A_{hand}}{A_{wave}}\mathcal{P}_{source}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\Delta \phi &=&2\pi m\qquad m=0,\pm 1,\pm 2,\pm 3,\cdots \qquad \text{%
+Constructive} \\
+\Delta \phi &=&\left( m+\frac{1}{2}\right) 2\pi \qquad m=0,\pm 1,\pm 2,\pm
+3,\cdots \qquad \text{Destructive}
+\end{eqnarray*}
+
 \chapter{7 Standing Waves and Sound Waves 1.16.6, 1.17.1}
+
+So far we have only hinted about sound waves. In this lecture we will study
+them in more detail. But first let's consider what happens if we have two
+waves with the same frequency and amplitude that superimpose in the same
+medium but go the opposite direction. We expect constructive and destructive
+interference! And we get it. And it turns out that this situation is very
+important for making musical instruments - and for keeping structures from
+being destroyed!
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Standing Waves}}{\chaptermark{Standing Waves}}}%
@@ -4407,9 +4611,9 @@ and
 y_{2}=y_{\max }\sin \left( kx-\omega t+\phi _{o}\right)
 \end{equation*}%
 These are two waves with the same frequency and wave number traveling the
-same direction in the medium, but they at $t=0$ the $y$ values are not the
-same because of the phase shift. The graph of $y_{2}$ is shifted by an
-amount $\phi _{o}.$
+same direction in the medium, but at $t=0$ the $y$ values are not the same
+because of the phase shift. The graph of $y_{2}$ is shifted by an amount $%
+\phi _{o}.$
 
 I will pick some values for the constants
 
@@ -4424,7 +4628,7 @@ $A=1$%
 \end{tabular}%
 \end{equation*}
 
-then for $y_{1}$ we have
+Then for $y_{1}$ we have
 
 \begin{eqnarray*}
 y_{1} &=&\left( 1\right) \sin \left( \frac{2\pi }{\lambda }x-\left( 1\right)
@@ -4432,11 +4636,11 @@ t\right) \\
 &=&\sin \left( \frac{2\pi }{2}x-\left( 1\right) t\right) \\
 &=&\sin \left( \pi x-t\right)
 \end{eqnarray*}%
-here is a plot of the wave function, $y_{1}$\FRAME{dtbpFX}{2.9689in}{1.2816in%
-}{0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
-2.9689in;height 1.2816in;depth 0pt;display "USEDEF";plot_snapshots
-TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "0";xmax
-"5.001000";xviewmin "0";xviewmax "5.001000";yviewmin "-2";yviewmax
+And here is a plot of the wave function, $y_{1}$\FRAME{dtbpFX}{2.9689in}{%
+1.2816in}{0pt}{}{}{Plot}{\special{language "Scientific Word";type
+"MAPLEPLOT";width 2.9689in;height 1.2816in;depth 0pt;display
+"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
+"0";xmax "5.001000";xviewmin "0";xviewmax "5.001000";yviewmin "-2";yviewmax
 "2";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
 Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
@@ -4491,8 +4695,8 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 3;lineAttributes "Solid";var1range "0,5.001000";num-x-gridlines
 100;curveColor "[flat::RGB:0x00008000]";curveStyle "Line";VCamFile
 'SV53L840.xvz';valid_file "T";tempfilename
-'SV53NZ0U.wmf';tempfile-properties "XPR";}}Notice that the wave form is
-taller (larger amplitude). Noticed it is shifted along the $x$ axis.
+'SV53NZ0U.wmf';tempfile-properties "XPR";}}Notice that the resulting wave
+form is taller (larger amplitude). Noticed it is shifted along the $x$ axis.
 
 We can find out by how much by rewriting $y_{r}.$ We need a trig identity%
 \begin{equation*}
@@ -4514,8 +4718,8 @@ t+\phi _{o}\right) }{2}\right) \sin \left( \frac{\left( kx-\omega t\right)
 \frac{\phi _{o}}{2}\right)
 \end{eqnarray*}
 
-where we use the fact that $\cos \left( -\theta \right) =\cos \left( \theta
-\right) .$
+where we used another trig identity $\cos \left( -\theta \right) =\cos
+\left( \theta \right) .$
 
 Let's look at the parts of this expression. First take the sine part.
 
@@ -4531,26 +4735,27 @@ Now let's look at other factor%
 2y_{\max }\cos \left( \frac{\phi _{o}}{2}\right)
 \end{equation}%
 The sine part of our wave equation is multiplied by all of this factor. So
-all of this part is the new amplitude. It has a maximum value when $\phi
-_{o}=0$
+all of this part is the new amplitude. And this complicated amplitude has a
+maximum value when $\phi _{o}=0$
 
-\FRAME{dtbpFX}{2.5313in}{1.062in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.5313in;height 1.062in;depth
+\FRAME{dtbpFX}{2.5314in}{1.0617in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.5314in;height 1.0617in;depth
 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
 "MuPAD";xmin "-5";xmax "5";xviewmin "-5.0010000010002";xviewmax
 "5.0010000010002";yviewmin "-1.60264739640757";yviewmax "2";plottype
-4;axesFont "Times New Roman,12,0000000000,useDefault,normal";numpoints
-100;plotstyle "patch";axesstyle "normal";axestips FALSE;xis
-\TEXUX{x};var1name \TEXUX{$x$};function \TEXUX{$2\left( 1\right) \cos \left(
-\frac{x}{2}\right) $};linecolor "blue";linestyle 1;pointstyle
-"point";linethickness 1;lineAttributes "Solid";var1range
-"-5,5";num-x-gridlines 100;curveColor "[flat::RGB:0x000000ff]";curveStyle
-"Line";VCamFile 'SV53L73Z.xvz';valid_file "T";tempfilename
-'SV53NZ0V.wmf';tempfile-properties "XPR";}}When $\phi _{o}=\pi ,$ then 
+4;labeloverrides 3;x-label "phi_o";y-label "Amplitude";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$2\left( 1\right) \cos \left( \frac{x}{2}\right)
+$};linecolor "blue";linestyle 1;pointstyle "point";linethickness
+1;lineAttributes "Solid";var1range "-5,5";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'T96NQT0C.xvz';valid_file "T";tempfilename
+'T96NQT00.wmf';tempfile-properties "XPR";}}When $\phi _{o}=\pi ,$ then 
 \begin{equation*}
 2y_{\max }\cos \left( \frac{\pi }{2}\right) =0
 \end{equation*}%
-so when $\phi _{o}=0$ we have a new maximum amplitude of $2y_{\max }$ and
+So, when $\phi _{o}=0$ we have a new maximum amplitude of $2y_{\max }$ and
 when $\phi _{o}=\pi $ we have a zero amplitude. Here is our wave for several
 choices of $\phi _{o}.$
 
@@ -4632,7 +4837,8 @@ special case of standing waves.
 %EndExpansion
 
 A standing wave pattern is the result of the superposition of two traveling
-waves with the same frequency going in opposite directions%
+waves with the same frequency going in opposite directions. Let's take two
+specific waves%
 \begin{eqnarray*}
 y_{1} &=&y_{\max }\sin \left( kx-\omega t\right) \\
 y_{2} &=&y_{\max }\sin \left( kx+\omega t\right)
@@ -4707,7 +4913,17 @@ or%
 \frac{2\pi }{\lambda }x &=&n\frac{\pi }{2} \\
 x &=&n\frac{\lambda }{4}
 \end{eqnarray*}%
-these are called \emph{antinodes}.
+these are called \emph{antinodes}. But notice that if $n=2$ then $x=\frac{%
+\lambda }{2}$ and we know that will be a node. So not all values of $n$ work
+here. Let's try $n=3.$ Then $x=\frac{3\lambda }{4}$ and that works. To solve
+this issue we can say we will only allow odd values of $n.$ 
+\begin{equation*}
+n=1,3,5,\cdots
+\end{equation*}%
+Then we get antinodes when 
+\begin{equation*}
+x=n\frac{\lambda }{4}\text{\qquad }n=1,3,5,\cdots
+\end{equation*}
 
 We can also create standing waves with sound or even light waves!
 
@@ -4799,7 +5015,7 @@ The higher frequencies are integer multiples of the fundamental. When this
 happens we say that the frequencies form a \emph{harmonic series, }and the
 modes are called \emph{harmonics}. Since only certain frequencies work, we
 say that the frequencies of waves on the string that make standing waves are 
-\emph{quantized}! Quantization means that some values are allowed. This idea
+\emph{quantized}. Quantization means that some values are allowed. This idea
 is the basis behind Quantum mechanics (which views light and even matter as
 waves).
 
@@ -4814,6 +5030,12 @@ A guitar uses tension to change the frequency or pitch (tuning) and length
 of string (your fingers pressing on the strings) to change notes. A Piano
 uses both tension and length of string (and mass per unit length as well!).
 What do you expect and organ will do?
+
+It turns out that the musical note we hear is related to the fundamental
+frequency. So the musical note for a stringed instrument is given by 
+\begin{equation}
+f_{1}=\frac{1}{2L}\sqrt{\frac{T}{\mu }}
+\end{equation}
 
 \section{Sound waves}
 
@@ -4834,36 +5056,36 @@ As we exert a force on the piston, the air molecules are compressed into a
 group. In the next figure, each dot represents a group of air molecules. In
 the top picture, the air molecules are not displaced. But when the piston
 moves, the air molecules receive energy by collision. They bunch up. We see
-this in the second picture. \FRAME{dhF}{2.935in}{1.5079in}{0pt}{}{\Qlb{%
-Creation of a Pulse}}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.935in;height 1.5079in;depth 0pt;original-width 2.8911in;original-height
-1.471in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SV51AY0E.wmf';tempfile-properties "XPR";}}The graph below the two pictures
+this in the second picture. \FRAME{dtbpF}{3.0193in}{1.5061in}{0in}{}{}{Figure%
+}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.0193in;height 1.5061in;depth
+0in;original-width 3.0486in;original-height 1.5061in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T96Q0T01.wmf';tempfile-properties "XPR";}}The graph below the two pictures
 shows how much displacement each molecule group experiences.
 
 Suppose we now pull the piston back. This would allow the molecules to
 bounce back to the left, but the molecules that they have collided with will
 receive some energy and go to the right. This is shown in the next figure.
 Color coded dots are displayed above the before and after picture so you can
-see where the molecule groups started.\FRAME{dhF}{2.9334in}{1.5402in}{0pt}{}{%
-}{Figure}{\special{language "Scientific Word";type
+see where the molecule groups started.\FRAME{dtbpF}{3.131in}{1.6329in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.9334in;height 1.5402in;depth 0pt;original-width 3.6979in;original-height
-1.9285in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SV51AY0F.wmf';tempfile-properties "XPR";}}If we pull the piston back
-further, the molecules can pass their original positions.\FRAME{dhF}{2.917in%
-}{1.567in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+3.131in;height 1.6329in;depth 0pt;original-width 3.3093in;original-height
+1.711in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T96Q1H02.wmf';tempfile-properties "XPR";}}If we pull the piston back
+further, the molecules can pass their original positions.\FRAME{dtbpF}{%
+3.2428in}{1.7411in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.2428in;height 1.7411in;depth 0pt;original-width
+3.0716in;original-height 1.6365in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T96Q2403.wmf';tempfile-properties "XPR";}}%
+Then we can push inward again and compress the gas.\FRAME{dtbpF}{3.0219in}{%
+1.6941in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.917in;height 1.567in;depth 0pt;original-width 3.2811in;original-height
-1.7495in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SV51AY0G.wmf';tempfile-properties "XPR";}}Then we can push inward again and
-compress the gas.\FRAME{dhF}{2.8228in}{1.5791in}{0pt}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.8228in;height 1.5791in;depth
-0pt;original-width 3.7671in;original-height 2.0954in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SV51AY0H.wmf';tempfile-properties "XPR";}}This may seem like a senseless
+3.0219in;height 1.6941in;depth 0in;original-width 3.0512in;original-height
+1.6977in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T96Q3204.wmf';tempfile-properties "XPR";}}This may seem like a senseless
 thing to do, but it is really what a speaker does to produce sound. In
 particular, a speaker is a harmonic oscillator. The simple harmonic motion
 of the speaker is the disturbance that makes the sound wave.\FRAME{dhF}{%
@@ -4987,20 +5209,20 @@ but what is $s_{\max }?$
 We remember that $s_{\max }$ is the maximum displacement of a particle of
 fluid from its equilibrium position. We plotted this using a bar graph to
 show displacement from the equilibrium position for our molecules. As we
-push the piston in and out we will get something like this. \FRAME{dhF}{%
-3.1211in}{4.9035in}{0pt}{}{}{Figure}{\special{language "Scientific
+push the piston in and out we will get something like this. \FRAME{dtbpF}{%
+3.1559in}{4.3657in}{0in}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 3.1211in;height 4.9035in;depth 0pt;original-width
-6.3676in;original-height 10.0336in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73V24.wmf';tempfile-properties "XPR";}}%
+"T";width 3.1559in;height 4.3657in;depth 0in;original-width
+3.1878in;original-height 4.4207in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T96QOB06.wmf';tempfile-properties "XPR";}}%
 found before that we get something that looks like a sine wave, but remember
 what the bars represent. They represent the displacement from original
-position. \FRAME{dhF}{2.4613in}{1.849in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.4613in;height 1.849in;depth
-0pt;original-width 5.0004in;original-height 3.7498in;cropleft "0";croptop
+position. \FRAME{dtbpF}{2.5048in}{0.9615in}{0in}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.5048in;height 0.9615in;depth
+0in;original-width 2.5235in;original-height 0.9509in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V25.wmf';tempfile-properties "XPR";}}We don't usually draw bar graphs,
+'T96Q4305.wmf';tempfile-properties "XPR";}}We don't usually draw bar graphs,
 we usually just draw the sine wave.
 
 \FRAME{dtbpF}{2.3315in}{1.9294in}{0in}{}{}{Figure}{\special{language
@@ -5021,13 +5243,47 @@ is also periodic
 'SUS73V27.wmf';tempfile-properties "XPR";}}which is why we often refer to a
 sound wave as a pressure wave. Think of when the wave gets to your ear. the
 wave consists of a group of particles all headed for your ear drum. When
-they hit, they exert a force. Pressure is a force spread over an area, 
+they hit, they exert a force. Pressure is a force spread over an area,
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+
+Standing waves%
+\begin{equation*}
+y_{r}=\left( 2y_{\max }\sin \left( kx\right) \right) \cos \left( \omega
+t\right)
+\end{equation*}
+
+Nodes%
+\begin{equation*}
+x=n\frac{\lambda }{2}
+\end{equation*}%
+Antinodes%
+\begin{equation*}
+x=n\frac{\lambda }{4}\text{\qquad }n=1,3,5,\cdots
+\end{equation*}%
+Standing wave frequencies (for waves on strings)
+
+\begin{equation}
+f_{n}=\frac{n}{2L}\sqrt{\frac{T}{\mu }}
+\end{equation}
+
+Sound waves%
+\begin{equation}
+s\left( x,t\right) =s_{\max }\cos \left( kx-\omega t\right)
+\end{equation}
+
 \begin{equation*}
 P=\frac{F}{A}
-\end{equation*}%
-so in a sense, we hear changes in air pressure!
+\end{equation*}
 
 \chapter{8 Sound Wave Speed and Intensity 1.17.2, 1.17.3}
+
+We know the basics of how a sound wave is formed. Now let's put this on a
+more mathematical footing.
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Speed and Intensity}}{\chaptermark{Speed and Intensity}}}%
@@ -5056,6 +5312,9 @@ stretchy bonds in the medium. Our equation for this is
 \begin{equation*}
 v=\sqrt{\frac{T}{\mu }}
 \end{equation*}%
+where $T$ is the tension in the rope or string and $\mu =m/L$ is the linear
+mass density.
+
 Let's think about this equation. The tension is an elastic property of the
 string or rope medium. And $\mu $ has the mass in it. It is an inertial
 property of the string or rope. It tells us how hard the string or rope is
@@ -5063,8 +5322,8 @@ to move.
 
 We need to have something like this for sound waves. And we know that sound
 waves have to do with pressure and the compression of the molecules that
-make up the medium. Long ago in PH121 you should have studied elastic
-properties of materials. But let's review them here.
+make up the medium. Long ago in Principles of Physics I you should have
+studied elastic properties of materials. But let's review them here.
 
 \subsection{Young's Modulus}
 
@@ -5104,7 +5363,7 @@ relates the stress to the strain.
 \begin{equation}
 \frac{F}{A}=Y\frac{\Delta L}{L_{o}}
 \end{equation}%
-this linear equation only works in the elastic region of a stress vs. strain
+This linear equation only works in the elastic region of a stress vs. strain
 curve for the particular object. The constant of proportionality, $Y,$ is
 called \emph{Young's Modulus}. If we write this as%
 \begin{eqnarray}
@@ -5190,9 +5449,11 @@ the force is our tension, and the cross sectional area will be
 \begin{equation*}
 A=\pi \frac{d^{2}}{4}
 \end{equation*}%
+And we can substitute this into our equation%
 \begin{equation*}
 \frac{T}{\pi \frac{d^{2}}{4}}\frac{L_{o}}{Y}=\Delta L
 \end{equation*}%
+or, after dealing with the fraction in the denominator%
 \begin{equation*}
 \frac{4T}{\pi d^{2}}\frac{L_{o}}{Y}=\Delta L
 \end{equation*}%
@@ -5216,8 +5477,9 @@ speed of sound?
 
 Say, we hit the bar with a hammer. Sound waves would be created in the bar.
 But suppose we make our bar thin and stretch it across a guitar. Now as we
-hit the string we expect a wave. We need a measure of the elasticity of the
-metal and a measure of the inertial of the metal material. The tension in
+hit the string we expect a wave. And that wave will have a wave speed. And
+we know that wave speeds are related to the measure of the elasticity of the
+metal and the measure of the inertial of the metal material. The tension in
 the (now) wire would be our force, but we now know how to express this force
 in terms of the elasticity of the wire material. 
 \begin{eqnarray*}
@@ -5239,18 +5501,19 @@ speed of
 v=\sqrt{\frac{Y}{\rho }}
 \end{equation*}%
 But this won't do for sound waves in air. We need a different modulus for
-gasses.
+gasses. And fortunately we also studied this modulus in Principles of
+Physics I. It is the bulk modulus.
 
 \subsection{Bulk Modulus}
 
-This one is harder. It tells us how much a solid can be squashed or,
+This one is harder. It tells us how much a material can be squashed or,
 compressed. Let's define 
 \begin{equation}
 \Delta P=\frac{\Delta F}{A}
 \end{equation}%
-where now $A$ is the outer surface area of the solid. If we were dealing
-with a fluid, this would be pressure. Often fluids are very hard to compress
-(we assumed they were not at all compressible). Many solids are easy to
+where now $A$ is the whole outer surface area of the object. We sometimes
+call such a force spread out over an object's surface a \emph{surface
+pressure}. Often fluids are very hard to compress. Many solids are easy to
 compress. Think of Styrofoam or any foam rubber. For solids $\Delta F/A$
 where the force is all around the solid and the area is the surface area is
 a stress. The strain is the percentage change in volume (change amount over
@@ -5312,7 +5575,7 @@ books. These numbers should be taken as example values and more exact
 numbers found for any real work.}
 \end{equation*}%
 The minus sign may be surprising. But in our definition of bulk modulus, we
-are thinking of compression. So usually $\Delta 
+are thinking of compression. And under compression $\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -5336,12 +5599,16 @@ v=\sqrt{\frac{\gamma RT_{K}}{M}}
 \end{equation*}%
 where $\gamma $ is the adiabatic index (related to the type of gas we have)
 and $R$ is the universal gas constant, and $T_{K}$ is the temperature in
-kelvins and $M$ is the gas molar mass. For now we can just use this
-approximation.
+kelvins and $M$ is the gas molar mass. Most of these quantities are
+familiar, but what is a \textquotedblleft universal gas
+constant\textquotedblright\ and what is an \textquotedblright adiabatic
+index?\textquotedblright\ These are quantities that we will study at the end
+of this course. So we can't complete our study of what wave speed of sound
+right now. But we need an approximate way to calculate speed of sound waves.
 
-This might not be exactly clear at this point. But what is important is that
-the speed changes with temperature. The hotter the gas, the faster the
-waves. If we assume the air is like an ideal gas, this reduces to just
+For now, what is important is that the speed changes with temperature. The
+hotter the gas, the faster the waves. If we assume the air is like an ideal
+gas, this reduces to just
 
 \begin{equation}
 v=v_{o}\sqrt{1+\frac{T_{c}}{T_{o}}}
@@ -5358,327 +5625,7 @@ T_{o}}+\frac{T_{C}}{T_{o}}}=v_{o}\sqrt{\frac{T_{o}+T_{C}}{T_{o}}}=v_{o}\sqrt{%
 The speed of sound in air at normal room temperature is around $340\unit{m}/%
 \unit{s}.$
 
-\subsection{Finding the speed of sound in air @@@@ Don't do this here! @@@@@}
-
-Now that we know about adiabatic processes, let's go back to the beginning
-of our course and think about the speed of sound in air. The disturbance
-that makes the wave will change the pressure and compress the gas a bit. So
-work will be done on the gas. But the disturbance happens quickly and we
-wouldn't expect energy transfer by heat. This is an adiabatic process!
-
-We used pipes when we studied sound waves. So, let's consider our air in a
-pipe. \FRAME{dtbpF}{3.3244in}{1.1061in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.3244in;height 1.1061in;depth
-0pt;original-width 3.359in;original-height 1.0981in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SV718T01.wmf';tempfile-properties "XPR";}}The pipe has a cross sectional
-area, $A$. And let's look at a small volume of air in the pipe. The darker
-region is our small volume of air and let's say it has a mas $\Delta m$
-where here the delta means \textquotedblleft a small amount
-of\textquotedblright\ and not a difference. The density of the air is given
-by 
-\begin{equation*}
-\rho =\frac{\Delta m}{\Delta 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}
-\end{equation*}%
-so we can write 
-\begin{equation*}
-\Delta m=\rho \Delta 
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-\end{equation*}%
-But look at our little mass' volume%
-\begin{equation*}
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=A\Delta x
-\end{equation*}%
-so we can write $\Delta m$ as 
-\begin{equation*}
-\Delta m=\rho A\Delta x
-\end{equation*}%
-Now let's consider the amount of mass that passes a point in our pipe. That
-is our mass flow rate and we know that is 
-\begin{equation*}
-\frac{dm}{dt}
-\end{equation*}%
-If we make our small amount of mass very small, we would have 
-\begin{equation*}
-dm=\rho Adx
-\end{equation*}%
-and our mass flow rate would be 
-\begin{equation*}
-\frac{dm}{dt}=\frac{\rho Adx}{dt}=\rho Av
-\end{equation*}%
-This looks familiar. It is one side of our equation of continuity 
-\begin{equation*}
-\rho _{in}A_{in}v_{in}=\rho _{out}A_{out}v_{out}
-\end{equation*}
-
-Now consider a \textquotedblleft parcel of air.\textquotedblright\ This is
-just a part of the air that we will pay attention to. It is surrounded by
-more air and is only different because we are thinking about it. But concert
-such a parcel of air and let's make it sort of box shaped like in the next
-figure. \FRAME{dtbpF}{3.4042in}{1.4688in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.4042in;height 1.4688in;depth
-0pt;original-width 3.4406in;original-height 1.4688in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SV8BDJ01.wmf';tempfile-properties "XPR";}}We could write $\rho _{in}=\rho $
-and $v_{in}=v$ and $T_{in}=T$ and we could write $\rho _{out}=\rho +d\rho $, 
-$v_{out}=v+dv,$ and $T_{out}=T+dT.$ Let's put these in our continuity
-equation.%
-\begin{equation*}
-\rho Av=\left( \rho +d\rho \right) A\left( v+dv\right)
-\end{equation*}%
-The area, $A,$ didn't change. So it cancels, and we can do some algebra%
-\begin{eqnarray*}
-\rho v &=&\left( \rho +d\rho \right) \left( v+dv\right) \\
-\rho v &=&\rho v+\rho dv+vd\rho +d\rho dv
-\end{eqnarray*}%
-We can assume that $d\rho $ will be small if our parcel of air isn't too
-big. And likewise $dv$ will be small. So $d\rho dv$ should be very small.
-Let's drop this term.%
-\begin{equation*}
-\rho v=\rho v+\rho dv+vd\rho
-\end{equation*}%
-and the $\rho v$ terms cancel%
-\begin{equation*}
-0=\rho dv+vd\rho
-\end{equation*}%
-\begin{equation}
-\rho dv=-vd\rho  \label{fromcontinuity}
-\end{equation}%
-This doesn't seem to have helped, but we will use it later. Let's go back to
-our parcel of air and this time think of the forces on the input and output
-sides. \FRAME{dtbpF}{3.995in}{1.7207in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.995in;height 1.7207in;depth
-0pt;original-width 4.0429in;original-height 1.7252in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SV8BY003.wmf';tempfile-properties "XPR";}}We will have an input pressure
-and an output pressure with $P_{in}=P$ and $P_{out}=P+dP$
-
-We remember that $F=PA$ so we will have a force on the input side%
-\begin{equation*}
-F_{in}=P_{in}A=PA=Pdydz
-\end{equation*}%
-and an output force 
-\begin{equation*}
-F_{out}=-P_{out}A=-\left( P+dP\right) dydz
-\end{equation*}%
-The net force would be 
-\begin{eqnarray*}
-F_{net} &=&Pdydz-Pdydz-dPdydz \\
-&=&-dPdydz
-\end{eqnarray*}%
-Then 
-\begin{equation*}
-ma=-dPdydz
-\end{equation*}%
-We can divide by the mass to get the acceleration%
-\begin{equation*}
-a=-\frac{dPdydz}{m}
-\end{equation*}%
-and now think, 
-\begin{equation*}
-\rho =\frac{m}{%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-}=\frac{m}{dxdydz}
-\end{equation*}%
-so 
-\begin{equation*}
-m=\rho dxdydz
-\end{equation*}%
-so our acceleration is 
-\begin{eqnarray*}
-a &=&-\frac{dPdydz}{\rho dxdydz} \\
-&=&-\frac{dP}{\rho dx}
-\end{eqnarray*}%
-and $a=dv/dt$%
-\begin{equation*}
-\frac{dv}{dt}=-\frac{dP}{\rho dx}
-\end{equation*}%
-\begin{equation*}
-dv=-\frac{dPdt}{\rho dx}
-\end{equation*}%
-and recall that $v=dx/dt$%
-\begin{equation*}
-dv=-\frac{dP}{\rho v}
-\end{equation*}%
-or 
-\begin{equation*}
-dv\rho v=-dP
-\end{equation*}
-
-Finely we can use our result from our continuity equation (\ref%
-{fromcontinuity}) $\rho dv=-vd\rho $%
-\begin{eqnarray*}
-v\rho dv &=&-dP \\
-v\left( -vd\rho \right) &=&-dP \\
-v\left( -vd\rho \right) &=&-dP \\
-v^{2} &=&\frac{dP}{d\rho }
-\end{eqnarray*}%
-and we are close. the wave speed, $v,$ is the square root of the pressure
-change over the density change. 
-\begin{equation}
-v=\sqrt{\frac{dP}{d\rho }}  \label{Sound_speed}
-\end{equation}%
-This is a little like $\sqrt{B/\rho }.$ So we are close.
-
-Since we are modeling this as an adiabatic process we know 
-\begin{equation*}
-P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }=\text{constant}
-\end{equation*}%
-Let's look at that volume, $%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-$. 
-\begin{equation*}
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=\frac{m}{\rho }
-\end{equation*}%
-and we can write the mass, $m,$ in terms of the molar mass%
-\begin{equation*}
-M=\frac{m}{n}
-\end{equation*}%
-or 
-\begin{equation*}
-m=nM
-\end{equation*}%
-so our volume is 
-\begin{equation*}
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-=\frac{nM}{\rho }
-\end{equation*}%
-and let's put this into our adiabatic process equation%
-\begin{equation*}
-P%
-%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
-%BeginExpansion
-\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
-%EndExpansion
-^{\gamma }=P\left( \frac{nM}{\rho }\right) ^{\gamma }=\text{constant}
-\end{equation*}%
-we could write this as 
-\begin{equation*}
-P\frac{n^{\gamma }M^{\gamma }}{\rho ^{\gamma }}=\text{constant}
-\end{equation*}%
-and rearrange it to be 
-\begin{equation*}
-P\frac{1}{\rho ^{\gamma }}=\frac{\text{constant}}{n^{\gamma }M^{\gamma }}
-\end{equation*}%
-and since $n$ and $M$ are not changing 
-\begin{equation*}
-P\frac{1}{\rho ^{\gamma }}=\text{new constant}
-\end{equation*}
-
-Let's take the logarithm of both sides%
-\begin{eqnarray*}
-\ln \left[ P\frac{1}{\rho ^{\gamma }}\right] &=&\ln \left[ \text{new constant%
-}\right] \\
-\ln P-\gamma \ln \rho &=&\ln \left[ \text{new constant}\right] \\
-\ln P-\gamma \ln \rho &=&\text{another new constant}
-\end{eqnarray*}%
-Now let's take the derivative of both sides%
-\begin{equation*}
-\frac{d}{d\rho }\left( \ln P-\gamma \ln \rho \right) =\frac{d}{d\rho }\left( 
-\text{another new constant}\right)
-\end{equation*}%
-The right hand side is just zero (which is why we didn't spend time figuring
-out the number for the constant!). 
-\begin{equation*}
-\frac{d}{d\rho }\left( \ln P-\gamma \ln \rho \right) =0
-\end{equation*}%
-But the right hand side gives 
-\begin{equation*}
-\frac{1}{P}\frac{dP}{d\rho }-\frac{\gamma }{\rho }\frac{d\rho }{d\rho }=0
-\end{equation*}%
-\begin{equation*}
-\frac{1}{P}\frac{dP}{d\rho }=\frac{\gamma }{\rho }
-\end{equation*}%
-\begin{equation}
-\frac{dP}{d\rho }=\frac{\gamma }{\rho }P  \label{gas_speed_sound_partial}
-\end{equation}%
-Now let's pretend that the air is an ideal gas. Then we know that 
-\begin{eqnarray*}
-PV &=&nRT \\
-&=&\frac{m}{M}RT
-\end{eqnarray*}%
-and we can solve for $P$ and put it into equation (\ref%
-{gas_speed_sound_partial}) 
-\begin{eqnarray*}
-P &=&\frac{m}{VM}RT \\
-&=&\frac{\rho }{M}RT
-\end{eqnarray*}%
-and then equation (\ref{gas_speed_sound_partial} becomes%
-\begin{equation}
-\frac{dP}{d\rho }=\frac{\gamma }{\rho }\frac{\rho }{M}RT=\frac{\gamma }{M}RT
-\end{equation}
-
-and we can put this directly into equation (\ref{Sound_speed})%
-\begin{equation*}
-v=\sqrt{\frac{dP}{d\rho }}=\sqrt{\frac{\gamma }{M}RT}
-\end{equation*}%
-We can get our approximation that we used earlier for temperature dependence
-for sound speed in air from putting in some numbers. First, let's define $%
-T_{o}=273\unit{K}.$ Then 
-\begin{eqnarray*}
-v &=&\sqrt{\frac{\gamma }{M}RT\frac{T_{o}}{T_{o}}} \\
-&=&\sqrt{\frac{\gamma RT_{o}}{M}}\sqrt{\frac{T}{T_{o}}}
-\end{eqnarray*}%
-It turns out that for air at normal air pressure and at $T=10\unit{%
-%TCIMACRO{\U{2103}}%
-%BeginExpansion
-{}^{\circ}{\rm C}%
-%EndExpansion
-},$ $\gamma =1.4$ and $M=0.02897\frac{\unit{kg}}{\unit{mol}},$ and of course 
-$R=8.31\frac{\unit{J}}{\unit{mol}\unit{K}}$ then our speed is
-
-\begin{eqnarray*}
-v &=&\sqrt{\frac{\left( 1.4\right) \left( 8.31\frac{\unit{J}}{\unit{mol}%
-\unit{K}}\right) \left( 273\unit{K}\right) }{0.02897\frac{\unit{kg}}{\unit{%
-mol}}}}\sqrt{\frac{T}{T_{o}}} \\
-&=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{\frac{T}{%
-T_{o}}} \\
-&=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{\frac{T}{273%
-\unit{K}}}
-\end{eqnarray*}%
-where $T$ is in kelvins. We can change this to having $T$ in Celsius if we 
-\begin{eqnarray*}
-v &=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{\frac{%
-T_{o}+T_{c}}{T_{o}}} \\
-&=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{1+\frac{%
-T_{c}}{T_{o}}}
-\end{eqnarray*}%
-which is what we used before.
-
-\section{Intensity of Sound Waves @@ Maybe do this}
+\section{Intensity of Sound Waves}
 
 We have already learned that knowing the power of a sound source isn't
 enough to tell us how loud that sound source will appear to us. We know the
@@ -5690,10 +5637,17 @@ distance.
 \mathcal{I}=\frac{\mathcal{P}}{4\pi r^{2}}
 \end{equation}
 
-Let's consider a parcel of air. The air might both move and stretch as the
-sound wave passes. So the displacement from equilibrium $s\left( x\right) $
-might be different as the air moves to location $x+\Delta x.$ The next
-figure tries to show this.
+Let's consider a parcel of air. What is a \textquotedblleft parcel of
+air?\textquotedblright\ It is just part of the air that we will consider. It
+isn't different than the air around it. The only difference is that we are
+thinking about this chunk of air and not the air around it. The word
+\textquotedblleft parcel\textquotedblright\ is an old word for
+\textquotedblleft package.\textquotedblright\ So let's make our parcel of
+air kind of square package shaped. And we wish a should wave to trave
+through our parcel of air. The air molecules might both move and stretch out
+as the sound wave passes. So the displacement from equilibrium $s\left(
+x\right) $ for the air molecules might be different as the air moves to
+location $x+\Delta x.$ The next figure tries to show this.
 
 \FRAME{dtbpF}{3.7608in}{2.5448in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -5798,10 +5752,13 @@ For a sinusoidal wave,
 \begin{equation}
 s\left( x,t\right) =s_{\max }\sin \left( kx-\omega t+\phi _{o}\right)
 \end{equation}%
-(where $\phi _{o}$ could be $\pi /2$ to make this really a cosine).and we
-can take a derivative of this%
+This tells us about the distance an air molecule that was at location $x$
+when $t=0$ has traveled away from that equilibrium position at some later
+time, $t.$ We could find out how fast the molecule is moving by taking a
+derivative.%
 \begin{equation*}
-\frac{ds}{dx}=-ks_{\max }\cos \left( kx-\omega t+\phi _{o}\right)
+v\left( x,t\right) =\frac{ds}{dx}=-ks_{\max }\cos \left( kx-\omega t+\phi
+_{o}\right)
 \end{equation*}%
 then 
 \begin{equation*}
@@ -5811,16 +5768,14 @@ We want the intensity and the intensity is
 \begin{equation}
 \mathcal{I}=\frac{\mathcal{P}}{A}
 \end{equation}%
-We could write the power as the force multiplied by the velocity%
+We could write the power as the force multiplied by the velocity (something
+we remember from Principles of Physics I).%
 \begin{equation}
 \mathcal{I}=\frac{Fv}{A}=Pv
 \end{equation}%
-We know something about the pressure, we need the speed. But this is the
-speed of parts of the medium. And we know how to find that for waves.%
-\begin{equation*}
-v\left( x,t\right) =\frac{d}{dt}s\left( x,t\right) =-\omega s_{\max }\cos
-\left( kx-\omega t+\phi _{o}\right)
-\end{equation*}%
+We know something about the pressure, we need the speed. But this isn't the
+wave speed, it is the speed of the molecule. And we know just found this $%
+v\left( x,t\right) =-ks_{\max }\cos \left( kx-\omega t+\phi _{o}\right) .$
 We can put this all together to get the intensity%
 \begin{eqnarray}
 \mathcal{I} &=&\Delta Pv \\
@@ -5828,8 +5783,12 @@ We can put this all together to get the intensity%
 -\omega s_{\max }\cos \left( kx-\omega t+\phi _{o}\right) \right) \\
 &=&-Bk\omega s_{\max }^{2}\cos ^{2}\left( kx-\omega t+\phi _{o}\right)
 \end{eqnarray}%
-The intensity is proportional to the amplitude of the displacement, $s_{\max
-}$ squared.
+And low and behold! The intensity is proportional to the amplitude of the
+displacement, $s_{\max }$ squared.
+
+We found this to be true before for waves on strings. And now it is true as
+well for sound waves (take a good guess what we will find for the intensity
+and amplitude relationship for light waves!).
 
 We often can only measure a time average intensity. To average our intensity
 function over one period we would integrate%
@@ -5840,8 +5799,13 @@ function over one period we would integrate%
 _{o}\right) dt \\
 &=&-Bk\omega s_{\max }^{2}\frac{1}{2}
 \end{eqnarray*}%
-With a little more math we can write this in terms of $\Delta P_{\max
-}=Bks_{\max }$%
+This gives the average intensity of the wave as being proportional to the
+square of the maximum displacement (amplitude) $s_{\max }.$ But we learned
+in our last lecture that we can describe sound waves as pressure waves. And
+note that the factors $Bks_{\max }$ have units of pressure. We can call this
+combination the change in pressure for the sound wave, $\Delta P_{\max
+}=Bks_{\max }$ and write our average intensity in terms of this change in
+pressure. 
 \begin{eqnarray*}
 \left\langle \mathcal{I}\right\rangle &=&-\frac{Bk\omega s_{\max }^{2}}{2}=-%
 \frac{\omega }{2}\left( Bks_{\max }\right) \left( s_{\max }\right) \\
@@ -5869,6 +5833,67 @@ B=\frac{\omega ^{2}}{k^{2}}\rho
 \end{equation*}%
 This gives us the average intensity in the pressure picture for sound waves
 and once again the intensity is proportional to the amplitude squared.
+
+Whichever whay we think about sound waves the intensity is proportional to
+the amplitude squared. For those of us that will go on to study quantum
+mechanids, this square of the amplitude of the wave function is going to be
+very important! So chemists and physicists take note! Electrical engineers,
+you will need to know this as well.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+\begin{equation*}
+v=\sqrt{\frac{B}{\rho }}
+\end{equation*}%
+\begin{equation}
+v=v_{o}\sqrt{1+\frac{T_{c}}{T_{o}}}
+\end{equation}%
+\begin{equation}
+\mathcal{I}=\frac{\mathcal{P}}{4\pi r^{2}}
+\end{equation}%
+\begin{equation*}
+\left\langle \mathcal{I}\right\rangle =-\frac{1}{2}Bk\omega s_{\max }^{2}
+\end{equation*}
+
+\begin{equation*}
+\left\langle \mathcal{I}\right\rangle =-\frac{1}{2\left( v\rho \right) }%
+\left( \Delta P_{\max }\right) ^{2}
+\end{equation*}
+
+\chapter{9 Sound Standing Waves \ 1.17.4, 1.17.5}
+
+%TCIMACRO{%
+%\TeXButton{\chaptermark{Sound Standing Waves}}{\chaptermark{Sound Standing Waves}}}%
+%BeginExpansion
+\chaptermark{Sound Standing Waves}%
+%EndExpansion
+
+We now have sound waves and know a little bit about how these sound waves
+act. And we know these waves deliver energy and we can even describe the
+intensity of the sound waves. But it turns out our design engineer used a
+clever trick in making our auditory system. He wanted us to hear the gentle
+sigh of a breeze, and the thunderous roar of a jet engine and every
+intensity in between. To make this happen, He made our hearing logarithmic!
+We will see how this works in this lecture. We will also look at standing
+waves in sound (and even light) and relate them to musical instruments and
+structures.
+
+%TCIMACRO{%
+%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
+%BeginExpansion
+\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
+%EndExpansion
+
+\begin{itemize}
+\item Sound Level in Decibels
+
+\item Sound Standing waves (music)
+
+\item Light Standing Waves
+\end{itemize}
 
 \section{Sound Levels in Decibels}
 
@@ -5898,14 +5923,14 @@ curves (Image in the Public Domain courtesy Lindosland)}}{}{Figure}{\special%
 TRUE;display "USEDEF";valid_file "T";width 2.3328in;height 2.3647in;depth
 0pt;original-width 2.3487in;original-height 2.3815in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V28.wmf';tempfile-properties "XPR";}}
+'T9BYZY00.wmf';tempfile-properties "XPR";}}
 
-but our ears are not designed to be quantitative scientific instruments
+But our ears are not designed to be quantitative scientific instruments
 (though they are truly amazing in their range and ability). Sounds with the
 same intensity at different frequencies do not appear to us to have the same
 loudness. The frequency response graph above shows how this relationship
 works for test subjects\footnote{%
-Ones that have not gone to Guns n Roses concerts}.
+Ones that have not gone to Guns n Roses concerts.}.
 
 Our Design Engineer made an interesting choice in building us. We need to
 hear very faint sounds, and very loud sounds too. In order to make us able
@@ -5981,23 +6006,8 @@ Quietest thing we can hear (Io) & 0 \\ \hline
 \end{tabular}%
 \end{equation*}
 
-\chapter{9 Sound Standing Waves \ 1.17.4, 1.17.5}
-
-%TCIMACRO{%
-%\TeXButton{\chaptermark{Sound Standing Waves}}{\chaptermark{Sound Standing Waves}}}%
-%BeginExpansion
-\chaptermark{Sound Standing Waves}%
-%EndExpansion
-
-%TCIMACRO{%
-%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
-%BeginExpansion
-\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
-%EndExpansion
-
-\begin{itemize}
-\item Sound Standing waves (music)
-\end{itemize}
+In our last lecture we made standing waves with strings and ropes. In our
+next lecture let's consider making standing waves with sound waves.
 
 \section{Sound Standing waves.}
 
@@ -6007,40 +6017,41 @@ studied sound waves, could we make sound standing waves?
 For our attempt, let's take a pipe as shown in the next figures. The pipe
 will control the direction of the sound wave. The sound wave will (mostly)
 go down the pipe. But will there be a reflection at the end of the pipe like
-there was for the string?
+there was for the string? It turns out that there will be a reflection.
+Let's consider our sound wave as a change in pressure to see why.
 
-It turns out that there will be a reflection. Let's consider our sound wave
-as a change in pressure to see why. For the string wave, we had a reflected
-pulse because the person (or guitar bridge, or whatever is holding the
-string end) exerted a force on the string. If a sound wave travels down our
-pipe, the pressure will change as the wave goes down the pipe. Remember that
-pressure is a force spread over an area. When the sound wave gets to the end
-of the pipe, the rest of the room's air is waiting. And that air mass pushes
-back on the air molecules that are trying to leave the pipe. The air mass of
-the room won't change it's pressure much. That resistance to pressure change
-(the force due to the rest of the room air molecules colliding with our wave
-molecules, pushing them back) will send our tube molecules back down the
-tube. And that starts a reflection. Thin about this for a moment. We need to
-picture more than we have before. The room is full of air, and it turns out
-that the air molecules aren't sitting still. So when we make our wave start
-but hitting molecules with a piston, the molecules at the end of the tube
-will hit room air molecules that are already moving.
+For the string wave, we had a reflected pulse because the person (or guitar
+bridge, or whatever is holding the string end) exerted a force on the
+string. If a sound wave travels down our pipe, the pressure will change as
+the wave goes down the pipe. Remember that pressure is a force spread over
+an area. When the sound wave gets to the end of the pipe, the rest of the
+room's air is waiting. And that air mass pushes back on the air molecules
+that are trying to leave the pipe. The air mass of the room won't change
+it's pressure much. That resistance to pressure change (the force due to the
+rest of the room air molecules colliding with our wave molecules, pushing
+them back) will send our tube molecules back down the tube. And that starts
+a reflection. Think about this for a moment. We need to picture more than we
+have before. The room is full of air, and it turns out that the room air
+molecules aren't sitting still. So when we make our wave start by hitting
+molecules with a piston, the molecules at the end of the tube will hit room
+air molecules that are already moving.
 
-\FRAME{dtbpF}{3.5129in}{2.4154in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{3.5129in}{2.4154in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 3.5129in;height 2.4154in;depth
-0in;original-width 3.4662in;original-height 2.3748in;cropleft "0";croptop
+0pt;original-width 3.4662in;original-height 2.3748in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V37.wmf';tempfile-properties "XPR";}}Think of pool balls. If the cue
 ball and another ball, say, the 6 ball, collide, usually the 6 ball is
 stationary at the beginning. But if it is not, that will change the outcome
-of our conservation of momentum problem. if the 6 ball is initially moving
-toward the cue ball, the cue ball will bounce back the way it came. That
+of our conservation of momentum problem. If the cue ball is initially moving
+toward the 6 ball, but the 6 ball is also moving toward the cue ball and
+there is a collision, the cue ball will bounce back the way it came. That
 will happen with some of the molecules at the end of the pipe. But some will
-keep going. \FRAME{dtbpF}{3.7144in}{1.7538in}{0in}{}{}{Figure}{\special%
+keep going. \FRAME{dtbpF}{3.7144in}{1.7538in}{0pt}{}{}{Figure}{\special%
 {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 3.7144in;height 1.7538in;depth
-0in;original-width 3.6668in;original-height 1.7158in;cropleft "0";croptop
+0pt;original-width 3.6668in;original-height 1.7158in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V38.wmf';tempfile-properties "XPR";}}We will split the energy from the
 wave into to waves, much like we did with waves on strings when we came to
@@ -6081,22 +6092,36 @@ can draw a displacement node in the middle and we see that
 \begin{equation}
 \lambda _{1}=2L
 \end{equation}%
-and 
+\FRAME{dtbpF}{3.9009in}{1.7074in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.9009in;height 1.7074in;depth
+0in;original-width 3.9471in;original-height 1.711in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T9C38Q01.wmf';tempfile-properties "XPR";}}and since $v=\lambda f$ we can
+find%
+\begin{equation*}
+f_{1}=\frac{v}{\lambda _{1}}
+\end{equation*}%
+or 
 \begin{equation}
 f_{1}=\frac{v}{2L}
 \end{equation}%
-The next mode fits a whole wavelength%
+The next mode fits a whole wavelength\FRAME{dtbpF}{4.0633in}{1.9522in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+4.0633in;height 1.9522in;depth 0pt;original-width 4.112in;original-height
+1.9602in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T9C4D504.wmf';tempfile-properties "XPR";}}%
 \begin{eqnarray}
 \lambda _{2} &=&L \\
 f_{2} &=&\frac{v}{L}
 \end{eqnarray}%
-\FRAME{dhF}{3.0597in}{2.7786in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.0597in;height 2.7786in;depth
-0pt;original-width 4.4348in;original-height 4.0248in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73V3B.wmf';tempfile-properties "XPR";}}but the next mode fits a
-wavelength and a half%
+But the next mode fits a wavelength and a half\FRAME{dtbpF}{4.0916in}{%
+1.9655in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+4.0916in;height 1.9655in;depth 0in;original-width 4.1413in;original-height
+1.9744in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T9C3AT03.wmf';tempfile-properties "XPR";}}%
 \begin{eqnarray}
 \lambda _{3} &=&\frac{3}{2}L \\
 f_{3} &=&\frac{2v}{3L}
@@ -6107,7 +6132,7 @@ If we keep going
 f_{n} &=&n\frac{v}{2L}\qquad n=1,2,3,4\ldots
 \end{eqnarray}%
 This is the same mathematical form that we achieved for a standing wave on a
-string!
+string! Pipes can make a harmonic series.
 
 \section{Pipes closed on one end}
 
@@ -6161,7 +6186,7 @@ TRUE;display "USEDEF";valid_file "T";width 4.1796in;height 2.0358in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V3D.wmf';tempfile-properties "XPR";}}
 
-The first harmonic for the closed pipe are found by using 
+Once again the first harmonic for the closed pipe is found by using 
 \begin{equation}
 v=\lambda f
 \end{equation}%
@@ -6169,8 +6194,8 @@ v=\lambda f
 f=\frac{v}{\lambda }
 \end{equation}%
 We know the speed of sound, so we have $v.$ Knowing that the first harmonic
-has a node at one end and an anti node at the other end gives us the
-wavelength. If the pipe is $L$ in length, then $L$ must be 
+has a node at one end and an anti node at the other end gives just a quarter
+of a wavelength in the pipe. If the pipe is $L$ in length, then $L$ must be 
 \begin{equation}
 L=\frac{1}{4}\lambda _{1}
 \end{equation}%
@@ -6204,7 +6229,11 @@ If we continued, we would find%
 and 
 \begin{equation}
 f_{n}=n\frac{v}{4L}\qquad n=1,3,5\ldots
-\end{equation}
+\end{equation}%
+Notice that we got $1/4$ and $3/4$ and $5/4,$ but not $2/4$ or $6/4$ in our
+equations. The even values of $n$ don't work because our boundary conditions
+(one end a node and the other an anti-node) prevent a standing wave from
+forming with that wavelength. It doesn't fit the pipe. So no standing wave.
 
 Example: organ pipe
 
@@ -6268,19 +6297,38 @@ Figure}{\special{language "Scientific Word";type
 2.5676in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V3F.wmf';tempfile-properties "XPR";}}
 
-Lasers and standing waves
+\section{Lasers and standing waves}
 
-\FRAME{dhF}{2.6135in}{1.6604in}{0in}{}{}{Figure}{\special{language
+We made standing waves with waves on strings and with sound waves in air.
+Light is also a wave (thought we haven't shown that yet). Could we make
+standing waves with light waves?
+
+The answer is a big yes! Lasers use light standing waves. A laser is built
+with two parallel mirrors that create the reflections. Remember we need two
+waves in the light wave medium at the same time going different directions
+to make a standing wave.
+
+\FRAME{dhF}{2.6135in}{1.6604in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 2.6135in;height 1.6604in;depth
-0in;original-width 2.5719in;original-height 1.6233in;cropleft "0";croptop
+0pt;original-width 2.5719in;original-height 1.6233in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V3G.wmf';tempfile-properties "XPR";}}\FRAME{dhF}{3.1868in}{1.6466in}{%
-0in}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.1868in;height 1.6466in;depth 0in;original-width 3.1427in;original-height
-1.6103in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V3H.wmf';tempfile-properties "XPR";}}
+'SUS73V3G.wmf';tempfile-properties "XPR";}}A flash of light from a flash
+lamp starts the wave and one of the mirrors sends the wave back creating the
+second wave. These two waves can mix to make a standing wave.\FRAME{dhF}{%
+3.1868in}{1.6466in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.1868in;height 1.6466in;depth 0pt;original-width
+3.1427in;original-height 1.6103in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SUS73V3H.wmf';tempfile-properties "XPR";}}%
+Lasers add in what is called a \textquotedblleft gain
+medium\textquotedblright\ which is a special crystal that generates more
+light every time the wave passes through it. And that makes lasers very
+bright. But you have probably noticed that lasers produce single colors of
+light. That single color is related to a single frequency, the frequency
+that makes the standing wave. Usually lasers produce a series of light
+standing waves just like sound and strings. But our eyes can't see the other
+standing wave frequencies, so we just see one.
 
 %TCIMACRO{%
 %\TeXButton{Question 123.24.3}{\marginpar {
@@ -6333,13 +6381,13 @@ f_{n}=n\frac{v}{2L}
 \end{equation*}%
 The fundamental looks like
 
-$\sin \left( x\right) $\FRAME{dtbpFX}{2.3443in}{1.5638in}{0pt}{}{}{Plot}{%
-\special{language "Scientific Word";type "MAPLEPLOT";width 2.3443in;height
-1.5638in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
-FALSE;lastEngine "MuPAD";xmin "-1.5708";xmax "1.5708";xviewmin
-"-1.5708";xviewmax "1.5708";yviewmin "-1.2";yviewmax
-"1.2";viewset"XY";rangeset"X";plottype 4;plottickdisable TRUE;axesFont
-"Times New Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+\FRAME{dtbpFX}{2.3443in}{1.5638in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 2.3443in;height 1.5638in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "-1.5708";xmax "1.5708";xviewmin "-1.5708";xviewmax
+"1.5708";yviewmin "-1.2";yviewmax "1.2";viewset"XY";rangeset"X";plottype
+4;plottickdisable TRUE;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
 \TEXUX{$x$};function \TEXUX{$\sin \left( x\right) $};linecolor
 "blue";linestyle 1;pointstyle "point";linethickness 2;lineAttributes
@@ -6381,13 +6429,39 @@ x\right) $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 
 We can perform a similar analysis for a drum head, but it is much more
 complicated. The modes are not points, but lines or curves, and the
-frequencies of oscillation are not integer multiples of each other. See for
-example http://physics.usask.ca/\symbol{126}%
-hirose/ep225/animation/drum/anim-drum.htm.
+frequencies of oscillation are not integer multiples of each other. Of
+course structures can also waggle on the ends. the ends can rotate counter
+to each other, etc. These are more complex modes than the longitudinal modes
+we have considered.
 
-Of course structures can also waggle on the ends. the ends can rotate
-counter to each other, etc. These are more complex modes than the
-longitudinal modes we have considered.
+So far, we have combined waves, but we have only combined waves with the
+same frequency. But it can't be that every wave has the same frequency. So
+what happens if we superimpose waves that have different frequencies? That
+is what we will study in our next lecture.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+
+Decibles%
+\begin{equation*}
+I_{o}=1\times 10^{-12}\frac{\unit{W}}{\unit{m}^{2}}
+\end{equation*}
+
+\begin{equation}
+\beta =10\log _{10}\left( \frac{I}{I_{o}}\right)
+\end{equation}
+
+Standing waves, pipe open on both ends%
+\begin{equation*}
+f_{n}=n\frac{v}{2L}\qquad n=1,2,3,4\ldots
+\end{equation*}%
+Standing waves, pipe closed on one end%
+\begin{equation*}
+f_{n}=n\frac{v}{4L}\qquad n=1,3,5\ldots
+\end{equation*}
 
 \chapter{10 Beats and Doppler Shift 1.17.6, 1.17.7}
 
@@ -6396,6 +6470,15 @@ longitudinal modes we have considered.
 %BeginExpansion
 \chaptermark{Beats and Doppler}%
 %EndExpansion
+
+Up till now we only superposed waves that had the same frequency. But what
+happens if we take waves with different frequencies? Let's answer this first
+in this lecture. Then, we should worry about something from Principles of
+Physics I. We know speeds are relative. But our equations for things like
+standing waves involve the speed of the wave. Shouldn't these be relative
+speeds viewed from a reference frame? How do we deal with different relative
+speeds from different reference frames? We will take on this question at the
+end of the lecture.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -6419,25 +6502,26 @@ change in detected frequency
 %\begin{minipage}[t]{1in}
 %\small{Beat Demo}
 %\end{minipage}
-%}}}%
+%}} }%
 %BeginExpansion
 \marginpar {
 \hspace{-0.5in}
 \begin{minipage}[t]{1in}
 \small{Beat Demo}
 \end{minipage}
-}%
+}
 %EndExpansion
-Up till now we only superposed waves that had the same frequency. But what
-happens if we take waves with different frequencies? Let's take the case
-where $\phi _{2}=\phi _{1}=\phi _{o},$ $k_{2}=k_{1}=k$ and let's let the
-waves mix at the same location $x_{2}=x_{1}$ so 
+Let's mix two waves again, but this time take the case where $\phi _{2}=\phi
+_{1}=\phi _{o},$ $k_{2}=k_{1}=k$ and let's let the waves mix at the same
+location $x_{2}=x_{1}$ so 
 \begin{equation*}
 y_{1}=y_{\max }\sin \left( kx-\omega _{1}t+\phi _{o}\right)
 \end{equation*}%
 \begin{equation*}
 y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right)
 \end{equation*}%
+that is, let's let the frequencies be different so that $\omega _{1}\neq
+\omega _{2}.$ Our phase difference would be 
 \begin{eqnarray*}
 \Delta \phi &=&\left( kx-\omega _{1}t+\phi _{o}\right) -\left( kx-\omega
 _{1}t+\phi _{o}\right) \\
@@ -6451,9 +6535,9 @@ A &=&2y_{\max }\cos \left( \frac{1}{2}\Delta \phi \right) \\
 &=&2y_{\max }\cos \left( \frac{1}{2}\left( \omega _{1}-\omega _{2}\right)
 t\right)
 \end{eqnarray*}%
-and we can see that our amplitude will change in time. Sometimes it will be
-constructive interference and sometimes destructive interference and often
-in between.
+and we can see that our amplitude will change in time. For a given position
+sometimes it will be constructive interference and sometimes destructive
+interference and often in between.
 
 We can plot both waves on the same graph and see that this will happen.%
 \FRAME{dtbpFX}{4.9018in}{2.29in}{0pt}{}{}{Plot}{\special{language
@@ -6489,7 +6573,7 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 'SV8TFY0F.xvz';valid_file "T";tempfilename
 'SUS73V3Z.wmf';tempfile-properties "XPR";}}
 
-where there is constructive interference, the resulting wave amplitude is
+Where there is constructive interference, the resulting wave amplitude is
 large, where there is destructive interference, the resulting amplitude is
 zero. We get a traveling wave who's amplitude varies. We can find the
 amplitude function algebraically.
@@ -6564,7 +6648,7 @@ f_{beat}=\left\vert f_{1}-f_{2}\right\vert
 Any time we mix waves of different frequencies we get beating. Often the
 beat frequency is very fast, and our hearing system can't track the beats,
 so we don't hear them. And if we mixed more than two waves the beats might
-not come at perfectly regular intervals. The mixing of waves can become
+not come at easily recognizable intervals. The mixing of waves can become
 quite complicated. Yet even a barbershop quartet is a mixing of at least
 four waves. So complicated superpositions are common. In the next lecture we
 will try to see how we could take on these complicated combined waves.
@@ -6572,7 +6656,7 @@ will try to see how we could take on these complicated combined waves.
 \section{Doppler Effect}
 
 Let's start by considering an inertial reference frame (remember this from
-PH121?)
+Principles of Physics I?)
 
 Suppose we pick two reference frames, one traveling with a velocity $v_{r}$
 with respect to the other. Let's also place them far away from any other
@@ -6595,7 +6679,7 @@ from platform $A$ as
 \begin{equation*}
 v_{bA}=v_{bB}+v_{BA}
 \end{equation*}%
-where $v_{bB}$ is guy b's speed seen from platform $B$ and $v_{BA}$ is the
+where $v_{bB}$ is guy $b$'s speed seen from platform $B$ and $v_{BA}$ is the
 speed of platform $B$ as seen from platform $A.$ In this case $v_{BA}=v_{x}.$
 Now suppose we have a wave generator (a point source) creating spherical
 waves. Let the point source be at rest. We will call this point source an
@@ -6620,31 +6704,39 @@ the number of crests that pass by a given point in a unit time. Does the
 moving detector see the same number of crests per unit time as when it was
 stationary?
 
-No, the frequency appears to be higher! How about if we let the detector
-move the other way?
+No, the frequency appears to be higher. Every time the detector hits a wave
+crest it moves toward the next wave crest so that it hits the wave crests
+faster. That is a higher frequency. How about if we let the detector move
+the other way?
 
-\FRAME{dtbpF}{2.1223in}{2.0384in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{2.1223in}{2.0384in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 2.1223in;height 2.0384in;depth
-0in;original-width 2.0833in;original-height 2.0003in;cropleft "0";croptop
+0pt;original-width 2.0833in;original-height 2.0003in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SV8THK07.wmf';tempfile-properties "XPR";}}Again the frequency seen by the
-detector is different, but this time lower.
+detector is different, but this time lower. Every time the detector hits a
+wave crest the detector moves away from the next wave crest so it takes
+longer for that wave crest to catch up to it. That makes a longer period and
+a lower frequency.
 
-We can quantify this change. Take our usual variables $f_{we},$ $\lambda
-_{we},$ and the velocity of sound $v_{sound}=v_{we}$ for the wave speed of
-the sound wave because the air itself is not moving with respect to the
-emitter and the wave travels through the air. When the detector moves toward
-the source, it sees the wave velocity as 
+We can quantify these changes. Take our usual variables $f_{we},$ as the
+frequency of the wave in the emitter frame (where the emitter is
+stationary). Then $\lambda _{we}$ would be the wavelength in the emitter
+frame and in the emitter frame the velocity of sound would be $%
+v_{sound}=v_{we}.$ But now let's move our detector. First let's move the
+detector toward the source. The detector sees the wave velocity as 
 \begin{equation}
 v_{wd}=v_{we}+v_{de}
 \end{equation}%
 where $v_{wd}$ is the velocity of the wave in the detector frame, and $%
-v_{de} $ is the velocity of the detector in the emitter frame. And to be
-clear, for this case the detector is moving and we are in the emitter
-reference frame so the emitter is not moving.
+v_{de} $ is the velocity of the detector in the emitter frame. Note this is
+just our equation for relative motion! And to be clear, for this case the
+detector is moving and we are in the emitter reference frame so the emitter
+is not moving.
 
-The wavelength will not be changed, so 
+The wavelength will not be changed, and so our wave speed in the emitter
+frame 
 \begin{equation*}
 v_{we}=\lambda _{we}f_{we}
 \end{equation*}%
@@ -6652,16 +6744,25 @@ can just be written as
 \begin{equation*}
 v_{we}=\lambda f_{we}
 \end{equation*}%
-which tells us the frequency must change in the detector frame.%
+and let's calculate the frequency of the wave in the detector frame. It
+would still be true that 
 \begin{equation*}
-f_{wd}=\frac{v_{wd}}{\lambda }=\frac{v_{we}+v_{de}}{\lambda }
+v_{wd}=f_{wd}\lambda _{wd}=f_{wd}\lambda _{{}}
 \end{equation*}%
-We can eliminate $\lambda $ from this expression for the change in $f$ by
-using $v_{we}=\lambda f_{we}$ again, this time solving for $\lambda $ we get%
+so then%
+\begin{equation*}
+f_{wd}=\frac{v_{wd}}{\lambda }
+\end{equation*}%
+and we know what $v_{wd}$ is! 
+\begin{equation*}
+f_{wd}=\frac{v_{we}+v_{de}}{\lambda }
+\end{equation*}%
+We can eliminate $\lambda $ from this expression for $f_{wd}$ by using $%
+v_{we}=\lambda f_{we}$ again, this time solving for $\lambda $ we get%
 \begin{equation*}
 \lambda =\frac{v_{we}}{f_{we}}
 \end{equation*}%
-and substitute this into our $f_{wd}$ equation%
+and we substitute this into our $f_{wd}$ equation%
 \begin{equation*}
 f_{wd}=\frac{v_{we}+v_{de}}{\frac{v_{we}}{f_{we}}}
 \end{equation*}%
@@ -6681,13 +6782,18 @@ f_{wd}=\frac{v_{sound}+v_{de}}{v_{sound}}f_{we}\text{ \qquad }%
 detector moving toward the emitter \\ 
 emitter not moving%
 \end{tabular}%
-\end{equation}
+\end{equation}%
+Let's stop to think about this. What we have found is that the frequency
+measured by the detector is different than the frequency we measure while
+sitting next to the emitter. And what makes the difference is the relative
+speed $v_{de}.$
 
-Now if the detector is going the other way%
+Now if the detector is going the other way the speed of the wave seen by the
+detector is 
 \begin{equation*}
 v_{wd}=v_{we}-v_{de}
 \end{equation*}%
-and the same reasoning gives%
+and the same reasoning we used above gives%
 \begin{equation}
 f_{wd}=\frac{v_{we}-v_{de}}{v_{we}}f_{we}\text{ \qquad }%
 \begin{tabular}{l}
@@ -6706,39 +6812,46 @@ emitter not moving%
 
 From our thinking about the motion of two inertial reference frames, we
 should expect a similar situation if the detector is stationary and the
-source moves. In this case the detector will see a different wavelength.
+source moves. The relative motion should be the same. So we have to get a
+frequency change. But think, from the detector frame the detector will see a
+different wavelength. The emitter makes a wave crest, then moves toward that
+crest while it makes the next crest. So the distance between the crests
+get's smaller.
 
 \FRAME{dtbpF}{1.5307in}{1.4754in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 1.5307in;height 1.4754in;depth
 0pt;original-width 1.4944in;original-height 1.4399in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SV8THK08.wmf';tempfile-properties "XPR";}}In fact, if we measure the
+'SV8THK08.wmf';tempfile-properties "XPR";}}In fact, when we measure the
 distance between the crests we must account for the fact that the source
 moved by an amount%
 \begin{equation*}
 \Delta x_{ed}=v_{ed}T_{we}=\frac{v_{ed}}{f_{we}}
 \end{equation*}%
 during one period of oscillation of the emitter before making the next
-crest. We can see that in this case, $v_{wd}=v_{sound}$ because this time
-the air is not moving with respect to the detector, so they are in the same
-reference frame. Then the wavelength will be shorter by this amount! That
-is, if we take the wavelength that we would get if the emitter were at rest,
-and subtract $\Delta x_{ed}$ we should have our new wavelength at the
-detector. Let's start by finding the wavelength we expect if the emitter
-were at rest. 
+crest. We can see that in this case the speed of the wave in the detector
+frame, $v_{wd}=v_{sound},$ because this time the air is not moving with
+respect to the detector, so they are in the same reference frame. Then the
+wavelength in the detector frame, $\lambda _{wd}$, will be shorter by $%
+\Delta x_{ed}$. That is, if we take the wavelength that we would get if the
+emitter were at rest, and subtract $\Delta x_{ed}$ we should have our new
+wavelength at the detector. Let's start by finding the wavelength we expect
+if the emitter were at rest in the detector frame $(v_{ed}=0)$. Then 
 \begin{equation*}
-\lambda _{we,rest}=\frac{v_{we}}{f_{we}}=\frac{v_{sound}}{f_{we}}
+\left. \lambda _{we}\right\vert _{v_{ed}=0}=\frac{v_{we}}{f_{we}}=\frac{%
+v_{sound}}{f_{we}}
 \end{equation*}%
-This is because if the emitter were at rest, then $v_{we}=v_{sound.}$ But in
-our case the emitter is moving, so we must subtract $\Delta x_{ed}$ from the
+because if the emitter were at rest, then $v_{we}=v_{sound}.$ But in our
+case the emitter is moving, so we must subtract $\Delta x_{ed}$ from the
 rest wavelength.%
 \begin{equation*}
-\lambda _{wd}=\lambda _{we,rest}-\Delta x_{ed}
+\lambda _{wd}=\left. \lambda _{we}\right\vert _{v_{ed}=0}-\Delta x_{ed}
 \end{equation*}%
 Then the wavelength we would see at the detector would be%
 \begin{equation*}
-\lambda _{wd}=\lambda _{we,rest}-\frac{v_{ed}}{f_{we}}
+\lambda _{wd}=\left. \lambda _{we}\right\vert _{v_{ed}=0}-\frac{v_{ed}}{%
+f_{we}}
 \end{equation*}
 
 Using 
@@ -6746,13 +6859,17 @@ Using
 \lambda _{wd}=\frac{v_{wd}}{f_{wd}}
 \end{equation*}%
 once more, we can write the frequency in the detector frame as 
+\begin{equation*}
+f_{wd}=\frac{v_{wd}}{\lambda _{wd}}=\frac{v_{wd}}{\left. \lambda
+_{we}\right\vert _{v_{ed}=0}-\frac{v_{ed}}{f_{we}}}
+\end{equation*}%
+and we can substitute in $\left. \lambda _{we}\right\vert _{v_{ed}=0}=\frac{%
+v_{sound}}{f_{we}}$ 
 \begin{eqnarray*}
-f_{wd} &=&\frac{v_{wd}}{\lambda _{wd}}=\frac{v_{wd}}{\lambda _{we,rest}-%
-\frac{v_{ed}}{f_{we}}} \\
-&=&\frac{v_{wd}}{\frac{v_{sound}}{f_{we}}-\frac{v_{ed}}{f_{we}}} \\
-&&\frac{v_{wd}}{v_{sound}-v_{ed}}f_{we}
+f_{wd} &=&\frac{v_{wd}}{\frac{v_{sound}}{f_{we}}-\frac{v_{ed}}{f_{we}}} \\
+&=&\frac{v_{wd}}{v_{sound}-v_{ed}}f_{we}
 \end{eqnarray*}%
-so then we have%
+So then we have%
 \begin{equation}
 f_{wd}=\frac{v_{wd}}{v_{sound}-v_{ed}}f_{we}\qquad 
 \begin{tabular}{l}
@@ -6760,8 +6877,11 @@ $\text{emitter moving toward detector}$ \\
 detector not moving%
 \end{tabular}%
 \end{equation}%
+and sure enough the frenquency is different and we see the reason is the
+relative speed $v_{ed}$ again.
+
 Now recall that it is the detector that is stationary with respect to the
-air this time so $v_{sound}=v_{wd}$%
+air this time so $v_{sound}=v_{wd}.$ Then we can write $f_{wd}$ as 
 \begin{equation}
 f_{wd}=\frac{v_{sound}}{v_{sound}-v_{ed}}f_{we}\qquad 
 \begin{tabular}{l}
@@ -6778,7 +6898,7 @@ When the source is moving away from the detector, \FRAME{dtbpF}{1.8507in}{%
 larger. The same reasoning gives
 
 \begin{equation}
-f^{\prime }=\frac{v_{wd}}{v_{wd}+v_{ed}}f_{we}\qquad 
+f_{wd}=\frac{v_{wd}}{v_{wd}+v_{ed}}f_{we}\qquad 
 \begin{tabular}{l}
 $\text{emitter moving away from detector}$ \\ 
 detector not moving%
@@ -6786,25 +6906,27 @@ detector not moving%
 \end{equation}%
 or%
 \begin{equation}
-f^{\prime }=\frac{v_{sound}}{v_{sound}+v_{ed}}f_{we}\qquad 
+f_{wd}=\frac{v_{sound}}{v_{sound}+v_{ed}}f_{we}\qquad 
 \begin{tabular}{l}
 $\text{emitter moving away from detector}$ \\ 
 detector not moving%
 \end{tabular}%
-\end{equation}
+\end{equation}%
+These are great equations to describe Doppler effect. We can see that
+relative speed did matter for our waves!
 
 \subsection{Combined Doppler Equation}
 
 We can combine these formulae to make one expression, but to do so we need
 to remember what $v_{de}$ and $v_{ed}$ mean. The first was the speed of the
-detector when the emitter was not moving. The second was the speed of the
-emitter when the detector was not moving. But we are experienced with
-relative motion. We should ask, \textquotedblleft not moving with respect to
-what?\textquotedblright\ Let's envision a reference frame that is not tied
-to either the emitter or detector. In this reference frame $v_{dR}$ is the
-speed of the detector, and $v_{eR}$ is the speed of the emitter. In this $R$
-reference frame our first Doppler equation for a moving detector with a
-stationary emitter might be written as%
+detector as viewed from the emitter frame (where the emitter is not moving).
+The second was the speed of the emitter as viewed from the detector frame
+(where the detector is not moving). But we are experienced with relative
+motion.\ Let's envision a reference frame that is not tied to either the
+emitter or detector. In this reference frame $v_{dR}$ is the speed of the
+detector, and $v_{eR}$ is the speed of the emitter. In this $R$ reference
+frame our first Doppler equation for a moving detector with a stationary
+emitter might be written as%
 \begin{equation}
 f_{wd}=\frac{v_{sound}\pm v_{dR}}{v_{sound}}f_{we}\text{ \qquad detector
 moving emitter stationary in R frame}
@@ -6812,7 +6934,7 @@ moving emitter stationary in R frame}
 and our second equation for a moving emitter with a stationary detector
 might be written as%
 \begin{equation}
-f^{\prime }=\frac{v_{wd}}{v_{wd}\mp v_{eR}}f_{we}\qquad \text{emitter moving
+f_{wd}=\frac{v_{wd}}{v_{wd}\mp v_{eR}}f_{we}\qquad \text{emitter moving
 detector stationary in R frame}
 \end{equation}%
 We could, of course have both the detector and emitter moving in the $R$
@@ -6820,26 +6942,26 @@ frame. This would combine both of our previous scenarios
 \begin{equation}
 f_{wd}=\frac{v_{sound}\pm v_{dR}}{v_{sound}\mp v_{eR}}f_{we}
 \end{equation}%
-where we use the top sign for the speed when the mover is going toward the
-non-mover.
+where we use the top sign for the speed when the mover (emitter of detector)
+is going toward the non-mover.
 
 With this view, that we are neither in the $e$ frame nor the $d$ frame but
 in a separate $R$ frame, we could even drop the $R$ subscript without too
-much confusion%
+much confusion, and we could drop the $w$ for wave as well.%
 \begin{equation}
-f_{wd}=\frac{v_{sound}\pm v_{d}}{v_{sound}\mp v_{e}}f_{we}
+f_{d}=\frac{v_{sound}\pm v_{d}}{v_{sound}\mp v_{e}}f_{e}
 \end{equation}%
 where now $v_{d}$ is the speed of the detector in the reference frame of the
 observer, and $v_{e}$ is the speed of the emitter in the reference frame of
-the observer. The quantity $f_{we}$ is still the frequency of the wave as
-seen by the emitter and $f_{wd}$ is still the frequency of the wave recorded
-by the detector.
+the observer. The quantity $f_{e}$ is the frequency of the wave as seen by
+the emitter and $f_{d}$ is the frequency of the wave recorded by the
+detector.
 
 \subsection{Doppler effect in light}
 
 Light is also a wave, and so we would expect a Doppler shift in light.
 Indeed we do see a Doppler shift when we look at moving objects. Here is an
-optical spectrum of the Sun on the top and a spectrum of a similar start
+optical spectrum of the Sun on the top and a spectrum of a similar star
 moving away from us in the middle. The final spectrum is for a star moving
 toward us.\FRAME{dtbpFU}{1.5757in}{1.3785in}{0pt}{\Qcb{{\protect\small Top:
 Normal `dark' spectral line positions at rest. Middle: Source moving away
@@ -6873,8 +6995,51 @@ TRUE;display "USEDEF";valid_file "T";width 2.3748in;height 2.6671in;depth
 'SV8THK0B.wmf';tempfile-properties "XPR";}}
 
 Deriving the Doppler equation for light is more tricky because the speed of
-light is constant and the same in every reference frame. We really tackle
-this in our PH279 class. So I\ will just quote the result here.
+light is the same in every reference frame. We really tackle this in our
+PH279 class. So I\ will just quote the result here.
+
+\begin{eqnarray}
+\lambda _{-} &=&\lambda _{o}\sqrt{\frac{1+\frac{v}{c}}{1-\frac{v}{c}}}\text{ 
+}\qquad \text{receding source} \\
+\lambda _{-} &=&\lambda _{o}\sqrt{\frac{1-\frac{v}{c}}{1+\frac{v}{c}}}\text{ 
+}\qquad \text{Approaching source}
+\end{eqnarray}%
+For our chemists, think of a group of gas molecules in a sample in a lab.
+The gas molecules will be moving randomly due to thermal energy. Some will
+be moving closer to us and some away from us. This means the light emitted
+from some of the gas molecules will be red shifted and some will be blue
+shifted. This affects the spectroscopy we use to identify the molecules!
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+
+For beats%
+\begin{equation*}
+y=\left[ 2y_{\max }\cos \left( 2\pi \frac{f_{1}-f_{2}}{2}t\right) \right]
+\sin \left( kx-2\pi \frac{f_{1}+f_{2}}{2}t\right)
+\end{equation*}%
+\begin{equation*}
+A_{\text{resultant}}=2y_{\max }\cos \left( 2\pi \frac{f_{1}-f_{2}}{2}t\right)
+\end{equation*}%
+\begin{equation*}
+f_{beat}=\left\vert f_{1}-f_{2}\right\vert
+\end{equation*}
+
+Doppler%
+\begin{equation}
+f_{wd}=\frac{v_{sound}\pm v_{dR}}{v_{sound}}f_{we}\text{ \qquad detector
+moving emitter stationary in R frame}
+\end{equation}%
+\begin{equation}
+f_{wd}=\frac{v_{wd}}{v_{wd}\mp v_{eR}}f_{we}\qquad \text{emitter moving
+detector stationary in R frame}
+\end{equation}
+\begin{equation}
+f_{wd}=\frac{v_{sound}\pm v_{dR}}{v_{sound}\mp v_{eR}}f_{we}
+\end{equation}
 
 \chapter{11 Shock waves and Non-Sinusoidal Waves 1.17.8}
 
@@ -6904,24 +7069,25 @@ Remember that the wave speed depends only on the medium. Let's call the
 crests of a wave the \emph{wave front}. In the picture below, a point source
 is generating a wave and the red lines are the wave fronts.
 
-When $v_{e}=v_{sound}$ the waves begin to pile up. If we allow $%
-v_{e}>v_{sound}$ then the wave fronts are no longer generated within each
-other. \FRAME{dtbpF}{2.3229in}{2.3151in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 2.3229in;height 2.3151in;depth
-0pt;original-width 2.2831in;original-height 2.2753in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SV8THK0C.wmf';tempfile-properties "XPR";}}The leading edge of the wave
-fronts \textquotedblleft build up\textquotedblright\ to form a cone shape.
-We recognize this as a superposition of the waves. This is constructive
-interference. The half angle of this cone is called the \emph{Mach angle} 
+When the speed of the emitter is equal to the speed of sound $%
+v_{ed}=v_{sound}$ the waves begin to pile up. If we allow $v_{ed}>v_{sound}$
+then the wave fronts are no longer generated within each other. \FRAME{dtbpF%
+}{2.3229in}{2.3151in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 2.3229in;height 2.3151in;depth 0pt;original-width
+2.2831in;original-height 2.2753in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SV8THK0C.wmf';tempfile-properties "XPR";}}%
+The leading edge of the wave fronts \textquotedblleft build
+up\textquotedblright\ to form a cone shape. We recognize this as a
+superposition of the waves. This is constructive interference. The half
+angle of this cone is called the \emph{Mach angle} 
 \begin{equation}
-\sin \theta =\frac{v_{sound}t}{v_{e}t}=\frac{v_{sound}}{v_{e}}
+\sin \theta =\frac{v_{sound}t}{v_{ed}t}=\frac{v_{sound}}{v_{ed}}
 \end{equation}%
-This ratio $v_{e}/v_{sound}$ is called the Mach number 
+This ratio $v_{ed}/v_{sound}$ is called the Mach number 
 \begin{equation*}
-M=\frac{v_{e}}{v_{sound}}
-\end{equation*}
+M=\frac{v_{ed}}{v_{sound}}
+\end{equation*}%
 and the conical wave front is called a shock wave. 
 \begin{equation*}
 \sin \theta =\frac{1}{M}
@@ -7134,10 +7300,8 @@ cannot be reached by anyone.
 
 \subsubsection{Fourier Series: Mathematics of Non-Sinusoidal Waves}
 
-We should take a quick look at the mathematics of non-sinusoidal waves.
-
-Let' start with a superposition of many sinusoidal waves. The math looks
-like this%
+We should take a quick look at the mathematics of non-sinusoidal waves. Let'
+start with a superposition of many sinusoidal waves. The math looks like this%
 \begin{equation*}
 y\left( t\right) =\dsum\limits_{n}\left( A_{n}\sin \left( 2\pi f_{n}t\right)
 +B_{n}\cos \left( 2\pi f_{n}t\right) \right)
@@ -7162,7 +7326,8 @@ x+\varepsilon _{1}\right) \\
 &&+\ldots
 \end{eqnarray}
 
-where we will let $\varepsilon _{i}=\omega _{i}t+\phi _{i}$
+where we will let $\varepsilon _{i}=\omega _{i}t+\phi _{i}$ just to make the
+equations less messy.
 
 The $C^{\prime }s$ are just coefficients that tell us the amplitude of the
 individual cosine waves. The more terms in the series we take, the better
@@ -7179,7 +7344,8 @@ where $k$ is the wavenumber%
 k=\frac{2\pi }{\lambda }
 \end{equation}%
 and $\lambda $ is the wavelength of the complicated but still periodic
-function $f\left( x\right) .$ Then we identify 
+function $f\left( x\right) .$ Then we identify (from our second favorite
+trig identity) 
 \begin{eqnarray}
 A_{m} &=&C_{m}\cos \left( \varepsilon _{m}\right) \\
 B_{m} &=&-C_{m}\sin \left( \varepsilon _{m}\right)
@@ -7190,7 +7356,7 @@ f\left( x\right) =\frac{A_{o}}{2}+\dsum\limits_{m-1}^{\infty }A_{m}\cos
 \left( mkx\right) +\dsum\limits_{m-1}^{\infty }B_{m}\sin \left( mkx\right)
 \label{Fourier Series}
 \end{equation}%
-where we separated out the $A_{o}/2$ term because it mikes things nicer
+where we separated out the $A_{o}/2$ term because it makes things nicer
 later.
 
 \subsubsection{Fourier Analysis}
@@ -7277,59 +7443,12 @@ f(x)=\left\{
 \right.
 \end{equation}
 
-\FRAME{dtbpFX}{2.3644in}{1.5774in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.3644in;height 1.5774in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "-5.0020002";xmax "5.0020002";xviewmin "-5.0020002";xviewmax
-"5.0020002";yviewmin "-2.00080009";yviewmax
-"2.00090009";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{0<x<\frac{\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{\left( 2\right) }{2}<x<\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.0020002,5.0020002";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{\left( 2\right) <x<\frac{3\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{3\left( 2\right) }{2}<x<2\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.0020002,5.0020002";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{2\left( 2\right) <x<\frac{5\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{5\left( 2\right) }{2}<x<3\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.0020002,5.0020002";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{0>x>-1\frac{\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{\left( 2\right) }{2}>x>-\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.0020002,5.0020002";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{-\left( 2\right) >x>-\frac{3\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{3\left( 2\right) }{2}>x>-2\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.0020002,5.0020002";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{-2\left( 2\right) >x>-\frac{5\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{5\left( 2\right) }{2}>x>-3\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.0020002,5.0020002";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";VCamFile
-'PQXXR22K.xvz';valid_file "T";tempfilename
-'PQXXQYSU.wmf';tempfile-properties "XPR";}}
+\FRAME{dtbpF}{2.9253in}{1.9558in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.9253in;height 1.9558in;depth
+0in;original-width 2.9519in;original-height 1.9638in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T9NI4V01.wmf';tempfile-properties "XPR";}}
 
 since $f\left( x\right) is$ odd, $A_{m}=0$ for all $m$. We have%
 \begin{equation}
@@ -7386,62 +7505,12 @@ then the partial sum up to $m=5$ looks like%
 f\left( x\right) =\frac{4}{\pi }\sin \left( kx\right) +\frac{4}{3\pi }\sin
 \left( 3kx\right) +\frac{4}{5\pi }\sin \left( 5kx\right)
 \end{equation}%
-\FRAME{dtbpFX}{2.3644in}{1.5774in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 2.3644in;height 1.5774in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "-5.1";xmax "5";xviewmin "-5.1";xviewmax "5";yviewmin
-"-2";yviewmax "2.0001";viewset"XY";rangeset"X";plottype 4;axesFont "Times
-New Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{0<x<\frac{\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{\left( 2\right) }{2}<x<\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.1,5";num-x-gridlines 100;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{\left( 2\right) <x<\frac{3\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{3\left( 2\right) }{2}<x<2\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.1,5";num-x-gridlines 100;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{2\left( 2\right) <x<\frac{5\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{5\left( 2\right) }{2}<x<3\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.1,5";num-x-gridlines 100;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{0>x>-1\frac{\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{\left( 2\right) }{2}>x>-\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.1,5";num-x-gridlines 100;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{-\left( 2\right) >x>-\frac{3\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{3\left( 2\right) }{2}>x>-2\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.1,5";num-x-gridlines 100;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{-2\left( 2\right) >x>-\frac{5\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{5\left( 2\right) }{2}>x>-3\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-5.1,5";num-x-gridlines 100;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";function \TEXUX{$0.424\,41\sin 9.\,\allowbreak 424\,8x+\allowbreak
-1.\,\allowbreak 273\,2\sin 3.\,\allowbreak 141\,6x+\allowbreak 0.254\,65\sin
-15.\,\allowbreak 708x\allowbreak $};linecolor "blue";linestyle 1;pointstyle
-"point";linethickness 1;lineAttributes "Solid";var1range
-"-5.1,5";num-x-gridlines 100;curveColor "[flat::RGB:0x000000ff]";curveStyle
-"Line";VCamFile 'PQXXR22J.xvz';valid_file "T";tempfilename
-'PQXXQYSV.wmf';tempfile-properties "XPR";}}If we take many terms,%
+\FRAME{dtbpF}{2.7461in}{1.8369in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.7461in;height 1.8369in;depth
+0in;original-width 2.7701in;original-height 1.8432in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T9NI5X03.wmf';tempfile-properties "XPR";}}If we take many terms,%
 \begin{eqnarray}
 f\left( x\right) &=&\frac{4}{\pi }\sin \left( kx\right) +\frac{4}{3\pi }\sin
 \left( 3kx\right) +\frac{4}{5\pi }\sin \left( 5kx\right) +\frac{4}{7\pi }%
@@ -7450,68 +7519,12 @@ f\left( x\right) &=&\frac{4}{\pi }\sin \left( kx\right) +\frac{4}{3\pi }\sin
 13kx\right) +\frac{4}{15\pi }\sin \left( 15kx\right) +\frac{4}{17\pi }\sin
 \left( 17kx\right) +\frac{4}{19\pi }\sin \left( 19kx\right)  \notag
 \end{eqnarray}%
-We see the function get closer and closer to a square wave.\FRAME{dtbpFX}{%
-5.1975in}{1.1026in}{0pt}{}{}{Plot}{\special{language "Scientific Word";type
-"MAPLEPLOT";width 5.1975in;height 1.1026in;depth 0pt;display
-"USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin
-"-2.5";xmax "2.5";xviewmin "-2.51";xviewmax "2.5";yviewmin "-2";yviewmax
-"2.0001";viewset"XY";rangeset"X";plottype 4;axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{0<x<\frac{\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{\left( 2\right) }{2}<x<\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-2.5,2.5";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";rangeset"X";function
-\TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{\left( 2\right) <x<\frac{3\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{3\left( 2\right) }{2}<x<2\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-2.51,2.5";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{1}\CELL{%
-\text{if}}\CELL{2\left( 2\right) <x<\frac{5\left( 2\right)
-}{2}}\CELL{-1}\CELL{\text{if}}\CELL{\frac{5\left( 2\right) }{2}<x<3\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-2.51,2.5";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{0>x>-1\frac{\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{\left( 2\right) }{2}>x>-\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-2.51,2.5";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{-\left( 2\right) >x>-\frac{3\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{3\left( 2\right) }{2}>x>-2\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-2.51,2.5";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\left\{
-\MATRIX{3,2}{c}\VR{,,c,,,}{,,c,,,}{,,l,,,}{,,,,,}\HR{,,}\CELL{-1}\CELL{%
-\text{if}}\CELL{-2\left( 2\right) >x>-\frac{5\left( 2\right)
-}{2}}\CELL{1}\CELL{\text{if}}\CELL{-\frac{5\left( 2\right) }{2}>x>-3\left(
-2\right) }\right. $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-2.51,2.5";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";function \TEXUX{$\frac{4}{\pi
-}\sin \pi x+\frac{4}{3\pi }\sin 3\pi x+\frac{4}{5\pi }\sin 5\pi
-x+\frac{4}{7\pi }\sin 7\pi x+\allowbreak \frac{4}{11\pi }\sin 11\pi
-x+\frac{4}{13\pi }\sin 13\pi x+\frac{4}{15\pi }\sin 15\pi x+\allowbreak
-\frac{4}{17\pi }\sin 17\pi x+\frac{4}{19\pi }\sin 19\pi x+\frac{4}{9\pi
-}\sin 95\pi x\allowbreak $};linecolor "blue";linestyle 1;pointstyle
-"point";linethickness 1;lineAttributes "Solid";var1range
-"-2.5,2.5";num-x-gridlines 411;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";rangeset"X";VCamFile
-'PQXXR22I.xvz';valid_file "T";tempfilename
-'PQXXQYSW.wmf';tempfile-properties "XPR";}}
+We see the function get closer and closer to a square wave.\FRAME{dtbpF}{%
+4.5484in}{0.9677in}{0in}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 4.5484in;height 0.9677in;depth 0in;original-width
+4.6061in;original-height 0.957in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'T9NI6T06.wmf';tempfile-properties "XPR";}}
 
 In the limit of infinitely many waves, the match would be perfect. But we
 don't usually need an infinite number of terms. we can pick the part of the
@@ -7520,6 +7533,158 @@ example, oil based compounds all have specific spectral signatures in the
 wavelength range between $3-5$ micrometers. If you wish to tell the
 difference between gasoline and crude oil, you can restrict your study to
 these wavelengths alone.
+
+\section{Frequency Uncertainty for Signals and Particles}
+
+Up to this lecture, when we thought of a wave we have mostly thought of
+something like this 
+\begin{equation*}
+y=y_{\max }\sin \left( kx-\omega t-\phi _{o}\right)
+\end{equation*}%
+which in practice might look like this\FRAME{dtbpF}{4.4996in}{1.2211in}{0pt}{%
+}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+4.4996in;height 1.2211in;depth 0pt;display "USEDEF";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-5";xmax "5";xviewmin
+"-5.0010000010002";xviewmax "5.0010000010002";yviewmin "-10";yviewmax
+"10";plottype 4;axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$10\sin \left( 5x-0\right) $};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
+"Solid";var1range "-5,5";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'T9OUDQ01.xvz';valid_file "T";tempfilename
+'T9OUE000.wmf';tempfile-properties "XPR";}}And we have noticed that there is
+no start or stop to this kind of wave. Our figure starts at $x=-5$ and ends
+at $x=5,$ but the equation does not! There is a value of $y$ for every $x$
+from $-\infty $ to +$\infty .$ But many signals are not such waves. They may
+be very limited in size.\FRAME{dtbpF}{2.0833in}{0.8172in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.0833in;height 0.8172in;depth
+0pt;original-width 2.0942in;original-height 0.8036in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/FigureLimetedWave2.wmf';tempfile-properties "XNPR";}%
+}We should investigate what happens when you have a limited wave. I did this
+investigation using Python. Suppose we have a sine wave with $f=200\unit{Hz}%
+, $ but I\ limit this wave's existence by making it start at $t_{i}=0$ and
+then make it end at $t_{f}=10\unit{s}.$ I could do this in practice by
+turning on a radio transmission or even an acoustic speaker, and then
+turning the device off ten seconds later. Our screen resolution is terrible
+for plotting such a function, but in the figure below you can see that our
+signal only exists from $t=0$ to $t=10\unit{s}.$
+
+\FRAME{dtbpF}{4.2756in}{0.7014in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.2756in;height 0.7014in;depth
+0pt;original-width 4.2246in;original-height 0.6702in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T9OUU803.wmf';tempfile-properties "XPR";}} If I zoom in on a part of the
+graph we can see that it is really a sine wave.\FRAME{dtbpF}{4.6951in}{%
+0.7688in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+4.6951in;height 0.7688in;depth 0in;original-width 4.6423in;original-height
+0.7368in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T9OUU804.wmf';tempfile-properties "XPR";}}
+
+Python did equally bad at plotting this. All we see is a blue band. \FRAME{%
+dtbpF}{4.3388in}{1.8317in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 4.3388in;height 1.8317in;depth 0pt;original-width
+4.3932in;original-height 1.8378in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename
+'../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/Figure10s200Hz.wmf';tempfile-properties "XNPR";}%
+}But in the second graph, notice that we have plotted frequency. Python and
+most scientific programing languages have functions to find a digital
+version of a Fourier transform to produce a spectrum. It takes in a signal
+and finds which frequencies are in a signal. It performs the job of a
+spectrometer, so we would call the figure to the right a spectrogram (or
+just a spectrum).
+
+We expect only one frequency, $200\unit{Hz},$ and that is mostly what we
+get. Since our period for our wave is 
+\begin{equation*}
+T=\frac{1}{200\unit{Hz}}=0.005\,\unit{s}
+\end{equation*}%
+and we have $10\unit{s}$ of data, that is four orders of magnitude more
+signal than one period. The whole signal seems very long compared to a
+period. We expect this to look kind of like an infinite signal. But suppose
+we take the same wave, but for less time. We limit the wave more.\FRAME{dtbpF%
+}{3.8104in}{1.5549in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.8104in;height 1.5549in;depth 0pt;original-width
+3.8548in;original-height 1.5558in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename
+'../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/Figure1s200Hz.wmf';tempfile-properties "XNPR";}%
+}So we still get a blue blur for our wave picture, but now the wave only
+exists for one instead of ten seconds. If you look closely at the frequency
+graph, you will notice that the $200\unit{Hz}$ peak representing our wave is
+a bit wider right at the bottom.
+
+We could limit our wave more, say, so it only lasts $t_{f}=0.1\unit{s}.$ We
+would get a set of graphs that look like this. \FRAME{dtbpF}{3.7351in}{%
+1.4788in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.7351in;height 1.4788in;depth 0pt;original-width 3.7776in;original-height
+1.4786in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/Figure0.1s200Hz.wmf';tempfile-properties "XNPR";}%
+}
+
+Notice that not only can Python render the wave now, but more importantly
+the $200\unit{Hz}$ frequency peak is noticeable wider. This is profound! It
+means that by limiting the wave, we no longer have just one frequency! The
+graph tells us we have mostly $200\unit{Hz}$ but we also have some $199\unit{%
+Hz}$ and some $201\unit{Hz}$ and some $190\unit{Hz}$ and some $210\unit{Hz},$
+etc. The very fact that the wave does not go on so long requires that we
+have more than one frequency in the wave. We could say that as $\Delta t$
+gets smaller, our $\Delta f$ is getting bigger. Here are two more examples
+with smaller $\Delta t$ values. \FRAME{dtbpF}{3.9288in}{1.4866in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.9288in;height 1.4866in;depth 0pt;original-width 3.9746in;original-height
+1.4866in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/Figure0.05s200Hz.wmf';tempfile-properties "XNPR";}%
+}\FRAME{dtbpF}{4.6285in}{1.8152in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.6285in;height 1.8152in;depth
+0pt;original-width 3.3164in;original-height 1.2817in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/Figure0.005s200Hz.wmf';tempfile-properties "XNPR";}%
+}
+
+The cost of limiting our waves is that we can't have a single frequency for
+the wave. For an engineer, this means that if you only measure a short
+segment of the signal, you have an increased uncertainty in the frequency
+you will find from that signal. For chemists, it means that when we look at
+quantum wave functions we can expect uncertainty in the frequency (or
+wavelength) because the quantum particle (like an electron) is limited. It
+is important to know what we mean by uncertainty in this case. In our
+example above, when we say that $\Delta f$ increased we really mean that we
+have more than one frequency. We don't just mean that we don't know the
+frequency well. We really are mixing more than one frequency. This idea of
+limiting waves creating uncertainty shows up in physical chemistry as
+Heisenberg's uncertainty principle.
+
+We have talked about waves in general and used sound and light waves as
+examples. But light waves have played such an important role in physics that
+the study of light is considered a subdiscipline on it's own. We call this
+subdiscipline \emph{optics}. So to continue our study of waves, we are going
+to start a study of optics and we will begin our study of optics in the next
+lecture.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+\begin{equation}
+\sin \theta =\frac{v_{sound}t}{v_{ed}t}=\frac{v_{sound}}{v_{ed}}
+\end{equation}
+\begin{equation*}
+M=\frac{v_{ed}}{v_{sound}}
+\end{equation*}
+\begin{equation*}
+\sin \theta =\frac{1}{M}
+\end{equation*}
 
 \part{Optics}
 
@@ -7546,7 +7711,7 @@ these wavelengths alone.
 \end{minipage}
 }%
 %EndExpansion
-In the movie \emph{Star Wars} inter-galactic star ships blast each other
+In the science fiction movies inter-galactic star ships blast each other
 with laser cannons. The laser beams streak across the screen. This is
 dramatic, but not realistic. For us to see the light, some of the light must
 get to our eyes. The light must either travel directly to our eyes from the
@@ -7626,8 +7791,9 @@ Restored Church.
 
 In 1847 the saints entered the Salt Lake Valley.
 
-In 1873 Maxwell published his findings that light is an electromagnetic wave
-(something we will try to show before this course is over!).
+In 1873 James Clark Maxwell published his findings that light is an
+electromagnetic wave (something we will try to show in Principles of Physics
+III!).
 
 Planck's work in quantization theory (1900) was used by Einstein In 1905 to
 give an explantation of the photoelectric effect that again made light look
@@ -7678,16 +7844,15 @@ eclipse}}{}{Figure}{\special{language "Scientific Word";type
 1.1761in;height 2.0626in;depth 0pt;original-width 1.7252in;original-height
 3.0468in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW80G.wmf';tempfile-properties "XPR";}}R\o mer performed his measurement
-in 1675, $\allowbreak 269$ years before digital devices existed!. He used
-the period of revolution of Io, a moon of Jupiter, as Jupiter revolved
-around the sun. He first measured the period of Io's rotation about Jupiter,
-then he predicted an eclipse of Io three months later. But he found his
-calculation was off by $600\unit{s}.$ After careful thought, he realized
-that the Earth had moved in its orbit, and that the light had to travel the
-extra distance due to the Earth's new position. Given R\o mer's best
-estimate for the orbital radius of the earth and his time difference, R\o %
-mer arrived at a estimate of $c=2.3\times 10^{8}\frac{\unit{m}}{\unit{s}}.$
-Amazing for 1675!
+in 1675, 269 years before digital devices existed!. He used the orbital
+period of Io, a moon of Jupiter, as Jupiter orbited around the sun. He first
+measured the period of Io's rotation about Jupiter, then he predicted an
+eclipse of Io three months later. But he found his calculation was off by $%
+600\unit{s}.$ After careful thought, he realized that the Earth had moved in
+its orbit, and that the light had to travel the extra distance due to the
+Earth's new position. Given R\o mer's best estimate for the orbital radius
+of the earth and his time difference, R\o mer arrived at a estimate of $%
+c=2.3\times 10^{8}\frac{\unit{m}}{\unit{s}}.$ Amazing for 1675!
 
 \subsection{Fizeau's Measurement of the speed of light}
 
@@ -7697,7 +7862,7 @@ Amazing for 1675!
 0pt;original-width 2.5253in;original-height 1.6518in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW80H.wmf';tempfile-properties "XPR";}}Hippolyte Fizeau measured the
-speed of light in 1849 using the apparatus indicated in the figure above. He
+speed of light in 1849 using the apparatus drawn in the figure above. He
 used a toothed wheel and a mirror and a beam of light. The light passed
 through the open space in the wheel's teeth as the wheel rotated. Then was
 reflected by the mirror. The speed would be%
@@ -7712,15 +7877,16 @@ It is easy to see that
 \end{equation*}%
 because the light travels twice the distance to the mirror ($d$) and back.
 If the wheel turned just at the right angular speed, then the reflected
-light would hit the next tooth and be blocked. Think of angular speed%
+light would hit the next tooth and be blocked. Think of angular speed $%
+\omega $ (not angular frequency this time)%
 \begin{equation*}
 \omega =\frac{\Delta \theta }{\Delta t}
 \end{equation*}%
-so the time difference would be 
+So, the time difference would be for a tooth to move would be 
 \begin{equation*}
 \Delta t=\frac{\Delta \theta }{\omega }
 \end{equation*}%
-we find $\Delta \theta $ by taking $2\pi $ and dividing by the number of
+We can find $\Delta \theta $ by taking $2\pi $ and dividing by the number of
 teeth on the wheel.%
 \begin{equation*}
 \Delta \theta =\frac{2\pi }{N_{teeth}}
@@ -7788,15 +7954,15 @@ Light can't be a wave in some type of matter. We know this because light
 travels through empty space. But in Principles of Physics III we will find
 that space isn't exactly empty. It has an electromagnetic field in it. And
 it turns out that light seems to be a wave in this electromagnetic field. It
-will take us a while to fully understand this concept--it is done in
-PH220--but don't worry. Physicists knew that light was a wave for almost 80
-years before the electric field was shown to be the medium. We can do a lot
-just knowing light behaves like a wave.
+will take us a while to fully understand this concept but don't worry.
+Physicists knew that light was a wave for almost 80 years before the
+electric field was shown to be the medium. We can do a lot just knowing
+light behaves like a wave.
 
 This makes the light we see just one small part of a whole class of waves
 that are possible in this electromagnetic field medium. Radio waves, and
 microwaves, and x-rays are all just different types of electromagnetic
-waves. The next figure show where all of these electromagnetic waves fit
+waves. The next figure shows where all of these electromagnetic waves fit
 ordered by wavelength (and frequency).\FRAME{dtbpFU}{5.3048in}{0.4013in}{0pt%
 }{\Qcb{{\protect\small Image Courtesy NASA}}}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -7824,12 +7990,13 @@ electron temporarily takes up all the energy from a bit of the light wave.
 But only temporarily. It eventually has to give up the energy and a light
 wave is reformed coming from the atoms. There is really a superposition of
 what is left of the original light wave, and the new light wave generated by
-the atoms. And the combined wave moves slower. Think of our last lecture on
-non-sinusoidal waves. The combined wave is made of two sinusoidal waves both
-traveling at the speed of light. But the combined wave will appear to travel
-at a slower speed. How much slower depends on how long the electrons in the
-atoms can hang on to the light and the geometry of the situation. Each
-substance is different.
+the atoms. And the resultant wave moves slower. Think of our last lecture on
+non-sinusoidal waves. The resultant wave is made of two sinusoidal waves
+both traveling at the speed of light. But the combination of the two waves
+will also be a wave, and this resultant wave will appear to travel at a
+slower speed. How much slower depends on how long the electrons in the atoms
+can hang on to the light and the geometry of the situation. Each substance
+is different.
 
 We can devise a way to express how much slower light will appear to go in a
 substance using the ratio%
@@ -7843,10 +8010,10 @@ refraction}.%
 n=\frac{c}{v}
 \end{equation*}
 
-Let's look at some a simple interaction of light with a material, but let's
-not look at the wave and atomic re-emition level. Let's treat our combined
-wave as just one resultant wave that travels in a specific direction. We can
-call this wave a \emph{ray} (as in a ray of light!).
+Let's look at some a simple interaction of light waves with a material, but
+let's not look at the wave and atomic re-emition level. Let's treat our
+combined wave as just one resultant wave that travels in a specific
+direction. We can call this wave a \emph{ray} (as in a ray of light!).
 
 \section{Reflection}
 
@@ -7873,12 +8040,12 @@ reflection
 This difference can be seen in real life. In the next figure, the surface on
 the left is a specular reflector and you can see the reflected light beam.
 But the surface on the right photo is diffuse, no reflected beam is seen.%
-\FRAME{dhF}{3.8441in}{1.1718in}{0pt}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{4.403in}{1.3553in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.8441in;height 1.1718in;depth
-0pt;original-width 3.7948in;original-height 1.1381in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 4.403in;height 1.3553in;depth
+0in;original-width 4.4589in;original-height 1.3526in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SVAJW80M.wmf';tempfile-properties "XPR";}}
+'T9OXEH05.wmf';tempfile-properties "XPR";}}
 
 We said the surface must be smooth for there to be specular reflection. What
 does smooth mean? Generally the size of the rough spots must be much smaller
@@ -7986,16 +8153,8 @@ Then
 so we can see that $\beta $ has to be equal to $\theta _{2}$%
 \begin{equation*}
 \beta =\theta _{2}=\theta _{1}
-\end{equation*}
+\end{equation*}%
 and%
-\begin{equation*}
-90\unit{%
-%TCIMACRO{\U{b0}}%
-%BeginExpansion
-{{}^\circ}%
-%EndExpansion
-}=\theta _{1}+\theta _{4}
-\end{equation*}
 \begin{eqnarray*}
 90\unit{%
 %TCIMACRO{\U{b0}}%
@@ -8005,7 +8164,7 @@ and%
 } &=&\beta +\theta _{3} \\
 &=&\theta _{1}+\theta _{3}
 \end{eqnarray*}%
-and of course by the law of reflection $\theta _{3}-\theta _{4}$then the
+and of course by the law of reflection $\theta _{3}=\theta _{4}$then the
 total angular change is%
 \begin{equation*}
 \theta _{1}+\theta _{2}+\theta _{3}+\theta _{4}
@@ -8029,30 +8188,31 @@ but if we rearrange this we have%
 {{}^\circ}%
 %EndExpansion
 }
-\end{eqnarray*}
+\end{eqnarray*}%
 or the outgoing ray is sent back toward the source! If we do this in three
 dimensions we have a corner cube. Here is a picture of a radar corner cube
 array.
 
-\FRAME{dhFU}{2.1926in}{2.7913in}{0pt}{\Qcb{Radar retroreflector tower
-located in the center of Yucca Flat dry lake bed. Used as a radar target by
-maneuvering aircraft during "inert" contact fusing bomb drops at Yucca Flat.
-Sandia National Laboratories conducted the tests on the lake bed from 1954
-to 1956. (Image in the Public Domain in the United States)}}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.1926in;height 2.7913in;depth
-0pt;original-width 2.1543in;original-height 2.7484in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+\FRAME{dhFU}{2.1926in}{2.7913in}{0pt}{\Qcb{{\protect\small Radar
+retroreflector tower located in the center of Yucca Flat dry lake bed. Used
+as a radar target by maneuvering aircraft during "inert" contact fusing bomb
+drops at Yucca Flat. Sandia National Laboratories conducted the tests on the
+lake bed from 1954 to 1956. (Image in the Public Domain in the United States)%
+}}}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.1926in;height 2.7913in;depth 0pt;original-width 2.1543in;original-height
+2.7484in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW80P.wmf';tempfile-properties "XPR";}}And we left visible corner cube
 arrays on the Moon so we can bounce laser beams off of them and monitor the
 Earth-Moon distance.
 
-\FRAME{dhFU}{2.2219in}{2.7638in}{0pt}{\Qcb{Apollo Retroreflector (Images in
-the Public Domain courtesy NASA)}}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.2219in;height 2.7638in;depth 0pt;original-width
-2.1819in;original-height 2.7207in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SVAJW80Q.wmf';tempfile-properties "XPR";}}%
+\FRAME{dhFU}{2.2219in}{2.7638in}{0pt}{\Qcb{{\protect\small Apollo
+Retroreflector (Images in the Public Domain courtesy NASA)}}}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.2219in;height 2.7638in;depth
+0pt;original-width 2.1819in;original-height 2.7207in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SVAJW80Q.wmf';tempfile-properties "XPR";}}%
 %TCIMACRO{%
 %\TeXButton{Question 223.13.9}{\marginpar {
 %\hspace{-0.5in}
@@ -8083,7 +8243,7 @@ Light comes from the ceiling lights and goes in all directions. Some of that
 light hits our neighbor. And some of that light that hits our neighbor will
 reflect. But is the person a specular or diffuse reflector? Once again, we
 can only give an answer relative to the wavelength of light. For visible
-light, your neighbors do not look like mirrors. The are diffuse reflectors.
+light, your neighbors do not look like mirrors. They are diffuse reflectors.
 Light bounces off of them in every direction. Some of that light that
 reflects from your neighbor reflects in the direction of your eyes. That
 light can be detected. Your eye is designed to take this diverging set of
@@ -8111,19 +8271,49 @@ the reflection appear to be?\FRAME{dhF}{1.9847in}{1.9527in}{0pt}{}{}{Figure}{%
 TRUE;display "USEDEF";valid_file "T";width 1.9847in;height 1.9527in;depth
 0pt;original-width 1.9458in;original-height 1.9147in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SVAJW80T.wmf';tempfile-properties "XPR";}}Knowing that rays travel in
-straight lines and that our mind interprets rays as going in straight lines,
-then we can use rays to see where the light appears to be from. The image is
-half a meter behind the mirror. Now suppose we look at an image of that
-image in a mirror behind us. \FRAME{dhF}{2.6273in}{1.004in}{0pt}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.6273in;height 1.004in;depth
-0pt;original-width 2.5858in;original-height 0.9712in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+'SVAJW80T.wmf';tempfile-properties "XPR";}}Our mind assumes that the light
+only travels in straight lines. This is not always true, as we shall see.
+But in the light processing center in our brain the algorithm assumes the
+light traveled in a straight line. Then, we can use the idea of rays to see
+where the light appears to be from. We follow the light backwards from our
+eyes to the mirror, but because our mind processing doesn't know about the
+reflection we keep tracing the light ray through the mirror. Of course that
+light doesn't come from behind the mirror. But our brain processing things
+it does. The light originally came from us, so it is in a way shaped like
+us. So our brain processing tells us there is another one of us about a half
+a meter behind the mirror. Our frontal lobe knows there is not a second one
+of us, so we interpret the light signal from our brain processing as an
+image of us in the mirror.
+
+The image is half a meter behind the mirror. Now suppose we look at an image
+of that image in a mirror behind us. \FRAME{dhF}{2.6273in}{1.004in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.6273in;height 1.004in;depth 0pt;original-width 2.5858in;original-height
+0.9712in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW80U.wmf';tempfile-properties "XPR";}}The ray diagram makes it easy to
 see that the image will appear to be $2\unit{m}$ behind the big mirror. You
 might not feel that this was so easy, but you might find it is not so bad in
 a problem in your near future.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+\begin{equation}
+E=hf
+\end{equation}
+\begin{equation}
+h=6.63\times 10^{-34}\unit{J}\unit{s}
+\end{equation}
+
+\begin{equation*}
+c=299792458\frac{\unit{m}}{\unit{s}}
+\end{equation*}%
+\begin{equation*}
+\theta _{r}=\theta _{i}
+\end{equation*}
 
 \chapter{13 Refraction 3.1.3, 3.1.4}
 
@@ -8165,20 +8355,22 @@ TRUE;display "USEDEF";valid_file "T";width 3.2846in;height 1.6042in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW80W.wmf';tempfile-properties "XPR";}}We need a way to deal with
 transparent materials. This is tricky, because different wavelengths of
-light penetrate different materials in different ways. As an example, this
-is also a lens\FRAME{dhFU}{1.0732in}{1.6285in}{0pt}{\Qcb{{\protect\small %
-Infrared lens, but visible mirror (Image courtesy US Navy, image in the
-public domain)}}}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-1.0732in;height 1.6285in;depth 0pt;original-width 5.4587in;original-height
-8.3195in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+light penetrate different materials in different ways (we will see more on
+why later). As an example, this is also a lens\FRAME{dhFU}{1.0732in}{1.6285in%
+}{0pt}{\Qcb{{\protect\small Infrared lens, but visible mirror (Image
+courtesy US Navy, image in the public domain)}}}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.0732in;height 1.6285in;depth
+0pt;original-width 5.4587in;original-height 8.3195in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SVAJW80X.bmp';tempfile-properties "XPR";}}but it clearly is not transparent
 at visible wavelengths. It is transparent in the infrared. So what might be
 transparent at one wavelength might not be at another.
 
 When light travels into a material, we say it is transmitted. This is
 nothing new. Light is a wave, so the part that goes through is called the
-transmitted part. The situation is shown schematically below.
+transmitted part just like when we had waves go from one rope to another.
+The situation is shown schematically below.
 
 \FRAME{dtbpF}{2.7207in}{2.2719in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -8188,12 +8380,12 @@ transmitted part. The situation is shown schematically below.
 'SW7RGP00.wmf';tempfile-properties "XPR";}}
 
 In the figure we see a ray incident on an air-glass boundary. Some of the
-light is reflected just as we saw before. But some passes into the glass.
-Notice that the angle between the normal and the new transmitted ray is 
-\emph{not} equal to the incident ray. We say the ray has been bent or \emph{%
-refracted} by the change in material. Many experiments were performed to
-find a relationship between the incident and the refracted angles. It was
-found that 
+light is reflected just as we saw in our last lecture. But some passes into
+the glass. Notice that the angle between the normal and the new transmitted
+ray is \emph{not} equal to the incident angle for the incoming ray. We say
+the ray has been bent or \emph{refracted} by the change in material. Many
+experiments were performed to find a relationship between the incident and
+the refracted angles. It was found that 
 \begin{equation}
 \frac{\sin \left( \theta _{2}\right) }{\sin \left( \theta _{1}\right) }=%
 \frac{v_{2}}{v_{1}}=\text{constant}
@@ -8206,9 +8398,9 @@ Many optics books write this as
 where the subscript $i$ stands for \textquotedblleft
 incident\textquotedblright\ and the subscript $t$ stands for
 \textquotedblleft transmitted.\textquotedblright\ \FRAME{dtbpF}{3.4229in}{%
-2.8548in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+2.8548in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.4229in;height 2.8548in;depth 0in;original-width 3.3771in;original-height
+3.4229in;height 2.8548in;depth 0pt;original-width 3.3771in;original-height
 2.8115in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SW7RJB01.wmf';tempfile-properties "XPR";}}\ Note that we are using the fact
 that the speed of light changes in a material. We should probably recall why
@@ -8230,7 +8422,11 @@ atom and the process repeats. Quantum mechanics tells us that there is a
 time delay in the re-emission of the light. This re-emitted light mixes with
 what is left of the original wave. And this causes the propagation of the
 combined light wave to slow down. Thus the speed of light is slower in a
-material.\FRAME{dhF}{4.6267in}{1.8135in}{0pt}{}{}{Figure}{\special{language
+material.\footnote{%
+This is a bit of an approximation. Some of the incident light misses the
+atoms. So we really get a superposition of the new readmitted wave and the
+original wave. But the end result is that the light appears to go slower.}%
+\FRAME{dhF}{4.6267in}{1.8135in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 4.6267in;height 1.8135in;depth
 0pt;original-width 4.574in;original-height 1.7763in;cropleft "0";croptop
@@ -8280,7 +8476,7 @@ we remember from wave theory%
 v=\lambda f
 \end{equation}
 
-But it is time to review: does $\lambda $ change, or does $f$ change? If you
+And it is time to review: does $\lambda $ change, or does $f$ change? If you
 will recall, we found that the change in speed at the boundary changes the
 wavelength. Recall that if we go from a fast material to a slow material,
 the forward part of the wave slows and the rest of the wave catches up to
@@ -8328,16 +8524,55 @@ Because the equation%
 \frac{v_{t}}{v_{i}}=\text{constant}
 \end{equation}%
 has a constant ratio of velocities, it is convenient to define a term that
-represents that ratio. We already have a concept that can help. The \emph{%
-index of refraction} is just such a term. It assumes that one speed is the
-speed of light in vacuum, $c.$%
+represents that ratio. Think, it would be kind of nice to say how much
+slower the light is going once it enters the slower glass material. We could
+take the current velocity and divide by the speed of light in vacuum to get
+the percentage of the speed of light we are going%
+\begin{equation*}
+\frac{v}{c}=\text{percentage of the speed of light}
+\end{equation*}%
+and that makes a lot of sense. But that is not what the optics community
+did. They defined a term. 
 \begin{equation}
 n\equiv \frac{c}{v}
 \end{equation}%
-Then for our example 
+which is $1/$percentage of the speed of light. Which is not as intuitive as
+the percentage, itself, was. But it caries the same information 
+\begin{equation*}
+n=\frac{1}{\text{percentage of the speed of light}}
+\end{equation*}%
+so we can use this to get an idea of how much slower our transmitted light
+is going. This odd ratio of the speed of light to the speed in the material
+has a name. It is called the \emph{index of refraction.} We can write
+Snell's law in terms of the index of refraction of air and glass (or any
+other two materials). Start with%
 \begin{equation}
 \frac{\sin \left( \theta _{i}\right) }{\sin \left( \theta _{t}\right) }=%
-\frac{1}{n}
+\frac{v_{i}}{v_{t}}
+\end{equation}%
+but let's multiply the right hand side by $1,$ only let's write $1$ as 
+\begin{equation*}
+1=\frac{c}{c}
+\end{equation*}%
+which is a very odd way to write $1.$ But then%
+\begin{equation}
+\frac{\sin \left( \theta _{i}\right) }{\sin \left( \theta _{t}\right) }=%
+\frac{v_{i}c}{v_{t}c}
+\end{equation}%
+which we could write as%
+\begin{equation}
+\frac{\sin \left( \theta _{i}\right) }{\sin \left( \theta _{t}\right) }%
+=\left( \frac{c}{v_{t}}\right) \left( \frac{v_{i}}{c}\right)
+\end{equation}%
+which is just%
+\begin{equation}
+\frac{\sin \left( \theta _{i}\right) }{\sin \left( \theta _{t}\right) }%
+=\left( n_{t}\right) \left( \frac{1}{n_{i}}\right)
+\end{equation}%
+and for our case $n_{i}=n_{air}\approx 1$ so 
+\begin{equation}
+\frac{\sin \left( \theta _{i}\right) }{\sin \left( \theta _{t}\right) }%
+=n_{glass}
 \end{equation}
 
 Suppose we don't have a vacuum (or air that is close to a vacuum). We can
@@ -8359,7 +8594,7 @@ This is called \emph{Snell's law of refraction}.
 Using the index of refraction we can write our equation relating the ratio
 of velocities and wavelengths as%
 \begin{equation}
-\frac{v_{i}}{v_{t}}=\frac{\lambda _{i}}{\lambda _{t}}=\frac{\frac{2}{n_{i}}}{%
+\frac{v_{i}}{v_{t}}=\frac{\lambda _{i}}{\lambda _{t}}=\frac{\frac{c}{n_{i}}}{%
 \frac{c}{n_{t}}}=\frac{n_{t}}{n_{i}}
 \end{equation}%
 which gives 
@@ -8389,16 +8624,16 @@ We start with Snell's law%
 \begin{equation}
 n_{i}\sin \theta _{i}=n_{t}\sin \theta _{t}
 \end{equation}%
-but this time $n=n_{i}$ and $n_{t}=1$ so 
+but this time $n_{glass}=n_{i}$ and $n_{t}\approx 1$ so 
 \begin{equation}
-n\sin \theta _{i}=\sin \theta _{t}
+n_{glass}\sin \theta _{i}=\sin \theta _{t}
 \end{equation}%
 which gives 
 \begin{equation}
-\theta _{t}=\sin ^{-1}\left( n\sin \theta _{i}\right)
+\theta _{t}=\sin ^{-1}\left( n_{glass}\sin \theta _{i}\right)
 \end{equation}%
-If we take $n=1.33$ (water) we can plot this expression as a function of $%
-\theta _{i}$
+If we take $n_{glass}=1.33$ (which is really $n$ for water) we can plot this
+expression as a function of $\theta _{i}$
 
 \FRAME{dtbpF}{2.8643in}{1.9804in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -8489,9 +8724,30 @@ the public domain)}}}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 1.6319in;height 1.5973in;depth 0pt;original-width 1.6338in;original-height
 1.5992in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SVAJW81B.wmf';tempfile-properties "XPR";}}
+'SVAJW81B.wmf';tempfile-properties "XPR";}}%
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+
+\begin{equation*}
+n_{i}\sin \theta _{i}=n_{t}\sin \theta _{t}
+\end{equation*}%
+\begin{equation*}
+\lambda _{i}n_{i}=\lambda _{t}n_{t}
+\end{equation*}%
+\begin{equation*}
+\theta _{c}\equiv \sin ^{-1}\left( \frac{1}{n}\right)
+\end{equation*}
 
 \chapter{14 Dispersion and Huygen's Principle 3.1.5 3.1.6}
+
+We have discovered some important things about how light travels through
+materials. But there is something we missed. It turns out the index of
+refraction depends on wavelength! This has some profound effects on what
+light will do in a material. We will look at this wavelength dependence on
+refraction in this lecture.
 
 %TCIMACRO{\TeXButton{\chaptermark{Dispersion}}{\chaptermark{Dispersion}}}%
 %BeginExpansion
@@ -8528,22 +8784,38 @@ refractive index. We know that some wavelengths will pass through a
 material, say, a piece of glass. But some (like infrared wavelengths) won't.
 But there is more to this. Not all the wavelengths that do pass through the
 glass will have the same transmitted speed. The speed in the material
-depends on the wavelength! And the index of refraction depends on the speed.%
-\FRAME{fhFU}{4.3533in}{2.6201in}{0pt}{\Qcb{Index of refraction as a function
-of wavelength ( Ohara optical glass
-http://www.oharacorp.com/fused-silica-quartz.html data and Schott optical
-glass data http://www.uqgoptics.com/materials\_glasses\_schott.aspx)}}{\Qlb{%
-Dispersion of Glass}}{Figure}{\special{language "Scientific Word";type
+depends on the wavelength! Think, blue wavelengths are about the size of
+atoms. This means blue photons will hit atoms more frequently. And that will
+slow them down more. Red wavelengths are bigger than the atoms in a material
+and because of this red photons are not as likely to be absorbed by the
+atoms. So red photos will go faster in the material.
+
+And the index of refraction depends on the speed.\FRAME{fhFU}{4.3533in}{%
+2.6201in}{0pt}{\Qcb{Index of refraction as a function of wavelength ( Ohara
+optical glass http://www.oharacorp.com/fused-silica-quartz.html data and
+Schott optical glass data
+http://www.uqgoptics.com/materials\_glasses\_schott.aspx)}}{\Qlb{Dispersion
+of Glass}}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 4.3533in;height 2.6201in;depth 0pt;original-width 5.1436in;original-height
 3.084in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'dispersion0.wmf';tempfile-properties "XNPR";}}
 
 Notice that in the figure, the index of refraction depends on wavelength.
-This means that as light enters a material, different wavelengths will be
-refracted at different angles. White light is a superposition of many light
-waves with many different wavelengths. Thus white light is pulled apart by
-refraction into a rainbow. This process is called \emph{dispersion}.
+Think of Snell's law 
+\begin{equation*}
+n_{i}\sin \theta _{i}=n_{t}\sin \theta _{t}
+\end{equation*}%
+and if the light goes from air $\left( n_{i}\approx 1\right) $ into some
+kind of glass, then 
+\begin{equation*}
+\sin \theta _{i}=n_{t}\sin \theta _{t}
+\end{equation*}%
+and the transmitted angle just depends on $n_{t}.$ This means that as light
+enters a material, different wavelengths will be refracted at different
+angles. White light is a superposition of many light waves with many
+different wavelengths. Thus white light is pulled apart by refraction into a
+rainbow. This process is called \emph{dispersion}.
 
 The graph tells us that blue light bends more than red light. \FRAME{dhF}{%
 2.4379in}{1.2816in}{0pt}{}{}{Figure}{\special{language "Scientific
@@ -8614,15 +8886,16 @@ law.
 \begin{equation*}
 n_{1}\sin \theta _{1}=n_{2}\sin \theta _{2}
 \end{equation*}%
-Thus, we need to find $\theta _{1}$ and $\theta _{2}.$ Knowing $\Phi $ and $%
-\delta ,$ and realizing $n_{1}=1,$ we can find $\theta _{2}$ and $\theta
-_{1}.$ Then use 
+and this has $n_{2}$ in it. That is what we want to find. So our process
+will be to find $\theta _{1}$ and $\theta _{2}.$ And suppose we know $\Phi $
+and $\delta $ from measurement, and of course we realize that our prism is
+in air so $n_{1}=1.$ The we can use 
 \begin{equation*}
-n_{1}\sin \theta _{1}=n_{2}\sin \theta _{2}
+n_{2}=\frac{\sin \theta _{1}}{\sin \theta _{2}}
 \end{equation*}%
-to find $n_{2}.$ Let's see one way to do this. In geometry it is fair game
-to extend lines and even make some new lines of our own. By doing this we
-can realize that
+to find $n_{2.}$ But we have to find the angles. Let's see one way to do
+this. In geometry it is fair game to extend lines and even make some new
+lines of our own. By doing this we can realize that
 
 \begin{equation}
 \theta _{1}=\theta _{2}+\alpha
@@ -8675,39 +8948,37 @@ We can put these in our equation for $\theta _{1}$%
 \end{eqnarray}%
 Now we can use Snell's Law%
 \begin{eqnarray}
-\sin \left( \theta _{1}\right) &=&n\sin \left( \theta _{2}\right) \\
-\sin \left( \frac{\Phi +\delta }{2}\right) &=&n\sin \left( \frac{\Phi }{2}%
-\right)
-\end{eqnarray}%
-then%
-\begin{equation}
-n=\frac{\sin \left( \frac{\Phi }{2}\right) }{\sin \left( \frac{\Phi +\delta 
+n_{2} &=&\frac{\sin \left( \theta _{1}\right) }{\sin \left( \theta
+_{2}\right) } \\
+&=&\frac{\sin \left( \frac{\Phi +\delta }{2}\right) }{\sin \left( \frac{\Phi 
 }{2}\right) }
-\end{equation}%
-and since we know $\Phi $ and $\delta $, we can find $n.$
+\end{eqnarray}%
+and since we know $\Phi $ and $\delta $, we can find $n_{2}.$
 
 \section{Huygen's Principle}
 
-We have learned the laws of reflection and refraction. But how does the
-light know to bounce or bend the way it does? To understand what is going on
-at a fundamental level we need to remember that light is a wave. And waves
-can hit and splash off of objects. Sound waves could bounce off of things.
-So can light waves. Only the light waves that we can see are very small. So
-they bounce off of very small things like atoms. Suppose we send our light
-into a material. It will hit the atoms and bounce off. We know this, but
-there is more. The light bounces off the atoms but this makes a new light
-wave coming from the atoms. And that new wave is spherical (think that most
-waves start spherical). If we have many atoms, the light will hit many atoms
-and make many little spherical \emph{scattered} waves. An early researcher
-had an idea of how to find the direction of the light using this underlying
-wave nature of light. We could follow the light path by finding the little
-spherical scattered waves and look for where their crests line up. This
-would be constructive interference, and this is where the ray of light would
-end up! \FRAME{dtbpF}{0.5047in}{1.2418in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 0.5047in;height 1.2418in;depth
-0pt;original-width 0.33in;original-height 0.8551in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+We have learned the laws of reflection and refraction. And we know the
+scattering of the light by atoms in a material cause the bending of light
+that we call refraction. But let's look at this again in more detail.
+
+To understand what is going on at a fundamental level we need to remember
+that light is a wave. And waves can hit and splash off of objects. Sound
+waves could bounce off of things. So can light waves. Only the light waves
+that we can see are very small. So they bounce off of very small things like
+atoms. Suppose we send our light into a material. It will hit the atoms and
+bounce off. We know this, but there is more. The light bounces off the atoms
+but this makes a new light wave coming from the atoms. And that new wave is
+spherical (think, most waves start spherical). If we have many atoms, the
+light will hit many atoms and make many little spherical \emph{scattered}
+waves. An early researcher had an idea of how to find the direction of the
+light using this underlying wave nature of light. We could follow the light
+path by finding the little spherical scattered waves and look for where
+their crests line up. This would be constructive interference, and this is
+where the ray of light would end up! \FRAME{dtbpF}{0.5047in}{1.2418in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+0.5047in;height 1.2418in;depth 0pt;original-width 0.33in;original-height
+0.8551in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVJWGL05.wmf';tempfile-properties "XPR";}}This early researcher was named
 Huygen, so this method of finding the new wave is called \emph{Huygen's
 principle.}
@@ -8785,16 +9056,17 @@ the situation is something like this\FRAME{dtbpF}{4.1286in}{2.335in}{0pt}{}{%
 '../../../../PH375/repository/OpticsText/text/SVAL9A3A.wmf';tempfile-properties "XPR";}%
 }and we see that we are forming another wave front \emph{inside the material}%
 . Our scattering model predicts the transmitted wave as well as the
-reflected wave.
+reflected wave. We can see that Snell's law follows from basic geometry just
+as did the law of reflection. It depends on the spacing of the atoms and the
+size of the wavelengths.
 
-We can see that Snell's law follows from basic geometry just as did the law
-of reflection. Snell and others used measurements to find Snell's law. But
-now that we understand the geometry we can use it to find Snell's equation.
-In the next figure you can see an incoming wave. We have marked a wavefront $%
-\overline{AB}$ that is just starting to hit the interface between the two
-materials. And we have marked another wavefront, $\overline{CD}$ be the
-transmitted wave front that has just become entirely inside the new
-(transmitted) material.
+Snell and others used measurements to find Snell's law. But now that we
+understand the geometry we can use it to find Snell's equation. In the next
+figure you can see an incoming wave. We have marked a wavefront $\overline{AB%
+}$ that is just starting to hit the interface between the two materials. We
+can think of the \emph{wavefront} as a particular crest of the wave. And we
+have marked another wavefront, $\overline{CD}$ that is the transmitted wave
+front that has just become entirely inside the new material.
 
 \FRAME{dtbpF}{5.2183in}{3.2404in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -8884,6 +9156,11 @@ TRUE;display "USEDEF";valid_file "T";width 2.4738in;height 2.19in;depth
 'SVAJW81L.wmf';tempfile-properties "XPR";}}
 
 \chapter{15 Polarization and Image formation 3.1.7, 3.2.1}
+
+Light is a transverse wave. And it turns out this matters! The direction the
+electric field is oscillating leads to what we call \emph{polarization} and
+this is used in making things like polarized sun glasses. Let's talk about
+this in this lecture.
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Polarization and Images}}{\chaptermark{Polarization and Images}}}%
@@ -8984,15 +9261,25 @@ unpolarized beam. A material that does this at visible wavelengths is called
 a \emph{polaroid}. It is made of long-chain hydrocarbons that have been
 treated with iodine to make them conductive. The molecules are all oriented
 in one direction by stretching during the manufacturing process. The
-molecules have electrons that can move when light hits them. They can move
-farther in the long direction of the molecule, so in this direction the
-molecules act like little antennas. The molecules' electrons are driven into
-harmonic motion along the length of the molecule. This takes energy (and
-therefore, light) out of the beam. Little electron motion is possible in the
-short direction of the molecule, so light is given a preferential
-orientation. The light is passed if it is perpendicular to the long
-direction of the molecules. This direction is called the \emph{transmission
-axis}.
+molecules have electrons that can move when light hits them. 
+
+Remember that the reason light slows down when it enters a material is
+because the light get's absorbed by the electrons. But in most materials the
+electrons have to stay in the atoms. They just go to a higher shell. But in
+polaroid material the electrons can move farther in the long direction of
+the molecule, And the moving electrons will make light! Along the molecules
+act like they are in little radio antennas. The molecules' electrons are
+driven into harmonic motion along the length of the molecule. But this means
+the energy that used to be our light wave gets turned into kinetic energy of
+the electrons. This takes energy (and therefore, light) out of the beam. So
+the light that is polarized in this direction stops at the polaroid 
+
+But suppose the light is polarized in a direction perpendicular to the long
+molecules. Then little electron motion is possible in the short direction of
+the molecule. And if the electrons can't move this direction they won't take
+up all the light energy. Then the light is passed if it is polarized
+perpendicular to the long direction of the molecules. This direction is
+called the \emph{transmission axis}.
 
 We can take two pieces of polaroid material to study polarization.\FRAME{dhF%
 }{3.7879in}{1.4088in}{0in}{}{}{Figure}{\special{language "Scientific
@@ -9019,9 +9306,10 @@ that if the transmission axes are separated by $90\unit{%
 },$ then there will be a maximum. It is not hard to believe that the
 intensity will be given by%
 \begin{equation}
-I=I_{\max }\cos ^{2}\left( \theta \right)
+I=I_{\max }\cos ^{2}\left( \theta \right) 
 \end{equation}%
-remembering that we must have a squared term because $I\varpropto E^{2}.$
+remembering that we must have a squared term because for waves the intensity
+is proportional to the amplitude squared.
 
 \subsection{Polarization by reflection}
 
@@ -9110,12 +9398,12 @@ angle the reflected beam will be completely linearly polarized.
 
 We can predict this angle. Remember Snell's law.%
 \begin{equation*}
-n_{i}\sin \theta _{i}=n_{t}\sin \theta _{t}
+n_{1}\sin \theta _{1}=n_{2}\sin \theta _{2}
 \end{equation*}%
-Let's re-lable the incidence angle $\theta _{i}=$ $\theta _{b}.$ We take $%
-n_{i}=1$ and $n_{t}=n$ so%
+Let's re-lable the incidence angle $\theta _{1}=$ $\theta _{b}.$ We take $%
+n_{1}=1$ and $n_{2}=n$ so%
 \begin{equation*}
-n=\frac{\sin \theta _{b}}{\sin \theta _{t}}
+n=\frac{\sin \theta _{b}}{\sin \theta _{2}}
 \end{equation*}%
 Now notice that for Brewster's angle, we have 
 \begin{equation*}
@@ -9124,7 +9412,7 @@ Now notice that for Brewster's angle, we have
 %BeginExpansion
 {{}^\circ}%
 %EndExpansion
-}+\theta _{t}=180\unit{%
+}+\theta _{2}=180\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
 {{}^\circ}%
@@ -9133,7 +9421,7 @@ Now notice that for Brewster's angle, we have
 \end{equation*}%
 so%
 \begin{equation*}
-\theta _{t}=90\unit{%
+\theta _{2}=90\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
 {{}^\circ}%
@@ -9168,7 +9456,7 @@ n=\tan \theta _{b}
 \end{equation}%
 which we can solve for $\theta _{b}.$%
 \begin{equation*}
-\theta _{b}=\tan ^{-1}\left( n\right)
+\theta _{b}=\tan ^{-1}\left( n\right) 
 \end{equation*}
 
 This phenomena is why we wear polarizing sunglasses to reduce glare.
@@ -9223,8 +9511,6 @@ If our light entering our calcite crystal is unpolarized, then we will have
 two images leaving the other side that are slightly offset because the $O$%
 -rays and $E$-rays both form images.
 
-\subsection{Optical Stress Analysis}
-
 Some materials (notably plastics) become birefringent under stress. A
 plastic or other stress birefringent material is molded in the form planned
 for a building or other object (usually made to scale). The model is placed
@@ -9241,9 +9527,10 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 
 It is important to understand that light is also polarized by scattering. It
 really takes a bit of electromagnetic theory to describe this. So for a
-moment, lets just comment that blue light is scattered more than red light.
-In fact, the relative intensity of scattered light goes like $1/\lambda
-^{4}. $ This has nothing to do with polarization, but it is nice to know.
+moment, lets just comment that blue light is scattered more than red light
+because the blue wavelength is about the same size as the molecules. In
+fact, the relative intensity of scattered light goes like $1/\lambda ^{4}.$
+This has nothing to do with polarization, but it is nice to know. 
 
 Now suppose we have long pieces of wire in the air, say, a few microns long.
 The pieces of wire would have electrons that could be driven into SHM when
@@ -9253,11 +9540,13 @@ of the particles and not absorbed in a direction perpendicular to the
 orientation of the particles. This is exactly what happens when long ice
 particles in the atmosphere orient in the wind (think of the moment of
 inertia). We often get impressive halo's around the sun due to scattering
-from ice particles.
+from ice particles. And these halos can be strongly polarized.
 
 Rain drops also have a preferential scattering direction because they are
 shaped like oblate spheroids (not \textquotedblleft rain drop
-shape\textquotedblright\ like we were told in grade school).
+shape\textquotedblright\ like we were told in grade school). This makes
+weather radar signals polarized and this lets us measure how much water
+there is in a rain storm!
 
 It is also true that small molecules will act like tiny antennas and will
 scatter light preferentially in some directions and not in others. This is
@@ -9294,32 +9583,35 @@ polarization the light must be reflected completely.
 \section{Imaging with Flat Mirrors}
 
 All of us have looked in a mirror at some time. We know what to expect. We
-see an image of ourselves. To study mirrors mathematically, we need to
-establish a sign convention and some standard notation.
+see an image of ourselves. And we just thought about fancy mirrors that we
+use to make lasers. But we need to apply math to our study of mirrors so we
+can calculate how light is reflected by mirrors. 
 
-\FRAME{dtbpF}{1.5463in}{1.6267in}{0in}{}{}{Figure}{\special{language
+To study mirrors mathematically, we need to establish a sign convention and
+some standard notation.
+
+\FRAME{dtbpF}{1.5463in}{1.6267in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 1.5463in;height 1.6267in;depth
-0in;original-width 1.5108in;original-height 1.5904in;cropleft "0";croptop
+0pt;original-width 1.5108in;original-height 1.5904in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SWDEXI00.wmf';tempfile-properties "XPR";}}In the figure above, we have a
 person observing an object $O$ in a mirror. The object is located at a
 distance $s$ from the mirror. Just like for lenses, we will call this the 
 \emph{object distance, }$d_{o}$. The image appears to be located at a point $%
 I$ beyond the mirror a distance $d_{i}.$We will call this the \emph{image
-distance}. Be careful, $d_{i}$ looks like an incident of initial distance,
+distance}. Be careful, $d_{i}$ looks like an incident or initial distance,
 but it's not. It is the distance from the mirror to the \emph{image.} We
 know we see an image in the mirror, but to understand this we need to define
-what we mean by the word \textquotedblleft image.\textquotedblright
+what we mean by the word \textquotedblleft image.\textquotedblright 
 
 \subsubsection{Images}
 
 Let's think about what an image is. Take a piece of paper and a lens, and
 hold up the lens in a darkened room that has some bright object in it. Move
 the lens or the paper back and forth, and at just the right distance, a
-miniature picture of the bright object will appear. We should think about
-what the word \textquotedblleft picture\textquotedblright\ means in this
-sense.
+miniature image of the bright object will appear. We should think about what
+the word \textquotedblleft image\textquotedblright\ means in this sense.
 
 \FRAME{dhF}{2.6835in}{2.0237in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -9335,20 +9627,21 @@ objects. Remember the BYU-I guys from last time.\FRAME{dhF}{3.173in}{1.3534in%
 'SWDFTN02.wmf';tempfile-properties "XPR";}}Our eyes gather rays that are
 diverging from the object because light has bounced off of the object. Our
 eyes intersect a diverging set of rays that form a definite pattern. That
-diverging set of rays forming a pattern is the picture of the object.
+diverging set of rays forming a pattern is the picture that we see of the
+object.
 
-So when we say that the lens has formed a miniature picture of our object,
-we mean that the lens has somehow formed a diverging set of rays that form a
+So when we say that the lens has formed a miniature image of our object, we
+mean that the lens has somehow formed a diverging set of rays that form a
 pattern that looks like the pattern formed by the diverging set of rays
 coming from the object, itself. In other words, the object forms a diverging
 set of rays. And our lens forms a duplicate set of rays in the same pattern,
 so we see the same thing. The lens' version is smaller, upside down, and
 backwards, but it is still essentially the same pattern.
 
-But how can a mirror form a divergensing of rays that form a pattern?
+But how can a mirror form a diverging of rays that form a pattern?
 
 Well, the light that we see in a mirror first bounces off of something, say,
-a person. TThis makes a recognizable pattern in the light. Then the light
+a person. This makes a recognizable pattern in the light. Then the light
 reflects off of the mirror. Then the light hits our eyes. So when we see
 something in a mirror we do see a diverging set of rays that form a pattern.
 But what we see makes more makes sense if we know how our brains processes
@@ -9362,10 +9655,10 @@ will see an image as though it were behind the mirror.
 
 \subsection{Virtual Images}
 
-We will call We already know that mirrors often create what we call \emph{%
-virtual} images because the image appears to be created from diverging rays
-from behind the mirror. If we look behind the mirror, no rays exist there
-(if they did exist, they would not make it through the mirror!).
+We already know that mirrors often create what we call \emph{virtual} images
+because the image appears to be created from diverging rays from behind the
+mirror. If we look behind the mirror, no rays exist there (if they did
+exist, they would not make it through the mirror!).
 
 \FRAME{dtbpF}{2.3869in}{1.4183in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -9382,30 +9675,31 @@ time and computation power. We only really need to use two rays, and to
 remember what the object looked like to figure out where the image will be.
 
 We pick one ray from the top of the arrow that travels straight to the
-mirror. This ray will travel a distance $s$ and bounce back. Using the law
-of reflection we know that it will bounce straight back along the path it
-came in on. We pick a second ray from point $P$ that travels the path $PR.$
-This ray bounces off the mirror at an angle $\theta _{r}=\theta _{i}.$ But
+mirror. This ray will travel a distance $d_{o}$ and bounce back. Using the
+law of reflection we know that it will bounce straight back along the path
+it came in on. We pick a second ray from point $P$ that travels the path $PR.
+$ This ray bounces off the mirror at an angle $\theta _{r}=\theta _{i}.$ But
 our brain doesn't believe the light reflected. It thinks the light traveled
-straight paths. It traces the rays bacwards along straight paths. And this
-makes it appear that the tip of the arrow is at position $P^{\prime }.$ The
-rays from the tip appear to travel the paths $P^{\prime }P$ and $P^{\prime
-}R.$ The light doesn't really come from point $P^{\prime }.$ But it \emph{%
-appears} to come from point $P^{\prime }$ prime. We could use similar sets
-of two rays to find where the light from the middle of the arrow \emph{%
-appears} to come from, and for the bottom of the arrow, and all the arrow
-parts. The collection of all these apparent locations is image location and
-the light that appears to come from this location is the image. But, and
-this is important! light doesn't come from $P^{\prime }.$ It only appears to
-come from $P^{\prime }.$ When an image is formed, but the light does't
-really come from the image location, we call that a \emph{virtual image.}
+straight paths. It mentally traces the rays backwards along a straight path
+as though it came from that direction. And this makes it appear that there
+is a tip of an arrow is at position $P^{\prime }.$ The rays from the virtual
+tip appear to travel the paths $P^{\prime }P$ and $P^{\prime }R.$ The light
+doesn't really come from point $P^{\prime }.$ But it \emph{appears} to come
+from point $P^{\prime }$. We could use similar sets of two rays to find
+where the light from the middle of the arrow \emph{appears} to come from,
+and for the bottom of the arrow, and all the arrow parts. The collection of
+all these apparent locations is image location and the light that appears to
+come from this location is the image. But, and this is important! light
+doesn't come from $P^{\prime }.$ It only appears to come from $P^{\prime }.$
+When an image is formed, but the light doesn't really come from the image
+location, we call that a \emph{virtual image.}
 
 \subsection{Mirror reversal}
 
 Look into a mirror. Raise your right hand. \FRAME{dtbpF}{3.173in}{1.9147in}{%
-0in}{}{}{Figure}{\special{language "Scientific Word";type
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.173in;height 1.9147in;depth 0in;original-width 3.1289in;original-height
+3.173in;height 1.9147in;depth 0pt;original-width 3.1289in;original-height
 1.8766in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SWDFXU04.wmf';tempfile-properties "XPR";}}Your image raises what appears to
 be a left hand. It looks like a mirror switches the left and right sides of
@@ -9414,10 +9708,10 @@ the same side of the room as your real raised hand. Think of lying sideways
 on the ground in front of the mirror and raise a hand. Note that your image
 feet are on the same side of the room as your real feet. And note that as
 you put one hand up, the image hand also goes up. This is not exactly
-left-right reversal. What is happening? \FRAME{dtbpF}{4.3716in}{2.6333in}{0in%
+left-right reversal. What is happening? \FRAME{dtbpF}{4.3716in}{2.6333in}{0pt%
 }{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-4.3716in;height 2.6333in;depth 0in;original-width 4.3206in;original-height
+4.3716in;height 2.6333in;depth 0pt;original-width 4.3206in;original-height
 2.5918in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SWDFYO06.wmf';tempfile-properties "XPR";}}The light from your raised hand
 would hit the mirror, reflect, and then be absorbed by your eye. Your brain
@@ -9432,6 +9726,11 @@ the image hand, then the back of the image hand. We call this back-front
 reversal. It comes from the reversal in the order of parts of the object,
 like the front and back of your hand. So we say that a flat mirror performs
 a front-back reversal, not a left-right reversal.
+
+It is nice to know about how images are formed by mirrors. We use them all
+the time. But you probably own a phone, and your phone probably has a
+camera. Cameras also make images. We should work our way up to understanding
+how things like cameras work. We will start that in our next lecture.
 
 \chapter{16 Images formed by Curved Mirrors and by Refraction 3.2.2, 3.2.3}
 
@@ -23566,6 +23865,339 @@ the gas stays the same.
 
 Note that these are really different processes! So it is no wonder that the
 internal work done is different. And we see all of this with our PV-diagram!
+
+\subsection{Finally finding the speed of sound in air \label%
+{Speed_of_sound_derivation}}
+
+Now that we know about adiabatic processes, let's go back to the beginning
+of our course and think about the speed of sound in air. The disturbance
+that makes the wave will change the pressure and compress the gas a bit. So
+work will be done on the gas. But the disturbance happens quickly and we
+wouldn't expect energy transfer by heat. This is an adiabatic process!
+
+We used pipes when we studied sound waves. So, let's consider our air in a
+pipe. \FRAME{dtbpF}{3.3244in}{1.1061in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.3244in;height 1.1061in;depth
+0pt;original-width 3.359in;original-height 1.0981in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T9AAUO00.wmf';tempfile-properties "XPR";}}The pipe has a cross sectional
+area, $A$. And let's look at a small volume of air in the pipe. The darker
+region is our small volume of air and let's say it has a mas $\Delta m$
+where here the delta means \textquotedblleft a small amount
+of\textquotedblright\ and not a difference. The density of the air is given
+by 
+\begin{equation*}
+\rho =\frac{\Delta m}{\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}%
+so we can write 
+\begin{equation*}
+\Delta m=\rho \Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\end{equation*}%
+But look at our little mass' volume%
+\begin{equation*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=A\Delta x
+\end{equation*}%
+so we can write $\Delta m$ as 
+\begin{equation*}
+\Delta m=\rho A\Delta x
+\end{equation*}%
+Now let's consider the amount of mass that passes a point in our pipe. That
+is a mass flow rate and we know that is 
+\begin{equation*}
+\frac{dm}{dt}
+\end{equation*}%
+If we make our small amount of mass very small, we would have 
+\begin{equation*}
+dm=\rho Adx
+\end{equation*}%
+and our mass flow rate would be 
+\begin{equation*}
+\frac{dm}{dt}=\frac{\rho Adx}{dt}=\rho Av
+\end{equation*}%
+This looks familiar. It is one side of our equation of continuity 
+\begin{equation*}
+\rho _{in}A_{in}v_{in}=\rho _{out}A_{out}v_{out}
+\end{equation*}
+
+Now consider a \textquotedblleft parcel of air.\textquotedblright\ This is
+just a part of the air that we will pay attention to. It is surrounded by
+more air and is only different because we are thinking about it. But
+consider such a parcel of air and let's make it sort of box shaped like in
+the next figure. \FRAME{dtbpF}{3.4042in}{1.4688in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.4042in;height 1.4688in;depth
+0pt;original-width 3.4406in;original-height 1.4688in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T9AAUO01.wmf';tempfile-properties "XPR";}}We could write $\rho _{in}=\rho $
+and $v_{in}=v$ and $T_{in}=T$ and we could write $\rho _{out}=\rho +d\rho $, 
+$v_{out}=v+dv,$ and $T_{out}=T+dT.$ Let's put these in our continuity
+equation.%
+\begin{equation*}
+\rho Av=\left( \rho +d\rho \right) A\left( v+dv\right)
+\end{equation*}%
+The area, $A,$ didn't change. So it cancels, and we can do some algebra%
+\begin{eqnarray*}
+\rho v &=&\left( \rho +d\rho \right) \left( v+dv\right) \\
+\rho v &=&\rho v+\rho dv+vd\rho +d\rho dv
+\end{eqnarray*}%
+We can assume that $d\rho $ will be small if our parcel of air isn't too
+big. And likewise $dv$ will be small. So $d\rho dv$ should be very small.
+Let's drop this term.%
+\begin{equation*}
+\rho v=\rho v+\rho dv+vd\rho
+\end{equation*}%
+and the $\rho v$ terms cancel%
+\begin{equation*}
+0=\rho dv+vd\rho
+\end{equation*}%
+\begin{equation}
+\rho dv=-vd\rho  \label{fromcontinuity}
+\end{equation}%
+This doesn't seem to have helped, but we will use it later. Let's go back to
+our parcel of air and this time think of the forces on the input and output
+sides. \FRAME{dtbpF}{3.995in}{1.7207in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.995in;height 1.7207in;depth
+0pt;original-width 4.0429in;original-height 1.7252in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'T9AAUO02.wmf';tempfile-properties "XPR";}}Remember that there is nothing
+special about our parcel of air. There is more air all around it. And that
+surrounding air will push on our parcel of air. If we look just at the input
+and output sides of our parcel, we can see that we will have an input
+pressure and an output pressure with $P_{in}=P$ and $P_{out}=P+dP.$ And I\
+suppose $dP$ could be positive or negative. We are just saying that the
+pressure could be different on the two sides.
+
+We remember that $F=PA$ so we will have a force on the input side%
+\begin{equation*}
+F_{in}=P_{in}A=PA=Pdydz
+\end{equation*}%
+and an output force 
+\begin{equation*}
+F_{out}=-P_{out}A=-\left( P+dP\right) dydz
+\end{equation*}%
+The net force would be 
+\begin{eqnarray*}
+F_{net} &=&Pdydz-Pdydz-dPdydz \\
+&=&-dPdydz
+\end{eqnarray*}%
+Then 
+\begin{equation*}
+ma=-dPdydz
+\end{equation*}%
+We can divide by the mass to get the acceleration%
+\begin{equation*}
+a=-\frac{dPdydz}{m}
+\end{equation*}%
+and now think, 
+\begin{equation*}
+\rho =\frac{m}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}=\frac{m}{dxdydz}
+\end{equation*}%
+so 
+\begin{equation*}
+m=\rho dxdydz
+\end{equation*}%
+so our acceleration is 
+\begin{eqnarray*}
+a &=&-\frac{dPdydz}{\rho dxdydz} \\
+&=&-\frac{dP}{\rho dx}
+\end{eqnarray*}%
+and $a=dv/dt$%
+\begin{equation*}
+\frac{dv}{dt}=-\frac{dP}{\rho dx}
+\end{equation*}%
+\begin{equation*}
+dv=-\frac{dPdt}{\rho dx}
+\end{equation*}%
+and recall that $v=dx/dt$%
+\begin{equation*}
+dv=-\frac{dP}{\rho v}
+\end{equation*}%
+or 
+\begin{equation*}
+dv\rho v=-dP
+\end{equation*}
+
+Finely we can use our result from our continuity equation (\ref%
+{fromcontinuity}) $\rho dv=-vd\rho $%
+\begin{eqnarray*}
+v\rho dv &=&-dP \\
+v\left( -vd\rho \right) &=&-dP \\
+v\left( -vd\rho \right) &=&-dP \\
+v^{2} &=&\frac{dP}{d\rho }
+\end{eqnarray*}%
+and we are close. the wave speed, $v,$ is the square root of the pressure
+change over the density change. 
+\begin{equation}
+v=\sqrt{\frac{dP}{d\rho }}  \label{Sound_speed}
+\end{equation}%
+This is a little like $\sqrt{B/\rho }.$ So we are close.
+
+Since we are modeling this as an adiabatic process we know 
+\begin{equation*}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }=\text{constant}
+\end{equation*}%
+Let's look at that volume, $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$. 
+\begin{equation*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=\frac{m}{\rho }
+\end{equation*}%
+and we can write the mass, $m,$ in terms of the molar mass%
+\begin{equation*}
+M=\frac{m}{n}
+\end{equation*}%
+or 
+\begin{equation*}
+m=nM
+\end{equation*}%
+so our volume is 
+\begin{equation*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=\frac{nM}{\rho }
+\end{equation*}%
+and let's put this into our adiabatic process equation%
+\begin{equation*}
+P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }=P\left( \frac{nM}{\rho }\right) ^{\gamma }=\text{constant}
+\end{equation*}%
+We could write this as 
+\begin{equation*}
+P\frac{n^{\gamma }M^{\gamma }}{\rho ^{\gamma }}=\text{constant}
+\end{equation*}%
+and rearrange it to be 
+\begin{equation*}
+P\frac{1}{\rho ^{\gamma }}=\frac{\text{constant}}{n^{\gamma }M^{\gamma }}
+\end{equation*}%
+and since $n$ and $M$ are not changing 
+\begin{equation*}
+P\frac{1}{\rho ^{\gamma }}=\text{new constant}
+\end{equation*}
+
+Let's take the logarithm of both sides (yes I\ know it is not obvious that
+this will help, but let's do it anyway).%
+\begin{eqnarray*}
+\ln \left[ P\frac{1}{\rho ^{\gamma }}\right] &=&\ln \left[ \text{new constant%
+}\right] \\
+\ln P-\gamma \ln \rho &=&\ln \left[ \text{new constant}\right] \\
+\ln P-\gamma \ln \rho &=&\text{another new constant}
+\end{eqnarray*}%
+Now let's take the derivative of both sides%
+\begin{equation*}
+\frac{d}{d\rho }\left( \ln P-\gamma \ln \rho \right) =\frac{d}{d\rho }\left( 
+\text{another new constant}\right)
+\end{equation*}%
+The right hand side is just zero (which is why we didn't spend time figuring
+out the number for the constant!). 
+\begin{equation*}
+\frac{d}{d\rho }\left( \ln P-\gamma \ln \rho \right) =0
+\end{equation*}%
+But the left hand side gives 
+\begin{equation*}
+\frac{1}{P}\frac{dP}{d\rho }-\frac{\gamma }{\rho }\frac{d\rho }{d\rho }=0
+\end{equation*}%
+and we can rearrange this 
+\begin{equation*}
+\frac{1}{P}\frac{dP}{d\rho }=\frac{\gamma }{\rho }
+\end{equation*}%
+\begin{equation}
+\frac{dP}{d\rho }=\frac{\gamma }{\rho }P  \label{gas_speed_sound_partial}
+\end{equation}%
+Now let's pretend that the air is an ideal gas. Then we know that 
+\begin{eqnarray*}
+PV &=&nRT \\
+&=&\frac{m}{M}RT
+\end{eqnarray*}%
+and we can solve for $P$ and put it into equation (\ref%
+{gas_speed_sound_partial}) 
+\begin{eqnarray*}
+P &=&\frac{m}{VM}RT \\
+&=&\frac{\rho }{M}RT
+\end{eqnarray*}%
+and then equation (\ref{gas_speed_sound_partial} becomes%
+\begin{equation}
+\frac{dP}{d\rho }=\frac{\gamma }{\rho }\frac{\rho }{M}RT=\frac{\gamma }{M}RT
+\end{equation}
+
+and we can put this directly into equation (\ref{Sound_speed})%
+\begin{equation*}
+v=\sqrt{\frac{dP}{d\rho }}=\sqrt{\frac{\gamma }{M}RT}
+\end{equation*}%
+We can get our approximation that we used earlier for temperature dependence
+for sound speed in air from putting in some numbers. First, let's define $%
+T_{o}=273\unit{K}.$ Then 
+\begin{eqnarray*}
+v &=&\sqrt{\frac{\gamma }{M}RT\frac{T_{o}}{T_{o}}} \\
+&=&\sqrt{\frac{\gamma RT_{o}}{M}}\sqrt{\frac{T}{T_{o}}}
+\end{eqnarray*}%
+It turns out that for air at normal air pressure and at $T=10\unit{%
+%TCIMACRO{\U{2103}}%
+%BeginExpansion
+{}^{\circ}{\rm C}%
+%EndExpansion
+},$ $\gamma =1.4$ and $M=0.02897\frac{\unit{kg}}{\unit{mol}},$ and of course 
+$R=8.31\frac{\unit{J}}{\unit{mol}\unit{K}}$ then our speed is
+
+\begin{eqnarray*}
+v &=&\sqrt{\frac{\left( 1.4\right) \left( 8.31\frac{\unit{J}}{\unit{mol}%
+\unit{K}}\right) \left( 273\unit{K}\right) }{0.02897\frac{\unit{kg}}{\unit{%
+mol}}}}\sqrt{\frac{T}{T_{o}}} \\
+&=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{\frac{T}{%
+T_{o}}} \\
+&=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{\frac{T}{273%
+\unit{K}}}
+\end{eqnarray*}%
+where $T$ is in kelvins. We can change this to having $T$ in Celsius if we 
+\begin{eqnarray*}
+v &=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{\frac{%
+T_{o}+T_{c}}{T_{o}}} \\
+&=&\allowbreak 331.\,\allowbreak 1\frac{\unit{m}}{\unit{s}}\sqrt{1+\frac{%
+T_{c}}{T_{o}}}
+\end{eqnarray*}%
+which is what we used before. But now we can go back to 
+\begin{equation*}
+v=\sqrt{\frac{\gamma }{M}RT}
+\end{equation*}%
+and use this for any gas at (mostly) any temperature (so long as our gas is
+close to being and ideal gas).
 
 \section{Irreversibility}
 
