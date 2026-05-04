@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Friday, April 24, 2026 14:44:59}
+%TCIDATA{LastRevised=Friday, May 01, 2026 15:52:11}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -3882,11 +3882,11 @@ and frequency are different for the two different kinds of waves.
 Let's look at a specific case of a rope attached to a mechanical oscillator.
 You can see the situation in the next figure. The oscillator (black thing)
 has a piece that goes up and down (silver thing sticking out to the right).
-The rope is attached to this silver oscillating piece. The oscillatory acts
+The rope is attached to this silver oscillating piece. The oscillator acts
 as a disturbance. A wave is formed in the rope. \FRAME{dtbpF}{2.9856in}{%
-1.5939in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+1.5939in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.9856in;height 1.5939in;depth 0in;original-width 3.014in;original-height
+2.9856in;height 1.5939in;depth 0pt;original-width 3.014in;original-height
 1.5948in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'TE0LO800.wmf';tempfile-properties "XPR";}}
 
@@ -3925,13 +3925,13 @@ kx-\omega t+\phi _{o}\right) \right) ^{2}
 we can clean this up a bit%
 \begin{equation*}
 \Delta K=\frac{1}{2}\mu \Delta x\omega ^{2}A^{2}\cos ^{2}\left( kx-\omega
-t+\phi _{o}\right) 
+t+\phi _{o}\right)
 \end{equation*}%
 Now let's simplify our situation by letting $\phi _{o}=0$ and let's take a
 snap shot view with $t=0.$
 
 \begin{equation*}
-\Delta K=\frac{1}{2}\mu \Delta x\omega ^{2}A^{2}\cos ^{2}\left( kx\right) 
+\Delta K=\frac{1}{2}\mu \Delta x\omega ^{2}A^{2}\cos ^{2}\left( kx\right)
 \end{equation*}%
 Then, if we take only the part of the energy associated with one very tiny
 part of our rope medium, our $\Delta x$ becomes just $dx$. We don't have all
@@ -3957,8 +3957,8 @@ K_{\lambda }=\frac{1}{2}\mu \omega ^{2}A^{2}\int_{0}^{\lambda }\cos
 ^{2}\left( kx\right) dx
 \end{equation*}%
 but if you are like me, the right hand side is an integral that you have
-conveniently forgotten. But we can look up this integral in an integral
-table. My table gave the form 
+conveniently forgotten how to do. But we can look up this integral in an
+integral table. My table gave the form 
 \begin{equation*}
 \int \left( \cos ^{2}\left( ax\right) \right) dx=\frac{1}{2}x+\frac{1}{4a}%
 \sin \left( 2ax\right)
@@ -4022,11 +4022,11 @@ wavelength worth of rope.
 \end{equation*}%
 We need to put in our equation for the position for our wave.%
 \begin{equation*}
-y\left( x,t\right) =A\sin \left( kx-\omega t+\phi _{o}\right) 
+y\left( x,t\right) =A\sin \left( kx-\omega t+\phi _{o}\right)
 \end{equation*}%
 But once again let's choose $\phi _{o}=0$ and $t=0$ so that%
 \begin{equation*}
-y\left( x,0\right) =A\sin \left( kx\right) 
+y\left( x,0\right) =A\sin \left( kx\right)
 \end{equation*}%
 then 
 \begin{equation*}
@@ -4042,33 +4042,32 @@ and we have another integral I\ don't remember how to do. But I still have
 my table of integrals and my table tells me%
 \begin{equation*}
 \int \left( \sin ^{2}\left( ax\right) \right) dx=\frac{1}{2}x-\frac{1}{4a}%
-\sin \left( 2ax\right) 
+\sin \left( 2ax\right)
 \end{equation*}%
-Which feels very familiar. Lets let $a=k$ again. Then 
+Which feels very familiar. Let's let $a=k$ again. Then 
 \begin{eqnarray*}
 U_{\lambda } &=&\frac{1}{2}\mu \omega ^{2}A^{2}\left[ \frac{1}{2}x-\frac{1}{%
 4k}\sin \left( 2kx\right) \right\vert _{0}^{\lambda } \\
 &&\frac{1}{2}\mu \omega ^{2}A^{2}\left[ \left\{ \frac{1}{2}\lambda -\frac{1}{%
 4k}\sin \left( 2k\lambda \right) \right\} -\left\{ \frac{1}{2}0-\frac{1}{4k}%
-\sin \left( 2k\left( 0\right) \right) \right\} \right]  \\
-&=&\frac{1}{4}\mu \omega ^{2}A^{2}\lambda 
+\sin \left( 2k\left( 0\right) \right) \right\} \right] \\
+&=&\frac{1}{4}\mu \omega ^{2}A^{2}\lambda
 \end{eqnarray*}%
 The total energy in the $\lambda $-sized rope piece would be 
 \begin{eqnarray*}
 E_{\lambda } &=&K_{\lambda }+U_{\lambda } \\
 &=&\frac{1}{4}\mu \omega ^{2}A^{2}\lambda +\frac{1}{4}\mu \omega
-^{2}A^{2}\lambda  \\
-&=&\frac{1}{2}\mu \omega ^{2}A^{2}\lambda 
+^{2}A^{2}\lambda \\
+&=&\frac{1}{2}\mu \omega ^{2}A^{2}\lambda
 \end{eqnarray*}%
 We know that energy is being transferred by the wave. It turns out that
-energy transfers in all waves (thought the equation might be a little
-different), whether it is a light or sound wave or any other mechanical
-wave. We should wonder, how fast is energy transferring. This can mean the
-difference between a warm ray of sun on a cool spring day and being burned
-by a laser beam. We will start by considering the rate of energy transfer, 
-\emph{power}. The concept of power should be familiar to us from Principles
-of Physics I. We can find the power as the rate at which energy is
-transferred.%
+energy transfers in all waves, whether it is a light or sound wave or any
+other mechanical wave (thought the equation might be a little different). We
+should wonder, how fast is energy transferring? This can mean the difference
+between a warm ray of sun on a cool spring day and being burned by a laser
+beam. We will start by considering the rate of energy transfer, \emph{power}%
+. The concept of power should be familiar to us from Principles of Physics
+I. We can find the power as the rate at which energy is transferred.%
 \begin{equation*}
 \mathcal{P}=\frac{\Delta E}{\Delta t}
 \end{equation*}%
@@ -4134,11 +4133,11 @@ baby crying, etc.\FRAME{dtbpF}{2.4751in}{2.2485in}{0pt}{}{}{Figure}{\special%
 TRUE;display "USEDEF";valid_file "T";width 2.4751in;height 2.2485in;depth
 0pt;original-width 2.4336in;original-height 2.2087in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SV53CN0K.wmf';tempfile-properties "XPR";}}it sends out waves in all
-directions. The wave crests will define a sphere around the points source.
-The figure shows a cross section but remember it is a wave from a point
-source, so we are really drawing concentric spheres like balloons inside of
-balloons. Then form our point source%
+'SV53CN0K.wmf';tempfile-properties "XPR";}}The point source sends out waves
+in all directions. The wave crests will define a sphere around the points
+source. The figure shows a cross section but remember it is a wave from a
+point source, so we are really drawing concentric spheres like balloons
+inside of balloons. Then form for $I$ for our point source would be%
 \begin{equation}
 \mathcal{I}=\frac{\mathcal{P}}{4\pi r^{2}}
 \end{equation}%
@@ -4171,7 +4170,7 @@ hand. The power received is
 \mathcal{P}_{received} &=&\mathcal{I}A_{hand} \\
 &=&\frac{A_{hand}}{A_{wave}}\mathcal{P}_{source}
 \end{eqnarray*}%
-and we can see that, indeed, the larger the hand, the more power, and
+And we can see that, indeed, the larger the hand, the more power, and
 therefore more energy we collect. This is the idea behind a dish antenna for
 communications and the idea behind the acoustic dish microphones we see at
 sporting events. In next figure, we can see that it would take an
@@ -4187,7 +4186,7 @@ Figure}{\special{language "Scientific Word";type
 
 In our examples so far, our waves could go on forever. But in our house or
 church building or classroom this is not usually the case. The waves will
-eventually hit something. 
+eventually hit something.
 
 In class we will made pulses on a spring with one end of the rope fixed
 (held by a class member). What happened when the pulse reached the end of
@@ -4289,7 +4288,7 @@ so%
 \begin{equation*}
 f=\frac{v}{\lambda }
 \end{equation*}%
-both the speed and the wavelength have changed, but did they change
+Both the speed and the wavelength have changed, but did they change
 proportionately so $f$ is constant? This must be so. Think that the change
 in wavelength is due to the relative speed of the wave in the two media. If $%
 \Delta v$ is small the change in $\lambda $ will be small because the crests
@@ -4489,30 +4488,30 @@ different (but it is likely to happen in an upcoming homework problem).
 Then the resulting wave would be%
 \begin{equation*}
 y_{r}=y_{\max }\sin \left( k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}\right)
-+A\sin \left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) 
++A\sin \left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right)
 \end{equation*}%
 but this doesn't tell us much. We can understand much more about what our
 combined waves would look like if we use a trig identity%
 \begin{equation*}
 \sin a+\sin b=2\cos \left( \frac{a-b}{2}\right) \sin \left( \frac{a+b}{2}%
-\right) 
+\right)
 \end{equation*}%
 Let's try this. We could make $a=$ $k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}$
 and $b=k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}$ then 
 \begin{eqnarray*}
 &=&2y_{\max }\cos \left( \frac{\left( k_{2}x_{2}-\omega _{2}t_{2}+\phi
-_{2}\right) -\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right) 
+_{2}\right) -\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right)
 \\
 &&\times \sin \left( \frac{\left( k_{2}x_{2}-\omega _{2}t_{2}+\phi
-_{2}\right) +\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right) 
+_{2}\right) +\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right)
 \end{eqnarray*}%
 We can rewire this as 
 \begin{eqnarray*}
 y_{r} &=&2y_{\max }\cos \left( \frac{1}{2}\left[ \left( k_{2}x_{2}-\omega
 _{2}t_{2}+\phi _{2}\right) -\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi
-_{1}\right) \right] \right)  \\
+_{1}\right) \right] \right) \\
 &&\times \sin \left( \frac{\left( k_{2}x_{2}-\omega _{2}t_{2}+\phi
-_{2}\right) +\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right) 
+_{2}\right) +\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) }{2}\right)
 \end{eqnarray*}%
 and recognize that the sine part is still a function of position and time
 (just a complicated one) so it must be a wave. The cosine part must be part
@@ -4520,12 +4519,12 @@ of the amplitude. Let's write out this amplitude%
 \begin{equation*}
 A=2y_{\max }\cos \left( \frac{1}{2}\left[ \left( k_{2}x_{2}-\omega
 _{2}t_{2}+\phi _{2}\right) -\left( k_{1}x_{1}-\omega _{1}t_{1}+\phi
-_{1}\right) \right] \right) 
+_{1}\right) \right] \right)
 \end{equation*}%
 The part in square brackets is what we call the phase difference 
 \begin{equation*}
 \Delta \phi =\left( k_{2}x_{2}-\omega _{2}t_{2}+\phi _{2}\right) -\left(
-k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right) 
+k_{1}x_{1}-\omega _{1}t_{1}+\phi _{1}\right)
 \end{equation*}%
 Notice that to make constructive interference we want the amplitude to be as
 big as possible. This happens when the cosine is $\pm 1.$ We can find when
@@ -4533,11 +4532,11 @@ this happens by recalling that cosine is $\pm 1$ when the argument of the
 cosine is a multiple of $\pi .$ Notice that the amplitude has the cosine of
 half the phase difference%
 \begin{equation*}
-A=2y_{\max }\cos \left( \frac{1}{2}\Delta \phi \right) 
+A=2y_{\max }\cos \left( \frac{1}{2}\Delta \phi \right)
 \end{equation*}%
 so 
 \begin{equation*}
-\frac{1}{2}\Delta \phi =\pi m\qquad m=0,\pm 1,\pm 2,\pm 3,\cdots 
+\frac{1}{2}\Delta \phi =\pi m\qquad m=0,\pm 1,\pm 2,\pm 3,\cdots
 \end{equation*}%
 or 
 \begin{equation*}
@@ -4548,11 +4547,11 @@ For total destructive interference we want the amplitude to be zero. To
 achieve this the cosine must be zero and this happens at odd multiples of $%
 \pi /2.$ 
 \begin{equation*}
-\frac{1}{2}\Delta \phi =\frac{\pi }{2}m\qquad m=\pm 1,\pm 3,\pm 5,\cdots 
+\frac{1}{2}\Delta \phi =\frac{\pi }{2}m\qquad m=\pm 1,\pm 3,\pm 5,\cdots
 \end{equation*}%
 Then we could say that our phase difference 
 \begin{equation*}
-\Delta \phi =\pi m\qquad m=\pm 1,\pm 3,\pm 5,\cdots 
+\Delta \phi =\pi m\qquad m=\pm 1,\pm 3,\pm 5,\cdots
 \end{equation*}%
 Another way to say this is to allow $m$ to be any integer but to write the
 destructive interference condition as 
@@ -4833,8 +4832,8 @@ We know what superposition is, but we don't really want to add values for
 millions of points in a medium to find out what a combination of waves will
 look like. At the very least, we want to make a computer do that (and
 programs like OpenFoam do something very akin to this!). But where we can,
-we would like to combine wave functions algebraically. Let's see how this
-can work.
+we would like to combine wave functions algebraically. We did this generally
+last lecture. Let's do it again, but with more restrictions.
 
 Lets define two wave functions%
 \begin{equation*}
@@ -4844,10 +4843,10 @@ and
 \begin{equation*}
 y_{2}=y_{\max }\sin \left( kx-\omega t+\phi _{o}\right)
 \end{equation*}%
-These are two waves with the same frequency and wave number traveling the
-same direction in the medium, but at $t=0$ the $y$ values are not the same
-because of the phase shift. The graph of $y_{2}$ is shifted by an amount $%
-\phi _{o}.$
+These are two waves with the \textbf{same frequency} and \textbf{same wave
+number} traveling the \textbf{same direction} in the medium, but at $t=0$
+the $y$ values are not the same because of the phase shift. The snapshot
+graph of $y_{2}$ is shifted by an amount $\phi _{o}.$
 
 I will pick some values for the constants
 
@@ -4888,8 +4887,8 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 Now let's consider $y_{2.}$ Using the values we chose, $y_{2}$ can be
 written as%
 \begin{eqnarray*}
-y_{2} &=&y_{\max }\sin \left( kx-\omega t+\phi _{o}\right)  \\
-&=&\sin \left( \pi x-t+\frac{\pi }{6}\right) 
+y_{2} &=&y_{\max }\sin \left( kx-\omega t+\phi _{o}\right) \\
+&=&\sin \left( \pi x-t+\frac{\pi }{6}\right)
 \end{eqnarray*}%
 which looks like this\FRAME{dtbpFX}{3.0519in}{1.2427in}{0pt}{}{}{Plot}{%
 \special{language "Scientific Word";type "MAPLEPLOT";width 3.0519in;height
@@ -4908,7 +4907,7 @@ FALSE;lastEngine "MuPAD";xmin "0";xmax "5.001000";xviewmin "0";xviewmax
 these waves using superposition? Symbolically we have%
 \begin{equation}
 y_{r}=y_{\max }\sin \left( kx-\omega t\right) +y_{\max }\sin \left(
-kx-\omega t+\phi _{o}\right)   \label{Superposition basic}
+kx-\omega t+\phi _{o}\right)  \label{Superposition basic}
 \end{equation}
 
 and putting in the numbers gives%
@@ -4990,8 +4989,11 @@ $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 2y_{\max }\cos \left( \frac{\pi }{2}\right) =0
 \end{equation*}%
 So, when $\phi _{o}=0$ we have a new maximum amplitude of $2y_{\max }$ and
-when $\phi _{o}=\pi $ we have a zero amplitude. Here is our wave for several
-choices of $\phi _{o}.$
+when $\phi _{o}=\pi $ we have a zero amplitude. And these are our
+constructive and destructive interference! Here is our wave for several
+choices of $\phi _{o}.$ We can see that along with total constructive and
+destructive interference we can also have partial constructive and partial
+destructive interference.
 
 \FRAME{dtbpFX}{3.1254in}{1.177in}{0pt}{}{}{Plot}{\special{language
 "Scientific Word";type "MAPLEPLOT";width 3.1254in;height 1.177in;depth
@@ -5083,8 +5085,8 @@ The sum is
 y_{r}=y_{1}+y_{2}=y_{\max }\sin \left( kx-\omega t\right) +A\sin \left(
 kx+\omega t\right)
 \end{equation*}%
-To gain insight into what these two waves produce, we use another of our
-favorite trig identities%
+Which we could just do on a computer. But to gain insight into what these
+two waves produce, let's use another of our favorite trig identities%
 \begin{equation*}
 \sin \left( a\pm b\right) =\sin \left( a\right) \cos \left( b\right) \pm
 \cos \left( a\right) \sin \left( b\right)
@@ -5108,8 +5110,8 @@ with $\phi _{o}=0$ and with another complicated amplitude%
 \begin{equation*}
 2y_{\max }\sin \left( kx\right)
 \end{equation*}%
-That is, we have a set of harmonic oscillators who's amplitude is different
-for each value of $x.$
+That is, we have a set of harmonic oscillators all at different values of $x$
+who's amplitude is different for each value of $x.$
 
 \FRAME{dhF}{2.5296in}{2.2883in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -5183,7 +5185,10 @@ that each end must be a node. We start with
 \begin{equation*}
 y=2y_{\max }\sin \left( kx\right) \cos \left( \omega t\right)
 \end{equation*}%
-and recognize that we have one condition met because%
+and realize we have two boundary conditions. $y\left( 0,t\right) =0$ and and 
+$y\left( L,t\right) =0$ because at these locations the string is attached to
+a piece of wood (called the nut or bridge for a ukulele). The string can't
+oscillate at these locations. For the first conditions 
 \begin{equation*}
 y=0
 \end{equation*}%
@@ -5191,7 +5196,7 @@ when
 \begin{equation*}
 x=0
 \end{equation*}%
-we need $y=0$ when $x=L.$ That happens when%
+and for the second $y=0$ when $x=L.$ That happens when%
 \begin{equation*}
 kL=n\pi
 \end{equation*}%
@@ -5290,20 +5295,22 @@ As we exert a force on the piston, the air molecules are compressed into a
 group. In the next figure, each dot represents a group of air molecules. In
 the top picture, the air molecules are not displaced. But when the piston
 moves, the air molecules receive energy by collision. They bunch up. We see
-this in the second picture. \FRAME{dtbpF}{3.0193in}{1.5061in}{0in}{}{}{Figure%
+this in the second picture. \FRAME{dtbpF}{3.0193in}{1.5061in}{0pt}{}{}{Figure%
 }{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 3.0193in;height 1.5061in;depth
-0in;original-width 3.0486in;original-height 1.5061in;cropleft "0";croptop
+0pt;original-width 3.0486in;original-height 1.5061in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'T96Q0T01.wmf';tempfile-properties "XPR";}}The graph below the two pictures
-shows how much displacement each molecule group experiences.
+'T96Q0T01.wmf';tempfile-properties "XPR";}}The colored dots represent a few
+of the air molecules. The graph below the two pictures shows how much
+displacement each molecule group experiences from its equilibrium position
+(where it started).
 
 Suppose we now pull the piston back. This would allow the molecules to
 bounce back to the left, but the molecules that they have collided with will
 receive some energy and go to the right. This is shown in the next figure.
 Color coded dots are displayed above the before and after picture so you can
-see where the molecule groups started.\FRAME{dtbpF}{3.131in}{1.6329in}{0pt}{%
-}{}{Figure}{\special{language "Scientific Word";type
+see where each molecule started.\FRAME{dtbpF}{3.131in}{1.6329in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.131in;height 1.6329in;depth 0pt;original-width 3.3093in;original-height
 1.711in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -5315,9 +5322,9 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 3.0716in;original-height 1.6365in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'T96Q2403.wmf';tempfile-properties "XPR";}}%
 Then we can push inward again and compress the gas.\FRAME{dtbpF}{3.0219in}{%
-1.6941in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+1.6941in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.0219in;height 1.6941in;depth 0in;original-width 3.0512in;original-height
+3.0219in;height 1.6941in;depth 0pt;original-width 3.0512in;original-height
 1.6977in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'T96Q3204.wmf';tempfile-properties "XPR";}}This may seem like a senseless
 thing to do, but it is really what a speaker does to produce sound. In
@@ -5359,8 +5366,10 @@ to better describe the situation. Let's look at the ratio%
 \frac{F}{A}
 \end{equation*}%
 What does it represent? This ratio tells us how spread out an applied force
-may be. The area is important. Think of the sides of a the eraser of a
-pencil.
+may be. If I push on the ball with my hand the ball might sail across a net.
+If I push with the same force with a sharp nail, I will need a new ball. The
+small area of the nail tip makes the force more likely to penetrate into the
+ball. The area is important.
 
 It is coinvent to give this concept a name. We will call it \emph{pressure.}
 
@@ -5376,10 +5385,10 @@ P=\frac{F}{A}
 \rule{300pt}{1pt}
 \end{center}
 
-But in a fluid, what is the force? Lets consider a ball hitting a wall. Is
-there a force? During the collision, there is a force of the ball on the
-wall, and a Newton's third law force of the wall molecules pushing back on
-the ball. The ball will bounce back. 
+But in a fluid like air, what is the force? Lets consider a ball hitting a
+wall. Is there a force? During the collision, there is a force of the ball
+on the wall, and a Newton's third law force of the wall molecules pushing
+back on the ball. The ball will bounce back. 
 %TCIMACRO{%
 %\TeXButton{Ping Pong Ball Demo}{\marginpar {
 %\hspace{-0.5in}
@@ -5398,18 +5407,18 @@ the ball. The ball will bounce back.
 
 This force is small and only lasts during the collision. But now suppose we
 have many balls, and all the balls impact the wall. Further suppose that
-every time a ball bounces back is ends up headed back to the wall and
+every time a ball bounces back it ends up headed back to the wall and
 bounces again. If the balls keep coming, there will be a force on the wall
 quite a bit of the time. At least, on average there is a force, anyway. This
 is the force that causes air pressure. The air molecules in this room are
 like the small balls. we will find that they have an amount of kinetic
-energy. They impact the walls (and us) all over our surface area. The result
+energy. They impact the walls (and us) all over the surface area. The result
 is air pressure.
 
 The water pressure in a swimming pool is caused by moving water particles.
 You should convince yourself that the reason the water stays in the pool is
 partly because the air molecules bounce against the water surface exerting a
-pressure on the waver!
+pressure on the waver so it can't leave the pool!
 
 Let's go back to making sounds. Suppose we push our piston as we did before
 in figure \ref{Creation of a Pulse}. When we push in the piston, it creates
@@ -5433,7 +5442,7 @@ rarefaction next to the piston.
 Suppose we drive the piston sinusoidally. Can we describe the motion of the
 particles and of the wave? We can identify the distance between two
 compressions as $\lambda .$ We define $s\left( x,t\right) $ (like we defined
-a wave function, $y\left( x,t\right) )$ as the displacement a particle of
+a wave function, $y\left( x,t\right) )$ as the displacement of a particle of
 fluid relative to its equilibrium position.%
 \begin{equation}
 s\left( x,t\right) =s_{\max }\cos \left( kx-\omega t\right)
@@ -5444,17 +5453,17 @@ We remember that $s_{\max }$ is the maximum displacement of a particle of
 fluid from its equilibrium position. We plotted this using a bar graph to
 show displacement from the equilibrium position for our molecules. As we
 push the piston in and out we will get something like this. \FRAME{dtbpF}{%
-3.1559in}{4.3657in}{0in}{}{}{Figure}{\special{language "Scientific
+3.1559in}{4.3657in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 3.1559in;height 4.3657in;depth 0in;original-width
+"T";width 3.1559in;height 4.3657in;depth 0pt;original-width
 3.1878in;original-height 4.4207in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'T96QOB06.wmf';tempfile-properties "XPR";}}%
-found before that we get something that looks like a sine wave, but remember
-what the bars represent. They represent the displacement from original
-position. \FRAME{dtbpF}{2.5048in}{0.9615in}{0in}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+We found before that we get something that looks like a sine wave, but
+remember what the bars represent. They represent the displacement from
+original position. \FRAME{dtbpF}{2.5048in}{0.9615in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 2.5048in;height 0.9615in;depth
-0in;original-width 2.5235in;original-height 0.9509in;cropleft "0";croptop
+0pt;original-width 2.5235in;original-height 0.9509in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'T96Q4305.wmf';tempfile-properties "XPR";}}We don't usually draw bar graphs,
 we usually just draw the sine wave.
@@ -5477,7 +5486,8 @@ is also periodic
 'SUS73V27.wmf';tempfile-properties "XPR";}}which is why we often refer to a
 sound wave as a pressure wave. Think of when the wave gets to your ear. the
 wave consists of a group of particles all headed for your ear drum. When
-they hit, they exert a force. Pressure is a force spread over an area,
+they hit, they exert a force. Pressure is a force spread over an area. This
+is the beginning of hearing sound!
 
 %TCIMACRO{%
 %\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
@@ -5567,28 +5577,29 @@ spring constant $k$ that tells us how hard it is to stretch or compress a
 spring.
 
 Suppose we pull on a rod with a force $\overrightarrow{\mathbf{F}}\mathbf{.}$%
-\FRAME{dtbpF}{5.1463in}{2.7346in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{3.3271in}{1.7678in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 5.1463in;height 2.7346in;depth
-0in;original-width 5.2155in;original-height 2.7576in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 3.3271in;height 1.7678in;depth
+0pt;original-width 5.2155in;original-height 2.7576in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SV71LI02.wmf';tempfile-properties "XPR";}}
 
 The rod will be stressed. We call this \emph{tensile stress} which comes
 from a pull . This pull will stretch the solid's molecular bonds (like a
-tension force).
-
-We write the stress as 
+tension force). We write the stress as 
 \begin{equation}
 \frac{F}{A}
 \end{equation}%
 which looks like a pressure, but this time we mean that we are pulling on
 the beam so that the pull is spread over the cross sectional area (marked $A$
-in the figure above). That is not much like a pressure!
+in the figure above). You can think of the beam as having many slightly
+stretchy bonds between molecules across the whole cross sectional area of
+the beam. All of them contribute making the bar hard to stretch. That is not
+much like a pressure!
 
-By pulling on the beam, the beam will stretch. That stretching is a strain.
-We write the strain as the percent change in shape. In this case, the
-percent change in length%
+But by pulling on the beam, the beam will stretch a little. That stretching
+is a strain. We write the strain as the percent change in shape. In this
+case, the percent change in length%
 \begin{equation}
 \frac{\Delta L}{L_{o}}
 \end{equation}%
@@ -5611,7 +5622,7 @@ force like $F=-k\left( x-x_{o}\right) .$
 Young's modulus depends on the microscopic properties of the solid (which we
 will not study in detail, but these are our stretchy/squishy forces between
 atoms that make normal and tension forces). We will look up Young's modulus
-for each material in tables like the following:%
+for each material in tables like the following:\smallskip 
 \begin{equation*}
 \begin{tabular}{|l|l|}
 \hline
@@ -5652,7 +5663,8 @@ original publication.}
 \dag Average values from numbers given in various text books. These numbers
 should be taken as example values and more exact numbers found for any real
 work.}
-\end{equation*}
+\end{equation*}%
+\smallskip \smallskip
 
 Let's take an example. Suppose we have a steel piano wire. One end of the
 piano wire is fixed in place, and the other is connected to a peg that can
@@ -5715,28 +5727,124 @@ hit the string we expect a wave. And that wave will have a wave speed. And
 we know that wave speeds are related to the measure of the elasticity of the
 metal and the measure of the inertial of the metal material. The tension in
 the (now) wire would be our force, but we now know how to express this force
-in terms of the elasticity of the wire material. 
-\begin{eqnarray*}
-v &=&\sqrt{\frac{T}{\mu }}=\sqrt{\frac{Y\frac{\Delta L}{L_{o}}A}{\frac{m}{%
-L_{o}}}} \\
-&=&\sqrt{\frac{Y\Delta LA}{m}} \\
-&=&\sqrt{\frac{Y%
+in terms of the elasticity of the wire material. We can start with 
+\begin{equation*}
+\frac{F}{A}=Y\frac{\Delta L}{L_{o}}
+\end{equation*}%
+again and put in $T$ for the force%
+\begin{equation*}
+\frac{T}{A}=Y\frac{\Delta L}{L_{o}}
+\end{equation*}%
+then%
+\begin{equation*}
+T=Y\frac{\Delta L}{L_{o}}A
+\end{equation*}%
+Now let's think back to Newton's second law. but this time for just a small
+piece of the wire that has a mass of $dm$ and a length of $dx.$ \FRAME{dtbpF%
+}{5.0398in}{1.334in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 5.0398in;height 1.334in;depth 0pt;original-width
+5.1081in;original-height 1.3305in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'TEBZJK05.wmf';tempfile-properties "XPR";}}%
+Then the net force on this small piece of the wire would be
+
+\FRAME{dtbpF}{1.6906in}{0.4364in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.6906in;height 0.4364in;depth
+0pt;original-width 1.6941in;original-height 0.416in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TEBXPP00.wmf';tempfile-properties "XPR";}}%
+\begin{equation*}
+F_{net}=T_{r}-T_{\ell }=\Delta T
+\end{equation*}%
+and we want to look at the tensions on either side of our little piece of
+wire. Let's use the letter $ds$ for the stretch of the small segment of
+wire. It's a very small $\Delta L.$ Then we don't have 
+\begin{equation*}
+T=Y\frac{\Delta L}{L_{o}}A
+\end{equation*}%
+for the whole wire, we just have a tension 
+\begin{equation*}
+T=Y\frac{ds}{dx}A
+\end{equation*}%
+for our little piece of the wire. But in our Newton's second law equation we
+have $\Delta T,$ the tension difference between the two sides of our bit of
+wire. That tension difference is causing the stretch, $ds.$ Because our bit
+of wire is so small we could write this as $dT.$ And from our last equation
+we could find $dT/dx$ to find $dT$%
+\begin{equation*}
+\frac{d}{dx}T=\frac{d}{dx}\left( Y\frac{ds}{dx}A\right) =YA\frac{d^{2}s}{%
+dx^{2}}
+\end{equation*}%
+so 
+\begin{equation*}
+dT=YA\frac{d^{2}s}{dx^{2}}dx
+\end{equation*}%
+Now our $F_{net}=ma$ for our little bit of wire would be 
+\begin{equation*}
+F_{net}=\left( dm\right) \left( \frac{d^{2}s}{dt^{2}}\right)
+\end{equation*}%
+We can change this a little bit if we remember what density is 
+\begin{equation*}
+\rho =\frac{m}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}{m}} \\
-&=&\sqrt{\frac{Y}{\rho }}
-\end{eqnarray*}%
-And we have the wave speed in terms of the an elastic quantity (Young's
-modulus) and an inertial property (the metal density). This gives a wave
-speed of 
+}
+\end{equation*}%
+where $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+$ is the volume. We want the density of our little bit of wire%
+\begin{equation*}
+\rho =\frac{dm}{Adx}
+\end{equation*}%
+because $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=Adx.$ 
+\begin{equation*}
+dm=\rho Adx
+\end{equation*}%
+then the net force on our little bit of wire is 
+\begin{equation*}
+F_{net}=\rho Adx\frac{d^{2}s}{dt^{2}}
+\end{equation*}%
+And we can put all of this into our Newton's second law equation. Start with 
+\begin{equation*}
+F_{net}=T_{r}-T_{\ell }=\Delta T
+\end{equation*}%
+and substitute to get%
+\begin{equation*}
+\rho Adx\frac{d^{2}s}{dt^{2}}=YA\frac{d^{2}s}{dx^{2}}dx
+\end{equation*}%
+This looks a lot like our wave equation!. Some things cancel 
+\begin{equation*}
+\rho \frac{d^{2}s}{dt^{2}}=Y\frac{d^{2}s}{dx^{2}}
+\end{equation*}%
+Let's put all of our constants on one side.%
+\begin{equation*}
+\frac{d^{2}s}{dt^{2}}=\frac{Y}{\rho }\frac{d^{2}s}{dx^{2}}
+\end{equation*}%
+and now all we have to do is to compare this to our linear wave equation.%
+\begin{equation*}
+\frac{d^{2}y}{dt^{2}}=v^{2}\frac{d^{2}y}{dx^{2}}
+\end{equation*}%
+In our new equation there is a $Y/\rho $ where the $v^{2}$ should be. This
+means for our wire to have a wave on it, the wave speed must be 
 \begin{equation*}
 v=\sqrt{\frac{Y}{\rho }}
 \end{equation*}%
-But this won't do for sound waves in air. We need a different modulus for
-gasses. And fortunately we also studied this modulus in Principles of
-Physics I. It is the bulk modulus.
+And we have the wave speed in terms of the an elastic quantity (Young's
+modulus) and an inertial property (the metal density). This gives a wave
+speed on a wire. But this won't do for sound waves in air. We need a
+different modulus for gasses. And fortunately we also studied this modulus
+in Principles of Physics I. It is the bulk modulus.
 
 \subsection{Bulk Modulus}
 
@@ -5820,9 +5928,142 @@ formula. Usually we start compressing a solid while it is experiencing air
 pressure. So we don't start from zero stress. We change the force from the
 force due to air pressure to some larger compressive force.
 
-Once again we have a quantity that shows how elastic our medium is, $B.$ And
-we can still use the density for the inertial property of the gas, $\rho .$
-So our speed of sound in a gas is 
+Let's find the speed of the wave again using our linear wave equation. 
+\FRAME{dtbpF}{3.9932in}{1.7988in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.9932in;height 1.7988in;depth
+0pt;original-width 4.7915in;original-height 2.1421in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TEBZIK04.wmf';tempfile-properties "XPR";}}Let's consider a parcel of air.
+What is a \textquotedblleft parcel of air?\textquotedblright\ It is just
+part of the air that we will consider. It isn't different than the air
+around it. The only difference is that we are thinking about this chunk of
+air and not the air around it. The word \textquotedblleft
+parcel\textquotedblright\ is an old word for \textquotedblleft
+package.\textquotedblright\ In our case we have a cylindrical parcel of air.
+Then we could use Newton's second law to find the wave equation and pick off
+the speed again just like we did before. Newton's law gives
+
+\begin{equation*}
+F_{net}=F_{pr}-F_{p\ell }=\Delta F_{p}
+\end{equation*}%
+where now our forces are due to pressure. We can use 
+\begin{equation*}
+P=\frac{F}{A}
+\end{equation*}%
+to change this Newton's second law equation 
+\begin{equation*}
+F_{net}=P_{r}A-P_{\ell }A
+\end{equation*}%
+and we can write $P_{r}$ as just $P$ and $P_{\ell }=P+dP$ where $dP$ is the
+small change in pressure from left to right. 
+\begin{eqnarray*}
+F_{net} &=&PA-\left( P+dP\right) A \\
+&=&PA-PA-AdP=-AdP \\
+&=&-AdP
+\end{eqnarray*}%
+Now 
+\begin{equation*}
+F_{net}=ma=\left( dm\right) a
+\end{equation*}%
+for our small a parcel of air. Then our Newton's second law equation is 
+\begin{equation*}
+\left( dm\right) a=PA-\left( P+dP\right) A=-AdP
+\end{equation*}%
+\begin{equation*}
+adm=-AdP
+\end{equation*}%
+Let's look at our stress-strain equation for pressure stress again 
+\begin{equation}
+\Delta P=-B\frac{\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation}%
+We need $dP.$ But from what did we in the last problem it seems like for 
+\begin{equation*}
+\frac{dP}{dx}=\frac{d}{dx}\left( \Delta P\right)
+\end{equation*}%
+because with our funny notation $\Delta P$ is our how much the pressure is
+different from atmospheric pressure and not the change from left to right.
+The notation is awkward, but this gives 
+\begin{equation*}
+dP=\frac{d}{dx}\left( \Delta P\right) dx
+\end{equation*}
+
+We could use $s$ again for the strain variable, only this time instead of
+the stretch amount it is the squish amount So 
+\begin{equation*}
+\Delta 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=Ads
+\end{equation*}
+and the original volume of our parcel is 
+\begin{equation*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+=Adx
+\end{equation*}%
+so our pressure equation is 
+\begin{equation}
+\Delta P=-B\frac{Ads}{Adx}=-B\frac{ds}{dx}
+\end{equation}%
+and we can put this into our equation for $dP$%
+\begin{eqnarray*}
+dP &=&\frac{d}{dx}\left( \Delta P\right) dx \\
+&=&\frac{d}{dx}\left( -B\frac{ds}{dx}\right) dx \\
+&=&-B\left( \frac{d^{2}s}{dx^{2}}\right) dx
+\end{eqnarray*}%
+We can put this into right hand side of our Newton's second law. 
+\begin{eqnarray*}
+adm &=&-AdP \\
+adm &=&-A\left( -B\left( \frac{d^{2}s}{dx^{2}}\right) dx\right) \\
+adm &=&AB\left( \frac{d^{2}s}{dx^{2}}\right) dx
+\end{eqnarray*}%
+But we can do more. Last time for the wire we used density. Let's do that
+again four our parcel of air.
+
+\begin{equation*}
+dm=\rho Adx
+\end{equation*}%
+so 
+\begin{eqnarray*}
+F_{net} &=&adm \\
+&=&\frac{d^{2}s}{dt^{2}}dm \\
+&=&\frac{d^{2}s}{dt^{2}}\rho Adx
+\end{eqnarray*}%
+and we can put all this into our Newton's second law. Then%
+\begin{equation*}
+adm=AB\left( \frac{d^{2}s}{dx^{2}}\right) dx
+\end{equation*}%
+becomes 
+\begin{equation*}
+\frac{d^{2}s}{dt^{2}}\rho Adx=AB\left( \frac{d^{2}s}{dx^{2}}\right) dx
+\end{equation*}%
+and some things cancel and we can put all the constants on one side. 
+\begin{equation*}
+\frac{d^{2}s}{dt^{2}}=\frac{B}{\rho }\left( \frac{d^{2}s}{dx^{2}}\right)
+\end{equation*}%
+and this is our linear wave equation again only with $B/\rho $ where $v^{2}$
+should be. That tells us that 
+\begin{equation*}
+v=\sqrt{\frac{B}{\rho }}
+\end{equation*}%
+Our elastic quantity for our medium is, $B.$ And we can still use the
+density for the inertial property of the gas, $\rho .$ So our speed of sound
+in a gas is 
 \begin{equation*}
 v=\sqrt{\frac{B}{\rho }}
 \end{equation*}%
@@ -5835,7 +6076,7 @@ where $\gamma $ is the adiabatic index (related to the type of gas we have)
 and $R$ is the universal gas constant, and $T_{K}$ is the temperature in
 kelvins and $M$ is the gas molar mass. Most of these quantities are
 familiar, but what is a \textquotedblleft universal gas
-constant\textquotedblright\ and what is an \textquotedblright adiabatic
+constant\textquotedblright\ and what is an \textquotedblleft adiabatic
 index?\textquotedblright\ These are quantities that we will study at the end
 of this course. So we can't complete our study of what wave speed of sound
 right now. But we need an approximate way to calculate speed of sound waves.
@@ -5859,6 +6100,10 @@ T_{o}}+\frac{T_{C}}{T_{o}}}=v_{o}\sqrt{\frac{T_{o}+T_{C}}{T_{o}}}=v_{o}\sqrt{%
 The speed of sound in air at normal room temperature is around $340\unit{m}/%
 \unit{s}.$
 
+Notice that we found the speed of waves using a differential equation. But
+also notice that we did not solve the differential equation. We just used it
+to identify the speed for each case.
+
 \section{Intensity of Sound Waves}
 
 We have already learned that knowing the power of a sound source isn't
@@ -5871,17 +6116,13 @@ distance.
 \mathcal{I}=\frac{\mathcal{P}}{4\pi r^{2}}
 \end{equation}
 
-Let's consider a parcel of air. What is a \textquotedblleft parcel of
-air?\textquotedblright\ It is just part of the air that we will consider. It
-isn't different than the air around it. The only difference is that we are
-thinking about this chunk of air and not the air around it. The word
-\textquotedblleft parcel\textquotedblright\ is an old word for
-\textquotedblleft package.\textquotedblright\ So let's make our parcel of
-air kind of square package shaped. And we wish a should wave to trave
-through our parcel of air. The air molecules might both move and stretch out
-as the sound wave passes. So the displacement from equilibrium $s\left(
-x\right) $ for the air molecules might be different as the air moves to
-location $x+\Delta x.$ The next figure tries to show this.
+Let's take a parcel of air again. Only this time let's make our parcel of
+air kind of square package shaped. And we wish to have a wave travel through
+our parcel of air. The air molecules might both move and stretch out as the
+sound wave passes. Let's use $s\left( x\right) $ to be how far the air
+molecules move from equilibrium. So the displacement from equilibrium $%
+s\left( x\right) $ for the air molecules might be different as the air moves
+to location $x+\Delta x.$ The next figure tries to show this.
 
 \FRAME{dtbpF}{3.7608in}{2.5448in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -5939,7 +6180,8 @@ and we can see that this will be
 %EndExpansion
 }=\frac{A\Delta s}{A\Delta x}=\frac{\Delta s}{\Delta x}
 \end{equation*}%
-If we take the limit as $\Delta x\rightarrow 0$ this is just 
+If we take our parcel of air to be small so $\Delta x$ is a very small, $dx,$
+this is just 
 \begin{equation*}
 \frac{d%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -5954,21 +6196,35 @@ If we take the limit as $\Delta x\rightarrow 0$ this is just
 }=\frac{ds}{dx}
 \end{equation*}
 
-Now let's go back to our bulk modulus, $B.$ A form for the bulk modulus is 
-\begin{equation*}
-B=-\frac{\Delta P}{d%
+Now let's go back to our bulk modulus, $B.$ 
+\begin{equation}
+\Delta P=-B\frac{\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-/%
+}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 }
-\end{equation*}%
-We can solve this for $\Delta P$%
+\end{equation}%
+for our vary small change in volume we could write this as%
+\begin{equation}
+\Delta P=-B\frac{d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation}%
+and this is just 
 \begin{equation*}
 \Delta P=-B\frac{d%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -6005,12 +6261,12 @@ We want the intensity and the intensity is
 We could write the power as the force multiplied by the velocity (something
 we remember from Principles of Physics I).%
 \begin{equation}
-\mathcal{I}=\frac{Fv}{A}=Pv
+\mathcal{I}=\frac{Fv}{A}=Pv\left( x,t\right)
 \end{equation}%
 We know something about the pressure, we need the speed. But this isn't the
-wave speed, it is the speed of the molecule. And we know just found this $%
-v\left( x,t\right) =-ks_{\max }\cos \left( kx-\omega t+\phi _{o}\right) .$
-We can put this all together to get the intensity%
+wave speed, it is the speed of the molecules. And we have just found this
+molecule speed to be $v\left( x,t\right) =-ks_{\max }\cos \left( kx-\omega
+t+\phi _{o}\right) .$ We can put this all together to get the intensity%
 \begin{eqnarray}
 \mathcal{I} &=&\Delta Pv \\
 &=&\left( Bks_{\max }\cos \left( kx-\omega t+\phi _{o}\right) \right) \left(
@@ -6027,10 +6283,10 @@ and amplitude relationship for light waves!).
 We often can only measure a time average intensity. To average our intensity
 function over one period we would integrate%
 \begin{eqnarray*}
-\left\langle \mathcal{I}\right\rangle &=&\int_{0}^{T}-Bk\omega s_{\max
-}^{2}\cos ^{2}\left( kx-\omega t+\phi _{o}\right) \\
-&=&-Bk\omega s_{\max }^{2}\int_{0}^{T}\cos ^{2}\left( kx-\omega t+\phi
-_{o}\right) dt \\
+\left\langle \mathcal{I}\right\rangle &=&\frac{1}{T}\int_{0}^{T}-Bk\omega
+s_{\max }^{2}\cos ^{2}\left( kx-\omega t+\phi _{o}\right) \\
+&=&-Bk\omega s_{\max }^{2}\frac{1}{T}\int_{0}^{T}\cos ^{2}\left( kx-\omega
+t+\phi _{o}\right) dt \\
 &=&-Bk\omega s_{\max }^{2}\frac{1}{2}
 \end{eqnarray*}%
 This gives the average intensity of the wave as being proportional to the
