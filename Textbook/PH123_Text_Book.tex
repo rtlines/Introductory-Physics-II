@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Friday, May 01, 2026 15:52:11}
+%TCIDATA{LastRevised=Thursday, May 21, 2026 10:28:52}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -3765,17 +3765,19 @@ making the amplitude a function of the distance, $r,$ from the source%
 y\left( r,t\right) =A\left( r\right) \sin \left( kr-\omega t+\phi _{o}\right)
 \end{equation}%
 Of course, if we look at a very large wave, but we only look at part of the
-wave, we see that our part looks flatter as the wave expands. \FRAME{dhF}{%
-2.4881in}{1.6189in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.4881in;height 1.6189in;depth 0pt;original-width
-2.4474in;original-height 1.5826in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SUS73V23.wmf';tempfile-properties "XPR";}}%
-Very far from the source, our wave is flat enough that we can ignore the
-curvature across it's wave fronts. We call such a wave a \emph{plane wave}.
-There are no true plane waves in nature, but this idealization makes our
-mathematical solutions simpler and many waves come close to this
-approximation.
+wave, we see that our part looks flatter as the wave expands. We re just
+drawing the crests, and sometimes in such drawings we call the crests \emph{%
+wave fronts} (think of wave crests at the beach as they hit you, the name
+wave front doesn't seem to bad of a name). \FRAME{dhF}{2.4881in}{1.6189in}{%
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.4881in;height 1.6189in;depth 0pt;original-width 2.4474in;original-height
+1.5826in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SUS73V23.wmf';tempfile-properties "XPR";}}Very far from the source, our
+wave is flat enough that we can ignore the curvature across it's wave
+fronts. We call such a wave a \emph{plane wave}. There are no true plane
+waves in nature, but this idealization makes our mathematical solutions
+simpler and many waves come close to this approximation.
 
 We will soon see that sound is a longitudinal wave with a medium of air.
 Really any solid, liquid, or gas will work as a medium for sound. For our
@@ -6458,13 +6460,16 @@ be the \emph{threshold of hearing},
 I_{o}=1\times 10^{-12}\frac{\unit{W}}{\unit{m}^{2}}
 \end{equation*}%
 the intensity that is just barely audible for humans (it will be different
-for electronic devices or other animals). Measured this way, we say that
-intensity is in units of decibels (dB).The decibel, is useful because it can
-describe a non-linear response in a linear way that is easy to match to our
-human experience. But it is tricky because, like radians, it is
-dimensionless because we are comparing two intensities $\left(
-I/I_{o}\right) .$ We expect the same strange unit behavior with dB that we
-see with radians.
+for electronic devices or other animals). Thinking back to our previous
+chart you can see that $I_{o}$ is an average threshold for hearing. We
+really have a different threshold sensitivity for different frequencies. But
+on average $1\times 10^{-12}\frac{\unit{W}}{\unit{m}^{2}}$ is where human
+hearing starts. Measured this way, we say that intensity is in units of
+decibels (dB). The decibel, is useful because it can describe a non-linear
+response in a linear way that is easy to match to our human experience. But
+it is tricky because, like radians, it is dimensionless because we are
+comparing two intensities $\left( I/I_{o}\right) .$ We expect the same
+strange unit behavior with dB that we see with radians.
 
 Suppose we double the intensity by a factor of $2.$%
 \begin{eqnarray*}
@@ -6472,13 +6477,14 @@ Suppose we double the intensity by a factor of $2.$%
 &=&10\log _{10}2 \\
 &=&\allowbreak 3.\,\allowbreak 010\,3dB
 \end{eqnarray*}%
-The sound intensity level is not twice as large, but only $3dB$ larger. It
-is a tiny increase. This is what we hear. A good rule to remember is that $%
-3dB$ corresponds to a doubling of the intensity.
+The sound intensity level is not twice as large, but only $3dB$ larger (and
+notice that we had to supply the $dB$ ourselves, it didn't appear in the
+math). It is a tiny increase. This is what we hear. A good rule to remember
+is that $3dB$ corresponds to a doubling of the intensity.
 
-The tables that follow give some common sounds in units of dB and $\unit{W}/%
-\unit{m}^{2}.$ Just for reference, I have measured a Guns n Roses concert at 
-$120$ dB outside the stadium.
+The table that follows give some common sounds in units of dB. Just for
+reference, I have measured a Guns n Roses concert at $120$ dB outside the
+stadium.
 
 \begin{equation*}
 \begin{tabular}{|l|l|}
@@ -6496,19 +6502,20 @@ Quietest thing we can hear (Io) & 0 \\ \hline
 \end{tabular}%
 \end{equation*}
 
-In our last lecture we made standing waves with strings and ropes. In our
-next lecture let's consider making standing waves with sound waves.
+In our last lecture we made standing waves with strings and ropes. We should
+ask, can we make standing waves with sound waves?
 
 \section{Sound Standing waves.}
 
 We have spent some time studying standing waves on strings. But we also have
-studied sound waves, could we make sound standing waves?
+studied sound waves. Sound waves can experience constructive and destructive
+interference. We should be able to make sound standing waves.
 
-For our attempt, let's take a pipe as shown in the next figures. The pipe
-will control the direction of the sound wave. The sound wave will (mostly)
-go down the pipe. But will there be a reflection at the end of the pipe like
-there was for the string? It turns out that there will be a reflection.
-Let's consider our sound wave as a change in pressure to see why.
+Let's take a pipe as shown in the next figures. The pipe will control the
+direction of the sound wave. The sound wave will (mostly) go down the pipe.
+But will there be a reflection at the end of the pipe like there was for the
+string? It turns out that there will be a reflection! Let's consider our
+sound wave as a change in pressure to see why.
 
 For the string wave, we had a reflected pulse because the person (or guitar
 bridge, or whatever is holding the string end) exerted a force on the
@@ -6544,8 +6551,8 @@ TRUE;display "USEDEF";valid_file "T";width 3.7144in;height 1.7538in;depth
 0pt;original-width 3.6668in;original-height 1.7158in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V38.wmf';tempfile-properties "XPR";}}We will split the energy from the
-wave into to waves, much like we did with waves on strings when we came to
-an interface. \FRAME{dtbpF}{2.8764in}{2.2572in}{0pt}{}{}{Figure}{\special%
+wave into to two waves, much like we did with waves on strings when we came
+to an interface. \FRAME{dtbpF}{2.8764in}{2.2572in}{0pt}{}{}{Figure}{\special%
 {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 2.8764in;height 2.2572in;depth
 0pt;original-width 2.8331in;original-height 2.2174in;cropleft "0";croptop
@@ -6557,14 +6564,15 @@ so long as the piston keeps working at making new waves. And with two waves
 in the same medium, we have the possibility of having standing waves!
 
 If we have a pipe open at both ends, we can see that air molecules are free
-to move in and out of the ends of the pipes. If the air molecules can move,
-the ends must not be nodes. In our string case, the part of the string that
-experienced destructive interference and did not move was called a node and
-we always had a node on the end of the string. But the pipe is different
-than the string case! We can see that air molecules will move out and then
-bounce back in at the end of the pipe. Still, we expect that there must be a
-node somewhere. We can reasonably guess that there will be a node in the
-middle of the pipe. Of course, the pressure on both ends must be atmospheric
+to move in and out of the ends of the pipes into the room (to collide with
+the room molecules). If the air molecules can move, the ends must not be
+nodes. In our string case, the part of the string that experienced
+destructive interference and did not move was called a node and we always
+had a node on the end of the string. But the pipe is different than the
+string case! We can see that air molecules will move out and then bounce
+back in at the end of the pipe. Still, we expect that there must be a node
+somewhere. We can reasonably guess that there will be a node in the middle
+of the pipe. Of course, the pressure on both ends must be atmospheric
 pressure. So, remembering that pressure and displacement are $90\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
@@ -6582,10 +6590,10 @@ can draw a displacement node in the middle and we see that
 \begin{equation}
 \lambda _{1}=2L
 \end{equation}%
-\FRAME{dtbpF}{3.9009in}{1.7074in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{3.9009in}{1.7074in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 3.9009in;height 1.7074in;depth
-0in;original-width 3.9471in;original-height 1.711in;cropleft "0";croptop
+0pt;original-width 3.9471in;original-height 1.711in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'T9C38Q01.wmf';tempfile-properties "XPR";}}and since $v=\lambda f$ we can
 find%
@@ -6606,10 +6614,10 @@ The next mode fits a whole wavelength\FRAME{dtbpF}{4.0633in}{1.9522in}{0pt}{%
 \lambda _{2} &=&L \\
 f_{2} &=&\frac{v}{L}
 \end{eqnarray}%
-But the next mode fits a wavelength and a half\FRAME{dtbpF}{4.0916in}{%
-1.9655in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+And the next mode fits a wavelength and a half\FRAME{dtbpF}{4.0916in}{%
+1.9655in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-4.0916in;height 1.9655in;depth 0in;original-width 4.1413in;original-height
+4.0916in;height 1.9655in;depth 0pt;original-width 4.1413in;original-height
 1.9744in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'T9C3AT03.wmf';tempfile-properties "XPR";}}%
 \begin{eqnarray}
@@ -6622,7 +6630,7 @@ If we keep going
 f_{n} &=&n\frac{v}{2L}\qquad n=1,2,3,4\ldots
 \end{eqnarray}%
 This is the same mathematical form that we achieved for a standing wave on a
-string! Pipes can make a harmonic series.
+string! Pipes \emph{can} make a harmonic series!
 
 \section{Pipes closed on one end}
 
@@ -6776,7 +6784,7 @@ the fudge factor, the wavelength is
 then our fundamental frequency is 
 \begin{eqnarray}
 f_{1} &=&\frac{v}{\lambda _{1}} \\
-&=&192.\,\allowbreak 26
+&=&192.\,\allowbreak 26\unit{Hz}
 \end{eqnarray}
 
 We can identify this note, and compare to a standard, like a tuning fork or
@@ -6785,7 +6793,8 @@ Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 4.6345in;height 1.8844in;depth 0pt;original-width 6.3529in;original-height
 2.5676in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SUS73V3F.wmf';tempfile-properties "XPR";}}
+'SUS73V3F.wmf';tempfile-properties "XPR";}}It looks like it is just about a $%
+G.$
 
 \section{Lasers and standing waves}
 
@@ -6935,7 +6944,7 @@ is what we will study in our next lecture.
 \vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
 %EndExpansion
 
-Decibles%
+Decibels%
 \begin{equation*}
 I_{o}=1\times 10^{-12}\frac{\unit{W}}{\unit{m}^{2}}
 \end{equation*}
@@ -6961,14 +6970,14 @@ f_{n}=n\frac{v}{4L}\qquad n=1,3,5\ldots
 \chaptermark{Beats and Doppler}%
 %EndExpansion
 
-Up till now we only superposed waves that had the same frequency. But what
+Up till now we only superimposed waves that had the same frequency. But what
 happens if we take waves with different frequencies? Let's answer this first
 in this lecture. Then, we should worry about something from Principles of
 Physics I. We know speeds are relative. But our equations for things like
 standing waves involve the speed of the wave. Shouldn't these be relative
 speeds viewed from a reference frame? How do we deal with different relative
-speeds from different reference frames? We will take on this question at the
-end of the lecture.
+speeds from different reference frames? We will take on this question in
+this lecture.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -7011,7 +7020,7 @@ y_{1}=y_{\max }\sin \left( kx-\omega _{1}t+\phi _{o}\right)
 y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right)
 \end{equation*}%
 that is, let's let the frequencies be different so that $\omega _{1}\neq
-\omega _{2}.$ Our phase difference would be 
+\omega _{2}.$ Our (total) phase difference would be 
 \begin{eqnarray*}
 \Delta \phi &=&\left( kx-\omega _{1}t+\phi _{o}\right) -\left( kx-\omega
 _{1}t+\phi _{o}\right) \\
@@ -7128,20 +7137,22 @@ red envelope (solid heavy line in the last figure) has a frequency of%
 \begin{equation*}
 f_{A}=\frac{f_{1}-f_{2}}{2}
 \end{equation*}%
-but it is just the envelope. We can see that the green (thin line) wave will
-push and pull air molecules, and therefore our ear drums, with maximum
-loudness at twice this frequency. So our beat frequency is 
+but the cosine part is just the envelope. We can see that the green (thin
+line) wave will push and pull air molecules, and therefore our ear drums,
+with maximum loudness at twice this frequency. So our beat frequency is 
 \begin{equation*}
 f_{beat}=\left\vert f_{1}-f_{2}\right\vert
 \end{equation*}
 
-Any time we mix waves of different frequencies we get beating. Often the
-beat frequency is very fast, and our hearing system can't track the beats,
-so we don't hear them. And if we mixed more than two waves the beats might
-not come at easily recognizable intervals. The mixing of waves can become
-quite complicated. Yet even a barbershop quartet is a mixing of at least
-four waves. So complicated superpositions are common. In the next lecture we
-will try to see how we could take on these complicated combined waves.
+Note the absolute value sign. It doesn't matter if $f_{1}$ or if $f_{2}$
+bigger. Any time we mix waves of different frequencies we get beating. Often
+the beat frequency is very fast, and our hearing system can't track the
+beats, so we don't hear them. And if we mixed more than two waves the beats
+might not come at easily recognizable intervals. The mixing of waves can
+become quite complicated. Yet even a barbershop quartet is a mixing of at
+least four waves. So complicated superpositions are common. In the next
+lecture we will try to see how we could take on these complicated combined
+waves.
 
 \section{Doppler Effect}
 
@@ -7152,32 +7163,30 @@ Suppose we pick two reference frames, one traveling with a velocity $v_{r}$
 with respect to the other. Let's also place them far away from any other
 object.
 
-\FRAME{dtbpF}{3.237in}{1.2505in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{3.2721in}{1.2675in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.237in;height 1.2505in;depth
-0in;original-width 3.192in;original-height 1.2159in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 3.2721in;height 1.2675in;depth
+0in;original-width 3.3058in;original-height 1.2631in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SV8THK04.wmf';tempfile-properties "XPR";}}
+'TEKOD500.wmf';tempfile-properties "XPR";}}
 
 Person $A$ sees himself as stationary and sees person $B$ traveling with
-velocity $v_{x}.$ Person $B$ sees himself as stationary, and person $A$
-traveling with velocity $-v_{x}.$
-
-In looking at this situation it is the \emph{relative} speed $v_{x}$ that we
-must consider. We recall that we could write the speed of guy $b$ as seen
-from platform $A$ as 
+velocity $v_{BA}.$ Person $B$ sees himself as stationary, and person $A$
+traveling with velocity $-v_{BA}.$ In looking at this situation it is the 
+\emph{relative} speed $v_{BA}$ that we must consider. We recall that we
+could write the speed of guy $b$ as seen from platform $A$ as 
 \begin{equation*}
 v_{bA}=v_{bB}+v_{BA}
 \end{equation*}%
 where $v_{bB}$ is guy $b$'s speed seen from platform $B$ and $v_{BA}$ is the
-speed of platform $B$ as seen from platform $A.$ In this case $v_{BA}=v_{x}.$
-Now suppose we have a wave generator (a point source) creating spherical
-waves. Let the point source be at rest. We will call this point source an
-emitter and use a subscript $e$ for it. \FRAME{dtbpF}{3.0467in}{1.7322in}{0pt%
-}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.0467in;height 1.7322in;depth 0pt;original-width 4.0672in;original-height
-2.3004in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+speed of platform $B$ as seen from platform $A.$ Now suppose we have a wave
+generator (a point source) creating spherical waves. Let the point source be
+at rest. We will call this point source an emitter and use a subscript $e$
+for it. \FRAME{dtbpF}{3.0467in}{1.7322in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.0467in;height 1.7322in;depth
+0pt;original-width 4.0672in;original-height 2.3004in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SV8THK05.wmf';tempfile-properties "XPR";}}Let's also assume a detector. If
 the detector is stationary with respect to the emitter so the detector is in
 the emitter's reference frame, it sees a frequency of the wave in the
@@ -7222,8 +7231,8 @@ v_{wd}=v_{we}+v_{de}
 where $v_{wd}$ is the velocity of the wave in the detector frame, and $%
 v_{de} $ is the velocity of the detector in the emitter frame. Note this is
 just our equation for relative motion! And to be clear, for this case the
-detector is moving and we are in the emitter reference frame so the emitter
-is not moving.
+detector is moving and we are in the emitter reference frame so for us the
+emitter is not moving.
 
 The wavelength will not be changed, and so our wave speed in the emitter
 frame 
@@ -7237,9 +7246,9 @@ v_{we}=\lambda f_{we}
 and let's calculate the frequency of the wave in the detector frame. It
 would still be true that 
 \begin{equation*}
-v_{wd}=f_{wd}\lambda _{wd}=f_{wd}\lambda _{{}}
+v_{wd}=f_{wd}\lambda _{wd}=f_{wd}\lambda
 \end{equation*}%
-so then%
+because the wavelength is the same in both frames. So then%
 \begin{equation*}
 f_{wd}=\frac{v_{wd}}{\lambda }
 \end{equation*}%
@@ -7256,7 +7265,7 @@ and we substitute this into our $f_{wd}$ equation%
 \begin{equation*}
 f_{wd}=\frac{v_{we}+v_{de}}{\frac{v_{we}}{f_{we}}}
 \end{equation*}%
-or, after rearranging%
+Or, after rearranging%
 \begin{equation}
 f_{wd}=\frac{v_{we}+v_{de}}{v_{we}}f_{we}\text{ \qquad }%
 \begin{tabular}{l}
@@ -7314,8 +7323,8 @@ get's smaller.
 0pt;original-width 1.4944in;original-height 1.4399in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SV8THK08.wmf';tempfile-properties "XPR";}}In fact, when we measure the
-distance between the crests we must account for the fact that the source
-moved by an amount%
+distance between the crests we must account for the fact that in the emitter
+frame the source moved by an amount%
 \begin{equation*}
 \Delta x_{ed}=v_{ed}T_{we}=\frac{v_{ed}}{f_{we}}
 \end{equation*}%
@@ -7367,7 +7376,7 @@ $\text{emitter moving toward detector}$ \\
 detector not moving%
 \end{tabular}%
 \end{equation}%
-and sure enough the frenquency is different and we see the reason is the
+and sure enough the frequency is different and we see the reason is the
 relative speed $v_{ed}$ again.
 
 Now recall that it is the detector that is stationary with respect to the
@@ -7486,11 +7495,13 @@ TRUE;display "USEDEF";valid_file "T";width 2.3748in;height 2.6671in;depth
 
 Deriving the Doppler equation for light is more tricky because the speed of
 light is the same in every reference frame. We really tackle this in our
-PH279 class. So I\ will just quote the result here.
+Principles of Physics IV or \textquotedblleft Modern
+Physics\textquotedblright\ class (PH279). So I\ will just quote the result
+here.
 
 \begin{eqnarray}
 \lambda _{-} &=&\lambda _{o}\sqrt{\frac{1+\frac{v}{c}}{1-\frac{v}{c}}}\text{ 
-}\qquad \text{receding source} \\
+}\qquad \text{Receding source} \\
 \lambda _{-} &=&\lambda _{o}\sqrt{\frac{1-\frac{v}{c}}{1+\frac{v}{c}}}\text{ 
 }\qquad \text{Approaching source}
 \end{eqnarray}%
@@ -7557,20 +7568,31 @@ What happens when the speed of the source is greater than the wave speed?
 
 Remember that the wave speed depends only on the medium. Let's call the
 crests of a wave the \emph{wave front}. In the picture below, a point source
-is generating a wave and the red lines are the wave fronts.
+is generating a wave and the red lines are the wave fronts. The red dots are
+the position of the point source when it made the wave. Each red dot has a
+red wave front around it. But the earlier positions were, of course, made
+first. So for position $x_{o}$ the wave has had more time to travel. Thus,
+the wave front for $x_{o}$ is a bigger sphere The source moved to position $%
+x_{1}$ and made another wave. That wave hasn't had as long to travel, so
+it's sphere is smaller. The source also made waves at positions $x_{2},$ $%
+x_{3,}$ and it has just barley made a wave at position $x_{4.}$
 
-When the speed of the emitter is equal to the speed of sound $%
-v_{ed}=v_{sound}$ the waves begin to pile up. If we allow $v_{ed}>v_{sound}$
-then the wave fronts are no longer generated within each other. \FRAME{dtbpF%
-}{2.3229in}{2.3151in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.3229in;height 2.3151in;depth 0pt;original-width
-2.2831in;original-height 2.2753in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SV8THK0C.wmf';tempfile-properties "XPR";}}%
-The leading edge of the wave fronts \textquotedblleft build
-up\textquotedblright\ to form a cone shape. We recognize this as a
-superposition of the waves. This is constructive interference. The half
-angle of this cone is called the \emph{Mach angle} 
+But notice that when the speed of the emitter is equal to or grater than the
+speed of sound $\left( v_{ed}\geq v_{sound}\right) $ the waves begin to pile
+up. If we allow $v_{ed}>v_{sound}$ then the wave fronts are no longer
+generated within each other. \FRAME{dtbpF}{3.1263in}{3.1055in}{0in}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.1263in;height 3.1055in;depth 0in;original-width 3.0813in;original-height
+3.0614in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'TEOBYS00.wmf';tempfile-properties "XPR";}}The leading edge of the wave
+fronts \textquotedblleft build up\textquotedblright\ to form a cone shape.
+We recognize this as a superposition of the waves. This is constructive
+interference. And constructive interference makes the resulting wave
+amplitude bigger! Since these are sound waves, we get a very loud boom when
+the superimposed waves reach our ears! This is a sonic boom.
+
+The half angle of this cone is called the \emph{Mach angle} 
 \begin{equation}
 \sin \theta =\frac{v_{sound}t}{v_{ed}t}=\frac{v_{sound}}{v_{ed}}
 \end{equation}%
@@ -7582,7 +7604,8 @@ and the conical wave front is called a shock wave.
 \begin{equation*}
 \sin \theta =\frac{1}{M}
 \end{equation*}%
-We see these conical waves often in water (where we call them a wake)
+We see these conical waves due to constructive interference often in water
+(where we call them a wake)
 
 \FRAME{dhFU}{1.9558in}{1.3402in}{0pt}{\Qcb{{\protect\small Boat wakes as a
 Doppler cone. Image courtacy US\ Navy. Image is in the Public Domain.}}}{}{%
@@ -7591,18 +7614,18 @@ Figure}{\special{language "Scientific Word";type
 1.9558in;height 1.3402in;depth 0pt;original-width 1.9182in;original-height
 1.305in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SV8THK0D.wmf';tempfile-properties "XPR";}}and hear them when jet aircraft
-go supersonic. In the next figure we can see a picture of a T-38 breaking
-the sound barrier. You can see the Mach cones, but notice that there are
-several! Remember that a disturbance creates a wave. There are disturbances
-created by the nose of the plane, the rudder, and the wings, and perhaps the
-cockpit in this Schlieren photograph.\FRAME{dhFU}{1.593in}{1.2842in}{0pt}{%
-\Qcb{Dr. Leonard Weinstein's Schlieren photograph of a T-38 Talon at Mach
-1.1, altitude 13,700 feet, taken at NASA Langley Research Center, Wallops in
-1993. Image Courtacy NASA, image is in the Public Domain.}}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 1.593in;height 1.2842in;depth
-0pt;original-width 1.5575in;original-height 1.2488in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+go supersonic. In the next figure we can see a picture of a T-38 aircraft
+breaking the sound barrier. You can see the Mach cones, but notice that
+there are several! Remember that a disturbance creates a wave. There are
+disturbances created by the nose of the plane, the rudder, and the wings,
+and perhaps the cockpit in this Schlieren photograph.\FRAME{dhFU}{1.593in}{%
+1.2842in}{0pt}{\Qcb{Dr. Leonard Weinstein's Schlieren photograph of a T-38
+Talon at Mach 1.1, altitude 13,700 feet, taken at NASA Langley Research
+Center, Wallops in 1993. Image Courtacy NASA, image is in the Public Domain.}%
+}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.593in;height 1.2842in;depth 0pt;original-width 1.5575in;original-height
+1.2488in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SV8THK0E.wmf';tempfile-properties "XPR";}}
 
 Superposition is also the basis of making music. We have talked about
@@ -7623,7 +7646,7 @@ mathematics for sinusoidal waves turns out to be quite general.
 
 From our example of standing waves on strings, we know that a string can
 support a series of standing waves with discrete frequencies--the harmonic
-series. We have also discussed that usually we excite more than one standing
+series. We have also hinted that usually we excite more than one standing
 wave at a time. The fundamental mode tends to give us the pitch we hear, but
 what are the other standing waves for?
 
@@ -7657,9 +7680,9 @@ Now suppose we want chocolate cake.\FRAME{dtbpF}{3.5354in}{2.2001in}{0in}{}{%
 The predominant taste in each of these foods is chocolate. But chocolate
 cake and chocolate chip cookies don't taste exactly the same. We can easily
 see that the differences in the other ingredients make the difference
-between the \textquotedblleft cookie\textquotedblright\ taste and the
-\textquotedblleft cake\textquotedblright\ taste that goes along with the
-\textquotedblleft chocolate\textquotedblright\ taste that predominates.
+between the \textquotedblleft cookie\ taste\textquotedblright\ and the
+\textquotedblleft cake\ taste\textquotedblright\ that goes along with the
+chocolate\ taste that predominates.
 
 The sound waves produced by musical instruments work in a similar way. Here
 is a recipe for an \textquotedblleft A\textquotedblright\ note from a
@@ -7790,19 +7813,28 @@ cannot be reached by anyone.
 
 \subsubsection{Fourier Series: Mathematics of Non-Sinusoidal Waves}
 
-We should take a quick look at the mathematics of non-sinusoidal waves. Let'
-start with a superposition of many sinusoidal waves. The math looks like this%
+We should take a quick look at the mathematics of non-sinusoidal waves. We
+said earlier that we could make any wave shape out of a superposition of
+sinusoidal waves. Let' start with such a superposition of many sinusoidal
+waves. The math looks like this%
 \begin{equation*}
-y\left( t\right) =\dsum\limits_{n}\left( A_{n}\sin \left( 2\pi f_{n}t\right)
-+B_{n}\cos \left( 2\pi f_{n}t\right) \right)
+y\left( t\right) =\dsum\limits_{n}\left( A_{n}\sin \left( k_{n}x-\omega
+_{n}t+\phi _{n}\right) +B_{n}\cos \left( k_{n}x-\omega _{n}t+\phi
+_{n}\right) \right)
 \end{equation*}%
 where $A_{n}$ and $B_{n}$ are a series of coefficients and $f_{n}$ are the
 harmonic series of frequencies.
 
 \subsubsection{Example: Fourier representation of a square wave.}
 
-For example, we could represent a function $f\left( x\right) $ with the
-following series%
+Suppose we have a wave that isn't a sinusoid. And suppose it has a
+complicated function $f\left( x,t\right) $ that we just don't know. For now,
+let's consider a snapshot view of this complicated wave function so we have
+just $f\left( x,t_{o}\right) =f\left( x\right) $ where our snapshot graph is
+taken at time $t_{o}.$ That makes the wave in our snapshot graph just a
+function of $x.$ We could represent a function $f\left( x\right) $ with our
+combination of sine or cosine functions (or both) like in the last equation.
+It might look something like this:%
 \begin{eqnarray}
 f\left( x\right) &=&C_{o}+C_{1}\cos \left( \frac{2\pi }{\lambda }%
 x+\varepsilon _{1}\right) \\
@@ -7816,8 +7848,8 @@ x+\varepsilon _{1}\right) \\
 &&+\ldots
 \end{eqnarray}
 
-where we will let $\varepsilon _{i}=\omega _{i}t+\phi _{i}$ just to make the
-equations less messy.
+where we will let $\varepsilon _{n}=\omega _{n}t_{o}+\phi _{n}$ just to make
+the equations less messy.
 
 The $C^{\prime }s$ are just coefficients that tell us the amplitude of the
 individual cosine waves. The more terms in the series we take, the better
@@ -7914,7 +7946,10 @@ lkx\right) $ as the multiplier. Then we find%
 \begin{equation}
 B_{m}=\frac{2}{\lambda }\int_{0}^{\lambda }f\left( x\right) \sin \left(
 mkx\right) dx
-\end{equation}
+\end{equation}%
+Once we have the $A_{m}$ and $B_{m}$ coefficients we can put together our
+series and have an approximation for $f\left( x\right) .$ Let's try this for
+an example.
 
 \subsection{Square wave}
 
@@ -7940,7 +7975,7 @@ f(x)=\left\{
 "1";cropright "1";cropbottom "0";tempfilename
 'T9NI4V01.wmf';tempfile-properties "XPR";}}
 
-since $f\left( x\right) is$ odd, $A_{m}=0$ for all $m$. We have%
+Since $f\left( x\right) is$ odd, $A_{m}=0$ for all $m$. We have%
 \begin{equation}
 B_{m}=\frac{2}{\lambda }\int_{0}^{\frac{\lambda }{2}}\left( 1\right) \sin
 \left( mkx\right) dx+\frac{2}{\lambda }\int_{\frac{\lambda }{2}}^{\lambda
@@ -7990,17 +8025,19 @@ $Term$ &  \\ \hline
 5 & $\frac{4}{5\pi }\sin \left( 5kx\right) $ \\ \hline
 \end{tabular}%
 \end{equation}%
-then the partial sum up to $m=5$ looks like%
+Then the partial sum up to $m=5$ looks like%
 \begin{equation}
 f\left( x\right) =\frac{4}{\pi }\sin \left( kx\right) +\frac{4}{3\pi }\sin
 \left( 3kx\right) +\frac{4}{5\pi }\sin \left( 5kx\right)
 \end{equation}%
-\FRAME{dtbpF}{2.7461in}{1.8369in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{2.7461in}{1.8369in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 2.7461in;height 1.8369in;depth
-0in;original-width 2.7701in;original-height 1.8432in;cropleft "0";croptop
+0pt;original-width 2.7701in;original-height 1.8432in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'T9NI5X03.wmf';tempfile-properties "XPR";}}If we take many terms,%
+'T9NI5X03.wmf';tempfile-properties "XPR";}}and we can see it kind of works.
+We don't expect a great result until we have many many terms. If we take
+more terms,%
 \begin{eqnarray}
 f\left( x\right) &=&\frac{4}{\pi }\sin \left( kx\right) +\frac{4}{3\pi }\sin
 \left( 3kx\right) +\frac{4}{5\pi }\sin \left( 5kx\right) +\frac{4}{7\pi }%
@@ -8010,9 +8047,9 @@ f\left( x\right) &=&\frac{4}{\pi }\sin \left( kx\right) +\frac{4}{3\pi }\sin
 \left( 17kx\right) +\frac{4}{19\pi }\sin \left( 19kx\right)  \notag
 \end{eqnarray}%
 We see the function get closer and closer to a square wave.\FRAME{dtbpF}{%
-4.5484in}{0.9677in}{0in}{}{}{Figure}{\special{language "Scientific
+4.5484in}{0.9677in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 4.5484in;height 0.9677in;depth 0in;original-width
+"T";width 4.5484in;height 0.9677in;depth 0pt;original-width
 4.6061in;original-height 0.957in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'T9NI6T06.wmf';tempfile-properties "XPR";}}
 
@@ -8055,7 +8092,7 @@ TRUE;display "USEDEF";valid_file "T";width 2.0833in;height 0.8172in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 '../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/FigureLimetedWave2.wmf';tempfile-properties "XNPR";}%
 }We should investigate what happens when you have a limited wave. I did this
-investigation using Python. Suppose we have a sine wave with $f=200\unit{Hz}%
+investigation using python. Suppose we have a sine wave with $f=200\unit{Hz}%
 , $ but I\ limit this wave's existence by making it start at $t_{i}=0$ and
 then make it end at $t_{f}=10\unit{s}.$ I could do this in practice by
 turning on a radio transmission or even an acoustic speaker, and then
@@ -8068,12 +8105,13 @@ signal only exists from $t=0$ to $t=10\unit{s}.$
 "USEDEF";valid_file "T";width 4.2756in;height 0.7014in;depth
 0pt;original-width 4.2246in;original-height 0.6702in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'T9OUU803.wmf';tempfile-properties "XPR";}} If I zoom in on a part of the
-graph we can see that it is really a sine wave.\FRAME{dtbpF}{4.6951in}{%
-0.7688in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-4.6951in;height 0.7688in;depth 0in;original-width 4.6423in;original-height
-0.7368in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'T9OUU803.wmf';tempfile-properties "XPR";}} I plotted this using a symbolic
+math package. If I zoom in on a part of the graph we can see that it is
+really a sine wave.\FRAME{dtbpF}{4.6951in}{0.7688in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 4.6951in;height 0.7688in;depth
+0pt;original-width 4.6423in;original-height 0.7368in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'T9OUU804.wmf';tempfile-properties "XPR";}}
 
 Python did equally bad at plotting this. All we see is a blue band. \FRAME{%
@@ -8085,10 +8123,13 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 '../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/Figure10s200Hz.wmf';tempfile-properties "XNPR";}%
 }But in the second graph, notice that we have plotted frequency. Python and
 most scientific programing languages have functions to find a digital
-version of a Fourier transform to produce a spectrum. It takes in a signal
-and finds which frequencies are in a signal. It performs the job of a
-spectrometer, so we would call the figure to the right a spectrogram (or
-just a spectrum).
+version of a Fourier transform to produce a graph of which frequencies are
+in a function. For our EE students, replace the word \textquotedblleft
+function\textquotedblright\ with the word \textquotedblleft
+signal.\textquotedblright\ We call this kind of a graph a \emph{spectrum}.
+It takes in a signal and finds which frequencies are in a signal. It
+performs the job of a spectrometer, so we would call the figure to the right
+a spectrogram (or just a spectrum).
 
 We expect only one frequency, $200\unit{Hz},$ and that is mostly what we
 get. Since our period for our wave is 
@@ -8105,10 +8146,10 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 3.8548in;original-height 1.5558in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename
 '../../../../PH279/Repository/IntroductoryPhysicsIV/Textbook/Figure1s200Hz.wmf';tempfile-properties "XNPR";}%
-}So we still get a blue blur for our wave picture, but now the wave only
-exists for one instead of ten seconds. If you look closely at the frequency
-graph, you will notice that the $200\unit{Hz}$ peak representing our wave is
-a bit wider right at the bottom.
+}So we still get a blue blur for our wave picture in python, but now the
+wave only exists for one instead of ten seconds. If you look closely at the
+frequency graph, you will notice that the $200\unit{Hz}$ peak representing
+our wave is a bit wider right at the bottom.
 
 We could limit our wave more, say, so it only lasts $t_{f}=0.1\unit{s}.$ We
 would get a set of graphs that look like this. \FRAME{dtbpF}{3.7351in}{%
@@ -8120,7 +8161,7 @@ would get a set of graphs that look like this. \FRAME{dtbpF}{3.7351in}{%
 }
 
 Notice that not only can Python render the wave now, but more importantly
-the $200\unit{Hz}$ frequency peak is noticeable wider. This is profound! It
+the $200\unit{Hz}$ frequency peak is noticeable wider! This is profound! It
 means that by limiting the wave, we no longer have just one frequency! The
 graph tells us we have mostly $200\unit{Hz}$ but we also have some $199\unit{%
 Hz}$ and some $201\unit{Hz}$ and some $190\unit{Hz}$ and some $210\unit{Hz},$
@@ -8146,13 +8187,16 @@ the wave. For an engineer, this means that if you only measure a short
 segment of the signal, you have an increased uncertainty in the frequency
 you will find from that signal. For chemists, it means that when we look at
 quantum wave functions we can expect uncertainty in the frequency (or
-wavelength) because the quantum particle (like an electron) is limited. It
-is important to know what we mean by uncertainty in this case. In our
+wavelength) because the quantum wave particle (like an electron) is limited.
+It is important to know what we mean by uncertainty in this case. In our
 example above, when we say that $\Delta f$ increased we really mean that we
 have more than one frequency. We don't just mean that we don't know the
-frequency well. We really are mixing more than one frequency. This idea of
-limiting waves creating uncertainty shows up in physical chemistry as
-Heisenberg's uncertainty principle.
+frequency well. We really are mixing more than one frequency. This is worth
+saying again. It's not that we don't know what the frequency is, it is that
+there is more than one frequency, so giving one value for the frequency
+isn't a good description of our wave. This idea of limiting waves creating
+uncertainty shows up in physical chemistry as Heisenberg's uncertainty
+principle.
 
 We have talked about waves in general and used sound and light waves as
 examples. But light waves have played such an important role in physics that
@@ -8203,14 +8247,15 @@ M=\frac{v_{ed}}{v_{sound}}
 %EndExpansion
 In the science fiction movies inter-galactic star ships blast each other
 with laser cannons. The laser beams streak across the screen. This is
-dramatic, but not realistic. For us to see the light, some of the light must
-get to our eyes. The light must either travel directly to our eyes from the
-source, or it must bounce off of something. We can make a laser beam visible
-by providing dust for the light to bounce off of so it travels to our eyes.
-But unless that galaxy far far away is really dusty, Hollywood doesn't
-understand light waves very well. Let's start our study of geometric optics
-with a few comments on what light is. Then let's study reflection, the
-bouncing of light off of an object (like dust, or a mirror).
+dramatic, but not realistic. For us to see the light path, some of the light
+leave the path and must get to our eyes. The light must either travel
+directly to our eyes from the source, or it must bounce off of something
+along its way. We can make a laser beam visible by providing dust for the
+light to bounce off of so it travels to our eyes. But unless that galaxy far
+far away is really dusty, Hollywood doesn't understand light waves very
+well. Let's start our study of geometric optics with a few comments on what
+light is. Then let's study reflection, the bouncing of light off of an
+object (like dust, or a mirror).
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -8238,7 +8283,7 @@ In 1801 Thomas Young demonstrated that light had attributes that were best
 explained by wave theory. We will study Young's experiment later. The crux
 of his experiment was to show that light displayed constructive and
 destructive interference--clearly a wave phenomena! The theory of the nature
-of light took a dramatic shift
+of light took a dramatic shift.
 
 In 1805 Joseph Smith was born in Sharon, Vermont.
 
@@ -8276,8 +8321,8 @@ God who sitteth upon his throne, who is in the bosom of eternity, who is in
 the midst of all things. (D\&C 88:5-12)
 \end{quotation}
 
-Light, even real, physical light, seems to be of interest to members of the
-Restored Church.
+Light, even non-metaphorical physical light, seems to be of interest to
+members of the Restored Church.
 
 In 1847 the saints entered the Salt Lake Valley.
 
@@ -8286,7 +8331,7 @@ electromagnetic wave (something we will try to show in Principles of Physics
 III!). That is, the \textquotedblleft group of objects\textquotedblright\
 that form a \textquotedblleft medium\textquotedblright\ for light are not
 made out of matter. But are part of what we call the electromagnetic field.
-This field is somthing, but not made out of matter.
+This field is something, but not made out of matter.
 
 Planck's work in quantization theory (1900) was used by Einstein In 1905 to
 give an explantation of the photoelectric effect that again made light look
@@ -8345,7 +8390,8 @@ eclipse of Io three months later. But he found his calculation was off by $%
 its orbit, and that the light had to travel the extra distance due to the
 Earth's new position. Given R\o mer's best estimate for the orbital radius
 of the earth and his time difference, R\o mer arrived at a estimate of $%
-c=2.3\times 10^{8}\frac{\unit{m}}{\unit{s}}.$ Amazing for 1675!
+c=2.3\times 10^{8}\frac{\unit{m}}{\unit{s}}.$ Our current value is $%
+c=2.99792458\times 10^{8}\frac{\unit{m}}{\unit{s}}.$ Amazing for 1675!
 
 \subsection{Fizeau's Measurement of the speed of light}
 
@@ -8375,7 +8421,7 @@ light would hit the next tooth and be blocked. Think of angular speed $%
 \begin{equation*}
 \omega =\frac{\Delta \theta }{\Delta t}
 \end{equation*}%
-So, the time difference would be for a tooth to move would be 
+So, the time difference for a tooth to move would be 
 \begin{equation*}
 \Delta t=\frac{\Delta \theta }{\omega }
 \end{equation*}%
@@ -8393,7 +8439,7 @@ c &=&v=\frac{2d}{\frac{\Delta \theta }{\omega }} \\
 &=&\frac{d\omega N_{teeth}}{\pi }
 \end{eqnarray*}
 
-then if we have $720$ teeth and $\omega $ is measured to be $d=7500\unit{m}$%
+Then if we have $720$ teeth and $\omega $ is measured to be $d=7500\unit{m}$%
 \begin{eqnarray*}
 c &=&\frac{\left( 7500\unit{m}\right) \left( 172.\,\allowbreak 79\unit{Hz}%
 \right) \left( 720\right) }{\pi } \\
@@ -8431,9 +8477,9 @@ parts, like the coils of a spring can transfer energy to each other, or like
 air molecules can transfer energy by collision. For light the wave medium is
 the electromagnetic field. This field can store and transfer energy but it
 isn't made of atoms or parts of mater. This may be hard to imagine, but
-picture space filled with this non---material stubstance that can stretch
-and hold energy. This is our electromagnetic field. We will study the
-electromagetic field in Principles of Physics III (PH220). So for now, we
+picture space filled with this non-material substance that can stretch and
+hold energy. This is our electromagnetic field. We will study the
+electromagnetic field in Principles of Physics III (PH220). So for now, we
 just need a mental picture of the field having waves.
 
 But many books on physics call materials like glass a \textquotedblleft
@@ -8786,13 +8832,13 @@ But in the light processing center in our brain the algorithm assumes the
 light traveled in a straight line. Then, we can use the idea of rays to see
 where the light appears to be from. We follow the light backwards from our
 eyes to the mirror, but because our mind processing doesn't know about the
-reflection we keep tracing the light ray through the mirror. Of course that
-light doesn't come from behind the mirror. But our brain processing things
+reflection we keep tracing the light ray through the mirror. Of course the
+light doesn't come from behind the mirror. But our brain processing thinks
 it does. The light originally came from us, so it is in a way shaped like
-us. So our brain processing tells us there is another one of us about a half
-a meter behind the mirror. Our frontal lobe knows there is not a second one
-of us, so we interpret the light signal from our brain processing as an
-image of us in the mirror.
+us. Our brain processing tells us there is another one of us about a half a
+meter behind the mirror. Our frontal lobe knows there is not a second one of
+us, so we interpret the light signal from our brain processing as an image
+of us in the mirror.
 
 The image is half a meter behind the mirror. Now suppose we look at an image
 of that image in a mirror behind us. \FRAME{dhF}{2.6273in}{1.004in}{0pt}{}{}{%
@@ -8890,11 +8936,13 @@ The situation is shown schematically below.
 
 In the figure we see a ray incident on an air-glass boundary. Some of the
 light is reflected just as we saw in our last lecture. But some passes into
-the glass. Notice that the angle between the normal and the new transmitted
-ray is \emph{not} equal to the incident angle for the incoming ray. We say
-the ray has been bent or \emph{refracted} by the change in material. Many
-experiments were performed to find a relationship between the incident and
-the refracted angles. It was found that 
+the glass. This isn't surprising, light is a wave and at boundaries we
+expect reflected and transmitted waves. Notice that the angle between the
+normal and the new transmitted ray is \emph{not} equal to the incident angle
+for the incoming ray. We say the ray has been bent or \emph{refracted} by
+the change in material. Many experiments were performed to find a
+relationship between the incident and the refracted angles. It was found
+that 
 \begin{equation}
 \frac{\sin \left( \theta _{2}\right) }{\sin \left( \theta _{1}\right) }=%
 \frac{v_{2}}{v_{1}}=\text{constant}
@@ -8933,7 +8981,7 @@ what is left of the original wave. And this causes the propagation of the
 combined light wave to slow down. Thus the speed of light is slower in a
 material.\footnote{%
 This is a bit of an approximation. Some of the incident light misses the
-atoms. So we really get a superposition of the new readmitted wave and the
+atoms. So we really get a superposition of the new re-edmitted wave and the
 original wave. But the end result is that the light appears to go slower.}%
 \FRAME{dhF}{4.6267in}{1.8135in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -8941,9 +8989,12 @@ original wave. But the end result is that the light appears to go slower.}%
 0pt;original-width 4.574in;original-height 1.7763in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW80Z.wmf';tempfile-properties "XPR";}}As a mechanical analog, consider
-a rolling barrel.\FRAME{dhF}{2.4604in}{1.8005in}{0pt}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.4604in;height 1.8005in;depth
+a rolling barrel. Suppose you are helping a neighbor move and they have
+barrels of wheat. And as often happens in a neighbor move, one of the
+barrels get's dropped. It lands on the driveway and rolls toward the grass.%
+\FRAME{dhF}{2.4604in}{1.8005in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.4604in;height 1.8005in;depth
 0pt;original-width 2.4189in;original-height 1.7634in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW810.wmf';tempfile-properties "XPR";}}As the barrel rolls from a flat
@@ -8975,7 +9026,7 @@ rest of the wave front moves quicker. The result is the turning of the wave.%
 \footnote{%
 Once again this is a bit of a simplification, but it will due for now. If
 you are lucky enough to take a junior level optics class, you will revisit
-this.}
+this. And we will look at this again in our next lecture.}
 
 \section{Change of wavelength}
 
@@ -9050,11 +9101,11 @@ the percentage, itself, was. But it caries the same information
 \begin{equation*}
 n=\frac{1}{\text{percentage of the speed of light}}
 \end{equation*}%
-so we can use this to get an idea of how much slower our transmitted light
-is going. This odd ratio of the speed of light to the speed in the material
-has a name. It is called the \emph{index of refraction.} We can write
-Snell's law in terms of the index of refraction of air and glass (or any
-other two materials). Start with%
+So we can use this to get an idea of how much slower our transmitted light
+is going. This odd ratio of the speed of light to the average speed in the
+material has a name. It is called the \emph{index of refraction.} We can
+write Snell's law in terms of the index of refraction of air and glass (or
+any other two materials). Start with%
 \begin{equation}
 \frac{\sin \left( \theta _{i}\right) }{\sin \left( \theta _{t}\right) }=%
 \frac{v_{i}}{v_{t}}
@@ -9297,21 +9348,22 @@ depends on the wavelength! Think, blue wavelengths are about the size of
 atoms. This means blue photons will hit atoms more frequently. And that will
 slow them down more. Red wavelengths are bigger than the atoms in a material
 and because of this red photons are not as likely to be absorbed by the
-atoms. So red photos will go faster in the material.
-
-And the index of refraction depends on the speed.\FRAME{fhFU}{4.3533in}{%
-2.6201in}{0pt}{\Qcb{Index of refraction as a function of wavelength ( Ohara
-optical glass http://www.oharacorp.com/fused-silica-quartz.html data and
-Schott optical glass data
-http://www.uqgoptics.com/materials\_glasses\_schott.aspx)}}{\Qlb{Dispersion
+atoms. So red photos will go faster in the material. And this means the
+index of refraction depends on the speed.\FRAME{fhFU}{4.3535in}{2.6195in}{0pt%
+}{\Qcb{{\protect\small Index of refraction as a function of wavelength (
+Ohara optical glass http://www.oharacorp.com/fused-silica-quartz.html data
+and Schott optical glass data
+http://www.uqgoptics.com/materials\_glasses\_schott.aspx)}}}{\Qlb{Dispersion
 of Glass}}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-4.3533in;height 2.6201in;depth 0pt;original-width 5.1436in;original-height
+4.3535in;height 2.6195in;depth 0pt;original-width 5.1436in;original-height
 3.084in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'dispersion0.wmf';tempfile-properties "XNPR";}}
 
-Notice that in the figure, the index of refraction depends on wavelength.
-Think of Snell's law 
+We can see light from about $400\unit{nm}$ to about $700\unit{nm}.$ And
+notice for the three kinds of glass in the figure the index of refraction
+changes over this region of the electromagnetic spectrum. Think of what this
+means for Snell's law. We learned last lecture that 
 \begin{equation*}
 n_{i}\sin \theta _{i}=n_{t}\sin \theta _{t}
 \end{equation*}%
@@ -9355,12 +9407,12 @@ Red light leaves the drop at about $42\unit{%
 %BeginExpansion
 {{}^\circ}%
 %EndExpansion
-}.$\FRAME{dhF}{3.1964in}{2.3039in}{0pt}{}{}{Figure}{\special{language
+}.$\FRAME{dtbpF}{3.2681in}{2.3921in}{0in}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.1964in;height 2.3039in;depth
-0pt;original-width 9.1488in;original-height 6.5778in;cropleft "0";croptop
+"USEDEF";valid_file "T";width 3.2681in;height 2.3921in;depth
+0in;original-width 3.2232in;original-height 2.3514in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SVAJW81J.wmf';tempfile-properties "XPR";}}This effectively separates all
+'TF1CXN00.wmf';tempfile-properties "XPR";}}This effectively separates all
 the different wavelengths and we see a rainbow at angles between $40\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
@@ -9373,7 +9425,7 @@ the different wavelengths and we see a rainbow at angles between $40\unit{%
 %EndExpansion
 }$ from the incoming light direction.
 
-\subsection{Calculation of n using a prism}
+\subsection{Calculation of $n$ using a prism}
 
 Let's do a problem using the idea of refraction in a prism. Let's find the
 index of refraction of a the prism material. Suppose we make a prism as
@@ -9389,22 +9441,24 @@ In terms of these two variables, what is $n?$
 
 Using the notation indicated in the figure, we choose $\theta _{1}$ such
 that the interior ray is horizontal.\footnote{%
-WARNING! in the upcoming homework problem you can't make the same
+WARNING! in an upcoming homework problem you may not be able make the same
 assumptions!} This is a refraction problem, so we will want to use Snell's
 law. 
 \begin{equation*}
 n_{1}\sin \theta _{1}=n_{2}\sin \theta _{2}
 \end{equation*}%
-and this has $n_{2}$ in it. That is what we want to find. So our process
-will be to find $\theta _{1}$ and $\theta _{2}.$ And suppose we know $\Phi $
-and $\delta $ from measurement, and of course we realize that our prism is
-in air so $n_{1}=1.$ The we can use 
+And this has $n_{2}$ in it. That is what we want to find. We know $n_{1}$
+because the prism is in air so $n_{1}\approx 1.$ And suppose we know $\Phi $
+and $\delta $ from measurement. Our process will be to find $\theta _{1}$
+and $\theta _{2}.$ The we can use 
 \begin{equation*}
 n_{2}=\frac{\sin \theta _{1}}{\sin \theta _{2}}
 \end{equation*}%
 to find $n_{2.}$ But we have to find the angles. Let's see one way to do
 this. In geometry it is fair game to extend lines and even make some new
-lines of our own. By doing this we can realize that
+lines of our own. I have done this in the figure. You likely will have to do
+your own line extensions and additions in the problems you do. But by using
+the added lines we can realize that
 
 \begin{equation}
 \theta _{1}=\theta _{2}+\alpha
@@ -9417,6 +9471,10 @@ and it is also true that
 
 \begin{equation}
 180=\beta +2\alpha
+\end{equation}%
+or 
+\begin{equation}
+180-\beta =2\alpha
 \end{equation}
 
 Then
@@ -9472,25 +9530,29 @@ that we call refraction. But let's look at this again in more detail.
 
 To understand what is going on at a fundamental level we need to remember
 that light is a wave. And waves can hit and splash off of objects. Sound
-waves could bounce off of things. So can light waves. Only the light waves
+waves could bounce off of things. So can light waves. Only, the light waves
 that we can see are very small. So they bounce off of very small things like
 atoms. Suppose we send our light into a material. It will hit the atoms and
-bounce off. We know this, but there is more. The light bounces off the atoms
-but this makes a new light wave coming from the atoms. And that new wave is
-spherical (think, most waves start spherical). If we have many atoms, the
-light will hit many atoms and make many little spherical \emph{scattered}
-waves. An early researcher had an idea of how to find the direction of the
-light using this underlying wave nature of light. We could follow the light
-path by finding the little spherical scattered waves and look for where
-their crests line up. This would be constructive interference, and this is
-where the ray of light would end up! \FRAME{dtbpF}{0.5047in}{1.2418in}{0pt}{%
-}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-0.5047in;height 1.2418in;depth 0pt;original-width 0.33in;original-height
-0.8551in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+bounce off. We know this, but there is more. The light hits the atoms and is
+absorbed by exciting electrons. When the electrons return to their original
+state the light is re-emitted. But this makes a new light wave coming from
+the atoms. And that new wave is spherical (think, most waves start
+spherical). If we have many atoms, the light will hit many atoms and make
+many little spherical \emph{scattered} waves. An early researcher had an
+idea of how to find the direction of the light using this underlying wave
+nature of light. We could follow the light path by finding the little
+spherical scattered waves and look for where their crests line up. This
+would be constructive interference, and this is where the ray of light would
+end up! \FRAME{dtbpF}{0.5047in}{1.2418in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 0.5047in;height 1.2418in;depth
+0pt;original-width 0.33in;original-height 0.8551in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SVJWGL05.wmf';tempfile-properties "XPR";}}This early researcher was named
 Huygen, so this method of finding the new wave is called \emph{Huygen's
-principle.}
+principle.} He simplified the process by just drawing a line that connected
+the crests of each little scattered wave and said that is where the new
+combined wave front would be.
 
 We know that light should reflect off a surface. 
 \begin{equation*}
@@ -9542,15 +9604,15 @@ TRUE;display "USEDEF";valid_file "T";width 3.7645in;height 2.1292in;depth
 0pt;original-width 3.717in;original-height 2.0903in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 '../../../../PH375/repository/OpticsText/text/SVAL9A3H.wmf';tempfile-properties "XPR";}%
-}By looking for where the wave crests line up we can find the new crest of
-the reflected wave. By superimposing these scattered waves we the reflected
-wave is formed.
+}By looking for where the wave crests line up and drawing Huygen's line we
+can find the new crest of the reflected wave. By superimposing these
+scattered waves we the reflected wave is formed.
 
 We also know \emph{Snell's law of refraction}. But let's see how Huygen's
-principle leads to our scattering model to show this is true. In our
-discussion on reflection we just used the top layer of scatters, but we know
-that there are more scatterers in a solid. \FRAME{dtbpF}{3.5509in}{2.0064in}{%
-0pt}{}{}{Figure}{\special{language "Scientific Word";type
+principle leads can be used to show this is true. In our discussion on
+reflection we just used the top layer of scatters, but we know that there
+are more scatterers in a solid. \FRAME{dtbpF}{3.5509in}{2.0064in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.5509in;height 2.0064in;depth 0pt;original-width 4.7063in;original-height
 2.6463in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -9563,11 +9625,17 @@ the situation is something like this\FRAME{dtbpF}{4.1286in}{2.335in}{0pt}{}{%
 4.1286in;height 2.335in;depth 0pt;original-width 4.0785in;original-height
 2.2952in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 '../../../../PH375/repository/OpticsText/text/SVAL9A3A.wmf';tempfile-properties "XPR";}%
-}and we see that we are forming another wave front \emph{inside the material}%
-. Our scattering model predicts the transmitted wave as well as the
-reflected wave. We can see that Snell's law follows from basic geometry just
-as did the law of reflection. It depends on the spacing of the atoms and the
-size of the wavelengths.
+}and we see by drawing another Huygen's line that we are forming another
+wave front \emph{inside the material}. Our scattering model predicts the
+transmitted wave as well as the reflected wave. We can see that Snell's law
+follows from basic geometry just as the law of reflection did. It depends on
+the spacing of the atoms and the size of the wavelengths. This is a more
+profound view of the laws of reflection and refraction than our ray model
+approach.
+
+Huygen's principle is used many times in the study of optics to help us
+understand the geometry of an optics problem and from that form an equation
+that makes calculations possible!
 
 Snell and others used measurements to find Snell's law. But now that we
 understand the geometry we can use it to find Snell's equation. In the next
@@ -9634,11 +9702,7 @@ to achieve%
 \begin{equation*}
 n_{i}\sin \theta _{i}=n_{t}\sin \theta _{t}
 \end{equation*}%
-which is Snell's law.
-
-Huygen's principle is used many times in the study of optics to help us
-understand the geometry of an optics problem and from that form an equation
-that makes calculations possible!
+which is Snell's law, this time from basic geometry.
 
 \section{Filters and other color phenomena}
 
@@ -9663,6 +9727,9 @@ TRUE;display "USEDEF";valid_file "T";width 2.4738in;height 2.19in;depth
 0pt;original-width 2.4336in;original-height 2.1508in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW81L.wmf';tempfile-properties "XPR";}}
+
+In our next lecture, we will continue to learn about light and we will think
+about how light forms images.
 
 \chapter{15 Polarization and Image formation 3.1.7, 3.2.1}
 
@@ -9723,19 +9790,19 @@ be a medium for waves. And let's identify these waves as light.
 The light waves are transverse waves. So when we look at a light wave in
 detail we will see the pieces of the electric and magnetic fields
 experiencing simple harmonic motion much like the parts of our spring for
-waves on springs or air molecules for sound waves. It turns out that the
-electric field medium parts move perpendicular to the direction the wave
-goes, and also perpendicular to the direction the magnetic field medium
-parts go. This makes them transverse waves. We will now show some
-implications of this fact. In a course in electromagnetic theory, we often
-draw light as in the figure below.\FRAME{dhF}{3.681in}{3.673in}{0pt}{}{}{%
-Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.681in;height 3.673in;depth 0pt;original-width 3.7218in;original-height
-3.7156in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SVAM8I46.wmf';tempfile-properties "XPR";}}and that looks a bit like our
-waves on strings or springs only with the electric field part going up and
-down and the magnetic field part going back and forth.
+waves on springs. It turns out that the electric field medium parts move
+perpendicular to the direction the wave goes, and also perpendicular to the
+direction the magnetic field medium parts go. This makes them transverse
+waves. We will now show some implications of this fact. In a course in
+electromagnetic theory, we often draw light as in the figure below.\FRAME{dhF%
+}{3.681in}{3.673in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.681in;height 3.673in;depth 0pt;original-width
+3.7218in;original-height 3.7156in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SVAM8I46.wmf';tempfile-properties "XPR";}}%
+and that looks a bit like our waves on strings or springs only with the
+electric field part going up and down and the magnetic field part going back
+and forth.
 
 In what follows we will ignore the magnetic field (marked in the figure as $%
 B $) because it's amplitude is very much smaller than the electric field
@@ -9838,9 +9905,9 @@ TRUE;display "USEDEF";valid_file "T";width 3.3313in;height 2.815in;depth
 One of our polarizations is defined as parallel to this plane. This
 direction is represented by orange (lighter grey in black and white) arrows
 in the figure. The other polarization is perpendicular to the plane of
-incidence (the plane of the paper). This is represented by the black dots in
-the figure. These dots are supposed to look like arrows coming out of the
-paper.
+incidence (the plane of the paper or your device screen). This is
+represented by the black dots in the figure. These dots are supposed to look
+like arrows coming out of the paper.
 
 When the light reaches the interface between $n_{1}$ and $n_{2}$ it drives
 the electrons in the medium into SHM. The perpendicular polarization finds
@@ -9848,7 +9915,7 @@ electrons that are free to move in the perpendicular direction and
 re-radiate in that direction. The electron orbitals change shape and
 oscillate with the incoming electromagnetic wave.
 
-The parallel ray is also able to excite SHM, but a electromagnetic analysis
+The parallel ray is also able to excite SHM, but an electromagnetic analysis
 tells us that these little \textquotedblleft antennas\textquotedblright\
 will not radiate at an angle $90\unit{%
 %TCIMACRO{\U{b0}}%
@@ -10128,8 +10195,8 @@ the word \textquotedblleft image\textquotedblright\ means in this sense.
 0pt;original-width 2.6411in;original-height 1.9847in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SWDFTN01.wmf';tempfile-properties "XPR";}}We have talked about how we see
-objects. Remember the BYU-I guys from last time.\FRAME{dhF}{3.173in}{1.3534in%
-}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+objects. Remember the BYU-I guys from a previous lecture.\FRAME{dhF}{3.173in%
+}{1.3534in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.173in;height 1.3534in;depth 0pt;original-width 3.128in;original-height
 1.3188in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -10572,7 +10639,7 @@ rays.
 a device used in movies about your favorite super hero (Murci\'{e}lago Boy)
 used to call on the super hero for help.
 
-There is one more ray that is easy to dray. We have already encountered it.
+There is one more ray that is easy to draw. We have already encountered it.
 It is the ray that goes through the center of curvature for the spherical
 mirror so it hits with $\theta _{i}=0$ and bounces off with $\theta _{r}=0.$
 
@@ -10587,16 +10654,18 @@ must pass through $f$. \FRAME{dtbpF}{2.8729in}{1.3739in}{0pt}{}{}{Figure}{%
 TRUE;display "USEDEF";valid_file "T";width 2.8729in;height 1.3739in;depth
 0pt;original-width 2.8987in;original-height 1.3713in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SWIYS008.wmf';tempfile-properties "XPR";}}
+'SWIYS008.wmf';tempfile-properties "XPR";}}This is the \textquotedblleft
+solar cooker\textquotedblright\ ray.
 
 \item Ray 2 is drawn from the top of the object through the center of
 curvature. This ray will be incident on the mirror surface at a right angle
-and will be reflected back on itself. \FRAME{dtbpF}{2.9457in}{1.4076in}{0in}{%
+and will be reflected back on itself. \FRAME{dtbpF}{2.9457in}{1.4076in}{0pt}{%
 }{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.9457in;height 1.4076in;depth 0in;original-width 2.9732in;original-height
+2.9457in;height 1.4076in;depth 0pt;original-width 2.9732in;original-height
 1.405in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SWIYU00B.wmf';tempfile-properties "XPR";}}
+'SWIYU00B.wmf';tempfile-properties "XPR";}}This is the \textquotedblleft
+center of curvature\textquotedblright\ ray.
 
 \item Ray 3 is drawn from the top of the object through the focal point to
 reflect parallel to the principal axis.\FRAME{dtbpF}{2.9634in}{1.8103in}{0pt%
@@ -10604,7 +10673,8 @@ reflect parallel to the principal axis.\FRAME{dtbpF}{2.9634in}{1.8103in}{0pt%
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.9634in;height 1.8103in;depth 0pt;original-width 2.9918in;original-height
 1.8157in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SWIYTE09.wmf';tempfile-properties "XPR";}}
+'SWIYTE09.wmf';tempfile-properties "XPR";}}This is the \textquotedblleft
+spot light\textquotedblright\ ray.
 \end{enumerate}
 
 We can put these together, and where they meet will be where the image will
@@ -10631,7 +10701,25 @@ We can do the same for an object closer than a focal length\FRAME{dtbpF}{%
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 2.847in;height 1.8542in;depth 0pt;original-width 3.3425in;original-height
 2.1664in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SWIZRI0E.wmf';tempfile-properties "XPR";}}
+'SWIZRI0E.wmf';tempfile-properties "XPR";}}Only the spotlight ray doesn't
+work because light that came from the top of the tree and passed through the
+focal point won't hit the mirror. But we could draw a ray that goes along
+the line from the focal point to the top of the tree and then hits the
+mirror. That ray will hit the mirror and bounce just as though it really
+came from the focal point. We usually use dotted lines to show when we are
+pretending a ray exists somewhere where it really doesn't. So in the drawing
+you see a dotted line come from the focal point, $f,$ and then the line
+becomes solid blue where the light really starts at the top of the tree and
+goes to the mirror and reflects. In this way we can still use our three ray
+system to find the image.
+
+But wait. In this case our three rays never meet! So there seems to be no
+image! An it is true, there is no real image. But we learned from flat
+mirrors that there can be a virtual image. Virtual images come from our
+brain processing thinking that the rays only go in straight lines. So we can
+extend the rays that leave the mirror backward as though they didn't bounce
+at the mirror. Again we use dotted lines for this. And where the dotted
+lines meet we have a virtual image!
 
 \subsection{Principal rays for a convex mirror:}
 
@@ -10655,10 +10743,15 @@ principal axis by aiming it at $f$.
 "USEDEF";valid_file "T";width 2.7804in;height 2.2009in;depth
 0pt;original-width 2.2719in;original-height 1.7928in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SWDHRF03.wmf';tempfile-properties "XPR";}}We should tabulate our sign
-convention for mirrors. So far we know that if $h_{i}$ is upside down it
-will be negative. But we can assign signs for all the other distances in our
-ray diagrams. 
+'SWDHRF03.wmf';tempfile-properties "XPR";}}Note again that these rays won't
+meet. So there is no real image. But we can extend the rays that leave the
+mirror backward as though they hadn't bounced off the mirror we can see that
+they do meet, and that is the location our brain assigns for the virtual
+image.
+
+We should tabulate our sign convention for mirrors. So far we know that if $%
+h_{i}$ is upside down it will be negative. But we can assign signs for all
+the other distances in our ray diagrams. 
 \begin{equation*}
 \begin{tabular}{|l|l|l|}
 \hline
@@ -10732,17 +10825,17 @@ But what does spherical aberration do? We end up with different images of
 our object at different image locations. The center rays (blue dashed lines
 in the next figure) make an image at $I_{1}$ but the outside (non-paraxial)
 rays focus closer at $I_{2.}$ If we put up a screen to see the image, we
-will have a blurry image because some of the light is out of focus at $I_{1} 
-$ but a different bit of light is out of fucus at $I_{2}.$ There is no one
+will have a blurry image because some of the light is out of focus at $I_{1}$
+but a different bit of light is out of fucus at $I_{2}.$ There is no one
 place where all the light is in focus. \FRAME{dtbpF}{3.5976in}{2.1975in}{0pt%
 }{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.5976in;height 2.1975in;depth 0pt;original-width 3.55in;original-height
 2.1577in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAM8I41.wmf';tempfile-properties "XPR";}}Most of the time for this class,
-we will point our optics so the object is near the principal axis, so we can
-make the paraxial approximation that fixes this problem. But in real optical
-systems we can't do this.
+we will design our optical system so the object is near the principal axis,
+so we can make the paraxial approximation that fixes this problem. But in
+real optical systems we can't do this.
 
 This optical problem was the problem with the Hubble Space Telescope!
 
@@ -10891,7 +10984,7 @@ n_{1}\alpha +n_{2}\gamma &=&\beta \left( n_{2}-n_{1}\right) \\
 n_{1}\frac{d}{d_{o}}+n_{2}\frac{d}{d_{i}} &=&\frac{d}{R}\left(
 n_{2}-n_{1}\right)
 \end{eqnarray*}%
-We can divide out the $d^{\prime }s$%
+We can divide out the $d$'s%
 \begin{equation}
 \frac{n_{1}}{d_{o}}+\frac{n_{2}}{d_{i}}=\frac{\left( n_{2}-n_{1}\right) }{R}
 \label{Bump_Equation}
@@ -11062,7 +11155,7 @@ we mean that the lens has somehow formed a diverging set of rays that form a
 pattern that looks like the pattern formed by the diverging set of rays
 coming from the object, itself. In other words, the object forms a diverging
 set of rays. And our lens forms a duplicate set of rays in the same pattern,
-so we see the same thing. The lens' version is smaller, upside down, and
+so we see the same thing. The lens' version may be smaller, upside down, and
 backwards, but it is still essentially the same pattern. We saw this with
 our semi-infinite lens, but it must be true for less infinite lenses as well.
 
@@ -11098,27 +11191,25 @@ the last figure). our visual processing center in our brain is designed to
 believe light travels in straight lines, so our mind tells us there is a
 fish, but that the fish head (and every other part of the fish) is closer
 than it really is. We call this apparent fish at the closer location an
-image of the fish, because this is where we think the diverging set of rays
-come from that form the fish pattern.
+image of the fish, because this is where our brain processing center thinks
+the diverging set of rays come from that form the fish pattern.
 
 The next figure shows the details of the rays leaving a dot on the fish head
 (with the angles exaggerated so it's easier to see them). \FRAME{dtbpF}{%
-2.7363in}{2.565in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+2.7363in}{2.565in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.7363in;height 2.565in;depth 0in;original-width 2.6939in;original-height
+2.7363in;height 2.565in;depth 0pt;original-width 2.6939in;original-height
 2.5235in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SWQ0MD00.wmf';tempfile-properties "XPR";}}A spot on the fish head is our
 object for this set of rays. The distance from the fish-head dot and the
-edge of the water/air boundary is our \emph{object distance, }$d_{o}.$
+edge of the water/air boundary is our object distance,\emph{\ }$d_{o}.$
 
 The distance from the image of the fish-head dot to the edge of the
-water/air boundary is our \emph{image distance} and is given the symbol $%
-d_{i},$ because it appears to be where the rays come from.
-
-We can find where the image is $\left( d_{i}\right) $ knowing $d_{o}.$ We
-can see from the figure that%
+water/air boundary is our image distance, $d_{i},$ because it appears to be
+where the rays come from. We can find where the image is $\left(
+d_{i}\right) $ knowing $d_{o}.$ We can see from the figure that%
 \begin{eqnarray*}
-\ell &=&d_{o}\tan \theta _{1} \\
+\ell  &=&d_{o}\tan \theta _{1} \\
 &=&d_{i}\tan \theta _{2}
 \end{eqnarray*}%
 so%
@@ -11206,8 +11297,8 @@ a lens works.
 
 We know that for every point on the object, we get millions of reflected
 rays that diverge. In the next figure, rays of light are reflecting off of
-the large, black arrow. The lens must collect these rays together to form
-the corresponding point on the image.
+the top of the large, black arrow. The lens must collect these rays together
+to form the corresponding point on the image.
 
 \FRAME{dhF}{4.1373in}{2.4275in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -11230,7 +11321,7 @@ the rest of the image must be. So we will draw diagrams for the top of the
 object to find the top of the image.
 
 But suppose this is not true? For example, when we use a camera, we do not
-align object with it's bottom on the axis before we shoot. We center the
+align the object with it's bottom on the axis before we shoot. We center the
 object on our viewfinder. So how do we find the location for the bottom of
 the image?\FRAME{dtbpF}{4.1329in}{2.4967in}{0pt}{}{}{Figure}{\special%
 {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
@@ -11300,11 +11391,12 @@ the same equation to describe all three situations.%
 \begin{equation*}
 m\equiv \frac{\text{Image height}}{\text{Object height}}=\frac{h_{i}}{h_{o}}
 \end{equation*}%
-where $h_{o}$ is the object height, and $h_{i}$ is the image height. Notice
-the negative sign. It's still true that by convention (meaning physicists
-got together and voted on this) we say that an upside down image has a
-negative magnification. You just have to memorize this, there is no obvious
-reason for this except it is mathematically convenient.
+where $h_{o}$ is the object height, and $h_{i}$ is the image height. This is
+the same equation for magnification that we found for mirrors! It's still
+true that by convention (meaning physicists got together and voted on this)
+we say that an upside down image has a negative magnification. You just have
+to memorize this, there is no obvious reason for this except it is
+mathematically convenient.
 
 \section{Virtual Images with Lenses}
 
@@ -11338,7 +11430,7 @@ negative value.
 \subsection{Diverging Lenses}
 
 So far our lenses have only been the sort that work as magnifying glasses.
-We call these \emph{converging lenses.} These lenses are fatter in the
+We call these \emph{converging lenses.} These lenses are thicker in the
 middle and thinner on the edges. Because of this they are sometimes called 
 \emph{convex lenses}. By convention, we say the focal distance for this type
 of lens is positive. For this reason, they are often called \emph{positive
@@ -11417,21 +11509,24 @@ but to appreciate what it means, lets find out where it comes from.
 
 Consider the optical element in the figure below. Notice that our object is
 a dot, so our image will also be a dot. This is not as boring as it sounds
-if we consider any object can be considered as a collection of dots.\FRAME{%
-dtbpF}{4.5714in}{2.8098in}{0in}{}{}{Figure}{\special{language "Scientific
+if we consider any object can be considered as a collection of dots. And in
+our past analysis we used the top of our object as our image, which was
+really just the dot at the top of the object. We could use that to figure
+out where the rest of the image would be. So let's start with a dot.\FRAME{%
+dtbpF}{4.5714in}{2.8098in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 4.5714in;height 2.8098in;depth 0in;original-width
+"T";width 4.5714in;height 2.8098in;depth 0pt;original-width
 4.5186in;original-height 2.7674in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'SWMJFK06.wmf';tempfile-properties "XPR";}}%
 Light enters at a spherical surface on the left hand side. We use a point
-object located at $S$ on the principal axis. We could put out dot object
-anywhere, but let's put it on the axis and trace two rays. The ray along the
-principal axis crosses each spherical surface at right angles, and therefore
-traves straight through the optic (this makes on ray very easy to trace!).
-The second ray hits the first spherical surface at point $A.$ It is
-refracted and travels to point $B$. It is again refracted and travels toward
-the principal axis, crossing at $P.$ The image location is the intersection
-of these rays, so we have an image at $P.$
+object located at $S$ (for \emph{source}) on the principal axis. We could
+put our dot object anywhere, but let's put it on the axis and trace two
+rays. The ray along the principal axis crosses each spherical surface at
+right angles, and therefore traves straight through the optic (this makes
+one ray very easy to trace!). The second ray hits the first spherical
+surface at point $A.$ It is refracted and travels to point $B$. It is again
+refracted and travels toward the principal axis, crossing at $P.$ The image
+location is the intersection of these rays, so we have an image at $P.$
 
 Lets study the surfaces separately
 
@@ -11444,14 +11539,19 @@ Lets study the surfaces separately
 "1";cropright "1";cropbottom "0";tempfilename
 'SWMJGL07.wmf';tempfile-properties "XPR";}}
 
-Let's treat surface $1$ as though surface two did not exist. The light would
-bend at point $A$ and head off into the lens material. This is just our
-semi-infinite bump problem. And if we imagine our head to somehow be in the
-glass looking at the refracted ray, our brain would think that the ray
-traveled in a straight line. So our brain would think the light came from
-location $P_{1}.$ That would be a virtual image of our $S$ point, so the
-distance from the lens to $P_{1}=d_{i1}.$ We can find this image distance
-using our semi-infinte bump (single sided lens) equation.%
+Let's treat surface $1$ as though surface $2$ did not exist. When it's at
+surface $1$ The light doesn't know about surface $2.$ It only interacts with
+the surface where it is. So ignoring surface $2$ at this point is
+reasonable. 
+
+The light would bend at point $A$ and head off into the lens material. This
+is just our single sided lens (semi-infinite bump) problem. And if we
+imagine our head to somehow be in the glass looking at the refracted ray,
+our brain would think that the ray traveled in a straight line. So our brain
+would think the light came from location $P_{1}.$ That would be a virtual
+image of our $S$ point, so the distance from the lens to $P_{1}=d_{i1}.$ We
+can find this image distance using our single sided lens (semi-infinte bump)
+equation.%
 \begin{equation*}
 \frac{n_{1}}{d_{o1}}+\frac{n_{2}}{d_{i1}}=\frac{\left( n_{2}-n_{1}\right) }{R%
 }
@@ -11485,7 +11585,8 @@ the object at $P_{1}.$ It's not true, the light came from $S.$ But the
 second surface can't tell the difference. It only knows light is incident in
 a particular pattern, and that pattern appears to come from point $P_{1}.$
 So we can treat the situation at surface $2$ as though the object is the
-virtual image formed by surface $1.$ So 
+virtual image formed by surface $1.$ This is important, so let's say it
+again. The object for surface $2$ is the image from surface $1.$ 
 \begin{equation*}
 d_{o2}=d_{i1}+t
 \end{equation*}
@@ -11593,35 +11694,42 @@ aberration. The reason we used a sphere is that spheres are easy to
 manufacture. The same problem happens with lenses if we make their sides
 from parts of spheres. The correct shape for a lens is a hyperbola, and
 hyperbole are hard to manufacture. Spheres are so much easier.\FRAME{dtbpFU}{%
-3.3306in}{1.899in}{0pt}{\Qcb{{\protect\small Example of Spherical Aberration
-for Lenses. Optical Ray Trace done in the OSLO\ Optical Design Package.}}}{}{%
-Figure}{\special{language "Scientific Word";type
+3.3304in}{1.8991in}{0pt}{\Qcb{{\protect\small Example of Spherical
+Aberration for Lenses. Optical Ray Trace done in the OSLO\ Optical Design
+Package. Rays drawn as green lines are paraxial and rays drawn as red lines
+are not.}}}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.3306in;height 1.899in;depth 0pt;original-width 3.2846in;original-height
+3.3304in;height 1.8991in;depth 0pt;original-width 3.2846in;original-height
 1.8619in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SWMLMC0D.wmf';tempfile-properties "XPR";}}Again non-paraxial and paraxial
-rays focus at different spots because we have the wrong shape for our lens.
-Spherical aberration was made famous as the main problem with the Hubble
-Telescope.
+'SWMLMC0D.wmf';tempfile-properties "XPR";}}The last figure is a ray trace
+done by a professional lens design program. The lens is clearly not thin.
+The rays drawn as green lines are the paraxial rays and you can see that
+they form a tight focus to the right of the lens. But the rays drawn as red
+lines are not paraxial. The non-paraxial and paraxial rays focus at
+different spots because we have the wrong shape for our lens. We remember
+that spherical aberration was made famous as the main problem with the
+Hubble Telescope.
 
 We get another image problem or aberration with lenses. Remember that the
 index of refraction is different for different wavelengths of light. If we
 send white light into our lens, different colors will bend slightly
 differently (think Snell's law). So we will get a different focus point for
-different colors of light. I the next figure blue light makes an image at a
-shorter focal distance than red light. This problem is called \emph{%
-chromatic aberration}. \FRAME{dtbpF}{3.2353in}{2.1862in}{0in}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 3.2353in;height 2.1862in;depth
-0in;original-width 3.1903in;original-height 2.1465in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SWMLRY0F.wmf';tempfile-properties "XPR";}}Generally mirrors can't have
-chromatic aberration because they don't refract the light. But Lenses always
-will.
+different colors of light. In the next figure, blue light (drawn with blue
+lines) makes an image at a shorter focal distance than red light (drawn with
+red lines). This problem is called \emph{chromatic aberration}. \FRAME{dtbpF%
+}{3.2353in}{2.1862in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.2353in;height 2.1862in;depth 0pt;original-width
+3.1903in;original-height 2.1465in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'SWMLRY0F.wmf';tempfile-properties "XPR";}}%
+This will also cause blurry pictures because different parts of the light
+will focus at different distances from the lens. Generally mirrors can't
+have chromatic aberration because they don't refract the light. But Lenses
+always will.
 
 There are many aberrations that come from making lenses that are easy to
-manufacture, but that are not the perfect in some way. We won't study all
-these in this class. If you are curious, we cover these aberrations in our
+manufacture, but that are not perfect in some way. We won't study all these
+in this class. If you are curious, we cover more of these aberrations in our
 junior level optics class (PH375).
 
 \subsection{Sign Convention}
