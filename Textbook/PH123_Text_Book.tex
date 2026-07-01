@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Monday, June 29, 2026 12:30:45}
+%TCIDATA{LastRevised=Tuesday, June 30, 2026 18:03:27}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -21032,7 +21032,7 @@ molecules of a gas
 
 We have hinted that the internal energy of a system must be the energy
 associated with the atoms and molecules that make the system. By making this
-association in our mental model more concrete, and more mathematical,  we
+association in our mental model more concrete, and more mathematical, we
 will be able to see how the thermodynamic laws we have studied are generated
 by the basic laws of motion. But we will limit our study to ideal gases in
 this class. So let's state some assumptions that follow from the ideal gas
@@ -21278,11 +21278,11 @@ So our average force on the wall from the molecules could be written as%
 \bar{F} &=&\frac{m}{d}N\overline{v_{x}^{2}} \\
 &=&\frac{m}{d}N\frac{1}{3}\overline{v^{2}} \\
 &=&\frac{mN}{3d}\overline{v^{2}} \\
-&=&\frac{N}{3d}\left( m\overline{v^{2}}\right) 
+&=&\frac{N}{3d}\left( m\overline{v^{2}}\right)
 \end{eqnarray*}%
 Let's rewire this average force from all the molecules 
 \begin{equation*}
-\bar{F}=\frac{N}{3d}\left( m\overline{v^{2}}\right) 
+\bar{F}=\frac{N}{3d}\left( m\overline{v^{2}}\right)
 \end{equation*}
 And we know that 
 \begin{equation*}
@@ -21292,21 +21292,21 @@ Finally we can find the pressure on the wall. We know%
 \begin{eqnarray*}
 P &=&\frac{F}{A} \\
 &=&\frac{F}{d^{2}} \\
-&=&\frac{1}{d^{2}}\left( \frac{N}{3d}\left( m\overline{v^{2}}\right) \right) 
+&=&\frac{1}{d^{2}}\left( \frac{N}{3d}\left( m\overline{v^{2}}\right) \right)
 \\
-&=&\frac{1}{d^{3}}\frac{N}{3}\left( m\overline{v^{2}}\right)  \\
+&=&\frac{1}{d^{3}}\frac{N}{3}\left( m\overline{v^{2}}\right) \\
 &=&\frac{1}{3}\frac{N}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}\left( m\overline{v^{2}}\right)  \\
+}\left( m\overline{v^{2}}\right) \\
 &=&\frac{2}{3}\frac{N}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}\left( \frac{1}{2}m\overline{v^{2}}\right) 
+}\left( \frac{1}{2}m\overline{v^{2}}\right)
 \end{eqnarray*}%
 That last step might seem unnecessary, but look how cute the $1/2$ looks
 with a $m\overline{v^{2}}$ next to it! We can recognize the part in
@@ -21527,7 +21527,7 @@ TRUE;display "USEDEF";valid_file "T";width 3.109in;height 1.5584in;depth
 'SW9MF20R.wmf';tempfile-properties "XPR";}}We could give this a symbol,
 let's re-use the Greek letter $\lambda $%
 \begin{eqnarray*}
-\lambda  &=&\frac{\text{Length traveled}}{\text{Number of collisions}} \\
+\lambda &=&\frac{\text{Length traveled}}{\text{Number of collisions}} \\
 &=&\frac{L}{N_{\func{col}}}
 \end{eqnarray*}%
 This will give the average length before a collision happens.
@@ -21675,7 +21675,7 @@ Then where there is a $%
 and 
 \begin{eqnarray}
 f &=&\frac{\sqrt{2}\pi d^{2}v_{rms}P}{k_{B}T} \\
-\tau  &=&\frac{k_{B}T}{\sqrt{2}\pi d^{2}v_{rms}P}
+\tau &=&\frac{k_{B}T}{\sqrt{2}\pi d^{2}v_{rms}P}
 \end{eqnarray}
 
 We should consider a problem to see how this works. Suppose we take a $%
@@ -21730,7 +21730,7 @@ Now that we know what temperature is, let's go back to thinking about
 temperature rise as we transfer energy by heat. We studied heat capacities
 and specific heats a few lectures ago, but we avoided gasses as we did so.
 We need to find the temperature rise $\Delta T$ in a gas after transferring
-energy by heat $Q$ for gasses. 
+energy by heat $Q$ for gasses.
 
 \section{Molar Specific Heat}
 
@@ -21943,6 +21943,18 @@ reversible processes.
 
 \section{The Equipartition of Energy}
 
+For an ideal gas 
+\begin{equation*}
+E_{int}=K_{tran}=\frac{3}{2}nRT
+\end{equation*}%
+But there are few gasses that really act like ideal gasses. Nobel gasses
+can, because they don't easily form bonds. So a gas of Argon or Helium atoms
+is very like an ideal gas. But our atmosphere is mostly made of nitrogen and
+oxygen which form diatomic molecules. Diatomic molecules have internal
+structure. They are not ideal gasses. It would be good to try to apply what
+we have learned to gasses like these that are so important to our life in
+this mortal state.
+
 We can extend our ideal gas model a little by using what we know about
 degrees of freedom. Remember that we found that for each degree of freedom
 the internal energy was 
@@ -21954,24 +21966,28 @@ We found for an ideal monotonic gas that the internal energy was
 E_{int}=3E_{i}=\frac{3}{2}k_{B}T
 \end{equation}
 
-\FRAME{dtbpF}{1.9519in}{1.9476in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 1.9519in;height 1.9476in;depth
+where each $E_{i}$ came from moving in the $x,$ $y,$ or $z$-directions. We
+call moving in the  $x,$ $y,$ or $z$-directions \emph{translational degrees
+of freedom}.     \FRAME{dtbpF}{1.9519in}{1.9476in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 1.9519in;height 1.9476in;depth
 0pt;original-width 2.4673in;original-height 2.4621in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SYOES700.wmf';tempfile-properties "XPR";}}where each $E_{i}$ came from a
-translational degree of freedom. But a gas made of diatomic molecules isn't
-an ideal gas. The molecules have several more degrees of freedom. They can
-rotate about any of the axes.\FRAME{dtbpF}{2.3307in}{2.3307in}{0pt}{}{}{%
-Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.3307in;height 2.3307in;depth 0pt;original-width 2.29in;original-height
-2.29in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'THGWPX00.wmf';tempfile-properties "XPR";}}But in a gas made of diatomic
+molecules, the molecules have more degrees of freedom. They can rotate about
+any of the axes. And from Principles of Physics I we know it takes energy to
+rotate. This is another way we can put energy into our gas. Rotation is an
+additional degree of freedom. But there are several ways we can rotate our
+diatomic molecule.\FRAME{dtbpF}{2.3307in}{2.3307in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.3307in;height 2.3307in;depth
+0pt;original-width 2.29in;original-height 2.29in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SYOEUF01.wmf';tempfile-properties "XPR";}}
 
-Here rotation about the $y$ axis does not contribute significantly because
-the moment of inertia of a sphere (we will take the atoms to be roughly
-spherical) about it's axis is 
+From the figure, rotation about the $y$ axis does not contribute
+significantly because the moment of inertia of a sphere about it's axis
+is(we will take the atoms to be roughly spherical) 
 \begin{equation}
 \mathbb{I}=\frac{2}{5}mr^{2}
 \end{equation}%
@@ -21983,20 +21999,76 @@ nucleus (proton mass $=1.67\times 10^{-27}\unit{kg},$ electron mass $%
 %BeginExpansion
 \text{\AA}%
 %EndExpansion
-}$ is the radius of the atom. The moment of inertia for rotation about the
-center of the two mass system is about 
-\begin{equation}
-\mathbb{I}=\sum_{i}m_{i}R_{i}^{2}
-\end{equation}%
-where $R$ is the distance from the center of mass. For diatomic hydrogen, $R=%
-\frac{1}{2}1.06\unit{%
+}.$ This is the effective radius of the atom as far as a moment of inertial
+is concerned. For nitrogen $\left( 2.33\times 10^{-26}\unit{kg}\right) $ the
+moment of inertial for rotation about the $y$-axis would be about    
+\begin{eqnarray}
+\mathbb{I} &=&\frac{2}{5}\left( 2.33\times 10^{-26}\unit{kg}\right) \left(
+1.7\times 10^{-5}\unit{%
 %TCIMACRO{\U{212b}}%
 %BeginExpansion
 \text{\AA}%
 %EndExpansion
-}$ so we can see that the rotation about the $y$-axis is not very important,
-so we are left with three translational and two rotational degrees of
-freedom. This gives%
+}\right) ^{2} \\
+&=&\allowbreak 2.\,\allowbreak 693\,5\times 10^{-56}\unit{m}^{2}\unit{kg}
+\end{eqnarray}%
+which is very small. We would have twice this, because we have two nitrogen
+atoms. Suppose we have an rotational speed of $\omega =2.\,\allowbreak
+740\,4\times 10^{17}.$ This may seem high, but it's not hard to rotate
+little diatomic molecules. The rotational energy would be 
+\begin{eqnarray*}
+K_{rot} &=&\frac{1}{2}\mathbb{I\omega }^{2} \\
+&=&\frac{1}{2}\left( 2\times 2.\,\allowbreak 693\,5\times 10^{-56}\unit{m}%
+^{2}\unit{kg}\right) \left( 2.\,\allowbreak 740\,4\times 10^{17}\right) ^{2}
+\\
+&=&2.\,\allowbreak 022\,8\times 10^{-21}\unit{J}
+\end{eqnarray*}
+
+We can also rotate the diatomic molecule about  the  $x$ or $z$-axes. The
+moment of inertia for rotation about the center of the two mass system
+(about the $x$ or $z$-axis) is about 
+\begin{equation}
+\mathbb{I}=\sum_{i}m_{i}R_{i}^{2}
+\end{equation}%
+where $R$ is the distance from the center of mass. For diatomic nitrogen, $R=%
+\frac{1}{2}1.098\unit{%
+%TCIMACRO{\U{212b}}%
+%BeginExpansion
+\text{\AA}%
+%EndExpansion
+}=\allowbreak 0.549\,\unit{%
+%TCIMACRO{\U{212b}}%
+%BeginExpansion
+\text{\AA}%
+%EndExpansion
+}$ 
+\begin{eqnarray}
+\mathbb{I} &=&2\left( 4.65\times 10^{-26}\unit{kg}\right) \left( \allowbreak
+0.549\,\unit{%
+%TCIMACRO{\U{212b}}%
+%BeginExpansion
+\text{\AA}%
+%EndExpansion
+}\right) ^{2} \\
+&=&2.\,\allowbreak 803\times 10^{-46}\unit{m}^{2}\unit{kg}
+\end{eqnarray}%
+This is ten $\left( 10\right) $ orders of magnitude larger than rotation
+about the center $\left( y\right) $ axis of the molecule. We could have
+energies like 
+\begin{eqnarray*}
+K_{rot} &=&\frac{1}{2}\mathbb{I\omega }^{2} \\
+&=&\frac{1}{2}\left( 2.\,\allowbreak 803\times 10^{-46}\unit{m}^{2}\unit{kg}%
+\right) \left( 2.\,\allowbreak 740\,4\times 10^{17}\right) ^{2} \\
+&=&\allowbreak 1.\,\allowbreak 052\,5\times 10^{-11}\unit{m}^{2}\unit{kg}
+\end{eqnarray*}%
+Again, we are about $10$ orders of magnitude larger than for rotation about
+the $y$-axis. This seems like a place where we could put some energy. Let's
+count this as a degree of freedom. And we would get this much energy for
+both the $x$ and $z$ rotation so each would be a degree of freedom. But
+let's ignore rotation about the $y$-axis.
+
+We are left with three translational and two rotational degrees of freedom.
+This gives%
 \begin{equation}
 E_{int}=\left( \frac{3}{2}k_{B}T\right) _{trans}+\left( \frac{2}{2}%
 k_{B}T\right) _{rot}=\frac{5}{2}k_{B}T
@@ -22234,13 +22306,13 @@ problem until we felt trouble moving or passed out.
 
 Suppose we have a vapor in a container but also have some of the same
 material in it's liquid state in the same container. And suppose that the
-vapor and liquid are in equilibrium. The partial pressure of the vapor under
-these conditions is called a \emph{vapor pressure}. This is important in
-many fields including weather prediction. The partial pressure of the water
-vapor in our atmosphere can't exceed the vapor pressure of water at the same
-temperature or the water vapor will condense out of the air. This causes dew
-and the temperature at which the condensation starts to happen is called the 
-\emph{dew point temperature.}
+vapor and liquid are in thermal equilibrium. The partial pressure of the
+vapor under these conditions is called a \emph{vapor pressure}. This is
+important in many fields including weather prediction. The partial pressure
+of the water vapor in our atmosphere can't exceed the vapor pressure of
+water at the same temperature or the water vapor will condense out of the
+air. This causes dew and the temperature at which the condensation starts to
+happen is called the \emph{dew point temperature.}
 
 If you listen to a weather report your might hear about the \emph{relative
 humidity}.%
@@ -22249,7 +22321,7 @@ R.H.=\frac{\text{Partial pressure of water vapor at }T}{\text{Vapor pressure
 of water at }T}\times 100
 \end{equation*}%
 Think about what this means. If at a given temperature the partial pressure
-of water vapor is the same as the vapor pressure of water then the air has
+of water vapor is the same as the vapor pressure of water, then the air has
 as much water as it can hold at that temperature. We say the air is
 saturated and it feels very muggy.
 
@@ -22260,10 +22332,8 @@ speed. What distribution of speeds like?
 
 \section{Speed of molecules}
 
-The internal energy of a system might consist of nuclear internal energy, or
-chemical internal energy, but let's reserve those internal energies for our
-Principles of Physics IV course. For us, internal energy is mostly due to
-the motion of the molecules in the system. That motion has kinetic energy
+In this course we have found that  internal energy is mostly due to the
+motion of the molecules in the system. That motion has kinetic energy
 associated with it. But not a kinetic energy of the whole system moving
 together. It is a kinetic energy of the parts of the system, the molecules.
 Think of driving a car. We could describe the kinetic energy of the whole
@@ -22276,20 +22346,15 @@ whole. \FRAME{dtbpF}{3.5453in}{2.3629in}{0pt}{}{}{Figure}{\special{language
 "USEDEF";valid_file "T";width 3.5453in;height 2.3629in;depth
 0pt;original-width 3.5843in;original-height 2.3789in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SW9LUS08.wmf';tempfile-properties "XPR";}}To find this kinetic energy of
-the molecules, we would need to know how fast the molecules are going in an
-ideal gas at a particular temperate and pressure in a particular volume.
+'SW9LUS08.wmf';tempfile-properties "XPR";}}To find this internal kinetic
+energy of the molecules, we need to know how fast the molecules are going in
+an ideal gas at a particular temperate and pressure in a particular volume.
 Let's review a bit from our last lecture.
 
-The average velocity is not helpful, because with our ideal gas model, the
-molecules move randomly. So we would guess that on the whole their
-velocities would cancel. If this is not true, we call the situation wind.
-But if there is no over-all movement, the average velocity, $\mathbf{\bar{v}}%
-=0.$ But we know there must be movement because the molecules have some
-internal energy. The kinetic energy depends on the speed of the molecules.
-But not all molecules have the same velocity. So when we say
-\textquotedblleft speed of the molecules\textquotedblright\ we have to be
-specific, what speed? The average? The speed the most particles have?
+The internal kinetic energy depends on the speed of the molecules. But not
+all molecules have the same velocity. So when we say \textquotedblleft speed
+of the molecules\textquotedblright\ we have to be specific, what speed? The
+average? The speed the most particles have?
 
 The average velocity won't do. \FRAME{dtbpF}{3.0725in}{2.1988in}{0in}{}{}{%
 Figure}{\special{language "Scientific Word";type
@@ -22299,7 +22364,11 @@ Figure}{\special{language "Scientific Word";type
 'SW9LUS09.wmf';tempfile-properties "XPR";}}
 
 The molecule motions have random directions. So the average velocity is
-zero. Some velocities are in negative directions and some are in positive
+zero. 
+\begin{equation*}
+\overline{\overrightarrow{v}}=0.
+\end{equation*}%
+Some velocities are in negative directions and some are in positive
 directions, so the velocities cancel out. But if we square the velocities
 they are all positive. Then we could find the average of the squared
 velocities and that would be better. And we recognize this! The quantity $%
@@ -22312,8 +22381,8 @@ velocity units, let's take a square root.
 v_{rms}=\sqrt{\overline{v^{2}}}
 \end{equation*}%
 This quantity is like an average, and gives a representative value that is
-near the most probable speeds. We have seen this quantity before, it is the
-rms speed.
+near the most probable speeds. We have seen this quantity before, it is the $%
+rms$ speed.
 
 Using this, we can get an expression that relates the temperature of our gas
 to the speed of the molecules. But it we need to know something about how
@@ -22331,15 +22400,14 @@ We can express the number of molecules this way assuming we know the volume.
 But we want the speed of the molecules, and we have learned that the concept
 of energy usually can get us a speed if we don't care to know the direction.
 Knowing the direction for every air molecule in a room would not be helpful
-in most cases, so we can be content with just knowing the speed. So lets
-find a sort of \textquotedblleft energy density,\textquotedblright\ that is,
-the density of molecules that have energy between two amounts of energy,
-say, $E_{1}$ and $E_{2}$. We want $E_{1}$ and $E_{2}$ to be quite close
-together. So let's let $E_{1}=$ $E$ and $E_{2}=E+\Delta E$ where $\Delta E$
-is a small amount of energy. If you take quantum mechanics, or statistical
-mechanics, you will likely see this quantity quite a lot. Then the number of
-molecules with a particular energy between $E_{1}$ and $E_{2}$ could be
-written as%
+in most cases, so we can be content with just knowing the speed. Lets find a
+sort of \textquotedblleft energy density,\textquotedblright\ that is, the
+density of molecules that have energy between two amounts of energy, say, $%
+E_{1}$ and $E_{2}$. We want $E_{1}$ and $E_{2}$ to be quite close together.
+So let's let $E_{1}=$ $E$ and $E_{2}=E+\Delta E$ where $\Delta E$ is a small
+amount of energy. If you take quantum mechanics, or statistical mechanics,
+you will likely see this quantity quite a lot. Then the number of molecules
+with a particular energy between $E_{1}$ and $E_{2}$ could be written as%
 \begin{equation}
 n_{V}\left( E\right) dE=\frac{\#\text{ of molecules with energy between }E%
 \text{ and }E+\Delta E}{%
@@ -22408,7 +22476,7 @@ K}{k_{B}T}}
 \end{equation}%
 Note that this is of the form for our distribution function because for an
 ideal gas the only internal energy we have is kinetic energy, $E=K$ so we
-have $E/(k_{B}T)$ as the exponent. So we used this to turn our energy
+have $E/(k_{B}T)$ as the exponent. We used this to turn our energy
 distribution function into a speed distribution function.
 
 If there are $dN$ molecules with speeds between $v$ and $v+dv$ then%
@@ -22550,13 +22618,13 @@ And we can put our result back in our equation for $\overline{v^{1}}$
 \overline{v^{1}} &=&4\pi \left( \frac{m}{2\pi k_{B}T}\right) ^{\frac{3}{2}%
 }\int_{0}^{\infty }v^{3}e^{-\frac{mv^{2}}{2k_{B}T}}dv \\
 &=&2\pi \left( \frac{m}{2\pi k_{B}T}\right) ^{\frac{3}{2}}\left( \frac{1}{%
-\left( \frac{\pi m}{2\pi k_{B}T}\right) ^{2}}\right) \\
+\left( \frac{\pi m}{2\pi k_{B}T}\right) ^{2}}\right)  \\
 &=&2\pi \left( \frac{m}{2\pi k_{B}T}\right) ^{\frac{3}{2}}\left( \left( 
-\frac{m}{2\pi k_{B}T}\right) ^{-\frac{4}{2}}\pi ^{-2}\right) \\
-&=&2\pi \left( \frac{m}{2\pi k_{B}T}\right) ^{=\frac{1}{2}}\left( \pi
-^{-2}\right) \\
-&=&2\left( \frac{2\pi k_{B}T}{m}\right) ^{\frac{1}{2}}\left( \pi ^{-1}\right)
-\\
+\frac{m}{2\pi k_{B}T}\right) ^{-\frac{4}{2}}\pi ^{-2}\right)  \\
+&=&2\pi \left( \frac{m}{2\pi k_{B}T}\right) ^{-\frac{1}{2}}\left( \pi
+^{-2}\right)  \\
+&=&2\left( \frac{2\pi k_{B}T}{m}\right) ^{\frac{1}{2}}\left( \pi
+^{-1}\right)  \\
 &=&\sqrt{\frac{8k_{B}T}{\pi m}}
 \end{eqnarray*}%
 so
@@ -22760,9 +22828,9 @@ slowly removing the sand. The system stays almost in equilibrium as it
 changes, so that it returns to a new equilibrium right away. After all, you
 only moved one grain of sand at a time. This process is almost reversible.
 Of course, you still have to do work in moving the sand, so the outside
-environment is changed, so even this process is not truly reversible. But it
-is a good mental model for the sort of processes we will study in this
-class; slow, almost in equilibrium all the time.
+environment is changed. Even this process is not truly reversible. But it is
+a good mental model for the sort of processes we will study in this class;
+slow, almost in equilibrium all the time.
 
 For our quasi-static process we can say we stay in thermodynamic
 equilibrium. Recall that we have one \textquotedblleft
