@@ -1,0 +1,1478 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, July 14, 2026 15:34:05}
+%TCIDATA{LastRevised=Wednesday, July 15, 2026 14:25:16}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Scientific Notebook\Blank Document">}
+%TCIDATA{CSTFile=Math with theorems suppressed.cst}
+%TCIDATA{PageSetup=72,72,72,72,0}
+%TCIDATA{AllPages=
+%F=36,\PARA{038<p type="texpara" tag="Body Text" >\hfill \thepage}
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\section{An example: The Otto Cycle}
+
+A cyclic process is made from more than one thermodynamic process. The Otto
+cycle technically has sic processes. To design an engine we need to describe
+all of these processes and make sure they work together to produce a net
+useful work.
+
+\FRAME{dtbpF}{4.8888in}{4.0075in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.8888in;height 4.0075in;depth
+0pt;original-width 4.8352in;original-height 3.9583in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TI6QJO02.wmf';tempfile-properties "XPR";}}
+
+The $P%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\ $diagram above shows the Otto cycle. This cycle is approximately what
+happens in a gasoline engine, like those in cars or, more like what we find
+in lawn mowers. It consists of four main processes and two pseudo processes.
+All of these processes correspond to a piston moving in a cylinder (our
+favorite thermodynamic system!). Here is a picture of what is happening in
+the engine. \FRAME{dtbpF}{5.5729in}{1.3589in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 5.5729in;height 1.3589in;depth
+0pt;original-width 7.2928in;original-height 1.7553in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TI6QJO03.wmf';tempfile-properties "XPR";}}
+
+To understand the Otto cycle let's do the job of finding $\Delta E_{int},$ $%
+Q,$ and $w_{int}$ for each part of the cycle and then describe the state of
+the gas at the beginning and end of each cycle by finding $P,$ $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+,$ $n,$ $T,$ and $E_{int}$. For our engine, suppose the compression ratio is 
+\[
+\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}}=8.00 
+\]%
+Let's take 
+\begin{eqnarray*}
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A} &=&500\unit{cm}^{3}=\allowbreak 0.000\,5\unit{m}^{3} \\
+P_{A} &=&100\unit{kPa} \\
+T_{A} &=&293\unit{K}
+\end{eqnarray*}%
+Then we can find $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$ 
+\[
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}=\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{8}=\allowbreak 62.\,\allowbreak 5\unit{cm}^{3}=\allowbreak
+6.\,\allowbreak 25\times 10^{-5}\unit{m}^{3} 
+\]%
+and we will need to measure the temperature at $C.$ Suppose we measure 
+\[
+T_{C}=1023\unit{K} 
+\]%
+and the intake temperature to be 
+\[
+T_{I}=293\unit{K} 
+\]%
+Further suppose our engine uses a diatomic ideal gas with 
+\begin{eqnarray*}
+C_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+} &=&\frac{5}{2}R \\
+R &=&8.314\frac{\unit{J}}{\unit{mol}\unit{K}}
+\end{eqnarray*}%
+so 
+\[
+\gamma =1.4 
+\]%
+Let's follow the process through to see what the state variables are at each
+point on the PV\ diagram, and what $Q_{h}$ and $Q_{c}$ are for each process,
+and what the work, $W,$ is and what the change in internal energy will be, $%
+\Delta E_{int}.$ Finally, we will find the efficiency of the engine.
+
+\pagebreak
+
+\subsection{\textbf{Process }$A\rightarrow B$}
+
+\FRAME{dtbpF}{5.0246in}{2.93in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 5.0246in;height 2.93in;depth
+0pt;original-width 2.9836in;original-height 1.7279in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'OttoProcessAB_2.wmf';tempfile-properties "XNPR";}}
+
+Assignment:
+
+Fill in the table for process $A\rightarrow B$%
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{A}$ & $293$ & $100$ & $0.000\,5$ & $2.\,052\,5\times 10^{-2}$ &  & 
+\textbf{--} \\ \hline
+$\mathbf{B}$ &  &  & $6.\,25\times 10^{-5}$ & $2.\,052\,5\times 10^{-2}$ & $%
+287.\,\allowbreak 17$ & \textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{AB}$ &  &  &  &  &  &  \\ \hline
+\end{tabular}%
+\]
+
+ANSWER:
+
+\textbf{Process }$A\rightarrow B$\textbf{\ is an adiabatic compression.} The
+piston moves upward, compressing the fuel-air mixture. This happens rapidly,
+so there is no time for energy to leave by heat, $Q=0.$ That makes it close
+enough to being adiabatic that we can say this process is approximately
+adiabatic. In this process $\Delta E_{int}=w_{int}.$
+
+We can use one of our adiabatic equations 
+\[
+P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma }=P_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma } 
+\]%
+to find the final pressure for this process at $B$%
+\[
+P_{B}=P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }} 
+\]%
+But of course this works for any point on the line from $A$ to $B$ so 
+\[
+P=P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }} 
+\]
+
+We can use this form for $P$ to find the work for process $A\rightarrow B$ 
+\begin{eqnarray*}
+w_{AB} &=&-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}}Pd%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&-\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}}P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }}d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&-P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }\int_{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}}\frac{1}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{\gamma }}d%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}
+%EndExpansion
+\\
+&=&-P_{A}^{\gamma }%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }\left( \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+^{1-\gamma }}{1-\gamma }\right\vert _{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}^{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}} \\
+&=&-\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{1-\gamma }\left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{1-\gamma }-%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{1-\gamma }\right)
+\end{eqnarray*}%
+We can rearrange this into a more convenient formula%
+\begin{eqnarray*}
+w_{AB} &=&\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{\gamma -1}\left( \frac{1}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma -1}}-\frac{1}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma -1}}\right) \\
+&=&\frac{1}{\gamma -1}\left( \frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma -1}}-\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma -1}}\right) \\
+&=&\frac{1}{\gamma -1}\left( \frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{-1}}-\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma -1}}\right)
+\end{eqnarray*}%
+And once again using 
+\[
+P_{B}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }=P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma } 
+\]%
+or 
+\[
+P_{A}=P_{B}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }} 
+\]%
+We get 
+\[
+w_{AB}=\frac{1}{\gamma -1}\left( \frac{P_{B}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{-1}}-\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma -1}}\right) 
+\]%
+A lot of things cancel. We get%
+\begin{eqnarray*}
+w_{AB} &=&\frac{1}{\gamma -1}\left( \frac{P_{B}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{-1}}-\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma -1}}\right) \\
+&=&\frac{1}{\gamma -1}\left( P_{B}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}-P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}\right)
+\end{eqnarray*}%
+which we can generalize into yet another basic equation for adiabatic
+processes!%
+\[
+w_{if}=\left( \frac{1}{\gamma -1}\right) \left( P_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}-P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}\right) 
+\]%
+Then for process $A\rightarrow B$ we have%
+\[
+w_{AB}=\left( \frac{1}{\gamma -1}\right) \left( P_{B}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}-P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}\right) 
+\]%
+and we can use our equation for $P_{B}$ that we got before, $P_{B}=P_{A}%
+\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}$ so that our $w_{AB}$ equation becomes 
+\[
+w_{AB}=\left( \frac{1}{\gamma -1}\right) \left( P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}-P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}\right) 
+\]%
+And from our compression ratio equation 
+\[
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}=\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{8.00} 
+\]%
+so $w_{AB}$ becomes 
+\begin{eqnarray*}
+w_{AB} &=&\left( \frac{1}{\gamma -1}\right) \left( P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{\left( \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{8}\right) ^{\gamma }}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{8.00}-P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}\right) \\
+&=&\left( \frac{1}{\gamma -1}\right) \left( 8^{\gamma }P_{A}\left( \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{8}\right) -P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}\right) \\
+&=&\left( \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}P_{A}-P_{A}\right) \\
+&=&\left( \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}P_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}-1\right)
+\end{eqnarray*}%
+So the work is 
+\[
+w_{AB}=\left( \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}P_{A}}{\gamma -1}\right) \left( 8^{\gamma -1}-1\right) 
+\]%
+and we know all of these numbers so 
+\begin{eqnarray*}
+w_{AB} &=&\left( \frac{\left( \allowbreak 0.000\,5\unit{m}^{3}\right) \left(
+100\unit{kPa}\right) }{1.4-1}\right) \left( 8^{1.4-1}-1\right) \\
+&=&\allowbreak 162.\,\allowbreak 17\unit{J}
+\end{eqnarray*}
+
+But this is the work done on the gas, the useful work is the negative of this%
+\[
+w_{eng_{AB}}=-\allowbreak 162.\,\allowbreak 17\unit{J} 
+\]%
+Which tells us that it took energy to make the process $A\rightarrow B$
+happen. You might need a pull cord to start this engine or have an electric
+starter motor. The change in internal energy is 
+\[
+\Delta E_{AB}=\allowbreak 162.\,\allowbreak 17\unit{J} 
+\]%
+and we can find 
+\[
+E_{int}=\frac{5}{2}nRT 
+\]%
+but we need $n.$ We can get it from what we know at $A$ using the ideal gas
+law%
+\begin{eqnarray*}
+n &=&\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{RT_{A}} \\
+&=&\frac{\left( 100\unit{kPa}\right) \left( \allowbreak 0.000\,5\unit{m}%
+^{3}\right) }{\left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left(
+293\unit{K}\right) } \\
+&=&\allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{mol}
+\end{eqnarray*}%
+Then%
+\begin{eqnarray*}
+E_{A} &=&\frac{5}{2}nRT_{A} \\
+&=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
+mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 293%
+\unit{K}\right) \\
+&=&\allowbreak 125.\,\allowbreak 00\unit{J}
+\end{eqnarray*}
+
+We used 
+\[
+P_{B}=P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }} 
+\]%
+but we should find a numeric answer for $P_{B}.$ Let's use our compression
+ratio equation for $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$ again 
+\begin{eqnarray*}
+P_{B} &=&P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{\left( \frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{8}\right) ^{\gamma }} \\
+&=&P_{A}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}{8^{\gamma }}} \\
+&=&8^{\gamma }P_{A} \\
+&=&8^{1.4}\left( 100\unit{kPa}\right) \\
+&=&\allowbreak 1837.\,\allowbreak 9\unit{kPa}
+\end{eqnarray*}%
+And finally, from the ideal gas law 
+\begin{eqnarray*}
+T_{B} &=&\frac{P_{B}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}}{nR} \\
+&=&\frac{\left( 1837.\,\allowbreak 9\unit{kPa}\right) \left( 6.\,25\times
+10^{-5}\unit{m}^{3}\right) }{\left( 2.\,052\,5\times 10^{-2}\unit{mol}%
+\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) } \\
+&=&673.\,\allowbreak 15\unit{K}
+\end{eqnarray*}%
+At last we can find $E_{B}$%
+\begin{eqnarray*}
+E_{B} &=&\frac{5}{2}nRT_{B} \\
+&=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
+mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left(
+673.\,\allowbreak 15\unit{K}\right) \\
+&=&\allowbreak 287.\,\allowbreak 17\unit{J}
+\end{eqnarray*}%
+what we have learned is summarized in this table
+
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{A}$ & $293$ & $100$ & $0.000\,5$ & $2.\,052\,5\times 10^{-2}$ & $%
+\allowbreak 125.\,\allowbreak 00$ & \textbf{--} \\ \hline
+$\mathbf{B}$ & $673.\,\allowbreak 15$ & $\allowbreak 1837.\,\allowbreak 9$ & 
+$6.\,25\times 10^{-5}$ & $2.\,052\,5\times 10^{-2}$ & $287.\,\allowbreak 17$
+& \textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{AB}$ & $0$ & $\allowbreak 162.\,\allowbreak 17\unit{J}$ & $%
+\allowbreak 162.\,\allowbreak 17\unit{J}$ & $-\allowbreak 162.\,\allowbreak
+17\unit{J}$ & $\mathbf{0}$ & $\mathbf{0}$ \\ \hline
+\end{tabular}%
+\]
+
+That was just one process!\pagebreak
+
+\subsection{\textbf{Process }$B\rightarrow C$}
+
+Assignment"
+
+Fill in the table for process $B\rightarrow C$
+
+ANSWER:
+
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{B}$ & $673.\,\allowbreak 15$ & $\allowbreak 1837.\,\allowbreak 9$ & 
+$6.\,25\times 10^{-5}$ & $2.\,052\,5\times 10^{-2}$ & $287.\,\allowbreak 17$
+& \textbf{--} \\ \hline
+$\mathbf{C}$ & $1023$ &  &  & $2.\,052\,5\times 10^{-2}$ &  & \textbf{--} \\ 
+\hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+Q_{c}$ \\ \hline
+$\mathbf{BC}$ &  &  &  &  &  &  \\ \hline
+\end{tabular}%
+\]
+
+\textbf{Process }$B\rightarrow C$\textbf{\ is an isochoric process.} \FRAME{%
+dtbpF}{3.3304in}{2.9568in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.3304in;height 2.9568in;depth 0pt;original-width
+3.2846in;original-height 2.9136in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'TI6QJO04.wmf';tempfile-properties "XPR";}}%
+This is where the spark plug ignites the air-fuel mixture created by the
+fuel injectors. A great deal of energy is released in a hurry. The
+temperature jumps up and the pressure does too, but the volume is the same
+because this process happens in a flash--literally!
+
+So this must be an isochoric process. We expect $w_{BC}=0,$ so $\Delta
+E_{BC}=Q_{BC}.$ The pressure increases, so we expect $Q_{BC}$ to be
+positive. That means this energy is entering our engine. This must be part
+of $Q_{h}$! We know the temperature at $C$ and we know the volume $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{C}=%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$ so we can find the final pressure%
+\begin{eqnarray*}
+P_{C} &=&\frac{nRT_{C}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{C}} \\
+&=&\frac{\left( 2.\,052\,5\times 10^{-2}\right) \left( 8.314\frac{\unit{J}}{%
+\unit{mol}\unit{K}}\right) \left( 1023\right) }{6.\,25\times 10^{-5}\unit{m}%
+^{3}} \\
+&=&2.\,\allowbreak 793\,1\times 10^{6}\unit{Pa} \\
+&=&2793.\,\allowbreak 1\unit{kPa}
+\end{eqnarray*}%
+We can find the internal energy at $C$ now%
+\begin{eqnarray*}
+E_{C} &=&\frac{5}{2}nRT_{C} \\
+&=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
+mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left(
+1023\unit{K}\right) \\
+&=&\allowbreak 436.\,\allowbreak 42\unit{J}
+\end{eqnarray*}%
+We can use 
+\begin{eqnarray*}
+Q &=&nC_{V}\Delta T \\
+&=&n\frac{5}{2}R\left( T_{C}-T_{B}\right)
+\end{eqnarray*}%
+For the process $BC$ to find the energy transferred by heat%
+\begin{eqnarray*}
+Q_{BC} &=&\left( 2.\,052\,5\times 10^{-2}\unit{mol}\right) \frac{5}{2}\left(
+8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 1023\unit{K}%
+-673.\,\allowbreak 15\unit{K}\right) \\
+&=&149.\,\allowbreak 25\unit{J}
+\end{eqnarray*}%
+We already mentioned that $Q_{BC}=\Delta E_{int_{BC}}$ and $w_{BC}=0,$ so we
+can complete our table of state variables and process variables for this
+process. 
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{B}$ & $673.\,\allowbreak 15$ & $\allowbreak 1837.\,\allowbreak 9$ & 
+$6.\,25\times 10^{-5}$ & $2.\,052\,5\times 10^{-2}$ & $287.\,\allowbreak 17$
+& \textbf{--} \\ \hline
+$\mathbf{C}$ & $1023$ & $2793.\,\allowbreak 1$ & $6.\,25\times 10^{-5}$ & $%
+2.\,052\,5\times 10^{-2}$ & $436.\,\allowbreak 42$ & \textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+Q_{c}$ \\ \hline
+$\mathbf{BC}$ & $149.\,\allowbreak 25$ & $0$ & $149.\,\allowbreak 25$ & $%
+\mathbf{0}$ & $149.\,\allowbreak 25$ & $0$ \\ \hline
+\end{tabular}%
+\]%
+\pagebreak
+
+\subsection{\textbf{Process }$C\rightarrow D$}
+
+Assignment:
+
+Fill in the table for Process $C\rightarrow D$
+
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{C}$ & $1023$ & $2793.\,\allowbreak 1$ & $6.\,25\times 10^{-5}$ & $%
+2.\,052\,5\times 10^{-2}$ & $436.\,\allowbreak 42$ & \textbf{--} \\ \hline
+$\mathbf{D}$ &  &  &  & $2.\,052\,5\times 10^{-2}$ &  & \textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{CD}$ &  &  &  &  &  &  \\ \hline
+\end{tabular}%
+\]
+
+ANSWER:
+
+\FRAME{dtbpF}{4.4227in}{3.1384in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.4227in;height 3.1384in;depth
+0pt;original-width 2.1862in;original-height 1.5437in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TI6QJO05.wmf';tempfile-properties "XPR";}}
+
+\textbf{Process }$C\rightarrow D$\textbf{\ is another adiabatic process},
+this time an expansion. This is sometimes called the \textquotedblleft power
+stroke\textquotedblright\ because the hot, high pressure gas pushes the
+piston down. This push is what makes the car or lawn mower (snow blower) go.
+We know that $Q_{CD}=0$ so $\Delta E_{CD}=w_{CD}$
+
+To find the ideal gas state variables at $D$ let's start with 
+\[
+P_{i}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{i}^{\gamma }=P_{f}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{f}^{\gamma } 
+\]%
+again, then 
+\[
+P_{D}=P_{C}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{C}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{D}^{\gamma }} 
+\]%
+but from our PV\ diagram we see $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{C}=%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$ and $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{D}=%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}$. This makes sense because the cylinder and piston system maximum and
+minimum volumes don't change. So we can write%
+\[
+P_{D}=P_{C}\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}^{\gamma }}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}^{\gamma }}=8^{-\gamma }P_{C} 
+\]%
+and knowing this we can find the temperature at $D$ using the ideal gas law%
+\[
+T_{D}=\frac{P_{D}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{D}}{nR} 
+\]%
+Let's numerically calculate $P_{D}$ and $T_{D}$ at this point.%
+\begin{eqnarray*}
+P_{D} &=&8^{-1.4}\left( 2793.\,\allowbreak 1\right) \\
+&=&151.\,\allowbreak 97\unit{kPa}
+\end{eqnarray*}%
+and 
+\begin{eqnarray*}
+T_{D} &=&\frac{\left( 151.\,\allowbreak 97\unit{kPa}\right) \left( 0.000\,5%
+\unit{m}^{3}\right) }{\left( 2.\,052\,5\times 10^{-2}\unit{mol}\right)
+\left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) } \\
+&=&445.\,\allowbreak 28\unit{K}
+\end{eqnarray*}%
+And while we are at it we can complete our state $D$ by calculating $E_{D}$%
+\begin{eqnarray*}
+E_{D} &=&\frac{5}{2}nRT_{D} \\
+&=&\frac{5}{2}\left( \allowbreak 2.\,\allowbreak 052\,5\times 10^{-2}\unit{%
+mol}\right) \left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left(
+445.\,\allowbreak 28\unit{K}\right) \\
+&=&189.\,\allowbreak 96\unit{J}
+\end{eqnarray*}%
+Now for the work done, we again use our new adiabatic equation 
+\begin{eqnarray*}
+w_{CD} &=&\left( \frac{1}{\gamma -1}\right) \left( P_{D}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{D}-P_{C}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{C}\right) \\
+&=&\left( \frac{1}{\gamma -1}\right) \left( 8^{-\gamma }P_{C}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}-P_{C}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}\right) \\
+&=&\left( \frac{P_{C}}{\gamma -1}\right) \left( 8^{-\gamma }%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}-%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}\right)
+\end{eqnarray*}%
+all of which we know, so%
+\begin{eqnarray*}
+W_{CD} &=&\left( \frac{2793.1\unit{kPa}}{1.4-1}\right) \left( 8^{-1.4}\left(
+0.000\,5\unit{m}^{3}\right) -6.\,25\times 10^{-5}\unit{m}^{3}\right) \\
+&=&-246.\,\allowbreak 46\unit{J}
+\end{eqnarray*}%
+which completes our set for process $CD$ 
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{C}$ & $1023$ & $2793.\,\allowbreak 1$ & $6.\,25\times 10^{-5}$ & $%
+2.\,052\,5\times 10^{-2}$ & $436.\,\allowbreak 42$ & \textbf{--} \\ \hline
+$\mathbf{D}$ & $445.\,\allowbreak 28$ & $151.\,\allowbreak 97$ & $0.000\,5$
+& $2.\,052\,5\times 10^{-2}$ & $189.\,\allowbreak 96\unit{J}$ & \textbf{--}
+\\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{CD}$ & $0$ & $-246.\,\allowbreak 46$ & $-246.\,\allowbreak 46$ & $%
+246.\,\allowbreak 46$ & $\mathbf{0}$ & $\mathbf{0}$ \\ \hline
+\end{tabular}%
+\]%
+\pagebreak
+
+\subsection{\textbf{Process }$D\rightarrow A$}
+
+Fill out the following table for process $D\rightarrow A$
+
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{D}$ & $445.\,\allowbreak 28$ & $151.\,\allowbreak 97$ & $0.000\,5$
+& $2.\,052\,5\times 10^{-2}$ & $189.\,\allowbreak 96\unit{J}$ & \textbf{--}
+\\ \hline
+$\mathbf{A}$ & $293$ & $100$ & $0.000\,5$ & $2.\,052\,5\times 10^{-2}$ & $%
+\allowbreak 125.\,\allowbreak 00$ & \textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{DA}$ &  &  &  &  &  &  \\ \hline
+\end{tabular}%
+\]
+
+\textbf{Process }$D\rightarrow A$\textbf{\ is an isochoric process.} We are
+nearing the end of the cycle, In process $D\rightarrow A$ a valve opens
+letting the pressure drop quickly. \FRAME{dtbpF}{3.0891in}{2.5927in}{0pt}{}{%
+}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.0891in;height 2.5927in;depth 0pt;original-width 3.6123in;original-height
+3.0268in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'TI6QJO06.wmf';tempfile-properties "XPR";}}Since this happens quickly, the
+piston does not have time to change position, so the volume does not change.
+Process $DA$ is (almost) isochoric. We already know $P_{A},$ $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A},$ $n,$ and $T_{A}$ because that is where we started and this is a
+cyclic process. But we need to find the process work, heat and change in
+internal energy. Since the volume does not change, $W_{DA}=0$ and $\Delta
+E_{DA}=Q_{DA}$ which we can find using 
+\begin{eqnarray*}
+Q_{DA} &=&nC_{V}\Delta T \\
+&=&n\frac{5}{2}R\left( T_{A}-T_{D}\right)
+\end{eqnarray*}%
+which gives%
+\begin{eqnarray*}
+Q_{DA} &=&\left( 2.\,052\,5\times 10^{-2}\unit{mol}\right) \frac{5}{2}\left(
+8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 293\unit{K}%
+-445.\,\allowbreak 28\unit{K}\right) \\
+&=&-64.\,\allowbreak 964\unit{J}
+\end{eqnarray*}%
+Which tells us that we have lost energy from the engine by heat. So $Q_{DA}$
+must contribute to $Q_{c}.$ 
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{D}$ & $445.\,\allowbreak 28$ & $151.\,\allowbreak 97$ & $0.000\,5$
+& $2.\,052\,5\times 10^{-2}$ & $189.\,\allowbreak 96\unit{J}$ & \textbf{--}
+\\ \hline
+$\mathbf{A}$ & $293$ & $100$ & $0.000\,5$ & $2.\,052\,5\times 10^{-2}$ & $%
+\allowbreak 125.\,\allowbreak 00$ & \textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{DA}$ & $-64.\,\allowbreak 964$ & $0$ & $-64.\,\allowbreak 964$ & $0$
+& $0$ & $64.\,\allowbreak 964$ \\ \hline
+\end{tabular}%
+\]%
+\pagebreak
+
+\subsection{Process $A\rightarrow I$ and process $I\rightarrow A$}
+
+Assignment:
+
+Fill out the following table for process $A\rightarrow I$
+
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{A}$ & $293$ & $100$ & $0.000\,5$ & $2.\,052\,5\times 10^{-2}$ & $%
+\allowbreak 125.\,\allowbreak 00$ & \textbf{--} \\ \hline
+$\mathbf{I}$ & $293$ & $100$ & $6.\,25\times 10^{-5}$ &  & $\allowbreak $ & 
+\textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{AI}$ &  &  &  &  &  &  \\ \hline
+\end{tabular}%
+\]
+
+\FRAME{dhF}{3.2569in}{2.8323in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.2569in;height 2.8323in;depth
+0pt;original-width 3.2119in;original-height 2.789in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TI6QJO07.wmf';tempfile-properties "XPR";}}
+
+But we are not done. The opening of the valve let the spent fuel begin to
+leave as exhaust. But we can help remove the exhaust by pushing the piston
+up. This is done at constant pressure, because the valve is open to the
+exhaust system air pressure. So this is almost an isobaric process. But it's
+not quite isobaric because we will lose gas by venting it. The number of
+moles, $n,$ will change. We can find the new number of moles using the ideal
+gas law%
+\[
+P_{I}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}=nRT 
+\]%
+since $P_{I}=P_{A}$ and $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}=%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$ because the piston minimum volume is the same each time the piston
+goes up. Then we an use our compression ratio for $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}$ and $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}$%
+\[
+\frac{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}}=8.00 
+\]%
+or, solving for $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}$ 
+\[
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}=8/%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A} 
+\]%
+which we could calculate, but it is just the same as $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{B}$
+
+We want $n_{I},$ so let's use the ideal gas law for points $A$ and $I.$ We
+get 
+\[
+P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}=n_{A}RT_{A}
+\]%
+and 
+\[
+P_{I}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}=n_{I}RT_{I}
+\]%
+We can divide these two equations%
+\[
+\frac{P_{A}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}}{P_{I}%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}}=\frac{n_{A}RT_{A}}{n_{I}RT_{I}}
+\]%
+and note that we have our compression ratio hidden in the left hand side,
+and recall that $P_{I}=P_{A}$ so the left hand side is just $8.$ And on the
+right hand side $T_{A}=T_{I}$ because we didn't change the temperature of
+the gass, we just moved it. 
+\[
+8=\frac{n_{A}}{n_{I}}
+\]%
+We can solve this for the number of moles at piston $I$%
+\[
+n_{I}=\frac{n_{A}}{8}
+\]%
+And we have all the numbers, so 
+\begin{eqnarray*}
+n_{I} &=&\frac{\left( 2.\,052\,5\times 10^{-2}\unit{mol}\right) }{8} \\
+&=&\allowbreak 2.\,\allowbreak 565\,6\times 10^{-3}\unit{mol}
+\end{eqnarray*}%
+And then $E_{I}$ will be 
+\begin{eqnarray*}
+E_{D} &=&\frac{5}{2}n_{I}RT_{I} \\
+&=&\frac{5}{2}\left( 2.\,\allowbreak 565\,6\times 10^{-3}\unit{mol}\right)
+\left( 8.314\frac{\unit{J}}{\unit{mol}\unit{K}}\right) \left( 293\unit{K}%
+\right)  \\
+&=&15.\,\allowbreak 625\unit{J}
+\end{eqnarray*}%
+The work done for a true isobaric process is 
+\[
+w_{AI}=P_{A}\left( 
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{I}-%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+_{A}\right) 
+\]%
+but this assumed that $n$ did not change. Really we are just moving the gas,
+and it doesn't take much of a force to move the little bit of gas. So to a
+good approximation we can say 
+\begin{eqnarray*}
+w_{int} &=&F\Delta x \\
+&\approx &0
+\end{eqnarray*}%
+and we can ignore $w_{AI}.$
+
+For finding $Q_{AI}$ we would like to use 
+\[
+Q=nC_{P}\Delta T
+\]%
+but we quickly run into trouble again because $n$ changed! We are using
+convection to remove heat instead of conduction. We can get around this by
+finding $\Delta E_{int}$ directly. 
+\begin{eqnarray*}
+\Delta E_{AI} &=&E_{I}-E_{A} \\
+&=&15.\,\allowbreak 625\unit{J}-125.\,\allowbreak 00\unit{J} \\
+&=&-109.\,\allowbreak 38\unit{J}
+\end{eqnarray*}%
+From this and the first law%
+\[
+\Delta E_{int}=Q+w_{int}
+\]%
+We can find $Q$%
+\begin{eqnarray*}
+Q &\approx &\Delta E_{int} \\
+&\approx &-109.\,\allowbreak 38\unit{J}
+\end{eqnarray*}
+
+Energy is leaving with the gas, so we seem to pick up a contribution to $%
+Q_{c}.$ But really this is not part of our thermodynamic process, because we
+mechanically removed the energy by removing the gas. Let's denote this by
+putting our energy in parenthesis to remind us that this is a more
+mechanical than thermal process.%
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{A}$ & $293$ & $100$ & $0.000\,5$ & $2.\,052\,5\times 10^{-2}$ & $%
+\allowbreak 125.\,\allowbreak 00$ & \textbf{--} \\ \hline
+$\mathbf{I}$ & $293$ & $100$ & $6.\,25\times 10^{-5}$ & $2.\,\allowbreak
+565\,6\times 10^{-3}$ & $15.\,\allowbreak 625\unit{J}$ & \textbf{--} \\ 
+\hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{AI}$ & $\left( -109.\,\allowbreak 38\unit{J}\right) $ & $\sim 0$ & $%
+\left( -109.\,\allowbreak 38\right) $ & $\sim 0$ & $0$ & $\left(
+109.\,\allowbreak 38\right) $ \\ \hline
+\end{tabular}%
+\]%
+$\allowbreak $\FRAME{dhF}{3.0606in}{3.2932in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.0606in;height 3.2932in;depth
+0pt;original-width 3.0173in;original-height 3.2474in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TI8GQ400.wmf';tempfile-properties "XPR";}}Now the exhaust valve closes, and
+the intake valve opens. The new fuel mixture is brought in. We essentially
+reverse process $AI$ in process $IA.$ 
+\[
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{State} & $\mathbf{T}\left( \unit{K}\right) $ & $\mathbf{P}\left( 
+\unit{kPa}\right) $ & $%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+\left( \unit{m}^{3}\right) $ & $\mathbf{n}\left( \unit{mol}\right) $ & $%
+\mathbf{E}_{int}\left( \unit{J}\right) $ & \textbf{--} \\ \hline
+$\mathbf{I}$ & $293$ & $100$ & $6.\,25\times 10^{-5}$ & $2.\,\allowbreak
+565\,7\times 10^{-3}$ & $15.\,\allowbreak 625\unit{J}$ & \textbf{--} \\ 
+\hline
+$\mathbf{A}$ & $293$ & $100$ & $0.000\,5$ & $2.\,052\,5\times 10^{-2}$ & $%
+\allowbreak 125.\,\allowbreak 00$ & \textbf{--} \\ \hline
+\textbf{Process} & $\mathbf{Q}\left( \unit{J}\right) $ & $\mathbf{w}%
+_{int}\left( \unit{J}\right) $ & $\mathbf{\Delta E}_{int}\left( \unit{J}%
+\right) $ & $\mathbf{w}_{eng}\left( \unit{J}\right) $ & $\mathbf{Q}_{h}$ & $%
+\mathbf{Q}_{c}$ \\ \hline
+$\mathbf{IA}$ & $\left( 109.\,\allowbreak 38\unit{J}\right) $ & $\sim 0$ & $%
+\left( 109.\,\allowbreak 38\unit{J}\right) $ & $\sim 0$ & $\left(
+-109.\,\allowbreak 38\unit{J}\right) $ & $0$ \\ \hline
+\end{tabular}%
+\]%
+But there is a difference. The new gas has useful fuel. and that means we
+are ready to complete the cycle again by compressing the gas, igniting it,
+and receiving the power stroke and exhaust. Note that Processes $AI$ and $IA$
+have a net zero effect thermodynamically, but are very important to making
+your car or lawn mower go!
+
+\end{document}
