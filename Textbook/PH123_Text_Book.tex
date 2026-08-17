@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Monday, August 17, 2026 15:15:15}
+%TCIDATA{LastRevised=Monday, August 17, 2026 16:16:01}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -1825,7 +1825,7 @@ of what happens when there really is friction.
 
 \item Damping
 
-\item Driving
+\item Forced Oscillations
 
 \item Resonance
 \end{itemize}
@@ -2475,11 +2475,11 @@ $\phi _{o}=0$ \\ \hline
 \end{equation*}
 
 Graphing the equation of motion $y\left( t\right) ,$ we we get a graph that
-looks like this\FRAME{dtbpFX}{4.4996in}{3in}{0pt}{}{}{Plot}{\special%
-{language "Scientific Word";type "MAPLEPLOT";width 4.4996in;height 3in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "0";xmax "500";xviewmin "0";xviewmax "500";yviewmin
-"-0.050771";yviewmax "0.05";viewset"XY";rangeset"X";plottype
+looks like this\FRAME{dtbpFX}{4.4997in}{3.0007in}{0pt}{}{}{Plot}{\special%
+{language "Scientific Word";type "MAPLEPLOT";width 4.4997in;height
+3.0007in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "0";xmax "500";xviewmin "0";xviewmax
+"500";yviewmin "-0.050771";yviewmax "0.05";viewset"XY";rangeset"X";plottype
 4;labeloverrides 3;x-label "t(sec)";y-label "y(m)";axesFont "Times New
 Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{t};var1name
@@ -2497,8 +2497,8 @@ e^{-\frac{0.005}{2\left( 0.5\right) }t}$};linecolor "yellow";linestyle
 t\right) $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 1;lineAttributes "Solid";var1range "0,500";num-x-gridlines 900;curveColor
 "[flat::RGB:0x000000ff]";curveStyle "Line";rangeset"X";VCamFile
-'SUXMFM0S.xvz';valid_file "T";tempfilename
-'SUS73U17.wmf';tempfile-properties "XPR";}}The gray lines are given by%
+'TJXPJY3Y.xvz';valid_file "T";tempfilename
+'TJXPJN0Q.wmf';tempfile-properties "XPR";}}The gray lines are given by%
 \begin{equation*}
 \pm y_{\max }e^{-\frac{b}{2m}t}
 \end{equation*}%
@@ -2507,7 +2507,7 @@ part. It is marked in curly braces blow
 \begin{equation*}
 y\left( t\right) =\left\{ y_{\max }e^{-\frac{b}{2m}t}\right\} \cos \left(
 \left( \sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi
-_{o}\right)
+_{o}\right) 
 \end{equation*}%
 We know that the part of the equation that multiplies the cosine part is the
 amplitude. But now the amplitude is more than just $x_{\max }.$ And notice
@@ -2610,106 +2610,13 @@ When $\frac{b}{2\pi }\geq \omega _{o}$ the solution in equation (\ref%
 engineer you will find out more about this situation in your advanced
 mechanics classes.
 
-%TCIMACRO{%
-%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
-%BeginExpansion
-\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
-%EndExpansion
-
-Pendulum%
-\begin{equation*}
-\omega =\sqrt{\frac{g}{L}}
-\end{equation*}%
-\begin{equation*}
-\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
-\end{equation*}%
-\begin{equation}
-T=\frac{2\pi }{\omega }=2\pi \sqrt{\frac{L}{g}}
-\end{equation}
-
-Physical Pendulum
-
-\begin{equation}
-\omega =\sqrt{\frac{mgd}{\mathbb{I}}}
-\end{equation}
-
-\begin{equation*}
-\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
-\end{equation*}%
-\begin{equation}
-T=2\pi \sqrt{\frac{\mathbb{I}}{mgd}}
-\end{equation}
-
-Torsional Pendulum%
-\begin{equation}
-\omega =\sqrt{\frac{\kappa }{\mathbb{I}}}
-\end{equation}%
-\begin{equation*}
-\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
-\end{equation*}%
-\begin{equation}
-T=2\pi \sqrt{\frac{\mathbb{I}}{\kappa }}
-\end{equation}
-
-Damped Oscillation%
-\begin{equation*}
-y\left( t\right) =\left\{ y_{\max }e^{-\frac{b}{2m}t}\right\} \cos \left(
-\left( \sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi
-_{o}\right)
-\end{equation*}
-
-\begin{equation*}
-\omega =\sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}=0
-\end{equation*}%
-\begin{equation*}
-\omega _{N}=\sqrt{\frac{k}{m}}
-\end{equation*}%
-\begin{equation*}
-b_{c}=2m\omega _{N}
-\end{equation*}
-
-\chapter{4 Forced Oscillations and Waves 1.15.6}
+\section{Forced Oscillations}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Forces and Waves}}{\chaptermark{Forces and Waves}}}%
 %BeginExpansion
 \chaptermark{Forces and Waves}%
 %EndExpansion
-
-Last time we studied oscillation with mass-spring systems and pendula. In
-this lecture we will add in forces to make the oscillators start to move.
-Oscillation is a motion of a mass, but with another object (a spring or
-string) participating in the motion. The air in our classroom is an example
-of this type of motion in a way, but instead of one object on a spring,
-there are millions of objects, the air molecules. The molecules move
-randomly, but with a specific distribution of speeds. But what would happen
-if all the molecules moved together in the same direction (more or less) and
-at the same speed (more or less)? This is what we call wind! Of course we
-can have bulk motion of millions of objects, like wind. We are going to
-study an even more specific motion of millions of object that is not random
-like thermal motion. This specific motion of the objects moving together in
-an organized way we will call a \emph{wave.} Waves come from oscillation, so
-let's finish up our study of oscillation first.
-
-%TCIMACRO{%
-%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
-%BeginExpansion
-\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
-%EndExpansion
-
-\begin{enumerate}
-\item Forced Oscillations
-
-\item A wave requires a disturbance, and a medium that can transfer energy
-
-\item Waves are categorized as longitudinal or transverse (or a combination
-of the two).
-
-\item We use snapshot and history graphs to show the $x$ and $t$ dependence
-of waves.
-\end{enumerate}
-
-\section{Forced Oscillations}
 
 We found in the last section that if we added a force like
 
@@ -2839,6 +2746,119 @@ bridge materials broke. Resonance can be a bad thing for structures.
 
 We have learned a lot about oscillation. Now let's turn our attention to
 something that results from oscillation, waves.
+
+%TCIMACRO{%
+%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
+%BeginExpansion
+\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
+%EndExpansion
+
+Pendulum%
+\begin{equation*}
+\omega =\sqrt{\frac{g}{L}}
+\end{equation*}%
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+\begin{equation}
+T=\frac{2\pi }{\omega }=2\pi \sqrt{\frac{L}{g}}
+\end{equation}
+
+Physical Pendulum
+
+\begin{equation}
+\omega =\sqrt{\frac{mgd}{\mathbb{I}}}
+\end{equation}
+
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+\begin{equation}
+T=2\pi \sqrt{\frac{\mathbb{I}}{mgd}}
+\end{equation}
+
+Torsional Pendulum%
+\begin{equation}
+\omega =\sqrt{\frac{\kappa }{\mathbb{I}}}
+\end{equation}%
+\begin{equation*}
+\theta \left( t\right) =\theta _{\max }\cos \left( \omega t+\phi _{o}\right)
+\end{equation*}%
+\begin{equation}
+T=2\pi \sqrt{\frac{\mathbb{I}}{\kappa }}
+\end{equation}
+
+Damped Oscillation%
+\begin{equation*}
+y\left( t\right) =\left\{ y_{\max }e^{-\frac{b}{2m}t}\right\} \cos \left(
+\left( \sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}\right) t+\phi
+_{o}\right)
+\end{equation*}
+
+\begin{equation*}
+\omega =\sqrt{\frac{k}{m}-\left( \frac{b}{2m}\right) ^{2}}=0
+\end{equation*}%
+\begin{equation*}
+\omega _{N}=\sqrt{\frac{k}{m}}
+\end{equation*}%
+\begin{equation*}
+b_{c}=2m\omega _{N}
+\end{equation*}
+
+Forced Oscillation%
+\begin{equation*}
+x\left( t\right) =A\cos \left( \omega _{f}t+\phi \right) 
+\end{equation*}%
+\begin{equation*}
+A=\frac{\frac{F_{o}}{m}}{\sqrt{\left( \omega _{f}^{2}-\omega _{N}^{2}\right)
+^{2}+\left( \frac{b\omega _{f}}{m}\right) ^{2}}}
+\end{equation*}%
+\begin{equation}
+\omega _{N}=\sqrt{\frac{k}{m}}
+\end{equation}%
+\begin{equation}
+\mathcal{P}=-F_{o}\omega A\sin \left( \omega t\right) \sin \left( \omega
+t+\phi _{o}\right) 
+\end{equation}
+
+\chapter{4 Sinusoidal Waves in one and Two Dimensions 1.16.1, 1.16.2 1,16.3}
+
+%TCIMACRO{%
+%\TeXButton{\chaptermark{Sinusoidal Waves}}{\chaptermark{Sinusoidal Waves}}}%
+%BeginExpansion
+\chaptermark{Sinusoidal Waves}%
+%EndExpansion
+
+We now know what a wave is. And we have a way to categorize types of waves.
+But we need a mathematical description of waves so we can calculate
+predictions of how waves will behave. We will start building a mathematical
+model for waves in this lecture.
+
+%TCIMACRO{%
+%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
+%BeginExpansion
+\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
+%EndExpansion
+
+\begin{itemize}
+\item A wave requires a disturbance, and a medium that can transfer energy
+
+\item Waves are categorized as longitudinal or transverse (or a combination
+of the two).
+
+\item We use snapshot and history graphs to show the $x$ and $t$ dependence
+of waves.
+
+\item It takes two variables to describe a wave, position and time
+
+\item Wave graphs have many named parts, amplitude, period, wavelength
+crest, trough, etc.
+
+\item There is a spatial analog to temporal frequency called spacial
+frequency and it is represented by the factor $k$ in our equations
+
+\item Waves from point sources are spherical
+\end{itemize}
 
 \section{What is a Wave?}
 
@@ -3066,68 +3086,6 @@ must connect the points. This takes some thinking to make sure you connect
 them right (or a whole lot of points). But with practice, this is not hard
 and both view points are valuable ways to look at a wave.
 
-%TCIMACRO{%
-%\TeXButton{Basic Equations}{\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}}}%
-%BeginExpansion
-\vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
-%EndExpansion
-
-Forced Oscillation%
-\begin{equation*}
-x\left( t\right) =A\cos \left( \omega _{f}t+\phi \right)
-\end{equation*}%
-\begin{equation*}
-A=\frac{\frac{F_{o}}{m}}{\sqrt{\left( \omega _{f}^{2}-\omega _{N}^{2}\right)
-^{2}+\left( \frac{b\omega _{f}}{m}\right) ^{2}}}
-\end{equation*}%
-\begin{equation}
-\omega _{N}=\sqrt{\frac{k}{m}}
-\end{equation}%
-\begin{equation}
-\mathcal{P}=-F_{o}\omega A\sin \left( \omega t\right) \sin \left( \omega
-t+\phi _{o}\right)
-\end{equation}
-
-Speed of waves on strings
-
-\begin{equation*}
-v=\sqrt{\frac{T_{s}}{\mu }}
-\end{equation*}%
-\begin{equation*}
-\mu =\frac{m}{L}
-\end{equation*}
-
-\chapter{5 Sinusoidal Waves in one and Two Dimensions 1.16.2 1.16.3}
-
-%TCIMACRO{%
-%\TeXButton{\chaptermark{Sinusoidal Waves}}{\chaptermark{Sinusoidal Waves}}}%
-%BeginExpansion
-\chaptermark{Sinusoidal Waves}%
-%EndExpansion
-
-We now know what a wave is. And we have a way to categorize types of waves.
-But we need a mathematical description of waves so we can calculate
-predictions of how waves will behave. We will start building a mathematical
-model for waves in this lecture.
-
-%TCIMACRO{%
-%\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
-%BeginExpansion
-\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}%
-%EndExpansion
-
-\begin{itemize}
-\item It takes two variables to describe a wave, position and time
-
-\item Wave graphs have many named parts, amplitude, period, wavelength
-crest, trough, etc.
-
-\item There is a spatial analog to temporal frequency called spacial
-frequency and it is represented by the factor $k$ in our equations
-
-\item Waves from point sources are spherical
-\end{itemize}
-
 \section{Sinusoidal Waves}
 
 \FRAME{fhFU}{2.5873in}{2.1128in}{0pt}{\Qcb{{\protect\small Two snapshot
@@ -3237,7 +3195,7 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 "blue";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
 "Solid";var1range "0,10";num-x-gridlines 100;curveColor
 "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SUXMW10Y.xvz';valid_file "T";tempfilename
+'TJXPK440.xvz';valid_file "T";tempfilename
 'TDYTRM00.wmf';tempfile-properties "XPR";}}To make this graph, we set $t=0$
 and plotted the resulting function%
 \begin{equation}
@@ -3798,9 +3756,14 @@ waves must provide power. We will take up this topic in our next lecture.
 %BeginExpansion
 \vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
 %EndExpansion
-\begin{equation}
-v=\sqrt{\frac{T}{\mu }}
-\end{equation}
+Speed of waves on strings
+
+\begin{equation*}
+v=\sqrt{\frac{T_{s}}{\mu }}
+\end{equation*}%
+\begin{equation*}
+\mu =\frac{m}{L}
+\end{equation*}
 
 \begin{equation}
 y=y_{\max }\sin \left( kx-\omega t+\phi _{o}\right)
@@ -3827,7 +3790,7 @@ v=\lambda f
 \frac{d^{2}y}{dt^{2}}=v^{2}\frac{d^{2}y}{dx^{2}}
 \end{equation*}
 
-\chapter{6 Power and Superposition 6 1.16.4 1.16.5}
+\chapter{5 Power and Superposition 6 1.16.4 1.16.5}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Superposition}}{\chaptermark{Superposition}}}%
@@ -4793,7 +4756,7 @@ Constructive} \\
 3,\cdots \qquad \text{Destructive}
 \end{eqnarray*}
 
-\chapter{7 Standing Waves and Sound Waves 1.16.6, 1.17.1}
+\chapter{6 Standing Waves and Sound Waves 1.16.6, 1.17.1}
 
 So far we have only hinted about sound waves. In this lecture we will study
 them in more detail. But first let's consider what happens if we have two
@@ -5528,7 +5491,7 @@ s\left( x,t\right) =s_{\max }\cos \left( kx-\omega t\right)
 P=\frac{F}{A}
 \end{equation*}
 
-\chapter{8 Sound Wave Speed and Intensity 1.17.2, 1.17.3}
+\chapter{7 Sound Wave Speed and Intensity 1.17.2, 1.17.3}
 
 We know the basics of how a sound wave is formed. Now let's put this on a
 more mathematical footing.
@@ -6357,7 +6320,7 @@ v=v_{o}\sqrt{1+\frac{T_{c}}{T_{o}}}
 \left( \Delta P_{\max }\right) ^{2}
 \end{equation*}
 
-\chapter{9 Sound Standing Waves \ 1.17.4, 1.17.5}
+\chapter{8 Sound Standing Waves \ 1.17.4, 1.17.5}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Sound Standing Waves}}{\chaptermark{Sound Standing Waves}}}%
@@ -6964,7 +6927,7 @@ Standing waves, pipe closed on one end%
 f_{n}=n\frac{v}{4L}\qquad n=1,3,5\ldots
 \end{equation*}
 
-\chapter{10 Beats and Doppler Shift 1.17.6, 1.17.7}
+\chapter{9 Beats and Doppler Shift 1.17.6, 1.17.7}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Beats and Doppler}}{\chaptermark{Beats and Doppler}}}%
@@ -7544,7 +7507,7 @@ detector stationary in R frame}
 f_{wd}=\frac{v_{sound}\pm v_{dR}}{v_{sound}\mp v_{eR}}f_{we}
 \end{equation}
 
-\chapter{11 Shock waves and Non-Sinusoidal Waves 1.17.8}
+\chapter{10 Shock waves and Non-Sinusoidal Waves 1.17.8}
 
 %TCIMACRO{\TeXButton{\chaptermark{Shock Waves}}{\chaptermark{Shock Waves}}}%
 %BeginExpansion
@@ -8224,7 +8187,7 @@ M=\frac{v_{ed}}{v_{sound}}
 
 \part{Optics}
 
-\chapter{12 Nature of Light and Reflection 3.1.1, 3.1.2}
+\chapter{11 Nature of Light and Reflection 3.1.1, 3.1.2}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Light and Reflection}}{\chaptermark{Light and Reflection}}}%
@@ -8872,7 +8835,7 @@ c=299792458\frac{\unit{m}}{\unit{s}}
 \theta _{r}=\theta _{i}
 \end{equation*}
 
-\chapter{13 Refraction 3.1.3, 3.1.4}
+\chapter{12 Refraction 3.1.3, 3.1.4}
 
 %TCIMACRO{\TeXButton{\chaptermark{Refraction}}{\chaptermark{Refraction}}}%
 %BeginExpansion
@@ -9303,7 +9266,7 @@ n_{i}\sin \theta _{i}=n_{t}\sin \theta _{t}
 \theta _{c}\equiv \sin ^{-1}\left( \frac{1}{n}\right)
 \end{equation*}
 
-\chapter{14 Dispersion and Huygen's Principle 3.1.5 3.1.6}
+\chapter{13 Dispersion and Huygen's Principle 3.1.5 3.1.6}
 
 We have discovered some important things about how light travels through
 materials. But there is something we missed. It turns out the index of
@@ -9733,7 +9696,7 @@ TRUE;display "USEDEF";valid_file "T";width 2.4738in;height 2.19in;depth
 In our next lecture, we will continue to learn about light and we will think
 about how light forms images.
 
-\chapter{15 Polarization and Image formation 3.1.7, 3.2.1}
+\chapter{14 Polarization and Image formation 3.1.7, 3.2.1}
 
 Light is a transverse wave. And it turns out this matters! The direction the
 electric field is oscillating leads to what we call \emph{polarization} and
@@ -10311,7 +10274,7 @@ the time. But you probably own a phone, and your phone probably has a
 camera. Cameras also make images. We should work our way up to understanding
 how things like cameras work. We will start that in our next lecture.
 
-\chapter{16 Images formed by Curved Mirrors and by Refraction 3.2.2, 3.2.3}
+\chapter{15 Images formed by Curved Mirrors and by Refraction 3.2.2, 3.2.3}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Curved Mirrors}}{\chaptermark{Curved Mirrors}}}%
@@ -11091,7 +11054,7 @@ tells us there is a fish there, but the fish appears closer than it is. The
 light doesn't come from where we think the fish is. And as we know, this
 means the image is virtual, just like for flat mirrors!
 
-\chapter{17 Thin Lenses 3.2.4, 3.2.5}
+\chapter{16 Thin Lenses 3.2.4, 3.2.5}
 
 %TCIMACRO{\TeXButton{\chaptermark{Thin Lenses}}{\chaptermark{Thin Lenses}}}%
 %BeginExpansion
@@ -11825,7 +11788,7 @@ image will be upside down.
 We found the thin lens formula using converging lenses, but it works for
 diverging lenses as well, so long as the thin lens approximation is valid.
 
-\chapter{18 Eyes and Cameras 3.2.6, 3.2.7}
+\chapter{17 Eyes and Cameras 3.2.6, 3.2.7}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Cameras and Magnifiers}}{\chaptermark{Cameras and Magnifiers}}}%
@@ -12198,7 +12161,7 @@ This is part of what a good photographer does in taking a picture. The
 photographer will adjust the $f/\#$ and the exposure time and ISO to get a
 photograph that is not over exposed (too light) or underexposed (to dark).
 
-\chapter{19 Optical Systems 3.2.8, 3.3 1}
+\chapter{18 Optical Systems 3.2.8, 3.3 1}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Optical Systems}}{\chaptermark{Optical Systems}}}%
@@ -12902,7 +12865,7 @@ interference. But we know for waves constructive and destructive
 interference must happen. Let's go looking for interference for light waves
 next.
 
-\chapter{20 Double Slits 3.3.2, 3.3.3 \label{DoubleSlitMath}}
+\chapter{19 Double Slits 3.3.2, 3.3.3 \label{DoubleSlitMath}}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Double Slits}}{\chaptermark{Double Slits}}}%
@@ -13356,7 +13319,7 @@ are called \emph{diffraction patterns}.
 In our next lecture we see if we can find practical uses for light
 constructive and destructive interference.
 
-\chapter{21 Thin Films and Light Interference 3.3.4, 3.3.5}
+\chapter{20 Thin Films and Light Interference 3.3.4, 3.3.5}
 
 %TCIMACRO{\TeXButton{\chaptermark{Thin Films}}{\chaptermark{Thin Films}}}%
 %BeginExpansion
@@ -13951,7 +13914,7 @@ Notice that if the mirror is moved $\frac{\lambda }{2},$ the path distance
 changes by $\lambda $ because the light travels the distance to the mirror
 and then back from the mirror (it travels the path twice!).
 
-\chapter{22 Slit Intensity 3.4.1, 3.4.2}
+\chapter{21 Slit Intensity 3.4.1, 3.4.2}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Slit Intensity}}{\chaptermark{Slit Intensity}}}%
@@ -14672,7 +14635,7 @@ enough phasor fun for this class. You will see phasors again in Principles
 of Physics III and maybe again if you take Optics (or maybe for a career if
 you are an electrical engineer).
 
-\chapter{23 Double Slit and Grating intensity patterns 3.4.3, 3.4.4}
+\chapter{22 Double Slit and Grating intensity patterns 3.4.3, 3.4.4}
 
 In the last lecture, we found the diffraction pattern for a single slit
 opening. We used phasors to do this. In this lecture we want to do two or
@@ -15170,7 +15133,7 @@ light and even found some practical uses for it. But we still don't know how
 it affects our ability to make images. Let's take that on in our next
 lecture.
 
-\chapter{24 Resolution 3.4.5, 3.4.6, 3.4.7}
+\chapter{23 Resolution 3.4.5, 3.4.6, 3.4.7}
 
 %TCIMACRO{\TeXButton{\chaptermark{Resolution}}{\chaptermark{Resolution}}}%
 %BeginExpansion
@@ -16013,7 +15976,7 @@ take on this kind of motion next in this course.
 
 \part{Thermodynamics}
 
-\chapter{25 Fluids and Pressure 1.14.1, 1.14.2}
+\chapter{24 Fluids and Pressure 1.14.1, 1.14.2}
 
 We have spent about 2/3 of a semester studying waves. Waves are very regular
 motion of more than one object. But surely we can have less regular motion
@@ -16902,7 +16865,7 @@ These are just two of many types of pressure measuring devices. In the next
 lecture we will use what we know of pressure to design some useful devices
 like hydraulic jacks and things that float (like boats).
 
-\chapter{26 Pascal and Archimedes 1.14.3, 1.14.4}
+\chapter{25 Pascal and Archimedes 1.14.3, 1.14.4}
 
 So now we know how pressure changes with depth, and we know that liquids are
 generally hard to compress, so we can approximate them as incompressible,
@@ -17600,7 +17563,7 @@ found we could use energy to solve motion problems. In our next lecture,
 let's try to bring the powerful technique of conservation of energy into our
 study of fluid flow.
 
-\chapter{27 Conservation of Energy for Fluid Flow 1.14.5, 1.14.6, 1.14.7}
+\chapter{26 Conservation of Energy for Fluid Flow 1.14.5, 1.14.6, 1.14.7}
 
 %TCIMACRO{%
 %\TeXButton{\chaptermark{Energy in Fluids}}{\chaptermark{Energy in Fluids}}}%
@@ -18309,7 +18272,7 @@ comfort because we know something about how to use energy to solve problems.
 The study of this internal energy is what we will take on next. We will call
 this the thermodynamics of the fluid!
 
-\chapter{28 Temperature 2.1.1, 2.1.2, and 2.1.3}
+\chapter{27 Temperature 2.1.1, 2.1.2, and 2.1.3}
 
 Last lecture we reviewed some basics of how materials are made and how
 chemists and physicists and material scientists determine how many moving
@@ -19196,7 +19159,7 @@ it be that temperature has to do with exchanging energy?
 }%
 %EndExpansion
 
-\chapter{29 Thermal Properties of Matter 2.1.4, 2.1.5}
+\chapter{28 Thermal Properties of Matter 2.1.4, 2.1.5}
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 30}}{\chaptermark{Chapter 30}}}%
 %BeginExpansion
@@ -20168,7 +20131,7 @@ said gasses will be more difficult. We will take up the relationship between
 energy transfer by heat and the change in temperature for gasses in our next
 lecture.
 
-\chapter{30 Heat Transfer and Gas Laws 2.1.6, 2.2.1}
+\chapter{29 Heat Transfer and Gas Laws 2.1.6, 2.2.1}
 
 Now that we understand heat as a transfer of energy, we should look at how
 we can move energy around. We will study this in this lecture. We will also
@@ -20959,7 +20922,7 @@ our Van der Waals equation, but that is a subject for those upper division
 classes in thermodynamics. For this class, let's concentrate on the ideal
 gas equation even though we know it has some limitations.
 
-\chapter{31 Kinetic Theory of Gases 2.2.2, 2.2.3}
+\chapter{30 Kinetic Theory of Gases 2.2.2, 2.2.3}
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 32}}{\chaptermark{Chapter 32}}}%
 %BeginExpansion
@@ -21859,7 +21822,7 @@ for the case of no volume change. This seems useful!
 You might find the restriction of heating at a constant volume somewhat
 constrictive. We will lift this restriction in a later lecture.
 
-\chapter{32 Speeds and Systems 2.2.4, 2.3.1}
+\chapter{31 Speeds and Systems 2.2.4, 2.3.1}
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 33}}{\chaptermark{Chapter 33}}}%
 %BeginExpansion
@@ -22707,7 +22670,7 @@ for a system and see how to find the state variables for different
 thermodynamic processes. Let's start this by looking at some special ways to
 change thermodynamic systems.
 
-\chapter{33 First Law and Work 2.3.2, 2.3.3}
+\chapter{32 First Law and Work 2.3.2, 2.3.3}
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 34}}{\chaptermark{Chapter 34}}}%
 %BeginExpansion
@@ -23791,7 +23754,7 @@ process and for filling in our first law equation
 \end{equation*}%
 We will work with this some more in our next lecture.
 
-\chapter{34 Thermodynamic Processes 2.3.4, 2.3.5}
+\chapter{33 Thermodynamic Processes 2.3.4, 2.3.5}
 
 We found in our last lecture that the first law of thermodynamics gives us
 the change in internal energy 
@@ -24659,7 +24622,7 @@ This completes three of our four special processes!
 
 We have one more to go.
 
-\chapter{35 Adiabatic Processes and 2nd Law 2.3.6, 2.4.1}
+\chapter{34 Adiabatic Processes and 2nd Law 2.3.6, 2.4.1}
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 36}}{\chaptermark{Chapter 36}}}%
 %BeginExpansion
@@ -26062,7 +26025,7 @@ by using our extended $C_{%
 }$ and $C_{P}$ values to get an extended $\gamma $ that includes vibration
 and rotation of the diatomic molecules.
 
-\chapter{36 Producing Useful Work 2.4.2, 2.4.3}
+\chapter{35 Producing Useful Work 2.4.2, 2.4.3}
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 38}}{\chaptermark{Chapter 38}}}%
 %BeginExpansion
@@ -26605,7 +26568,7 @@ Now we know a about heat engines, we should look at how a more realistic
 heat engine works. In our next lecture we will take on an engine like you
 might find on a lawnmower or a go-cart.
 
-\chapter{37 Carnot, the Limit of Efficiency for Heat Engines 2.4.4, 2.4.5}
+\chapter{36 Carnot, the Limit of Efficiency for Heat Engines 2.4.4, 2.4.5}
 
 Last lecture we studied a somewhat realistic heat engine. We found we got
 something like a $56.5\%$ efficiency. But is this really realistic? Could
@@ -28739,7 +28702,7 @@ letting the pressure drop quickly. \FRAME{dtbpF}{3.0891in}{2.5927in}{0pt}{}{%
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.0891in;height 2.5927in;depth 0pt;original-width 3.6123in;original-height
 3.0268in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'TJXN1F0H.wmf';tempfile-properties "XPR";}}Since this happens quickly, the
+'TJXPL40R.wmf';tempfile-properties "XPR";}}Since this happens quickly, the
 piston does not have time to change position, so the volume does not change.
 Process $DA$ is (almost) isochoric. We already know $P_{A},$ $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -28794,7 +28757,7 @@ process (and neither is process }$I\rightarrow A$\textbf{)}\FRAME{dhF}{%
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "T";width 3.2569in;height 2.8323in;depth 0pt;original-width
 3.2119in;original-height 2.789in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'TJXN1F0I.wmf';tempfile-properties "XPR";}}
+"1";cropbottom "0";tempfilename 'TJXPL40S.wmf';tempfile-properties "XPR";}}
 
 But we are not done. The opening of the valve let the spent fuel begin to
 leave as exhaust. But we can help remove the exhaust by pushing the piston
@@ -29008,7 +28971,7 @@ $\allowbreak $\FRAME{dhF}{3.0606in}{3.2932in}{0pt}{}{}{Figure}{\special%
 TRUE;display "USEDEF";valid_file "T";width 3.0606in;height 3.2932in;depth
 0pt;original-width 3.0173in;original-height 3.2474in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'TJXN1F0J.wmf';tempfile-properties "XPR";}}Now the exhaust valve closes, and
+'TJXPL40T.wmf';tempfile-properties "XPR";}}Now the exhaust valve closes, and
 the intake valve opens. The new fuel mixture is brought in. We essentially
 reverse process $AI$ in process $IA.$ 
 \begin{equation*}
@@ -29051,7 +29014,7 @@ graph may not be right because $n$ changed too.\FRAME{dtbpF}{3.4895in}{%
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.4895in;height 2.4751in;depth 0in;original-width 3.4437in;original-height
 2.4336in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'TJXN1F0K.wmf';tempfile-properties "XPR";}}
+'TJXPL40U.wmf';tempfile-properties "XPR";}}
 
 Let's summarize what we found in large tables. First the ideal gas state
 variables and $E_{int}$
@@ -29120,7 +29083,7 @@ work is the difference between the work done in the two adiabatic processes.
 "USEDEF";valid_file "T";width 4.6172in;height 3.6927in;depth
 0pt;original-width 4.5653in;original-height 3.6452in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'TJXN1F0L.wmf';tempfile-properties "XPR";}}We can see that it takes some
+'TJXPL40V.wmf';tempfile-properties "XPR";}}We can see that it takes some
 work to make process $AB$ happen. And recall that that is why we need a
 starter motor or a pull cord to get our engine started. Once the engine gets
 going the momentum from the piston and crank shaft keep the engine running.
@@ -29206,7 +29169,7 @@ with the feeling that we really didn't determine what the second law meant
 by looking at the physics of what is happening to our gas, you were right.
 Let's take that on in our last lecture.
 
-\chapter{39 Microscopic Energy Transfer Considerations 2.4.6, 2.4.7}
+\chapter{38 Microscopic Energy Transfer Considerations 2.4.6, 2.4.7}
 
 So far, our statements of the second law of thermodynamics have been very
 practical. They tell us what will and what won't happen. Like we won't be
