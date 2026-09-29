@@ -11,7 +11,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Tuesday, September 22, 2026 11:16:46}
+%TCIDATA{LastRevised=Tuesday, September 29, 2026 11:16:24}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
@@ -4652,9 +4652,9 @@ Then for $y_{1}$ we have
 
 \begin{eqnarray*}
 y_{1} &=&\left( 1\right) \sin \left( \frac{2\pi }{\lambda }x-\left( 1\right)
-t\right)  \\
-&=&\sin \left( \frac{2\pi }{2}x-\left( 1\right) t\right)  \\
-&=&\sin \left( \pi x-t\right) 
+t\right) \\
+&=&\sin \left( \frac{2\pi }{2}x-\left( 1\right) t\right) \\
+&=&\sin \left( \pi x-t\right)
 \end{eqnarray*}%
 And here is a plot of the wave function, $y_{1}$ \FRAME{dtbpF}{2.2441in}{%
 1.4963in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
@@ -4666,8 +4666,8 @@ And here is a plot of the wave function, $y_{1}$ \FRAME{dtbpF}{2.2441in}{%
 Now let's consider $y_{2.}$ Using the values we chose, $y_{2}$ can be
 written as%
 \begin{eqnarray*}
-y_{2} &=&y_{\max }\sin \left( kx-\omega t+\phi _{o}\right)  \\
-&=&\sin \left( \pi x-t+\frac{\pi }{6}\right) 
+y_{2} &=&y_{\max }\sin \left( kx-\omega t+\phi _{o}\right) \\
+&=&\sin \left( \pi x-t+\frac{\pi }{6}\right)
 \end{eqnarray*}%
 which looks like this\FRAME{dtbpF}{2.1784in}{1.4458in}{0pt}{}{}{Figure}{%
 \special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
@@ -4678,12 +4678,12 @@ TRUE;display "USEDEF";valid_file "T";width 2.1784in;height 1.4458in;depth
 these waves using superposition? Symbolically we have%
 \begin{equation}
 y_{r}=y_{\max }\sin \left( kx-\omega t\right) +y_{\max }\sin \left(
-kx-\omega t+\phi _{o}\right)   \label{Superposition basic}
+kx-\omega t+\phi _{o}\right)  \label{Superposition basic}
 \end{equation}
 
 and putting in the numbers gives%
 \begin{equation*}
-y_{r}=\sin \left( \pi x-t\right) +\sin \left( \pi x-t+\frac{\pi }{6}\right) 
+y_{r}=\sin \left( \pi x-t\right) +\sin \left( \pi x-t+\frac{\pi }{6}\right)
 \end{equation*}%
 which is shown in the next graph.\FRAME{dtbpF}{2.1279in}{1.4227in}{0pt}{}{}{%
 Figure}{\special{language "Scientific Word";type
@@ -4729,7 +4729,7 @@ shifted by $\phi _{o}/2$ or half the phase shift of $y_{2}.$
 
 Now let's look at other factor%
 \begin{equation}
-2y_{\max }\cos \left( \frac{\phi _{o}}{2}\right) 
+2y_{\max }\cos \left( \frac{\phi _{o}}{2}\right)
 \end{equation}%
 The sine part of our wave equation is multiplied by all of this factor. So
 all of this part is the new amplitude. And this complicated amplitude has a
@@ -4749,7 +4749,7 @@ when $\phi _{o}=\pi $ we have a zero amplitude. And these are our
 constructive and destructive interference! Here is our wave for several
 choices of $\phi _{o}.$ We can see that along with total constructive and
 destructive interference we can also have partial constructive and partial
-destructive interference. 
+destructive interference.
 
 \FRAME{dtbpF}{3.2623in}{1.2409in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -4860,11 +4860,11 @@ these are called \emph{antinodes}. But notice that if $n=2$ then $x=\frac{%
 here. Let's try $n=3.$ Then $x=\frac{3\lambda }{4}$ and that works. To solve
 this issue we can say we will only allow odd values of $n.$ 
 \begin{equation*}
-n=1,3,5,\cdots 
+n=1,3,5,\cdots
 \end{equation*}%
 Then we get antinodes when 
 \begin{equation*}
-x=n\frac{\lambda }{4}\text{\qquad }n=1,3,5,\cdots 
+x=n\frac{\lambda }{4}\text{\qquad }n=1,3,5,\cdots
 \end{equation*}%
 We can also create standing waves with sound or even light waves!
 
@@ -4895,7 +4895,7 @@ We find which normal modes are allowed by first imposing the boundary
 condition that each end must be a node (think of the musical instrument
 figure). We start with 
 \begin{equation*}
-y=2y_{\max }\sin \left( kx\right) \cos \left( \omega t\right) 
+y=2y_{\max }\sin \left( kx\right) \cos \left( \omega t\right)
 \end{equation*}%
 and realize we have two boundary conditions. $y\left( 0,t\right) =0$ and and 
 $y\left( L,t\right) =0$ because at these locations the string is attached to
@@ -4910,16 +4910,16 @@ x=0
 \end{equation*}%
 and for the second $y=0$ when $x=L.$ That happens when%
 \begin{equation*}
-kL=n\pi 
+kL=n\pi
 \end{equation*}%
 I will write this as%
 \begin{equation*}
-k_{n}L=n\pi 
+k_{n}L=n\pi
 \end{equation*}%
 to indicate there are many values of $k$ that can work. Solving this for $%
 \lambda _{n}$ gives%
 \begin{eqnarray*}
-\frac{2\pi }{\lambda _{n}}L &=&n\pi  \\
+\frac{2\pi }{\lambda _{n}}L &=&n\pi \\
 \frac{2L}{n} &=&\lambda _{n}
 \end{eqnarray*}%
 Which just says there are many wavelengths that will work. Let's see how to
@@ -4946,7 +4946,7 @@ and so forth to give%
 
 We use our old friend, the equation for wave speed,%
 \begin{equation*}
-v=f\lambda 
+v=f\lambda
 \end{equation*}%
 to find the frequencies of the normal modes%
 \begin{equation*}
@@ -5086,7 +5086,7 @@ P=\frac{F}{A}
 But in a fluid like air, what is the force? Lets consider a ball hitting a
 wall. Is there a force? During the collision, there is a force of the ball
 on the wall, and a Newton's third law force of the wall molecules pushing
-back on the ball. The ball will bounce back. 
+back on the ball. The ball will bounce back.
 
 This force is small and only lasts during the collision. But now suppose we
 have many balls, and all the balls impact the wall. Further suppose that
@@ -5273,16 +5273,17 @@ tension force). We write the stress as
 \begin{equation}
 \frac{F}{A}
 \end{equation}%
-which looks like a pressure, but this time we mean that we are pulling on
-the beam so that the pull is spread over the cross sectional area (marked $A$
-in the figure above). You can think of the beam as having many slightly
-stretchy bonds between molecules across the whole cross sectional area of
-the beam. All of them contribute making the bar hard to stretch. That is not
-much like a pressure!
+which looks like a pressure (think of tire pressure in pounds force per
+square inch or in Pascals which are $\unit{N}/\unit{m}^{2}$), but this time
+we mean that we are pulling on the beam so that the pull is spread over the
+cross sectional area (marked $A$ in the figure above). You can think of the
+beam as having many slightly stretchy bonds between molecules across the
+whole cross sectional area of the beam. All of them contribute making the
+bar hard to stretch. That is not much like a pressure!
 
 But by pulling on the beam, the beam will stretch a little. That stretching
-is a strain. We write the strain as the percent change in shape. In this
-case, the percent change in length%
+is a \emph{strain}. We write the strain as the percent change in shape. In
+this case, the percent change in length%
 \begin{equation}
 \frac{\Delta L}{L_{o}}
 \end{equation}%
@@ -5302,9 +5303,9 @@ it looks very much like Hook's law. Our restoring force or our
 \textquotedblleft pull\textquotedblright\ is the rod pulling back with a
 force like $F=-k\left( x-x_{o}\right) .$
 
-Young's modulus depends on the microscopic properties of the solid (which we
+Young's modulus depends on the microscopic properties of the solid, which we
 will not study in detail, but these are our stretchy/squishy forces between
-atoms that make normal and tension forces). We will look up Young's modulus
+atoms that make normal and tension forces. We will look up Young's modulus
 for each material in tables like the following:\smallskip 
 \begin{equation*}
 \begin{tabular}{|l|l|}
@@ -5395,22 +5396,28 @@ m}^{2}\right) }= \\
 \end{eqnarray*}%
 so the wire stretched about a quarter of a centimeter.
 
-Now that we remember what a modulus is, let's consider the speed of sound
-waves in our bar of metal. This is going to be different than our speed of
-sound in air. In air the molecules have to travel and crash into each other
-to make a sound wave, but in our bar the molecules are bound together. They
-can't move. We might guess that this will speed up the sound because there
-is no travel time for the medium pieces. And we might guess that the springy
-bonding forces would be what transfers energy in the medium. But what is our
-speed of sound?
+If we were really going to design pianos or guitars or some other stringed
+instrument we would need to take into account this stretch. It changes the
+linear mass density a little bit, and that would change the musical note we
+hear!
+
+Let's consider the speed of sound waves in a bar of metal. This is going to
+be different than our speed of sound in air. In air the molecules have to
+travel and crash into each other to make a sound wave, but in our bar the
+molecules are bound together. They can't move very much. We might guess that
+this will speed up the sound because there is no travel time for the medium
+pieces. And we might guess that the springy bonding forces would be what
+transfers energy in the medium. But what is our speed of sound?
 
 Say, we hit the bar with a hammer. Sound waves would be created in the bar.
-But suppose we make our bar thin and stretch it across a guitar. Now as we
-hit the string we expect a wave. And that wave will have a wave speed. And
-we know that wave speeds are related to the measure of the elasticity of the
-metal and the measure of the inertial of the metal material. The tension in
-the (now) wire would be our force, but we now know how to express this force
-in terms of the elasticity of the wire material. We can start with 
+But suppose we make our bar thin and stretch it across a guitar. Now it is
+easy to see that there will be a wave, because we know strings and springs
+and even wires can have waves. Our steel bar is just a fat wire! As we hit
+the bar we expect a wave. And that wave will have a wave speed. And we know
+that wave speeds are related to the measure of the elasticity of the metal
+and the measure of the inertia of the metal material. The tension in the bar
+would be our force, but we now know how to express this force in terms of
+the elasticity of the bar material. We can start with 
 \begin{equation*}
 \frac{F}{A}=Y\frac{\Delta L}{L_{o}}
 \end{equation*}%
@@ -5423,13 +5430,14 @@ then%
 T=Y\frac{\Delta L}{L_{o}}A
 \end{equation*}%
 Now let's think back to Newton's second law. but this time for just a small
-piece of the wire that has a mass of $dm$ and a length of $dx.$ \FRAME{dtbpF%
-}{5.0398in}{1.334in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 5.0398in;height 1.334in;depth 0pt;original-width
-5.1081in;original-height 1.3305in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'TEBZJK05.wmf';tempfile-properties "XPR";}}%
-Then the net force on this small piece of the wire would be
+piece of the bar (or wire) that has a mass of $dm$ and a length of $dx.$ 
+\FRAME{dtbpF}{5.0398in}{1.334in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 5.0398in;height 1.334in;depth
+0pt;original-width 5.1081in;original-height 1.3305in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TEBZJK05.wmf';tempfile-properties "XPR";}}Then the net force on this small
+piece of the bar would be
 
 \FRAME{dtbpF}{1.6906in}{0.4364in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -5440,30 +5448,31 @@ Then the net force on this small piece of the wire would be
 \begin{equation*}
 F_{net}=T_{r}-T_{\ell }=\Delta T
 \end{equation*}%
-and we want to look at the tensions on either side of our little piece of
-wire. Let's use the letter $ds$ for the stretch of the small segment of
-wire. It's a very small $\Delta L.$ Then we don't have 
+And we want to look at the tensions on either side of our little piece of
+bar. Let's use the letter $ds$ for the stretch of the small segment of bar.
+It's a very small $\Delta L.$ Then we don't have 
 \begin{equation*}
 T=Y\frac{\Delta L}{L_{o}}A
 \end{equation*}%
-for the whole wire, we just have a tension 
+for the whole bar, we just have a tension 
 \begin{equation*}
 T=Y\frac{ds}{dx}A
 \end{equation*}%
-for our little piece of the wire. But in our Newton's second law equation we
+for our little piece of the bar. But in our Newton's second law equation we
 have $\Delta T,$ the tension difference between the two sides of our bit of
-wire. That tension difference is causing the stretch, $ds.$ Because our bit
-of wire is so small we could write this as $dT.$ And from our last equation
-we could find $dT/dx$ to find $dT$%
+the bar. That tension difference is causing the stretch, $ds.$ If we don't
+pull too hard, the tension difference between the two sides is small and we
+could write it as $dT.$ From our last equation we could find $dT/dx$ to find 
+$dT$%
 \begin{equation*}
 \frac{d}{dx}T=\frac{d}{dx}\left( Y\frac{ds}{dx}A\right) =YA\frac{d^{2}s}{%
 dx^{2}}
 \end{equation*}%
-so 
+so a small bit of this tension would be 
 \begin{equation*}
 dT=YA\frac{d^{2}s}{dx^{2}}dx
 \end{equation*}%
-Now our $F_{net}=ma$ for our little bit of wire would be 
+Now our $F_{net}=ma$ for our little bit of bar (or wire) would be 
 \begin{equation*}
 F_{net}=\left( dm\right) \left( \frac{d^{2}s}{dt^{2}}\right)
 \end{equation*}%
@@ -5481,7 +5490,7 @@ where $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-$ is the volume. We want the density of our little bit of wire%
+$ is the volume. We want the density of our little bit of bar%
 \begin{equation*}
 \rho =\frac{dm}{Adx}
 \end{equation*}%
@@ -5494,13 +5503,13 @@ because $%
 \begin{equation*}
 dm=\rho Adx
 \end{equation*}%
-then the net force on our little bit of wire is 
+Then, the net force on our little bit of bar is 
 \begin{equation*}
 F_{net}=\rho Adx\frac{d^{2}s}{dt^{2}}
 \end{equation*}%
 And we can put all of this into our Newton's second law equation. Start with 
 \begin{equation*}
-F_{net}=T_{r}-T_{\ell }=\Delta T
+F_{net}=T_{r}-T_{\ell }=dT
 \end{equation*}%
 and substitute to get%
 \begin{equation*}
@@ -5519,7 +5528,7 @@ and now all we have to do is to compare this to our linear wave equation.%
 \frac{d^{2}y}{dt^{2}}=v^{2}\frac{d^{2}y}{dx^{2}}
 \end{equation*}%
 In our new equation there is a $Y/\rho $ where the $v^{2}$ should be. This
-means for our wire to have a wave on it, the wave speed must be 
+means, for our wire to have a wave on it, the wave speed must be 
 \begin{equation*}
 v=\sqrt{\frac{Y}{\rho }}
 \end{equation*}%
@@ -5598,7 +5607,8 @@ Air$^{\ddag }$ & $1.01\times 10^{5}$ \\ \hline
 \QQfntext{0}{$\ddag $Average values from numbers given in various text
 books. These numbers should be taken as example values and more exact
 numbers found for any real work.}
-\end{equation*}%
+\end{equation*}
+
 The minus sign may be surprising. But in our definition of bulk modulus, we
 are thinking of compression. And under compression $\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -5649,7 +5659,7 @@ Now
 \begin{equation*}
 F_{net}=ma=\left( dm\right) a
 \end{equation*}%
-for our small a parcel of air. Then our Newton's second law equation is 
+for our small parcel of air. Then our Newton's second law equation is 
 \begin{equation*}
 \left( dm\right) a=PA-\left( P+dP\right) A=-AdP
 \end{equation*}%
@@ -5668,7 +5678,7 @@ Let's look at our stress-strain equation for pressure stress again
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}
+}  \label{Bulk_modulus_equation}
 \end{equation}%
 We need $dP.$ But from what did we in the last problem it seems like for 
 \begin{equation*}
@@ -5677,20 +5687,23 @@ We need $dP.$ But from what did we in the last problem it seems like for
 because with our funny notation $\Delta P$ is our how much the pressure is
 different from atmospheric pressure and not the change from left to right.
 The notation is awkward, but this gives 
-\begin{equation*}
-dP=\frac{d}{dx}\left( \Delta P\right) dx
-\end{equation*}
+\begin{equation}
+dP=\frac{d}{dx}\left( \Delta P\right) dx  \label{Differential_pressure}
+\end{equation}
 
 We could use $s$ again for the strain variable, only this time instead of
-the stretch amount it is the squish amount So 
+the stretch amount it is the squish amount. For a fairly small squish, $A,$
+the surface area won't change much but the parcel will shrink inward a small
+amount. We could call this inward shrink distance $ds$ so the change in
+volume is about 
 \begin{equation*}
 \Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-=Ads
-\end{equation*}
+\approx Ads
+\end{equation*}%
 and the original volume of our parcel is 
 \begin{equation*}
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -5699,11 +5712,11 @@ and the original volume of our parcel is
 %EndExpansion
 =Adx
 \end{equation*}%
-so our pressure equation is 
+so our pressure equation (\ref{Bulk_modulus_equation}) is 
 \begin{equation}
 \Delta P=-B\frac{Ads}{Adx}=-B\frac{ds}{dx}
 \end{equation}%
-and we can put this into our equation for $dP$%
+and we can put this into our equation (\ref{Differential_pressure}) for $dP$%
 \begin{eqnarray*}
 dP &=&\frac{d}{dx}\left( \Delta P\right) dx \\
 &=&\frac{d}{dx}\left( -B\frac{ds}{dx}\right) dx \\
@@ -5715,8 +5728,8 @@ adm &=&-AdP \\
 adm &=&-A\left( -B\left( \frac{d^{2}s}{dx^{2}}\right) dx\right) \\
 adm &=&AB\left( \frac{d^{2}s}{dx^{2}}\right) dx
 \end{eqnarray*}%
-But we can do more. Last time for the wire we used density. Let's do that
-again four our parcel of air.
+But we can do more. Last time for the bar/wire we used density. Let's do
+that again four our parcel of air.
 
 \begin{equation*}
 dm=\rho Adx
@@ -5807,14 +5820,15 @@ molecules move from equilibrium. So the displacement from equilibrium $%
 s\left( x\right) $ for the air molecules might be different as the air moves
 to location $x+\Delta x.$ The next figure tries to show this.
 
-\FRAME{dtbpF}{3.7608in}{2.5448in}{0in}{}{}{Figure}{\special{language
+\FRAME{dtbpF}{3.7608in}{2.5448in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
 "USEDEF";valid_file "T";width 3.7608in;height 2.5448in;depth
-0in;original-width 3.8034in;original-height 2.5643in;cropleft "0";croptop
+0pt;original-width 3.8034in;original-height 2.5643in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SV8RA302.wmf';tempfile-properties "XPR";}}Let's look at the stretch of the
-parcel of air for a moment. Let's take the before size of the parcel of air
-and compare it to the stretched parcel size.
+parcel of air for a moment. Let's take the\textquotedblleft
+before\textquotedblright\ size of the parcel of air and compare it to the
+extra \textquotedblleft stretched\textquotedblright\ parcel size.
 
 \FRAME{dtbpF}{3.0938in}{3.2889in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -5849,7 +5863,7 @@ The fractional change in volume is defined as
 %EndExpansion
 }
 \end{equation*}%
-and we can see that this will be 
+And we can see that this will be 
 \begin{equation*}
 \frac{\Delta 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -5933,7 +5947,7 @@ derivative.%
 v\left( x,t\right) =\frac{ds}{dx}=-ks_{\max }\cos \left( kx-\omega t+\phi
 _{o}\right)
 \end{equation*}%
-then 
+Then 
 \begin{equation*}
 \Delta P=-B\frac{ds}{dx}=Bks_{\max }\cos \left( kx-\omega t+\phi _{o}\right)
 \end{equation*}%
@@ -6019,6 +6033,9 @@ you will need to know this as well.
 \vspace{0.5in}\hspace{-1.3in}{\LARGE Basic Equations\vspace{0.25in}}%
 %EndExpansion
 \begin{equation*}
+\frac{F}{A}=Y\frac{\Delta L}{L_{o}}
+\end{equation*}%
+\begin{equation*}
 v=\sqrt{\frac{B}{\rho }}
 \end{equation*}%
 \begin{equation}
@@ -6044,15 +6061,14 @@ v=v_{o}\sqrt{1+\frac{T_{c}}{T_{o}}}
 \chaptermark{Sound Standing Waves}%
 %EndExpansion
 
-We now have sound waves and know a little bit about how these sound waves
-act. And we know these waves deliver energy and we can even describe the
-intensity of the sound waves. But it turns out our design engineer used a
-clever trick in making our auditory system. He wanted us to hear the gentle
-sigh of a breeze, and the thunderous roar of a jet engine and every
-intensity in between. To make this happen, He made our hearing logarithmic!
-We will see how this works in this lecture. We will also look at standing
-waves in sound (and even light) and relate them to musical instruments and
-structures.
+We now know a little bit about how sound waves act. And we know these waves
+deliver energy and we can even describe the intensity of the sound waves.
+But it turns out our design engineer used a clever trick in making our
+auditory system. He wanted us to hear the gentle sigh of a breeze, and the
+thunderous roar of a jet engine and every intensity in between. To make this
+happen, He made our hearing logarithmic! We will see how this works in this
+lecture. We will also look at standing waves in sound (and even light) and
+relate them to musical instruments and structures.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -6149,10 +6165,12 @@ hearing starts. Measured this way, we say that intensity is in units of
 decibels (dB). The decibel, is useful because it can describe a non-linear
 response in a linear way that is easy to match to our human experience. But
 it is tricky because, like radians, it is dimensionless because we are
-comparing two intensities $\left( I/I_{o}\right) .$ We expect the same
-strange unit behavior with dB that we see with radians.
+comparing two intensities (think, in the $I/I_{o}$ part all the units
+canceled!). We expect the same strange unit behavior with dB that we see
+with radians.
 
-Suppose we double the intensity by a factor of $2.$%
+Suppose we start with the quietist thing humans can hear, then double the
+intensity by a factor of $2.$%
 \begin{eqnarray*}
 \beta &=&10\log _{10}\left( \frac{2I_{o}}{I_{o}}\right) \\
 &=&10\log _{10}2 \\
@@ -6163,7 +6181,7 @@ notice that we had to supply the $dB$ ourselves, it didn't appear in the
 math). It is a tiny increase. This is what we hear. A good rule to remember
 is that $3dB$ corresponds to a doubling of the intensity.
 
-The table that follows give some common sounds in units of dB. Just for
+The table that follows give some common sounds in units of $dB$. Just for
 reference, I have measured a Guns n Roses concert at $120$ dB outside the
 stadium.
 
@@ -6195,8 +6213,8 @@ interference. We should be able to make sound standing waves.
 Let's take a pipe as shown in the next figures. The pipe will control the
 direction of the sound wave. The sound wave will (mostly) go down the pipe.
 But will there be a reflection at the end of the pipe like there was for the
-string? It turns out that there will be a reflection! Let's consider our
-sound wave as a change in pressure to see why.
+string? It turns out that there \emph{will} be a reflection! Let's consider
+our sound wave as a change in pressure to see why.
 
 For the string wave, we had a reflected pulse because the person (or guitar
 bridge, or whatever is holding the string end) exerted a force on the
@@ -6315,40 +6333,10 @@ string! Pipes \emph{can} make a harmonic series!
 
 \section{Pipes closed on one end}
 
-%TCIMACRO{%
-%\TeXButton{Boom Whacker Demo}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Boom Whacker Demo}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Boom Whacker Demo}
-\end{minipage}
-}%
-%EndExpansion
 But what happens if we put a cap on one end of the pipe? The air molecules
 cannot move longitudinally once they hit the cap. And where the molecules
 don't move, that is a node. So our capped end must be a displacement node.
 
-%TCIMACRO{%
-%\TeXButton{Question 123.24.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.24.2}
-%\end{minipage}
-%}} }%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.24.2}
-\end{minipage}
-}
-%EndExpansion
 The open end is still a displacement antinode. Our standing wave will have a
 node on the capped side, and an anti-node on the open side. It might look
 like this \FRAME{dhF}{4.3474in}{2.8876in}{0pt}{}{}{Figure}{\special{language
@@ -6423,21 +6411,6 @@ Example: organ pipe
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V3E.wmf';tempfile-properties "XPR";}}
 
-%TCIMACRO{%
-%\TeXButton{Organ Pipe Demo}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Organ Pipe Demo}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Organ Pipe Demo}
-\end{minipage}
-}%
-%EndExpansion
 The organ pipe shown is closed at one end so we expect%
 \begin{equation}
 f_{n}=n\frac{v}{4L}\qquad n=1,3,5\ldots
@@ -6510,37 +6483,6 @@ that makes the standing wave. Usually lasers produce a series of light
 standing waves just like sound and strings. But our eyes can't see the other
 standing wave frequencies, so we just see one.
 
-%TCIMACRO{%
-%\TeXButton{Question 123.24.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.24.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.24.3}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.24.4}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.24.4}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.24.4}
-\end{minipage}
-}%
-%EndExpansion
-
 \section{Standing Waves in Rods and Membranes}
 
 We have hinted all chapter that the analysis techniques we were building
@@ -6576,7 +6518,7 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 x\right) $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 2;lineAttributes "Solid";var1range "-1.5708,1.5708";num-x-gridlines
 100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SVA6OA11.xvz';valid_file "T";tempfilename
+'TLXPB200.xvz';valid_file "T";tempfilename
 'SUS73V3J.wmf';tempfile-properties "XPR";}}
 
 But suppose we move the clamp. The clamp forces a node where it is placed.
@@ -6604,7 +6546,7 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 x\right) $};linecolor "blue";linestyle 1;pointstyle "point";linethickness
 2;lineAttributes "Solid";var1range "-3.1459,3.1459";num-x-gridlines
 100;curveColor "[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SVA63E01.xvz';valid_file "T";tempfilename
+'TLXPB501.xvz';valid_file "T";tempfilename
 'SUS73V3L.wmf';tempfile-properties "XPR";}}
 
 We can perform a similar analysis for a drum head, but it is much more
@@ -6676,95 +6618,61 @@ change in detected frequency
 
 \section{Beats}
 
-%TCIMACRO{%
-%\TeXButton{Beat Demo}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Beat Demo}
-%\end{minipage}
-%}} }%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Beat Demo}
-\end{minipage}
-}
-%EndExpansion
 Let's mix two waves again, but this time take the case where $\phi _{2}=\phi
 _{1}=\phi _{o},$ $k_{2}=k_{1}=k$ and let's let the waves mix at the same
 location $x_{2}=x_{1}$ so 
 \begin{equation*}
-y_{1}=y_{\max }\sin \left( kx-\omega _{1}t+\phi _{o}\right)
+y_{1}=y_{\max }\sin \left( kx-\omega _{1}t+\phi _{o}\right) 
 \end{equation*}%
 \begin{equation*}
-y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right)
+y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right) 
 \end{equation*}%
-that is, let's let the frequencies be different so that $\omega _{1}\neq
+That is, let's let the frequencies be different so that $\omega _{1}\neq
 \omega _{2}.$ Our (total) phase difference would be 
 \begin{eqnarray*}
-\Delta \phi &=&\left( kx-\omega _{1}t+\phi _{o}\right) -\left( kx-\omega
-_{1}t+\phi _{o}\right) \\
+\Delta \phi  &=&\left( kx-\omega _{1}t+\phi _{o}\right) -\left( kx-\omega
+_{1}t+\phi _{o}\right)  \\
 &=&\left( \omega _{1}-\omega _{2}\right) t
 \end{eqnarray*}%
 We can use our criteria for constructive and destructive interference, but
 before going on let's put this back into the total amplitude function for
 two wave mixing. 
 \begin{eqnarray*}
-A &=&2y_{\max }\cos \left( \frac{1}{2}\Delta \phi \right) \\
+A &=&2y_{\max }\cos \left( \frac{1}{2}\Delta \phi \right)  \\
 &=&2y_{\max }\cos \left( \frac{1}{2}\left( \omega _{1}-\omega _{2}\right)
-t\right)
+t\right) 
 \end{eqnarray*}%
 and we can see that our amplitude will change in time. For a given position
 sometimes it will be constructive interference and sometimes destructive
 interference and often in between.
 
 We can plot both waves on the same graph and see that this will happen.%
-\FRAME{dtbpFX}{4.9018in}{2.29in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 4.9018in;height 2.29in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "-15";xmax "15";xviewmin "-8";xviewmax "8";yviewmin
-"-2.5";yviewmax "2.5";viewset"XY";rangeset"X";plottype 4;labeloverrides
-1;x-label "t";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\cos \left( 10x\right) $};linecolor
-"maroon";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
-"Solid";var1range "-15,15";num-x-gridlines 900;curveColor
-"[flat::RGB:0x00800000]";curveStyle "Line";rangeset"X";function \TEXUX{$\cos
-\left( 11.x\right) $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 3;lineAttributes "Solid";var1range
-"-10,10";num-x-gridlines 900;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";rangeset"X";VCamFile 'SV8TFY0G.xvz';valid_file "T";tempfilename
-'SUS73V3Y.wmf';tempfile-properties "XPR";}}Notice that there are places
+\FRAME{dtbpF}{3.8823in}{1.8219in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.8823in;height 1.8219in;depth
+0in;original-width 3.9284in;original-height 1.8272in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TM4YLZ03.wmf';tempfile-properties "XPR";}}Notice that there are places
 where the waves are in phase, and places where they are not. The
-superposition looks like this\FRAME{dtbpFX}{5.0375in}{2.3531in}{0pt}{}{}{Plot%
-}{\special{language "Scientific Word";type "MAPLEPLOT";width 5.0375in;height
-2.3531in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
-FALSE;lastEngine "MuPAD";xmin "-10";xmax "10";xviewmin "-8";xviewmax
-"8";yviewmin "-5";yviewmax "5";viewset"XY";rangeset"X";plottype
-4;labeloverrides 1;x-label "t";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\cos \left( 10.0x\right) +\cos \left(
-11.x\right) $};linecolor "cyan";linestyle 1;pointstyle "point";linethickness
-3;lineAttributes "Solid";var1range "-10,10";num-x-gridlines 900;curveColor
-"[flat::RGB:0x00008080]";curveStyle "Line";rangeset"X";VCamFile
-'SV8TFY0F.xvz';valid_file "T";tempfilename
-'SUS73V3Z.wmf';tempfile-properties "XPR";}}
+superposition looks like this\FRAME{dtbpF}{3.8397in}{1.6134in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.8397in;height 1.6134in;depth 0pt;original-width 4.0801in;original-height
+1.6977in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'TM4YME04.wmf';tempfile-properties "XPR";}}
 
 Where there is constructive interference, the resulting wave amplitude is
 large, where there is destructive interference, the resulting amplitude is
 zero. We get a traveling wave who's amplitude varies. We can find the
 amplitude function algebraically.
 
-We can write out the entire resultant wave in our usually way. Our two waves
+We can write out the entire resultant wave in our usual way. Our two waves
 are%
 \begin{equation*}
-y_{1}=y_{\max }\sin \left( kx-\omega _{1}t+\phi _{o}\right)
+y_{1}=y_{\max }\sin \left( kx-\omega _{1}t+\phi _{o}\right) 
 \end{equation*}%
 \begin{equation*}
-y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right)
+y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right) 
 \end{equation*}
 
 and the resultant 
@@ -6794,27 +6702,15 @@ So the sound amplitude will vary in time for a given position in the medium.
 The situation is odder still. We have a cosine function, but it is really an
 envelope for the higher frequency motion of the air particles. The air
 molecules move back and forth for both the crest and the trough of the
-envelope function. \FRAME{dtbpFX}{5.0375in}{2.3531in}{0pt}{}{}{Plot}{\special%
-{language "Scientific Word";type "MAPLEPLOT";width 5.0375in;height
-2.3531in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
-FALSE;lastEngine "MuPAD";xmin "-10";xmax "10";xviewmin "-10";xviewmax
-"10";yviewmin "-5";yviewmax "5";viewset"XY";rangeset"X";plottype
-4;labeloverrides 1;x-label "t";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\cos \left( 10.0x\right) +\cos \left(
-11.x\right) $};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 1;lineAttributes "Solid";var1range
-"-10,10";num-x-gridlines 900;curveColor "[flat::RGB:0x00008000]";curveStyle
-"Line";rangeset"X";function \TEXUX{$2\cos (\frac{10-11}{2}x)$};linecolor
-"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
-"Solid";var1range "-10,10";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SV8TFX0E.xvz';valid_file "T";tempfilename
-'SUS73V40.wmf';tempfile-properties "XPR";}}So we will hear two maxima for
-every period! This frequency with which we hear the sound get loud at a
-given location as the wave goes by is called the \emph{beat frequency}. The
-red envelope (solid heavy line in the last figure) has a frequency of%
+envelope function. \FRAME{dtbpF}{5.0806in}{2.3833in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 5.0806in;height 2.3833in;depth
+0pt;original-width 6.3419in;original-height 2.959in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TM4YN505.wmf';tempfile-properties "XPR";}}So we will hear two maxima for
+every amplitude period! This frequency with which we hear the sound get loud
+at a given location as the wave goes by is called the \emph{beat frequency}.
+The red envelope (solid heavy line in the last figure) has a frequency of%
 \begin{equation*}
 f_{A}=\frac{f_{1}-f_{2}}{2}
 \end{equation*}%
@@ -6822,7 +6718,7 @@ but the cosine part is just the envelope. We can see that the green (thin
 line) wave will push and pull air molecules, and therefore our ear drums,
 with maximum loudness at twice this frequency. So our beat frequency is 
 \begin{equation*}
-f_{beat}=\left\vert f_{1}-f_{2}\right\vert
+f_{beat}=\left\vert f_{1}-f_{2}\right\vert 
 \end{equation*}
 
 Note the absolute value sign. It doesn't matter if $f_{1}$ or if $f_{2}$
@@ -6837,7 +6733,7 @@ waves.
 
 \section{Doppler Effect}
 
-Let's start by considering an inertial reference frame (remember this from
+Let's start by considering an inertial reference frame. (Remember this from
 Principles of Physics I?)
 
 Suppose we pick two reference frames, one traveling with a velocity $v_{r}$
@@ -6852,7 +6748,7 @@ object.
 'TEKOD500.wmf';tempfile-properties "XPR";}}
 
 Person $A$ sees himself as stationary and sees person $B$ traveling with
-velocity $v_{BA}.$ Person $B$ sees himself as stationary, and person $A$
+velocity $v_{BA}.$ Person $B$ sees himself as stationary, and sees person $A$
 traveling with velocity $-v_{BA}.$ In looking at this situation it is the 
 \emph{relative} speed $v_{BA}$ that we must consider. We recall that we
 could write the speed of guy $b$ as seen from platform $A$ as 
@@ -6860,12 +6756,12 @@ could write the speed of guy $b$ as seen from platform $A$ as
 v_{bA}=v_{bB}+v_{BA}
 \end{equation*}%
 where $v_{bB}$ is guy $b$'s speed seen from platform $B$ and $v_{BA}$ is the
-speed of platform $B$ as seen from platform $A.$ Now suppose we have a wave
-generator (a point source) creating spherical waves. Let the point source be
-at rest. We will call this point source an emitter and use a subscript $e$
-for it. \FRAME{dtbpF}{3.0467in}{1.7322in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.0467in;height 1.7322in;depth
+speed of reference frame $B$ as seen from reference frame $A.$ Now suppose
+we have a wave generator (a point source) creating spherical waves. Let the
+point source be at rest. We will call this point source an emitter and use a
+subscript $e$ for it. \FRAME{dtbpF}{3.0467in}{1.7322in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.0467in;height 1.7322in;depth
 0pt;original-width 4.0672in;original-height 2.3004in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SV8THK05.wmf';tempfile-properties "XPR";}}Let's also assume a detector. If
@@ -6915,8 +6811,7 @@ just our equation for relative motion! And to be clear, for this case the
 detector is moving and we are in the emitter reference frame so for us the
 emitter is not moving.
 
-The wavelength will not be changed, and so our wave speed in the emitter
-frame 
+The wavelength will not be changed, and our wave speed in the emitter frame 
 \begin{equation*}
 v_{we}=\lambda _{we}f_{we}
 \end{equation*}%
@@ -6924,16 +6819,16 @@ can just be written as
 \begin{equation*}
 v_{we}=\lambda f_{we}
 \end{equation*}%
-and let's calculate the frequency of the wave in the detector frame. It
+And let's calculate the frequency of the wave in the detector frame. It
 would still be true that 
 \begin{equation*}
-v_{wd}=f_{wd}\lambda _{wd}=f_{wd}\lambda
+v_{wd}=f_{wd}\lambda _{wd}=f_{wd}\lambda 
 \end{equation*}%
 because the wavelength is the same in both frames. So then%
 \begin{equation*}
 f_{wd}=\frac{v_{wd}}{\lambda }
 \end{equation*}%
-and we know what $v_{wd}$ is! 
+and we know what $v_{wd}$ is from our relative motion equation! 
 \begin{equation*}
 f_{wd}=\frac{v_{we}+v_{de}}{\lambda }
 \end{equation*}%
@@ -6954,7 +6849,7 @@ detector moving toward the emitter \\
 emitter not moving%
 \end{tabular}%
 \end{equation}%
-or recognizing that $v_{we}$ is the speed of sound in the stationary frame
+Or, recognizing that $v_{we}$ is the speed of sound in the stationary frame
 of the emitter 
 \begin{equation}
 f_{wd}=\frac{v_{sound}+v_{de}}{v_{sound}}f_{we}\text{ \qquad }%
@@ -6994,9 +6889,10 @@ From our thinking about the motion of two inertial reference frames, we
 should expect a similar situation if the detector is stationary and the
 source moves. The relative motion should be the same. So we have to get a
 frequency change. But think, from the detector frame the detector will see a
-different wavelength. The emitter makes a wave crest, then moves toward that
-crest while it makes the next crest. So the distance between the crests
-get's smaller.
+different wavelength because in this frame the emitter moves. The emitter
+makes a wave crest, then moves toward that crest while it makes the next
+crest. So the distance between the crests get's smaller. That is a smaller
+wavelength!
 
 \FRAME{dtbpF}{1.5307in}{1.4754in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -7004,8 +6900,8 @@ get's smaller.
 0pt;original-width 1.4944in;original-height 1.4399in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SV8THK08.wmf';tempfile-properties "XPR";}}In fact, when we measure the
-distance between the crests we must account for the fact that in the emitter
-frame the source moved by an amount%
+distance between the crests in the detector frame, we must account for the
+fact that the emitter moved by an amount%
 \begin{equation*}
 \Delta x_{ed}=v_{ed}T_{we}=\frac{v_{ed}}{f_{we}}
 \end{equation*}%
@@ -7016,8 +6912,8 @@ respect to the detector, so they are in the same reference frame. Then the
 wavelength in the detector frame, $\lambda _{wd}$, will be shorter by $%
 \Delta x_{ed}$. That is, if we take the wavelength that we would get if the
 emitter were at rest, and subtract $\Delta x_{ed}$ we should have our new
-wavelength at the detector. Let's start by finding the wavelength we expect
-if the emitter were at rest in the detector frame $(v_{ed}=0)$. Then 
+wavelength in the detector frame. Let's start by finding the wavelength we
+expect if the emitter were at rest in the detector frame $(v_{ed}=0)$. Then 
 \begin{equation*}
 \left. \lambda _{we}\right\vert _{v_{ed}=0}=\frac{v_{we}}{f_{we}}=\frac{%
 v_{sound}}{f_{we}}
@@ -7123,7 +7019,7 @@ frame. This would combine both of our previous scenarios
 f_{wd}=\frac{v_{sound}\pm v_{dR}}{v_{sound}\mp v_{eR}}f_{we}
 \end{equation}%
 where we use the top sign for the speed when the mover (emitter of detector)
-is going toward the non-mover.
+is going toward the other item (detector or emitter).
 
 With this view, that we are neither in the $e$ frame nor the $d$ frame but
 in a separate $R$ frame, we could even drop the $R$ subscript without too
@@ -7143,12 +7039,12 @@ Light is also a wave, and so we would expect a Doppler shift in light.
 Indeed we do see a Doppler shift when we look at moving objects. Here is an
 optical spectrum of the Sun on the top and a spectrum of a similar star
 moving away from us in the middle. The final spectrum is for a star moving
-toward us.\FRAME{dtbpFU}{1.5757in}{1.3785in}{0pt}{\Qcb{{\protect\small Top:
+toward us.\FRAME{dtbpFU}{1.5762in}{1.3784in}{0pt}{\Qcb{{\protect\small Top:
 Normal `dark' spectral line positions at rest. Middle: Source moving away
 from observer. Bottom: Source moving towards observer. (Public domain image
 courtesy NASA: http://www.jwst.nasa.gov/education/7Page45.pdf)}}}{}{Figure}{%
 \special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 1.5757in;height 1.3785in;depth
+TRUE;display "USEDEF";valid_file "T";width 1.5762in;height 1.3784in;depth
 0pt;original-width 1.5385in;original-height 1.343in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SV8THK0A.wmf';tempfile-properties "XPR";}}Note that the wavelength of the

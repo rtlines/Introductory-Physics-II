@@ -1,0 +1,139 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Tuesday, September 29, 2026 11:13:03}
+%TCIDATA{LastRevised=Tuesday, September 29, 2026 11:13:55}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Scientific Notebook\Blank Document">}
+%TCIDATA{CSTFile=Math with theorems suppressed.cst}
+%TCIDATA{PageSetup=72,72,72,72,0}
+%TCIDATA{AllPages=
+%F=36,\PARA{038<p type="texpara" tag="Body Text" >\hfill \thepage}
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+\FRAME{dtbpFX}{4.9018in}{2.29in}{0pt}{}{}{Plot}{\special{language
+"Scientific Word";type "MAPLEPLOT";width 4.9018in;height 2.29in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "-15";xmax "15";xviewmin "-8";xviewmax "8";yviewmin
+"-2.5";yviewmax "2.5";viewset"XY";rangeset"X";plottype 4;labeloverrides
+1;x-label "t";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$\cos \left( 10x\right) $};linecolor
+"maroon";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
+"Solid";var1range "-15,15";num-x-gridlines 900;curveColor
+"[flat::RGB:0x00800000]";curveStyle "Line";rangeset"X";function \TEXUX{$\cos
+\left( 11.x\right) $};linecolor "green";linestyle 1;pointstyle
+"point";linethickness 3;lineAttributes "Solid";var1range
+"-10,10";num-x-gridlines 900;curveColor "[flat::RGB:0x00008000]";curveStyle
+"Line";rangeset"X";VCamFile 'TM4YJ70B.xvz';valid_file "T";tempfilename
+'TM4YJ701.wmf';tempfile-properties "XPR";}}Notice that there are places
+where the waves are in phase, and places where they are not. The
+superposition looks like this\FRAME{dtbpFX}{5.0375in}{2.3531in}{0pt}{}{}{Plot%
+}{\special{language "Scientific Word";type "MAPLEPLOT";width 5.0375in;height
+2.3531in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "-10";xmax "10";xviewmin "-8";xviewmax
+"8";yviewmin "-5";yviewmax "5";viewset"XY";rangeset"X";plottype
+4;labeloverrides 1;x-label "t";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$\cos \left( 10.0x\right) +\cos \left(
+11.x\right) $};linecolor "cyan";linestyle 1;pointstyle "point";linethickness
+3;lineAttributes "Solid";var1range "-10,10";num-x-gridlines 900;curveColor
+"[flat::RGB:0x00008080]";curveStyle "Line";rangeset"X";VCamFile
+'TM4YJ70A.xvz';valid_file "T";tempfilename
+'TM4YJ702.wmf';tempfile-properties "XPR";}}
+
+Where there is constructive interference, the resulting wave amplitude is
+large, where there is destructive interference, the resulting amplitude is
+zero. We get a traveling wave who's amplitude varies. We can find the
+amplitude function algebraically.
+
+We can write out the entire resultant wave in our usual way. Our two waves
+are%
+\[
+y_{1}=y_{\max }\sin \left( kx-\omega _{1}t+\phi _{o}\right) 
+\]%
+\[
+y_{2}=y_{\max }\sin \left( kx-\omega _{2}t+\phi _{o}\right) 
+\]
+
+and the resultant 
+\begin{eqnarray*}
+y_{r} &=&2y_{\max }\cos \left( \frac{\left( kx-\omega _{2}t+\phi _{o}\right)
+-\left( kx-\omega _{1}t+\phi _{o}\right) }{2}\right) \sin \left( \frac{%
+kx-\omega _{2}t+\phi _{o}+kx-\omega _{1}t+\phi _{o}}{2}\right) \\
+&=&2y_{\max }\cos \left( \frac{kx-2\pi f_{2}t-\left( kx-2\pi f_{1}t\right) }{%
+2}\right) \sin \left( \frac{kx-2\pi f_{2}t+kx-2\pi f_{1}t+2\phi _{o}}{2}%
+\right) \\
+&=&2y_{\max }\cos \left( 2\pi \frac{f_{1}-f_{2}}{2}t\right) \sin \left(
+kx-2\pi \frac{f_{1}+f_{2}}{2}t+\phi _{o}\right) \\
+&=&\left[ 2y_{\max }\cos \left( 2\pi \frac{f_{1}-f_{2}}{2}t\right) \right]
+\sin \left( kx-2\pi \frac{f_{1}+f_{2}}{2}t+\phi _{o}\right)
+\end{eqnarray*}
+
+The sine part is a wave, it is a function of position and time. We see that
+it has a frequency that is the average of $f_{1}$ and $f_{2}.$ This is the
+frequency we hear. But we have another complicated amplitude term, and this
+time it is a function of time just as we suspected. The amplitude has its
+own frequency that is half the difference of $f_{1}$ and $f_{2}.$ 
+\[
+A_{\text{resultant}}=2A\cos \left( 2\pi \frac{f_{1}-f_{2}}{2}t\right)
+\]%
+So the sound amplitude will vary in time for a given position in the medium.
+
+The situation is odder still. We have a cosine function, but it is really an
+envelope for the higher frequency motion of the air particles. The air
+molecules move back and forth for both the crest and the trough of the
+envelope function. \FRAME{dtbpFX}{5.0375in}{2.3531in}{0pt}{}{}{Plot}{\special%
+{language "Scientific Word";type "MAPLEPLOT";width 5.0375in;height
+2.3531in;depth 0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute
+FALSE;lastEngine "MuPAD";xmin "-10";xmax "10";xviewmin "-10";xviewmax
+"10";yviewmin "-5";yviewmax "5";viewset"XY";rangeset"X";plottype
+4;labeloverrides 1;x-label "t";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
+"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
+\TEXUX{$x$};function \TEXUX{$\cos \left( 10.0x\right) +\cos \left(
+11.x\right) $};linecolor "green";linestyle 1;pointstyle
+"point";linethickness 1;lineAttributes "Solid";var1range
+"-10,10";num-x-gridlines 900;curveColor "[flat::RGB:0x00008000]";curveStyle
+"Line";rangeset"X";function \TEXUX{$2\cos (\frac{10-11}{2}x)$};linecolor
+"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
+"Solid";var1range "-10,10";num-x-gridlines 100;curveColor
+"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
+'TM4YJ709.xvz';valid_file "T";tempfilename
+'TM4YJ700.wmf';tempfile-properties "XPR";}}
+
+\end{document}
