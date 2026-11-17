@@ -1,0 +1,143 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, October 19, 2026 11:29:52}
+%TCIDATA{LastRevised=Tuesday, October 20, 2026 16:42:32}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Scientific Notebook\Blank Document">}
+%TCIDATA{CSTFile=Math with theorems suppressed.cst}
+%TCIDATA{PageSetup=72,72,72,72,0}
+%TCIDATA{AllPages=
+%F=36,\PARA{038<p type="texpara" tag="Body Text" >\hfill \thepage}
+%}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+Remember we studied intensity%
+\[
+I=\frac{P}{A} 
+\]
+
+Photographic film and digital focal plane arrays detect the intensity of
+light that hits them. We can see that the area of our image depends on our
+magnification, which depends on $d_{i}$ and for our distant objects it is
+proportional to $f.$ The image area is proportional to $d_{i}^{2}\approx
+f^{2}.$ So we can say that the area is proportional to $f^{2}.$ Then 
+\[
+I\propto \frac{P}{f^{2}} 
+\]%
+The power entering the camera is proportional to the size of the aperture
+(hole the light goes through). A bigger aperture lets in more light. A
+smaller aperture lets in less light. If the camera has a circular opening,
+this area is proportional to the square of the diameter of the opening, $%
+D^{2}$ so%
+\[
+I\propto \frac{D^{2}}{f^{2}} 
+\]%
+This ratio is useful because it gives us a relative measure of how much
+intensity we get in terms of things we can easily know about our camera.
+Good cameras have changeable aperture sizes, and many lenses have changeable
+focal lengths. By using the combination of these two terms, we can ensure we
+will get enough light (but not too much) when we take the picture.
+
+It would be good to give this ratio a special name. But instead, we named
+the ratio 
+\begin{equation}
+f/\#\equiv \frac{f}{D}
+\end{equation}%
+It is called the $f/\#$ (pronounced f-number, or f-stop) so our intensity is
+proportional to one over the f-number. 
+\begin{equation}
+I\propto \frac{1}{\left( f/\#\right) ^{2}}
+\end{equation}%
+Good cameras have adjustable lens systems marked in $f/\#^{\prime }s$.
+Typical values are $f/2.8,$ $f/4,$ $f/5.6,$ $f/8,$ $f/11,$ and $f/16.$
+Notice that since $I$ is proportional to $\left( 1/f/\#\right) ^{2}$ these
+common $f/\#$ values give an increase of intensity of a factor of $2$ each
+time you change the $f/\#$ by one marked stop. That is because, say, 
+\[
+\frac{f/4}{f/2.8}=\frac{4}{2.8}=1.\,\allowbreak 428\,6\allowbreak =\sqrt{2} 
+\]
+and the intensity goes as $1/\left( f/\#\right) ^{2}$ so the change in
+intensity from $f/2.8$ to $f/4$ would be proportional to $\left( \sqrt{2}%
+\right) ^{2}=2.$ It is the same between any two of our standard $f/\#$
+values.%
+\[
+\begin{tabular}{|c|c|}
+\hline
+$f/\#$ change & Intensity change factor \\ \hline
+$f/11$ to $f/8$ & $2$ \\ \hline
+$f/8$ to $f/5.6$ & $2$ \\ \hline
+$f/5.6$ to $f/4$ & $2$ \\ \hline
+$f/4$ to $f/2.8$ & $2$ \\ \hline
+\end{tabular}%
+\]
+
+This terminology is used for telescope design as well. The Hubble telescope
+is an $f/24$ Ritchey-Chretien Cassegrainian system with a $2.4\unit{m}$
+diameter aperture. The effective focal length is $57.6\unit{m}$.
+
+\FRAME{dhF}{1.8121in}{1.1229in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 1.8121in;height 1.1229in;depth
+0pt;original-width 3.7118in;original-height 2.29in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TN66HT00.wmf';tempfile-properties "XPR";}}
+
+It is important to realize that electronic (and biological) sensors don't
+react instantly to what we see. The intensity is 
+\[
+I=\frac{P}{A}=\frac{\Delta E}{\Delta tA}
+\]%
+so there is a time involved. The time it takes to collect enough light to
+form an image on the sensor is called the \emph{exposure time}. 
+\[
+\Delta t=\frac{\Delta E}{IA}
+\]%
+So changing our $f/\#$ changes the needed exposure time by changing the
+intensity. 
+\[
+\Delta t\propto \frac{\Delta E}{\frac{1}{\left( f/\#\right) ^{2}}A}=\frac{%
+\Delta E}{A}\left( f/\#\right) ^{2}
+\]%
+How sensitive our camera sensor is also affects the exposure time. Modern
+sensors have adjustable sensitivity. The photography world gives the three
+letters ISO for the name for this detector sensitivity. There isn't a
+standard for exactly what ISO setting gives what exposure. Different
+manufacturers use slightly different numbers. But a change in ISO settings
+usually are equivalent to one $f/\#$ change in exposure.
+
+This is part of what a good photographer does in taking a picture. The
+photographer will adjust the $f/\#$ and the exposure time and ISO to get a
+photograph that is not over exposed (too light) or underexposed (to dark).
+
+\end{document}

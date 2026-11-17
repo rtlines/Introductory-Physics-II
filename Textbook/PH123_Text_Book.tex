@@ -11,12 +11,16 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, April 15, 2025 16:35:49}
-%TCIDATA{LastRevised=Tuesday, October 13, 2026 19:57:56}
+%TCIDATA{LastRevised=Tuesday, November 17, 2026 10:46:57}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Book">}
 %TCIDATA{Language=American English}
 %TCIDATA{CSTFile=40 LaTeX Book.cst}
 %TCIDATA{ComputeGeneralSettings=0,5,5,0,0,0,1}
+%TCIDATA{ComputeDefs=
+%$m=4\unit{u}\times \frac{1.66\times 10^{-27}\unit{kg}}{1\unit{u}}$
+%}
+
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{acknowledgement}[theorem]{Acknowledgement}
@@ -10149,7 +10153,7 @@ And we have a useful equation, but not in the form you usually see it. Let's
 perform some algebra. Starting with our last equation, let's try to make is
 so there are no fractions.%
 \begin{eqnarray*}
-\left( R-d_{i}\right) d_{o} &=&d_{i}\left( d_{o}-R\right)  \\
+\left( R-d_{i}\right) d_{o} &=&d_{i}\left( d_{o}-R\right) \\
 Rd_{o}-d_{i}d_{o} &=&d_{i}d_{o}-d_{i}R
 \end{eqnarray*}%
 And now let's get all the terms with an $R$ in them on the same side of the
@@ -10732,7 +10736,8 @@ means the image is virtual, just like for flat mirrors!
 %EndExpansion
 
 In our last lecture we found an equation for finding the image location from
-a single sided lens (or semi-infinate bump). But most lenses have two sides
+a single sided lens (or semi-infinite bump) knowing the object distance and
+the lens radius and index of refraction. But most lenses have two sides
 (think of eye glass lenses). We need to do a little more work to find an
 equation for the location of an image with a double sided lens. We will to
 this work in this lecture.
@@ -10799,19 +10804,19 @@ As a first step to see how this works, consider our fish tank again. It
 would be bad on the fish, but think about looking at a fish in air. The room
 light would bounce off of the fish, and we would have a diverging set of
 rays from every point on the fish (see next figure). \FRAME{dtbpF}{4.1468in}{%
-2.0643in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+2.0643in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-4.1468in;height 2.0643in;depth 0in;original-width 4.0975in;original-height
+4.1468in;height 2.0643in;depth 0pt;original-width 4.0975in;original-height
 2.0254in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SWMIFO02.wmf';tempfile-properties "XPR";}}We can see that the picture is
 made from every point on the fish being \textquotedblleft
 imaged\textquotedblright\ to a point on our retina. We collect the rays
 leaving every point on the fish, and bring them to corresponding points on
-the retina to make the picture.
+the retina (our biological light detector array) to make the picture.
 
-It will take us a few lectures to see exactly how this is done, but as a
-first step, let's consider the fish tank, itself. Put the fish back in the
-tank and look at it (next figure).
+It will take us a few lectures to see exactly how this is done with an
+optical lens included, but as a first step, let's consider the fish tank,
+itself. Put the fish back in the tank and look at it (next figure).
 
 \FRAME{dtbpF}{3.9115in}{2.4811in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -10993,9 +10998,9 @@ direction as it was going before it struck the lens.\FRAME{dhF}{3.1522in}{%
 'SVAJW81T.wmf';tempfile-properties "XPR";}}Technically this ray should be
 shifted. This is where our thin lens approximation comes in. If the lens is
 thin, then the ray going through the center of the lens won't be shifted
-much, and we can ignore the shift. We just dray ray 2 as a straight line.
+much, and we can ignore the shift. We just draw ray 2 as a straight line.
 
-/Two rays are really enough to determine where the top of the image will be,
+Two rays are really enough to determine where the top of the image will be,
 but there is a third ray that is easy to draw, so let's draw it to give us
 more confidence in our answer. That ray is one that leaves the top of the
 object and passes through the focal point on the object side of the lens.
@@ -11014,16 +11019,17 @@ Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 4.9753in;height 2.1067in;depth 0pt;original-width 4.9216in;original-height
 2.0678in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'SVAJW81V.wmf';tempfile-properties "XPR";}}Notice that in this case, the
-image is upside down. That is normal. Also notice that it is smaller than
-the object. We say that the image is magnified, which may still seem a
-little bit strange. But in optics, a magnification of greater than one means
-that the image is bigger than the object. This is like a movie projector
-that makes a large image of a small film segment. The magnification can be
-equal to one, meaning the object and image are the same size. And finally
-the magnification can be less than one. This means that the image is smaller
-than the object. This is a convenient definition, because then we can use
-the same equation to describe all three situations.%
+'SVAJW81V.wmf';tempfile-properties "XPR";}}And we can sketch in the rest of
+the image. Notice that in this case, the image is upside down. That is
+normal. Also notice that it is smaller than the object. We say that the
+image is magnified, which may still seem a little bit strange. But in
+optics, a magnification of greater than one means that the image is bigger
+than the object. This is like a movie projector that makes a large image of
+a small film segment. The magnification can be equal to one, meaning the
+object and image are the same size. And finally the magnification can be
+less than one. This means that the image is smaller than the object. This is
+a convenient definition, because then we can use the same equation to
+describe all three situations.%
 \begin{equation*}
 m\equiv \frac{\text{Image height}}{\text{Object height}}=\frac{h_{i}}{h_{o}}
 \end{equation*}%
@@ -11052,13 +11058,14 @@ through the lens, and our mind interprets the diverging rays coming from the
 lens as though they had only traveled in straight lines. If we extend these
 rays backwards along straight lines, they appear to come from a common
 point. This is the point they would have had to have come from if there were
-no lens. We believe we see an image at this location. But no light really
-goes there! Because this image is not really made from light diverging from
-this position, we call it a \emph{virtual image} just like we did for this
+no lens in or der to make the same recognizable pattern that we see. We
+believe we see an image at this location. But no light really comes from
+there! Because this image is not really made from light diverging from this
+position, we call it a \emph{virtual image} just like we did for this
 situation for mirrors The image we formed before that could be projected on
 a screen is called a \emph{real image}. For a real image, the light is
-actually at the image location. This is just like our image terminology for
-mirrors!
+actually at the image location and diverges from that position. This is just
+like our image terminology for mirrors!
 
 By convention, we say the distance from the lens to the virtual image is a
 negative value.
@@ -11073,13 +11080,14 @@ of lens is positive. For this reason, they are often called \emph{positive
 lenses.}
 
 But what if we make a lens that is thinner in the middle and thicker on the
-edges. We can call this sort of lens a \emph{concave lens}, and we will give
+edges? We can call this sort of lens a \emph{concave lens}, and we will give
 it a negative focal length by convention, so we can also call it a \emph{%
 negative lens}. But what would this lens do? If we think about our three
 rays, ray $1$ won't be bent toward the optic axis for this type of lens. In
 fact, if we observe an object through this lens, ray number 1 will appear to
 come from the focal point. Ray number 2 will still go through the middle of
-the lens, and if the lens is thin enough, ray 2 will pass through undeviated.
+the lens, and if the lens is thin enough, ray 2 will pass through
+essentially undeviated.
 
 \FRAME{dhF}{3.2984in}{1.7582in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -11103,10 +11111,10 @@ their eye (contacts) or on their nose (eye glasses).
 
 \section{Thin Lenses}
 
-Lets' find an equation for a spherical surface once more. But this time,
-let's let it be more practical and not make the \textquotedblleft
-lens\textquotedblright\ semi-infinate. We will need to deal with two sides
-of the lens because (usually) both will be curved.
+Lets' find an equation for a lens made from a part of a spherical surface
+once more. But this time, let's let it be more practical and not make the
+\textquotedblleft lens\textquotedblright\ semi-infinite. We will need to
+deal with two sides of the lens because (usually) both will be curved.
 
 We found that for refraction%
 \begin{equation*}
@@ -11145,24 +11153,27 @@ but to appreciate what it means, lets find out where it comes from.
 
 Consider the optical element in the figure below. Notice that our object is
 a dot, so our image will also be a dot. This is not as boring as it sounds
-if we consider any object can be considered as a collection of dots. And in
-our past analysis we used the top of our object as our image, which was
-really just the dot at the top of the object. We could use that to figure
-out where the rest of the image would be. So let's start with a dot.\FRAME{%
-dtbpF}{4.5714in}{2.8098in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 4.5714in;height 2.8098in;depth 0pt;original-width
-4.5186in;original-height 2.7674in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SWMJFK06.wmf';tempfile-properties "XPR";}}%
-Light enters at a spherical surface on the left hand side. We use a point
-object located at $S$ (for \emph{source}) on the principal axis. We could
-put our dot object anywhere, but let's put it on the axis and trace two
-rays. The ray along the principal axis crosses each spherical surface at
-right angles, and therefore traves straight through the optic (this makes
-one ray very easy to trace!). The second ray hits the first spherical
-surface at point $A.$ It is refracted and travels to point $B$. It is again
-refracted and travels toward the principal axis, crossing at $P.$ The image
-location is the intersection of these rays, so we have an image at $P.$
+if we consider any object can be considered as a collection of dots.%
+\footnote{%
+In reality, we are a collection of atoms, which are pretty much dots as far
+as this analysis is concerned!} And in our past analysis we used the top of
+our object as our image, which was really just the dot at the top of the
+object. We could use that to figure out where the rest of the image would
+be. So let's start with a dot.\FRAME{dtbpF}{4.5714in}{2.8098in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+4.5714in;height 2.8098in;depth 0pt;original-width 4.5186in;original-height
+2.7674in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SWMJFK06.wmf';tempfile-properties "XPR";}}Light enters at a spherical
+surface on the left hand side. We use a point object located at $S$ (for 
+\emph{source}) on the principal axis. We could put our dot object anywhere,
+but let's put it on the axis and trace two rays. The ray along the principal
+axis crosses each spherical surface at right angles, and therefore traves
+straight through the optic (this makes one ray very easy to trace!). The
+second ray hits the first spherical surface at point $A.$ It is refracted
+and travels to point $B$. It is again refracted and travels toward the
+principal axis, crossing at $P.$ The image location is the intersection of
+these rays, so we have an image at $P.$
 
 Lets study the surfaces separately
 
@@ -11185,8 +11196,8 @@ imagine our head to somehow be in the glass looking at the refracted ray,
 our brain would think that the ray traveled in a straight line. So our brain
 would think the light came from location $P_{1}.$ That would be a virtual
 image of our $S$ point, so the distance from the lens to $P_{1}=d_{i1}.$ We
-can find this image distance using our single sided lens (semi-infinte bump)
-equation.%
+can find this image distance using our single sided lens (semi-infinite
+bump) equation.%
 \begin{equation*}
 \frac{n_{1}}{d_{o1}}+\frac{n_{2}}{d_{i1}}=\frac{\left( n_{2}-n_{1}\right) }{R%
 }
@@ -11221,7 +11232,8 @@ second surface can't tell the difference. It only knows light is incident in
 a particular pattern, and that pattern appears to come from point $P_{1}.$
 So we can treat the situation at surface $2$ as though the object is the
 virtual image formed by surface $1.$ This is important, so let's say it
-again. The object for surface $2$ is the image from surface $1.$ 
+again. The object for surface $2$ is the image from surface $1.$ We can find
+the object distance for surface $2$ 
 \begin{equation*}
 d_{o2}=d_{i1}+t
 \end{equation*}
@@ -11256,8 +11268,9 @@ R_{2}}
 \end{equation*}
 
 We would prefer a nice equation that has how far away the object is from the
-lens and how far away the image is formed like our mirror equation. We can
-get such an equation by adding these two equations for the two surfaces%
+whole lens and how far away the image is formed from the whole lens like our
+thin mirror equation. We can get such an equation by adding these two
+equations for the two surfaces%
 \begin{equation*}
 \frac{1}{d_{o1}}-\frac{n_{glass}}{d_{i1}}+\frac{n_{glass}}{d_{i1}}+\frac{1}{%
 d_{i2}}=\frac{\left( n_{glass}-1\right) }{R_{1}}+\frac{\left(
@@ -11270,19 +11283,22 @@ R_{1}}-\frac{1}{R_{2}}\right)
 \end{equation*}
 
 This equation is very useful. It reminds us of the mirror equation (well, a
-little) . If we again let $d_{o1}=\infty $ (put the object at $\infty $ so
-the rays enter surface $1$ parallel) we find%
+little) . The left hand sides are almost just the same. If we again let $%
+d_{o1}=\infty $ (put the object at $\infty $ so the rays enter surface $1$
+parallel) we find%
 \begin{equation*}
 \frac{1}{d_{i2}}=\left( n-1\right) \left( \frac{1}{R_{1}}-\frac{1}{R_{2}}%
 \right)
 \end{equation*}%
 The spot where the rays gather if the object is infinitely far away is the
-focal point, $f.$ so for parallel rays we can identify $d_{i2}=f$ as the
+focal point, $f.$ So for parallel rays we can identify $d_{i2}=f$ as the
 focal length of the optic. That means that 
 \begin{equation*}
 \frac{1}{f}=\left( n-1\right) \left( \frac{1}{R_{1}}-\frac{1}{R_{2}}\right)
 \end{equation*}%
-which is known as the \emph{lens makers' equation}.
+This equation is known as the \emph{lens makers' equation}. It tells you the
+radii of curvature to machine to in or der to make a lens out of a material
+with index $n$ in order to have a focal length of $f.$
 
 Then we have a relationship between the object distance in front of the
 lens, and the final image in back of the lens: 
@@ -11318,8 +11334,8 @@ their images are (the $p_{i}$ points).\FRAME{dtbpF}{3.1782in}{2.5685in}{0pt}{%
 3.1782in;height 2.5685in;depth 0pt;original-width 3.1341in;original-height
 2.527in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SWMKIJ0B.wmf';tempfile-properties "XPR";}}but it would work for millions of
-points. Our simple analysis explains the formation of actual images and not
-just point images.
+points making up a whole object. Our simple analysis explains the formation
+of actual images and not just point images.
 
 \subsection{Lens Aberrations}
 
@@ -11348,19 +11364,19 @@ Hubble Telescope.
 We get another image problem or aberration with lenses. Remember that the
 index of refraction is different for different wavelengths of light. If we
 send white light into our lens, different colors will bend slightly
-differently (think Snell's law). So we will get a different focus point for
-different colors of light. In the next figure, blue light (drawn with blue
-lines) makes an image at a shorter focal distance than red light (drawn with
-red lines). This problem is called \emph{chromatic aberration}. \FRAME{dtbpF%
-}{3.2353in}{2.1862in}{0pt}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 3.2353in;height 2.1862in;depth 0pt;original-width
-3.1903in;original-height 2.1465in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SWMLRY0F.wmf';tempfile-properties "XPR";}}%
-This will also cause blurry pictures because different parts of the light
-will focus at different distances from the lens. Generally mirrors can't
-have chromatic aberration because they don't refract the light. But Lenses
-always will.
+differently (think Snell's law and dispersion). So we will get a different
+focus point for different colors of light. In the next figure, blue light
+(drawn with blue lines) makes an image at a shorter focal distance than red
+light (drawn with red lines). This problem is called \emph{chromatic
+aberration}. \FRAME{dtbpF}{3.2353in}{2.1862in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.2353in;height 2.1862in;depth
+0pt;original-width 3.1903in;original-height 2.1465in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'SWMLRY0F.wmf';tempfile-properties "XPR";}}This will also cause blurry
+pictures because different parts of the light will focus at different
+distances from the lens. Generally mirrors can't have chromatic aberration
+because they don't refract the light. But Lenses always will.
 
 There are many aberrations that come from making lenses that are easy to
 manufacture, but that are not perfect in some way. We won't study all these
@@ -11429,7 +11445,7 @@ the object height.
 m=\frac{h_{i}}{h_{o}}
 \end{equation}%
 And we found we can put this into terms of $d_{o}$ and $d_{i}$ for mirrors.
-But we will this work for lenses? \FRAME{dtbpF}{3.9773in}{1.9951in}{0pt}{}{}{%
+But will this work for lenses? \FRAME{dtbpF}{3.9773in}{1.9951in}{0pt}{}{}{%
 Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.9773in;height 1.9951in;depth 0pt;original-width 5.0764in;original-height
@@ -11507,24 +11523,27 @@ f/\#\equiv \frac{f}{D}
 
 \section{The Eye}
 
+We in our last lecture we learned how images are formed by lenses. Our eyes
+use what we learned to form images that are then converted to nerve signals
+that go to our brain for processing. Here is the basic design.
+
 \FRAME{dhF}{3.48in}{1.3673in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "T";width 3.48in;height 1.3673in;depth 0pt;original-width
 3.4342in;original-height 1.3327in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'SVAJW82O.wmf';tempfile-properties "XPR";}}
 
-The figure above shows the parts of the eye. The eye is like a camera in its
-operation, but is much more complex. It is truly a marvel. The parts that
-concern us are the cornea, crystalline lens, pupil, and the retina. \FRAME{%
-dtbpF}{2.6913in}{1.8213in}{0in}{}{}{Figure}{\special{language "Scientific
-Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
-"T";width 2.6913in;height 1.8213in;depth 0in;original-width
-2.6481in;original-height 1.7841in;cropleft "0";croptop "1";cropright
-"1";cropbottom "0";tempfilename 'SWQ1PZ01.wmf';tempfile-properties "XPR";}}%
-The Cornea-lens system refracts the light onto the retina, which detects the
-light. The lens is focused by a set of mussels that flatten the lens to
-change it's focal length. The focusing process is different from a standard
-camera. The camera moves the lens to achieve a different image distance. Our
+The figure below shows the parts of the eye. The parts that concern us are
+the cornea, crystalline lens, pupil, and the retina. \FRAME{dtbpF}{2.6913in}{%
+1.8213in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.6913in;height 1.8213in;depth 0pt;original-width 2.6481in;original-height
+1.7841in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SWQ1PZ01.wmf';tempfile-properties "XPR";}}The Cornea-lens system refracts
+the light onto the retina, which detects the light. The lens is focused by a
+set of mussels that flatten the lens to change it's focal length. The
+focusing process is different from a standard camera (which we will discuss
+next). The camera moves the lens to achieve a different image distance. Our
 eye can't change the distance between the lens system and the retina. So our
 eye changes the shape of the lens, changing it's focal length. \FRAME{dhFU}{%
 3.2387in}{1.446in}{0pt}{\Qcb{The crystaline lens becomes thicker, and
@@ -11537,9 +11556,9 @@ Popular Science Monthly,} Vol. 45, p203, 1894 (Image in the public domain)}}{%
 1.8602in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAJW82Q.wmf';tempfile-properties "XPR";}}
 
-The focusing system is called \emph{accommodation}. This system becomes less
-effective at about the time you reach an age of 40 years because the lens
-becomes less flexible. The closest point that can be focused by
+The focusing process is called \emph{accommodation}. This system becomes
+less effective at about the time you reach an age of 40 years because the
+lens becomes less flexible. The closest point that can be focused by
 accommodation is called the near point. It is about $25\unit{cm}$ on
 average. There is, of course, no such thing as an average person, all of us
 are a little bit different. Young students probably have a much shorter near
@@ -11596,20 +11615,20 @@ where the retina actually is.
 
 It would be convenient and very understandable if medical professionals
 prescribed eye glasses by telling us what focal length we needed to correct
-our vision. But that would not be the medical way! Eye glasses use a
+our vision. But that would not be the biology way! Eye glasses use a
 different unit of measure to describe how they bend light. The unit is the 
 \emph{diopter} and it is equal one over the focal length, but with the focal
 length measured in meters. 
 \begin{equation}
 \text{diopter}=\frac{1}{f\left( \unit{m}\right) }
 \end{equation}%
-This measurement is called the \emph{power }of the lens. It is just the same
-as giving the focal length, but less clear for science students.
+This measurement is called the \emph{power }of the lens. It provides the
+same information as giving the focal length.
 
 \subsection{Color Perception}
 
-The eye detects different colors. The respecters called cones can detect
-red, green, and blue light.\FRAME{dhF}{2.4587in}{1.0326in}{0pt}{}{}{Figure}{%
+The eye detects different colors. The receptors called cones can detect red,
+green, and blue light.\FRAME{dhF}{2.4587in}{1.0326in}{0pt}{}{}{Figure}{%
 \special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 2.4587in;height 1.0326in;depth
 0pt;original-width 4.3656in;original-height 1.8178in;cropleft "0";croptop
@@ -11621,10 +11640,10 @@ Most digital cameras also have red, green, and, blue pixels to provide color
 to images. The detectors in digital cameras are often have much narrower
 frequency bands than the eye. Likewise, television displays and monitors
 have red, green, and blue pixels. By targeting the eye receptors, power need
-not be wasted in creating light that is not detected well by the eye. The
-difference in band-width can cause problems in color mixing. Yellow school
-busses (perceived as different amounts of green and red light) may be
-reddish or green if the bandwidths are chosen poorly.
+not be wasted in creating light that is not detected well by the eye. But
+the difference in bandwidth can cause problems in color mixing. Yellow
+school busses (perceived as different amounts of green and red light) may
+seem reddish or green if the detector bandwidths are chosen poorly.
 
 The science of human visual perception of imagery is called \emph{image
 science}. There are many applications for this field, from forensics to
@@ -11632,11 +11651,12 @@ intelligence gathering.
 
 \section{The Camera}
 
-The idea behind a camera is very simple.\FRAME{dtbpF}{3.0926in}{1.8542in}{0pt%
-}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.0926in;height 1.8542in;depth 0pt;original-width 3.0485in;original-height
-1.817in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+The idea behind a camera is very simple. It is very much like an artificial
+eye!\FRAME{dtbpF}{3.0926in}{1.8542in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.0926in;height 1.8542in;depth
+0pt;original-width 3.0485in;original-height 1.817in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SWXOK800.wmf';tempfile-properties "XPR";}}
 
 The camera has a lens, often a compound lens made of several individual
@@ -11651,9 +11671,8 @@ approximation in this lecture.
 
 Let's take an example camera. Say we are at a family reunion and wish to
 take a picture of Aunt Agatha. Aunt Agatha is about $1.\,\allowbreak 5\unit{m%
-}$ tall. She is standing about $5\unit{m}$ away. Then to fit the image of
-Aunt Agatha on our $35\unit{mm}$ detector, we must have
-
+}$ tall. She is standing about $5\unit{m}$ away. And suppose we have a $58%
+\unit{mm}$ lens. 
 \begin{equation*}
 \begin{tabular}{l}
 $h_{o}=1.5\unit{m}$ \\ 
@@ -11661,17 +11680,20 @@ $h_{i}=0.035\unit{m}$ \\
 $d_{o}=5\unit{m}$ \\ 
 $f=0.058\unit{m}$%
 \end{tabular}%
-\end{equation*}
+\end{equation*}%
+Then to fit the image of Aunt Agatha on our $35\unit{mm}$ detector, we must
+have
 
-We wish to find $d_{i}$ and $m.$ Let's do $m$ first. 
 \begin{eqnarray*}
 m &=&\frac{h_{i}}{h_{o}}=\frac{-0.035\unit{m}}{1.5\unit{m}} \\
 &=&-2.\,\allowbreak 333\,3\times 10^{-2}
 \end{eqnarray*}%
-so our image is small and inverted. The small size we wanted. But now we
-know from the negative sign that the image in our cameras is upside down. A
-digital camera uses it's built-in computer to turn the image right side up
-for us on the display on the back of the camera.
+so our image is small and inverted.
+
+The small size we wanted. But now we know from the negative sign that the
+image in our cameras is upside down. A digital camera uses it's built-in
+computer to turn the image right side up for us on the display on the back
+of the camera.
 
 Now let's find $d_{i}.$ 
 \begin{eqnarray*}
@@ -11679,7 +11701,7 @@ d_{i} &=&\frac{fd_{o}}{d_{o}-f} \\
 &=&5.\,\allowbreak 868\,1\times 10^{-2}\unit{m} \\
 &=&58.681\unit{mm}
 \end{eqnarray*}%
-so our detector must be $58.681\unit{mm}$ from the lens.
+Our detector must be $58.681\unit{mm}$ from the lens.
 
 Now suppose we want to photograph a $1000\unit{m}$ tower from $2\unit{km}$
 away. Then%
@@ -11701,7 +11723,7 @@ twist the lens housing to make this adjustment in manual focus mode. The
 lens housing has a threaded screw system that increases or decreases $d_{i}$
 as you twist. Cell phones and consumer cameras often have an motor that
 makes this adjustment for you. In some cameras you may see the lens move
-back and forth as someone takes a picture.
+inward and outward as someone takes a picture.
 
 There are several things that govern whether a picture will be good. When
 you buy a quality manual lens, it will be marked in $f/\#$'s. The
@@ -11727,15 +11749,18 @@ and we see that the size of the image
 h_{i}=mh_{o}
 \end{equation*}%
 is directly proportional to the focal distance. If we change the focal
-distance, we can change the size of the image. This is how a zoom lens
-works. A zoom lens is a compound lens, and the focal length is changed by
-increasing the distance between the component lenses (more on compound
-lenses soon). You may have a camera with a telephoto button and this button
-zooms in and out by moving one part of the complex lens. Cell phones usually
-do not do this to zoom in. They just make a photo out of the center of their
-photosensor array and because they just use the middle, it looks like they
-zoomed in. This is a \emph{digital zoom}. But let's go back to our standard
-non-zoom camera lens.\footnote{%
+distance, we can change the size of the image. 
+\begin{equation*}
+h_{i}=\left( -\frac{f}{d_{o}}\right) h_{o}
+\end{equation*}%
+This is how a zoom lens works. A zoom lens is a compound lens, and the focal
+length is changed by increasing the distance between the component lenses
+(more on compound lenses soon). You may have a camera with a telephoto
+button and this button zooms in and out by moving one part of the complex
+lens. Cell phones usually do not do this to zoom in. They just make a photo
+out of the center of their photosensor array and because they just use the
+middle, it looks like they zoomed in. This is a \emph{digital zoom}. But
+let's go back to our standard non-zoom camera lens.\footnote{%
 If you are a photographer, we would call this a prime lens.}
 
 Remember we studied intensity%
@@ -11820,16 +11845,25 @@ form an image on the sensor is called the \emph{exposure time}.
 \Delta t=\frac{\Delta E}{IA}
 \end{equation*}%
 So changing our $f/\#$ changes the needed exposure time by changing the
-intensity. How sensitive our camera sensor is also affects the exposure
-time. Modern sensors have adjustable sensitivity. The photography world
-gives the three letters ISO for the name for this detector sensitivity.
-There isn't a standard for exactly what ISO setting gives what exposure.
-Different manufacturers use slightly different numbers. But a change in ISO
-settings usually are equivalent to one $f/\#$ change in exposure.
+intensity. 
+\begin{equation*}
+\Delta t\propto \frac{\Delta E}{\frac{1}{\left( f/\#\right) ^{2}}A}=\frac{%
+\Delta E}{A}\left( f/\#\right) ^{2}
+\end{equation*}%
+How sensitive our camera sensor is also affects the exposure time. Modern
+sensors have adjustable sensitivity. The photography world gives the three
+letters ISO for the name for this detector sensitivity. There isn't a
+standard for exactly what ISO setting gives what exposure. Different
+manufacturers use slightly different numbers. But a change in ISO settings
+usually are equivalent to one $f/\#$ change in exposure.
 
 This is part of what a good photographer does in taking a picture. The
 photographer will adjust the $f/\#$ and the exposure time and ISO to get a
 photograph that is not over exposed (too light) or underexposed (to dark).
+
+Now that we know a little about cameras, let's consider some details, like
+how to get an equivalent focal distance for a combination of lenses. And
+then let's look at some real optical systems.
 
 \chapter{18 Optical Systems 3.2.8, 3.3 1}
 
@@ -11902,10 +11936,10 @@ one for each side of an object. Since the image needs to be real and on the
 retina, we can see where these singular rays strike the retina and
 understand the size of the image on our eye light detection system. Let's
 choose to draw the rays that go straight through the middle of the lens of
-the eye because they are the easiest ones, they don't bend, they just go
-straight through. If we pick a ray from the top of our object that goes
-through the center of the lens, that ray won't seem to change direction at
-all. It will hit the retina to form the top of the image of the object.
+the eye because they are the easiest ones to draw. They don't bend, they
+just go straight through. If we pick a ray from the top of our object that
+goes through the center of the lens, that ray won't seem to change direction
+at all. It will hit the retina to form the top of the image of the object.
 
 We can do the same for the bottom of the object. Then we can see from the
 next figure that the angle $\theta _{o}$ subtends\footnote{%
@@ -11915,36 +11949,49 @@ object and the image of the object. If you think about the previous figure,
 you will see that if the angle were to increase, so would the size of the
 image on the retina. And that would mean that we would see a bigger version
 of the image and would be able to see more detail. We can increase this
-angle by moving the object closer to our eyes.\FRAME{dtbpF}{3.6089in}{%
-1.9484in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-3.6089in;height 1.9484in;depth 0pt;original-width 3.5613in;original-height
-1.9104in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+angle by moving the object closer to our eyes. In the next figure the top is
+just a repeat of the last figure, but the bottom is with the object moved
+closer.\FRAME{dtbpF}{3.6089in}{1.9484in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.6089in;height 1.9484in;depth
+0pt;original-width 3.5613in;original-height 1.9104in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SWOI8M04.wmf';tempfile-properties "XPR";}}
 
-If we move our object too close we will reach the limit of the eye for
-focusing. \FRAME{dtbpF}{3.8882in}{1.0758in}{0pt}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 3.8882in;height 1.0758in;depth
-0pt;original-width 4.8585in;original-height 1.324in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SWOICM06.wmf';tempfile-properties "XPR";}}If we move the object any closer,
-it will appear blurry. Remember, we call this position, the closest point
-where we can place an object and still bring it into focus with our eye, the 
-\emph{near point.} Thus the maximum value of $\theta _{o}$ where the image
-won't be blurry will be at the near point.
+You can see that the image covers more of the retina. And so we see a bigger
+version of the object. If we move our object too close we will reach the
+limit of the eye for focusing. \FRAME{dtbpF}{3.8882in}{1.0758in}{0pt}{}{}{%
+Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.8882in;height 1.0758in;depth 0pt;original-width 4.8585in;original-height
+1.324in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'SWOICM06.wmf';tempfile-properties "XPR";}}If we move the object any closer
+than this limit, it will appear blurry. Remember, we call this position, the
+closest point where we can place an object and still bring it into focus
+with our eye, the \emph{near point.} Thus the maximum value of $\theta _{o}$
+where the image won't be blurry will be at the near point.
 
 But suppose we want to see this object in more detail. That is, we want to
 spread the image of the object over more of our retina so our retinal pixels
 do a better job of showing the details. We can use a magnifying glass to
-spread the light over more of our retina. From our ray diagrams that we have
-drawn for thin lenses we know that this is what a magnifying glass does, it
-spreads out the rays. We will see that this spreading will make the rays
-cover more of our retina. Let's go back to a normal ray diagram and draw two
-principle rays for the top of the bug. \FRAME{dtbpF}{5.4846in}{2.565in}{0in}{%
-}{}{Figure}{\special{language "Scientific Word";type
+spread the light over more of our retina. Think, from our study of
+magnifying glasses we know that the magnifying glass spreads out the light. 
+\FRAME{dtbpF}{3.2348in}{2.1092in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 3.2348in;height 2.1092in;depth
+0pt;original-width 4.4198in;original-height 2.872in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TN8B0100.wmf';tempfile-properties "XPR";}}It doesn't form a real image. So
+if we look from the left hand side toward the magnifying glass in the figure
+we see teh light from the lamp get spread out. And that is what we want! We
+want to spread out the light so it covers more of our retina once it enters
+our eye.
+
+This worked for our lamp diagram. But let's go back to a normal ray diagram
+and draw two principle rays for the top of the bug object. \FRAME{dtbpF}{%
+5.4846in}{2.565in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-5.4846in;height 2.565in;depth 0in;original-width 5.4267in;original-height
+5.4846in;height 2.565in;depth 0pt;original-width 5.4267in;original-height
 2.5235in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'TFT54R00.wmf';tempfile-properties "XPR";}} Sure enough, the two rays spread
 out and never meet to form a real image, so we have a virtual image of the
@@ -11979,6 +12026,10 @@ end our virtual image from the lens became a real image on our retina, but
 it took an additional lens to make this happen. In the last figure I just
 drew rays for the top of the bug, but we would need another set of rays for
 the bottom of the bug to see how big the real image at the retina became.
+But you can see from the figure that the rays that do enter our eye are
+diverging before they enter and they appear to have come from the virtual
+image. Then the lens of our eye brings the rays back to gether to form a
+real image on the retina. This is how we see virtual images.
 
 Back to magnification. What we really want to know is how much bigger the
 image looks with the lens than it did without the lens. By looking at what
@@ -12037,10 +12088,10 @@ Remember, this is really different than the magnification we have studied
 before. The magnification we have been using compared the size of the image
 with the size of the object. The magnification $M$ compares the size of an
 image made with just our eye to the size of the image made by our eye and
-another lens system. We call $M$ the \emph{angular magnification} we can
+another lens system. We call $M$ the \emph{angular magnification} so we can
 keep these two types of magnification straight.
 
-So, the angular magnification compares how big the object seems to be with
+Then, the angular magnification compares how big the object seems to be with
 and without an additional lens or lens system. It is really a comparison
 between the size of the area the diverging set of rays make on the retina
 formed with just our eye, and the one formed with the magnifier.
@@ -12057,11 +12108,12 @@ at the near point, and even make it harder by saying the lens is a distance $%
 \begin{equation*}
 L=\ell +d_{i1}
 \end{equation*}%
-is how far the image is from the eye. And we can go back to trigonometry. 
+is how far the virtual image is from the eye. And we can go back to
+trigonometry. 
 \begin{equation*}
 \tan \theta _{i}\approx \frac{h_{i1}}{L}\approx \theta _{i}
 \end{equation*}%
-and it is still true that without the lens to get the biggest view we need
+And it is still true that without the lens to get the biggest view we need
 to put the object at our near point. Let's choose this for our case without
 the magnifier. 
 \begin{equation*}
@@ -12072,7 +12124,7 @@ Our angular magnification is
 M=\frac{\theta _{i}}{\theta _{o}}\approx \frac{\frac{h_{i1}}{L}}{\frac{h_{o}%
 }{25\unit{cm}}}=\frac{h_{i1}}{L}\frac{25\unit{cm}}{h_{o}}
 \end{equation*}%
-Once again we can use 
+We can use our regular magnification 
 \begin{equation*}
 m=\frac{h_{i1}}{h_{o}}=-\frac{d_{i1}}{d_{o1}}
 \end{equation*}%
@@ -12093,12 +12145,12 @@ and we actually want $1/d_{o1}$ so let's substitute now%
 M\approx -d_{i1}\left( \frac{1}{f_{1}}-\frac{1}{d_{i1}}\right) \frac{25\unit{%
 cm}}{L}
 \end{equation*}%
-We need a common denominator%
+Let's bring the $-d_{i1}$ inside%
 \begin{eqnarray*}
 M &\approx &\left( \frac{-d_{i1}}{f_{1}}-\frac{-d_{i1}}{d_{i1}}\right) \frac{%
 25\unit{cm}}{L} \\
 &=&\left( \frac{-d_{i1}}{f_{1}}+1\right) \frac{25\unit{cm}}{L} \\
-&=&\left( 1+\frac{d_{i1}}{f_{1}}\right) \frac{25\unit{cm}}{L}
+&=&\left( 1-\frac{d_{i1}}{f_{1}}\right) \frac{25\unit{cm}}{L}
 \end{eqnarray*}
 
 Then recall that $-d_{i1}=L-\ell $ (the minus sign is because the image is
@@ -12106,8 +12158,10 @@ virtual so by sign convention $d_{i1}$ is negative) so
 \begin{equation*}
 M\approx \left( 1+\frac{L-\ell }{f_{1}}\right) \frac{25\unit{cm}}{L}
 \end{equation*}%
+This is our angular magnification for a simple magnifier.
+
 From this we can get the maximum value for our angular magnification for a
-simple magnifier We just let $L=25\unit{cm}$ and we make $\ell \approx 0$
+simple magnifier. We just let $L=25\unit{cm}$ and we make $\ell \approx 0$
 then the virtual image is as close as we can get it and have it not be
 blurry. This gives 
 \begin{eqnarray*}
@@ -12156,9 +12210,7 @@ idea of an angular magnification.
 
 Angular magnification is important. Many optical systems that we buy are
 really designed to make things seem bigger (or smaller) than they seem with
-just our eyes. Things like telescopes and microscopes and binoculars. We
-will see how to apply this idea of angular magnification to some such
-systems in our next lecture.
+just our eyes. Things like telescopes and microscopes and binoculars.
 
 \section{Combinations of Lenses}
 
@@ -12184,8 +12236,9 @@ focal lengths $f_{1}$ and $f_{2}$ and place them a distance $d$ apart.
 "1";cropright "1";cropbottom "0";tempfilename
 'SX1IQB00.wmf';tempfile-properties "XPR";}}
 
-Because this system would use a magnified image as the object for lens $2,$
-the final magnification is the product of the two lens magnifications
+Because this system would use a magnified image of our object as the object
+for lens $2,$ the final magnification is the product of the two lens
+magnifications
 
 \begin{equation}
 m_{\text{combined}}=m_{1}m_{2}
@@ -12213,7 +12266,7 @@ and again find the image distance%
 \begin{equation*}
 d_{i2}=\frac{d_{o2}f_{2}}{d_{o2}-f_{2}}
 \end{equation*}%
-but we can use our value of $d_{o2}$ to find%
+but we can use our value of $d_{o2}=d-d_{i1}$ to give us%
 \begin{eqnarray*}
 d_{i2} &=&\frac{\left( d-d_{i1}\right) f_{2}}{\left( d-d_{i1}\right) -f_{2}}
 \\
@@ -12253,7 +12306,8 @@ next to each other, like our achromat. Then%
 d_{i2}=\frac{-\frac{d_{o1}f_{1}f_{2}}{d_{o1}-f_{1}}}{-f_{2}-\frac{d_{o1}f_{1}%
 }{d_{o1}-f_{1}}}
 \end{equation*}%
-which hardly looks better. But let's rearrange some 
+which hardly looks better. But let's rearrange some with a common
+denominator in the bottom of our expression 
 \begin{eqnarray*}
 d_{i2} &=&\frac{\frac{d_{o1}f_{1}f_{2}}{d_{o1}-f_{1}}}{\frac{f_{2}\left(
 d_{o1}-f_{1}\right) }{d_{o1}-f_{1}}+\frac{d_{o1}f_{1}}{d_{o1}-f_{1}}} \\
@@ -12297,7 +12351,8 @@ $f$ as long as they are close together.
 Of course, we had to place our lenses right next to each other for this to
 work. This is not the case for a telescope or microscope. We should look at
 such a case. There is no need for more math. We can go back to equation (\ref%
-{TwoLensesSeparated}). 
+{TwoLensesSeparated}) for the case of two lenses separated by a distance $d$%
+. 
 \begin{equation*}
 d_{i2}=\frac{df_{2}-\frac{d_{o1}f_{1}f_{2}}{d_{o1}-f_{1}}}{d-f_{2}-\frac{%
 d_{o1}f_{1}}{d_{o1}-f_{1}}}
@@ -12376,9 +12431,9 @@ time bigger than $d_{o}$. And we have two lenses. Each lens will have a
 magnification of it's object. But how do we combine the magnifications of
 the two lenses? We just multiply the two magnifications together! The
 objective lens makes an image that is a factor of $m_{o}$ times bigger (or
-smaller) than the object. Then the eyepiece make an image of the first image
-that is $m_{e}$ times bigger than the first image. So the final image is $%
-m_{o}m_{e}$ times bigger than the object.
+smaller) than the object. Then the eyepiece makes an image of the first
+image that is $m_{e}$ times bigger than the first image. So the final image
+is $m_{o}m_{e}$ times bigger than the object.
 
 We should ask if this works for angular magnification. To find the overall
 system angular magnification we start with the magnification of the eyepiece 
@@ -12547,9 +12602,10 @@ We know light is a wave and that waves experience constructive and
 destructive interference. But so far in our study of light we have used ray
 approximation and that didn't include wave effects. It did make the math
 easy. But when you buy a camera system there must be some effect of the wave
-nature of light that would affect your purchasing decision. And beyond that,
-we got some very cool and practical ideas from using waves for sound. Is the
-wave nature of light useful?
+nature of light that would affect the quality of your images (and therefore
+would affect your purchasing decision). And beyond that, we got some very
+cool and practical ideas from using waves for sound. Is the wave nature of
+light useful?
 
 Let's look at some specific cases where we know light must show interference
 phenomena. We can think of when we had two speakers making sound waves. We
@@ -12741,8 +12797,8 @@ where $m$ is an integer. And we could solve for $\Delta \phi $
 \begin{equation*}
 \Delta \phi =2m\pi \qquad m=0,1,2,3\cdots
 \end{equation*}%
-and we know that $\Delta \phi =k\Delta r$ so to have constructive
-interference we have a condition on our $\Delta r$%
+and we know that for our case $\Delta \phi =k\Delta r$ so to have
+constructive interference we have a condition on our $\Delta r$%
 \begin{equation*}
 k\Delta r=2m\pi \qquad m=0,1,2,3\cdots
 \end{equation*}%
@@ -12762,8 +12818,15 @@ triangle, and then $\Delta r$ is
 \begin{equation*}
 \Delta r=r_{2}-r_{1}\approx d\sin \theta
 \end{equation*}%
-Our wave still repeats every $2\pi $ radians or every wavelength, $\lambda ,$
-then we have constructive interference (a bright spot) when%
+Here is an expanded version of our blue triangle \FRAME{dtbpF}{2.2441in}{%
+2.7612in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.2441in;height 2.7612in;depth 0pt;original-width 1.7518in;original-height
+2.1625in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'TNBJI001.wmf';tempfile-properties "XPR";}}and it is easy to see that $%
+\Delta r=d\sin \theta .$ Our wave still repeats every $2\pi $ radians or
+every wavelength, $\lambda ,$ then we have constructive interference (a
+bright spot) when%
 \begin{equation*}
 \Delta \phi =k\Delta r\approx kd\sin \theta =2\pi m\quad \left( m=0,\pm
 1,\pm 2\ldots \right)
@@ -12800,7 +12863,7 @@ So if $\theta $ is small then
 \Delta r &=&d\sin \theta \\
 &\approx &d\frac{y}{L}
 \end{eqnarray*}%
-and for a bright spot or \emph{\textquotedblleft fringe\textquotedblright }
+And for a bright spot or \emph{\textquotedblleft fringe\textquotedblright }
 we find 
 \begin{equation*}
 d\frac{y}{L}=m\lambda
@@ -12821,14 +12884,14 @@ destructive interference. But it is harder to think about how to write an
 odd multiple of half wavelengths. Let's go back to our amplitude equation 
 \begin{equation*}
 A=2E_{\max }\cos \left( \frac{1}{2}\Delta \phi \right)
-\end{equation*}
-but this time we want when $\cos \left( \frac{1}{2}\Delta \phi \right) =0.$
-That gives destructive interference. And we know that $\cos \left( \theta
-\right) =0$ when $\theta =\frac{\pi }{2},\frac{3\pi }{2},$ $\frac{5\pi }{2}%
-,\cdots .$ We can need a way to write this series of numbers that make $\cos
-\left( \theta \right) =0.$ Let's try $\left( m+\frac{1}{2}\right) \pi $
-where once again $m=0,\pm 1,\pm 2\ldots $ We can stick in $m$ values to see
-if it works. 
+\end{equation*}%
+This time we want when $\cos \left( \frac{1}{2}\Delta \phi \right) =0.$ That
+gives destructive interference. And we know that $\cos \left( \theta \right)
+=0$ when $\theta =\frac{\pi }{2},\frac{3\pi }{2},$ $\frac{5\pi }{2},\cdots .$
+We can need a way to write this series of numbers that make $\cos \left(
+\theta \right) =0.$ Let's try $\left( m+\frac{1}{2}\right) \pi $ where once
+again $m=0,\pm 1,\pm 2\ldots $ We can stick in $m$ values to see if it
+works. 
 \begin{equation*}
 \begin{tabular}{ll}
 $m=-2$ & $\left( -2+\frac{1}{2}\right) \pi =\allowbreak -\frac{3}{2}\pi $ \\ 
@@ -12858,7 +12921,7 @@ or using $k=2\pi /\lambda $
 \Delta r=d\sin \theta =\left( m+\frac{1}{2}\right) \lambda \quad \left(
 m=0,\pm 1,\pm 2\ldots \right)
 \end{equation*}%
-This will give destructive interference. Will give a dark fringe for these
+This will give destructive interference. We will get a dark fringe for these
 values of $\Delta r$. Using the same small angle approximation as we did
 before, the location of the dark fringes will be 
 \begin{equation}
@@ -12923,7 +12986,7 @@ Reasonableness check
 This may seem like a mostly useless thing to measure, but let's think of
 this problem backwards. If we have two slits and measure a pattern of $15.82%
 \unit{cm}$ peak separation we can know that the slits were $0.200\unit{mm}$
-apart? Light interference is used in industry for measuring very small
+apart! Light interference is used in industry for measuring very small
 distances on the order of tens of microns.
 
 \section{Multiple Slits}
@@ -12968,9 +13031,9 @@ maxima}.
 Of course we could find a spot where two of the slits were $\lambda /2$ off
 so there will be destructive interference from these two slits. But then a
 third slit would still send light at that angle. So there would be some
-brightness. So this isn't total destructive interference. There will be a
-spot less bright than the principle maxima, but not totally dark. We call
-these secondary maxima.
+brightness. This isn't total destructive interference. There will be a spot
+less bright than the principle maxima, but not totally dark. We call these
+secondary maxima.
 
 In the next figure, you can see laser light that passes through increasing
 numbers of slits.
@@ -13027,8 +13090,9 @@ interference
 \section{Mathematical treatment of single frequency interference}
 
 Let's review our equations for interference of two waves. We start with two
-waves in the same medium. Only now our waves are light waves. So the medium
-is the electromagnetic field. So we can say our amplitude is $E_{\max }$%
+waves in the same medium. Only now our waves are light waves. So the
+\textquotedblleft medium\textquotedblright\ is the electromagnetic field. So
+we can say our amplitude is $E_{\max }$%
 \begin{eqnarray*}
 E_{1} &=&E_{\max }\sin \left( kx_{1}-\omega t+\phi _{1}\right) \\
 E_{2} &=&E_{\max }\sin \left( kx_{2}-\omega t+\phi _{2}\right)
@@ -13038,23 +13102,15 @@ position (one at $x_{1}$ and the other at $x_{2}$), The superposition yields.%
 \begin{equation*}
 E_{r}=E_{\max }\sin \left( kx_{1}-\omega t+\phi _{1}\right) +E_{\max }\sin
 \left( kx_{2}-\omega t+\phi _{2}\right)
-\end{equation*}
+\end{equation*}%
+which is graphed in the next figure.
 
-which is graphed in the next figure.\FRAME{dtbpFX}{3.0727in}{1.3292in}{0pt}{%
-}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
-3.0727in;height 1.3292in;depth 0pt;display "USEDEF";plot_snapshots
-TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "0";xmax
-"5.001000";xviewmin "0";xviewmax "5.001000";yviewmin "-2";yviewmax
-"2";viewset"XY";rangeset"X";plottype 4;labeloverrides 2;y-label
-"Er";axesFont "Times New Roman,12,0000000000,useDefault,normal";numpoints
-100;plotstyle "patch";axesstyle "normal";axestips FALSE;xis
-\TEXUX{x};var1name \TEXUX{$x$};function \TEXUX{$\sin \left( \frac{1}{6}\pi
-+\pi x\right) +\sin \pi x$};linecolor "green";linestyle 1;pointstyle
-"point";linethickness 2;lineAttributes "Solid";var1range
-"0,5.001000";num-x-gridlines 100;curveColor
-"[flat::RGB:0x00008000]";curveStyle "Line";VCamFile
-'SWOOS614.xvz';valid_file "T";tempfilename
-'SWOOS620.wmf';tempfile-properties "XPR";}}Notice that the wave form is
+\FRAME{dtbpF}{4.717in}{2.1341in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.717in;height 2.1341in;depth
+0pt;original-width 4.7782in;original-height 2.1456in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TNDAH406.wmf';tempfile-properties "XPR";}}Notice that the wave form is
 taller (larger amplitude). Noticed it is shifted along the $x$ axis. This
 graph is not surprising to us now, because we have done a case like this
 before. We can find the shift in general rewriting $y_{r}.$ We need a trig
@@ -13090,7 +13146,7 @@ where the last line is just a rearrangement to match the form we got last
 time. As usual, let's look at the sine part first. It is still a wave. We
 can see that more clearly if we define a variable 
 \begin{equation*}
-\mathsf{x}=\frac{x_{2}+x_{1}}{2}
+\mathsf{\bar{x}}=\frac{x_{2}+x_{1}}{2}
 \end{equation*}%
 and another 
 \begin{equation*}
@@ -13098,7 +13154,7 @@ and another
 \end{equation*}%
 Then the sine part is just%
 \begin{equation*}
-\sin \left( k\mathsf{x}-\omega t+\overline{\phi }\right)
+\sin \left( k\mathsf{\bar{x}}-\omega t+\overline{\phi }\right)
 \end{equation*}%
 and we can see it is just our basic wave equation form. The rest of the
 equation must be the amplitude and we can clearly see that the amplitude
@@ -13121,22 +13177,16 @@ Let's see that this works. Our amplitude is
 A=2E_{\max }\cos \left( \frac{1}{2}\left( \Delta \phi \right) \right)
 \end{equation*}%
 and if we look at a cosine function we see that $\cos \left( \theta \right) $
-is either $1$ or $-1$ at $\theta =n\pi .$\FRAME{dtbpFX}{4.4996in}{0.7913in}{%
-0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
-4.4996in;height 0.7913in;depth 0pt;display "USEDEF";plot_snapshots
-TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-5";xmax "5";xviewmin
-"-5.0010000010002";xviewmax "5.0010000010002";yviewmin
-"-1.00019994985428";yviewmax "1";plottype 4;labeloverrides 3;x-label "x
-(units of pi)";y-label "cos(x)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\cos \left( \pi x\right) $};linecolor
-"black";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
-"Solid";var1range "-5,5";num-x-gridlines 100;curveColor
-"[flat::RGB:0000000000]";curveStyle "Line";VCamFile
-'SWOOTJ15.xvz';valid_file "T";tempfilename
-'SWOOTJ21.wmf';tempfile-properties "XPR";}}So if $\Delta \phi =m2\pi $ then
-the amplitude is 
+is either $1$ or $-1$ at $\theta =n\pi .$
+
+\FRAME{dtbpF}{4.2149in}{0.6475in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.2149in;height 0.6475in;depth
+0in;original-width 4.2673in;original-height 0.6306in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TNJ0AV01.wmf';tempfile-properties "XPR";}}
+
+So if $\Delta \phi =m2\pi $ then the amplitude is 
 \begin{eqnarray*}
 A &=&2E_{\max }\left( \frac{1}{2}\left( m2\pi \right) \right) \\
 &=&2E_{\max }\cos \left( m\pi \right) \\
@@ -13176,8 +13226,9 @@ So our condition for destructive interference is
 \Delta \phi =\left( \frac{2\pi }{\lambda }\Delta x+\Delta \phi _{o}\right)
 =\left( 2m+1\right) \pi \qquad m=0,\pm 1,\pm 2,\pm 3,\cdots \text{ }
 \end{equation*}%
-We have developed a useful matched set of equations that will tell us if we
-mix two waves when we will have constructive and destructive interference:
+We have once again developed a useful matched set of equations that will
+tell us if we mix two waves when we will have constructive and destructive
+interference:
 
 \begin{eqnarray*}
 \Delta \phi &=&\left( \frac{2\pi }{\lambda }\Delta r+\Delta \phi _{o}\right)
@@ -13189,7 +13240,7 @@ Destructive}
 
 Let's take an example to see how this can be used.
 
-\subsection{Example of two wave interference: Stealth Fighter}
+\subsection{Example of two wave light interference: Stealth Fighter}
 
 The U.S. Air Force F-117 Nighthawk Stealth Fighter is an aircraft that is
 designed to be mostly invisible to radar. How could this work? \FRAME{dtbpF}{%
@@ -13202,7 +13253,9 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 The answer is that I don't know\footnote{%
 I don't really know if my guess about how the F-117 works is true. And if I
 did, I wouldn't be able to use this as an example! So we are reverse
-engineering the stealth fighter technology. But I think it is a good guess.}
+engineering the stealth fighter technology. But I think it is a good guess.
+If you actually know how it works, that is classified so just smile
+knowingly and we will use this example to learn about how thin films work.}
 . But we can make some guesses. The Stealth Fighter is kept in temperature
 and humidity controlled hangers. \FRAME{dtbpF}{2.546in}{1.6959in}{0pt}{}{}{%
 Figure}{\special{language "Scientific Word";type
@@ -13222,11 +13275,12 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 }
 
 So suppose the stealth fighter is coated with an anti-reflective polymer
-that is part of it's mechanism for making the plane invisible to radar.
-Suppose we have a radar system with a wavelength of $3.00\unit{cm}.$ Further
-suppose that the index of refraction of the anti-reflective polymer is $%
-n=1.50$, and that the aircraft index of refraction is very large, how thick
-would you make the coating?
+that is part of it's mechanism for making the plane invisible to radar. In
+optical terms, a thin coating is called a \emph{thin film. }Suppose we have
+a radar system with a wavelength of $3.00\unit{cm}.$ Further suppose that
+the index of refraction of the thin film anti-reflective polymer is $n=1.50$%
+, and that the aircraft index of refraction is very large, how thick would
+you make the coating?
 
 We want destructive interference, so let's start with our destructive
 interference condition 
@@ -13251,7 +13305,7 @@ there were not a path difference) because
 \end{equation*}%
 at this point. Thus 
 \begin{equation*}
-\Delta \phi =\left( \frac{2\pi }{\lambda }\Delta r\right) =\left(
+\Delta \phi =\left( \frac{2\pi }{\lambda }\Delta r+0\right) =\left(
 2m+1\right) \pi \qquad m=0,\pm 1,\pm 2,\pm 3,\cdots \text{\qquad Destructive}
 \end{equation*}%
 But $\Delta \phi _{o}$ is not the only term in our equation, we also have to
@@ -13262,7 +13316,7 @@ right we can get destructive interference. For the $m=0$ case
 \Delta \phi =\left( \frac{2\pi }{\lambda }\Delta r\right) =\left( 2\left(
 0\right) +1\right) \pi =\pi
 \end{equation*}%
-then the amplitude function would be 
+Then, the amplitude function would be 
 \begin{eqnarray*}
 A &=&2E_{\max }\cos \left( \frac{2\pi }{\lambda }\Delta r\right) \\
 &=&2E_{\max }\cos \left( \frac{1}{2}\left( \pi \right) \right) \\
@@ -13295,7 +13349,7 @@ So let's let $\Delta r\approx 2t$
 t\approx \left( m+\frac{1}{2}\right) \frac{\lambda }{2}
 \end{equation*}
 
-/But there is a further complication. We should write our thickness equation
+But there is a further complication. We should write our thickness equation
 as 
 \begin{equation*}
 t\approx \left( m+\frac{1}{2}\right) \frac{\lambda _{in}}{2}
@@ -13324,15 +13378,21 @@ new wavelength will be given by equation (\ref{WavelengthChange})%
 \begin{equation*}
 \lambda _{f}=\frac{v_{f}}{v_{i}}\lambda _{i}
 \end{equation*}%
-Let's rewrite this for our case%
+We can review how we got that. We know the frequency doesn't change as we
+move from a fast material to a slow material. So 
+\begin{equation*}
+f_{out}=f_{in}
+\end{equation*}%
+and from $v=\lambda f$ we know 
+\begin{equation*}
+\frac{v_{out}}{\lambda _{out}}=\frac{v_{in}}{\lambda _{in}}
+\end{equation*}%
+and we can solve for $\lambda _{in}.$%
 \begin{equation*}
 \lambda _{in}=\frac{v_{in}}{v_{out}}\lambda _{out}
 \end{equation*}%
-We can express this in terms of the index of refraction%
-\begin{equation*}
-n=\frac{c}{v}
-\end{equation*}%
-by multiplying the left hand side by $c/c$ then 
+We can express this in terms of the index of refraction $n=\frac{c}{v}$ by
+multiplying the left hand side by $c/c$ then 
 \begin{equation*}
 \lambda _{in}=\frac{cv_{in}}{cv_{out}}\lambda _{out}
 \end{equation*}%
@@ -13349,7 +13409,7 @@ n_{out}\approx 1$
 This is this wavelength we need to match as the radar signal enters the
 medium.
 
-Using this expression for $\lambda _{in}$ in 
+Using this expression for $\lambda _{in}$ in our thickness equation 
 \begin{equation*}
 t\approx \left( m+\frac{1}{2}\right) \frac{\lambda _{in}}{2}\qquad
 m=0,1,2,\cdots
@@ -13418,13 +13478,15 @@ $m=1$ because the $m=0$ case doesn't give us any thickness.%
 t &\approx &m\frac{1}{2}\left( \frac{\lambda _{air}}{n_{coating}}\right) \\
 &=&\frac{1}{2}\left( \frac{3.00\unit{cm}}{1.50}\right) \\
 &=&\allowbreak 1\unit{cm}
-\end{eqnarray*}
+\end{eqnarray*}%
+We can see that for either case we will have to be very precise in applying
+the coating!
 
 Note that we reasoned out these equations for the boundary conditions that
 we have in our problem (inversion on reflection from both the coating and
 the plane body). If the boundary conditions change, so do the equations.
 
-\subsection{Example of two wave interference: Soap Bubble}
+\subsection{Example of two wave light interference: Soap Bubble}
 
 Take a soap bubble for a second example.\FRAME{dtbpFU}{3.5293in}{3.141in}{0pt%
 }{\Qcb{{\protect\small Interference from a soap bubble. (Bubble image in the
@@ -13434,18 +13496,24 @@ TRUE;display "USEDEF";valid_file "T";width 3.5293in;height 3.141in;depth
 0pt;original-width 3.5674in;original-height 3.1718in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 '../../../../PH223/Repository/PH223-Engineering-Physics/Text/SWOO921Z.wmf';tempfile-properties "XPR";}%
-}Now we have a phase shift on the first reflection because going from air to
-bubble material is like a fixed end. But we won't have an inversion on the
-reflection from the inside surface of the bubble. This is because the bubble
-is full of air. The index of refraction of air is less than that for the
-bubble material. So as we leave the bubble material it is more like having a
-free end of a rope. As the waves leave the surface, they are half a
-wavelength out of phase due to $\Delta \phi _{o}$ because of the single
-inversion from the bubble outer surface. We would have destructive
+}Light enters the bubble from the outside and reflects off of both the
+inside and outside bubble walls. These two reflected rays can experience
+interference. We can see that we still have a $\Delta r$ because one of the
+light paths just reflects off of the outer bubble surface but the other goes
+into the bubble material and then reflects. We have a phase shift on the
+first reflection because going from air to bubble material is like a fixed
+end. But we won't have an inversion on the reflection from the inside
+surface of the bubble material. This is because the bubble is full of air.
+The index of refraction of air is less than that for the bubble material. So
+as we reflect off of the inside surface of the bubble material it is more
+like having a free end of a rope. As the waves leave the surface, they are
+half a wavelength out of phase due to $\Delta \phi _{o}$ because of the
+single inversion from the bubble outer surface. We would have destructive
 interference due to just this, but we also have to account for the bubble
 thickness. If this thickness is a multiple of a wavelength, then we are
 still have half a wavelength out of phase and we have destructive
-interference.
+interference. But if the path difference is half a wavelength we would have
+constructive interference.
 
 Here are our basic equations%
 \begin{eqnarray*}
@@ -13455,14 +13523,16 @@ Here are our basic equations%
 =\left( 2m+1\right) \pi \qquad m=0,\pm 1,\pm 2,\pm 3,\cdots \text{
 Destructive}
 \end{eqnarray*}%
-Suppose we want want constructive interference to get our colors, so we take
-the first
+We notice that the bubble seems to have swirls of purple and yellow on it.
+This seems like constructive interference for those colors. What thickness
+could make that constructive interference? We use the firs of our set of
+equations for the constructive case
 
 \begin{equation*}
 \Delta \phi =\left( \frac{2\pi }{\lambda }\Delta r+\Delta \phi _{o}\right)
 =m2\pi
 \end{equation*}%
-and this time we have 
+And this time we have 
 \begin{eqnarray*}
 \Delta \phi _{o} &=&\phi _{transmitted}-\phi _{reflected} \\
 &=&0-\pi \\
@@ -13496,7 +13566,7 @@ t=\frac{\lambda _{out}}{2n_{in}}\left( m+\frac{1}{2}\right) \qquad
 m=0,1,2,\cdots
 \end{equation*}%
 Or writing this with $n_{in}=n_{\text{bubble }}$to make it clear that the
-inside material is the bubble solution,%
+inside material is the bubble material,%
 \begin{equation*}
 t=\left( m+\frac{1}{2}\right) \frac{1}{2}\left( \frac{\lambda _{air}}{n_{%
 \text{bubble}}}\right) \qquad m=0,1,2,\cdots
@@ -13550,14 +13620,14 @@ conditions we have.
 \section{The Michelson Interferometer}
 
 The Michelson interferometer is another device that uses path differences to
-create interference fringes. \FRAME{dhF}{3.2007in}{3.1263in}{0pt}{}{}{Figure%
-}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+create interference. \FRAME{dhF}{3.2007in}{3.1263in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 3.2007in;height 3.1263in;depth
 0pt;original-width 3.1566in;original-height 3.0805in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SVANNN5D.wmf';tempfile-properties "XPR";}}The device is shown in the
-figure. A coherent light source is used. The light beam is split into two
-beams that are usually at $90\unit{%
+figure. A coherent light source is used (more on what this means later). The
+light beam is split into two beams that are usually at $90\unit{%
 %TCIMACRO{\U{b0}}%
 %BeginExpansion
 {{}^\circ}%
@@ -13574,15 +13644,20 @@ smaller fringes, but the system can still work. This is shown in the last
 image in the previous figure.
 
 In the figure, we have constructive interference in the center, but if we
-move one of the mirrors half a wavelength, we would have destructive
-interference and would see a dark spot in the center. This device gives us
-the ability to measure distances on the order of the wavelength of the
-light. When the distance is continuously changed, the pattern seems to grow
-from the center (or collapse into the center).
+move one of the mirrors $\lambda /4$ (so the path on one side increases by $%
+\lambda /2)$, we would have destructive interference and would see a dark
+spot in the center. This device gives us the ability to measure distances on
+the order of the wavelength of the light. When the distance is continuously
+changed, the pattern seems to grow from the center (or collapse into the
+center).
 
 Notice that if the mirror is moved $\frac{\lambda }{2},$ the path distance
 changes by $\lambda $ because the light travels the distance to the mirror
 and then back from the mirror (it travels the path twice!).
+
+We have found some interesting uses for light interference from two sources.
+But it turns out that we can even find interference from a single source
+under some conditions. We will consider this scenario in our next lecture.
 
 \chapter{21 Slit Intensity 3.4.1, 3.4.2}
 
@@ -13771,14 +13846,15 @@ and for $m=0$ we have
 \sin \left( \theta \right) =\pm \frac{\lambda }{a}
 \end{equation}
 
-But look at our figure. We could just as well divide the slit into four
-equal parts \FRAME{dtbpF}{2.0245in}{2.4933in}{0pt}{}{}{Figure}{\special%
+But look again at our figure. We could just as well divide the slit into
+four equal parts \FRAME{dtbpF}{2.025in}{2.4889in}{0pt}{}{}{Figure}{\special%
 {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.0245in;height 2.4933in;depth
-0pt;original-width 1.9856in;original-height 2.4526in;cropleft "0";croptop
+TRUE;display "USEDEF";valid_file "T";width 2.025in;height 2.4889in;depth
+0pt;original-width 1.7074in;original-height 2.1057in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'SXCHJY00.wmf';tempfile-properties "XPR";}}and imagine light traveling from
-each of those parts to our viewing screen. Then we have a path difference of 
+'TNKP5S00.wmf';tempfile-properties "XPR";}}and imagine light traveling from
+each of those parts to our viewing screen. Then for each of these rays we
+have a path difference of 
 \begin{equation}
 \Delta r=\frac{a}{4}\sin \left( \theta \right)
 \end{equation}%
@@ -13795,9 +13871,10 @@ And again for the $m=0$ case we have
 \begin{equation}
 \sin \left( \theta \right) =\pm \frac{2\lambda }{a}
 \end{equation}%
-But there is no reason to stop at four equal parts. Suppose we we divide our
-opening into six equal parts. \FRAME{dhF}{1.9285in}{2.5114in}{0pt}{}{}{Figure%
-}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+where of course $\theta $ is a different angle than before. But there is no
+reason to stop at four equal parts. Suppose we we divide our opening into
+six equal parts. \FRAME{dhF}{1.9285in}{2.5114in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 1.9285in;height 2.5114in;depth
 0pt;original-width 1.8905in;original-height 2.4708in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
@@ -13818,8 +13895,9 @@ or for $m=0$
 \begin{equation}
 \sin \left( \theta \right) =\pm \frac{3\lambda }{a}
 \end{equation}%
-and in general at the angle $\theta $ that makes the sine of that angle
-equal to $\mathfrak{m}\lambda /a$ we get a dark spot.%
+where once again $\theta $ is a different angle than before. In general at
+some angle $\theta $ that makes the sine of that angle equal to $\mathfrak{m}%
+\lambda /a$ we get a dark spot.%
 \begin{equation}
 \sin \left( \theta \right) =\mathfrak{m}\frac{\lambda }{a}\quad \mathfrak{m}%
 =\pm 1,\pm 2,\pm 3\ldots  \label{Single Slit minima}
@@ -13841,12 +13919,13 @@ the brightness of every spot along our intensity pattern for a single slit.
 }
 
 We have found the dark minima, now we would like to find the shape of the
-bright bands. We will use phasors to do this. If you have already taken
-Principles of Physics III (PH220) or if you are an electrical engineer you
-know what a phasor is, but for the rest of us we need a quick introduction.
-We will introduce phasors here and use them extensively for alternating
-current in Principles of Physics III (PH220) and in our Optics (PH375)
-class. Depending on your major, you many see them in many other classes.
+entire intensity pattern. We will use phasors to do this. If you have
+already taken Principles of Physics III (PH220) or if you are an electrical
+engineer you know what a phasor is, but for the rest of us we need a quick
+introduction. We will introduce phasors here and use them extensively for
+alternating current in Principles of Physics III (PH220) and in our Optics
+(PH375) class. Depending on your major, you many see them in many other
+classes.
 
 \subsection{Phasors}
 
@@ -13878,10 +13957,11 @@ E_{1}=E_{o1}\sin \left( \omega t+\alpha _{1}\right)
 \end{equation}%
 Because we have essentially picked just one location, $x_{1}$ or $x_{2},$
 for our waves this is like a history graph view. We have made our wave
-equation look like the equation for a harmonic oscillator. And so long as we
-observe our waves at just one location, so we don't change $x_{1}$ or $x_{2}$
-this is fine. The electric field at our position where we are mixing the
-waves will oscillate like a harmonic oscillator.
+equation look like the equation for a harmonic oscillator with $\alpha _{1}$
+and $\alpha _{2}$ as the phase constants. And so long as we observe our
+waves at just one location, so we don't change $x_{1}$ or $x_{2}$, this is
+fine. The electric field at our position where we are mixing the waves will
+oscillate like a harmonic oscillator.
 
 Way back when we studied oscillation we said the equation for a harmonic
 oscillator position was like the projection of circular motion onto an axis. 
@@ -13925,8 +14005,8 @@ Note that $E_{o2}$ is projected onto the vertical axis through an angle $%
 These rotating vectors have a name. We call them \emph{phasors}.
 
 To add the phasors, we draw phasor $2$ on the end of phasor $1$. It is just
-like adding vectors back in Principles of Physics I (PH121)! \FRAME{dtbpF}{%
-4.12in}{2.3333in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+like adding vectors back in Principles of Physics I! \FRAME{dtbpF}{4.12in}{%
+2.3333in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 4.12in;height 2.3333in;depth 0pt;original-width 4.0707in;original-height
 2.2935in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -13936,27 +14016,29 @@ The sum is the resultant phasor like in vector addition. Only, remember now
 that the phasors are rotating. But because they have the same angular
 frequency, $\omega ,$ phasor 1 and phasor 2 rotate together as a unit. The 
 \emph{projection} of this rotating group of phasors gives the sum we are
-looking for. But notice the sum's numerical value would change in time as
-the phasors rotate. We can choose any time to find the resulting vector, so
-we might as well take $t=0,$ then $\omega t=0$ and the vectors will be
-rotated as shown. \FRAME{dtbpF}{3.6063in}{1.8585in}{0pt}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 3.6063in;height 1.8585in;depth
-0pt;original-width 3.5587in;original-height 1.8204in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'TB346T0B.wmf';tempfile-properties "XPR";}}
+looking for. But, notice the sum's numerical value for the length of the
+resulting vector would not change in time as the phasors rotate. We can
+choose any time to find the resulting vector, so we might as well take $t=0,$
+then $\omega t=0$ and the vectors will be rotated as shown. \FRAME{dtbpF}{%
+3.6063in}{1.8585in}{0pt}{}{}{Figure}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"T";width 3.6063in;height 1.8585in;depth 0pt;original-width
+3.5587in;original-height 1.8204in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";tempfilename 'TB346T0B.wmf';tempfile-properties "XPR";}}
 
-Using the redrawn phasors in the diagram directly above, we can see from the
-law of cosines \FRAME{dtbpF}{2.127in}{1.5575in}{0in}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.127in;height 1.5575in;depth
-0in;original-width 2.1061in;original-height 1.5349in;cropleft "0";croptop
+Using the redrawn phasors in the diagram directly above, use the law of
+cosines. Let's review what that is. For the triangle in the next figure%
+\FRAME{dtbpF}{2.127in}{1.5575in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.127in;height 1.5575in;depth
+0pt;original-width 2.1061in;original-height 1.5349in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
-'TG65J800.wmf';tempfile-properties "XPR";}}%
+'TG65J800.wmf';tempfile-properties "XPR";}}the law of cosines gives the side
+length $b$ as 
 \begin{equation*}
 b^{2}=a^{2}+c^{2}-2ac\cos \left( B\right)
 \end{equation*}%
-that 
+We can use this for our phasor triangle 
 \begin{equation}
 E_{0}^{2}=E_{o1}^{2}+E_{o2}^{2}-2E_{o1}E_{o2}\cos \left( \eta \right)
 \end{equation}%
@@ -13971,7 +14053,7 @@ or using the trig identity that $\cos \left( \pi -\gamma \right) =-\cos
 \begin{equation}
 E_{0}^{2}=E_{o1}^{2}+E_{o2}^{2}+2E_{o1}E_{o2}\cos \left( \alpha _{2}-\alpha
 _{1}\right)
-\end{equation}
+\end{equation}%
 This is the magnitude of our resulting vector. For the case of a double slit
 we know that $E_{o1}=E_{o2}$ so our resulting vector would be 
 \begin{eqnarray}
@@ -13983,9 +14065,10 @@ We can see that when $\cos \left( \alpha _{2}-\alpha _{1}\right) =-1$ we get
 zero. This is destructive interference!
 
 We should go on to find the angle that makes this happen. In the figure it
-is called just $\alpha $ and it is $\alpha _{1}$ plus a little bit more, $%
-\theta $. It's not thrilling, but since we have the sides of the triangle we
-could just use the law of cosines again to find the little bit more angle%
+is called just $\alpha $ and it is $\alpha _{1}$ plus a little bit more and
+we called that little bit more $\theta $. It's not thrilling, but since we
+have the sides of the triangle we could just use the law of cosines again to
+find the little bit more angle%
 \begin{equation*}
 E_{o1}^{2}=E_{0}^{2}+E_{o1}^{2}+2E_{0}E_{o2}\cos \left( \theta \right)
 \end{equation*}%
@@ -14012,7 +14095,8 @@ E_{R}=E_{0}\sin \left( \omega t+\alpha \right)
 
 This seems like a lot of work for adding just two waves together when we
 could have just used our favorite trig identity, but we can use it to add
-many many waves together.
+many many waves together.\footnote{%
+Or even two or more vectors with different amplitudes!}
 
 \subsection{Using phasors to find the single slit intensity pattern}
 
@@ -14035,8 +14119,8 @@ TRUE;display "USEDEF";valid_file "T";width 4.0966in;height 3.3849in;depth
 "1";cropright "1";cropbottom "0";tempfilename
 'TB34GF0D.wmf';tempfile-properties "XPR";}}We add up all the little $\Delta
 E $ parts, but each has a slightly different distance, so it has a slightly
-different phase because $kr$ is part of the phase. We put the phase
-difference due to the different paths into the phase constant.
+different phase because $kr$ is part of the phase. And remember we put the
+phase difference due to the different paths into the phase constants.
 
 Our set of little waves might be like
 
@@ -14045,9 +14129,9 @@ Our set of little waves might be like
 \Delta E_{2} &=&E_{o}\sin \left( \omega t+\Delta \phi _{2}\right)  \notag \\
 \Delta E_{3} &=&E_{o}\sin \left( \omega t+\Delta \phi _{3}\right)  \notag \\
 &&\vdots  \notag
-\end{eqnarray}
+\end{eqnarray}%
 Note that these are still waves. We have just put the $kr_{i}$ part into the
-phase $\Delta \phi _{i}$ like we did in the $\alpha $'s in the last section.
+phase $\Delta \phi _{i}$ like we did in the $\alpha $'s in what we did above.
 
 Note that each wave has an additional phase shift, and each has the
 amplitude $E_{o.}$ But we need to find these phase shifts. Look at the next
@@ -14078,16 +14162,16 @@ where $a$ is our slit width and
 a=N\Delta y
 \end{equation}
 
-We are finding dark spots in our diffraction pattern, and the first dark
-spot will be when the projection of our phasor sum, $E_{R}=0.$ And think
-about this, when you add vectors you put the vectors tip-to-tail, and when
-you are done you then take your pencil and start at the tail of the first
-and draw a new vector to the tip of the last vector you added. This new
-vector is the sum. And to make that new vector have a length $E_{R}=0$ all
-we have to do is to have the vectors we add make a circle. Then the distance
-from the tail of the first vector to the tip of the last vector is exactly
-zero! We are doing this with phasors, so we place our phasors tip-to-tail
-and find the first minimum or first dark band when $\Delta \phi
+Before we were finding dark spots in our diffraction pattern, and the first
+dark spot will be when the projection of our phasor sum, $E_{R}=0.$ And
+think about this, when you add vectors you put the vectors tip-to-tail, and
+when you are done you then take your pencil and start at the tail of the
+first and draw a new vector to the tip of the last vector you added. This
+new vector is the sum. And to make that new vector have a length $E_{R}=0$
+all we have to do is to have the vectors we add make a circle. Then the
+distance from the tail of the first vector to the tip of the last vector is
+exactly zero! We are doing this with phasors, so we place our phasors
+tip-to-tail and find the first minimum or first dark band when $\Delta \phi
 _{total}=2\pi $ or when the phasor diagram circles back on itself.\FRAME{%
 dtbpF}{1.7409in}{1.6561in}{0pt}{}{}{Figure}{\special{language "Scientific
 Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
@@ -14097,13 +14181,13 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 '../../../../PH375/repository/OpticsText/text/SVWZBT00.wmf';tempfile-properties "XPR";}%
 }For our complete circle $\Delta \phi _{total}=2\pi $ so then%
 \begin{equation}
-2\pi =\frac{2\pi }{\lambda }a\sin \theta
+\Delta \phi _{total}=2\pi =\frac{2\pi }{\lambda }a\sin \theta
 \end{equation}%
 We can cancel and rearrange this to give%
 \begin{equation}
 \frac{\lambda }{a}=\sin \theta
 \end{equation}%
-which is what we expected for the first minimum! This seems to be working.
+which is what we expected for the first minimum! This seems to be working!
 Let's now find the whole intensity pattern.
 
 To find the intensity pattern on any point of the screen (not just the
@@ -14162,7 +14246,7 @@ so%
 \psi =\frac{\zeta }{2}
 \end{equation}
 
-Then%
+Using this, we can write%
 \begin{equation}
 \sin \left( \frac{\zeta }{2}\right) =\frac{\frac{E_{R}}{2}}{R}=\frac{E_{R}}{%
 2R}
@@ -14172,9 +14256,9 @@ or
 E_{R}=2R\sin \left( \frac{\zeta }{2}\right) =2R\sin \left( \beta \right)
 \end{equation*}%
 where $R$ is the radius of curvature. Let's see if we can find a value for $%
-R.$ From the archlength formula%
+R.$ From the archlength formula $s=r\theta $%
 \begin{equation}
-s=r\left( 2\psi \right) =R\zeta
+s=R\left( 2\psi \right) =R\zeta
 \end{equation}%
 And since we are finding the arc length, we know it will be nearly the sum
 of each little phasor vector length $s=NE_{o}$ so%
@@ -14207,9 +14291,9 @@ angles from each of our little $\Delta E$ pieces. Each of them has an angle%
 \end{equation}%
 and $N$ of these will be 
 \begin{equation*}
-\zeta =N\frac{2\pi }{\lambda }\Delta y\sin \theta
+2\psi =\zeta =N\frac{2\pi }{\lambda }\Delta y\sin \theta
 \end{equation*}%
-but we already found that 
+But we already found that 
 \begin{equation}
 N\frac{2\pi }{\lambda }\Delta y\sin \theta =\Delta \phi _{total}
 \end{equation}%
@@ -14239,57 +14323,32 @@ or more simply%
 I=I_{\max }\left( \frac{\sin \left( \frac{\pi }{\lambda }a\sin \theta
 \right) }{\frac{\pi }{\lambda }a\sin \theta }\right) ^{2}
 \end{equation}%
-The function is plotted in the next figure\FRAME{dtbpFX}{4.4996in}{2.2502in}{%
-0pt}{}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
-4.4996in;height 2.2502in;depth 0pt;display "USEDEF";plot_snapshots
-TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-15";xmax "15";xviewmin
-"-15";xviewmax "15";yviewmin "-1";yviewmax
-"1.002079";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label
-"alpha";y-label "I";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\left( \frac{\sin x}{x}\right) ^{2}$};linecolor
-"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
-"Solid";var1range "-15,15";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'SVWYP10O.xvz';valid_file "T";tempfilename
-'TG4C1I00.wmf';tempfile-properties "XPR";}}From this we can find our peaks
+The function is plotted in the next figure \FRAME{dtbpF}{3.9435in}{1.9576in}{%
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+3.9435in;height 1.9576in;depth 0pt;original-width 3.9896in;original-height
+1.9655in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'TNMTZ101.wmf';tempfile-properties "XPR";}}From this we can find our peaks
 where the pattern is bright.
 
 Notice that our intensity pattern equation has in it the form%
 \begin{equation*}
 \frac{\sin x}{x}
 \end{equation*}%
-which has a distinctive shape.\FRAME{dtbpFX}{4.4996in}{1.3958in}{0pt}{}{}{%
-Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
-4.4996in;height 1.3958in;depth 0pt;display "USEDEF";plot_snapshots
-TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "-30";xmax "30";xviewmin
-"-30";xviewmax "30";yviewmin "-0.217351";yviewmax
-"1.000122";viewset"XY";rangeset"X";plottype 4;labeloverrides 3;x-label
-"x";y-label "sinc(x)";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\frac{\sin x}{x}$};linecolor "blue";linestyle
-1;pointstyle "point";linethickness 3;lineAttributes "Solid";var1range
-"-30,30";num-x-gridlines 100;curveColor "[flat::RGB:0x000000ff]";curveStyle
-"Line";VCamFile 'SVAN6U3W.xvz';valid_file "T";tempfilename
-'SUS73V50.wmf';tempfile-properties "XPR";}}This is known as a sinc function
+which has a distinctive shape.\FRAME{dtbpF}{4.12in}{1.2861in}{0in}{}{}{Figure%
+}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 4.12in;height 1.2861in;depth
+0in;original-width 4.1715in;original-height 1.2817in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TNMU4L05.wmf';tempfile-properties "XPR";}} This is known as a sinc function
 (pronounced like \textquotedblleft sink\textquotedblright ). It has a
 central maximum as we would expect. Of course our pattern has a sinc squared 
-\FRAME{dtbpFX}{4.4997in}{2.2494in}{0pt}{}{}{Plot}{\special{language
-"Scientific Word";type "MAPLEPLOT";width 4.4997in;height 2.2494in;depth
-0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
-"MuPAD";xmin "-15";xmax "15";xviewmin "-15";xviewmax "15";yviewmin
-"-1";yviewmax "1.002079";viewset"XY";rangeset"X";plottype 4;labeloverrides
-3;x-label "pi*a*sin(theta)/lambda";y-label "I";axesFont "Times New
-Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
-"patch";axesstyle "normal";axestips FALSE;xis \TEXUX{x};var1name
-\TEXUX{$x$};function \TEXUX{$\left( \frac{\sin x}{x}\right) ^{2}$};linecolor
-"blue";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
-"Solid";var1range "-15,15";num-x-gridlines 100;curveColor
-"[flat::RGB:0x000000ff]";curveStyle "Line";VCamFile
-'TJXLDZ2A.xvz';valid_file "T";tempfilename
-'TJXLDR03.wmf';tempfile-properties "XPR";}}You can see the central maximum
+\FRAME{dtbpF}{4.309in}{2.1119in}{0in}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 4.309in;height 2.1119in;depth
+0in;original-width 4.3622in;original-height 2.1234in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'TNMU3W03.wmf';tempfile-properties "XPR";}} You can see the central maximum
 and the much weaker minima produced by this function. Indeed, it seems to
 match what we saw very well. Putting it all together, our pattern looks like
 this.\FRAME{dhF}{3.0329in}{1.535in}{0pt}{}{}{Figure}{\special{language
@@ -14304,6 +14363,11 @@ for double slit diffraction? Of course, the answer is yes, but I have had
 enough phasor fun for this class. You will see phasors again in Principles
 of Physics III and maybe again if you take Optics (or maybe for a career if
 you are an electrical engineer).
+
+We have found an intensity pattern for a single slit and really for a double
+slit using trig identities. And we have a strategy that could do four or
+five or more slits. But in the next lecture, let's look at a situation that
+has hundreds or thousands of slits.
 
 \chapter{22 Double Slit and Grating intensity patterns 3.4.3, 3.4.4}
 
@@ -14839,13 +14903,13 @@ geometrical optical systems due to the wave nature of light.
 \section{Circular apertures}
 
 Our analysis of light going through holes has been somewhat limited by
-squarish holes or slits. But most optical systems, including our eyes don't
-have square holes. So what happens when the hole is round? The situation is
-as shown in the next figure.\FRAME{dhF}{2.341in}{1.2842in}{0pt}{}{}{Figure}{%
-\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.341in;height 1.2842in;depth
-0pt;original-width 4.4763in;original-height 2.4431in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
+squarish holes or slits. But most visible optical systems, including our
+eyes don't have square holes. So what happens when the hole is round? The
+situation is as shown in the next figure.\FRAME{dhF}{2.341in}{1.2842in}{0pt}{%
+}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+2.341in;height 1.2842in;depth 0pt;original-width 4.4763in;original-height
+2.4431in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V55.wmf';tempfile-properties "XPR";}}Before we discuss this situation,
 let's think about the width of a single slit pattern. We remember that 
 \begin{equation*}
@@ -14887,11 +14951,7 @@ are both the size of the hole.
 
 Let's think about this last equation. Compare it to our equation for $\theta 
 $ for a square opening. That's right, the circular aperture (hole) only adds
-a factor of $1.22$. And as with the slit%
-\begin{equation*}
-\theta \approx \frac{y}{L}
-\end{equation*}%
-so%
+a factor of $1.22$. Then the position of the first minimum is%
 \begin{equation}
 y\approx 1.22\frac{\lambda }{D}L
 \end{equation}%
@@ -14961,12 +15021,12 @@ images with infinite precision, but it turns out they can't. And it is the
 fact that light acts as a wave prevents this from being true! Our wave
 nature of light comes back to complicate our simple optical designs.
 
-Because light is really a wave, the images of the point objects won't be
-points, themselves. We just saw that a point of light makes a circle of
-light with little rings around it. And because our eyes and cameras have
-circular apertures, the image of the point objects will be little circular
-central maxima with dim concentric ring patterns. \FRAME{dtbpF}{1.8792in}{%
-1.7374in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+Because light is really a wave, the images of point objects won't be points,
+themselves. We just saw that a point of light makes a circle of light with
+little rings around it. And because our eyes and cameras have circular
+apertures, the image of a point object will be little circular central
+maxima with dim concentric ring patterns. \FRAME{dtbpF}{1.8792in}{1.7374in}{%
+0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 1.8792in;height 1.7374in;depth 0pt;original-width 1.8421in;original-height
 1.7002in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -15001,7 +15061,7 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "1";cropbottom "0";tempfilename 'SVAQIE65.wmf';tempfile-properties "XPR";}}
 
 Remember that normal objects will be made up of many small points of light
-(either due to reflection or glowing) and each of these will form such an
+(either due to reflection or glowing) and each of these will form an
 intensity pattern on a screen. Here is a bright point source that is not on
 the axis, and we see that it too makes a bright spot on the screen (and
 smaller bright spots or rings, depending on the shape of the aperture) 
@@ -15027,12 +15087,12 @@ TRUE;display "USEDEF";valid_file "T";width 3.3537in;height 2.6507in;depth
 
 If these patterns are formed sufficiently far from each other, it is easy to
 tell they were formed from two distinct objects. Each point became a small
-circular blur, but that is really not so bad. We can still tell that the two
-blurs came from different sources. If our pixel size is about the same size
-of the blur, we may not even notice the blurriness in the digital imagery.%
-\FRAME{dhF}{3.6487in}{2.8738in}{0pt}{}{}{Figure}{\special{language
-"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
-"USEDEF";valid_file "T";width 3.6487in;height 2.8738in;depth
+circular blur on the screen, but that is really not so bad. We can still
+tell that the two blurs came from different sources. If our pixel size is
+about the same size of the blur, we may not even notice the blurriness in
+the digital imagery.\FRAME{dhF}{3.6487in}{2.8738in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.6487in;height 2.8738in;depth
 0pt;original-width 3.6011in;original-height 2.8305in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE68.wmf';tempfile-properties "XPR";}} But if the patterns are formed
@@ -15577,12 +15637,12 @@ Roman,12,0000000000,useDefault,normal";numpoints 100;plotstyle
 'TJXLCA02.wmf';tempfile-properties "XPR";}}
 
 We get constructive and destructive interference in a changing pattern. In
-this example, you could think about the superposition of $E_{1}$ and $E_{2}$
-and predict the outcome, but if there were millions of waves, each with it's
-own wavelength, phase, and amplitude, the situation would be hopeless. Note
-that the fluctuations in these waves are much more frequent than our
-original waves. With all the added waves, we get a rapid change in
-amplitude. And because the frequencies are not exactly the same the
+this example, you could still think about the superposition of $E_{1}$ and $%
+E_{2}$ and predict the outcome, but if there were millions of waves, each
+with it's own wavelength, phase, and amplitude, the situation would be
+hopeless. Note that the fluctuations in these waves are much more frequent
+than our original waves. With all the added waves, we get a rapid change in
+amplitude. And because the frequencies are not exactly the same, the
 interference is constantly changing because of beating.
 
 Now if these waves are light waves, our eyes and most detectors are not able
@@ -15610,8 +15670,9 @@ large. This is what Young did. Now days we just use lasers.
 
 \section{Coherency}
 
-Light that easily shows the wave nature of light is said to be \emph{coherent%
-}. To be coherent a light beam must satisfy two conditions:
+We just found that light that easily shows the wave nature of light is said
+to be \emph{coherent}. To be coherent a light beam must satisfy two
+conditions:
 
 \begin{enumerate}
 \item A given part of the wave must maintain a constant phase with respect
@@ -15620,20 +15681,20 @@ to the rest of the wave.
 \item The wave must be monochromatic
 \end{enumerate}
 
-These are very hard criteria to achieve. Most light, like that from our
-light bulb, is not coherent. So most of the time the destructive and
-constructive interference in the light we see is just not apparent. But the
-wave nature of light it still affects resolution of cameras and telescopes
-and even our eyes. And when we have coherent light, interference is apparent
-and even useful as we have seen.
+These are very hard criteria to achieve. Most light that we see is not
+coherent. So most of the time the destructive and constructive interference
+in the light we see is just not apparent. But the wave nature of light it
+still affects resolution of cameras and telescopes and even our eyes. And
+when we have coherent light, interference is apparent and even useful as we
+have seen.
 
-You may be left feeling that we have really just gotten started, and you
-would be right. If you are a physics major (or curious and have elective
-credit) you will study waves more in PH 279 (Modern Physics) and PH295
-(Mathematical and Computational Physics) and you may study more optics in
-PH375. All of these are fantastic experiences. Even if you don't take a
-further class in these topics, you can study them on your own. There are
-many wonderful books on Optics.
+You may be left feeling that we have really just gotten started in
+understanding light, and you would be right. If you are a physics major (or
+curious and have elective credit) you will study waves more in PH 279
+(Modern Physics) and PH295 (Mathematical and Computational Physics) and you
+may study more optics in PH375. All of these are fantastic experiences. Even
+if you don't take a further class in these topics, you can study them on
+your own. There are many wonderful books on Optics.
 
 Our goal this semester was to study the motion of many things and wave
 motion was a partial fulfilment of that goal. But not all motions of many
@@ -15652,11 +15713,12 @@ We have spent about 2/3 of a semester studying waves. Waves are very regular
 motion of more than one object. But surely we can have less regular motion
 of more than one object!
 
-To study such non-regular motion we are changing topics radically. PH121
-taught us how individual objects move. We will use some of what we learned
-to address the question of how many objects move. To get started, let's
-review some basic properties of matter. Matter is made of many atoms. So
-matter is an example of many objects that might just move.
+To study such non-regular motion we are changing topics radically.
+Principles of Physics I taught us how individual objects move. We will use
+some of what we learned before to address the question of how many objects
+move. To get started, let's review some basic properties of matter. Matter
+is made of many atoms. So matter is an example of many objects that might
+just move.
 
 %TCIMACRO{\TeXButton{\chaptermark{Fluids}}{\chaptermark{Fluids}}}%
 %BeginExpansion
@@ -15718,11 +15780,12 @@ We can view solids as having a set of forces that keep the molecules in
 place much as though they were attached using springs. Solids can have
 definite organization. If so, they are called crystals.\footnote{%
 If you are in Rexburg reading this, you should observe the crystals around
-the Romney building if you have not already.} \FRAME{dhF}{2.2926in}{1.6328in%
-}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.2926in;height 1.6328in;depth 0pt;original-width 2.2528in;original-height
-1.5965in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+the Romney building if you have not already. They are interesting and
+beautiful!} \FRAME{dhF}{2.2926in}{1.6328in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.2926in;height 1.6328in;depth
+0pt;original-width 2.2528in;original-height 1.5965in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SUS73V8J.wmf';tempfile-properties "XPR";}}If the solid lacks definite order
 in its organization, it is called amorphous.\FRAME{dhF}{1.3258in}{1.5428in}{%
 0pt}{}{}{Figure}{\special{language "Scientific Word";type
@@ -15772,12 +15835,13 @@ considered not fluids. But how about Jell-O%
 \textquotedblleft ooblick\textquotedblright )? These are non-Newtonian
 fluids. That is, things that are sort of solid and sort of not. But we will
 stick with things that are definitely fluids (at least at first), and
-generally fluids with negligible friction. This is a little like in PH121
-when we studied frictionless surfaces. How many surfaces are truly
-frictionless? Very few! you might guess that there are few fluids that have
-no friction, and you would be right. But just like with PH121, the
-assumption of frictionless fluids makes the math easier, and that is good
-when we are starting a new topic.
+generally fluids with negligible friction. This is a little like in
+Principles of Physics I when we studied frictionless surfaces. How many
+surfaces are truly frictionless? Very few! you might guess that there are
+few fluids that have no friction, and you would be right. But there are not
+very many. Just like with Principles of Physics I, the assumption of
+frictionless fluids makes the math easier, and that is good when we are
+starting a new topic.
 
 \section{Pressure}
 
@@ -15824,23 +15888,23 @@ molecules will hit the ball. This will cause a force on the surface of the
 ball. And that force will be spread over the entire surface area of the
 ball. This is a force spread over an area. This is a pressure. We call this 
 \emph{air pressure}. This air force due to the colliding molecules is like
-having the hands pushing on the pushing on the ball.
+having the hands pushing on the pushing.
 
 This force due to individual molecules is small and only lasts during the
 collision. But in the room we have many molecules, and many molecules impact
 the ball. The molecules also impact the walls of the room. Suppose that
 every time a molecule bounces back from one wall it ends up headed back to
-the opposite wall bounces back again toward the first wall. If the molecules
-keep coming, there will be a force on the wall quite a bit of the time. At
-least, on average there is a force, anyway. This is the force that causes
-air pressure. The molecules impact the walls, and the ball, and us, and
-everything in the room all over the surface area of each object. The result
-is air pressure on every object in the room.
+the opposite wall and then bounces back again toward the first wall. If the
+molecules keep coming, there will be a force on the wall quite a bit of the
+time. At least, on average there is a force, anyway. This is the force that
+causes air pressure. The molecules impact the walls, and the ball, and us,
+and everything in the room all over the surface area of each object. The
+result is air pressure on every object in the room.
 
 Likewise, the water pressure in a swimming pool is caused by moving water
 molecules. You should convince yourself that the reason the water stays in
-the pool is partly because the air molecules bounce against the water
-surface exerting a pressure on the water!
+the pool is partly because the air molecules collide with the water surface
+exerting a pressure on the water!
 
 You might notice that there are more molecules bunched together in the water
 than in the air. We can describe how bunched together the molecules are by
@@ -15909,13 +15973,13 @@ is named after a famous scientist.
 
 Let's do a pressure problem together,
 
-Problem statement:
+\textbf{Problem statement:}
 
 A $50.0\unit{kg}$ person balances on one heel of a pair of high heeled
 shoes. If the heel cross section is circular and has a radius of $0.5000%
 \unit{cm},$ what pressure does she exert on the floor?
 
-Drawing
+\textbf{Drawing}
 
 \FRAME{dhF}{1.1044in}{0.4877in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -15924,7 +15988,7 @@ Drawing
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V8N.wmf';tempfile-properties "XPR";}}
 
-Variables
+\textbf{Variables}
 
 \begin{equation*}
 \begin{tabular}{lll}
@@ -15940,7 +16004,7 @@ $A$ & Area of the heal &
 \end{tabular}%
 \end{equation*}
 
-Basic Equations
+\textbf{Basic Equations}
 
 \begin{eqnarray*}
 F &=&ma \\
@@ -15948,20 +16012,24 @@ A &=&\pi r^{2} \\
 P &=&\frac{F}{A}
 \end{eqnarray*}
 
-Symbolic Solution
+\textbf{Symbolic Solution}
+
+We are told that the4 area of the heal is circular so
 
 \begin{equation*}
 A=\pi r^{2}
-\end{equation*}
+\end{equation*}%
+and the weight force from the person is
 
 \begin{equation*}
 F=ma=Mg
 \end{equation*}%
+Then the pressure is%
 \begin{equation*}
 P=\frac{F}{A}=\frac{Mg}{\pi r^{2}}
 \end{equation*}
 
-Numerical Solution
+\textbf{Numerical Solution}
 
 \begin{eqnarray*}
 P &=&\frac{Mg}{\pi r^{2}} \\
@@ -15988,11 +16056,11 @@ Units Check
 }{\unit{m}^{2}}=10000\unit{Pa}
 \end{equation*}
 
-Units
+\textbf{Units}
 
 Check
 
-Reasonableness
+\textbf{Reasonableness}
 
 This seems like a large number, but I have had a high heeled person step on
 my toe, so I believe it! We can compare to average atmospheric pressure
@@ -16130,7 +16198,7 @@ P_{b}A-P_{t}A &=&-mg \\
 g
 \end{eqnarray*}%
 Now consider, the volume must be the area of the top or bottom, $A,$
-multiplied by the length, $h,$ of our parcel.%
+multiplied by the height, $h,$ of our parcel.%
 \begin{equation}
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -16164,7 +16232,7 @@ Units Check
 \unit{Pa}\Bumpeq \unit{Pa}+\frac{\unit{kg}}{\unit{m}^{3}}\frac{\unit{m}}{%
 \unit{s}^{2}}\unit{m}
 \end{equation*}%
-the last term can be written as%
+The last term can be written as%
 \begin{equation*}
 \left( \frac{\unit{kg}\unit{m}}{\unit{s}^{2}}\right) \frac{1}{\unit{m}^{2}}%
 \Rightarrow \frac{\unit{N}}{\unit{m}^{2}}\Rightarrow \unit{Pa}
@@ -16218,7 +16286,8 @@ And the bottom pressure from the second parcel is the top pressure for the
 third parcel%
 \begin{eqnarray*}
 P_{b3} &=&P_{t3}+\rho g\Delta y_{3} \\
-&=&P_{b2}+\rho g\Delta y_{3}
+&=&P_{b2}+\rho g\Delta y_{3} \\
+&=&P_{b1}+\rho g\Delta y_{2}+\rho g\Delta y_{3}
 \end{eqnarray*}
 
 To get to the bottom of the big parcel we would have 
@@ -16279,9 +16348,9 @@ where $P$ is the pressure, $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-$ is the volume of the air, $N$ is a number of air molecules, $%
-k_{B}=1.3806568\times 10^{-23}\frac{\unit{J}}{\unit{K}}$ is a constant, and $%
-T$ is the temperature. We can solve this for pressure
+$ is the volume of the air, $N$ is a number of air molecules in a parcel of
+air, $k_{B}=1.3806568\times 10^{-23}\frac{\unit{J}}{\unit{K}}$ is a
+constant, and $T$ is the temperature. We can solve this for pressure
 
 \begin{equation*}
 P=\frac{Nk_{B}T}{%
@@ -16364,7 +16433,7 @@ this let's rearrange it
 \begin{equation*}
 \frac{dP}{P}=-\alpha dy
 \end{equation*}%
-and now let's integrate over the height of our parcel of air from $y=0$ to $%
+And now let's integrate over the height of our parcel of air from $y=0$ to $%
 y=h.$ On the pressure side we need to integrate from $P_{b}$ to $P_{t}$%
 \begin{equation*}
 \int_{P_{b}}^{P_{t}}\frac{1}{P}dP=-\int_{0}^{h}\alpha dy
@@ -16470,7 +16539,7 @@ P_{b}=P_{t}+\rho gh
 At the top we have zero pressure, so $P_{t}=0.$ Note, this is not
 atmospheric pressure, \textbf{it is vacuum}. How did we get vacuum at the
 top? We got it by filling the tube with mercury and then turning the tube
-upside down. The mercury is heavy. So heavy that it falls down the tube a
+upside down. The mercury is heavy, so heavy that it falls down the tube a
 bit, leaving nothing behind. So there is no air at the top of the tube, just
 empty tube because the heavy mercury moved downward. But the mercury can
 only fall down so far. The air pressure on the mercury in the dish pushes,
@@ -16595,8 +16664,8 @@ Let's draw a simplified jack:
 "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE6E.wmf';tempfile-properties "XPR";}}
 
-We usually have a constant force acting on the jack area. And that force
-will be related to the pressure in the liquid.
+We usually have a constant force acting on the jack piston area. And that
+force will be related to the pressure in the liquid.
 
 \begin{equation}
 F=PA
@@ -16624,9 +16693,9 @@ but also the bottom pressure has changed.
 \begin{equation*}
 P_{b2}=P_{b1}+\Delta P
 \end{equation*}%
-This is called Pascal's principle. We can restate it as the change in
-pressure in a fluid is transferred to the entire fluid and the magnitude of
-the change is the same everywhere.
+This is called Pascal's principle. We can restate it as by saying that the
+change in pressure in a fluid is transferred to the entire fluid and the
+magnitude of the change is the same everywhere.
 
 \begin{center}
 \rule{300pt}{1pt}
@@ -16639,8 +16708,13 @@ container.
 \end{center}
 
 Now let's consider the jack again. In the jack we really have a liquid, and
-liquids are not easily compressible. When our jack is just sitting in our
-garage, we have just atmospheric pressure pushing on the jack input piston, 
+liquids are not easily compressible. But it is still true that the change in
+pressure is transmitted to all the parts of the liquid. This is because as
+the piston pushes on the liquid atoms, they in turn push on the other atoms
+through their bonds.
+
+When our jack is just sitting in our garage, we have just atmospheric
+pressure pushing on the jack input piston, 
 \begin{equation}
 F_{atm}=P_{atm}A_{in}
 \end{equation}%
@@ -16658,7 +16732,7 @@ TRUE;display "USEDEF";valid_file "T";width 0.9968in;height 1.6186in;depth
 \begin{equation*}
 \Sigma F_{in}=F_{fluid}-F_{atm}-W_{in}=ma_{y}
 \end{equation*}%
-But $ma_{y}=0$ because our piston isn't yet accelerating so 
+But $ma_{y}=0$ because our piston isn't yet accelerating yet. So then 
 \begin{equation}
 0=F_{fluid}-P_{atm}A_{in}-W_{in}
 \end{equation}%
@@ -16677,14 +16751,14 @@ Figure}{\special{language "Scientific Word";type
 \begin{equation*}
 \Sigma F_{in}=F_{fluid}-F_{atm}-W_{in}-F_{in}=ma_{y}
 \end{equation*}%
-and think that the force due to the atmosphere is a pressure force so $%
+And think, the force due to the atmosphere is a pressure force so $%
 F_{atm}=P_{atm}A_{in}$ 
 \begin{equation}
 \Sigma F_{in}=F_{fluid}-P_{atm}A_{in}-W_{in}-F_{in}
 \end{equation}%
 Our $F_{in}$ will cause a change in pressure in the fluid. The piston will
 accelerate for a moment, then come to a stop. When it comes to a stop the
-pressure will be different because of our force by an amount $\Delta P$ 
+pressure will be different because of our input force by an amount $\Delta P$
 \begin{equation}
 \Delta P=\frac{F_{in}}{A_{in}}
 \end{equation}%
@@ -16692,9 +16766,10 @@ But the first three forces in our Newton's second law haven't changed much,
 and before we applied $F_{in}$ they summed to zero $\left(
 0=F_{fluid}-P_{atm}A_{in}-W_{in}\right) $. So after we have applied $F_{in}$
 we have%
-\begin{equation*}
-\Sigma F_{in}\approx 0-\Delta PA_{in}
-\end{equation*}%
+\begin{eqnarray*}
+\Sigma F_{in} &=&\approx 0-F_{in} \\
+\Sigma F_{in} &\approx &0-\Delta PA_{in}
+\end{eqnarray*}%
 Because we really have a liquid in our jack this time we can't compress the
 fluid in the cylinder. We still expect our $\Delta P$ to be transmitted
 throughout the entire fluid. By changing the pressure on the input side we
@@ -16713,14 +16788,23 @@ After we push the lever we will have \FRAME{dtbpF}{3.2153in}{1.8436in}{0pt}{%
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.2153in;height 1.8436in;depth 0pt;original-width 3.4508in;original-height
 1.9657in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
-'TGJ3LL02.wmf';tempfile-properties "XPR";}}%
+'TGJ3LL02.wmf';tempfile-properties "XPR";}}We have an additional amount of
+force to $F_{fluid}$. That additional force is $F_{out}=\Delta PA_{out}$
+caused by pushing down on the input piston We should probably just make $%
+F_{fluid}$ longer by this amount, but instead let's draw it as an additional
+force so it is apparent that we now have more force on our output piston
+Remember, this new force came from the input piston moving and changing the
+pressure by $\Delta P.$ Then once the input piston makes the pressure change
+there is a net force on the output piston.
+
 \begin{equation}
 \Sigma F_{out}=F_{fluid}-F_{atm}-W_{out}+F_{out}
 \end{equation}%
-We have a new force $F_{out}=\Delta PA_{out}$ that we have added to our net
-force on the output piston. This new force came from the input piston moving
-and changing the pressure by $\Delta P.$ Then once the input piston makes
-the pressure change there is a net force on the output piston.%
+but once again%
+\begin{equation*}
+F_{fluid}-F_{atm}-W_{out}=0
+\end{equation*}%
+so then 
 \begin{equation}
 \Sigma F_{out}\approx 0+\Delta PA_{out}
 \end{equation}%
@@ -16892,7 +16976,7 @@ let's suppose our beach ball is rigid so it won't be compressed.\footnote{%
 Yes, I know real beach balls would be compressed by the fluid. But we have a
 very special beach ball in our problem!} The weight of the beach ball is
 different than the weight of the water parcel. But will any of the pressure
-forces be different? The two volumes are exactly the same!
+forces be different? Remember, the two volumes are exactly the same.
 
 It turns out that the buoyant force will be exactly the same for the beach
 ball as it would for the beach ball-shaped parcel of water.
@@ -16919,7 +17003,11 @@ and this is why the beach ball accelerates upward.%
 \begin{eqnarray*}
 m_{ball}a_{_{^{y}ball}} &=&B-W_{ball} \\
 &=&W_{\text{displaced fluid}}-W_{ball}
-\end{eqnarray*}
+\end{eqnarray*}%
+so 
+\begin{equation*}
+a_{_{^{y}ball}}=\frac{W_{\text{displaced fluid}}-W_{ball}}{m_{ball}}
+\end{equation*}
 
 It turns out that this idea of the buoyant force being equal to the weight
 of an equal volume of fluid displaced is general! This concept of the
@@ -16929,8 +17017,8 @@ volume is called \emph{Archimedes' principle}.
 \begin{center}
 \rule{300pt}{1pt}
 
-The magnitude of the buoyant force equals the weight of the fluid displaced
-by the object.
+The magnitude of the buoyant force on an object equals the weight of the
+fluid displaced by the object.
 
 \rule{300pt}{1pt}
 \end{center}
@@ -17061,22 +17149,7 @@ _{object}(\rho _{fluid-displaced}-\rho _{object})
 
 If the object has a density that is less than the fluid, the object will be
 accelerated upward. And if the density of the object is greater than the
-density of the fluid the object will be accelerated downward.%
-%TCIMACRO{%
-%\TeXButton{bb in a test tube demo}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{bb in a test tube demo}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{bb in a test tube demo}
-\end{minipage}
-}%
-%EndExpansion
+density of the fluid the object will be accelerated downward.
 
 Note that the motion of a totally submerged object is determined only by the
 relative density! In a way, this could be confusing because we did not allow
@@ -17231,7 +17304,7 @@ force spread over an area. And we know forces from Principles of Physics I
 (PH121). But we didn't just use forces in Principles of Physics I. We also
 found we could use energy to solve motion problems. In our next lecture,
 let's try to bring the powerful technique of conservation of energy into our
-study of fluid flow.
+study of fluids.
 
 \chapter{26 Conservation of Energy for Fluid Flow 1.14.5, 1.14.6, 1.14.7}
 
@@ -17244,8 +17317,11 @@ study of fluid flow.
 So far, we have only dealt with fluids in equilibrium. The topic of fluid
 dynamics is a complicated mathematical field that requires differential
 equations to do with any exactness. There are whole upper division classes
-that study this called \emph{Fluid Dynamics}\textbf{. }But with some
-simplifying assumptions, we can get a feel for how fluids flow.
+that study this called \emph{Fluid Dynamics} or \emph{Fluid Mechanics}%
+\footnote{%
+At BYU-Idaho we have ME360, Fluid Mechanics, and it's follow-on class ME425,
+Computational Fluid Dynamics.}\textbf{. }But with some simplifying
+assumptions, we can get a feel for how fluids flow.
 
 %TCIMACRO{%
 %\TeXButton{Fundamental Concepts}{\vspace{0.10in}\hspace{-0.37in}{\Large Fundamental Concepts\vspace{0.2in}}}}%
@@ -17264,7 +17340,8 @@ simplifying assumptions, we can get a feel for how fluids flow.
 
 \item Bernoulli's Equation
 
-\item Reynolds number gives a measure of how laminar or turbulen our flow is.
+\item Reynolds number gives a measure of how laminar or turbulent our flow
+is.
 \end{enumerate}
 
 \section{Moving Fluids}
@@ -17294,11 +17371,12 @@ steady flow
 \end{enumerate}
 
 In the figure above we can see streamlines going around airfoils. The reason
-we can see them is that small particles are being deposited by evenly spaced
-sources in an air tunnel. This makes it so we can see the streamlines. Here
-is the same type of imaging for a soccer ball (futbol) being tested by NASA. 
-\FRAME{dtbpFU}{3.1412in}{3.1456in}{0pt}{\Qcb{{\protect\small NASA Ames
-measuring turbulence from a soccor ball. There is a cool video at this URL!
+we can see them is that small particles (like sand) are being deposited by
+evenly spaced sources in an air tunnel. This makes it so we can see the
+streamlines. Here is the same type of imaging for a soccer ball (futbol)
+being tested by NASA. \FRAME{dtbpFU}{3.1412in}{3.1456in}{0pt}{\Qcb{%
+{\protect\small NASA Ames measuring turbulence from a soccor ball. There is
+a cool video at this URL!
 https://www.nasa.gov/centers-and-facilities/ames/nasa-turns-world-cup-into-lesson-in-aerodynamics/%
 }}}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
@@ -17310,16 +17388,16 @@ The last two figures show a way to tell if we have laminar flow around an
 object. Small particles are inserted into the wind or fluid that passes by
 the object. In laminar flow the stream of particles just goes around the
 object. But with turbulent flow the stream of particles breaks up. We can
-see this for an airfoil shape and for a soccer ball (futbol).
+see this for the second two airfoil pictures and for a soccer ball (futbol).
 
-Sadly, we will limit our study to laminar, non-viscus, irrotational,
+Sadly, we will mostly limit our study to laminar, non-viscus, irrotational,
 incompressible fluids. This is a little bit like when we said we would study
 frictionless surfaces in Principles of Physics I! But to go beyond
 non-viscus laminar flow we need the math of partial differential equations,
 which is not a prerequisite for this class. So we will have to content
 ourselves with this restriction (mostly). For those of you who are
 interested in learning more (or are ME\ majors) you can take our junior
-level fluid dynamic course taught by the Mechanical Engineering Department.
+level Fluid Mechanics course taught by the Mechanical Engineering Department.
 
 \section{Equation of continuity}
 
@@ -17366,8 +17444,9 @@ m_{2}=\rho
 %EndExpansion
 _{2}=\rho A_{2}\Delta x_{2}=\rho A_{2}v_{2}\Delta t
 \end{equation*}%
-Unless we create, destroy, or pool mass, the mass that crosses $A_{2}$ in $%
-\Delta t$ must equal the mass that crosses $A_{1}$ in $\Delta t$%
+Since we are using incompressible fluids, unless we create, destroy, or pool
+mass, the mass that crosses $A_{2}$ in $\Delta t$ must equal the mass that
+crosses $A_{1}$ in $\Delta t$%
 \begin{eqnarray*}
 m_{1} &=&m_{2} \\
 \rho A_{1}v_{1}\Delta t &=&\rho A_{2}v_{2}\Delta t
@@ -17389,13 +17468,13 @@ it changes. Of course, there could be situations where mass is not conserved
 to check. But for now let's assume that the equation of continuity holds for
 our problems.
 
-The quantity $Av$ has a name. We call it the flow rate and for some reason I
-don't know we give it the symbol $\mathbb{Q}$%
+The quantity $Av$ has a name. We call it the flow rate and (for some reason
+I don't know) we give it the symbol $\mathbb{Q}$%
 \begin{equation*}
 \mathbb{Q}=Av
 \end{equation*}
 
-\section{Bernoulli's Equation}
+\section{Energy in Fluid Flow (Bernoulli's Equation)}
 
 It would be great if we could find the pressure as well as the speed of the
 fluid inside our non-uniform pipe. We would need an equation that included
@@ -17413,16 +17492,10 @@ seem too bad for fluid flow.
 The work energy theorem is something we know from Principles of Physics I.
 Let's start there, 
 \begin{equation*}
-w=\Delta K+\Delta U
+w_{ext}=\Delta K+\Delta U
 \end{equation*}%
-We still need to use forces to find the work done on the parcel of water,
-but if we choose our axes carefully, we can keep the work equation in one
-dimension. \FRAME{dtbpF}{2.1923in}{1.1857in}{0pt}{}{}{Figure}{\special%
-{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
-TRUE;display "USEDEF";valid_file "T";width 2.1923in;height 1.1857in;depth
-0pt;original-width 3.058in;original-height 1.6414in;cropleft "0";croptop
-"1";cropright "1";cropbottom "0";tempfilename
-'SUS73V93.wmf';tempfile-properties "XPR";}}
+where $w_{ext}$ is the external work done on a system and $\Delta K$ is the
+change in kinetic energy and $\Delta U$ is the change in potential energy.
 
 \subsection{Work done in $\Delta t$}
 
@@ -17450,8 +17523,11 @@ that
 \begin{equation*}
 w=-\Delta U
 \end{equation*}%
-so the amount of work is the same for both cases! Now let's return to our
-fluid flow. \FRAME{dtbpF}{4.1105in}{1.5679in}{0pt}{}{}{Figure}{\special%
+so the amount of work is the same for both cases!
+
+Now let's return to our fluid flow. Suppose our pipe segment is part of a
+larger pipe system. So there is more pipe to the left and to the right of
+our segment. \FRAME{dtbpF}{4.1105in}{1.5679in}{0pt}{}{}{Figure}{\special%
 {language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
 TRUE;display "USEDEF";valid_file "T";width 4.1105in;height 1.5679in;depth
 0pt;original-width 3.6322in;original-height 1.369in;cropleft "0";croptop
@@ -17460,25 +17536,33 @@ TRUE;display "USEDEF";valid_file "T";width 4.1105in;height 1.5679in;depth
 
 On the left hand side (LHS) of our pipe we have a force due to pressure from
 the fluid in the rest of the LHS\ of the pipe. That fluid has molecules that
-will bang in to our small marked parcel of fluid. The force from the LHS
-fluid in the rest of the pipe will be 
+will bang in to our small marked parcel of fluid. The force on our marked
+parcel from the fluid to the left of the parcel will be 
 \begin{equation}
 F_{1}=P_{1}A_{1}\widehat{\mathbf{x}}
-\end{equation}
+\end{equation}%
+and this is external work. So, it is part of $w_{ext}$ in 
+\begin{equation*}
+w_{ext}=\Delta K+\Delta U
+\end{equation*}
 
 On the right hand side (RHS) there is also more fluid in the rest of the RHS
-of the pipe. Our fluid will bang into that fluid, and since the fluid is
-non-compressible, the rest of the fluid in the RHS\ will push back. The
-force will be%
+of the pipe. Our marked parcel of fluid will bang into that fluid, and since
+the fluid is non-compressible, the rest of the fluid in the RHS\ will push
+back. The force will be%
 \begin{equation}
 F_{2}=-P_{2}A_{2}\widehat{\mathbf{x}}
-\end{equation}
+\end{equation}%
+This force is due to fluid outside of our segment, so it is also part of $%
+w_{ext}.$
 
 From Principles of Physics I we remember that work is 
 \begin{equation*}
 w=\int \overrightarrow{\mathbf{F}}\cdot \overrightarrow{\mathbf{dx}}
 \end{equation*}%
-and since our force is not changing this would be simply%
+Now think of the grey marked little parcel of fluid on the LHS. The force is
+not changing much on our little parcel because it is small, so our integral
+is simple.%
 \begin{equation}
 w=\overrightarrow{\mathbf{F}}\cdot \overrightarrow{\mathbf{\Delta x}}
 \end{equation}%
@@ -17486,40 +17570,31 @@ And for a pressure force moving a small parcel of fluid a distance $\Delta x$
 this would be 
 \begin{equation*}
 w=PA\Delta x
-\end{equation*}%
-and this is equal to a change in potential energy%
-\begin{equation*}
-\Delta U=-PA\Delta x
-\end{equation*}%
-for the fluid.
+\end{equation*}
 
-We need to find the work done in moving our particular parcel of fluid from
-the left hand side to the right hand side. As the parcel moves in the $%
-\widehat{\mathbf{x}}$ direction the amount of work will slowly change (like
-Normal Person going up the stairs) but really the amount of work only
-depends on the beginning and ending conditions (like Super Person who does
-the same amount of work but skips the stairs). So we could ignore all the
-details of moving the parcel and envision the parcel jumping from the left
-up to the right side of the pipe (like in the Super Person case).
+Now recall that we want to find the work done by external forces first 
+\begin{equation*}
+w_{ext}=\Delta K+\Delta U
+\end{equation*}
+
+We just have external forces on the parcel when it is on the left hand side
+and when it is on the right hand side from the surrounding water in the rest
+of the pipe. The forces inside our segment are internal forces.
 
 Then for the LHS 
 \begin{equation*}
 w_{1}=P_{1}A_{1}\Delta x_{1}
-\end{equation*}
-
+\end{equation*}%
 and for the RHS 
 \begin{equation*}
 w_{2}=-P_{2}A_{2}\Delta x_{2}
 \end{equation*}%
-The total work (total change in potential energy) will be the sum of these
-two works. We can add them together to get the total work done on the parcel
-of fluid. Thinking about this work like a change in potential energy helps.
-We can just add up the changes in work energy due to the work done in moving
-the fluid.
+The total external work will be the sum of these two works. We can add them
+together to get the total external work done on the parcel of fluid.
 
 But before we add them together, let's make some substitutions that will
 make our final formula for the total work more meaningful. Lets define the
-volume of our fluid segment again as
+volume of our fluid parcel again as
 
 \begin{equation}
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -17530,8 +17605,8 @@ volume of our fluid segment again as
 \end{equation}%
 Note that this volume is NOT the volume of the entire segment. It is just
 the part that is $\Delta x_{1}$ long. Then from the same arguments that lead
-to the equation of continuity, we see that the volume of the marked part of
-the fluid must not change as it flows%
+to the equation of continuity, we see that the volume of the marked parcel
+of the fluid must not change as it flows%
 \begin{equation*}
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -17555,9 +17630,9 @@ w_{2}=-P_{2}%
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 \end{equation*}%
-So finally, the total work done is 
+So finally, the total external work done is 
 \begin{eqnarray}
-w &=&w_{1}+w_{2} \\
+w_{ext} &=&w_{1}+w_{2} \\
 &=&P_{1}%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
@@ -17576,9 +17651,9 @@ w &=&w_{1}+w_{2} \\
 %EndExpansion
 \notag
 \end{eqnarray}%
-so, from the work-energy theorem%
+From the work-energy theorem%
 \begin{eqnarray*}
-w &=&\Delta K+\Delta U \\
+w_{ext} &=&\Delta K+\Delta U \\
 \left( P_{1}-P_{2}\right) 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}} }%
 %BeginExpansion
@@ -17601,7 +17676,11 @@ the parcel, we will realize that after time $\Delta t,$ it is as though most
 of the fluid did not move. We can't tell one part of the fluid from another.
 The shaded region in figure \ref{fluids shaded region} is occupied before
 and after $\Delta t.$ We can treat this problem as if we moved fluid from
-region 1 to region 2 (Super Person vs. Normal Person again!) and left the
+region 1 to region 2. This is like thinking of Super Person going straight
+to the top of the building. He does the same work as Normal Person, so we
+can take the less complicated Super Person case and ignore all the normal
+forces due to the stairs that would show up in the Normal Person case. We
+can move the fluid right from region 1 directly to region 2 and leave the
 rest of the segment alone!
 
 So, ignoring the rest of the fluid, we can see that if the velocity of our
@@ -17622,21 +17701,22 @@ as well
 "1";cropright "1";cropbottom "0";tempfilename
 'SUS73V98.wmf';tempfile-properties "XPR";}}
 
-Let's look at the change in potential energy for the parcel of fluid. Once
-again we can consider just the beginning and ending case (think of Super
-Person and Normal Person one more time). We work as though we moved a mass $%
+Let's look at the change in gravitational potential energy for the parcel of
+fluid. Once again we can consider just the beginning and ending case (think
+of Super Person and Normal Person again). We work as though we moved a mass $%
 m=m_{1}=m_{2}$ from $y_{1}$ to $y_{2}.$
 
 \begin{equation}
 \Delta U=mgy_{2}-mgy_{1}
 \end{equation}%
 Since our pipe went upward as the parcel of water flows, we gained
-gravitational potential energy. But if the pipe went downward we would loose
-potential energy.
+gravitational potential energy for our parcel. But if the pipe went downward
+we would loose potential energy.
 
 \subsection{Total Work done on the system}
 
-Let's now assemble our work-energy theorem. We had found the work so far, 
+Let's now assemble our work-energy theorem. We had found the effect of the
+external work so far, 
 \begin{equation*}
 \left( P_{1}-P_{2}\right) 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -17645,9 +17725,9 @@ Let's now assemble our work-energy theorem. We had found the work so far,
 %EndExpansion
 =\Delta K+\Delta U
 \end{equation*}%
-but now we know $\Delta K$ and $\Delta U$ We have calculated $w$, $\Delta K$%
-, and $\Delta U$ for our parcel of water, so let's substitute in what we
-have found. 
+but now we know $\Delta K$ and $\Delta U$ We have calculated $w_{ext}$, $%
+\Delta K$, and $\Delta U$ for our parcel of water, so let's substitute in
+what we have found. 
 \begin{equation}
 \left( \left( P_{1}-P_{2}\right) 
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
@@ -17765,10 +17845,10 @@ through air than oil, so that is not a surprise. Recall that we call
 friction in liquids \emph{viscosity} and we would say the oil is more viscus
 than the air.
 
-There will be a drag force between the river bed and the lowest water. And
-that drag force will likely be more of the $D=bv$ type for a liquid. This
-slows the water that is right next to the river bed down to a $v$ that is
-quite slow.
+In a stream, there will be a drag force between the river bed and the lowest
+water. And that drag force will likely be more of the $D=bv$ type for a
+liquid. This slows the water that is right next to the river bed down to a $%
+v $ that is quite slow.
 
 But we know fluids don't just have friction with solid surfaces. Because the
 fluid can move around internally there is internal friction or viscosity.
@@ -17799,10 +17879,9 @@ and the kite can stay up without you running.\FRAME{dtbpF}{2.7008in}{1.7149in%
 
 Both cases work well as long as nothing disrupts the fluid flow. This nice
 well behaved flow we described as being \emph{laminar}. In laminar fluid
-flow layers may have different speeds, but they flow without mixing.
-
-All this works pretty well if we don't have turbulence and the viscosity
-isn't too high.
+flow layers may have different speeds, but they flow without mixing. This
+works pretty well if we don't have turbulence and the viscosity isn't too
+high.
 
 We can measure the viscosity of a liquid by placing it between two sheets
 
@@ -17823,11 +17902,10 @@ given by
 
 In our society we put a lot of effort to make fluids flow in pipes. Our
 water comes and goes in pipes. Fuel flows in pipes. Air flows in organ pipes
-during General Conference, etc. Last lecture we learned that the rate at
-which the water flows is called a flow rate and unfortunately it is often
-given the symbol $\mathbb{Q}.$ But what makes the fluid flow? Generally is
-is pressure. We recall that pressure is a stress, a force spread over an
-area.
+during General Conference, etc. We learned that the rate at which the water
+flows is called a flow rate and unfortunately it is often given the symbol $%
+\mathbb{Q}.$ But what makes the fluid flow? Generally is is pressure. We
+recall that pressure is a stress, a force spread over an area.
 
 \begin{equation*}
 P=\frac{F}{A}
@@ -17843,10 +17921,8 @@ For our fluid in a pipe the area will be the pipe cross sectional area. We
 would like to know how the pressure affects the flow rate, $\mathbb{Q}.$ It
 turns out that this is fairly hard to solve (there are multivariate
 differential equations involved) so for those who are curious or need to be
-able to do this professionally I recommend taking a fluid dynamics class%
-\footnote{%
-At BYU-I this class is ME360 and is called Fluid Mechanics.} but for our
-class let's just borrow a result.
+able to do this professionally I recommend taking a fluid dynamics class but
+for our class let's just borrow a result.
 
 \begin{equation*}
 \mathbb{Q}=\frac{P_{in}-P_{out}}{R}
@@ -17866,7 +17942,7 @@ where $\eta $ is the viscosity of the fluid, $L$ is the length of the pipe,
 and $r$ is the radius of the pipe. We can put this simple model for $R$ into
 Poiseuille's law 
 \begin{eqnarray*}
-Q &=&\frac{P_{in}-P_{out}}{\frac{8\eta L}{\pi r^{4}}} \\
+\mathbb{Q} &=&\frac{P_{in}-P_{out}}{\frac{8\eta L}{\pi r^{4}}} \\
 &=&\frac{\pi r^{4}\left( P_{in}-P_{out}\right) }{8\eta L}
 \end{eqnarray*}%
 We can see that this gives us a dependence on the radius. The wider the
@@ -17921,14 +17997,14 @@ Turbulent & $R_{e}>4000$%
 \end{tabular}%
 \end{equation*}%
 although not all books agree on the value for the transition to turbulence.
-But generally if $R_{e}<2300$ our equations for this class work and for $%
-R_{e}>2300$ we don't have laminar flow and our equations really don't work.
-The transient range is a transition to turbulence and for $R_{e}$ above $%
-3000 $ to $4000$ most agree that the flow is turbulent. For many engineering
-designs we really don't want turbulence. So this is enough to do some good
-work. For cool physics problems turbulence is a form of \textquotedblleft
-complexity\textquotedblright\ which is a current emphasis in physics
-research.
+But generally if $R_{e}<2300$ our equations for this class work well enough
+and for $R_{e}>2300$ we don't have laminar flow and our equations really
+don't work. The transient range is a transition to turbulence and for $R_{e}$
+above $3000$ to $4000$ most agree that the flow is turbulent. For many
+engineering designs we really don't want turbulence. So this is enough to do
+some good work. For cool physics problems turbulence is a form of
+\textquotedblleft complexity\textquotedblright\ which is a current emphasis
+in physics research.
 
 Fluid dynamics is the movement of a bulk of fluid. This is all we can do for
 fluid dynamics in this class. But we can still look at the motion of the
@@ -17944,12 +18020,13 @@ this the thermodynamics of the fluid!
 
 \chapter{27 Temperature 2.1.1, 2.1.2, and 2.1.3}
 
-Last lecture we reviewed some basics of how materials are made and how
-chemists and physicists and material scientists determine how many moving
-parts a sample of a material might have. We also talked about measuring
-temperature. But didn't actually talk about what temperature is or even how
-temperature measuring devices work. We will start with measurement
-techniques in this lecture and build up to a model of what temperature is.
+Last lecture talked about fluid flow like the current of a stream or the
+wind or water in a pipe. Understanding fluids sets us up to study the
+thermal properties of those fluids. And that is what we are going to do
+starting in this lecture. We need a place to start our study of
+thermodynamics, and temperature seems like a good place. We will start with
+measurement techniques in this lecture and build up to a model of what
+temperature is.
 
 %TCIMACRO{\TeXButton{\chaptermark{Temperature}}{\chaptermark{Temperature}}}%
 %BeginExpansion
@@ -17983,15 +18060,21 @@ techniques in this lecture and build up to a model of what temperature is.
 
 \item The color of an object and temperature
 
-\item Phase Changes and Phase Diagrams
-
 \item Thermal Expansion
 \end{itemize}
 
 \section{Temperature and the Zeroth Law of Thermodynamics}
 
-We need a basis for talking about thermal systems. We sort of have an
-intuition for temperature, so let's use our intuition for now.
+It's probably good to remember what a \textquotedblleft
+law\textquotedblright\ is in physics. A \textquotedblleft
+law\textquotedblright\ is usually an equation that contains the properties
+of our physical model of how a system works. Newton's laws of motion are a
+set of equations that tell us how things move. In thermodynamics, we will
+have a set of equations that tell us how thermal systems work.
+
+To develop these laws, we need a basis for talking about thermal systems. We
+sort of have an intuition for temperature, so let's use our intuition for
+now.
 
 \FRAME{dtbpF}{2.2053in}{1.5895in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -17999,9 +18082,9 @@ intuition for temperature, so let's use our intuition for now.
 0pt;original-width 2.1646in;original-height 1.5541in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'TJXLXK06.wmf';tempfile-properties "XPR";}}In the figure we have two
-objects. I measure the temperature of both objects. I find that they are the
-same. Suppose I\ put the two objects in \textquotedblleft
-contact.\textquotedblright
+objects. I measure the temperature of both objects, say, by using a
+thermometer. I find that they are the same temperature. Suppose I\ put the
+two objects in \textquotedblleft contact.\textquotedblright
 
 \FRAME{dtbpF}{2.2105in}{1.6665in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -18042,7 +18125,7 @@ Again this fits our intuition, if we have two containers of water that are
 both at the same temperature as a third container of water, we expect they
 all have the same temperature.
 
-In a sense, this seems obvious, so obvious that it was always assumed
+In a sense, this seems obvious, so obvious that it was assumed in the past
 without statement. But in retrospect, it is a fundamental concept that
 deserves it's place as one of the laws of thermodynamics. By the time this
 was acknowledged, the names \textquotedblleft first law\textquotedblright\
@@ -18057,11 +18140,12 @@ chemistry.
 Atoms are small. They are really incredibly small. A typical atom measures a
 few Angstroms across. An angstrom is $1\times 10^{-10}\unit{m}.$ That is
 unbelievably small. Let's try to get an understanding of this scale. Picture
-a meter stick. Then divide it up into $10000000000$ equal units. That is how
-small an atoms is. Or, consider scaling our meter stick to be the size of
-the continental US, that is about $4.\,\allowbreak 087\,7\times 10^{6}\unit{m%
-}$. Then for our US\ sized meter stick, on this scale an atom would still
-only be about half a millimeter across! About the size of a cake sprinkle.
+a meter stick. Then divide it up into $10,000,000,000$ equal units. That is
+how small an atoms is. Or, consider scaling our meter stick to be the size
+of the continental US, that is about $4.\,\allowbreak 087\,7\times 10^{6}%
+\unit{m}$. Then for our US\ sized meter stick, on this scale an atom would
+still only be about half a millimeter across! About the size of a cake
+sprinkle.
 
 It is no surprise that in a typical sample of a solid we can have something
 like $10^{25}$ atoms. We use the capital letter $N$ to mean the number of
@@ -18071,13 +18155,21 @@ Because these numbers are so large, it is sometimes convenient to talk about
 how many atoms there are in a small volume of a substance. This is often
 less than in the whole sample. We can say, for example, that there are $1000$
 atoms per cubic micrometer of material. We call such a ratio of number of
-atoms per volume a \emph{number density. }In the SI system, the units for
-the number of atoms per unit volume are $1/\unit{m}^{3}.$ So number
-densities can still be quite large! Number densities are more useful for
-samples where the density is uniform, but we can talk about substances who's
-number density changes. Unfortunately you will often see a small $n$ used to
-mean number density. This over use of $n$ is confusing, so sometimes we will
-write number density as $N/%
+atoms per volume a \emph{number density. }%
+\begin{equation*}
+n=\frac{N}{%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+}
+\end{equation*}%
+In the SI system, the units for the number of atoms per unit volume are $1/%
+\unit{m}^{3}.$ So number densities can still be quite large! Number
+densities are more useful for samples where the density is uniform, but we
+can talk about substances who's number density changes. Unfortunately you
+will often see a small $n$ used to mean number density. This over use of $n$
+is confusing, so most of the time we will try to write number density as $N/%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -18091,7 +18183,7 @@ that each nucleon (proton or neutron) has about the same mass, and the
 electrons don't have much mass at all, so we can sort of count nucleons and
 say that an atom has a mass in units of nucleon masses. Carbon has 12
 nucleons (six protons and six neutrons) so it would have a mass of $12\unit{u%
-}.$ The unit $\unit{u}$ is the atomic mas unit, the mass of one nucleon.
+}.$ The unit $\unit{u}$ is the atomic mass unit, the mass of one nucleon.
 Because of the electrons (and other effects)\ this is not an exact approach,
 and it is not good enough if we attempt to do nuclear physics. But it is
 close enough for us for now. So we can say that hydrogen $\left(
@@ -18102,7 +18194,7 @@ table and find the atomic mass, or, if we need many digits of accuracy, we
 can go to a table of the nucleotides. We can convert these masses to SI
 units using%
 \begin{equation*}
-1\unit{u}=1.66\times 10^{-27}\unit{kg}
+1\unit{u}\approx 1.66\times 10^{-27}\unit{kg}
 \end{equation*}
 
 \subsection{Moles}
@@ -18129,7 +18221,7 @@ makes sense.
 
 This number, $6.02\times 10^{23},$ is called \emph{Avogadro's number}%
 \begin{equation*}
-N_{A}=6.02\times 10^{23}
+N_{A}=6.02\times 10^{23}\frac{1}{\unit{mol}}
 \end{equation*}%
 To find the number of dozens of a something, we take the number of items and
 divide by 12.%
@@ -18158,23 +18250,40 @@ We can also define a molar mass, which would be the mass of $6.02\times
 10^{23}$ of something. Usually, we choose the units for this molar mass to
 be the mass \emph{in grams} of a mole of something. And when we do this, the
 molar mass is equal to the numerical value of the atomic or molecular mass.
-for example, the molar mass of He, with $m=4\unit{u}$ is $M=4\unit{g}/\unit{%
-mol}.$ The molar mass of diatomic nitrogen would be $28\unit{g}/\unit{mol}$
-because each nitrogen atom has an atomic mass of $m=14\unit{u}$ and we add
-the two atomic masses together for the molecular mass. With this definition
-of molar mass we can see that for a sample of a material with mass $%
-m_{sample}$ 
+For example, the molar mass of He, with $m=4\unit{u}$ is $M=4\unit{g}/\unit{%
+mol}.$ To see that this works, let's convert the mass into grams 
+\begin{eqnarray*}
+m &=&4\unit{u}\times \frac{1.66\times 10^{-27}\unit{kg}}{1\unit{u}} \\
+&=&6.\,\allowbreak 64\times 10^{-27}\unit{kg}\frac{1000\unit{g}}{\unit{kg}}
+\\
+&=&6.\,\allowbreak 64\times 10^{-24}
+\end{eqnarray*}%
+Then the molar mass $N_{A}$ times the mass of one object, so%
+\begin{eqnarray*}
+M &=&N_{A}\times m \\
+&=&6.02\times 10^{23}\frac{1}{\unit{mol}}\times 6.\,\allowbreak 64\times
+10^{-24}\unit{g} \\
+&=&3.\,\allowbreak 997\,3\frac{\unit{g}}{\unit{mol}} \\
+&\approx &4\frac{\unit{g}}{\unit{mol}}
+\end{eqnarray*}
+
+The molar mass of diatomic nitrogen would be $28\unit{g}/\unit{mol}$ because
+each nitrogen atom has an atomic mass of $m=14\unit{u}$ and we add the two
+atomic masses together for the molecular mass. With this definition of molar
+mass we can see that for a sample of a material with mass $m_{sample}$ 
 \begin{equation*}
 n_{moles}=\frac{m_{sample}\left( \text{in grams}\right) }{M\left( \text{in
 grams per mol}\right) }
 \end{equation*}
 
-Now that we have these new terms to use, let's take up measuring temperature
-in our next lecture.
+Now that we have these new terms to use, let's take up measuring temperature.
 
 \section{How to build a thermometer}
 
-We will find that several material properties change with temperature
+We used a thermometer to find our zeroth law of thermodynamics. But how does
+a thermometer work? It turns out that several material properties change
+with temperature. Here are a few that are useful for building temperature
+measuring devices.
 
 \begin{equation*}
 \begin{tabular}{|c|}
@@ -18322,7 +18431,7 @@ better thermometer. So here is one in the next figure.\FRAME{dtbpF}{3.6832in%
 1.4866in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SY672300.wmf';tempfile-properties "XPR";}}This device uses the rise in
 pressure at a constant volume (the number 3 property from our list at the
-beginning of the lecture). It works by placing the gas bulb in thermal
+beginning of the section). It works by placing the gas bulb in thermal
 contact with the object who's temperature is to be measured (reservoir $B$
 in the figure\footnote{%
 A reservoir is just a large container of something.}). A scale (like a
@@ -18521,7 +18630,7 @@ Concrete & $12\times 10^{-6}$%
 Suppose we increase the temperature of something that has a hole in it. Does
 the hole increase or decrease in size? A cavity in a piece of material
 expands in the same way as if the cavity were filled with the material.
-Let's see that this must be true.
+Let's see how solids expand.
 
 \subsection{Volume expansion}
 
@@ -18707,23 +18816,8 @@ will expand at different rates, forcing the bonded pair of metals to bend.
 And we could make a temperature measuring device that measures how much this
 bimetallic strip bends.
 
-\subsection{Water is weird (and the Lord knows what He is doing!)}
+\subsection{Water is weird (and our Design Engineer knows what He is doing!)}
 
-%TCIMACRO{%
-%\TeXButton{Question123.9.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.2}
-\end{minipage}
-}%
-%EndExpansion
 \FRAME{dtbpFU}{2.8746in}{2.3082in}{0pt}{\Qcb{{\protect\small Density of
 water near }$0\unit{%
 %TCIMACRO{\U{2103}}%
@@ -18798,37 +18892,6 @@ Temperature is making things move by expansion. And we know that there must
 be forces behind making things move. Forces do work. Work is energy. Could
 it be that temperature has to do with exchanging energy?
 
-%TCIMACRO{%
-%\TeXButton{Question123.9.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.2}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question123.9.3}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.9.3}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.9.3}
-\end{minipage}
-}%
-%EndExpansion
-
 \chapter{28 Thermal Properties of Matter 2.1.4, 2.1.5}
 
 %TCIMACRO{\TeXButton{\chaptermark{Chapter 30}}{\chaptermark{Chapter 30}}}%
@@ -18844,8 +18907,8 @@ studied work and potential energy, and we studied kinetic energy. But these
 were always the energy \emph{of} an object. We described these energies in
 terms of the motion of the center of mass of an object using the particle
 model. Now we know that there is energy \emph{in} an object. This is
-different. Particles don't have internal parts, but real things do. Our
-particle model was an approximation. So we need to go beyond the particle
+different. Our particle model was an approximation. Particles don't have
+internal parts, but real things do. So we need to go beyond the particle
 model here. We will call the energy associated with the inside parts of an
 object \emph{internal energy.} And this internal energy is associated with
 thermal energy.
@@ -18886,6 +18949,8 @@ for a sample of a material
 
 \item Calorimetry is the use of thermal conservation of energy to study a
 sample of material
+
+\item Phase Changes and Phase Diagrams
 \end{enumerate}
 
 \section{Heat}
@@ -18988,9 +19053,9 @@ Figure}{\special{language "Scientific Word";type
 The paddle device was placed in the drum that is sitting behind it. The
 crank was operated by strings attached to it that were pulled by masses tied
 to the other end of the string (see the right hand side of the figure). When
-the masses were released, the paddle wheel stirred a liquid. The friction
-from the paddle wheel stirring the liquid raised the temperature of the
-liquid. The masses would lose energy equal to 
+the masses were released, the paddle wheel stirred a liquid (water). The
+friction from the paddle wheel stirring the water raised the temperature of
+the water. The masses would lose energy equal to 
 \begin{equation}
 \Delta U=2mgh
 \end{equation}%
@@ -19093,7 +19158,7 @@ also know now that energy can be transferred by heat, $Q,$ so maybe heat is
 a state variable.
 
 It would be good to be able to relate these new variables. So let's try to
-develop a relationship between $\Delta E_{int},$ $W,$ and $Q$ for our
+develop a relationship between $\Delta E_{int},$ $w,$ and $Q$ for our
 samples. Suppose you are heating something on your stove, say, a sample of
 steak. \FRAME{dtbpF}{1.6134in}{1.9451in}{0pt}{}{}{Figure}{\special{language
 "Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
@@ -19104,12 +19169,12 @@ steak. \FRAME{dtbpF}{1.6134in}{1.9451in}{0pt}{}{}{Figure}{\special{language
 is transferred from the hot stove to the cold beef the temperature of the
 steak would increase. It makes sense that the more energy you transfer, the
 more the temperature will rise. Gasses are more complicated, because their
-volume will change, but the volume of solids does not change much with
-temperature (we know that it changes a little) so we don't have as many
-complications as we would with a gas.\FRAME{dtbpF}{2.522in}{2.0084in}{0in}{}{%
+volume will easily change, but the volume of solids does not change much
+with temperature (we know that it changes a little) so we don't have as many
+complications as we would with a gas.\FRAME{dtbpF}{2.522in}{2.0084in}{0pt}{}{%
 }{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.522in;height 2.0084in;depth 0in;original-width 2.5029in;original-height
+2.522in;height 2.0084in;depth 0pt;original-width 2.5029in;original-height
 1.9875in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'TH3D0V00.wmf';tempfile-properties "XPR";}}
 
@@ -19120,7 +19185,7 @@ of energy transfer we give to the solid.%
 \end{equation*}%
 where our only form of increasing the energy here is $Q$, since the change
 in volume of the stake sample is small enough that any work, $w,$ is
-negligible. Since $P$ and $%
+negligible. In this situation $P$ and $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -19137,7 +19202,7 @@ Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
 "T";width 2.7612in;height 2.0019in;depth 0pt;original-width
 2.7851in;original-height 2.0117in;cropleft "0";croptop "1";cropright
 "1";cropbottom "0";tempfilename 'SY6CU904.wmf';tempfile-properties "XPR";}}%
-changing it's form (from stake to charcoal, and smoke), but then the sample
+changing it's form (from steak to charcoal, and smoke), but then the sample
 is no longer the same substance. In this case $\Delta T$ is no longer
 proportional to $Q.$ But as long as we don't change the composition of the
 substance (we stay in the linear regime), we can say that $\Delta T$ is
@@ -19173,7 +19238,7 @@ As an example, it takes $4190\unit{J}$ to raise $1\unit{kg}$ of water by $1%
 \begin{equation*}
 4190\unit{J}=\left( 1\unit{kg}\right) \left( c\right) \left( 1\unit{K}\right)
 \end{equation*}%
-solving for $c$ yields 
+Solving for $c$ yields 
 \begin{equation*}
 c_{water}=4190\frac{\unit{J}}{\unit{kg}\unit{K}}
 \end{equation*}%
@@ -19896,7 +19961,7 @@ piece of solid as in the figure. It has thickness $\Delta L$ and
 cross-sectional area $A.$ Suppose one face of the slab is at temperature $%
 T_{c}$ and the other at temperature $T_{h}.$ Experience tells us that energy 
 $Q$ will transfer in a time interval $\Delta t$ from the hotter face to the
-colder one. This is just a burner on your stove heating a pan, but it takes
+colder one. This is like a burner on your stove heating a pan, but it takes
 time for the pan to heat up before you can cook your egg for breakfast. The
 rate at which we use energy is what we called power, $\mathcal{P}$. Then the
 power is the amount of energy transferred, $Q$ in an amount of time. 
@@ -19995,7 +20060,7 @@ Q_{conduction}\approx \frac{A\left( T_{h}-T_{c}\right) \Delta t}{%
 \dsum\limits_{i}^{n}R_{i}}
 \end{equation*}%
 These R-values are used in home insulation and heating design and are
-usually in English units
+usually in English units in the US.
 
 \subsection{Convection}
 
@@ -20058,10 +20123,10 @@ All objects radiate energy according to Stefan's law%
 \end{equation}%
 The parts of this law are Stephen's constant $\sigma =5.6696\times 10^{-8}%
 \frac{\unit{W}}{\unit{m}^{2}\unit{K}^{4}}$, the factor, $A,$ is the surface
-area, $e$ is the emissivity of the material. This $e$ tells us how like a
-perfect absorber (called a black body) our surface is, and $T$ is the
-temperature. Note there are other forms for these quantities! But this is
-the form we will use.
+area, $e$ is the emissivity of the material, and $T$ is the temperature.
+Note there are other forms for these quantities! But this is the form we
+will use. The emissivity is a new concept. It tells us how like a perfect
+absorber (called a black body) our surface is.
 
 The emissivity is a value from $0$ to $1.$ If $e=0$ then the material is a
 perfect reflector. This would be a perfect mirror. If the emissivity is $1,$
@@ -20244,7 +20309,7 @@ Figure}{\special{language "Scientific Word";type
 3.3702in;height 1.8369in;depth 0pt;original-width 3.4051in;original-height
 1.8432in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
 'SVAQIE6R.wmf';tempfile-properties "XPR";}}This is the same idea as a
-thermos bottle, only better made (and more expensive). The flask has doubled
+thermos bottle, only better made (and more expensive). The flask has double
 walls with the space between evacuated to reduce convection and eliminate
 conduction. The walls are silvered to reduce heat transfer by radiation. The
 cap has a long piece of insulation attached to it to prevent conduction
@@ -20255,15 +20320,16 @@ their surfaces super Reflective.
 
 We are trying to find the change in internal energy as $Q$ and $w$ are
 applied to our systems. To go further, we need to know how the pressure,
-temperature and volume of a gas are related. You probably studied the ideal
-gas law in your pre-college science classes, but before we use it in our
-class let's try a though experiment.
+temperature and volume are related. We have done this for solids and
+liquids, but not for gasses. Let's take on this problem now.
 
-Let's consider the following data\FRAME{dhF}{2.6472in}{1.5947in}{0pt}{}{}{%
-Figure}{\special{language "Scientific Word";type
-"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
-2.6472in;height 1.5947in;depth 0pt;original-width 6.7014in;original-height
-4.0248in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+You probably studied the ideal gas law in your pre-college science classes,
+but before we use it in our class let's try a though experiment. Let's
+consider the following data\FRAME{dhF}{2.6472in}{1.5947in}{0pt}{}{}{Figure}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 2.6472in;height 1.5947in;depth
+0pt;original-width 6.7014in;original-height 4.0248in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
 'SUS73WA2.wmf';tempfile-properties "XPR";}}The black straight line is a
 curve fit to the data. What can we say about the curve fit?
 
@@ -20272,7 +20338,7 @@ region, the curve fit is not too bad. Of course, the equation we got for the
 curve fit is not the right equation, and we know this from the regions $x<-6$
 and $x>4.$ If the equation we used for the fit comes from our model for how
 this physical system works, we know that something is wrong with the model.
-The data tells us that do not have an exact theory that explains the
+The data tells us that we do not have an exact theory that explains the
 behavior of this system well. But could the curve fit be useful? If all you
 needed was an estimate of the value of the actual function at $x=-1,$ then
 the curve fit might be enough to get your work done! This may not be
@@ -20296,9 +20362,9 @@ exact relationship. Given all this, we should realize that there is no such
 thing as an ideal gas.
 
 In this approximation, the atoms are so weakly bound that there is no
-equilibrium position between atoms. Thus there is no definite volume defined
-for an ideal gas. This is generally mostly true around standard pressures
-and temperatures for real gasses. We will let $%
+equilibrium position between atoms. Thus there is no definite volume for an
+ideal gas. This is generally mostly true around standard pressures and
+temperatures for real gasses. We will let $%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -20429,22 +20495,6 @@ The constant $k_{B}$ is called \emph{Boltzmann's constant}
 k_{B}=1.38\times 10^{-23}\frac{\unit{J}}{\unit{K}}
 \end{equation}
 
-%TCIMACRO{%
-%\TeXButton{Fire Syringe Demo}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Fire Syringe Demo}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Fire Syringe Demo}
-\end{minipage}
-}%
-%EndExpansion
-
 We now have two forms of the ideal gas law!
 
 \section{PV diagrams}
@@ -20518,18 +20568,20 @@ Van der Waals gas law}. Let's see what it looks like.
 For the first bit of new physics we can add a term to the pressure that is
 proportional to the molar density squared.%
 \begin{equation*}
-P+a\left( \frac{n}{%
+P_{measured}+a\left( \frac{n}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
 }\right) ^{2}
 \end{equation*}%
-where the constant $a$ depends on the specific gas. You may not find it
-obvious why this is the right form for our new gas law equation to make the
-pressure come out right, but it does adjust the pressure under compression
-and it turns out it kind of works. So we will replace the solitary $P$ in
-our ideal gas law with $P+a\left( \frac{n}{%
+where the constant $a$ depends on the specific gas. The measured pressure is
+lower than the ideal gass pressure. So we add an in the second term so we
+can put it in our ideal gas law. You may not find it obvious why this is the
+right form for our new gas law equation to make the pressure come out right,
+but it does adjust the pressure under compression and it turns out it kind
+of works. So we will replace the solitary $P$ in our ideal gas law with $%
+P_{measured}+a\left( \frac{n}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -20553,7 +20605,7 @@ and put it where the $%
 %EndExpansion
 $ was in our ideal gas law. All together our new gas law becomes 
 \begin{equation*}
-\left( P+a\left( \frac{n}{%
+\left( P_{measured}+a\left( \frac{n}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
@@ -20630,7 +20682,8 @@ velocity
 }\left( \frac{1}{2}m\overline{v^{2}}\right) $
 
 \item Temperature is related directly to the average kinetic energy of the
-molecules of a gas
+molecules of a gas $T=\frac{2}{3}\frac{1}{k_{B}}\left( \frac{1}{2}m\overline{%
+v^{2}}\right) $
 
 \item We call a way the molecule can move a \emph{degree of freedom.}
 
@@ -20683,8 +20736,8 @@ of microscopic effects. The easiest to start with is pressure
 'SW9LUS05.wmf';tempfile-properties "XPR";}}Picture a particle in a cubical
 box of side length $d.$
 
-The particle could have any direction in the box. And that direction would
-have $x,$ $y,$ and $z$ components. And as physicists often do we would
+The particle could travel in any direction in the box. And that direction
+would have $x,$ $y,$ and $z$ components. And as physicists often do we would
 divide our three dimensional problem into three one dimensional problems. So
 we can start by considering just the $x$ part of the motion. As the particle
 approaches the wall of the box we may say that it has velocity $v_{x}.$ The
@@ -20698,7 +20751,7 @@ velocity $-v_{x}$.
 "1";cropright "1";cropbottom "0";tempfilename
 'SW9LUS06.wmf';tempfile-properties "XPR";}}
 
-We can think of why this would be. Think of conservation of momentum. Before
+We can think of why this would be. Consider conservation of momentum. Before
 the collision we may take the velocity of the wall to be zero, and we may
 imagine the wall to have a very large mass (which it does, compared to the
 particle!). We can call the particle mass $m$ and the wall mass $M,$ but the
@@ -20713,8 +20766,7 @@ and the final momentum of the system would be
 P_{f} &=&Mv_{wall_{f}}+mv_{xf} \\
 &=&-mv_{x_{f}}
 \end{eqnarray*}%
-because the wall still isn't going to move. Then for conservation of
-momentum 
+because the wall isn't going to move. Then for conservation of momentum 
 \begin{equation*}
 P_{i}=P_{f}
 \end{equation*}%
@@ -20722,29 +20774,14 @@ We have
 \begin{equation*}
 mv_{x_{i}}=-mv_{x_{f}}
 \end{equation*}%
-Then the magnitude of the velocities must be equal but the direction
-changed. And the \emph{change} in momentum for the ball must be 
+Then the magnitude of the particle velocities must be equal, but the
+direction changed. And the \emph{change} in momentum for the ball must be 
 \begin{eqnarray*}
 \Delta p_{ball} &=&p_{xf}-p_{xi} \\
-&=&-mv_{x_{f}}-\left( mv_{x_{i}}\right) \\
+&=&-mv_{x_{f}}-\left( mv_{x_{i}}\right)  \\
 &=&-2mv_{x_{i}}
 \end{eqnarray*}
 
-%TCIMACRO{%
-%\TeXButton{Question 123.14.6}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.14.6}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.14.6}
-\end{minipage}
-}%
-%EndExpansion
 Recall that the impulse from the collision of the particle on the wall would
 be 
 \begin{eqnarray*}
@@ -20791,7 +20828,7 @@ Let's take our average of $F$ over the time
 which is the time it takes our particle to travel away from our wall, and
 bounce back to the wall. We know that sometime within this $\Delta t$ the
 collision with our wall actually occurs. But this time is much longer than
-the actual collision time, so if we use this time our average force will be
+the actual collision time, so if we use this time, our average force will be
 smaller than the short collision force. The change in momentum is still 
 \begin{equation*}
 \bar{F}\Delta t=-2mv_{x_{i}}
@@ -20812,32 +20849,19 @@ Then if we shorten $\bar{F}_{i,\text{ on the wall}}$ to just $\bar{F}_{iw}$
 \end{equation*}%
 for one particle (molecule or atom).
 
-For many particles%
+For many particles, we can reinterpret $v_{x_{i}}$ to be the $x$-component
+of the initial speed of the $i^{th}$ molecule and sum up the force due to
+all the molecules in the box. 
 \begin{eqnarray*}
 \bar{F}_{w} &=&\dsum\limits_{i=1}^{N}\frac{mv_{x_{i}}^{2}}{d} \\
 &=&\frac{m}{d}\dsum\limits_{i=1}^{N}v_{x_{i}}^{2}
 \end{eqnarray*}%
-And now that we have the force on the wall our average force seems more
-valid. The many particles will hit the wall over and over again and not all
-at the same time, so there is always some force on the wall. And the force
-the wall will feel is an average over all these little forces. We have found
-the average force on the container wall!
+And now that we have the force on the wall due to many particle our average
+force seems more valid. The many particles will hit the wall over and over
+again and not all at the same time, so there is always some force on the
+wall. And the force the wall will feel is an average over all these little
+forces. We have found the average force on the container wall!
 
-%TCIMACRO{%
-%\TeXButton{Question 123.14.7}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.14.7}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.14.7}
-\end{minipage}
-}%
-%EndExpansion
 Let's rewire this equation for our average force using the mathematical
 definition of an average. 
 \begin{equation*}
@@ -20857,12 +20881,12 @@ mean the average, so that
 &=&\frac{m}{d}N\overline{v_{x}^{2}}
 \end{eqnarray*}%
 From this we can see that the force on the wall is proportional to the
-average of the velocity squared!
+average of the square of the particle velocity!
 
 Going back to a single molecule, we remember that the velocity of that
 single molecule has components. So far we have just used the $x$-component.
-But we have $y$ and $z$-components. The velocity squared would be (think of
-a dot product)%
+But we also have $y$ and $z$-components. The velocity squared would be
+(think of a dot product)%
 \begin{equation*}
 v_{i}^{2}=v_{x_{i}}^{2}+v_{y_{i}}^{2}+v_{z_{i}}^{2}
 \end{equation*}%
@@ -20877,10 +20901,10 @@ v_{z}^{2}}
 
 Our atoms or molecules are so small that the force due to gravity on them is
 very small. To a good approximation we can mostly ignore it. Then there is
-not much reason to prefer the $x$-direction, we could have chosen the $y$%
+not much reason to prefer the $x$-direction. We could have chosen the $y$%
 -direction and had the same value. In this approximation, then 
 \begin{equation*}
-v_{x}^{2}=v_{y}^{2}=v_{z}^{2}
+\overline{v_{x}^{2}}=\overline{v_{y}^{2}}=\overline{v_{z}^{2}}
 \end{equation*}%
 and%
 \begin{equation*}
@@ -20891,12 +20915,12 @@ So our average force on the wall from the molecules could be written as%
 \bar{F} &=&\frac{m}{d}N\overline{v_{x}^{2}} \\
 &=&\frac{m}{d}N\frac{1}{3}\overline{v^{2}} \\
 &=&\frac{mN}{3d}\overline{v^{2}} \\
-&=&\frac{N}{3d}\left( m\overline{v^{2}}\right)
+&=&\frac{N}{3d}\left( m\overline{v^{2}}\right) 
 \end{eqnarray*}%
-Let's rewire this average force from all the molecules 
+Then, the average force from all the molecules is 
 \begin{equation*}
-\bar{F}=\frac{N}{3d}\left( m\overline{v^{2}}\right)
-\end{equation*}
+\bar{F}=\frac{N}{3d}\left( m\overline{v^{2}}\right) 
+\end{equation*}%
 And we know that 
 \begin{equation*}
 P=\frac{F}{A}
@@ -20905,25 +20929,25 @@ Finally we can find the pressure on the wall. We know%
 \begin{eqnarray*}
 P &=&\frac{F}{A} \\
 &=&\frac{F}{d^{2}} \\
-&=&\frac{1}{d^{2}}\left( \frac{N}{3d}\left( m\overline{v^{2}}\right) \right)
+&=&\frac{1}{d^{2}}\left( \frac{N}{3d}\left( m\overline{v^{2}}\right) \right) 
 \\
-&=&\frac{1}{d^{3}}\frac{N}{3}\left( m\overline{v^{2}}\right) \\
+&=&\frac{1}{d^{3}}\frac{N}{3}\left( m\overline{v^{2}}\right)  \\
 &=&\frac{1}{3}\frac{N}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}\left( m\overline{v^{2}}\right) \\
+}\left( m\overline{v^{2}}\right)  \\
 &=&\frac{2}{3}\frac{N}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}\left( \frac{1}{2}m\overline{v^{2}}\right)
+}\left( \frac{1}{2}m\overline{v^{2}}\right) 
 \end{eqnarray*}%
 That last step might seem unnecessary, but look how cute the $1/2$ looks
 with a $m\overline{v^{2}}$ next to it! We can recognize the part in
-parenthesis as the average kinetic energy of the molecule! So
+parenthesis as the average kinetic energy of the molecule! Thus,
 
 \begin{equation}
 P=\frac{2}{3}\frac{N}{%
@@ -20931,7 +20955,7 @@ P=\frac{2}{3}\frac{N}{%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}\left( \frac{1}{2}m\overline{v^{2}}\right)
+}\left( \frac{1}{2}m\overline{v^{2}}\right) 
 \end{equation}%
 and we see that the pressure of the gas is proportional to the number of
 molecules per unit volume and to the average kinetic energy of the
@@ -20943,65 +20967,18 @@ proportional to $%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-$!
+$ and directly proportional to $N$!
 
 \section{Temperature}
 
-Finally, we are ready to define temperature!
-
-%TCIMACRO{%
-%\TeXButton{Question 123.15.1}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.15.1}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.15.1}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Question 123.15.2}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Question 123.15.2}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Question 123.15.2}
-\end{minipage}
-}%
-%EndExpansion
-%TCIMACRO{%
-%\TeXButton{Equation on Board}{\marginpar {
-%\hspace{-0.5in}
-%\begin{minipage}[t]{1in}
-%\small{Equation on Board}
-%\end{minipage}
-%}}}%
-%BeginExpansion
-\marginpar {
-\hspace{-0.5in}
-\begin{minipage}[t]{1in}
-\small{Equation on Board}
-\end{minipage}
-}%
-%EndExpansion
-We now know that 
+Finally, we are ready to define temperature! We now know that 
 \begin{equation*}
 P=\frac{2}{3}\frac{N}{%
 %TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-}\left( \frac{1}{2}m\overline{v^{2}}\right)
+}\left( \frac{1}{2}m\overline{v^{2}}\right) 
 \end{equation*}%
 and that this has some of the properties of the ideal gas law. We can
 rearrange this to look a little more like the ideal gas law. Let's start
@@ -21013,7 +20990,7 @@ P%
 %BeginExpansion
 \ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
 %EndExpansion
-=\frac{2}{3}N\left( \frac{1}{2}m\overline{v^{2}}\right)
+=\frac{2}{3}N\left( \frac{1}{2}m\overline{v^{2}}\right) 
 \end{equation*}%
 But temperature does not appear in this equation. It should be on the right
 and side. It must be that something on that right hand side is really our
@@ -21158,13 +21135,13 @@ TRUE;display "USEDEF";valid_file "T";width 4.3171in;height 2.162in;depth
 0pt;original-width 12.0252in;original-height 6.0096in;cropleft "0";croptop
 "1";cropright "1";cropbottom "0";tempfilename
 'SW9P0O0Z.wmf';tempfile-properties "XPR";}}We see that a collision does not
-happen unless the distance between the molecules is less than or equal to $%
-2d.$ All we want is the number of collisions (we don't care about what
-happens after the collisions) and this way of counting collisions is easier
-(and easier to code). We can model this interaction as a large particle of
-size $2d$ and many point particles. We let the large particle move in a
-straight line to create a cylindrical path. \FRAME{dtbpF}{3.1453in}{2.4578in%
-}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
+happen unless the distance between the centers of the molecules is less than
+or equal to $d.$ All we want is the number of collisions (we don't care
+about what happens after the collisions) and this way of counting collisions
+is easier (and easier to code). We can model this interaction as a large
+particle of size $2d$ and many point particles. We let the large particle
+move in a straight line to create a cylindrical path. \FRAME{dtbpF}{3.1453in%
+}{2.4578in}{0pt}{}{}{Figure}{\special{language "Scientific Word";type
 "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
 3.1453in;height 2.4578in;depth 0pt;original-width 3.0995in;original-height
 2.4163in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
@@ -21193,7 +21170,12 @@ so the volume will be%
 Then, if $n_{V}$ is the number of molecules per unit volume, our big
 equivalent particle will hit 
 \begin{equation}
-N_{\func{col}}=\pi d^{2}\bar{v}\Delta tn_{V}
+N_{\func{col}}=%
+%TCIMACRO{\TeXButton{V}{\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}}}%
+%BeginExpansion
+\ooalign{\hfil$V$\hfil\cr\kern0.1em--\hfil\cr}%
+%EndExpansion
+n_{V}=\pi d^{2}\bar{v}\Delta tn_{V}
 \end{equation}%
 particles as it travels. This is the number of point molecules in the
 cylinder. And it is the number of collisions.
@@ -21203,12 +21185,12 @@ little thought shows that it is the distance traveled in a time interval $%
 \Delta t$ divided by the number of collisions that occur in $\Delta t.$ We
 now know both of these, so 
 \begin{eqnarray}
-\lambda &=&\frac{L}{N_{\func{col}}}=\frac{\bar{v}\Delta t}{\pi d^{2}\bar{v}%
+\lambda  &=&\frac{L}{N_{\func{col}}}=\frac{\bar{v}\Delta t}{\pi d^{2}\bar{v}%
 \Delta tn_{V}}  \notag \\
 &=&\frac{1}{\pi d^{2}n_{V}}
 \end{eqnarray}%
 We can also find the the average time between collisions. This is called the
-mean free time. we could use 
+mean free time. We could use 
 \begin{equation*}
 v=\frac{\Delta x}{\Delta t}
 \end{equation*}%
@@ -21219,7 +21201,7 @@ and solve for $\Delta t$%
 as we did in Principles of Physics I. But let's put in average values. The
 average $\Delta x=\lambda $ and we could use $v_{rms}$ as our average speed. 
 \begin{eqnarray*}
-\tau &=&\frac{\lambda }{v_{rms}} \\
+\tau  &=&\frac{\lambda }{v_{rms}} \\
 &=&\frac{1}{\pi d^{2}n_{V}v_{rms}}
 \end{eqnarray*}%
 The frequency of collisions is 
@@ -21288,7 +21270,7 @@ Then where there is a $%
 and 
 \begin{eqnarray}
 f &=&\frac{\sqrt{2}\pi d^{2}v_{rms}P}{k_{B}T} \\
-\tau &=&\frac{k_{B}T}{\sqrt{2}\pi d^{2}v_{rms}P}
+\tau  &=&\frac{k_{B}T}{\sqrt{2}\pi d^{2}v_{rms}P}
 \end{eqnarray}
 
 We should consider a problem to see how this works. Suppose we take a $%
@@ -21321,11 +21303,11 @@ so
 \begin{equation*}
 v_{rms}=\sqrt{\frac{3\left( 1.3806568\times 10^{-23}\frac{\unit{J}}{\unit{K}}%
 \right) \left( 273\unit{K}\right) }{6.64\times 10^{-27}\unit{kg}}}%
-=1305.\,\allowbreak 0\frac{\unit{m}}{\unit{s}}\allowbreak
+=1305.\,\allowbreak 0\frac{\unit{m}}{\unit{s}}\allowbreak 
 \end{equation*}%
-then the average time between collisions 
+Then the average time between collisions 
 \begin{eqnarray*}
-\tau &=&\frac{k_{B}T}{\sqrt{2}\pi d^{2}v_{rms}P} \\
+\tau  &=&\frac{k_{B}T}{\sqrt{2}\pi d^{2}v_{rms}P} \\
 &=&\frac{\left( 1.3806568\times 10^{-23}\frac{\unit{J}}{\unit{K}}\right)
 \left( 273\unit{K}\right) }{\sqrt{2}\pi \left( 0.031\unit{nm}\right)
 ^{2}\left( 1305.\,\allowbreak 0\frac{\unit{m}}{\unit{s}}\right) \left(
